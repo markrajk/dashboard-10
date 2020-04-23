@@ -138,7 +138,7 @@
                                 </li>
     
                                 <li class="dropdown-custom-list-footer">
-                                    <a href="./sign-in/index.html">Sign out</a>
+                                    <a href="../sign-in/index.html">Sign out</a>
                                 </li>
                             </ul>
                         </div>
@@ -178,74 +178,16 @@
                 </div>
                 <div class="teams-settings-feedback-body">
 
-                    <p class="subheader-text">General feedback requests</p>
-                    <p class="subheader-text-small">Create feedback request to increase the amount of given feedback.</p>
-
-                    <table class="table-custom table-01">
-                        <thead class="table-custom-head">
-                            <tr>
-                                <td class="table-custom-col-01">File type</td>
-                                <td class="table-custom-col-02">Select option</td>
-                            </tr>
-                        </thead>
-                        <tbody class="table-custom-body">
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <i class="icon-users red"></i>
-                                    <p class="text-truncate">Everyone is requested to give at least certain amount of
-                                        feedbacks</p>
-                                </td>
-                                <td class="table-custom-col-02">
-                                    <select name="feedback-01" id="feedback-01">
-                                        <option value="value01" selected>At least three weekly</option>
-                                        <option value="value01">At least four weekly</option>
-                                        <option value="value01">At least five weekly</option>
-                                        <option value="value01">At least six weekly</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <i class="icon-users green"></i>
-                                    <p class="text-truncate">Everyone is requested to give feedback about the team lead
-                                        at least</p>
-                                </td>
-                                <td class="table-custom-col-02">
-                                    <select name="feedback-01" id="feedback-01">
-                                        <option value="value01">Weekly</option>
-                                        <option value="value01" selected>Every second week</option>
-                                        <option value="value01">Every third week</option>
-                                        <option value="value01">Monthly</option>
-                                    </select>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <i class="icon-users blue"></i>
-                                    <p class="text-truncate">Everyone is requested to tell how he feels working in this
-                                        team at least</p>
-                                </td>
-                                <td class="table-custom-col-02">
-                                    <select name="feedback-01" id="feedback-01">
-                                        <option value="value01">Weekly</option>
-                                        <option value="value01" selected>Every second week</option>
-                                        <option value="value01">Every third week</option>
-                                        <option value="value01">Monthly</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    
 
                     <div class="section-caption">
                         <div class="section-caption-info">
-                            <p class="subheader-text">Member specific requests</p>
-                            <p class="subheader-text-small">With member specific requests you can define who should give who regularly feedback.</p>
+                            <p class="subheader-text">Feedback requests</p>
+                            <p class="subheader-text-small">Here you create feedback routines: who will be requested to give whom regularly feedback.</p>
                         </div>
-                        <a href="#" class="btn-custom-primary outline" data-toggle="modal"
-                            data-target="#feedbackRequestModal">Add new</a>
+                        <!-- <a href="#" class="btn-custom-primary outline" data-toggle="modal"
+                            data-target="#feedbackRequestModal">Add new</a> -->
+                        <a href="#" class="btn-custom-primary outline input-row-trigger">Add new</a>
                     </div>
 
                     <table class="table-custom table-02">
@@ -254,10 +196,39 @@
                                 <td class="table-custom-col-01">Who</td>
                                 <td class="table-custom-col-02">To who</td>
                                 <td class="table-custom-col-03">Frequency</td>
-                                <td class="table-custom-col-04">Delete</td>
+                                <td class="table-custom-col-04"></td>
                             </tr>
                         </thead>
                         <tbody class="table-custom-body">
+                            <tr class="input-row">
+                                <td class="table-custom-col-01">
+                                    <select class="text-truncate" name="input-row-select-01" id="input-row-select-01">
+                                        <option value="value01" selected>Select member</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                    </select>
+                                </td>
+                                <td class="table-custom-col-02">
+                                    <select class="text-truncate" name="input-row-select-01" id="input-row-select-01">
+                                        <option value="value01" selected>Select member</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                    </select>
+                                </td>
+                                <td class="table-custom-col-03">
+                                    <select class="text-truncate" name="input-row-select-01" id="input-row-select-01">
+                                        <option value="value01" selected>Select frequency</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                        <option value="value01">Random Name</option>
+                                    </select>
+                                </td>
+                                <td class="table-custom-col-04">
+                                    <a href="#">Create new</a>
+                                </td>
+                            </tr>
                             <tr>
                                 <td class="table-custom-col-01">Johan Peter</td>
                                 <td class="table-custom-col-02">Andy Watson</td>
@@ -278,7 +249,7 @@
                                 <td class="table-custom-col-01"></td>
                                 <td class="table-custom-col-02">Simon Arnold</td>
                                 <td class="table-custom-col-03">
-                                    <select class="text-truncate" name="feedback-01" id="feedback-01">
+                                    <select class="text-truncate" name="feedback-02" id="feedback-02">
                                         <option value="value01">Weekly</option>
                                         <option value="value01" selected>Every second week</option>
                                         <option value="value01">Every third week</option>
@@ -294,7 +265,7 @@
                                 <td class="table-custom-col-01"></td>
                                 <td class="table-custom-col-02">Andy Watson</td>
                                 <td class="table-custom-col-03">
-                                    <select class="text-truncate" name="feedback-01" id="feedback-01">
+                                    <select class="text-truncate" name="feedback-03" id="feedback-03">
                                         <option value="value01">Weekly</option>
                                         <option value="value01" selected>Every second week</option>
                                         <option value="value01">Every third week</option>
@@ -310,7 +281,7 @@
                                 <td class="table-custom-col-01">Johan Peter</td>
                                 <td class="table-custom-col-02">Andy Watson</td>
                                 <td class="table-custom-col-03">
-                                    <select class="text-truncate" name="feedback-01" id="feedback-01">
+                                    <select class="text-truncate" name="feedback-04" id="feedback-04">
                                         <option value="value01">Weekly</option>
                                         <option value="value01" selected>Every second week</option>
                                         <option value="value01">Every third week</option>
@@ -546,38 +517,42 @@
     <script src="../public/js/main.js"></script>
 
     <script>
+        // INPUT ROW
+        document.querySelector('.input-row-trigger').addEventListener('click', function() {
+            document.querySelector('.input-row').classList.toggle('input-row-open');
+        })
         // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
         document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click',
             createNewTeamModalDialog)
 
-        function createNewTeamModalDialog() {
-            const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
-            const modalReplace = modalBody.querySelector('.replace');
-            const modalContent = modalReplace.innerHTML;
-            const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
-            const modalCancel = modalBody.querySelector('.modal-custom-cancel');
-            let step = 0;
+        // function createNewTeamModalDialog() {
+        //     const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
+        //     const modalReplace = modalBody.querySelector('.replace');
+        //     const modalContent = modalReplace.innerHTML;
+        //     const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
+        //     const modalCancel = modalBody.querySelector('.modal-custom-cancel');
+        //     let step = 0;
 
-            modalBtn.addEventListener('click', function () {
-                step++;
-                modalReplace.innerHTML = `
-                        <h3 class="modal-custom-title">Invite members</h3>
-                        <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                    `;
-            })
+        //     modalBtn.addEventListener('click', function () {
+        //         step++;
+        //         modalReplace.innerHTML = `
+        //                 <h3 class="modal-custom-title">Invite members</h3>
+        //                 <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+        //                 <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+        //                 <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+        //                 <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+        //                 <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+        //             `;
+        //     })
 
-            modalCancel.addEventListener('click', function () {
-                step !== 0 && (
-                    setTimeout(function () {
-                        modalReplace.innerHTML = modalContent;
-                    }, 500)
-                );
-            })
-        }
+        //     modalCancel.addEventListener('click', function () {
+        //         step !== 0 && (
+        //             setTimeout(function () {
+        //                 modalReplace.innerHTML = modalContent;
+        //             }, 500)
+        //         );
+        //     })
+        // }
     </script>
 </body>
 
