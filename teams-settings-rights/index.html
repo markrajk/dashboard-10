@@ -185,8 +185,7 @@
                             <p class="subheader-text-small">Share viewing rights to this team with other peoples
                                 who should have access to follow the feedback data of this team.</p>
                         </div>
-                        <a href="#" class="btn-custom-primary outline" data-toggle="modal"
-                        data-target="#viewingRightsModal">Add rights</a>
+                        <a href="#" class="btn-custom-primary outline input-row-trigger" target-input-row="#input-row-01">Add rights</a>
                     </div>
 
                     <div class="panel panel-default">
@@ -288,6 +287,21 @@
                                             </div>
                                         </td>
                                     </tr>
+
+                                    <tr class="input-row" id="input-row-01">
+                                        <td class="table-header-fixed-col-1">
+                                            <input type="text" placeholder="Enter name...">
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <input type="email" placeholder="Enter email...">
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <a href="#" class="btn-custom-primary outline blue">Confirm</a>
+                                            <a href="#" class="btn-custom-primary outline">Cancel</a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -300,7 +314,7 @@
                             <p class="subheader-text-small">Share admin rights only with the people who should have the
                                 rights to manage everything related to this team.</p>
                         </div>
-                        <a href="#" class="btn-custom-primary outline add-admin-rights-trigger">Add rights</a>
+                        <a href="#" class="btn-custom-primary outline input-row-trigger" target-input-row="#input-row-02">Add rights</a>
                     </div>
 
                     <div class="panel panel-default ">
@@ -402,10 +416,25 @@
                                             </div>
                                         </td>
                                     </tr>
+
+                                    <tr class="input-row" id="input-row-02">
+                                        <td class="table-header-fixed-col-1">
+                                            <input type="text" placeholder="Enter name...">
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <input type="email" placeholder="Enter email...">
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <a href="#" class="btn-custom-primary outline blue">Confirm</a>
+                                            <a href="#" class="btn-custom-primary outline">Cancel</a>
+                                        </td>
+                                    </tr>
                                    
                                 </tbody>
                             </table>
-                            <div class="table-bottom-input">
+                            <!-- <div class="table-bottom-input">
                                 <div class="table-bottom-input-col-1">
                                     <input type="text" placeholder="Enter name...">
                                 </div>
@@ -416,7 +445,7 @@
                                     <a href="#" class="btn-custom-primary outline blue">Confirm</a>
                                     <a href="#" class="btn-custom-primary outline">Cancel</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -612,11 +641,13 @@
 
     <script>
         // ADD RIGHTS
-        var addAdminRight = document.querySelector('.add-admin-rights-trigger');
-        var tableBottomInput = document.querySelector('.table-bottom-input');
-        addAdminRight.addEventListener('click', function() {
-            tableBottomInput.classList.toggle('table-bottom-input-open');
-        })
+        var inputRowTriggers = document.querySelectorAll('.input-row-trigger');
+        for(var i = 0; i <  inputRowTriggers.length; i++) {
+            inputRowTriggers[i].addEventListener('click', function(e) {
+                console.log(e.target.getAttribute('target-input-row'))
+                document.querySelector(e.target.getAttribute('target-input-row')).classList.toggle('input-row-open');
+            })
+        }
         // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
         document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click',
             createNewTeamModalDialog)

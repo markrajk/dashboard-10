@@ -3399,7 +3399,7 @@ i {
     margin-bottom: 3rem;
 
     .btn-custom-primary {
-      padding: .4em 1.35em;
+      padding: .4em 1.2em;
       padding-bottom: .42em;
       margin-right: 1.2rem;
 
@@ -3672,6 +3672,7 @@ i {
         @include flex(1);
 
         & select {
+          position: relative;
           width: 90%;
           max-width: 21.2rem;
           outline: none;
@@ -3682,6 +3683,15 @@ i {
           border-radius: 4px;
           border: solid 1px #c1c7cd;
 
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+
+          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-repeat: no-repeat;
+          background-position-x: 95%;
+          background-position-y: 50%;
+
           & option {
             font-size: 1.2rem;
             padding-left: 1.3rem;
@@ -3691,11 +3701,13 @@ i {
 
       & .table-custom-col-04 {
         @include flex(.6);
-        
+        @include justify-content(center);
         & a {
           color: #ff2424;
         }
       }
+
+
     }
 
     & .input-row {
@@ -3902,7 +3914,7 @@ i {
           & th {
   
             &:nth-of-type(1) {
-              @include flex(1);
+              @include flex(1.20);
   
               @include respond(desktop-xsm) {
                 @include flex(1);
@@ -3926,12 +3938,17 @@ i {
             &:nth-of-type(4) {
               @include flex(none);
               width: 5.5rem!important;
+
+              @include respond(desktop-xsm) {
+                @include flex(.6);
+                @include justify-content(flex-end);
+              }
             }
 
 
             @include target-ie() {
           
-              &:nth-of-type(1) {
+              &:nth-of-type(4.4) {
                 padding-left: 1.7rem;
               }
             }
@@ -3977,6 +3994,84 @@ i {
               margin: 0 .15rem;
             }
           }
+
+          & .input-row {
+            display: none;
+            @include align-items(center);
+
+            & input {
+              min-width: 1px;
+              max-width: 100%;
+              outline: none;
+              border: none;
+              font-family: Roboto;
+              font-size: 1.35rem;
+              font-weight: 400;
+              line-height: 1.33;
+
+              &::placeholder {
+                opacity: 0.67;
+              }
+            }
+
+            & .table-header-fixed-col-1 {
+              display: inline-block!important;
+
+              & input {
+                &::placeholder {
+                  color: #1165f4;
+                }
+              }
+
+              @include respond(desktop-xxsm) {
+                @include flex(none);
+                width: 30%;
+              }
+            }
+
+            & .table-header-fixed-col-2 {
+              display: inline-block!important;
+
+              @include respond(desktop-xxsm) {
+                @include flex(none);
+                width: 30%!important;
+              }
+            }
+
+            & .table-header-fixed-col-3 {
+              @include flex(none);
+              width: 5.5rem;
+              
+
+              @include respond(desktop-xsm) {
+                @include flex(none)
+              }
+            }
+  
+            & .table-header-fixed-col-4 {
+              @include flexbox;
+              @include justify-content(space-between);
+              @include flex(1);
+
+              @include respond(desktop-xsm) {
+                @include flex(.6);
+                width: auto!important;
+              }
+
+              @include respond(desktop-xxsm) {
+                @include flex(1)
+              }
+            }
+            
+
+            & .btn-custom-primary {
+              margin-right: 0;
+            }
+
+            &-open {
+              @include flexbox;
+            }
+          }
         }
       }
     }
@@ -3990,8 +4085,6 @@ i {
     }
 
     & .table-02 {
-      border-bottom-left-radius: 0!important;
-      border-bottom-right-radius: 0!important;
       & tbody {
         max-height: 22.4rem!important;
       }
@@ -4004,7 +4097,7 @@ i {
     & .table-bottom-input {
       padding: 1.2rem 1.7rem;
       padding-right: 3rem;
-      @include flexbox;
+      @include flexbox;   
       visibility: none;
       opacity: 0;
       @include align-items(center);

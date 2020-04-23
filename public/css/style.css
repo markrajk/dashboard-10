@@ -2332,7 +2332,7 @@ i {
   .teams-settings-general-header {
     margin-bottom: 3rem; }
     .teams-settings-general-header .btn-custom-primary {
-      padding: .4em 1.35em;
+      padding: .4em 1.2em;
       padding-bottom: .42em;
       margin-right: 1.2rem; }
       .teams-settings-general-header .btn-custom-primary.outline:hover, .teams-settings-general-header .btn-custom-primary.outline:focus {
@@ -2528,6 +2528,7 @@ i {
         -ms-flex: 1;
         flex: 1; }
         .teams-settings-feedback-body .table-02 .table-custom-col-03 select {
+          position: relative;
           width: 90%;
           max-width: 21.2rem;
           outline: none;
@@ -2536,7 +2537,14 @@ i {
           line-height: 1.36;
           color: #1b2733;
           border-radius: 4px;
-          border: solid 1px #c1c7cd; }
+          border: solid 1px #c1c7cd;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-repeat: no-repeat;
+          background-position-x: 95%;
+          background-position-y: 50%; }
           .teams-settings-feedback-body .table-02 .table-custom-col-03 select option {
             font-size: 1.2rem;
             padding-left: 1.3rem; }
@@ -2546,7 +2554,12 @@ i {
         -moz-box-flex: 0.6;
         -moz-flex: 0.6;
         -ms-flex: 0.6;
-        flex: 0.6; }
+        flex: 0.6;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center; }
         .teams-settings-feedback-body .table-02 .table-custom-col-04 a {
           color: #ff2424; }
     .teams-settings-feedback-body .input-row {
@@ -2701,12 +2714,12 @@ i {
           .teams-settings-rights-body .panel-body .table-header-fixed tbody tr:last-child {
             border: none; }
         .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(1), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(1) {
-          -webkit-box-flex: 1;
-          -webkit-flex: 1;
-          -moz-box-flex: 1;
-          -moz-flex: 1;
-          -ms-flex: 1;
-          flex: 1; }
+          -webkit-box-flex: 1.2;
+          -webkit-flex: 1.2;
+          -moz-box-flex: 1.2;
+          -moz-flex: 1.2;
+          -ms-flex: 1.2;
+          flex: 1.2; }
           @media (max-width: 575px) {
             .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(1), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(1) {
               -webkit-box-flex: 1;
@@ -2743,8 +2756,21 @@ i {
           -ms-flex: none;
           flex: none;
           width: 5.5rem !important; }
+          @media (max-width: 575px) {
+            .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4) {
+              -webkit-box-flex: 0.6;
+              -webkit-flex: 0.6;
+              -moz-box-flex: 0.6;
+              -moz-flex: 0.6;
+              -ms-flex: 0.6;
+              flex: 0.6;
+              -webkit-box-pack: end;
+              -ms-flex-pack: end;
+              -webkit-justify-content: flex-end;
+              -moz-justify-content: flex-end;
+              justify-content: flex-end; } }
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(1), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(1) {
+          .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4.4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4.4) {
             padding-left: 1.7rem; } }
         .teams-settings-rights-body .panel-body .table-header-fixed-col-1 a {
           font-size: 1.35rem;
@@ -2766,15 +2792,112 @@ i {
         .teams-settings-rights-body .panel-body .table-header-fixed .choose .divider {
           font-weight: 500;
           margin: 0 .15rem; }
+        .teams-settings-rights-body .panel-body .table-header-fixed .input-row {
+          display: none;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center; }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row input {
+            min-width: 1px;
+            max-width: 100%;
+            outline: none;
+            border: none;
+            font-family: Roboto;
+            font-size: 1.35rem;
+            font-weight: 400;
+            line-height: 1.33; }
+            .teams-settings-rights-body .panel-body .table-header-fixed .input-row input::placeholder {
+              opacity: 0.67; }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 {
+            display: inline-block !important; }
+            .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 input::placeholder {
+              color: #1165f4; }
+            @media (max-width: 379px) {
+              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 {
+                -webkit-box-flex: none;
+                -webkit-flex: none;
+                -moz-box-flex: none;
+                -moz-flex: none;
+                -ms-flex: none;
+                flex: none;
+                width: 30%; } }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-2 {
+            display: inline-block !important; }
+            @media (max-width: 379px) {
+              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-2 {
+                -webkit-box-flex: none;
+                -webkit-flex: none;
+                -moz-box-flex: none;
+                -moz-flex: none;
+                -ms-flex: none;
+                flex: none;
+                width: 30% !important; } }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-3 {
+            -webkit-box-flex: none;
+            -webkit-flex: none;
+            -moz-box-flex: none;
+            -moz-flex: none;
+            -ms-flex: none;
+            flex: none;
+            width: 5.5rem; }
+            @media (max-width: 575px) {
+              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-3 {
+                -webkit-box-flex: none;
+                -webkit-flex: none;
+                -moz-box-flex: none;
+                -moz-flex: none;
+                -ms-flex: none;
+                flex: none; } }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -moz-box-flex: 1;
+            -moz-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
+            @media (max-width: 575px) {
+              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
+                -webkit-box-flex: 0.6;
+                -webkit-flex: 0.6;
+                -moz-box-flex: 0.6;
+                -moz-flex: 0.6;
+                -ms-flex: 0.6;
+                flex: 0.6;
+                width: auto !important; } }
+            @media (max-width: 379px) {
+              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
+                -webkit-box-flex: 1;
+                -webkit-flex: 1;
+                -moz-box-flex: 1;
+                -moz-flex: 1;
+                -ms-flex: 1;
+                flex: 1; } }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .btn-custom-primary {
+            margin-right: 0; }
+          .teams-settings-rights-body .panel-body .table-header-fixed .input-row-open {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex; }
     .teams-settings-rights-body .table-01 {
       margin-bottom: 4.6rem; }
       .teams-settings-rights-body .table-01 tbody {
         max-height: 22.4rem !important; }
-    .teams-settings-rights-body .table-02 {
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important; }
-      .teams-settings-rights-body .table-02 tbody {
-        max-height: 22.4rem !important; }
+    .teams-settings-rights-body .table-02 tbody {
+      max-height: 22.4rem !important; }
     .teams-settings-rights-body .table-bottom-input {
       padding: 1.2rem 1.7rem;
       padding-right: 3rem;
