@@ -7,7 +7,10 @@
 
 html {
   width: 100%;
-  font-size: 62.5%; }
+  font-size: 60%; }
+  @media (max-width: 1720px) {
+    html {
+      font-size: 62.5%; } }
   @media (max-width: 1379px) {
     html {
       font-size: 59.5%; } }
@@ -426,18 +429,18 @@ i {
     width: 3.7rem;
     color: #c3c3c3; }
     .stars label::before {
-      content: "\f005";
-      font-family: FontAwesome;
+      content: "\e913";
+      font-family: 'app-icons';
       position: relative;
       display: block;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: #c1c1c1; }
     .stars label::after {
-      content: "\f005";
-      font-family: FontAwesome;
+      content: "\e913";
+      font-family: 'app-icons';
       position: absolute;
       display: block;
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: #ffd800;
       top: 0;
       opacity: 0; }
@@ -1144,10 +1147,10 @@ i {
           height: 2.1504rem;
           margin-left: 1.2rem; }
         .sidebar-menu-footer .btn-custom-white .apple-icon {
-          width: 2.2rem;
-          height: 2.2rem;
-          margin-bottom: 0.3rem;
-          margin-left: 0.3rem; }
+          width: 1.98rem;
+          height: 1.98rem;
+          margin-bottom: 0.15rem;
+          margin-left: 0.4rem; }
   .sidebar-menu-toggle {
     transform: rotateZ(0);
     display: -webkit-box;
@@ -2405,7 +2408,7 @@ i {
     border-top: 1px solid #e1e1e1; }
   .teams-settings-feedback-header {
     padding-top: 2.6rem;
-    margin-bottom: 4.8rem; }
+    margin-bottom: 3.5rem; }
   .teams-settings-feedback .btn-custom-primary {
     padding: .4em 1.2em;
     padding-bottom: .42em;
@@ -2941,7 +2944,7 @@ i {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
       grid-gap: 2.8rem 3.2rem;
-      max-height: calc(100vh - 36rem - 2px);
+      max-height: calc(100vh - 36.1rem - 2px);
       overflow-y: auto;
       scrollbar-width: none;
       /* Firefox */
@@ -3534,7 +3537,7 @@ i {
             width: 1.8rem; }
             .single-user-body .section-development .graph-card-body .bar-info, .single-user-body .section-development .graph-card-body .bar-fill-info {
               font-family: "HankRnd-Bold";
-              font-size: 1.025rem;
+              font-size: 1.15rem;
               bottom: -1rem; }
         .single-user-body .section-development .graph-card:nth-of-type(1) {
           border-right: 1.5px solid rgba(237, 237, 237, 0.75); }
@@ -3844,6 +3847,7 @@ i {
       max-width: 25.6rem; }
       .report-team-body .input-container input,
       .report-member-body .input-container input {
+        outline: none;
         padding-left: 3.5rem;
         width: 100%;
         height: 3.2rem;
@@ -3863,9 +3867,12 @@ i {
         border-radius: 5px;
         border: solid 1px #dedede;
         background-color: #ffffff; }
-        .report-team-body .input-container input:focus ~ .input-container-list,
-        .report-member-body .input-container input:focus ~ .input-container-list {
-          display: block; }
+        .report-team-body .input-container input:focus,
+        .report-member-body .input-container input:focus {
+          border-color: #0077cc; }
+          .report-team-body .input-container input:focus ~ .input-container-list,
+          .report-member-body .input-container input:focus ~ .input-container-list {
+            display: block; }
       .report-team-body .input-container i,
       .report-member-body .input-container i {
         font-size: 1.4rem;
@@ -3881,6 +3888,7 @@ i {
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
         border: solid 1px #dedede;
+        border-top: none;
         background-color: #ffffff;
         z-index: 5; }
         .report-team-body .input-container-list-item,
@@ -5275,345 +5283,255 @@ i {
           margin-top: 5.4rem; }
 
 .sign-in {
-  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
-  width: 100%;
-  padding: 1.5rem 1.7rem;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between; }
-  .sign-in .logo {
-    width: 4.4rem;
-    height: 4.4rem; }
-  .sign-in-card {
-    min-width: 36rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    position: absolute;
-    top: 44.3%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    .sign-in-card h2 {
-      margin-bottom: 1.3rem;
-      font-size: 2.9rem;
-      font-weight: 700;
-      line-height: 1.03;
-      letter-spacing: -0.1px;
-      color: #000000; }
-    .sign-in-card h3 {
-      margin-bottom: 2.9rem;
-      font-size: 1.9rem;
-      font-weight: 400;
-      line-height: 1.53;
-      color: #7f7f7f; }
-      .sign-in-card h3 a {
-        margin-left: .2rem;
-        font-weight: 500;
-        color: #159cff; }
-        .sign-in-card h3 a:hover, .sign-in-card h3 a:focus {
-          text-decoration: underline; }
-    .sign-in-card input {
-      padding: 1.1rem 1.45rem;
-      margin-bottom: 1.6rem;
-      width: 100%;
-      font-size: 1.5rem;
-      font-weight: 400;
-      line-height: 1.33;
-      color: #333;
-      box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
-      border: solid 1px #e8e8e8; }
-      .sign-in-card input::placeholder {
-        color: #9b9b9b; }
-    .sign-in-card .btn-custom-primary {
-      margin-top: .8rem;
-      margin-bottom: 1.8rem;
-      padding: 1.1rem 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      width: 100%;
-      font-size: 1.65rem;
-      font-weight: 500;
-      line-height: 1.27;
-      color: #ffffff;
-      border: none;
-      border-radius: .5rem;
-      background-color: #159cff; }
-    .sign-in-card .info {
-      margin-right: auto;
-      font-size: 1.35rem;
-      font-weight: 400;
-      line-height: 1.33;
-      color: #707070; }
-      .sign-in-card .info a {
-        color: #159cff; }
-        .sign-in-card .info a:hover, .sign-in-card .info a:focus {
-          text-decoration: underline; }
-  .sign-in footer {
-    padding-top: .85rem;
-    padding-bottom: 3rem;
-    -webkit-align-self: center;
-    -moz-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 120rem;
-    border-top: 1.25px solid #EAEAEA; }
-    .sign-in footer p {
-      font-size: 1.2rem;
-      font-weight: 500;
-      line-height: 2.5;
-      color: #868686; }
-      @media (max-width: 575px) {
-        .sign-in footer p {
-          font-size: 1rem; } }
-
-.get-started {
+  min-height: 60rem;
   position: relative;
-  width: 100%;
-  padding: 1.5rem 1.7rem;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
+  align-items: center;
   justify-content: space-between; }
-  .get-started .logo {
-    width: 4.4rem;
-    height: 4.4rem; }
-  .get-started-card {
-    max-width: 36rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
+  .sign-in .btn {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color .3s;
+    white-space: nowrap;
+    border: solid 1.5px transparent; }
+    .sign-in .btn-primary {
+      color: #FFF;
+      background-color: #48bc20; }
+      .sign-in .btn-primary:hover, .sign-in .btn-primary:focus {
+        background-color: #76dd53; }
+      .sign-in .btn-primary.outline {
+        color: #48bc20;
+        background-color: #FFF;
+        border-color: #48bc20; }
+        .sign-in .btn-primary.outline:hover, .sign-in .btn-primary.outline:focus {
+          color: #fff;
+          border-color: #76dd53;
+          background-color: #76dd53; }
+  .sign-in .show-md {
+    display: none; }
+    @media (max-width: 991px) {
+      .sign-in .show-md {
+        display: inline-flex; } }
+  .sign-in .show-xsm {
+    display: none; }
+    @media (max-width: 575px) {
+      .sign-in .show-xsm {
+        display: inline-flex; } }
+  @media (max-width: 991px) {
+    .sign-in .hide-md {
+      display: none !important; } }
+  @media (max-width: 767px) {
+    .sign-in .hide-sm {
+      display: none !important; } }
+  @media (max-width: 575px) {
+    .sign-in .hide-xsm {
+      display: none !important; } }
+  @media (max-width: 379px) {
+    .sign-in .hide-xxsm {
+      display: none !important; } }
+  .sign-in .invisible {
+    visibility: hidden;
+    opacity: 0; }
+  .sign-in .onscreen {
+    transform: translate(0, 0) !important; }
+  .sign-in.get-started {
+    min-height: 69rem; }
+  .sign-in.reset-password-01 {
+    min-height: 50rem; }
+  .sign-in.reset-password-02 {
+    min-height: 65rem; }
+  .sign-in-header {
+    width: 100%;
+    padding: 1.2rem 1.5rem; }
+    .sign-in-header-img {
+      margin-right: auto;
+      width: 5rem;
+      height: 5rem; }
+  .sign-in-card {
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 43rem;
     position: absolute;
-    top: 48.4%;
+    top: 46.2%;
     left: 50%;
     transform: translate(-50%, -50%); }
-    .get-started-card h2 {
-      margin-bottom: 1.3rem;
-      font-size: 2.9rem;
+    .sign-in-card.get-started {
+      top: 47%; }
+      @media (max-width: 767px) {
+        .sign-in-card.get-started {
+          top: 45%; } }
+      @media (max-width: 379px) {
+        .sign-in-card.get-started {
+          top: 49%; } }
+    .sign-in-card.reset-password-01 {
+      top: 42.4%; }
+    .sign-in-card.reset-password-02 {
+      top: 50%; }
+      @media (max-width: 767px) {
+        .sign-in-card.reset-password-02 {
+          top: 45%; } }
+      @media (max-width: 379px) {
+        .sign-in-card.reset-password-02 {
+          top: 49%; } }
+    .sign-in-card-title {
+      margin-bottom: 1.65rem;
+      font-size: 3.1rem;
       font-weight: 700;
-      line-height: 1.03;
+      line-height: 1;
       letter-spacing: -0.1px;
+      text-align: center;
       color: #000000; }
-    .get-started-card h3 {
-      margin-bottom: 3rem;
-      font-size: 1.9rem;
+      .sign-in-card-title.get-started {
+        margin-bottom: 1.65rem; }
+    .sign-in-card-subtitle {
+      margin-bottom: 3.45rem;
+      font-size: 2.1rem;
       font-weight: 400;
-      line-height: 1.53;
-      color: #7f7f7f; }
-      .get-started-card h3 a {
-        margin-left: .2rem;
-        font-weight: 500;
-        color: #159cff; }
-        .get-started-card h3 a:hover, .get-started-card h3 a:focus {
+      line-height: 1.43;
+      text-align: center;
+      color: #606060; }
+      .sign-in-card-subtitle.reset-password-01 {
+        font-size: 1.9rem;
+        line-height: 1.58; }
+      .sign-in-card-subtitle.reset-password-02 {
+        margin-left: -10rem;
+        margin-right: -10rem;
+        font-size: 1.9rem;
+        line-height: 1.58; }
+        @media (max-width: 575px) {
+          .sign-in-card-subtitle.reset-password-02 {
+            margin-left: 0;
+            margin-right: 0; } }
+    .sign-in-card-redirect {
+      margin-bottom: 3.58rem;
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 1.58;
+      text-align: center;
+      color: #606060; }
+      .sign-in-card-redirect a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #48bc20; }
+        .sign-in-card-redirect a:hover, .sign-in-card-redirect a:focus {
           text-decoration: underline; }
-    .get-started-card input {
-      padding: 1.1rem 1.45rem;
-      margin-bottom: 2.4rem;
+      .sign-in-card-redirect.small {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 1.36;
+        text-align: left;
+        color: #707070; }
+        .sign-in-card-redirect.small a {
+          font-weight: 500; }
+    .sign-in-card-input {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 2rem;
+      padding: 1.4rem 1.6rem;
       width: 100%;
       font-size: 1.5rem;
       font-weight: 400;
+      color: #1c1c1c;
       line-height: 1.33;
-      color: #333;
+      border-radius: 4px;
       box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
-      border: solid 1px #e8e8e8; }
-      .get-started-card input::placeholder {
+      border: solid 1px #e8e8e8;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+      .sign-in-card-input:focus {
+        outline-color: #48bc20; }
+      .sign-in-card-input::placeholder {
         color: #9b9b9b; }
-      .get-started-card input:last-of-type {
-        margin-bottom: 1rem; }
-    .get-started-card .input-container {
-      margin-bottom: 2.5rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex; }
-      .get-started-card .input-container input {
-        margin-bottom: 0; }
-      .get-started-card .input-container input:not(:last-of-type) {
-        margin-right: .9rem; }
-    .get-started-card .characters {
-      margin-left: .3rem;
-      margin-bottom: 2.4rem;
-      margin-right: auto;
-      font-size: 1.4rem;
-      line-height: 1.36;
+      .sign-in-card-input.get-started {
+        margin-bottom: 2.43rem; }
+        .sign-in-card-input.get-started:last-of-type {
+          margin-bottom: 1.1rem; }
+      .sign-in-card-input.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+    .sign-in-card .input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 1rem;
+      align-items: flex-start; }
+      @media (max-width: 379px) {
+        .sign-in-card .input-container {
+          grid-template-columns: 1fr; } }
+      .sign-in-card .input-container input:last-of-type {
+        margin-bottom: 2rem; }
+    .sign-in-card-password-info {
+      margin-bottom: 3rem;
+      margin-left: .4rem;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.38;
       color: #707070; }
-      .get-started-card .characters i {
-        margin-right: .5rem;
-        font-size: .7rem; }
-    .get-started-card .checkbox-container {
-      margin-left: .5rem;
-      margin-bottom: 2.7rem;
-      width: 100%;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
+      .sign-in-card-password-info-icon {
+        margin-right: .6rem;
+        font-size: .9rem; }
+    .sign-in-card-check {
+      margin-bottom: 3rem;
+      margin-left: .3rem;
       display: flex;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      -webkit-justify-content: flex-start;
-      -moz-justify-content: flex-start;
-      justify-content: flex-start;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
       align-items: center; }
-      .get-started-card .checkbox-container .pretty {
+      .sign-in-card-check .pretty {
         margin-right: 0;
-        font-size: 1.3rem; }
-      .get-started-card .checkbox-container .cb-label {
-        margin-left: .3rem;
+        font-size: 1.45rem; }
+      .sign-in-card-check-label {
+        font-family: 'Roboto', sans-serif;
         font-size: 1.3rem;
         font-weight: 400;
+        line-height: 1.38;
         color: #707070; }
-        .get-started-card .checkbox-container .cb-label a {
-          font-weight: 500;
-          color: #159cff; }
-          .get-started-card .checkbox-container .cb-label a:hover, .get-started-card .checkbox-container .cb-label a:focus {
+        .sign-in-card-check-label a {
+          text-decoration: none;
+          color: #48bc20; }
+          .sign-in-card-check-label a:hover, .sign-in-card-check-label a:focus {
             text-decoration: underline; }
-    .get-started-card .btn-custom-primary {
-      margin-bottom: 1.8rem;
+    .sign-in-card .btn-primary {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1.9rem;
       padding: 1.1rem 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
       width: 100%;
-      font-size: 1.65rem;
+      font-size: 2rem;
       font-weight: 500;
-      line-height: 1.27;
-      color: #ffffff;
-      border: none;
-      border-radius: .5rem;
-      background-color: #159cff; }
-    .get-started-card .info {
-      margin-right: auto;
-      font-size: 1.35rem;
-      font-weight: 400;
-      line-height: 1.33;
-      color: #707070; }
-      .get-started-card .info a {
-        color: #159cff; }
-        .get-started-card .info a:hover, .get-started-card .info a:focus {
-          text-decoration: underline; }
-  .get-started footer {
-    padding-top: .85rem;
-    padding-bottom: 3rem;
-    -webkit-align-self: center;
-    -moz-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    justify-content: space-between;
-    width: 100%;
+      line-height: 1.3; }
+      .sign-in-card .btn-primary.get-started {
+        padding: 1.3rem 0;
+        font-size: 1.7rem; }
+      .sign-in-card .btn-primary.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+        .sign-in-card .btn-primary.disabled:hover, .sign-in-card .btn-primary.disabled:focus {
+          background-color: #48bc20; }
+  .sign-in-footer {
+    width: 92%;
     max-width: 120rem;
+    padding: .3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-top: 1.25px solid #EAEAEA; }
-    .get-started footer p {
+    .sign-in-footer-text {
+      font-family: 'Open Sans', sans-serif;
       font-size: 1.2rem;
       font-weight: 500;
       line-height: 2.5;
       color: #868686; }
       @media (max-width: 575px) {
-        .get-started footer p {
-          font-size: 1rem; } }
+        .sign-in-footer-text {
+          margin: 0 auto; } }
 
 @media (max-width: 1024px) {
   body,
