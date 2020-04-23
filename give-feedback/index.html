@@ -1,0 +1,745 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Give Feedback</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <!-- <img src="../public/svg/sidenav-logo.svg" alt="logo"> -->
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar-main-item active">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#" data-toggle="modal" data-target="#createNewTeamModal01">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="#" class="sidebar-menu-footer-create-new"  data-toggle="modal"
+                    data-target="#followNewTeamModal">Follow a new team</a>
+                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Give feedback</h1>
+                        <p class="header-top-left-small text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <i class="icon-bell bell"></i>
+    
+                        <div class="dropdown-custom">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="./sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="give-feedback">
+
+                <div class="give-feedback-people">
+                    <div class="give-feedback-people-header">
+                        <img src="../public/img/cupsx2.png" alt="Clipart of mugs">
+                        <h2 class="text-truncate">Hey Max, welcome to give feedback<span class="text-truncate">Please select a person below.</span></h2>
+                    </div>
+                    <div class="input-container">
+                        <i class="icon-user-outline"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                    <div class="give-feedback-people-body" data-toggle="modal" data-target="#feedbackModal">
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-05.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-07.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-08.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-01.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-09.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-02.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+                        <div class="give-feedback-people-body-person">
+                            <img src="../public/img/p-04.png" alt="Users image">
+                            <p>Fred Okello</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Feedback Modal -->
+                <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="../public/img/p-05.png" alt="User's profile picture">
+                            <h5 class="modal-title" id="feedbackModalLabel">Give feedback to
+                                <span class="name">Juulia Martinez</span>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-close"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="rating productivity">
+                                <p>Productivity</p>
+                                <div class="stars">
+                                    <input type="radio" name="productivity" id="productivity1">
+                                    <label for="productivity1"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity2">
+                                    <label for="productivity2"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity3">
+                                    <label for="productivity3"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity4">
+                                    <label for="productivity4"></label>
+            
+                                    <input type="radio" name="productivity" id="productivity5">
+                                    <label for="productivity5"></label>
+                                </div>
+                            </div>
+
+                            <div class="rating teamworking">
+                                <p>Teamworking</p>
+                                <div class="stars">
+                                    <input type="radio" name="teamworking" id="teamworking1">
+                                    <label for="teamworking1"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking2">
+                                    <label for="teamworking2"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking3">
+                                    <label for="teamworking3"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking4">
+                                    <label for="teamworking4"></label>
+            
+                                    <input type="radio" name="teamworking" id="teamworking5">
+                                    <label for="teamworking5"></label>
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="improvement">Add an improvement idea</label>
+                                <input type="text" id="improvement" name="improvement" placeholder="Write here...">
+                            </div>
+
+                            <div class="input-container">
+                                <label for="compliment">Add a compliment</label>
+                                <input type="text" id="compliment" name="compliment" placeholder="Write here...">
+                            </div>
+
+                            <a href="#" class="btn-custom-primary">Send feedback</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Create New Team Modal -->
+                <div class="modal fade" id="createNewTeamModal" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="createNewTeamModalTitle">Create a new team</h5>
+                        <i class="icon-bell bell"></i>
+                        <img class="face" src="../public/img/facex2.png" alt="#">
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-container name">
+                                <label for="name">Name of team</label>
+                                <input type="text" id="name" name="name" placeholder="Enter here...">
+                            </div>
+
+                            <div class="double-input">
+                                <div class="input-container description">
+                                    <label for="desc">Team description</label>
+                                    <input type="text" id="desc" name="desc" placeholder="Enter here...">
+                                </div>
+
+                                <div class="input-container lead">
+                                    <label for="lead">Team lead <span>&#x1F6C8;</span></label>
+                                    
+                                    <select name="lead" id="lead">
+                                        <option value="value01" selected>Me</option>
+                                        <option value="value02">Option I</option>
+                                        <option value="value03">Option II</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="input-container member">
+                                <label for="member">Team members</label>
+                                <input type="text" id="member" name="member" placeholder="Enter name or email">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn-custom-primary">Create team</a>
+                            <a href="#" class="btn-custom-primary outline" data-dismiss="modal">Cancel</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- CREATE TEAM MODAL 01 -->
+                <div class="modal fade modal-custom" id="createNewTeamModal01" tabindex="-1" role="dialog"
+                    aria-labelledby="createNewTeamModal01Title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="replace">
+                                    <h3 class="modal-custom-title">Create a new team</h3>
+                                    <h5 class="modal-custom-subtitle">Please enter informations below.</h5>
+                                    <img src="../public/img/user-placeholder.png" alt="Profile picture"
+                                        class="modal-custom-img">
+                                    <p class="modal-custom-info"><a href="#">Upload</a> a profile picture for your team
+                                    </p>
+                                    <input type="text" class="modal-custom-input" id="m-01-team-name"
+                                        name="m-01-team-name" placeholder="Team name">
+                                    <input type="text" class="modal-custom-input" id="m-01-team-desc"
+                                        name="m-01-team-desc" placeholder="Short description">
+                                </div>
+                                <a href="#" class="modal-custom-btn-round">Confirm</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CREATE TEAM MODAL 02 -->
+                <!-- <div class="modal fade modal-custom" id="createNewTeamModal02" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal02Title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-close"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="modal-custom-title">Invite members</h3>
+                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+                            <a href="#" class="modal-custom-btn-round">Confirm</a>
+                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
+                        </div>
+                    </div>
+                    </div>
+                </div> -->
+
+                <!-- FOLLOW NEW TEAM MODAL -->
+                <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog"
+                    aria-labelledby="followNewTeamModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Follow a new team</h3>
+                                <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
+                                <div class="input-container">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="modal-custom-input" id="ft-search" name="ft-search"
+                                        placeholder="Search">
+                                </div>
+                                <div class="modal-custom-list">
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="modal-custom-btn-round">Request rights to follow this team</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW INVITATION MODAL -->
+                <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog"
+                    aria-labelledby="newInvitationModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">New invitation</h3>
+                                <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
+                                <img src="../public/img/user-placeholder.png" alt="Profile picture"
+                                    class="modal-custom-img">
+                                <p class="modal-custom-team-name">Team MSM Super Engineers</p>
+                                <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
+                                <a href="#" class="modal-custom-btn-round">Join team</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            </main>
+        </div>
+    </div>
+
+
+
+        <script src="../public/js/jquery-3.4.1.min.js"></script>
+        <script src="../public/js/bootstrap.bundle.js"></script>
+        <script src="../public/js/main.js"></script>
+
+        <script>
+            // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
+            document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click',
+                createNewTeamModalDialog)
+
+            function createNewTeamModalDialog() {
+                const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
+                const modalReplace = modalBody.querySelector('.replace');
+                const modalContent = modalReplace.innerHTML;
+                const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
+                const modalCancel = modalBody.querySelector('.modal-custom-cancel');
+                let step = 0;
+
+                modalBtn.addEventListener('click', function () {
+                    step++;
+                    modalReplace.innerHTML = `
+                            <h3 class="modal-custom-title">Invite members</h3>
+                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+                        `;
+                })
+
+                modalCancel.addEventListener('click', function () {
+                    step !== 0 && (
+                        setTimeout(function () {
+                            modalReplace.innerHTML = modalContent;
+                        }, 500)
+                    );
+                })
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Settings - Rights</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item active">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <a href="#" data-toggle="modal" data-target="#createNewTeamModal01">
+                        <i class="icon-plus-circle"></i>
+                    </a>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="../create-new-team/index.html" class="sidebar-menu-footer-create-new">Create a new team</a>
+                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
+                        <p class="header-top-left-small text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+    
+                        <i class="icon-bell bell"></i>
+    
+                        <div class="dropdown-custom">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+    
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="./sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html" class="active">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="teams-settings-rights">
+                <div class="teams-settings-rights-header">
+                    <a href="../teams-settings-general/index.html" class="btn-custom-primary outline">General</a>
+                    <a href="../teams-settings-feedback/index.html" class="btn-custom-primary outline">Feedback
+                        settings</a>
+                    <a href="../teams-settings-rights/index.html" class="btn-custom-primary">Rights</a>
+                </div>
+
+                <div class="teams-settings-rights-body">
+                    <div class="section-caption">
+                        <div class="section-caption-info">
+                            <p class="subheader-text">Viewing rights</p>
+                            <p class="subheader-text-small">Share viewing rights to this team with other peoples
+                                who should have access to follow the feedback data of this team.</p>
+                        </div>
+                        <a href="#" class="btn-custom-primary outline" data-toggle="modal"
+                        data-target="#viewingRightsModal">Add rights</a>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <table class="table-header-fixed flex-table table-01">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Job title</th>
+                                        <th>
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-list"></i>
+                                                    <i class="icon-caret-down"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 5</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-header-fixed-col-1">
+                                            <a href="../single-user/index.html">Martin Billo</a>
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <p>martin.billo@gmail.com</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                            <p>Team lead</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-ellipsis"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">View
+                                                            profile</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Delete
+                                                            member</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="table-header-fixed-col-1">
+                                            <a href="../single-user/index.html">Jörgen Vogel</a>
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <p>jörgen.vogel@gmail.com</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                            <p>Cleaning man</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-ellipsis"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">View
+                                                            profile</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Delete
+                                                            member</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="section-caption">
+                        <div class="section-caption-info">
+                            <p class="subheader-text">Admin rights</p>
+                            <p class="subheader-text-small">Share admin rights only with the people who should have the
+                                rights to manage everything related to this team.</p>
+                        </div>
+                        <a href="#" class="btn-custom-primary outline add-admin-rights-trigger">Add rights</a>
+                    </div>
+
+                    <div class="panel panel-default ">
+                        <div class="panel-body">
+                            <table class="table-header-fixed flex-table table-02">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Job title</th>
+                                        <th>
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-list"></i>
+                                                    <i class="icon-caret-down"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Option 5</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-header-fixed-col-1">
+                                            <a href="../single-user/index.html">Martin Billo</a>
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <p>martin.billo@gmail.com</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                            <p>Team lead</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-ellipsis"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">View
+                                                            profile</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Delete
+                                                            member</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="table-header-fixed-col-1">
+                                            <a href="../single-user/index.html">Jörgen Vogel</a>
+                                        </td>
+                                        <td class="table-header-fixed-col-2">
+                                            <p>jörgen.vogel@gmail.com</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-3">
+                                            <p>Cleaning man</p>
+                                        </td>
+                                        <td class="table-header-fixed-col-4">
+                                            <div class="dropdown-custom">
+                                                <a href="#" class="dropdown-custom-trigger">
+                                                    <i class="icon-ellipsis"></i>
+                                                </a>
+                                                <ul class="dropdown-custom-list">
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">View
+                                                            profile</a>
+                                                    </li>
+
+                                                    <li class="dropdown-custom-list-item">
+                                                        <a href="#" class="dropdown-custom-list-item-link">Delete
+                                                            member</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                            <div class="table-bottom-input">
+                                <div class="table-bottom-input-col-1">
+                                    <input type="text" placeholder="Enter name...">
+                                </div>
+                                <div class="table-bottom-input-col-2">
+                                    <input type="text" placeholder="Enter email...">
+                                </div>
+                                <div class="table-bottom-input-col-3">
+                                    <a href="#" class="btn-custom-primary outline blue">Confirm</a>
+                                    <a href="#" class="btn-custom-primary outline">Cancel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIEWING RIGHTS MODAL -->
+                <div class="modal fade modal-custom" id="viewingRightsModal" tabindex="-1" role="dialog"
+                    aria-labelledby="viewingRightsModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Create new viewing rights</h3>
+                                <h5 class="modal-custom-subtitle">In the team: Software Development</h5>
+                                <input type="email" class="modal-custom-input" id="vr-email" name="vr-email"
+                                    placeholder="Enter email">
+                                <a href="#" class="modal-custom-btn-round">Create Rights</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADMIN RIGHTS MODAL -->
+                <!-- <div class="modal fade modal-custom" id="adminRightsModal" tabindex="-1" role="dialog"
+                    aria-labelledby="adminRightsModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Create new admin rights</h3>
+                                <h5 class="modal-custom-subtitle">In the team: Software Development</h5>
+                                <input type="email" class="modal-custom-input" id="vr-email" name="vr-email"
+                                    placeholder="Enter email">
+                                <a href="#" class="modal-custom-btn-round">Create Rights</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- CREATE TEAM MODAL 01 -->
+                <div class="modal fade modal-custom" id="createNewTeamModal01" tabindex="-1" role="dialog"
+                    aria-labelledby="createNewTeamModal01Title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="replace">
+                                    <h3 class="modal-custom-title">Create a new team</h3>
+                                    <h5 class="modal-custom-subtitle">Please enter informations below.</h5>
+                                    <img src="../public/img/user-placeholder.png" alt="Profile picture"
+                                        class="modal-custom-img">
+                                    <p class="modal-custom-info"><a href="#">Upload</a> a profile picture for your team
+                                    </p>
+                                    <input type="text" class="modal-custom-input" id="m-01-team-name"
+                                        name="m-01-team-name" placeholder="Team name">
+                                    <input type="text" class="modal-custom-input" id="m-01-team-desc"
+                                        name="m-01-team-desc" placeholder="Short description">
+                                </div>
+                                <a href="#" class="modal-custom-btn-round">Confirm</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CREATE TEAM MODAL 02 -->
+                <!-- <div class="modal fade modal-custom" id="createNewTeamModal02" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal02Title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="icon-close"></i>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="modal-custom-title">Invite members</h3>
+                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+                            <a href="#" class="modal-custom-btn-round">Confirm</a>
+                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
+                        </div>
+                    </div>
+                    </div>
+                </div> -->
+
+                <!-- FOLLOW NEW TEAM MODAL -->
+                <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog"
+                    aria-labelledby="followNewTeamModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">Follow a new team</h3>
+                                <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
+                                <div class="input-container">
+                                    <i class="icon-search"></i>
+                                    <input type="text" class="modal-custom-input" id="ft-search" name="ft-search"
+                                        placeholder="Search">
+                                </div>
+                                <div class="modal-custom-list">
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+
+                                    <div class="modal-custom-list-item">
+                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
+                                        <p>Exapmle team <span>100 members</span></p>
+                                        <a href="#">Select</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="modal-custom-btn-round">Request rights to follow this team</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
+                                    aria-label="Close">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW INVITATION MODAL -->
+                <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog"
+                    aria-labelledby="newInvitationModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="icon-close"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="modal-custom-title">New invitation</h3>
+                                <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
+                                <img src="../public/img/user-placeholder.png" alt="Profile picture"
+                                    class="modal-custom-img">
+                                <p class="modal-custom-team-name">Team MSM Super Engineers</p>
+                                <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
+                                <a href="#" class="modal-custom-btn-round">Join team</a>
+                                <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+        // ADD RIGHTS
+        var addAdminRight = document.querySelector('.add-admin-rights-trigger');
+        console.log(addAdminRight)
+        var tableBottomInput = document.querySelector('.table-bottom-input');
+        addAdminRight.addEventListener('click', function() {
+            tableBottomInput.classList.toggle('table-bottom-input-open');
+        })
+        // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
+        document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click',
+            createNewTeamModalDialog)
+
+        function createNewTeamModalDialog() {
+            const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
+            const modalReplace = modalBody.querySelector('.replace');
+            const modalContent = modalReplace.innerHTML;
+            const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
+            const modalCancel = modalBody.querySelector('.modal-custom-cancel');
+            let step = 0;
+
+            modalBtn.addEventListener('click', function () {
+                step++;
+                modalReplace.innerHTML = `
+            <h3 class="modal-custom-title">Invite members</h3>
+            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
+            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
+            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
+            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
+            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
+        `;
+            })
+
+            modalCancel.addEventListener('click', function () {
+                step !== 0 && (
+                    setTimeout(function () {
+                        modalReplace.innerHTML = modalContent;
+                    }, 500)
+                );
+            })
+        }
+    </script>
+</body>
+
+</html>
