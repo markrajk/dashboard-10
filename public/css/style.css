@@ -1263,8 +1263,6 @@ i {
           border-radius: 1.6rem; }
           .header-top-right .input-container input::placeholder {
             color: #9699a6; }
-          .header-top-right .input-container input i {
-            margin-top: -.1rem; }
         .header-top-right .input-container i {
           position: absolute;
           top: 50%;
@@ -1277,8 +1275,8 @@ i {
         height: 3.2rem; }
       .header-top-right .notification-menu .dropdown-custom-trigger {
         padding: 0;
-        margin-left: 1.3rem;
-        margin-right: 2rem;
+        margin-left: .2rem;
+        margin-right: .2rem;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -1311,16 +1309,17 @@ i {
         border: solid 1px #e0e2e5;
         background-color: #ffffff; }
         .header-top-right .notification-menu .dropdown-custom-list-header {
-          padding: 1.25rem 1.7rem 1rem; }
+          padding: 1.8rem 1.7rem 1rem;
+          border-bottom: 1px solid #E6E8EB; }
           .header-top-right .notification-menu .dropdown-custom-list-header-text {
             font-size: 1.5rem;
             font-weight: 400;
             line-height: 1.33;
             color: #3d464d; }
           .header-top-right .notification-menu .dropdown-custom-list-header-small {
-            padding: .85rem 1.7rem;
-            border-top: 1px solid #E6E8EB;
-            border-bottom: 1px solid #E6E8EB; }
+            padding: .85rem 1.7rem; }
+            .header-top-right .notification-menu .dropdown-custom-list-header-small:not(:first-of-type) {
+              border-top: 1px solid #E6E8EB; }
             .header-top-right .notification-menu .dropdown-custom-list-header-small-text {
               font-size: 1.3rem;
               font-weight: 500;
@@ -1328,17 +1327,10 @@ i {
               color: #6a7c8f; }
         .header-top-right .notification-menu .dropdown-custom-list-body {
           max-height: 39.4rem;
-          overflow-y: auto;
-          scrollbar-width: none;
-          /* Firefox */
-          -ms-overflow-style: none;
-          /* Internet Explorer 10+ */ }
-          .header-top-right .notification-menu .dropdown-custom-list-body::-webkit-scrollbar {
-            /* WebKit */
-            width: 0;
-            height: 0; }
+          overflow-y: auto; }
           .header-top-right .notification-menu .dropdown-custom-list-body-notification {
             padding: 1.25rem 1.7rem;
+            padding-bottom: 1rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -1348,7 +1340,8 @@ i {
             -ms-flex-align: start;
             -webkit-align-items: flex-start;
             -moz-align-items: flex-start;
-            align-items: flex-start; }
+            align-items: flex-start;
+            border-top: 1px solid #E6E8EB; }
             .header-top-right .notification-menu .dropdown-custom-list-body-notification-img {
               margin-right: 1.6rem;
               width: 3.3rem;
@@ -1365,21 +1358,25 @@ i {
             .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons {
               margin-bottom: 1.2rem; }
               .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .btn-custom-primary {
-                padding: .6rem 1.9rem;
-                font-size: 1.3rem; }
+                padding: .6rem 1.3rem;
+                font-size: 1.3rem;
+                font-weight: 400;
+                border-radius: 6px;
+                border: solid 1px #d1d5da;
+                background-color: transparent; }
                 .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .btn-custom-primary.confirm {
                   color: #4dc424; }
                 .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .btn-custom-primary.deny {
                   color: #fd0000; }
                 .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .btn-custom-primary:nth-of-type(1) {
-                  margin-right: 1.2rem; }
+                  margin-right: .5rem; }
             .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-when {
               font-size: 1.3rem;
               font-weight: 400;
               line-height: 1.38;
               color: #1579e6; }
-            .header-top-right .notification-menu .dropdown-custom-list-body-notification:not(:last-of-type) {
-              border-bottom: 1px solid #E6E8EB; }
+            .header-top-right .notification-menu .dropdown-custom-list-body-notification:hover {
+              background-color: #f5f5f5; }
       .header-top-right .user-menu .dropdown-custom {
         padding: 0; }
         .header-top-right .user-menu .dropdown-custom-trigger {
@@ -2159,16 +2156,21 @@ i {
         font-size: 1.4rem;
         line-height: 1.36;
         border-radius: 3px;
-        border: solid 1px #c1c7cd; }
+        border: solid 1px #CFD7E0;
+        color: #333;
+        font-weight: 400; }
         @media (max-width: 379px) {
           .teams-people-view-header .input-container input {
             font-size: .95rem; } }
+        .teams-people-view-header .input-container input::placeholder {
+          color: #9B9FA3; }
       .teams-people-view-header .input-container i {
         position: absolute;
         top: 50%;
         left: 0;
         font-size: 1.5rem;
-        transform: translate(50%, -50%); }
+        transform: translate(50%, -50%);
+        color: #9B9FA3; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .teams-people-view-body {
       max-height: calc(100vh - 35rem);
@@ -2425,10 +2427,30 @@ i {
 
 .teams-settings-general {
   padding: 2.5rem 0;
-  border-top: 1px solid #e1e1e1;
-  max-width: 72rem;
-  padding-top: 2.6rem; }
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: calc(100%  -  72rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  .teams-settings-general::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+  .teams-settings-general::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 80rem;
+    max-width: 80rem;
+    border-top: 1px solid #e1e1e1; }
   .teams-settings-general-header {
+    padding-top: 2.6rem;
+    padding-bottom: 2.5rem;
     margin-bottom: 3rem; }
     .teams-settings-general-header .btn-custom-primary {
       padding: .4em 1.2em;
@@ -2708,7 +2730,8 @@ i {
     top: 0;
     left: 0;
     z-index: 10;
-    max-width: 80.5rem;
+    width: 80rem;
+    max-width: 80rem;
     border-top: 1px solid #e1e1e1; }
   .teams-settings-rights-header {
     padding-top: 2.6rem;
@@ -2885,9 +2908,9 @@ i {
           font-size: 1.3rem;
           color: #647282; }
         .teams-settings-rights-body .panel-body .table-header-fixed .choose .confirm, .teams-settings-rights-body .panel-body .table-header-fixed .choose .divider {
-          color: #fd0000; }
-        .teams-settings-rights-body .panel-body .table-header-fixed .choose .deny {
           color: #00d900; }
+        .teams-settings-rights-body .panel-body .table-header-fixed .choose .deny {
+          color: #fd0000; }
         .teams-settings-rights-body .panel-body .table-header-fixed .choose .divider {
           font-weight: 500;
           margin: 0 .15rem; }
