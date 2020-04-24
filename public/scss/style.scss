@@ -1673,6 +1673,11 @@ i {
   }
 }
 
+.inv {
+  visibility: hidden;
+  opacity: 0;
+}
+
 // ==================================
 // SIDEBAR START
 // ==================================
@@ -7654,6 +7659,188 @@ i {
 // ==================================
 // SIGN IN END
 // ==================================
+
+
+
+// ==================================
+// PAGE NOT FOUND START
+// ==================================
+.page-not-found {
+  
+  &-title {
+    margin-top: 13.7rem;
+    margin-bottom: .85rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.32;
+    letter-spacing: -0.28px;
+    color: #1f1f1f;
+  }
+
+  &-text-small {
+    margin-bottom: 2.75rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.29;
+    color: #7d808e;
+  }
+
+  &-textarea {
+    margin-bottom: 1.8rem;
+    padding: 1.1rem 1.4rem;
+    display: block;
+    width: 100%;
+    max-width: 55.5rem;
+    height: 16.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: -0.17px;
+    color: #333;
+    border-radius: 1px;
+    border: solid 1px #cfd7e0;
+    background-color: #ffffff;
+
+    &::placeholder {
+      color: #9b9fa3;
+    }
+  }
+
+  & .btn-custom-primary {
+    padding: .8rem 1.9rem;
+    border-radius: 3px;
+    background-color: #1273dd;
+    border-color: #1273dd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #ffffff;
+  }
+}
+// ==================================
+// PAGE NOT FOUND END
+// ==================================
+
+
+
+// ==================================
+// CUSTOMER SERVICE START
+// ==================================
+.customer-service {
+  width: 100%;
+  max-width: 97.9rem;
+
+  &-title {
+    margin-top: 9.8rem;
+    margin-bottom: .85rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.32;
+    letter-spacing: -0.28px;
+    color: #1f1f1f;
+  }
+
+  &-text-small {
+    margin-bottom: 2.75rem;
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.29;
+    color: #7d808e;
+
+    & a {
+      color: #0966ff;
+    }
+  }
+
+  &-input {
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+
+    @include respond(desktop-xxsm) {
+      @include flex-direction(column);
+    }
+
+    &-container {
+      width: 47.5%;
+      //max-width: 46.4rem;
+
+      @include respond(desktop-xxsm) {
+        width: 100%;
+      }
+
+      & select {
+        margin-bottom: 2.8rem;
+        width: 100%;
+        outline: none;
+        padding: 1.2rem 1.1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.33;
+        color: #637381;
+        border-radius: 1px;
+        border: solid 1px #d0d0d3;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
+
+        & option {
+          font-size: 1.5rem;
+          padding-left: 1.3rem;
+        }
+      }
+    }
+  }
+
+  & label {
+    margin-bottom: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.33;
+    color: #3d464d;
+  }
+
+  &-textarea {
+    margin-bottom: 3.1rem;
+    padding: 1.1rem 1.4rem;
+    display: block;
+    width: 100%;
+    height: 12rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: -0.17px;
+    color: #333;
+    border-radius: 1px;
+    border: solid 1px #cfd7e0;
+    background-color: #ffffff;
+
+    &::placeholder {
+      color: #9b9fa3;
+    }
+  }
+
+  & .btn-custom-primary {
+    padding: .8rem 1.9rem;
+    border-radius: 3px;
+    background-color: #1273dd;
+    border-color: #1273dd;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #ffffff;
+  }
+}
+// ==================================
+// CUSTOMER SERVICE END
+// ==================================
+
 
 
 // ==================================
