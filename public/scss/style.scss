@@ -2035,96 +2035,235 @@ i {
 
       }
   
-      & .bell {
-        margin-left: 1.3rem;
-        margin-right: 2rem;
-        font-size: 2rem;
-        color: #647282;
-      }
-  
       & .face {
         width: 3.2rem;
         height: 3.2rem;
       }
 
-      & .dropdown-custom {
-        padding: 0;
-        
-        &-trigger {
-          border: 0;
-          margin: 0;
-          padding: 0;
-          border-radius: 50%;
-          border: 2.5px solid transparent;
-  
-          &:focus,
-          &:active {
-            border-radius: 50%;
-            border: 2.5px solid #A6BDEB;
-            box-shadow: none;
-          }
-        }
-  
-        &-list {
-          min-width: 26.6rem;
-  
-          &-header {
-            margin-bottom: 1.5rem;
-            padding: 2.3rem 1.6rem;
+      .notification-menu {
+
+        & .dropdown-custom {
+          
+
+          &-trigger {
+            padding: 0;
+            margin-left: 1.3rem;
+            margin-right: 2rem;
             @include flexbox;
+            @include justify-content(center);
             @include align-items(center);
-            border-bottom: 1px solid #E6E8EB;
-  
-            & img {
-              margin-right: 1.2rem;
-              width: 4rem;
-              height: 4rem;
-              border-radius: 50%;
+            width: 3.8rem;
+            height: 3.8rem;
+            border: 0;
+            border-radius: 50%;
+            border: 2.5px solid transparent;
+
+            &:focus,
+            &:active {
+              border: 2.5px solid #A6BDEB;
+              box-shadow: none;
             }
-  
-            & .user-info {
-  
-              &-name {
+           
+            & i {
+              font-size: 2rem;
+              color: #647282;  
+            }
+          }
+
+          &-list {
+            width: 37.6rem;
+            max-width: 37.6rem;
+            // box-shadow: 0 5px 10px 0 rgba(139, 139, 139, 0.08);
+            border: solid 1px #e0e2e5;
+            background-color: #ffffff;
+            
+
+            &-header {
+              padding: 1.25rem 1.7rem 1rem;
+              
+              &-text {
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.33;
                 color: #3d464d;
               }
-  
-              & a {
-                margin-left: 0;
-                font-size: 1.3rem;
-                line-height: 1.38;
-                color: #0070e0;
-  
-                &:hover,
-                &:focus {
-                  text-decoration: underline;
+
+              &-small {
+                padding: .85rem 1.7rem;
+                border-top: 1px solid #E6E8EB;
+                border-bottom: 1px solid #E6E8EB;
+
+                &-text {
+                  font-size: 1.3rem;
+                  font-weight: 500;
+                  line-height: 1.38;
+                  color: #6a7c8f;
                 }
               }
             }
+
+            &-body {
+
+              max-height: 39.4rem;
+              overflow-y: auto;
+              scrollbar-width: none; /* Firefox */
+              -ms-overflow-style: none; /* Internet Explorer 10+ */
+  
+              &::-webkit-scrollbar {
+                /* WebKit */
+                width: 0;
+                height: 0;
+              }
+
+              &-notification {
+                padding: 1.25rem 1.7rem;
+                @include flexbox;
+                @include align-items(flex-start);
+  
+                &-img {
+                  margin-right: 1.6rem;
+                  width: 3.3rem;
+                  height: 3.3rem;
+                  border-radius: 50%;
+                }
+  
+                &-main {
+  
+  
+                  &-text {
+                    margin-bottom: 1.1rem;
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    line-height: 1.38;
+                    color: #1b2734;
+  
+                    & span {
+                      font-weight: 500;
+                    }
+                  }
+  
+                  &-buttons {
+                    margin-bottom: 1.2rem;
+  
+                    & .btn-custom-primary {
+                      padding: .6rem 1.9rem;
+                      font-size: 1.3rem;
+  
+                      &.confirm {
+                        color: #4dc424;
+                      }
+  
+                      &.deny {
+                        color: #fd0000;
+                      }
+  
+                      &:nth-of-type(1) {
+                        margin-right: 1.2rem;
+                      }
+                    }
+                  }
+  
+                  &-when {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    line-height: 1.38;
+                    color: #1579e6;
+                  }
+                }
+  
+                &:not(:last-of-type) {
+                  border-bottom: 1px solid #E6E8EB;
+                }
+              }
+
+            }
+
+
+
+            
           }
-  
-          &-footer {
-            margin-top: 1.5rem;
-            padding: 2rem 1.6rem;
-            border-top: 1px solid #E6E8EB;
-            cursor: pointer;
-  
-            &:hover,
-            &:focus {
-            background-color: #f7f9fa;
+        }
+      }
+
+      .user-menu {
+        & .dropdown-custom {
+          padding: 0;
+          
+          &-trigger {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            border: 2.5px solid transparent;
+    
+            &:focus,
+            &:active {
+              border: 2.5px solid #A6BDEB;
+              box-shadow: none;
+            }
           }
-  
-            & a {
-              display: block;
-              width: 100%;
-              height: 100%;
-              color: inherit;
-              margin-left: 0;
-              font-size: 1.5rem;
-              font-weight: 400;
-              line-height: 1.33;
+    
+          &-list {
+            min-width: 26.6rem;
+    
+            &-header {
+              margin-bottom: 1.5rem;
+              padding: 2.3rem 1.6rem;
+              @include flexbox;
+              @include align-items(center);
+              border-bottom: 1px solid #E6E8EB;
+    
+              & img {
+                margin-right: 1.2rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+              }
+    
+              & .user-info {
+    
+                &-name {
+                  font-size: 1.5rem;
+                  font-weight: 400;
+                  line-height: 1.33;
+                  color: #3d464d;
+                }
+    
+                & a {
+                  margin-left: 0;
+                  font-size: 1.3rem;
+                  line-height: 1.38;
+                  color: #0070e0;
+    
+                  &:hover,
+                  &:focus {
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+    
+            &-footer {
+              margin-top: 1.5rem;
+              padding: 2rem 1.6rem;
+              border-top: 1px solid #E6E8EB;
+              cursor: pointer;
+    
+              &:hover,
+              &:focus {
+              background-color: #f7f9fa;
+            }
+    
+              & a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: inherit;
+                margin-left: 0;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 1.33;
+              }
             }
           }
         }
