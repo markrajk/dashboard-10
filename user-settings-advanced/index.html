@@ -68,7 +68,7 @@
             <div class="sidebar-menu">
                 <div class="sidebar-menu-header">
                     <h2>Teams</h2>
-                    <a href="#" data-toggle="modal" data-target="#createNewTeamModal01">
+                    <a href="../create-new-team/index.html">
                         <i class="icon-plus-circle"></i>
                     </a>
                 </div>
@@ -427,38 +427,7 @@
     <script src="../public/js/main.js"></script>
 
     <script>
-        // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
-        document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click',
-            createNewTeamModalDialog)
-
-        function createNewTeamModalDialog() {
-            const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
-            const modalReplace = modalBody.querySelector('.replace');
-            const modalContent = modalReplace.innerHTML;
-            const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
-            const modalCancel = modalBody.querySelector('.modal-custom-cancel');
-            let step = 0;
-
-            modalBtn.addEventListener('click', function () {
-                step++;
-                modalReplace.innerHTML = `
-                        <h3 class="modal-custom-title">Invite members</h3>
-                        <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                    `;
-            })
-
-            modalCancel.addEventListener('click', function () {
-                step !== 0 && (
-                    setTimeout(function () {
-                        modalReplace.innerHTML = modalContent;
-                    }, 500)
-                );
-            })
-        }
+        
     </script>
 </body>
 
