@@ -114,9 +114,86 @@
                             <input type="text" placeholder="Search...">
                         </div>
     
-                        <i class="icon-bell bell"></i>
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Join team</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
     
-                        <div class="dropdown-custom">
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Take rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Take rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Give rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
                             <a href="#" class="dropdown-custom-trigger">
                                 <img class="face" src="../public/img/facex2.png" alt="#">
                             </a>
@@ -718,7 +795,7 @@
                 </div>
 
                 <!-- INVITE NEW MEMBER MODAL -->
-                <div class="modal fade modal-custom" id="inviteNewMemberModal" tabindex="-1" role="dialog" aria-labelledby="inviteNewMemberModalTitle" aria-hidden="true">
+                <div class="modal fade modal-custom invite-new-member-modal" id="inviteNewMemberModal" tabindex="-1" role="dialog" aria-labelledby="inviteNewMemberModalTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -727,12 +804,59 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <h3 class="modal-custom-title">Invite new members</h3>
-                            <h5 class="modal-custom-subtitle">Please enter the invited persons emails.</h5>
-                            <input type="email" class="modal-custom-input" id="inv-email-01" name="inv-email-01" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="inv-email-02" name="inv-email-02" placeholder="Enter email">
-                            <a href="#" class="modal-custom-btn-round">Send invitations</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
+                            <h2 class="invite-new-member-modal-title">Invite new member</h2>
+                            <table class="table-custom table-01">
+                                <thead class="table-custom-head">
+                                    <tr>
+                                        <td class="table-custom-col-01">Email</td>
+                                        <td class="table-custom-col-02">Status</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-custom-body">
+                                    <tr>
+                                        <td class="table-custom-col-01 text-truncate">
+                                            <p class="text-truncate">johan.gustav@gmail.com</p>
+                                        </td>
+                                        <td class="table-custom-col-02">
+                                            <select name="create-new-01" id="create-new-01">
+                                                <option value="value01" selected>Basic member</option>
+                                                <option value="value01">Option I</option>
+                                                <option value="value01">Option II</option>
+                                                <option value="value01">Option III</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="table-custom-col-01 text-truncate">
+                                            <p class="text-truncate">johan.gustav@gmail.com</p>
+                                        </td>
+                                        <td class="table-custom-col-02">
+                                            <select name="create-new-02" id="create-new-02">
+                                                <option value="value01" selected>Member</option>
+                                                <option value="value01">Option I</option>
+                                                <option value="value01">Option II</option>
+                                                <option value="value01">Option III</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td class="table-custom-col-01 text-truncate">
+                                            <input type="email" placeholder="Enter email...">
+                                        </td>
+                                        <td class="table-custom-col-02">
+                                            <select name="create-new-03" id="create-new-03">
+                                                <option value="value01" selected>Member</option>
+                                                <option value="value01">Option I</option>
+                                                <option value="value01">Option II</option>
+                                                <option value="value01">Option III</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn-custom-primary">Send invitation</a>
                         </div>
                     </div>
                     </div>

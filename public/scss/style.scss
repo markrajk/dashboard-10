@@ -1267,28 +1267,147 @@ i {
 
 #inviteNewMemberModal {
   & .modal-dialog {
-    max-width: 53.3rem;
+    max-width: 84.6rem;
+
+    & .modal-content {
+      text-align: left;
+      border-radius: 14px;
+    }
+
+    & .modal-header {
+      padding-top: 2.6rem;
+      padding-right: 3.3rem;
+      padding-bottom: 0;
+
+      & .close {
+        font-size: 1.6rem;
+      }
+    }
+
+    & .modal-body {
+      padding-top: .5rem;
+      padding-left: 5.6rem;
+      padding-right: 7rem;
+      padding-bottom: 3.6rem;
+      @include align-items(flex-start);
+    }
   }
 
-  & .modal-custom-title {
-    margin-bottom: .5rem;
+  & .invite-new-member-modal-title {
+    margin-top: .5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: left;
+    color: #1b2733;
   }
 
-  & .modal-custom-subtitle {
-    margin-bottom: 2rem;
+  & .btn-custom-primary {
+    padding: .7rem 1.85rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #ffffff;
   }
 
-  & .modal-custom-btn-round {
-    margin-top: 4rem;
+  & .table-custom {
+
+    & th, & td {
+      @include flexbox;
+      @include align-items(center);
+    }
+
+    & td > * {
+      @include respond(desktop-xsm) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-head {
+      height: 4.2rem;
+      font-size: 1.2rem;
+      line-height: 1.33;
+      color: #647282;
+      background-color: #f7f9fa;
+      border: solid 1px #e6e8eb;
+      border-radius: 3px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      & tr {
+        padding: 1.3rem 1.7rem;
+      }
+    }
+
+    &-body {
+      border: solid 1px #e6e8eb;
+      border-radius: 3px;
+      border-top: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+
+      & tr {
+        padding: 1.2rem 1.7rem;
+      }
+    }
   }
 
-  & .modal-custom-cancel {
-    margin-bottom: 2rem;
-  }
+  & .table-01 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
 
-  // & input {
-  //   font-size: ;
-  // }
+    & .table-custom-body tr {
+      &:not(:last-of-type) {
+        border-bottom: solid 1px #e6e8eb;
+      }
+    }
+
+
+    .table-custom-col-01 {
+      @include flex(1);
+      margin-right: 1.3rem;
+
+      & p {
+        font-size: 1.4rem;
+        line-height: 1.36;
+        color: #1b2733;
+      }
+
+      & input {
+        font-size: 1.4rem;
+        width: 95%;
+        outline: none;
+        border: none;
+       
+        &::placeholder {
+          color: #1165f4;
+        }
+      }
+    }
+
+    .table-custom-col-02 {
+      @include flex(.85);
+      line-height: 1.36;
+      
+
+      & select {
+        width: 95%;
+        outline: none;
+        padding: .55rem 1.3rem;
+        font-size: 1.4rem;
+        color: #1b2733;
+        line-height: 1.36;
+        color: #1b2733;
+        border-radius: 4px;
+        border: solid 1px #c1c7cd;
+
+        & option {
+          font-size: 1.2rem;
+          padding-left: 1.3rem;
+        }
+      }
+    }
+  }
 }
 
 #createNewTeamModal01 {
@@ -2244,6 +2363,14 @@ i {
                   &:focus {
                     text-decoration: underline;
                   }
+                }
+              }
+            }
+
+            &-item {
+              &-link {
+                &.active {
+                  color: #0061ff;
                 }
               }
             }
@@ -7666,9 +7793,11 @@ i {
 // PAGE NOT FOUND START
 // ==================================
 .page-not-found {
-  
+  padding-left: .5rem;
+
   &-title {
-    margin-top: 13.7rem;
+
+    margin-top: 11.8rem;
     margin-bottom: .85rem;
     font-size: 2.8rem;
     font-weight: 500;
@@ -7727,25 +7856,25 @@ i {
 // CUSTOMER SERVICE START
 // ==================================
 .customer-service {
+  padding-left: .5rem;
   width: 100%;
   max-width: 97.9rem;
 
   &-title {
-    margin-top: 9.8rem;
-    margin-bottom: .85rem;
-    font-size: 2.8rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    font-size: 3.1rem;
     font-weight: 500;
-    line-height: 1.32;
-    letter-spacing: -0.28px;
-    color: #1f1f1f;
+    line-height: 1.29;
+    color: #000000;
   }
 
   &-text-small {
-    margin-bottom: 2.75rem;
-    font-size: 1.55rem;
+    margin-bottom: 3.3rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.29;
-    color: #7d808e;
+    line-height: 1.33;
+    color: #060606;
 
     & a {
       color: #0966ff;
@@ -7804,19 +7933,23 @@ i {
     font-weight: 400;
     line-height: 1.33;
     color: #3d464d;
+
+    &.for-textarea {
+      margin-bottom: .5rem;
+    }
   }
 
   &-textarea {
     margin-bottom: 3.1rem;
-    padding: 1.1rem 1.4rem;
+    padding: 1.1rem;
     display: block;
     width: 100%;
     height: 12rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    line-height: 1.36;
-    letter-spacing: -0.17px;
-    color: #333;
+    line-height: 1.33;
+    color: #637381;
+
     border-radius: 1px;
     border: solid 1px #cfd7e0;
     background-color: #ffffff;
