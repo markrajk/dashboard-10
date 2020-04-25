@@ -1,12 +1,14 @@
-<!DOctYPE html5>
+<!DOCTYPE html5>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard | Teams | Main View</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./public/css/bootstrap.css">
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
@@ -32,7 +34,7 @@
                             <i class="icon-users"></i>
                         </a>
                     </li>
-                    
+
                     <li class="sidebar-main-item">
                         <a href="./give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
                             <i class="icon-phone"></i>
@@ -67,7 +69,7 @@
             <div class="sidebar-menu">
                 <div class="sidebar-menu-header">
                     <h2>Teams</h2>
-                    <a href="../create-new-team/index.html">
+                    <a href="./create-new-team/index.html">
                         <i class="icon-plus-circle"></i>
                     </a>
                 </div>
@@ -91,7 +93,7 @@
                 </ul>
                 <div class="sidebar-menu-footer">
                     <a href="./create-new-team/index.html" class="sidebar-menu-footer-create-new">Create a new team</a>
-                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                    <a href="#" class="btn-custom-white">
                         Get the mobile app
                         <img src="./public/img/play-big.png" alt="google play store icon" class="play-icon">
                         <img src="./public/img/apple-big.png" alt="apple store icon" class="apple-icon">
@@ -115,9 +117,86 @@
                             <input type="text" placeholder="Search...">
                         </div>
     
-                        <i class="icon-bell bell"></i>
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+                                
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="./public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a 
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Join team</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
     
-                        <div class="dropdown-custom">
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="./public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Take rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="./public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Take rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="./public/img/p-06.png" alt="User's profile image" class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="btn-custom-primary outline confirm">Give rights</a>
+                                                <a href="#" class="btn-custom-primary outline deny">Deny request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+    
+                        <div class="dropdown-custom user-menu">
                             <a href="#" class="dropdown-custom-trigger">
                                 <img class="face" src="./public/img/facex2.png" alt="#">
                             </a>
@@ -130,15 +209,15 @@
                                     </div>
                                 </li>
                                 <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Settings</a>
+                                    <a href="./user-settings-general/index.html" class="dropdown-custom-list-item-link">User settings</a>
                                 </li>
     
                                 <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Install</a>
+                                    <a href="./create-new-team/index.html" class="dropdown-custom-list-item-link">Create a new team</a>
                                 </li>
     
                                 <li class="dropdown-custom-list-footer">
-                                    <a href="../sign-in/index.html">Sign out</a>
+                                    <a href="./sign-in/index.html">Sign out</a>
                                 </li>
                             </ul>
                         </div>
@@ -172,12 +251,27 @@
             </header>
 
             <main class="teams-average-charts">
-               
+
                 <div class="teams-average-charts-body">
 
                     <section class="section section-averages">
                         <div class="section-header">
-                            <p>Two week averages</p>
+                            <p>Overview</p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger">
+                                    2 weeks average
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="section-body">
                             <div class="progress-custom">
@@ -185,7 +279,7 @@
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
                                     <p class="up">
-                                       <i class="icon-arrow-circle-up"></i>
+                                        <i class="icon-arrow-circle-up"></i>
                                         20% improvement
                                     </p>
                                 </div>
@@ -199,7 +293,7 @@
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
                                     <p class="up">
-                                       <i class="icon-arrow-circle-up"></i>
+                                        <i class="icon-arrow-circle-up"></i>
                                         20% improvement
                                     </p>
                                 </div>
@@ -227,7 +321,7 @@
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
                                     <p class="up">
-                                       <i class="icon-arrow-circle-up"></i>
+                                        <i class="icon-arrow-circle-up"></i>
                                         20% improvement
                                     </p>
                                 </div>
@@ -241,7 +335,7 @@
                                 <div class="progress-custom-info">
                                     <h3>Great</h3>
                                     <p class="up">
-                                       <i class="icon-arrow-circle-up"></i>
+                                        <i class="icon-arrow-circle-up"></i>
                                         20% improvement
                                     </p>
                                 </div>
@@ -320,27 +414,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -382,27 +476,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -444,27 +538,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -506,27 +600,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -568,27 +662,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -630,27 +724,27 @@
                                         <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
                                         <div class="bar-info">Jul</div>
                                     </div>
-                                    
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
                                         <div class="bar-info">Aug</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
                                         <div class="bar-info">Sep</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Oct</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
                                         <div class="bar-info">Nov</div>
                                     </div>
-        
+
                                     <div class="bar">
                                         <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
                                         <div class="bar-info">Dec</div>
@@ -659,242 +753,55 @@
                             </div>
                         </div>
                     </section>
-
                 </div>
-
-                <!-- CREATE TEAM MODAL 01 -->
-                <div class="modal fade modal-custom" id="createNewTeamModal01" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal01Title" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="replace">
-                                <h3 class="modal-custom-title">Create a new team</h3>
-                                <h5 class="modal-custom-subtitle">Please enter informations below.</h5>
-                                <img src="./public/img/user-placeholder.png" alt="Profile picture" class="modal-custom-img">
-                                <p class="modal-custom-info"><a href="#">Upload</a> a profile picture for your team</p>
-                                <input type="text" class="modal-custom-input" id="m-01-team-name" name="m-01-team-name" placeholder="Team name">
-                                <input type="text" class="modal-custom-input" id="m-01-team-desc" name="m-01-team-desc" placeholder="Short description">
-                            </div>
-                            <a href="#" class="modal-custom-btn-round">Confirm</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                <!-- CREATE TEAM MODAL 02 -->
-                <!-- <div class="modal fade modal-custom" id="createNewTeamModal02" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal02Title" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">Invite members</h3>
-                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                            <a href="#" class="modal-custom-btn-round">Confirm</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
-                        </div>
-                    </div>
-                    </div>
-                </div> -->
-
-                <!-- FOLLOW NEW TEAM MODAL -->
-                <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog" aria-labelledby="followNewTeamModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">Follow a new team</h3>
-                            <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
-                            <div class="input-container">
-                                <i class="icon-search"></i>
-                                <input type="text" class="modal-custom-input" id="ft-search" name="ft-search" placeholder="Search">
-                            </div>
-                            <div class="modal-custom-list">
-                                <div class="modal-custom-list-item">
-                                    <img src="./public/img/user-placeholder.png" alt="Profile image">
-                                    <p>Exapmle team <span>100 members</span></p>
-                                    <a href="#">Select</a>
-                                </div>
-
-                                <div class="modal-custom-list-item">
-                                    <img src="./public/img/user-placeholder.png" alt="Profile image">
-                                    <p>Exapmle team <span>100 members</span></p>
-                                    <a href="#">Select</a>
-                                </div>
-
-                                <div class="modal-custom-list-item">
-                                    <img src="./public/img/user-placeholder.png" alt="Profile image">
-                                    <p>Exapmle team <span>100 members</span></p>
-                                    <a href="#">Select</a>
-                                </div>
-
-                                <div class="modal-custom-list-item">
-                                    <img src="./public/img/user-placeholder.png" alt="Profile image">
-                                    <p>Exapmle team <span>100 members</span></p>
-                                    <a href="#">Select</a>
-                                </div>
-
-                                <div class="modal-custom-list-item">
-                                    <img src="./public/img/user-placeholder.png" alt="Profile image">
-                                    <p>Exapmle team <span>100 members</span></p>
-                                    <a href="#">Select</a>
-                                </div>
-                            </div>
-                            <a href="#" class="modal-custom-btn-round">Request rights to follow this team</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
-                 <!-- NEW INVITATION MODAL -->
-                 <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog" aria-labelledby="newInvitationModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">New invitation</h3>
-                            <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
-                            <img src="./public/img/user-placeholder.png" alt="Profile picture" class="modal-custom-img">
-                            <p class="modal-custom-team-name">Team MSM Super Engineers</p>
-                            <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
-                            <a href="#" class="modal-custom-btn-round">Join team</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
             </main>
         </div>
     </div>
 
-        <script src="./public/js/jquery-3.4.1.min.js"></script>
-        <script src="./public/js/bootstrap.bundle.js"></script>
-        <script src="./public/js/main.js"></script>
+    <script src="./public/js/jquery-3.4.1.min.js"></script>
+    <script src="./public/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/main.js"></script>
 
-        <script>
-            // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
-            document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click', createNewTeamModalDialog)
+    <script>
+        
+        // CHART & NUMBER OF BARS
+        function numberOfChartBars() {
+            var graphs = document.querySelectorAll('.graph-card');
 
-            function createNewTeamModalDialog() {
-                const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
-                const modalReplace = modalBody.querySelector('.replace');
-                const modalContent = modalReplace.innerHTML;
-                const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
-                const modalCancel = modalBody.querySelector('.modal-custom-cancel');
-                let step = 0;
+            for(var i = 0; i < graphs.length; i++) {
+                console.log(i);
+                var rem = parseInt(getComputedStyle(document.documentElement).fontSize);
+                var graphWidth = graphs[i].offsetWidth;
+                var barWidth = rem * 1.8 * 3;
+                var numOfBars = Math.floor(graphWidth / (barWidth));
 
-                modalBtn.addEventListener('click', function() {
-                    step++;
-                    modalReplace.innerHTML = `
-                        <h3 class="modal-custom-title">Invite members</h3>
-                        <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                        <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                    `;
-                })
+                var bars = graphs[i].querySelectorAll('.graph-card-body .bar');
 
-                modalCancel.addEventListener('click', function() {
-                    step !== 0 && (
-                        setTimeout(function() {
-                            modalReplace.innerHTML = modalContent;
-                        }, 500)
-                    );
-                })
-            }    
-
-            // CHART & NUMBER OF BARS
-            function numberOfChartBars() {
-                let graphs = document.querySelectorAll('.graph-card');
-                [...graphs].forEach(e => {
-                    let rem = parseInt(getComputedStyle(document.documentElement).fontSize);
-                    let graphWidth = e.offsetWidth;
-                    let barWidth = rem * 1.8 * 3;
-                    let numOfBars = Math.floor(graphWidth / (barWidth));
-                    
-                    e.querySelectorAll('.graph-card-body .bar').forEach((e,i,arr) => {
-                        e.style.display = 'none';
-                        if(i + 1 >= arr.length - numOfBars) {
-                            e.style.display = 'inline-block';
-                        }
-                    })
-            })
-
-            }
-
-            // ANIMATE PROGRESS BAR
-            window.addEventListener('load', function() {
-                document.querySelectorAll('.progress-custom-bar-fill').forEach(e => {
-                    e.style.width = `${e.getAttribute('fill-progress')}%`;
-                })
-            })
-
-            // initial width check
-            checkSliderWidth()
-            
-            // Initialize sliders
-            sliderInit('.section-averages')
-            sliderInit('.section-development')
-            
-
-            // Check for sliders and content width show/hide slider triggers
-            function checkSliderWidth(slider) {
-                $('.slider').each(function(i) {
-                    if($(this).width() <= $(this).find('.slider-item').outerWidth() * 3 - 10) {
-                        $(this).find('.slider-trigger-left').show()
-                        $(this).find('.slider-trigger-right').show()
-                    }else {
-                        $(this).find('.slider-trigger-left').hide()
-                        $(this).find('.slider-trigger-right').hide()
+                for(var j = 0; j < bars.length; j++) {
+                    bars[j].style.display = 'none';
+                    if (j + 1 >= bars.length - numOfBars) {
+                        bars[j].style.display = 'inline-block';
                     }
-                })
+                }
 
-                numberOfChartBars()
             }
 
-            // Slider logic
-            function sliderInit(slider) {
-                console.log($('html').css('font-size'))
-                $(`${slider} .slider-trigger-left`).on('click', function() {
-                    $(`${slider} .section-body`).animate({
-                        scrollLeft: `-=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
-                    }, 300, 'swing');
-                });
+        }
 
-                $(`${slider} .slider-trigger-right`).on('click', function() {
-                    $(`${slider} .section-body`).animate({
-                        scrollLeft: `+=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
-                    }, 300, 'swing');
-                });
+        numberOfChartBars();
+
+        // ANIMATE PROGRESS BAR
+        window.addEventListener('load', function () {
+            var progressBars = document.querySelectorAll('.progress-custom-bar-fill');
+
+            for(var i = 0; i < progressBars.length; i++) {
+                progressBars[i].style.width = progressBars[i].getAttribute('fill-progress') + '%';
             }
+        })
 
-            // resize event listener
-            window.addEventListener('resize', checkSliderWidth)
-        </script>
+        window.addEventListener('resize', numberOfChartBars);
+    </script>
 
 </body>
+
 </html>

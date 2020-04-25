@@ -529,6 +529,10 @@ $text-color-primary: #1c1c1c;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
+
+  @supports (-ms-ime-align:auto) {
+    @content;
+  }
 }
 
 
@@ -1084,9 +1088,9 @@ i {
     min-width: 16rem;
     position: absolute;
     bottom: 0;
-    left: 100%;
-    transform: translate(-100%, 100%);
-    list-style: none;
+    right: 0;
+    transform: translate(0, 100%);
+    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
     border-radius: 4px;
     box-shadow: 0 8px 15px 0 rgba(159, 159, 159, 0.16);
     border: solid 1px #dbdde0;
@@ -1410,58 +1414,6 @@ i {
   }
 }
 
-#createNewTeamModal01 {
-  & .modal-dialog {
-    max-width: 53.3rem;
-  }
-
-  & .replace {
-    width: 100%;
-  }
-
-  & .modal-custom-title {
-    margin-bottom: .5rem;
-  }
-
-  & .modal-custom-subtitle {
-    margin-bottom: 2.5rem;
-  }
-
-  & img {
-    margin-bottom: 1.8rem;
-  }
-
-  & .modal-custom-info {
-    font-weight: 400;
-  }
-
-  & .modal-custom-btn-round {
-    margin-top: 2rem;
-  }
-
-  & .modal-custom-cancel {
-    margin-bottom: 2rem;
-  }
-
-  // & input {
-  //   font-size: ;
-  // }
-}
-
-#createNewTeamModal01 {
-  & .modal-custom-subtitle {
-    margin-bottom: 6.5rem;
-  }
-
-  & .modal-custom-btn-round {
-    margin-top: 3.8rem;
-  }
-
-  & .modal-custom-cancel {
-    margin-bottom: 4rem;
-  }
-}
-
 #followNewTeamModal,
 #linkTeamModal {
 
@@ -1581,180 +1533,6 @@ i {
   }
 }
 
-
-
-// NEW INVITATION MODAL
-#newInvitationModal {
-
-  &.modal-custom {
-
-    & .modal-custom-subtitle {
-      margin-bottom: 5.4rem;
-    }
-
-    & img {
-      margin-bottom: 1.5rem;
-    }
-
-    & .modal-custom-team-name {
-      margin-bottom: .85rem;
-      font-size: 1.7rem;
-      font-weight: 500;
-      line-height: 1.65;
-      color: #000000;
-    }
-
-    & .modal-custom-team-inviter {
-      font-size: 1.35rem;
-      line-height: 1.48;
-      letter-spacing: 0.14px;
-      color: #676767;
-
-      & span {
-        font-weight: 500;
-      }
-    }
-
-    & .modal-custom-btn-round {
-      margin-top: 5.2rem;
-    }
-
-    & .modal-custom-cancel {
-      margin-bottom: 2.8rem;
-    }
-  }
-}
-
-// REGISTER NEW COMPANY MODAL
-#registerNewCompanyModal {
-
-  & .modal-dialog {
-    max-width: 53.3rem;
-  }
-}
-
-// REQUEST FEEDBACK MODAL
-#feedbackRequestModal {
-
-  & h3 {
-    margin-bottom: 3.4rem;
-  }
-
-  & .modal-dialog {
-    max-width: 53.3rem;
-  }
-
-  & label {
-    margin-bottom: 1.3rem;
-    width: 100%;
-    max-width: 38.13rem;
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.75;
-    color: #484848;
-    text-align: left;
-  }
-
-  & .input-container {
-    height: 3.6rem;
-    margin-bottom: 3.5rem;
-    width: 100%;
-    max-width: 38.13rem;
-    position: relative;
-
-    & input {
-      height: 100%;
-      min-width: 100%;
-      margin-bottom: 0;
-      padding: .6rem 1.5rem;
-      padding-left: 3.5rem;
-      font-weight: 400;
-    }
-
-    & i {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(70%, -50%);
-      font-size: 1.6rem;
-      color: #848484;
-    }
-  }
-
-  & .modal-custom-btn-round {
-    width: auto;
-    max-width: 100%;
-    padding: .7rem 3rem;
-  }
-
-  & h4 {
-    margin-bottom: 1rem;
-    width: 100%;
-    margin-right: auto;
-    font-size: 1.75rem;
-    font-weight: 500;
-    line-height: 1.6;
-    color: #484848;
-  }
-
-  & .frequency {
-    margin-bottom: 3.6rem;
-    width: 100%;
-    max-width: 38.13rem;
-    @include flexbox;
-    @include flex-wrap(wrap);
-    @include align-items(center);
-    @include justify-content(space-between);
-    & .modal-custom-btn-rect {
-      // margin-right: 1.2rem;
-      @include inline-flex;
-      @include align-items(center);
-      @include justify-content(center);
-      padding: .7rem 1.3rem;
-      font-size: 1.3rem;
-      line-height: 1.38;
-      letter-spacing: -0.16px;
-      color: #515558;
-      border-radius: 3px;
-      border: solid 1px #c1c7cd;
-      white-space: nowrap;
-
-      &.active {
-        color: #fff;
-        background-color: #0f2882;
-        border-color: #0f2882;
-      }
-    }
-  }
-
-  & .modal-custom-info {
-    max-width: 23.4rem;
-    font-size: 1.15rem;
-    line-height: 1.57;
-    color: #6a6a6a;
-
-    & a, & span {
-      text-decoration: underline;
-    }
-  }
-}
-
-#viewingRightsModal,
-#adminRightsModal {
-
-  & .modal-custom-subtitle {
-    margin-bottom: 2rem;
-  }
-
-  & .modal-custom-btn-round {
-    margin-top: 2.6rem;
-  }
-
-  & .modal-custom-cancel {
-    margin-bottom: 3rem;
-  }
-}
 
 // CUSTOM TABLE
 .table-custom {
@@ -1931,6 +1709,7 @@ i {
       @include flexbox;
 
       & input {
+        background-color: transparent;
         padding: 0;
         padding-left: 4.8rem;
         border: none;
@@ -2224,14 +2003,6 @@ i {
 
               max-height: 39.4rem;
               overflow-y: auto;
-              // scrollbar-width: none; /* Firefox */
-              // -ms-overflow-style: none; /* Internet Explorer 10+ */
-  
-              // &::-webkit-scrollbar {
-              //   /* WebKit */
-              //   width: 0;
-              //   height: 0;
-              // }
 
               &-notification {
                 padding: 1.25rem 1.7rem;
@@ -2242,6 +2013,8 @@ i {
   
                 &-img {
                   margin-right: 1.6rem;
+                  min-width: 3.3rem;
+                  min-height: 3.3rem;
                   width: 3.3rem;
                   height: 3.3rem;
                   border-radius: 50%;
@@ -2301,10 +2074,6 @@ i {
               }
 
             }
-
-
-
-            
           }
         }
       }
@@ -2461,7 +2230,6 @@ i {
 // AVERAGE CHARTS START
 // ==================================
 .teams-average-charts {
-  // position: relative;
   max-height: calc(100vh - 17.1rem - 1.5px);
   //max-width: 103rem;
   //padding-right: calc(100% - 103rem);
@@ -2718,12 +2486,7 @@ i {
           padding-left: 1.25rem;
           padding-top: 2.8rem;
 
-          // @include target-ie() {
-          //   width: 33.3%;
-          // }
-
           &-sub {
-            //margin-bottom: -.2rem;
             font-size: 1.2rem;
             font-weight: 500;
             line-height: 1.33;
@@ -3031,7 +2794,6 @@ i {
             width: 1.8rem;
 
             &-info {
-              // text-transform: lowercase;
               font-family: "HankRnd-Bold";
               font-size: 1.15rem;
               bottom: -1rem;
@@ -3398,7 +3160,6 @@ i {
 
           & tr {
             padding: .15rem 0;
-            // padding-right: 1.5rem;
             
             & i {
               font-size: .8rem;
@@ -3455,8 +3216,6 @@ i {
         & tbody {
           & tr {
             padding: .6rem 0;
-            
-            //padding-right: 1.5rem;
             border-bottom: 1px solid #ededf5;
 
             &:last-child {
@@ -3658,7 +3417,7 @@ i {
       }
     }
   }
-    }
+}
 }
 // ==================================
 // TEAM MEMBERS END
@@ -3674,7 +3433,7 @@ i {
   padding-top: 0;
   //max-width: 80.5rem;
   //border-top: 1px solid #e1e1e1;
-  padding-right: calc(100%  -  72rem);
+  
 
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
@@ -3698,6 +3457,7 @@ i {
   }
 
   &-header {
+    max-width: 72rem;
     padding-top: 2.6rem;
     padding-bottom: 2.5rem;
     margin-bottom: 3rem;
@@ -3717,6 +3477,7 @@ i {
   }
 
   &-body {
+    max-width: 72rem;
     max-height: calc(100vh - 30rem);
 
     & .settings-table {
@@ -3780,19 +3541,6 @@ i {
           padding-top: 2.74rem;
         }
       }
-
-      &:nth-of-type(2) {
-        // & .settings-table-row {
-        //   padding-top: 3rem;
-        //   padding-bottom: 3rem;
-        //   border-bottom: 1px solid #E6E8EB;
-        // }
-
-        // & .column-02 {
-        //   margin-left: -1rem;
-        //   //margin-right: 2rem;
-        // }
-      }
     }
   }
 }
@@ -3809,7 +3557,7 @@ i {
   padding:2.5rem 0;
   padding-bottom: 0;
   padding-top: 0;
-  padding-right: calc(100% - 80.5rem);
+  //padding-right: calc(100% - 80.5rem);
 
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
@@ -3834,6 +3582,7 @@ i {
 
 
   &-header {
+    max-width: 80.5rem;
     padding-top: 2.6rem;
     margin-bottom: 3.5rem;
   }
@@ -3852,6 +3601,7 @@ i {
   }
 
   &-body {
+    max-width: 80.5rem;
     max-height: calc(100vh - 27.8rem - 1.5px);
 
     & .subheader-text {
@@ -4064,7 +3814,7 @@ i {
   padding-top: 0;
   //max-width: 80.5rem;
   //border-top: 1px solid #e1e1e1;
-  padding-right: calc(100%  -  72rem);
+  //padding-right: calc(100%  -  72rem);
 
   overflow-y: auto;
   scrollbar-width: none; /* Firefox */
@@ -4089,6 +3839,7 @@ i {
 
 
   &-header {
+    max-width: 72rem;
     padding-top: 2.6rem;
     margin-bottom: 3.5rem;
   }
@@ -4112,6 +3863,7 @@ i {
   }
 
   &-body {
+    max-width: 72rem;
     max-height: calc(100vh - 26.5rem - 1.5px);
 
 
@@ -4131,8 +3883,6 @@ i {
           color: #1b2733;
     
           &-small {
-            // width: 100%;
-            // max-width: 34.8rem;
             font-size: 1.3rem;
             line-height: 1.67;
             color: #778391;
@@ -4395,10 +4145,6 @@ i {
       }
     }
 
-
-    
-
-    
     & .table-bottom-input {
       padding: 1.2rem 1.7rem;
       padding-right: 3rem;
@@ -4474,8 +4220,6 @@ i {
 .give-feedback {
   padding:2.5rem 0;
   padding-bottom: 0;
-  //max-width: 79rem;
-  
 
   &-people {
     margin-top: 2.4rem;
@@ -4554,7 +4298,7 @@ i {
       //@include grid-template-columns(repeat(auto-fit, minmax(7.5,1fr)));
       grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
       grid-gap: 2.8rem 3.2rem;
-      max-height: calc(100vh - 36.1rem - 2px);
+      max-height: calc(100vh - 36.3rem - 2px);
       //padding-right: calc(100% - 79rem);
 
       overflow-y: auto;
@@ -4748,7 +4492,6 @@ i {
 // SINGLE USER GENERAL START
 // ==================================
 .single-user {
-  //width: 100%;
   //max-width: 103rem;
   //border-top: 1px solid #e1e1e1;
   padding:2.5rem 0;
@@ -4810,7 +4553,6 @@ i {
 
       & img {
         margin-left: 1.25rem;
-        //margin-right: 1.2rem;
         width: 5rem;
         height: 5rem;
         border-radius: 50%;
@@ -4839,7 +4581,7 @@ i {
     & .btn-custom-primary {
      
       padding: .4em 1em;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.36;
       letter-spacing: normal;
@@ -4847,6 +4589,11 @@ i {
 
       @include respond(desktop-xsm) {
         margin-right: .5rem;
+        font-size: 1.2rem;
+      }
+
+      @include respond(desktop-xxsm) {
+        font-size: 1rem;
       }
   
       &.outline {
@@ -5365,6 +5112,11 @@ i {
 
       @include respond(desktop-xsm) {
         margin-right: .5rem;
+        font-size: 1.2rem;
+      }
+
+      @include respond(desktop-xxsm) {
+        font-size: 1rem;
       }
   
       &.outline {
@@ -6000,6 +5752,7 @@ i {
         }
 
         & input {
+          font-size: 1.4rem;
           width: 95%;
           outline: none;
           border: none;
@@ -6025,6 +5778,15 @@ i {
           color: #1b2733;
           border-radius: 4px;
           border: solid 1px #c1c7cd;
+
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+
+          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-repeat: no-repeat;
+          background-position-x: 95%;
+          background-position-y: 50%;
 
           & option {
             font-size: 1.2rem;
@@ -6604,10 +6366,6 @@ i {
         }
       }
 
-      & .table-custom-head tr {
-        //height: 3rem;
-      }
-
       & .table-custom-body {
         max-height: 18.4rem;
 
@@ -6620,7 +6378,6 @@ i {
       }
 
       & .table-custom-body tr {
-        //height: 4.6rem;
         font-size: 1.35rem;
         line-height: 1.56;
         letter-spacing: -0.22px;
@@ -7321,13 +7078,6 @@ i {
   padding-top: 0;
   //padding-right: calc(100% - 72rem);
 
-  // &-header {
-  //   margin-top: 10rem;
-  //   margin-bottom: 3rem;
-
-    
-  // }
-
   &-body {
     max-height: calc(100vh - 30rem);
 
@@ -7662,7 +7412,6 @@ i {
       // DISABLED
       &.disabled {
         opacity: .3;
-        // cursor: ;
         cursor: not-allowed;
       }
     }
@@ -7892,7 +7641,6 @@ i {
 
     &-container {
       width: 47.5%;
-      //max-width: 46.4rem;
 
       @include respond(desktop-xxsm) {
         width: 100%;
@@ -7973,16 +7721,6 @@ i {
 // ==================================
 // CUSTOMER SERVICE END
 // ==================================
-
-
-
-// ==================================
-// GET STARTED START
-// ==================================
-// ==================================
-// GET STARTED END
-// ==================================
-
 
 
 @media (max-width: 1024px) {

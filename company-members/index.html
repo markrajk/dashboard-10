@@ -89,7 +89,7 @@
                 <div class="sidebar-menu-footer">
                     <a href="#" class="sidebar-menu-footer-create-new" data-toggle="modal"
                         data-target="#registerNewCompanyModal">Register a new company</a>
-                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                    <a href="#" class="btn-custom-white">
                         Get the mobile app
                         <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
                         <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
@@ -807,60 +807,6 @@
                     </div>
                 </div>
 
-                <!-- REGISTER NEW COMPANY MODAL -->
-                <div class="modal fade modal-custom" id="registerNewCompanyModal" tabindex="-1" role="dialog"
-                    aria-labelledby="registerNewCompanyModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="modal-custom-title">Register a new company</h3>
-                                <h5 class="modal-custom-subtitle">Please enter informations below.</h5>
-                                <img src="../public/img/company-placeholder.png" alt="Profile picture"
-                                    class="modal-custom-img">
-                                <p class="modal-custom-info"><a href="#">Upload</a> your company logo</p>
-                                <input type="text" class="modal-custom-input" id="new-company-name" name="new-company-name"
-                                    placeholder="Company name">
-                                <input type="text" class="modal-custom-input" id="new-company-street" name="new-company-street"
-                                    placeholder="Street">
-                                <input type="text" class="modal-custom-input" id="new-company-city" name="new-company-city"
-                                placeholder="City">
-                                <input type="text" class="modal-custom-input" id="new-company-country" name="new-company-country"
-                                placeholder="Country">
-                                <a href="#" class="modal-custom-btn-round">Confirm</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
-                                    aria-label="Close">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- NEW INVITATION MODAL -->
-                 <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog" aria-labelledby="newInvitationModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">New invitation</h3>
-                            <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
-                            <img src="../public/img/user-placeholder.png" alt="Profile picture" class="modal-custom-img">
-                            <p class="modal-custom-team-name">Team MSM Super Engineers</p>
-                            <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
-                            <a href="#" class="modal-custom-btn-round">Join team</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-
             </main>
         </div>
     </div>
@@ -868,40 +814,6 @@
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="../public/js/main.js"></script>
-
-    <script>
-        // CREATE NEW TEAM MODAL EXAMPLE FUNCTION
-        document.querySelector('[data-target="#createNewTeamModal01"]').addEventListener('click', createNewTeamModalDialog)
-
-        function createNewTeamModalDialog() {
-            const modalBody = document.querySelector('#createNewTeamModal01 .modal-body');
-            const modalReplace = modalBody.querySelector('.replace');
-            const modalContent = modalReplace.innerHTML;
-            const modalBtn = modalBody.querySelector('.modal-custom-btn-round');
-            const modalCancel = modalBody.querySelector('.modal-custom-cancel');
-            let step = 0;
-
-            modalBtn.addEventListener('click', function() {
-                step++;
-                modalReplace.innerHTML = `
-                    <h3 class="modal-custom-title">Invite members</h3>
-                    <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                    <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                    <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                    <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                    <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                `;
-            })
-
-            modalCancel.addEventListener('click', function() {
-                step !== 0 && (
-                    setTimeout(function() {
-                        modalReplace.innerHTML = modalContent;
-                    }, 500)
-                );
-            })
-        } 
-    </script>
 </body>
 
 </html>

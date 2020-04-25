@@ -91,9 +91,8 @@
                     </li>
                 </ul>
                 <div class="sidebar-menu-footer">
-                    <a href="#" class="sidebar-menu-footer-create-new" data-toggle="modal"
-                    data-target="#followNewTeamModal">Follow a new team</a>
-                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                    <a href="../create-new-team/index.html" class="sidebar-menu-footer-create-new">Create a new team</a>
+                    <a href="#" class="btn-custom-white">
                         Get the mobile app
                         <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
                         <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
@@ -282,142 +281,6 @@
 
                 </div>
 
-                <!-- CREATE TEAM MODAL 01 -->
-                <div class="modal fade modal-custom" id="createNewTeamModal01" tabindex="-1" role="dialog"
-                    aria-labelledby="createNewTeamModal01Title" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="replace">
-                                    <h3 class="modal-custom-title">Create a new team</h3>
-                                    <h5 class="modal-custom-subtitle">Please enter informations below.</h5>
-                                    <img src="../public/img/user-placeholder.png" alt="Profile picture"
-                                        class="modal-custom-img">
-                                    <p class="modal-custom-info"><a href="#">Upload</a> a profile picture for your team
-                                    </p>
-                                    <input type="text" class="modal-custom-input" id="m-01-team-name"
-                                        name="m-01-team-name" placeholder="Team name">
-                                    <input type="text" class="modal-custom-input" id="m-01-team-desc"
-                                        name="m-01-team-desc" placeholder="Short description">
-                                </div>
-                                <a href="#" class="modal-custom-btn-round">Confirm</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
-                                    aria-label="Close">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CREATE TEAM MODAL 02 -->
-                <!-- <div class="modal fade modal-custom" id="createNewTeamModal02" tabindex="-1" role="dialog" aria-labelledby="createNewTeamModal02Title" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="icon-close"></i>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h3 class="modal-custom-title">Invite members</h3>
-                            <h5 class="modal-custom-subtitle">Who would you like to join this team first?</h5>
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-01" name="m-01-team-email-01" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-02" name="m-01-team-email-02" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-03" name="m-01-team-email-03" placeholder="Enter email">
-                            <input type="email" class="modal-custom-input" id="m-02-team-email-04" name="m-01-team-email-04" placeholder="Enter email">
-                            <a href="#" class="modal-custom-btn-round">Confirm</a>
-                            <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Cancel</a>
-                        </div>
-                    </div>
-                    </div>
-                </div> -->
-
-                <!-- FOLLOW NEW TEAM MODAL -->
-                <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog"
-                    aria-labelledby="followNewTeamModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="modal-custom-title">Follow a new team</h3>
-                                <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
-                                <div class="input-container">
-                                    <i class="icon-search"></i>
-                                    <input type="text" class="modal-custom-input" id="ft-search" name="ft-search"
-                                        placeholder="Search">
-                                </div>
-                                <div class="modal-custom-list">
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="modal-custom-btn-round">Request rights to follow this team</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
-                                    aria-label="Close">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NEW INVITATION MODAL -->
-                <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog"
-                    aria-labelledby="newInvitationModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="modal-custom-title">New invitation</h3>
-                                <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
-                                <img src="../public/img/user-placeholder.png" alt="Profile picture"
-                                    class="modal-custom-img">
-                                <p class="modal-custom-team-name">Team MSM Super Engineers</p>
-                                <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
-                                <a href="#" class="modal-custom-btn-round">Join team</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </main>
         </div>
     </div>
@@ -425,10 +288,6 @@
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="../public/js/main.js"></script>
-
-    <script>
-        
-    </script>
 </body>
 
 </html>

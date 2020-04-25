@@ -93,7 +93,7 @@
                 </ul>
                 <div class="sidebar-menu-footer">
                     <a href="../create-new-team/index.html" class="sidebar-menu-footer-create-new">Create a new team</a>
-                    <a href="#" class="btn-custom-white" data-toggle="modal" data-target="#newInvitationModal">
+                    <a href="#" class="btn-custom-white">
                         Get the mobile app
                         <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
                         <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
@@ -753,91 +753,7 @@
                             </div>
                         </div>
                     </section>
-
                 </div>
-
-
-                <!-- FOLLOW NEW TEAM MODAL -->
-                <div class="modal fade modal-custom" id="followNewTeamModal" tabindex="-1" role="dialog"
-                    aria-labelledby="followNewTeamModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="modal-custom-title">Follow a new team</h3>
-                                <h5 class="modal-custom-subtitle">Search by team leader email address.</h5>
-                                <div class="input-container">
-                                    <i class="icon-search"></i>
-                                    <input type="text" class="modal-custom-input" id="ft-search" name="ft-search"
-                                        placeholder="Search">
-                                </div>
-                                <div class="modal-custom-list">
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-
-                                    <div class="modal-custom-list-item">
-                                        <img src="../public/img/user-placeholder.png" alt="Profile image">
-                                        <p>Exapmle team <span>100 members</span></p>
-                                        <a href="#">Select</a>
-                                    </div>
-                                </div>
-                                <a href="#" class="modal-custom-btn-round">Request rights to follow this team</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal"
-                                    aria-label="Close">Cancel</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NEW INVITATION MODAL -->
-                <div class="modal fade modal-custom" id="newInvitationModal" tabindex="-1" role="dialog"
-                    aria-labelledby="newInvitationModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h3 class="modal-custom-title">New invitation</h3>
-                                <h5 class="modal-custom-subtitle">You have been invited to join the following team:</h5>
-                                <img src="../public/img/user-placeholder.png" alt="Profile picture"
-                                    class="modal-custom-img">
-                                <p class="modal-custom-team-name">Team MSM Super Engineers</p>
-                                <p class="modal-custom-team-inviter"><span>Inviter:</span> jörgen.eichel@gmail.com</p>
-                                <a href="#" class="modal-custom-btn-round">Join team</a>
-                                <a href="#" class="modal-custom-cancel" data-dismiss="modal" aria-label="Close">Deny</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </main>
         </div>
     </div>
@@ -847,73 +763,43 @@
     <script src="../public/js/main.js"></script>
 
     <script>
+        
         // CHART & NUMBER OF BARS
         function numberOfChartBars() {
-            let graphs = document.querySelectorAll('.graph-card');
-            [...graphs].forEach(e => {
-                let rem = parseInt(getComputedStyle(document.documentElement).fontSize);
-                let graphWidth = e.offsetWidth;
-                let barWidth = rem * 1.8 * 3;
-                let numOfBars = Math.floor(graphWidth / (barWidth));
+            var graphs = document.querySelectorAll('.graph-card');
 
-                e.querySelectorAll('.graph-card-body .bar').forEach((e, i, arr) => {
-                    e.style.display = 'none';
-                    if (i + 1 >= arr.length - numOfBars) {
-                        e.style.display = 'inline-block';
+            for(var i = 0; i < graphs.length; i++) {
+                console.log(i);
+                var rem = parseInt(getComputedStyle(document.documentElement).fontSize);
+                var graphWidth = graphs[i].offsetWidth;
+                var barWidth = rem * 1.8 * 3;
+                var numOfBars = Math.floor(graphWidth / (barWidth));
+
+                var bars = graphs[i].querySelectorAll('.graph-card-body .bar');
+
+                for(var j = 0; j < bars.length; j++) {
+                    bars[j].style.display = 'none';
+                    if (j + 1 >= bars.length - numOfBars) {
+                        bars[j].style.display = 'inline-block';
                     }
-                })
-            })
+                }
+
+            }
 
         }
+
+        numberOfChartBars();
 
         // ANIMATE PROGRESS BAR
         window.addEventListener('load', function () {
-            document.querySelectorAll('.progress-custom-bar-fill').forEach(e => {
-                e.style.width = `${e.getAttribute('fill-progress')}%`;
-            })
+            var progressBars = document.querySelectorAll('.progress-custom-bar-fill');
+
+            for(var i = 0; i < progressBars.length; i++) {
+                progressBars[i].style.width = progressBars[i].getAttribute('fill-progress') + '%';
+            }
         })
 
-        // initial width check
-        checkSliderWidth()
-
-        // Initialize sliders
-        sliderInit('.section-averages')
-        sliderInit('.section-development')
-
-
-        // Check for sliders and content width show/hide slider triggers
-        function checkSliderWidth(slider) {
-            $('.slider').each(function (i) {
-                if ($(this).width() <= $(this).find('.slider-item').outerWidth() * 3 - 10) {
-                    $(this).find('.slider-trigger-left').show()
-                    $(this).find('.slider-trigger-right').show()
-                } else {
-                    $(this).find('.slider-trigger-left').hide()
-                    $(this).find('.slider-trigger-right').hide()
-                }
-            })
-
-            numberOfChartBars()
-        }
-
-        // Slider logic
-        function sliderInit(slider) {
-            console.log($('html').css('font-size'))
-            $(`${slider} .slider-trigger-left`).on('click', function () {
-                $(`${slider} .section-body`).animate({
-                    scrollLeft: `-=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
-                }, 300, 'swing');
-            });
-
-            $(`${slider} .slider-trigger-right`).on('click', function () {
-                $(`${slider} .section-body`).animate({
-                    scrollLeft: `+=${$(`${slider} .slider-item`).outerWidth() + parseInt($('html').css('font-size')) * 1.72}`
-                }, 300, 'swing');
-            });
-        }
-
-        // resize event listener
-        window.addEventListener('resize', checkSliderWidth)
+        window.addEventListener('resize', numberOfChartBars);
     </script>
 
 </body>
