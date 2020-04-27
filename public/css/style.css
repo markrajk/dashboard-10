@@ -2716,8 +2716,7 @@ i {
   .teams-settings-general-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    padding-bottom: 2.5rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 2.7rem; }
     .teams-settings-general-header .button {
       margin-right: 1.6rem; }
   .teams-settings-general-body {
@@ -2796,7 +2795,7 @@ i {
   .teams-settings-feedback-header {
     max-width: 80.5rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.3rem; }
   .teams-settings-feedback .button {
     margin-right: 1.6rem; }
   .teams-settings-feedback-body {
@@ -3004,7 +3003,7 @@ i {
   .teams-settings-rights-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.3rem; }
   .teams-settings-rights .button {
     margin-right: 1.6rem; }
   .teams-settings-rights-body {
