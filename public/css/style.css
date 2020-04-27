@@ -4205,7 +4205,7 @@ i {
   padding-top: 2.6rem; }
   .report-team-header,
   .report-member-header {
-    margin-bottom: 3rem; }
+    margin-bottom: 2.7rem; }
     .report-team-header .button,
     .report-member-header .button {
       margin-right: 1.2rem; }
@@ -4298,7 +4298,7 @@ i {
     .report-team-body .section-header-bar,
     .report-member-body .section-header-bar {
       margin-bottom: 3.7rem;
-      padding-left: 1.35rem;
+      padding-left: 1.7rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -4320,7 +4320,7 @@ i {
         color: #647282; }
     .report-team-body-options,
     .report-member-body-options {
-      padding-left: .7rem;
+      padding-left: 1rem;
       padding-right: 5rem;
       margin-bottom: 7rem;
       display: -ms-grid;

@@ -5212,7 +5212,7 @@ i {
   //padding-right: calc(100% - 72rem);
 
   &-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2.7rem;
 
     .button {
       margin-right: 1.2rem;
@@ -5307,7 +5307,7 @@ i {
 
     & .section-header-bar {
       margin-bottom: 3.7rem;
-      padding-left: 1.35rem;
+      padding-left: 1.7rem;
       @include flexbox;
       @include align-items(center);
       height: 37px;
@@ -5323,7 +5323,7 @@ i {
     }
 
     &-options {
-      padding-left: .7rem;
+      padding-left: 1rem;
       padding-right: 5rem;
       margin-bottom: 7rem;
       @include grid;
