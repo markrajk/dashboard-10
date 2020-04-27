@@ -1121,7 +1121,7 @@ i {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center;
-  padding: .4em 1.2em;
+  padding: .35em 1.15em;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
@@ -1133,8 +1133,8 @@ i {
   white-space: nowrap;
   cursor: pointer; }
   .button-primary {
-    background-color: #1a9cfc;
-    border-color: #1a9cfc; }
+    background-color: #1273DD;
+    border-color: #1273DD; }
     .button-primary:hover, .button-primary:focus {
       color: #FFF;
       background-color: #0e82d4;
@@ -2392,7 +2392,7 @@ i {
       .teams-people-view-header {
         margin-bottom: 2.5rem; } }
     .teams-people-view-header .button-dark {
-      margin-right: 1.5rem; }
+      margin-right: 1.6rem; }
       @media (max-width: 379px) {
         .teams-people-view-header .button-dark {
           font-size: .95rem; } }
@@ -2719,7 +2719,7 @@ i {
     padding-bottom: 2.5rem;
     margin-bottom: 3rem; }
     .teams-settings-general-header .button {
-      margin-right: 1.2rem; }
+      margin-right: 1.6rem; }
   .teams-settings-general-body {
     max-width: 72rem;
     max-height: calc(100vh - 30rem); }
@@ -2798,7 +2798,7 @@ i {
     padding-top: 2.6rem;
     margin-bottom: 3.5rem; }
   .teams-settings-feedback .button {
-    margin-right: 1.2rem; }
+    margin-right: 1.6rem; }
   .teams-settings-feedback-body {
     max-width: 80.5rem;
     max-height: calc(100vh - 27.8rem - 1.5px); }
@@ -3006,7 +3006,7 @@ i {
     padding-top: 2.6rem;
     margin-bottom: 3.5rem; }
   .teams-settings-rights .button {
-    margin-right: 1.2rem; }
+    margin-right: 1.6rem; }
   .teams-settings-rights-body {
     max-width: 72rem;
     max-height: calc(100vh - 26.5rem - 1.5px); }
