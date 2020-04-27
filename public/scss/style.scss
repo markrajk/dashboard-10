@@ -1955,7 +1955,7 @@ i {
   font-size: 1.4rem;
   font-weight: 500;
   color: #FFF;
-  border: 1px solid transparent;
+  border: 1.25px solid transparent;
   border-radius: 3px;
   transition: all .15s ease-in-out;
   transition-property: background-color, color, border-color;
@@ -1988,7 +1988,7 @@ i {
 
   &-outlined {
     color: #515558;
-    border-color: #c1c7cd;
+    border-color: #D1D7DD;
     background-color: transparent;
 
     &:hover,
