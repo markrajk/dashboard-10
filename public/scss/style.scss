@@ -1991,18 +1991,43 @@ i {
     border-color: #c1c7cd;
     background-color: transparent;
 
-    &-success {
-      color: #4dc424;
-    }
-
-    &-danger {
-      color: #fd0000;
-    }
-
     &:hover,
     &:focus {
       color: #515558;
       background-color: #efefef;
+    }
+
+    &-danger,
+    &-success {
+      font-weight: 400;
+      font-size: 1.3rem;
+      border-radius: 6px;
+
+      &:hover,
+      &:focus {
+        color: #efefef;
+         background-color: #515558;
+      }
+    }
+
+    &-success {
+      color: #4dc424;
+
+      &:hover {
+        color: #FFF;
+        background-color: #86df68;
+        border-color: #86df68;
+        }
+    }
+
+    &-danger {
+      color: #fd0000;
+
+      &:hover {
+        color: #FFF;
+      background-color: #ff4a4a;
+      border-color: #ff4a4a;
+      }
     }
   }
 
@@ -3271,13 +3296,8 @@ i {
       margin-bottom: 2.5rem;
     }
 
-    .btn-custom-primary {
-      padding: .6rem 1.4rem;
+    .button-dark {
       margin-right: 1.5rem;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.36;
-      color: #ffffff;
 
       @include respond(desktop-xxsm) {
         font-size: .95rem;
@@ -4728,15 +4748,7 @@ i {
       }
     }
 
-    & .btn-custom-primary {
-     
-      padding: .4em 1em;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.36;
-      letter-spacing: normal;
-      
-
+    & .button {
       @include respond(desktop-xsm) {
         margin-right: .5rem;
         font-size: 1.2rem;
@@ -4744,13 +4756,6 @@ i {
 
       @include respond(desktop-xxsm) {
         font-size: 1rem;
-      }
-  
-      &.outline {
-        &:hover,
-        &:focus {
-          background-color: #f5f5f5;
-        }
       }
 
       &:not(:last-of-type) {
@@ -5089,15 +5094,7 @@ i {
       }
     }
 
-    & .btn-custom-primary {
-     
-      padding: .4em 1em;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.36;
-      letter-spacing: normal;
-      
-
+    & .button {
       @include respond(desktop-xsm) {
         margin-right: .5rem;
         font-size: 1.2rem;
@@ -5105,13 +5102,6 @@ i {
 
       @include respond(desktop-xxsm) {
         font-size: 1rem;
-      }
-  
-      &.outline {
-        &:hover,
-        &:focus {
-          background-color: #f5f5f5;
-        }
       }
 
       &:not(:last-of-type) {

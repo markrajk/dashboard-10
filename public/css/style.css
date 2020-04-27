@@ -1150,13 +1150,28 @@ i {
     color: #515558;
     border-color: #c1c7cd;
     background-color: transparent; }
-    .button-outlined-success {
-      color: #4dc424; }
-    .button-outlined-danger {
-      color: #fd0000; }
     .button-outlined:hover, .button-outlined:focus {
       color: #515558;
       background-color: #efefef; }
+    .button-outlined-danger, .button-outlined-success {
+      font-weight: 400;
+      font-size: 1.3rem;
+      border-radius: 6px; }
+      .button-outlined-danger:hover, .button-outlined-danger:focus, .button-outlined-success:hover, .button-outlined-success:focus {
+        color: #efefef;
+        background-color: #515558; }
+    .button-outlined-success {
+      color: #4dc424; }
+      .button-outlined-success:hover {
+        color: #FFF;
+        background-color: #86df68;
+        border-color: #86df68; }
+    .button-outlined-danger {
+      color: #fd0000; }
+      .button-outlined-danger:hover {
+        color: #FFF;
+        background-color: #ff4a4a;
+        border-color: #ff4a4a; }
   .button-green {
     background-color: #30ea4f;
     border-color: #30ea4f; }
@@ -2376,15 +2391,10 @@ i {
     @media (max-width: 379px) {
       .teams-people-view-header {
         margin-bottom: 2.5rem; } }
-    .teams-people-view-header .btn-custom-primary {
-      padding: .6rem 1.4rem;
-      margin-right: 1.5rem;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.36;
-      color: #ffffff; }
+    .teams-people-view-header .button-dark {
+      margin-right: 1.5rem; }
       @media (max-width: 379px) {
-        .teams-people-view-header .btn-custom-primary {
+        .teams-people-view-header .button-dark {
           font-size: .95rem; } }
     .teams-people-view-header .input-container {
       max-width: 19.1rem;
@@ -3709,23 +3719,15 @@ i {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #383838; }
-    .single-user-header .btn-custom-primary {
-      padding: .4em 1em;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.36;
-      letter-spacing: normal; }
-      @media (max-width: 575px) {
-        .single-user-header .btn-custom-primary {
-          margin-right: .5rem;
-          font-size: 1.2rem; } }
-      @media (max-width: 379px) {
-        .single-user-header .btn-custom-primary {
-          font-size: 1rem; } }
-      .single-user-header .btn-custom-primary.outline:hover, .single-user-header .btn-custom-primary.outline:focus {
-        background-color: #f5f5f5; }
-      .single-user-header .btn-custom-primary:not(:last-of-type) {
-        margin-right: 1.6rem; }
+    @media (max-width: 575px) {
+      .single-user-header .button {
+        margin-right: .5rem;
+        font-size: 1.2rem; } }
+    @media (max-width: 379px) {
+      .single-user-header .button {
+        font-size: 1rem; } }
+    .single-user-header .button:not(:last-of-type) {
+      margin-right: 1.6rem; }
   .single-user-body {
     max-width: 103rem; }
     .single-user-body .section {
@@ -4080,23 +4082,15 @@ i {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #383838; }
-    .single-user-feedback-header .btn-custom-primary {
-      padding: .4em 1em;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.36;
-      letter-spacing: normal; }
-      @media (max-width: 575px) {
-        .single-user-feedback-header .btn-custom-primary {
-          margin-right: .5rem;
-          font-size: 1.2rem; } }
-      @media (max-width: 379px) {
-        .single-user-feedback-header .btn-custom-primary {
-          font-size: 1rem; } }
-      .single-user-feedback-header .btn-custom-primary.outline:hover, .single-user-feedback-header .btn-custom-primary.outline:focus {
-        background-color: #f5f5f5; }
-      .single-user-feedback-header .btn-custom-primary:not(:last-of-type) {
-        margin-right: 1.6rem; }
+    @media (max-width: 575px) {
+      .single-user-feedback-header .button {
+        margin-right: .5rem;
+        font-size: 1.2rem; } }
+    @media (max-width: 379px) {
+      .single-user-feedback-header .button {
+        font-size: 1rem; } }
+    .single-user-feedback-header .button:not(:last-of-type) {
+      margin-right: 1.6rem; }
   .single-user-feedback-body .section-comments-header {
     max-width: 103rem;
     display: -webkit-box;
