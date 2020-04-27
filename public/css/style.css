@@ -1105,6 +1105,90 @@ i {
       .progress-custom-bar-fill.bad {
         background-color: #fd1f27; }
 
+.button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  padding: .4em 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: all .15s ease-in-out;
+  transition-property: background-color, color, border-color;
+  white-space: nowrap;
+  cursor: pointer; }
+  .button-primary {
+    background-color: #1a9cfc;
+    border-color: #1a9cfc; }
+    .button-primary:hover, .button-primary:focus {
+      color: #FFF;
+      background-color: #0e82d4;
+      border-color: #0e82d4; }
+  .button-dark {
+    background-color: #0f2882;
+    border-color: #0f2882; }
+    .button-dark:hover, .button-dark:focus {
+      color: #FFF;
+      background-color: #4862be;
+      border-color: #4862be; }
+  .button-outlined {
+    color: #515558;
+    border-color: #c1c7cd;
+    background-color: transparent; }
+    .button-outlined-success {
+      color: #4dc424; }
+    .button-outlined-danger {
+      color: #fd0000; }
+    .button-outlined:hover, .button-outlined:focus {
+      color: #515558;
+      background-color: #efefef; }
+  .button-green {
+    background-color: #30ea4f;
+    border-color: #30ea4f; }
+    .button-green:hover, .button-green:focus {
+      color: #FFF; }
+  .button-mobile {
+    padding: .9em;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.7rem;
+    border-color: #E6E9EF;
+    border-radius: 8px; }
+    .button-mobile .play-icon {
+      width: 2.0132rem;
+      height: 2.1504rem;
+      margin-left: 1.2rem; }
+    .button-mobile .apple-icon {
+      width: 1.98rem;
+      height: 1.98rem;
+      margin-bottom: 0.15rem;
+      margin-left: 0.4rem; }
+    .button-mobile:hover, .button-mobile:focus {
+      color: #333;
+      background-color: #efefef; }
+  .button-rounded {
+    border-radius: 1.8rem;
+    padding: .5em 2.3em;
+    font-size: 1.6rem;
+    color: #ffffff;
+    border-radius: 1.8rem;
+    border: 0; }
+
 .sidebar {
   position: relative;
   display: -webkit-inline-box;
@@ -1312,17 +1396,6 @@ i {
         border-bottom: 1.5px solid #F2F2F2; }
         .sidebar-menu-footer-create-new:hover {
           color: rgba(51, 51, 51, 0.8); }
-      .sidebar-menu-footer .btn-custom-white {
-        margin: 1.7rem; }
-        .sidebar-menu-footer .btn-custom-white .play-icon {
-          width: 2.0132rem;
-          height: 2.1504rem;
-          margin-left: 1.2rem; }
-        .sidebar-menu-footer .btn-custom-white .apple-icon {
-          width: 1.98rem;
-          height: 1.98rem;
-          margin-bottom: 0.15rem;
-          margin-left: 0.4rem; }
   .sidebar-menu-toggle {
     transform: rotateZ(0);
     display: -webkit-box;
@@ -2635,12 +2708,8 @@ i {
     padding-top: 2.6rem;
     padding-bottom: 2.5rem;
     margin-bottom: 3rem; }
-    .teams-settings-general-header .btn-custom-primary {
-      padding: .4em 1.2em;
-      padding-bottom: .42em;
+    .teams-settings-general-header .button {
       margin-right: 1.2rem; }
-      .teams-settings-general-header .btn-custom-primary.outline:hover, .teams-settings-general-header .btn-custom-primary.outline:focus {
-        background-color: #f5f5f5; }
   .teams-settings-general-body {
     max-width: 72rem;
     max-height: calc(100vh - 30rem); }
@@ -2718,12 +2787,8 @@ i {
     max-width: 80.5rem;
     padding-top: 2.6rem;
     margin-bottom: 3.5rem; }
-  .teams-settings-feedback .btn-custom-primary {
-    padding: .4em 1.2em;
-    padding-bottom: .42em;
+  .teams-settings-feedback .button {
     margin-right: 1.2rem; }
-    .teams-settings-feedback .btn-custom-primary.outline:hover, .teams-settings-feedback .btn-custom-primary.outline:focus {
-      background-color: #f5f5f5; }
   .teams-settings-feedback-body {
     max-width: 80.5rem;
     max-height: calc(100vh - 27.8rem - 1.5px); }
@@ -2930,15 +2995,8 @@ i {
     max-width: 72rem;
     padding-top: 2.6rem;
     margin-bottom: 3.5rem; }
-  .teams-settings-rights .btn-custom-primary {
-    padding: .4em 1.2em;
-    padding-bottom: .42em;
+  .teams-settings-rights .button {
     margin-right: 1.2rem; }
-    .teams-settings-rights .btn-custom-primary.outline:hover, .teams-settings-rights .btn-custom-primary.outline:focus {
-      background-color: #f5f5f5; }
-    .teams-settings-rights .btn-custom-primary.outline.blue {
-      color: #1165F4;
-      border-color: #1165F4; }
   .teams-settings-rights-body {
     max-width: 72rem;
     max-height: calc(100vh - 26.5rem - 1.5px); }
@@ -3544,16 +3602,8 @@ i {
       .give-feedback #feedbackModal .modal-body .input-container:nth-of-type(4) {
         color: red !important;
         margin-top: 2.7rem; }
-    .give-feedback #feedbackModal .modal-body .btn-custom-primary {
-      padding: .5em 2.3em;
-      margin-top: 4.1rem;
-      font-size: 1.6rem;
-      font-weight: 500;
-      line-height: 1.31;
-      color: #ffffff;
-      border-radius: 1.8rem;
-      background-color: #1a9cfc;
-      border: 0; }
+    .give-feedback #feedbackModal .modal-body .button {
+      margin-top: 4.1rem; }
 
 .single-user {
   padding: 2.5rem 0;
@@ -4163,15 +4213,9 @@ i {
   .report-team-header,
   .report-member-header {
     margin-bottom: 3rem; }
-    .report-team-header .btn-custom-primary,
-    .report-member-header .btn-custom-primary {
-      padding: .4em 1.2em;
-      padding-bottom: .42em;
+    .report-team-header .button,
+    .report-member-header .button {
       margin-right: 1.2rem; }
-      .report-team-header .btn-custom-primary.outline:hover, .report-team-header .btn-custom-primary.outline:focus,
-      .report-member-header .btn-custom-primary.outline:hover,
-      .report-member-header .btn-custom-primary.outline:focus {
-        background-color: #f5f5f5; }
   .report-team-body,
   .report-member-body {
     padding-bottom: 5rem;

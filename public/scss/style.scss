@@ -1946,6 +1946,114 @@ i {
   }
 }
 
+.button {
+  @include inline-flex;
+  @include align-items(center);
+  @include justify-content(center);
+  padding: .4em 1.2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #FFF;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: all .15s ease-in-out;
+  transition-property: background-color, color, border-color;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &-primary {
+    background-color: #1a9cfc;
+    border-color: #1a9cfc;
+
+    &:hover,
+    &:focus {
+      color: #FFF;
+      background-color: #0e82d4;
+      border-color: #0e82d4;
+    }
+  }
+
+  &-dark {
+    background-color: #0f2882;
+    border-color: #0f2882;
+
+    &:hover,
+    &:focus {
+      color: #FFF;
+      background-color: #4862be;
+      border-color: #4862be;
+    }
+  }
+
+  &-outlined {
+    color: #515558;
+    border-color: #c1c7cd;
+    background-color: transparent;
+
+    &-success {
+      color: #4dc424;
+    }
+
+    &-danger {
+      color: #fd0000;
+    }
+
+    &:hover,
+    &:focus {
+      color: #515558;
+      background-color: #efefef;
+    }
+  }
+
+  &-green {
+    background-color: #30ea4f;
+    border-color: #30ea4f;
+
+    &:hover,
+    &:focus {
+      color: #FFF;
+    }
+  }
+
+  &-mobile {
+    padding: .9em;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1.7rem;
+    border-color: #E6E9EF;
+    border-radius: 8px;
+
+    & .play-icon {
+      width: resize(7.19, 0.28) * 1rem;
+      height: resize(7.68, 0.28) * 1rem;
+      margin-left: 1.2rem;
+    }
+
+    & .apple-icon {
+      width: resize(2.2, .9) * 1rem;
+      height: resize(2.2, .9) * 1rem;
+      margin-bottom: 0.15rem;
+      margin-left: 0.4rem;
+    }
+
+    &:hover,
+    &:focus {
+      color: #333;
+      background-color: #efefef;
+    }
+  }
+
+  &-rounded {
+    border-radius: 1.8rem;
+    padding: .5em 2.3em;
+    font-size: 1.6rem;
+    color: #ffffff;
+    border-radius: 1.8rem;
+    border: 0;
+  }
+}
+
 // ==================================
 // SIDEBAR START
 // ==================================
@@ -2156,22 +2264,22 @@ i {
         }
       }
 
-      & .btn-custom-white {
-        margin: 1.7rem;
+      // & .btn-custom-white {
+      //   margin: 1.7rem;
 
-        & .play-icon {
-          width: resize(7.19, 0.28) * 1rem;
-          height: resize(7.68, 0.28) * 1rem;
-          margin-left: 1.2rem;
-        }
+      //   & .play-icon {
+      //     width: resize(7.19, 0.28) * 1rem;
+      //     height: resize(7.68, 0.28) * 1rem;
+      //     margin-left: 1.2rem;
+      //   }
 
-        & .apple-icon {
-          width: resize(2.2, .9) * 1rem;
-          height: resize(2.2, .9) * 1rem;
-          margin-bottom: 0.15rem;
-          margin-left: 0.4rem;
-        }
-      }
+      //   & .apple-icon {
+      //     width: resize(2.2, .9) * 1rem;
+      //     height: resize(2.2, .9) * 1rem;
+      //     margin-bottom: 0.15rem;
+      //     margin-left: 0.4rem;
+      //   }
+      // }
     }
   }
 
@@ -3544,17 +3652,8 @@ i {
     padding-bottom: 2.5rem;
     margin-bottom: 3rem;
 
-    .btn-custom-primary {
-      padding: .4em 1.2em;
-      padding-bottom: .42em;
+    .button {
       margin-right: 1.2rem;
-
-      &.outline {
-        &:hover,
-        &:focus {
-          background-color: #f5f5f5;
-        }
-      }
     }
   }
 
@@ -3669,17 +3768,8 @@ i {
     margin-bottom: 3.5rem;
   }
 
-  & .btn-custom-primary {
-    padding: .4em 1.2em;
-    padding-bottom: .42em;
+  & .button {
     margin-right: 1.2rem;
-
-    &.outline {
-      &:hover,
-      &:focus {
-        background-color: #f5f5f5;
-      }
-    }
   }
 
   &-body {
@@ -3926,22 +4016,8 @@ i {
     margin-bottom: 3.5rem;
   }
 
-  & .btn-custom-primary {
-    padding: .4em 1.2em;
-    padding-bottom: .42em;
+  & .button {
     margin-right: 1.2rem;
-
-    &.outline {
-      &:hover,
-      &:focus {
-        background-color: #f5f5f5;
-      }
-
-      &.blue {
-        color: #1165F4;
-        border-color: #1165F4;
-      }
-    }
   }
 
   &-body {
@@ -4548,17 +4624,9 @@ i {
             margin-top: 2.7rem;
           }
         }
-  
-        & .btn-custom-primary {
-          padding: .5em 2.3em;
+
+        & .button {
           margin-top: 4.1rem;
-          font-size: 1.6rem;
-          font-weight: 500;
-          line-height: 1.31;
-          color: #ffffff;
-          border-radius: 1.8rem;
-          background-color: #1a9cfc;
-          border: 0;
         }
       }
     }
@@ -5157,17 +5225,8 @@ i {
   &-header {
     margin-bottom: 3rem;
 
-    .btn-custom-primary {
-      padding: .4em 1.2em;
-      padding-bottom: .42em;
+    .button {
       margin-right: 1.2rem;
-
-      &.outline {
-        &:hover,
-        &:focus {
-          background-color: #f5f5f5;
-        }
-      }
     }
   }
 
