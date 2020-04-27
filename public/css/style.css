@@ -2969,7 +2969,7 @@ i {
           color: #1b2733; }
           .teams-settings-rights-body .section-caption-info .subheader-text-small {
             font-size: 1.3rem;
-            line-height: 1.67;
+            line-height: 1.5;
             color: #778391; }
       .teams-settings-rights-body .section-caption a {
         -webkit-align-self: flex-end;
@@ -4632,6 +4632,10 @@ i {
         .report-member-body-options-list-item .pretty {
           margin-right: 0;
           font-size: 1.5rem; }
+          .report-team-body-options-list-item .pretty i.icon-check,
+          .report-member-body-options-list-item .pretty i.icon-check {
+            margin-top: .05rem;
+            transform: scale(0.8); }
         .report-team-body-options-list-item-label,
         .report-member-body-options-list-item-label {
           display: -webkit-inline-box;
@@ -4841,7 +4845,7 @@ i {
   padding: 2.5rem 0;
   padding-top: 3.4rem;
   border-top: 1px solid #e1e1e1;
-  max-width: 79.9rem; }
+  max-width: 80.5rem; }
   .company-members-header .subheader-text {
     margin-bottom: .6rem;
     font-size: 1.7rem;
@@ -5147,7 +5151,7 @@ i {
       .company-teams-body {
         max-height: calc(100vh - 20rem - 1.5px); } }
     .company-teams-body .subheader-text {
-      margin-top: 3.15rem;
+      margin-top: 3.4rem;
       margin-bottom: .6rem;
       font-size: 1.7rem;
       line-height: 1.35;
@@ -5381,7 +5385,7 @@ i {
   padding: 2.5rem 0;
   padding-top: 3.4rem;
   border-top: 1px solid #e1e1e1;
-  max-width: 79.9rem; }
+  max-width: 80.5rem; }
   .company-admin-header .subheader-text {
     margin-bottom: .6rem;
     font-size: 1.7rem;
@@ -5604,7 +5608,7 @@ i {
 .company-settings {
   padding: 2.5rem 0;
   border-top: 1px solid #e1e1e1;
-  max-width: 72rem;
+  max-width: 80.5rem;
   padding-top: 0; }
   .company-settings-header {
     margin-top: 3.4rem;
@@ -5620,6 +5624,7 @@ i {
         line-height: 1.38;
         color: #647282; }
   .company-settings-body {
+    max-width: 72rem;
     max-height: calc(100vh - 30rem); }
     .company-settings-body .settings-table-header {
       height: 3.7rem;
