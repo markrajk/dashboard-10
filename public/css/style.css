@@ -985,11 +985,11 @@ i {
     .table-custom-body::-webkit-scrollbar {
       width: 0;
       height: 0; }
-    .table-custom-body tr {
+    .table-custom-body tr:not(:last-of-type) {
+      border-bottom: solid 1px #e6e8eb; }
+    .table-custom-body td {
       height: 5.6rem;
       padding: 1.3rem; }
-      .table-custom-body tr:not(:last-of-type) {
-        border-bottom: solid 1px #e6e8eb; }
     .table-custom-body .dropdown-custom-trigger {
       padding: .3rem .8rem;
       color: #647282; }
@@ -2590,8 +2590,9 @@ i {
     max-height: calc(100vh - 11rem - 16rem - 8rem);
     border-bottom: solid 1px #e6e8eb; }
     .teams-people-view .table-custom-body tr {
-      height: 5.8rem;
       padding-left: .7rem; }
+    .teams-people-view .table-custom-body td {
+      height: 5.8rem; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2621,17 +2622,6 @@ i {
       .teams-people-view .table-custom-body .table-custom-col-01 a:hover .name {
         text-decoration: underline; }
     .teams-people-view .table-custom-body .table-custom-col-02 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      height: 100%;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center;
       font-size: 1.4rem;
       line-height: 1.36;
       color: #1b2733; }

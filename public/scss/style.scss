@@ -1777,12 +1777,15 @@ i {
     }
 
     & tr {
-      height: 5.6rem;
-      padding: 1.3rem;
 
       &:not(:last-of-type) {
         border-bottom: solid 1px #e6e8eb;
       }
+    }
+
+    & td {
+      height: 5.6rem;
+      padding: 1.3rem;
     }
 
     & .dropdown-custom {
@@ -3489,8 +3492,11 @@ i {
       border-bottom: solid 1px #e6e8eb;
 
       & tr {
-        height: 5.8rem;
         padding-left: .7rem;
+      }
+
+      & td {
+        height: 5.8rem;
       }
 
       .table-custom-col-01 {     
@@ -3525,9 +3531,6 @@ i {
       }
 
       .table-custom-col-02 {
-        @include flexbox;
-        height: 100%;
-        @include align-items(center);
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
