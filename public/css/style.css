@@ -869,6 +869,12 @@ i {
   display: block;
   border-spacing: 0;
   border-collapse: separate; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .table-custom {
+      border-collapse: collapse; } }
+  @supports (-ms-ime-align: auto) {
+    .table-custom {
+      border-collapse: collapse; } }
   .table-custom tr {
     width: 100%;
     display: -webkit-box;
@@ -877,21 +883,100 @@ i {
     display: -ms-flexbox;
     display: flex; }
   .table-custom th, .table-custom td {
+    margin-right: .5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -moz-box-flex: 1;
     -moz-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    white-space: nowrap; }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .table-custom th:nth-of-type(1), .table-custom td:nth-of-type(1) {
+        padding-left: 1.7rem; } }
+    @supports (-ms-ime-align: auto) {
+      .table-custom th:nth-of-type(1), .table-custom td:nth-of-type(1) {
+        padding-left: 1.7rem; } }
+    @media (max-width: 575px) {
+      .table-custom th, .table-custom td {
+        font-size: 1.2rem; } }
   .table-custom-head {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 4.3rem;
+    font-size: 1.2rem;
+    line-height: 1.33;
+    color: #647282;
+    background-color: #f7f9fa;
+    border: solid 1px #e6e8eb;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+    .table-custom-head tr {
+      padding: 1.3rem; }
+    .table-custom-head-link {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      color: #647282; }
+      .table-custom-head-link i {
+        margin-left: .5rem;
+        font-size: 1rem; }
+      .table-custom-head-link:hover {
+        color: 434950; }
+      .table-custom-head-link.active {
+        font-weight: 500; }
+    .table-custom-head .dropdown-custom-trigger {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      padding: .6rem; }
+      .table-custom-head .dropdown-custom-trigger i:first-of-type {
+        margin-top: -.1rem;
+        font-size: 1.2rem; }
+        .table-custom-head .dropdown-custom-trigger i:first-of-type + i {
+          margin-left: .5rem;
+          font-size: .8rem; }
   .table-custom-body {
     display: block;
     overflow-y: auto;
+    border: solid 1px #e6e8eb;
+    border-radius: 3px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -900,6 +985,14 @@ i {
     .table-custom-body::-webkit-scrollbar {
       width: 0;
       height: 0; }
+    .table-custom-body tr {
+      height: 5.6rem;
+      padding: 1.3rem; }
+      .table-custom-body tr:not(:last-of-type) {
+        border-bottom: solid 1px #e6e8eb; }
+    .table-custom-body .dropdown-custom-trigger {
+      padding: .3rem .8rem;
+      color: #647282; }
 
 .inv {
   visibility: hidden;
@@ -2446,108 +2539,60 @@ i {
         /* WebKit */
         width: 0;
         height: 0; } }
-  .teams-people-view .panel-body .table-header-fixed {
-    position: relative; }
-    .teams-people-view .panel-body .table-header-fixed thead {
-      height: 3.7rem;
-      background-color: #f7f9fa;
-      margin-bottom: .5rem; }
-      .teams-people-view .panel-body .table-header-fixed thead tr {
-        padding: .15rem 0; }
-        .teams-people-view .panel-body .table-header-fixed thead tr i {
-          font-size: .8rem; }
-      .teams-people-view .panel-body .table-header-fixed thead th {
-        font-size: 1.25rem;
-        font-weight: 500;
-        line-height: 1.33;
-        color: #647282;
-        margin-bottom: .45rem; }
-        .teams-people-view .panel-body .table-header-fixed thead th i {
-          margin-left: 0.6rem; }
-        .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger {
-          margin-right: 1.5rem;
-          display: -webkit-inline-box;
-          display: -webkit-inline-flex;
-          display: -moz-inline-flex;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          align-items: center;
-          -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-          -webkit-justify-content: space-between;
-          -moz-justify-content: space-between;
-          justify-content: space-between;
-          padding: .6rem; }
-          .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type {
-            margin-top: -.1rem;
-            font-size: 1.2rem;
-            margin-left: .8rem; }
-            .teams-people-view .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type + i {
-              font-size: .8rem; }
-        .teams-people-view .panel-body .table-header-fixed thead th:nth-of-type(1) span {
-          margin-left: 1.35rem; }
-    .teams-people-view .panel-body .table-header-fixed tbody {
-      max-height: calc(100vh - 11rem - 16rem - 8rem);
-      border-bottom: 1px solid #E6E8EB; }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        .teams-people-view .panel-body .table-header-fixed tbody {
-          height: 5.5rem; } }
-      @supports (-ms-ime-align: auto) {
-        .teams-people-view .panel-body .table-header-fixed tbody {
-          height: 5.5rem; } }
-    .teams-people-view .panel-body .table-header-fixed tbody tr {
-      padding: .6rem 0;
-      border-bottom: 1px solid #ededf5; }
-      .teams-people-view .panel-body .table-header-fixed tbody tr:last-child {
-        border: none; }
-    .teams-people-view .panel-body .table-header-fixed td:nth-of-type(1), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(1) {
-      -webkit-box-flex: 0.76;
-      -webkit-flex: 0.76;
-      -moz-box-flex: 0.76;
-      -moz-flex: 0.76;
-      -ms-flex: 0.76;
-      flex: 0.76; }
-      @media (max-width: 575px) {
-        .teams-people-view .panel-body .table-header-fixed td:nth-of-type(1), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(1) {
-          -webkit-box-flex: 1;
-          -webkit-flex: 1;
-          -moz-box-flex: 1;
-          -moz-flex: 1;
-          -ms-flex: 1;
-          flex: 1; } }
-    .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
-      -webkit-box-flex: 0.485;
-      -webkit-flex: 0.485;
-      -moz-box-flex: 0.485;
-      -moz-flex: 0.485;
-      -ms-flex: 0.485;
-      flex: 0.485; }
-      @media (max-width: 379px) {
-        .teams-people-view .panel-body .table-header-fixed td:nth-of-type(2), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(2) {
-          display: none; } }
-    .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
-      -webkit-box-flex: 0.565;
-      -webkit-flex: 0.565;
-      -moz-box-flex: 0.565;
-      -moz-flex: 0.565;
-      -ms-flex: 0.565;
-      flex: 0.565; }
-      @media (max-width: 575px) {
-        .teams-people-view .panel-body .table-header-fixed td:nth-of-type(3), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(3) {
-          display: none; } }
-    .teams-people-view .panel-body .table-header-fixed td:nth-of-type(4), .teams-people-view .panel-body .table-header-fixed th:nth-of-type(4) {
-      -webkit-box-flex: none;
-      -webkit-flex: none;
-      -moz-box-flex: none;
-      -moz-flex: none;
-      -ms-flex: none;
-      flex: none;
-      width: 5.5rem; }
-    .teams-people-view .panel-body .table-header-fixed-col-1 a {
+  .teams-people-view .table-custom td:nth-of-type(1), .teams-people-view .table-custom th:nth-of-type(1) {
+    -webkit-box-flex: 0.76;
+    -webkit-flex: 0.76;
+    -moz-box-flex: 0.76;
+    -moz-flex: 0.76;
+    -ms-flex: 0.76;
+    flex: 0.76; }
+    @media (max-width: 575px) {
+      .teams-people-view .table-custom td:nth-of-type(1), .teams-people-view .table-custom th:nth-of-type(1) {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
+  .teams-people-view .table-custom td:nth-of-type(2), .teams-people-view .table-custom th:nth-of-type(2) {
+    -webkit-box-flex: 0.485;
+    -webkit-flex: 0.485;
+    -moz-box-flex: 0.485;
+    -moz-flex: 0.485;
+    -ms-flex: 0.485;
+    flex: 0.485; }
+    @media (max-width: 379px) {
+      .teams-people-view .table-custom td:nth-of-type(2), .teams-people-view .table-custom th:nth-of-type(2) {
+        display: none; } }
+  .teams-people-view .table-custom td:nth-of-type(3), .teams-people-view .table-custom th:nth-of-type(3) {
+    -webkit-box-flex: 0.565;
+    -webkit-flex: 0.565;
+    -moz-box-flex: 0.565;
+    -moz-flex: 0.565;
+    -ms-flex: 0.565;
+    flex: 0.565; }
+    @media (max-width: 575px) {
+      .teams-people-view .table-custom td:nth-of-type(3), .teams-people-view .table-custom th:nth-of-type(3) {
+        display: none; } }
+  .teams-people-view .table-custom td:nth-of-type(4), .teams-people-view .table-custom th:nth-of-type(4) {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -moz-box-flex: none;
+    -moz-flex: none;
+    -ms-flex: none;
+    flex: none;
+    width: 5.5rem; }
+  .teams-people-view .table-custom-head {
+    border: none;
+    height: 3.7rem; }
+  .teams-people-view .table-custom-body {
+    border: none;
+    max-height: calc(100vh - 11rem - 16rem - 8rem);
+    border-bottom: solid 1px #e6e8eb; }
+    .teams-people-view .table-custom-body tr {
+      height: 5.8rem;
+      padding-left: .7rem; }
+    .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -2558,36 +2603,35 @@ i {
       -webkit-align-items: center;
       -moz-align-items: center;
       align-items: center; }
-      .teams-people-view .panel-body .table-header-fixed-col-1 a img {
-        margin-left: .8rem;
+      .teams-people-view .table-custom-body .table-custom-col-01 a img {
         margin-right: 1.5rem;
         width: 4.1rem;
         height: 4.1rem;
         border-radius: 50%; }
-      .teams-people-view .panel-body .table-header-fixed-col-1 a .name {
+      .teams-people-view .table-custom-body .table-custom-col-01 a .name {
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733; }
-      .teams-people-view .panel-body .table-header-fixed-col-1 a .email {
+      .teams-people-view .table-custom-body .table-custom-col-01 a .email {
         margin-top: .2rem;
         display: block;
         font-size: 1.2rem;
         line-height: 1.33;
         color: #647281; }
-      .teams-people-view .panel-body .table-header-fixed-col-1 a:hover .name {
+      .teams-people-view .table-custom-body .table-custom-col-01 a:hover .name {
         text-decoration: underline; }
-    .teams-people-view .panel-body .table-header-fixed-col-2 {
+    .teams-people-view .table-custom-body .table-custom-col-02 {
       font-size: 1.4rem;
       line-height: 1.36;
       color: #1b2733; }
-    .teams-people-view .panel-body .table-header-fixed-col-3 .btn-custom-table {
+    .teams-people-view .table-custom-body .table-custom-col-03 .btn-custom-table {
       display: inline-block;
       padding: .6rem 1.8rem;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.36;
       color: #ffffff; }
-    .teams-people-view .panel-body .table-header-fixed-col-4 {
+    .teams-people-view .table-custom-body .table-custom-col-04 {
       font-size: 1.3rem;
       color: #647282; }
   .teams-people-view #inviteNewModal .modal-content {
@@ -3044,149 +3088,44 @@ i {
         align-self: flex-end;
         margin-right: 0;
         margin-left: .5rem; }
-    .teams-settings-rights-body .panel {
+    .teams-settings-rights-body .table-custom {
       margin-top: 2.2rem; }
-      .teams-settings-rights-body .panel-body .table-header-fixed {
-        max-width: 72rem;
-        border: solid 1px #e6e8eb;
-        border-radius: 3px; }
-        .teams-settings-rights-body .panel-body .table-header-fixed thead {
-          background-color: #f7f9fa;
-          border-bottom: solid 1px #e6e8eb;
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px; }
-          .teams-settings-rights-body .panel-body .table-header-fixed thead tr {
-            height: 3.7rem;
-            padding: .4rem 1.7rem;
-            padding-right: 3rem; }
-            .teams-settings-rights-body .panel-body .table-header-fixed thead tr i {
-              font-size: .8rem; }
-          .teams-settings-rights-body .panel-body .table-header-fixed thead th {
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1.33;
-            color: #647282; }
-            .teams-settings-rights-body .panel-body .table-header-fixed thead th i {
-              margin-left: 0.6rem; }
-            .teams-settings-rights-body .panel-body .table-header-fixed thead th .dropdown-custom-trigger {
-              display: -webkit-inline-box;
-              display: -webkit-inline-flex;
-              display: -moz-inline-flex;
-              display: -ms-inline-flexbox;
-              display: inline-flex;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              -webkit-align-items: center;
-              -moz-align-items: center;
-              align-items: center;
-              -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-              -webkit-justify-content: space-between;
-              -moz-justify-content: space-between;
-              justify-content: space-between;
-              padding: .6rem; }
-              .teams-settings-rights-body .panel-body .table-header-fixed thead th .dropdown-custom-trigger i:first-of-type {
-                margin-top: -.1rem;
-                font-size: 1.3rem;
-                margin-left: .8rem; }
-        .teams-settings-rights-body .panel-body .table-header-fixed tbody {
-          max-height: calc(100vh - 40rem); }
-        .teams-settings-rights-body .panel-body .table-header-fixed tbody tr {
+      .teams-settings-rights-body .table-custom-body {
+        font-size: 1.35rem;
+        font-weight: 400; }
+        .teams-settings-rights-body .table-custom-body tr {
           padding: .5rem 1.7rem;
-          padding-right: 3rem;
           border-bottom: solid 1px #e6e8eb; }
-          .teams-settings-rights-body .panel-body .table-header-fixed tbody tr:last-child {
+          .teams-settings-rights-body .table-custom-body tr:last-child {
             border: none; }
-        .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(1), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(1) {
-          -webkit-box-flex: 1.2;
-          -webkit-flex: 1.2;
-          -moz-box-flex: 1.2;
-          -moz-flex: 1.2;
-          -ms-flex: 1.2;
-          flex: 1.2; }
-          @media (max-width: 575px) {
-            .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(1), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(1) {
-              -webkit-box-flex: 1;
-              -webkit-flex: 1;
-              -moz-box-flex: 1;
-              -moz-flex: 1;
-              -ms-flex: 1;
-              flex: 1; } }
-        .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(2), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(2) {
-          -webkit-box-flex: 1.35;
-          -webkit-flex: 1.35;
-          -moz-box-flex: 1.35;
-          -moz-flex: 1.35;
-          -ms-flex: 1.35;
-          flex: 1.35; }
-          @media (max-width: 379px) {
-            .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(2), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(2) {
-              display: none; } }
-        .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(3), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(3) {
-          -webkit-box-flex: 1;
-          -webkit-flex: 1;
-          -moz-box-flex: 1;
-          -moz-flex: 1;
-          -ms-flex: 1;
-          flex: 1; }
-          @media (max-width: 575px) {
-            .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(3), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(3) {
-              display: none; } }
-        .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4) {
-          -webkit-box-flex: none;
-          -webkit-flex: none;
-          -moz-box-flex: none;
-          -moz-flex: none;
-          -ms-flex: none;
-          flex: none;
-          width: 5.5rem !important; }
-          @media (max-width: 575px) {
-            .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4) {
-              -webkit-box-flex: 0.6;
-              -webkit-flex: 0.6;
-              -moz-box-flex: 0.6;
-              -moz-flex: 0.6;
-              -ms-flex: 0.6;
-              flex: 0.6;
-              -webkit-box-pack: end;
-              -ms-flex-pack: end;
-              -webkit-justify-content: flex-end;
-              -moz-justify-content: flex-end;
-              justify-content: flex-end; } }
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4.4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4.4) {
-            padding-left: 1.7rem; } }
-        @supports (-ms-ime-align: auto) {
-          .teams-settings-rights-body .panel-body .table-header-fixed td:nth-of-type(4.4), .teams-settings-rights-body .panel-body .table-header-fixed th:nth-of-type(4.4) {
-            padding-left: 1.7rem; } }
-        .teams-settings-rights-body .panel-body .table-header-fixed-col-1 a {
+        .teams-settings-rights-body .table-custom-body-col-01 a {
           font-size: 1.35rem;
           line-height: 1.33;
           color: #1165f4; }
-        .teams-settings-rights-body .panel-body .table-header-fixed-col-2 {
+        .teams-settings-rights-body .table-custom-body-col-02 {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #1b2733; }
-        .teams-settings-rights-body .panel-body .table-header-fixed-col-3 {
+        .teams-settings-rights-body .table-custom-body-col-03 {
           font-size: 1.4rem; }
-        .teams-settings-rights-body .panel-body .table-header-fixed-col-4 {
+        .teams-settings-rights-body .table-custom-body-col-04 {
           font-size: 1.3rem;
           color: #647282; }
-        .teams-settings-rights-body .panel-body .table-header-fixed .choose .confirm, .teams-settings-rights-body .panel-body .table-header-fixed .choose .divider {
+        .teams-settings-rights-body .table-custom-body .choose .confirm, .teams-settings-rights-body .table-custom-body .choose .divider {
           color: #00d900; }
-        .teams-settings-rights-body .panel-body .table-header-fixed .choose .deny {
+        .teams-settings-rights-body .table-custom-body .choose .deny {
           color: #fd0000; }
-        .teams-settings-rights-body .panel-body .table-header-fixed .choose .divider {
+        .teams-settings-rights-body .table-custom-body .choose .divider {
           font-weight: 500;
           margin: 0 .15rem; }
-        .teams-settings-rights-body .panel-body .table-header-fixed .input-row {
+        .teams-settings-rights-body .table-custom-body .input-row {
           display: none;
           -webkit-box-align: center;
           -ms-flex-align: center;
           -webkit-align-items: center;
           -moz-align-items: center;
           align-items: center; }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row input {
+          .teams-settings-rights-body .table-custom-body .input-row input {
             min-width: 1px;
             max-width: 100%;
             outline: none;
@@ -3195,90 +3134,83 @@ i {
             font-size: 1.35rem;
             font-weight: 400;
             line-height: 1.33; }
-            .teams-settings-rights-body .panel-body .table-header-fixed .input-row input::placeholder {
+            .teams-settings-rights-body .table-custom-body .input-row input::placeholder {
               opacity: 0.67; }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 {
-            display: inline-block !important; }
-            .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 input::placeholder {
+          .teams-settings-rights-body .table-custom-body .input-row td {
+            display: inline-block; }
+          .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-01 {
+            width: 25%; }
+            .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-01 input::placeholder {
               color: #1165f4; }
-            @media (max-width: 379px) {
-              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-1 {
-                -webkit-box-flex: none;
-                -webkit-flex: none;
-                -moz-box-flex: none;
-                -moz-flex: none;
-                -ms-flex: none;
-                flex: none;
-                width: 30%; } }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-2 {
-            display: inline-block !important; }
-            @media (max-width: 379px) {
-              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-2 {
-                -webkit-box-flex: none;
-                -webkit-flex: none;
-                -moz-box-flex: none;
-                -moz-flex: none;
-                -ms-flex: none;
-                flex: none;
-                width: 30% !important; } }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-3 {
-            -webkit-box-flex: none;
-            -webkit-flex: none;
-            -moz-box-flex: none;
-            -moz-flex: none;
-            -ms-flex: none;
-            flex: none;
-            width: 5.5rem; }
             @media (max-width: 575px) {
-              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-3 {
-                -webkit-box-flex: none;
-                -webkit-flex: none;
-                -moz-box-flex: none;
-                -moz-flex: none;
-                -ms-flex: none;
-                flex: none; } }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
+              .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-01 {
+                width: 35%; } }
+          .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-02 {
+            width: 25%; }
+            @media (max-width: 575px) {
+              .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-02 {
+                width: 25%; } }
+          .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-03 {
+            width: 10%; }
+            @media (max-width: 575px) {
+              .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-03 {
+                width: 0%; } }
+          .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-04 {
+            padding-right: 2.1rem;
+            width: 40%;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            -webkit-justify-content: space-between;
-            -moz-justify-content: space-between;
-            justify-content: space-between;
-            -webkit-box-flex: 1;
-            -webkit-flex: 1;
-            -moz-box-flex: 1;
-            -moz-flex: 1;
-            -ms-flex: 1;
-            flex: 1; }
-            @media (max-width: 575px) {
-              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
-                -webkit-box-flex: 0.6;
-                -webkit-flex: 0.6;
-                -moz-box-flex: 0.6;
-                -moz-flex: 0.6;
-                -ms-flex: 0.6;
-                flex: 0.6;
-                width: auto !important; } }
-            @media (max-width: 379px) {
-              .teams-settings-rights-body .panel-body .table-header-fixed .input-row .table-header-fixed-col-4 {
-                -webkit-box-flex: 1;
-                -webkit-flex: 1;
-                -moz-box-flex: 1;
-                -moz-flex: 1;
-                -ms-flex: 1;
-                flex: 1; } }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row .btn-custom-primary {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            -webkit-justify-content: flex-end;
+            -moz-justify-content: flex-end;
+            justify-content: flex-end; }
+            .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-04 a:first-of-type {
+              margin-right: 1.3rem; }
+          .teams-settings-rights-body .table-custom-body .input-row .btn-custom-primary {
             margin-right: 0; }
-          .teams-settings-rights-body .panel-body .table-header-fixed .input-row-open {
+          .teams-settings-rights-body .table-custom-body .input-row-open {
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flexbox;
             display: flex; }
+      .teams-settings-rights-body .table-custom-col-01, .teams-settings-rights-body .table-custom-col-02, .teams-settings-rights-body .table-custom-col-03, .teams-settings-rights-body .table-custom-col-04 {
+        flex: none; }
+      .teams-settings-rights-body .table-custom-col-01 {
+        width: 25%; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-custom-col-01 {
+            width: 35%; } }
+      .teams-settings-rights-body .table-custom-col-02 {
+        width: 40%; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-custom-col-02 {
+            width: 45%; } }
+      .teams-settings-rights-body .table-custom-col-03 {
+        width: 25%; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-custom-col-03 {
+            display: none; } }
+      .teams-settings-rights-body .table-custom-col-04 {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 10%; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-custom-col-04 {
+            width: 20%; } }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .teams-settings-rights-body .table-custom td:nth-of-type(4.4), .teams-settings-rights-body .table-custom th:nth-of-type(4.4) {
+          padding-left: 1.7rem; } }
+      @supports (-ms-ime-align: auto) {
+        .teams-settings-rights-body .table-custom td:nth-of-type(4.4), .teams-settings-rights-body .table-custom th:nth-of-type(4.4) {
+          padding-left: 1.7rem; } }
     .teams-settings-rights-body .table-01 {
       margin-bottom: 4.6rem; }
       .teams-settings-rights-body .table-01 tbody {
