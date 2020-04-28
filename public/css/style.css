@@ -2591,6 +2591,8 @@ i {
     border-bottom: solid 1px #e6e8eb; }
     .teams-people-view .table-custom-body tr {
       height: 5.8rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       padding-left: .7rem; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
