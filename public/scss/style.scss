@@ -3490,8 +3490,6 @@ i {
 
       & tr {
         height: 5.8rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
         padding-left: .7rem;
       }
 
@@ -3527,6 +3525,9 @@ i {
       }
 
       .table-custom-col-02 {
+        @include flexbox;
+        height: 100%;
+        @include align-items(center);
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
