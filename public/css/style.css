@@ -989,7 +989,7 @@ i {
       border-bottom: solid 1px #e6e8eb; }
     .table-custom-body td {
       height: 5.6rem;
-      padding: 1.3rem; }
+      padding: 1.3rem 0; }
     .table-custom-body .dropdown-custom-trigger {
       padding: .3rem .8rem;
       color: #647282; }
@@ -3095,7 +3095,7 @@ i {
         font-size: 1.35rem;
         font-weight: 400; }
         .teams-settings-rights-body .table-custom-body tr {
-          padding: 1.7rem 1.7rem;
+          padding: 0 1.7rem;
           border-bottom: solid 1px #e6e8eb; }
           .teams-settings-rights-body .table-custom-body tr:last-child {
             border: none; }
