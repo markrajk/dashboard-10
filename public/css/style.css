@@ -3137,8 +3137,6 @@ i {
             line-height: 1.33; }
             .teams-settings-rights-body .table-custom-body .input-row input::placeholder {
               opacity: 0.67; }
-          .teams-settings-rights-body .table-custom-body .input-row td {
-            display: inline-block; }
           .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-01 {
             width: 25%; }
             .teams-settings-rights-body .table-custom-body .input-row .table-custom-col-01 input::placeholder {
