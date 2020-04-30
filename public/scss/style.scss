@@ -1683,6 +1683,7 @@ i {
   & tr {
     width: 100%;
     @include flexbox;
+    @include align-items(center);
   }
 
   & th,
@@ -1692,7 +1693,7 @@ i {
     @include align-items(center);
     // @include flex(1);
     white-space: nowrap;
-    align-self: center!important;
+    //align-self: center!important;
 
     @include target-ie() {
       
