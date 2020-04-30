@@ -1784,6 +1784,7 @@ i {
     }
 
     & td {
+      padding: .7rem 0;
       //height: 5.6rem;
 
       & > * {
@@ -1797,7 +1798,16 @@ i {
         color: #647282;
       }
     }
+
+    .table-custom-col-01,
+    .table-custom-col-02,
+    .table-custom-col-03,
+    .table-custom-col-04 {
+      align-self: center!important;
+    }
   }
+
+
 }
 
 .inv {
@@ -3555,13 +3565,6 @@ i {
       .table-custom-col-04 {
         font-size: 1.3rem;
         color: #647282;
-      }
-
-      .table-custom-col-01,
-      .table-custom-col-02,
-      .table-custom-col-03,
-      .table-custom-col-04 {
-        align-self: center!important;
       }
     }
 

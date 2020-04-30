@@ -981,14 +981,21 @@ i {
       height: 0; }
     .table-custom-body tr:not(:last-of-type) {
       border-bottom: solid 1px #e6e8eb; }
-    .table-custom-body td > * {
-      -webkit-align-self: center;
-      -moz-align-self: center;
-      -ms-flex-item-align: center;
-      align-self: center; }
+    .table-custom-body td {
+      padding: .7rem 0; }
+      .table-custom-body td > * {
+        -webkit-align-self: center;
+        -moz-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center; }
     .table-custom-body .dropdown-custom-trigger {
       padding: .3rem .8rem;
       color: #647282; }
+    .table-custom-body .table-custom-col-01,
+    .table-custom-body .table-custom-col-02,
+    .table-custom-body .table-custom-col-03,
+    .table-custom-body .table-custom-col-04 {
+      align-self: center !important; }
 
 .inv {
   visibility: hidden;
@@ -2632,11 +2639,6 @@ i {
     .teams-people-view .table-custom-body .table-custom-col-04 {
       font-size: 1.3rem;
       color: #647282; }
-    .teams-people-view .table-custom-body .table-custom-col-01,
-    .teams-people-view .table-custom-body .table-custom-col-02,
-    .teams-people-view .table-custom-body .table-custom-col-03,
-    .teams-people-view .table-custom-body .table-custom-col-04 {
-      align-self: center !important; }
   .teams-people-view #inviteNewModal .modal-content {
     margin: auto;
     border-radius: .3rem; }
