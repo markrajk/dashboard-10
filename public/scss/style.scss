@@ -3512,7 +3512,7 @@ i {
 
       & td {
         //height: 5.8rem;
-        padding: .7rem 0;
+        padding: .8rem 0;
       }
 
       .table-custom-col-01 {     
@@ -4255,7 +4255,7 @@ i {
 
   &-body {
     max-width: 72rem;
-    max-height: calc(100vh - 26.5rem - 1.5px);
+    max-height: calc(100vh - 27rem - 1.5px);
 
 
     .section-caption {
@@ -4765,7 +4765,10 @@ i {
     // }
 
     & .table-01 {
-      margin-bottom: 4.6rem;
+     
+      &:not(:last-of-type) {
+        margin-bottom: 4.6rem;
+      }
 
       & tbody {
         max-height: 22.4rem!important;
@@ -5677,7 +5680,7 @@ i {
 
   &-body {
     padding-bottom: 5rem;
-    max-height: calc(100vh - 25.2rem);
+    max-height: calc(100vh - 26rem);
 
     overflow-y: auto;
     scrollbar-width: none; /* Firefox */
@@ -6509,7 +6512,7 @@ i {
 
   &-body {
     max-width: 80.5rem;
-    max-height: calc(100vh - 20rem - 1.5px);
+    max-height: calc(100vh - 20.7rem - 1.5px);
 
     @include respond(desktop-xsm) {
       max-height: calc(100vh - 20rem - 1.5px);

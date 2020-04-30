@@ -2595,7 +2595,7 @@ i {
     .teams-people-view .table-custom-body tr {
       padding-left: .7rem; }
     .teams-people-view .table-custom-body td {
-      padding: .7rem 0; }
+      padding: .8rem 0; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3057,7 +3057,7 @@ i {
     margin-right: 1.4rem; }
   .teams-settings-rights-body {
     max-width: 72rem;
-    max-height: calc(100vh - 26.5rem - 1.5px); }
+    max-height: calc(100vh - 27rem - 1.5px); }
     .teams-settings-rights-body .section-caption {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3214,10 +3214,10 @@ i {
       @supports (-ms-ime-align: auto) {
         .teams-settings-rights-body .table-custom td:nth-of-type(4.4), .teams-settings-rights-body .table-custom th:nth-of-type(4.4) {
           padding-left: 1.7rem; } }
-    .teams-settings-rights-body .table-01 {
+    .teams-settings-rights-body .table-01:not(:last-of-type) {
       margin-bottom: 4.6rem; }
-      .teams-settings-rights-body .table-01 tbody {
-        max-height: 22.4rem !important; }
+    .teams-settings-rights-body .table-01 tbody {
+      max-height: 22.4rem !important; }
     .teams-settings-rights-body .table-02 tbody {
       max-height: 22.4rem !important; }
     .teams-settings-rights-body .table-bottom-input {
@@ -4147,7 +4147,7 @@ i {
   .report-team-body,
   .report-member-body {
     padding-bottom: 5rem;
-    max-height: calc(100vh - 25.2rem);
+    max-height: calc(100vh - 26rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -4916,7 +4916,7 @@ i {
     border-top: 1px solid #e1e1e1; }
   .company-teams-body {
     max-width: 80.5rem;
-    max-height: calc(100vh - 20rem - 1.5px); }
+    max-height: calc(100vh - 20.7rem - 1.5px); }
     @media (max-width: 575px) {
       .company-teams-body {
         max-height: calc(100vh - 20rem - 1.5px); } }
