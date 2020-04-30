@@ -1784,8 +1784,7 @@ i {
     }
 
     & td {
-      padding: 1.3rem 0;
-      height: 5.6rem;
+      //height: 5.6rem;
 
       & > * {
         @include align-self(center);
@@ -3500,7 +3499,8 @@ i {
       }
 
       & td {
-        height: 5.8rem;
+        //height: 5.8rem;
+        padding: .7rem 0;
       }
 
       .table-custom-col-01 {     
@@ -3535,6 +3535,7 @@ i {
       }
 
       .table-custom-col-02 {
+        padding: 1.3rem 0;
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
@@ -3554,6 +3555,13 @@ i {
       .table-custom-col-04 {
         font-size: 1.3rem;
         color: #647282;
+      }
+
+      .table-custom-col-01,
+      .table-custom-col-02,
+      .table-custom-col-03,
+      .table-custom-col-04 {
+        align-self: center!important;
       }
     }
 

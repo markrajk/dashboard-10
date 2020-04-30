@@ -981,14 +981,11 @@ i {
       height: 0; }
     .table-custom-body tr:not(:last-of-type) {
       border-bottom: solid 1px #e6e8eb; }
-    .table-custom-body td {
-      padding: 1.3rem 0;
-      height: 5.6rem; }
-      .table-custom-body td > * {
-        -webkit-align-self: center;
-        -moz-align-self: center;
-        -ms-flex-item-align: center;
-        align-self: center; }
+    .table-custom-body td > * {
+      -webkit-align-self: center;
+      -moz-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center; }
     .table-custom-body .dropdown-custom-trigger {
       padding: .3rem .8rem;
       color: #647282; }
@@ -2591,7 +2588,7 @@ i {
     .teams-people-view .table-custom-body tr {
       padding-left: .7rem; }
     .teams-people-view .table-custom-body td {
-      height: 5.8rem; }
+      padding: .7rem 0; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2621,6 +2618,7 @@ i {
       .teams-people-view .table-custom-body .table-custom-col-01 a:hover .name {
         text-decoration: underline; }
     .teams-people-view .table-custom-body .table-custom-col-02 {
+      padding: 1.3rem 0;
       font-size: 1.4rem;
       line-height: 1.36;
       color: #1b2733; }
@@ -2634,6 +2632,11 @@ i {
     .teams-people-view .table-custom-body .table-custom-col-04 {
       font-size: 1.3rem;
       color: #647282; }
+    .teams-people-view .table-custom-body .table-custom-col-01,
+    .teams-people-view .table-custom-body .table-custom-col-02,
+    .teams-people-view .table-custom-body .table-custom-col-03,
+    .teams-people-view .table-custom-body .table-custom-col-04 {
+      align-self: center !important; }
   .teams-people-view #inviteNewModal .modal-content {
     margin: auto;
     border-radius: .3rem; }
