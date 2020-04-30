@@ -137,7 +137,7 @@ $text-color-primary: #1c1c1c;
 	display: flex;
 }
 
-%flexbox { @include flexbox; }
+// %flexbox { @include flexbox; }
 
 //----------------------------------
 
@@ -149,7 +149,7 @@ $text-color-primary: #1c1c1c;
 	display: inline-flex;
 }
 
-%inline-flex { @include inline-flex; }
+// %inline-flex { @include inline-flex; }
 
 //----------------------------------------------------------------------
 
@@ -1688,7 +1688,7 @@ i {
   & th,
   & td {
     margin-right: .5rem;
-    @include flexbox;
+    @include inline-flex;
     @include align-items(center);
     @include flex(1);
     white-space: nowrap;
@@ -1785,7 +1785,10 @@ i {
 
     & td {
       height: 5.6rem;
-      padding: 1.3rem 0;
+
+      & > * {
+        @include align-self(center);
+      }
     }
 
     & .dropdown-custom {
@@ -4279,7 +4282,6 @@ i {
           font-weight: 400;
 
           & tr {
-
             padding: 0 1.7rem;
             border-bottom: solid 1px #e6e8eb;
 
