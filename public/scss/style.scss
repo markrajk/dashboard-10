@@ -1692,6 +1692,7 @@ i {
     @include align-items(center);
     // @include flex(1);
     white-space: nowrap;
+    align-self: center!important;
 
     @include target-ie() {
       
@@ -1799,12 +1800,12 @@ i {
       }
     }
 
-    .table-custom-col-01,
-    .table-custom-col-02,
-    .table-custom-col-03,
-    .table-custom-col-04 {
-      align-self: center!important;
-    }
+    // .table-custom-col-01,
+    // .table-custom-col-02,
+    // .table-custom-col-03,
+    // .table-custom-col-04 {
+    //   align-self: center!important;
+    // }
   }
 
 

@@ -894,7 +894,8 @@ i {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    white-space: nowrap; }
+    white-space: nowrap;
+    align-self: center !important; }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       .table-custom th:nth-of-type(1), .table-custom td:nth-of-type(1) {
         padding-left: 1.7rem; } }
@@ -991,11 +992,6 @@ i {
     .table-custom-body .dropdown-custom-trigger {
       padding: .3rem .8rem;
       color: #647282; }
-    .table-custom-body .table-custom-col-01,
-    .table-custom-body .table-custom-col-02,
-    .table-custom-body .table-custom-col-03,
-    .table-custom-body .table-custom-col-04 {
-      align-self: center !important; }
 
 .inv {
   visibility: hidden;
