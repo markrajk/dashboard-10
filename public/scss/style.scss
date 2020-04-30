@@ -1688,9 +1688,9 @@ i {
   & th,
   & td {
     margin-right: .5rem;
-    @include inline-flex;
+    @include flexbox;
     @include align-items(center);
-    @include flex(1);
+    // @include flex(1);
     white-space: nowrap;
 
     @include target-ie() {
@@ -1784,6 +1784,7 @@ i {
     }
 
     & td {
+      padding: 1.3rem 0;
       height: 5.6rem;
 
       & > * {
