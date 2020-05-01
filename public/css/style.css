@@ -4695,6 +4695,7 @@ i {
                 color: #f4be5e;
                 background-color: rgba(244, 190, 94, 0.1); }
         .company-overview-body-charts-chart-body {
+          padding-bottom: 1rem;
           border-radius: 6px;
           border: solid 1px #e6e8eb;
           background-color: #ffffff; }
