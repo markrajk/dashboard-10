@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Company | Admin</title>
+    <title>Dashboard | Company | Support</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../public/css/bootstrap.css">
@@ -233,7 +233,7 @@
                             Employees
                         </a>
 
-                        <a href="../company-admin/index.html" class="active">
+                        <a href="../company-admin/index.html">
                             Rights
                         </a>
 
@@ -241,7 +241,7 @@
                             Settings
                         </a>
 
-                        <a href="../company-support/index.html">
+                        <a href="../company-support/index.html" class="active">
                             Support
                         </a>
                     </div>
@@ -249,178 +249,16 @@
 
             </header>
 
-            <main class="company-admin">
-
-                <div class="company-admin-header">
-                    <p class="subheader-text">Admin rights (4)</p>
-                    <p class="subheader-text-small">Here you can view and manage who have admin rights to this company.</p>
-
-                    <div class="input-group-custom">
-                        <div class="input-container">
-                            <i class="icon-search"></i>
-                            <input type="text" placeholder="Search...">
-                        </div>
-
-                        <a href="#" class="button button-outlined input-row-trigger" target-input-row="#input-row-01">Add new admin</a>
-                    </div>
+            <main class="company-support">
+                <div class="company-support-header">
+                    <p class="subheader-text">Support</p>
+                    <p class="subheader-text-small">In case you need any kind of assistance don’t hesitate to contact us.</p>
+                </div>
+                <div class="company-support-body">
+                    <textarea name="page-not-found" id="page-not-found" class="page-not-found-textarea" placeholder="Write here to report a bug…"></textarea>
+                    <a href="#" class="button button-primary">Send message</a>
                 </div>
 
-                <div class="company-admin-body">
-                    <table class="table-custom table-01">
-                        <thead class="table-custom-head">
-                            <tr>
-                                <td class="table-custom-col-01 ">Name</td>
-                                <td class="table-custom-col-02">Email</td>
-                                <td class="table-custom-col-03">Job title</td>
-                                <td class="table-custom-col-04">
-                                    <div class="dropdown-custom">
-                                        <a href="#" class="dropdown-custom-trigger">
-                                            <i class="icon-list"></i>
-                                            <i class="icon-caret-down"></i>
-                                        </a>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Option 1</a>
-                                            </li>
-
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Option 2</a>
-                                            </li>
-
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Option 3</a>
-                                            </li>
-
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Option 5</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody class="table-custom-body">
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <a href="#" class="text-truncate">Martin Billo</a>
-                                </td>
-                                <td class="table-custom-col-02">martin.billo@gmail.com</td>
-                                <td class="table-custom-col-03">
-                                    Enginer
-                                </td>
-                                <td class="table-custom-col-04">
-                                    <div class="dropdown-custom">
-                                        <a href="#" class="dropdown-custom-trigger">
-                                            <i class="icon-ellipsis"></i>
-                                        </a>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
-                                            </li>
-  
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <a href="#" class="text-truncate">Jörgen Vogel</a>
-                                </td>
-                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
-                                <td class="table-custom-col-03">
-                                    Cleaning man
-                                </td>
-                                <td class="table-custom-col-04">
-                                    <div class="dropdown-custom">
-                                        <a href="#" class="dropdown-custom-trigger">
-                                            <i class="icon-ellipsis"></i>
-                                        </a>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
-                                            </li>
-  
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <a href="#" class="text-truncate">Jörgen Vogel</a>
-                                </td>
-                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
-                                <td class="table-custom-col-03">
-                                    Actor
-                                </td>
-                                <td class="table-custom-col-04">
-                                    <div class="dropdown-custom">
-                                        <a href="#" class="dropdown-custom-trigger">
-                                            <i class="icon-ellipsis"></i>
-                                        </a>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
-                                            </li>
-  
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <a href="#" class="text-truncate">Jörgen Vogel</a>
-                                </td>
-                                <td class="table-custom-col-02">jörgen.vogel@gmail.com</td>
-                                <td class="table-custom-col-03">
-                                    Farmer
-                                </td>
-                                <td class="table-custom-col-04">
-                                    <div class="dropdown-custom">
-                                        <a href="#" class="dropdown-custom-trigger">
-                                            <i class="icon-ellipsis"></i>
-                                        </a>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
-                                            </li>
-  
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="input-row" id="input-row-01">
-                                <td class="table-custom-col-01">
-                                    <input type="text" placeholder="Enter name...">
-                                </td>
-                                <td class="table-custom-col-02">
-                                    <input type="email" placeholder="Enter email...">
-                                </td>
-                                <td class="table-custom-col-03">
-                                </td>
-                                <td class="table-custom-col-04">
-                                    <a href="#" class="btn-custom-primary outline blue">Confirm</a>
-                                    <a href="#" class="btn-custom-primary outline">Cancel</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </main>
         </div>
     </div>
@@ -428,17 +266,6 @@
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="../public/js/main.js"></script>
-
-    <script>
-        // ADD RIGHTS
-        var inputRowTriggers = document.querySelectorAll('.input-row-trigger');
-        for(var i = 0; i <  inputRowTriggers.length; i++) {
-            inputRowTriggers[i].addEventListener('click', function(e) {
-                console.log(e.target.getAttribute('target-input-row'))
-                document.querySelector(e.target.getAttribute('target-input-row')).classList.toggle('input-row-open');
-            })
-        }
-    </script>
 </body>
 
 </html>

@@ -6157,11 +6157,165 @@ i {
 
 
 // ==================================
+// COMPANY OVERVIEW START
+// ==================================
+.company-overview {
+  padding:2.5rem 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  // padding-right: calc(100% - 80.5rem);
+  //max-width: 115.2rem;
+
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 115.2rem;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  &-body {
+    padding-top: 4rem;
+    max-width: 115.2rem;
+    max-height: calc(100vh - 17.3rem - 1.5px);
+
+    @include respond(desktop-xsm) {
+      max-height: calc(100vh - 20rem - 1.5px);
+    }
+
+    &-charts {
+      //max-width: 115.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond(desktop-md) {
+        flex-direction: column;
+      }
+
+      &-chart {
+        width: 49%;
+
+        @include respond(desktop-md) {
+          width: 100%;
+
+          &:first-of-type {
+            margin-bottom: 6rem;
+          }
+        }
+
+        &-header {
+          margin-bottom: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &-card {
+            padding: 2.1rem 2.4rem;
+            width: 48%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            border: solid 1px #e6e8eb;
+            background-color: #ffffff;
+
+            &-main {
+              
+              & p {
+                margin-bottom: .6rem;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #8181a5;
+              }
+
+              & h3 {
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1.6;
+                color: #1c1d21;
+              }
+            }
+
+            &-icon {
+              margin-left: .8rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              min-width: 5.6rem;
+              min-height: 5.6rem;
+              font-size: 3.4rem;
+              border-radius: 10px;
+              //background-color: rgba(94, 129, 244, 0.1);
+
+              &.blue {
+                color: #5e81f4;
+                background-color: rgba(94, 129, 244, 0.1);
+              }
+
+              &.orange {
+                color: #f4be5e;
+                background-color: rgba(244, 190, 94, 0.1);
+              }
+            }
+          }
+        }
+
+        &-body {
+          //max-height: 38rem;
+          border-radius: 6px;
+          border: solid 1px #e6e8eb;
+          background-color: #ffffff;
+
+          &-header {
+            margin-bottom: 3.2rem;
+            padding: 1.65rem 2.2rem;
+            background-color: #f7f9fa;
+            border-bottom: 1px solid #E6E8EB;
+
+            & h4 {
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 1.71;
+              color: #000a19;
+            }
+          }
+          & canvas {
+            width: 100%!important;
+          }
+        }
+      }
+    }
+  }
+}
+// ==================================
+// COMPANY OVERVIEW END
+// ==================================
+
+
+
+
+// ==================================
 // COMPANY MEMBERS START
 // ==================================
 .company-members {
   padding:2.5rem 0;
   padding-top: 3.4rem;
+  padding-bottom: 0;
   border-top: 1px solid #e1e1e1;
   max-width: 80.5rem;
   
@@ -6234,114 +6388,24 @@ i {
   }
 
 
-  & .panel {
-    &-body {
-      & .table-header-fixed {
-        max-width: 72rem;
-        border: solid 1px #e6e8eb;
-        border-radius: 3px;
-       
-        & thead {
-         
-          background-color: #f7f9fa;
+  .table-custom {
+    margin-top: 2.2rem;
+
+      &-body {
+        max-height: calc(100vh - 40rem);
+        font-size: 1.35rem;
+        font-weight: 400;
+
+        & tr {
+          padding: 0 1.7rem;
           border-bottom: solid 1px #e6e8eb;
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
-          
 
-          & tr {
-            height: 4.3rem;
-            padding: .4rem 1.7rem;
-            padding-right: 3rem;
-            & i {
-              font-size: .8rem;
-            }
-          }
-          
-          & th {
-            font-size: 1.2rem;
-            font-weight: 500;
-            line-height: 1.33;
-            color: #647282;
-
-            & i {
-              margin-left: 0.6rem;
-            }
-
-            & .dropdown-custom {
-              &-trigger {
-                @include inline-flex;
-                @include align-items(center);
-                @include justify-content(space-between);
-                padding: .6rem;
-                & i:first-of-type {
-                  margin-top: -.1rem;
-                  font-size: 1.3rem;
-                  margin-left: .8rem;
-                }
-              }
-            }
+          &:last-child {
+            border: none;
           }
         }
 
-        & tbody {
-          max-height: calc(100vh - 40rem);
-          border-bottom-left-radius: 3px;
-          border-bottom-right-radius: 3px;
-        }
-
-        & tbody {
-          & tr {
-            padding: .3rem 1.7rem;
-            padding-bottom: .7rem;
-            padding-right: 3rem;
-            border-bottom: solid 1px #e6e8eb;
-
-            &:last-child {
-              border: none;
-            }
-          }
-        }
-
-        & td,
-        & th {
-
-          &:nth-of-type(1) {
-            @include flex(1);
-
-            @include respond(desktop-xsm) {
-              @include flex(1);
-            }
-
-            @include target-ie() {
-
-              &:nth-of-type(1) {
-                padding-left: 1.7rem;
-              }
-            }
-          }
-
-          &:nth-of-type(2) {
-            @include flex(1.35);
-            @include respond(desktop-xxsm) {
-              display: none;
-            }
-          }
-
-          &:nth-of-type(3) {
-            @include flex(1);
-            @include respond(desktop-xsm) {
-              display: none;
-            }
-          }
-
-          &:nth-of-type(4) {
-            @include flex(none);
-            width: 5.5rem!important;
-          }
-        }
-
-        &-col-1 {
+        &-col-01 {
           
           & a {
             font-size: 1.35rem;
@@ -6350,22 +6414,71 @@ i {
           }
         }
 
-        &-col-2 {
+        &-col-02 {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #1b2733;
         }
 
-        &-col-3 {
+        &-col-03 {
           font-size: 1.4rem;
         }
 
-        &-col-4 {
+        &-col-04 {
           font-size: 1.3rem;
           color: #647282;
         }
       }
-    }
+
+      &-col-01,
+      &-col-02,
+      &-col-03,
+      &-col-04 {
+        flex: none;
+      }
+
+      &-col-01 {
+        width: 25%;
+
+        @include respond(desktop-xsm) {
+          width: 35%;
+        }
+      }
+
+      &-col-02 {
+        width: 40%;
+
+        @include respond(desktop-xsm) {
+          width: 45%;
+        }
+      }
+
+      &-col-03 {
+        width: 25%;
+
+        @include respond(desktop-xsm) {
+          display: none;
+        }
+      }
+
+      &-col-04 {
+        @include justify-content(center);
+        width: 10%;
+
+        @include respond(desktop-xsm) {
+          width: 20%;
+        }
+      }
+
+      & td,
+      & th {
+        @include target-ie() {
+      
+          &:nth-of-type(4.4) {
+            padding-left: 1.7rem;
+          }
+        }
+      }
   }
 
   & #inviteNewModal {
@@ -6885,112 +6998,26 @@ i {
   }
 
 
-  & .panel {
-    &-body {
-      & .table-header-fixed {
-        max-width: 72rem;
-        border: solid 1px #e6e8eb;
-        border-radius: 3px;
-       
-        & thead {
-          height: 4.3rem;
-          background-color: #f7f9fa;
+  .table-custom {
+    
+    max-width: 72rem;
+    //margin-top: 2.2rem;
+
+      &-body {
+        max-height: calc(100vh - 42rem);
+        font-size: 1.35rem;
+        font-weight: 400;
+
+        & tr {
+          padding: 0 1.7rem;
           border-bottom: solid 1px #e6e8eb;
-          border-top-left-radius: 3px;
-          border-top-right-radius: 3px;
 
-          & tr {
-
-            padding: .4rem 1.7rem;
-            padding-right: 3rem;
-            & i {
-              font-size: .8rem;
-            }
-          }
-          
-          & th {
-            font-size: 1.2rem;
-            font-weight: 400;
-            line-height: 1.33;
-            color: #647282;
-
-            & i {
-              margin-left: 0.6rem;
-            }
-
-            & .dropdown-custom {
-              &-trigger {
-                @include inline-flex;
-                @include align-items(center);
-                @include justify-content(space-between);
-                padding: .6rem;
-                & i:first-of-type {
-                  margin-top: -.1rem;
-                  font-size: 1.3rem;
-                  margin-left: .8rem;
-                }
-              }
-            }
+          &:last-child {
+            border: none;
           }
         }
 
-        & tbody {
-          max-height: calc(100vh - 40rem);
-          border-bottom-left-radius: 3px;
-          border-bottom-right-radius: 3px;
-        }
-
-        & tbody {
-          & tr {
-            height: 5.45rem;
-            padding: .5rem 1.7rem;
-            padding-right: 3rem;
-            border-bottom: solid 1px #e6e8eb;
-
-            &:last-child {
-              border: none;
-            }
-          }
-        }
-
-        & td,
-        & th {
-
-          &:nth-of-type(1) {
-            @include flex(1);
-
-            @include respond(desktop-xsm) {
-              @include flex(1);
-            }
-          }
-
-          &:nth-of-type(2) {
-            @include flex(1.35);
-            @include respond(desktop-xxsm) {
-              display: none;
-            }
-          }
-
-          &:nth-of-type(3) {
-            @include flex(1);
-            @include respond(desktop-xsm) {
-              display: none;
-            }
-          }
-
-          &:nth-of-type(4) {
-            @include flex(none);
-            width: 5.5rem!important;
-          }
-
-          @include target-ie() {
-            &:nth-of-type(1) {
-              padding-left: 1.7rem;
-            }
-          }
-        }
-
-        &-col-1 {
+        &-col-01 {
           
           & a {
             font-size: 1.35rem;
@@ -6999,22 +7026,204 @@ i {
           }
         }
 
-        &-col-2 {
+        &-col-02 {
           font-size: 1.4rem;
           line-height: 1.36;
           color: #1b2733;
         }
 
-        &-col-3 {
+        &-col-03 {
           font-size: 1.4rem;
         }
 
-        &-col-4 {
+        &-col-04 {
           font-size: 1.3rem;
           color: #647282;
         }
+
+        & .input-row {
+          display: none;
+          @include align-items(center);
+
+          & input {
+            min-width: 1px;
+            max-width: 100%;
+            outline: none;
+            border: none;
+            font-family: Roboto;
+            font-size: 1.35rem;
+            font-weight: 400;
+            line-height: 1.33;
+
+            &::placeholder {
+              opacity: 0.67;
+            }
+          }
+
+          & td {
+            //display: inline-block;
+          }
+
+          & .table-custom-col-01 {
+            width: 25%;
+
+            & input {
+              &::placeholder {
+                color: #1165f4;
+              }
+            }
+
+            // @include respond(desktop-xxsm) {
+            //   width: 30%;
+            // }
+            @include respond(desktop-xsm) {
+              width: 35%;
+            }
+          }
+
+          & .table-custom-col-02 {
+            width: 25%;
+            // @include respond(desktop-xxsm) {
+            //   @include flex(none);
+            //   width: 30%!important;
+            // }
+
+            @include respond(desktop-xsm) {
+              width: 25%;
+            }
+          }
+
+          & .table-custom-col-03 {
+            width: 10%;
+            
+
+            @include respond(desktop-xsm) {
+              width: 0%;
+            }
+          }
+
+          & .table-custom-col-04 {
+            padding-right: 2.1rem;
+            width: 40%;
+            @include flexbox;
+            @include justify-content(flex-end);
+
+            // @include respond(desktop-xsm) {
+            //   @include flex(.6);
+            //   width: auto!important;
+            // }
+
+            // @include respond(desktop-xxsm) {
+            //   @include flex(1)
+            // }
+
+            & a:first-of-type {
+               margin-right: 1.3rem;
+            }
+          }
+          
+
+          & .btn-custom-primary {
+            margin-right: 0;
+          }
+
+          &-open {
+            @include flexbox;
+          }
+        }
       }
-    }
+
+      &-col-01,
+      &-col-02,
+      &-col-03,
+      &-col-04 {
+        flex: none;
+      }
+
+      &-col-01 {
+        width: 25%;
+
+        @include respond(desktop-xsm) {
+          width: 35%;
+        }
+
+        // @include respond(desktop-xxsm) {
+        //   width: 80%;
+        // }
+      }
+
+      &-col-02 {
+        width: 40%;
+
+        @include respond(desktop-xsm) {
+          width: 45%;
+        }
+
+        // @include respond(desktop-xxsm) {
+        //   display: none;
+        // }
+      }
+
+      &-col-03 {
+        width: 25%;
+
+        @include respond(desktop-xsm) {
+          display: none;
+        }
+      }
+
+      &-col-04 {
+        @include justify-content(center);
+        width: 10%;
+
+        @include respond(desktop-xsm) {
+          width: 20%;
+        }
+      }
+
+      & td,
+      & th {
+
+      //   &:nth-of-type(1) {
+      //     @include flex(1.20);
+
+      //     @include respond(desktop-xsm) {
+      //       @include flex(1);
+      //     }
+      //   }
+
+      //   &:nth-of-type(2) {
+      //     @include flex(1.35);
+      //     @include respond(desktop-xxsm) {
+      //       display: none;
+      //     }
+      //   }
+
+      //   &:nth-of-type(3) {
+      //     @include flex(1);
+      //     @include respond(desktop-xsm) {
+      //       display: none;
+      //     }
+      //   }
+
+      //   &:nth-of-type(4) {
+      //     @include flex(none);
+      //     width: 5.5rem!important;
+
+      //     @include respond(desktop-xsm) {
+      //       @include flex(.6);
+      //       @include justify-content(flex-end);
+      //     }
+      //   }
+
+
+        @include target-ie() {
+      
+          &:nth-of-type(4.4) {
+            padding-left: 1.7rem;
+          }
+        }
+      }
   }
 }
 // ==================================
@@ -7145,6 +7354,47 @@ i {
 }
 // ==================================
 // COMPANY SETTINGS END
+// ==================================
+
+
+
+
+// ==================================
+// COMPANY SUPPORT START
+// ==================================
+.company-support {
+  padding:2.5rem 0;
+  border-top: 1px solid #e1e1e1;
+  max-width: 80.5rem;
+  padding-top: 0;
+  //padding-right: calc(100% - 72rem);
+
+  &-header {
+    margin-top: 3.4rem;
+    margin-bottom: 3rem;
+
+    & .subheader-text {
+      margin-bottom: .6rem;
+      font-size: 1.7rem;
+      line-height: 1.35;
+      color: #1b2733;
+
+      &-small {
+        margin-bottom: 3.5rem;
+        font-size: 1.3rem;
+        line-height: 1.38;
+        color: #647282;
+      }
+    }
+  }
+
+  &-body {
+    max-width: 72rem;
+    max-height: calc(100vh - 30rem);
+  }
+}
+// ==================================
+// COMPANY SUPPORT END
 // ==================================
 
 
