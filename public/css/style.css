@@ -4695,7 +4695,6 @@ i {
                 color: #f4be5e;
                 background-color: rgba(244, 190, 94, 0.1); }
         .company-overview-body-charts-chart-body {
-          padding-bottom: 1rem;
           border-radius: 6px;
           border: solid 1px #e6e8eb;
           background-color: #ffffff; }
@@ -4709,6 +4708,8 @@ i {
               font-weight: 500;
               line-height: 1.71;
               color: #000a19; }
+          .company-overview-body-charts-chart-body .canvas-container {
+            padding: 0 1.5rem 1rem; }
           .company-overview-body-charts-chart-body canvas {
             width: 100% !important; }
 
