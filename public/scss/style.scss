@@ -6371,7 +6371,6 @@ i {
 .company-members {
   padding:2.5rem 0;
   padding-top: 3.4rem;
-  padding-bottom: 0;
   border-top: 1px solid #e1e1e1;
   max-width: 80.5rem;
   
@@ -6392,42 +6391,68 @@ i {
       }
     }
 
-    & .input-container {
-      margin-bottom: 1.8rem;
-      max-width: 25.6rem;
-      position: relative;
+    & .input-group-custom {
+      max-width: 72rem;
+      @include flexbox;
+      @include justify-content(space-between);
+      @include align-items(flex-start);
 
-      & input {
+      & .input-container {
+        margin-bottom: 1.8rem;
         width: 100%;
-        padding: .5rem 3.5rem;
-        padding-right: 1.5rem;
-        border: none;
-        outline: none;
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 1.33;
-        color: #333;
-        border: 1px solid #DEDEDE;
-        border-radius: 1.6rem;
-
-        &::placeholder {
-          color: #9699a6;
+        max-width: 25.6rem;
+        position: relative;
+  
+        & input {
+          width: 100%;
+          padding: .55rem 3.5rem;
+          padding-right: 1.5rem;
+          border: none;
+          outline: none;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.33;
+          color: #333;
+          border: solid 1px #dedede;
+          border-radius: 1.6rem;
+  
+          &::placeholder {
+            color: #647282;
+          }
+        }
+  
+        & i {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(90%, -50%);
+          font-size: 1.5rem;
+          color: #647282;
         }
       }
 
-      & i {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translate(90%, -50%);
-        font-size: 1.5rem;
-        color: #9699a6;
+      & .btn-custom-primary {
+        @include inline-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        padding: .55rem 1.8rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        letter-spacing: normal;
+        color: #1b2733;
+        border: solid 1px #dedede;
+
+        &:hover,
+        &:focus {
+          background-color: #f5f5f5;
+        }
       }
     }
   }
 
-
   &-body {
+
     @include target-ie() {
       max-height: calc(100vh - 40rem);
 
@@ -6445,10 +6470,12 @@ i {
 
 
   .table-custom {
-    margin-top: 2.2rem;
+    
+    max-width: 72rem;
+    //margin-top: 2.2rem;
 
       &-body {
-        max-height: calc(100vh - 40rem);
+        max-height: calc(100vh - 42rem);
         font-size: 1.35rem;
         font-weight: 400;
 
@@ -6484,6 +6511,97 @@ i {
           font-size: 1.3rem;
           color: #647282;
         }
+
+        & .input-row {
+          display: none;
+          @include align-items(center);
+
+          & input {
+            min-width: 1px;
+            max-width: 100%;
+            outline: none;
+            border: none;
+            font-family: Roboto;
+            font-size: 1.35rem;
+            font-weight: 400;
+            line-height: 1.33;
+
+            &::placeholder {
+              opacity: 0.67;
+            }
+          }
+
+          & td {
+            //display: inline-block;
+          }
+
+          & .table-custom-col-01 {
+            width: 25%;
+
+            & input {
+              &::placeholder {
+                color: #1165f4;
+              }
+            }
+
+            // @include respond(desktop-xxsm) {
+            //   width: 30%;
+            // }
+            @include respond(desktop-xsm) {
+              width: 35%;
+            }
+          }
+
+          & .table-custom-col-02 {
+            width: 25%;
+            // @include respond(desktop-xxsm) {
+            //   @include flex(none);
+            //   width: 30%!important;
+            // }
+
+            @include respond(desktop-xsm) {
+              width: 25%;
+            }
+          }
+
+          & .table-custom-col-03 {
+            width: 10%;
+            
+
+            @include respond(desktop-xsm) {
+              width: 0%;
+            }
+          }
+
+          & .table-custom-col-04 {
+            padding-right: 2.1rem;
+            width: 40%;
+            @include flexbox;
+            @include justify-content(flex-end);
+
+            // @include respond(desktop-xsm) {
+            //   @include flex(.6);
+            //   width: auto!important;
+            // }
+
+            // @include respond(desktop-xxsm) {
+            //   @include flex(1)
+            // }
+
+            & a:first-of-type {
+               margin-right: 1.3rem;
+            }
+          }
+          
+
+          & .btn-custom-primary {
+            margin-right: 0;
+          }
+
+          &-open {
+            @include flexbox;
+          }
+        }
       }
 
       &-col-01,
@@ -6499,6 +6617,10 @@ i {
         @include respond(desktop-xsm) {
           width: 35%;
         }
+
+        // @include respond(desktop-xxsm) {
+        //   width: 80%;
+        // }
       }
 
       &-col-02 {
@@ -6507,6 +6629,10 @@ i {
         @include respond(desktop-xsm) {
           width: 45%;
         }
+
+        // @include respond(desktop-xxsm) {
+        //   display: none;
+        // }
       }
 
       &-col-03 {
@@ -6528,6 +6654,40 @@ i {
 
       & td,
       & th {
+
+      //   &:nth-of-type(1) {
+      //     @include flex(1.20);
+
+      //     @include respond(desktop-xsm) {
+      //       @include flex(1);
+      //     }
+      //   }
+
+      //   &:nth-of-type(2) {
+      //     @include flex(1.35);
+      //     @include respond(desktop-xxsm) {
+      //       display: none;
+      //     }
+      //   }
+
+      //   &:nth-of-type(3) {
+      //     @include flex(1);
+      //     @include respond(desktop-xsm) {
+      //       display: none;
+      //     }
+      //   }
+
+      //   &:nth-of-type(4) {
+      //     @include flex(none);
+      //     width: 5.5rem!important;
+
+      //     @include respond(desktop-xsm) {
+      //       @include flex(.6);
+      //       @include justify-content(flex-end);
+      //     }
+      //   }
+
+
         @include target-ie() {
       
           &:nth-of-type(4.4) {
@@ -6536,112 +6696,281 @@ i {
         }
       }
   }
-
-  & #inviteNewModal {
-    
-    & .modal {
-          &-content {
-      margin: auto;
-      border-radius: .3rem;
-    }
-
-    &-dialog {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      max-width: 50rem;
-    }
-
-    &-header {
-      padding: 2.2rem;
-      @include flexbox;
-      @include align-items(center);
-      border: 0;
-
-      & h5 {
-        font-size: 1.8rem;
-        line-height: 1.33;
-        color: #3d464d;
-
-        & .name {
-          display: block;
-          font-size: 2.6rem;
-          font-weight: 700;
-          line-height: 1.08;
-          letter-spacing: 0.26px;
-          color: #000000;
-          text-transform: capitalize;
-        }
-      }
-
-      & .close {
-        font-size: 2rem;
-        @include align-self(flex-start);
-      }
-    }
-
-    &-body {
-      padding-top: 3.4rem;
-      padding-bottom: 6rem;
-      @include flexbox;
-      @include flex-direction(column);
-      @include justify-content(center);
-      @include align-items(center);
-      background-color: #f6f9fc;
-
-      & .input-container {
-        max-width: 43.6rem;
-        width: 100%;
-
-        & label {
-          margin-bottom: .5rem;
-          display: block;
-          font-size: 1.3rem;
-          line-height: 1.38;
-          color: #3d464d;
-        }
-
-        & input {
-          padding: .9rem 1.2rem;
-          width: 100%;
-          font-size: 1.2rem;
-          line-height: 1.33;
-          border-radius: 3px;
-          border: solid 1px #bdc4c9;
-          background-color: #ffffff;
-          outline: none;
-
-          &::placeholder {
-            color: #a0a0a0;
-          }
-        }
-      }
-    }
-
-    &-footer {
-      padding: 0 2.2rem;
-      padding-bottom: 4rem;
-      border: 0;
-      background-color: #f6f9fc;
-
-      & .btn-custom-primary {
-        padding: .7rem 1.4rem;
-        border-radius: .4rem;
-        font-size: 1.4rem;
-        font-weight: 500;
-        line-height: 1.36;
-        color: #ffffff;
-
-        &.outline {
-          margin-left: 1.5rem;
-          font-weight: 500;
-          color: #48525d;
-          border-color: #bbbbbb;
-        }
-      }
-    }
-  }
-    }
 }
+// .company-members {
+//   padding:2.5rem 0;
+//   padding-top: 3.4rem;
+//   padding-bottom: 0;
+//   border-top: 1px solid #e1e1e1;
+//   max-width: 80.5rem;
+  
+
+//   &-header {
+
+//     & .subheader-text {
+//       margin-bottom: .6rem;
+//       font-size: 1.7rem;
+//       line-height: 1.35;
+//       color: #1b2733;
+
+//       &-small {
+//         margin-bottom: 2.3rem;
+//         font-size: 1.3rem;
+//         line-height: 1.38;
+//         color: #647282;
+//       }
+//     }
+
+//     & .input-container {
+//       margin-bottom: 1.8rem;
+//       max-width: 25.6rem;
+//       position: relative;
+
+//       & input {
+//         width: 100%;
+//         padding: .5rem 3.5rem;
+//         padding-right: 1.5rem;
+//         border: none;
+//         outline: none;
+//         font-size: 1.5rem;
+//         font-weight: 400;
+//         line-height: 1.33;
+//         color: #333;
+//         border: 1px solid #DEDEDE;
+//         border-radius: 1.6rem;
+
+//         &::placeholder {
+//           color: #9699a6;
+//         }
+//       }
+
+//       & i {
+//         position: absolute;
+//         top: 50%;
+//         left: 0;
+//         transform: translate(90%, -50%);
+//         font-size: 1.5rem;
+//         color: #9699a6;
+//       }
+//     }
+//   }
+
+
+//   &-body {
+//     @include target-ie() {
+//       max-height: calc(100vh - 40rem);
+
+//       overflow-y: auto;
+//       scrollbar-width: none; /* Firefox */
+//       -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+//       &::-webkit-scrollbar {
+//         /* WebKit */
+//         width: 0;
+//         height: 0;
+//       }
+//     }
+//   }
+
+
+//   .table-custom {
+//     margin-top: 2.2rem;
+
+//       &-body {
+//         max-height: calc(100vh - 40rem);
+//         font-size: 1.35rem;
+//         font-weight: 400;
+
+//         & tr {
+//           padding: 0 1.7rem;
+//           border-bottom: solid 1px #e6e8eb;
+
+//           &:last-child {
+//             border: none;
+//           }
+//         }
+
+//         &-col-01 {
+          
+//           & a {
+//             font-size: 1.35rem;
+//             line-height: 1.33;
+//             color: #1165f4;
+//           }
+//         }
+
+//         &-col-02 {
+//           font-size: 1.4rem;
+//           line-height: 1.36;
+//           color: #1b2733;
+//         }
+
+//         &-col-03 {
+//           font-size: 1.4rem;
+//         }
+
+//         &-col-04 {
+//           font-size: 1.3rem;
+//           color: #647282;
+//         }
+//       }
+
+//       &-col-01,
+//       &-col-02,
+//       &-col-03,
+//       &-col-04 {
+//         flex: none;
+//       }
+
+//       &-col-01 {
+//         width: 25%;
+
+//         @include respond(desktop-xsm) {
+//           width: 35%;
+//         }
+//       }
+
+//       &-col-02 {
+//         width: 40%;
+
+//         @include respond(desktop-xsm) {
+//           width: 45%;
+//         }
+//       }
+
+//       &-col-03 {
+//         width: 25%;
+
+//         @include respond(desktop-xsm) {
+//           display: none;
+//         }
+//       }
+
+//       &-col-04 {
+//         @include justify-content(center);
+//         width: 10%;
+
+//         @include respond(desktop-xsm) {
+//           width: 20%;
+//         }
+//       }
+
+//       & td,
+//       & th {
+//         @include target-ie() {
+      
+//           &:nth-of-type(4.4) {
+//             padding-left: 1.7rem;
+//           }
+//         }
+//       }
+//   }
+
+//   & #inviteNewModal {
+    
+//     & .modal {
+//           &-content {
+//       margin: auto;
+//       border-radius: .3rem;
+//     }
+
+//     &-dialog {
+//       padding-left: 1rem;
+//       padding-right: 1rem;
+//       max-width: 50rem;
+//     }
+
+//     &-header {
+//       padding: 2.2rem;
+//       @include flexbox;
+//       @include align-items(center);
+//       border: 0;
+
+//       & h5 {
+//         font-size: 1.8rem;
+//         line-height: 1.33;
+//         color: #3d464d;
+
+//         & .name {
+//           display: block;
+//           font-size: 2.6rem;
+//           font-weight: 700;
+//           line-height: 1.08;
+//           letter-spacing: 0.26px;
+//           color: #000000;
+//           text-transform: capitalize;
+//         }
+//       }
+
+//       & .close {
+//         font-size: 2rem;
+//         @include align-self(flex-start);
+//       }
+//     }
+
+//     &-body {
+//       padding-top: 3.4rem;
+//       padding-bottom: 6rem;
+//       @include flexbox;
+//       @include flex-direction(column);
+//       @include justify-content(center);
+//       @include align-items(center);
+//       background-color: #f6f9fc;
+
+//       & .input-container {
+//         max-width: 43.6rem;
+//         width: 100%;
+
+//         & label {
+//           margin-bottom: .5rem;
+//           display: block;
+//           font-size: 1.3rem;
+//           line-height: 1.38;
+//           color: #3d464d;
+//         }
+
+//         & input {
+//           padding: .9rem 1.2rem;
+//           width: 100%;
+//           font-size: 1.2rem;
+//           line-height: 1.33;
+//           border-radius: 3px;
+//           border: solid 1px #bdc4c9;
+//           background-color: #ffffff;
+//           outline: none;
+
+//           &::placeholder {
+//             color: #a0a0a0;
+//           }
+//         }
+//       }
+//     }
+
+//     &-footer {
+//       padding: 0 2.2rem;
+//       padding-bottom: 4rem;
+//       border: 0;
+//       background-color: #f6f9fc;
+
+//       & .btn-custom-primary {
+//         padding: .7rem 1.4rem;
+//         border-radius: .4rem;
+//         font-size: 1.4rem;
+//         font-weight: 500;
+//         line-height: 1.36;
+//         color: #ffffff;
+
+//         &.outline {
+//           margin-left: 1.5rem;
+//           font-weight: 500;
+//           color: #48525d;
+//           border-color: #bbbbbb;
+//         }
+//       }
+//     }
+//   }
+//     }
+// }
 // ==================================
 // COMPANY MEMBERS END
 // ==================================
