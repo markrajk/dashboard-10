@@ -6308,7 +6308,8 @@ i {
             padding: 0 1.5rem;
           }
           & canvas {
-            //width: 100%!important;
+            width: 100%!important;
+            height: auto!important;
           }
 
           & .canvas-legend {

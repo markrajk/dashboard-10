@@ -4712,6 +4712,9 @@ i {
               color: #000a19; }
           .company-overview-body-charts-chart-body .canvas-container {
             padding: 0 1.5rem; }
+          .company-overview-body-charts-chart-body canvas {
+            width: 100% !important;
+            height: auto !important; }
           .company-overview-body-charts-chart-body .canvas-legend {
             padding: 2.5rem;
             display: -webkit-box;
