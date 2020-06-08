@@ -509,30 +509,57 @@
                 type: 'linear',
                 position: 'left',
                 ticks: {
-                  fontSize: 10,
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 11,
                   min: 0,
                   maxTicksLimit: 4,
+                  padding: 20
                 },
+                gridLines: {
+                  drawBorder: false,
+                  drawTicks: false,
+                  color: '#F2F2F2',
+                  lineWidth: 1.5,
+                  zeroLineColor: '#F2F2F2',
+                  zeroLineWidth: 1.5
+                }
               },
               {
                 id: 'Teams',
                 type: 'linear',
                 position: 'right',
                 ticks: {
-                  fontSize: 10,
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 11,
                   min: 0,
                   maxTicksLimit: 4,
+                  padding: 20
                 },
+                gridLines: {
+                  drawBorder: false,
+                  drawTicks: false,
+                  color: '#F2F2F2',
+                  lineWidth: 1.5,
+                  zeroLineColor: '#F2F2F2',
+                  zeroLineWidth: 1.5
+                }
               },
             ],
             xAxes: [
               {
                 gridLines: {
-                drawOnChartArea: false
+                drawOnChartArea: false,
+                drawTicks: false
+                //drawBorder: false
                 },
                 
                 ticks: {
-                  fontSize: 11
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 10,
+                  padding: 20,
                 }
               }
             ]
@@ -578,6 +605,7 @@
                 // fontColor: 'rgb(255, 99, 132)'
             }
           },
+          responsive: true,
           scales: {
             yAxes: [
               {
@@ -585,30 +613,57 @@
                 type: 'linear',
                 position: 'left',
                 ticks: {
-                  fontSize: 10,
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 11,
                   min: 0,
                   maxTicksLimit: 4,
+                  padding: 20
                 },
+                gridLines: {
+                  drawBorder: false,
+                  drawTicks: false,
+                  color: '#F2F2F2',
+                  lineWidth: 1.5,
+                  zeroLineColor: '#F2F2F2',
+                  zeroLineWidth: 1.5
+                }
               },
               {
                 id: 'Teams',
                 type: 'linear',
                 position: 'right',
                 ticks: {
-                  fontSize: 10,
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 11,
                   min: 0,
                   maxTicksLimit: 4,
+                  padding: 20
                 },
+                gridLines: {
+                  drawBorder: false,
+                  drawTicks: false,
+                  color: '#F2F2F2',
+                  lineWidth: 1.5,
+                  zeroLineColor: '#F2F2F2',
+                  zeroLineWidth: 1.5
+                }
               },
             ],
             xAxes: [
               {
                 gridLines: {
-                drawOnChartArea: false
+                drawOnChartArea: false,
+                drawTicks: false
+                //drawBorder: false
                 },
                 
                 ticks: {
-                  fontSize: 10
+                  fontFamily: "'Roboto', sans-serif",
+                  fontColor: '#5E636B',
+                  fontSize: 10,
+                  padding: 20,
                 }
               }
             ]
