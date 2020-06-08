@@ -4654,6 +4654,8 @@ i {
             width: 100%; }
             .company-overview-body-charts-chart:first-of-type {
               margin-bottom: 6rem; } }
+        .company-overview-body-charts-chart:nth-of-type(1) .company-overview-body-charts-chart-header-card-icon {
+          font-size: 3rem; }
         .company-overview-body-charts-chart-header {
           margin-bottom: 2rem;
           display: flex;
@@ -4686,7 +4688,7 @@ i {
               justify-content: center;
               min-width: 5.6rem;
               min-height: 5.6rem;
-              font-size: 3.4rem;
+              font-size: 2.4rem;
               border-radius: 10px; }
               .company-overview-body-charts-chart-header-card-icon.blue {
                 color: #5e81f4;
@@ -4709,9 +4711,51 @@ i {
               line-height: 1.71;
               color: #000a19; }
           .company-overview-body-charts-chart-body .canvas-container {
-            padding: 0 1.5rem 1rem; }
-          .company-overview-body-charts-chart-body canvas {
-            width: 100% !important; }
+            padding: 0 1.5rem; }
+          .company-overview-body-charts-chart-body .canvas-legend {
+            padding: 2.5rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            .company-overview-body-charts-chart-body .canvas-legend-card {
+              padding: .4rem .8rem;
+              padding-right: 1rem;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              align-items: center;
+              background-color: #F2F2F2; }
+              .company-overview-body-charts-chart-body .canvas-legend-card:first-of-type {
+                margin-right: 1.7rem; }
+              .company-overview-body-charts-chart-body .canvas-legend-card-dot {
+                margin-right: .7rem;
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%; }
+                .company-overview-body-charts-chart-body .canvas-legend-card-dot.blue {
+                  background-color: #1DA0F2; }
+                .company-overview-body-charts-chart-body .canvas-legend-card-dot.red {
+                  background-color: #E16630; }
+              .company-overview-body-charts-chart-body .canvas-legend-card-text {
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.1rem;
+                font-weight: 400;
+                color: #6A6D72;
+                line-height: 1.36; }
 
 .company-members {
   padding: 2.5rem 0;
