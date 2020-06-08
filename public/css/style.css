@@ -1608,9 +1608,10 @@ i {
           .header-top-right .input-container {
             display: none; } }
         .header-top-right .input-container input {
+          display: inline-flex;
+          align-items: center;
           width: 100%;
-          padding: .4rem 3.5rem;
-          padding-top: .6rem;
+          padding: .5rem 3.5rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
@@ -1626,7 +1627,7 @@ i {
           position: absolute;
           top: 50%;
           left: 0;
-          transform: translate(90%, -50%);
+          transform: translate(100%, -50%);
           font-size: 1.5rem;
           color: #9699a6; }
       .header-top-right .face {
