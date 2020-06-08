@@ -3017,7 +3017,14 @@ i {
         line-height: 1.36;
         color: #1b2733;
         border-radius: 4px;
-        border: solid 1px #c1c7cd; }
+        border: solid 1px #c1c7cd;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%; }
         .teams-settings-feedback-body .input-row select option {
           font-size: 1.2rem;
           padding-left: 1.3rem; }
