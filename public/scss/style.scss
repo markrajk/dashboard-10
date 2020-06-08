@@ -672,10 +672,15 @@ a:focus {
   }
 
   &.outline {
-    color: #515558;
+    color: #1B2733;
     background-color: #fff;
     border-radius: 3px;
-    border: solid .1rem #c1c7cd;
+    border: solid .1rem #C1C7CD;
+
+    &.blue {
+      color: #1165F4;
+      border-color: #1165F4;
+    }
   }
 }
 .btn-custom-white {
@@ -4330,8 +4335,7 @@ i {
 
           & .choose {
 
-            & .confirm,
-            & .divider {
+            & .confirm {
               color: #00d900;
             }
   
@@ -4340,6 +4344,7 @@ i {
             }
   
             & .divider {
+              color: #C9C9C9;
               font-weight: 500;
               margin: 0 .15rem;
             }
@@ -7179,8 +7184,7 @@ i {
 
         & .choose {
 
-          & .confirm,
-          & .divider {
+          & .confirm {
             color: #fd0000;
           }
 
@@ -7189,6 +7193,7 @@ i {
           }
 
           & .divider {
+            color: #C9C9C9;
             font-weight: 500;
             margin: 0 .15rem;
           }

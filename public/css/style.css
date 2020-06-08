@@ -96,10 +96,13 @@ a:focus {
     color: #333;
     background-color: #f1f1f1; }
   .btn-custom-primary.outline {
-    color: #515558;
+    color: #1B2733;
     background-color: #fff;
     border-radius: 3px;
-    border: solid .1rem #c1c7cd; }
+    border: solid .1rem #C1C7CD; }
+    .btn-custom-primary.outline.blue {
+      color: #1165F4;
+      border-color: #1165F4; }
 
 .btn-custom-white {
   margin: 0 auto;
@@ -3116,11 +3119,12 @@ i {
         .teams-settings-rights-body .table-custom-body-col-04 {
           font-size: 1.3rem;
           color: #647282; }
-        .teams-settings-rights-body .table-custom-body .choose .confirm, .teams-settings-rights-body .table-custom-body .choose .divider {
+        .teams-settings-rights-body .table-custom-body .choose .confirm {
           color: #00d900; }
         .teams-settings-rights-body .table-custom-body .choose .deny {
           color: #fd0000; }
         .teams-settings-rights-body .table-custom-body .choose .divider {
+          color: #C9C9C9;
           font-weight: 500;
           margin: 0 .15rem; }
         .teams-settings-rights-body .table-custom-body .input-row {
@@ -5167,11 +5171,12 @@ i {
         -moz-flex: 1;
         -ms-flex: 1;
         flex: 1; }
-        .company-teams-body .table-01 .table-custom-col-04 .choose .confirm, .company-teams-body .table-01 .table-custom-col-04 .choose .divider {
+        .company-teams-body .table-01 .table-custom-col-04 .choose .confirm {
           color: #fd0000; }
         .company-teams-body .table-01 .table-custom-col-04 .choose .deny {
           color: #00d900; }
         .company-teams-body .table-01 .table-custom-col-04 .choose .divider {
+          color: #C9C9C9;
           font-weight: 500;
           margin: 0 .15rem; }
     .company-teams-body .table-02 {
