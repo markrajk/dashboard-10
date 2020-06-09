@@ -172,15 +172,15 @@ a:focus {
 
 @font-face {
   font-family: 'app-icons';
-  src: url("../fonts/app-icons.eot?992al6");
-  src: url("../fonts/app-icons.eot?992al6#iefix") format("embedded-opentype"), url("../fonts/app-icons.ttf?992al6") format("truetype"), url("../fonts/app-icons.woff?992al6") format("woff"), url("../fonts/app-icons.svg?992al6#app-icons") format("svg");
+  src: url("../fonts/app-icons.eot?n6os4c");
+  src: url("../fonts/app-icons.eot?n6os4c#iefix") format("embedded-opentype"), url("../fonts/app-icons.ttf?n6os4c") format("truetype"), url("../fonts/app-icons.woff?n6os4c") format("woff"), url("../fonts/app-icons.svg?n6os4c#app-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'app-icons' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -189,6 +189,9 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-user:before {
+  content: "\e91d"; }
 
 .icon-business:before {
   content: "\e914"; }
@@ -1354,8 +1357,10 @@ i {
       margin-bottom: 2.5rem; }
       .sidebar-main-top .sidebar-main-item:nth-of-type(2) a i {
         font-size: 2.6rem; }
-    .sidebar-main-top .sidebar-main-item:nth-of-type(3) a i {
-      font-size: 2.2rem; }
+    .sidebar-main-top .sidebar-main-item:nth-of-type(3) {
+      margin-bottom: 2.5rem; }
+      .sidebar-main-top .sidebar-main-item:nth-of-type(3) a i {
+        font-size: 2.1rem; }
     .sidebar-main-link-icon {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1562,7 +1567,8 @@ i {
     -ms-flex-pack: justify;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 6.3rem; }
     .header-top-left-title {
       font-size: 2.8rem;
       font-weight: 500;
@@ -4667,6 +4673,8 @@ i {
               margin-bottom: 6rem; } }
         .company-overview-body-charts-chart:nth-of-type(1) .company-overview-body-charts-chart-header-card-icon {
           font-size: 3rem; }
+        .company-overview-body-charts-chart:nth-of-type(1) .company-overview-body-charts-chart-header-card:nth-of-type(1) .company-overview-body-charts-chart-header-card-icon {
+          font-size: 2.2rem; }
         .company-overview-body-charts-chart-header {
           margin-bottom: 2rem;
           display: flex;
@@ -5840,6 +5848,367 @@ i {
         .user-settings-advanced-body .tool-option:first-of-type + .tool-option {
           margin-top: 5.4rem; }
 
+.people-average-charts {
+  padding: 2.5rem 0;
+  padding-top: 0;
+  max-height: calc(100vh - 20rem);
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  .people-average-charts::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
+  .people-average-charts-header {
+    max-width: 103rem;
+    padding-top: 6rem;
+    margin-bottom: 2.2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .people-average-charts-header {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start; } }
+    .people-average-charts-header-info {
+      margin-right: 1.5rem;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+      @media (max-width: 767px) {
+        .people-average-charts-header-info-buttons {
+          margin-top: 1rem;
+          margin-left: 1.25rem; } }
+      @media (max-width: 575px) {
+        .people-average-charts-header-info-buttons {
+          -webkit-align-self: flex-start;
+          -moz-align-self: flex-start;
+          -ms-flex-item-align: start;
+          align-self: flex-start; } }
+      .people-average-charts-header-info img {
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%; }
+      .people-average-charts-header-info .name {
+        padding-left: 1.3rem;
+        margin-bottom: .2rem;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1.32;
+        letter-spacing: -0.28px;
+        color: #1f1f1f; }
+        .people-average-charts-header-info .name .team {
+          margin-left: .2rem;
+          margin-top: .4rem;
+          display: block;
+          font-size: 1.45rem;
+          font-weight: 400;
+          line-height: 1.31;
+          color: #7d808e; }
+    @media (max-width: 575px) {
+      .people-average-charts-header .button {
+        margin-right: .5rem;
+        font-size: 1.2rem; } }
+    @media (max-width: 379px) {
+      .people-average-charts-header .button {
+        font-size: 1rem; } }
+    .people-average-charts-header .button:not(:last-of-type) {
+      margin-right: 1.4rem; }
+  .people-average-charts-body {
+    max-width: 103rem; }
+    .people-average-charts-body .section {
+      position: relative; }
+      .people-average-charts-body .section-header {
+        height: 3.7rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        margin-bottom: 2.2rem;
+        padding: 1rem 1.25rem;
+        padding-right: 2rem;
+        background-color: #f5f7f8;
+        border-radius: .1rem; }
+        .people-average-charts-body .section-header p {
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 1.28;
+          color: #647282; }
+        .people-average-charts-body .section-header .dropdown-custom-trigger {
+          border: none;
+          box-shadow: none;
+          font-size: 1.25rem;
+          line-height: 1.28;
+          color: #657383;
+          padding: 0; }
+          .people-average-charts-body .section-header .dropdown-custom-trigger i {
+            font-size: .8rem;
+            margin-left: .3rem; }
+          .people-average-charts-body .section-header .dropdown-custom-trigger:focus, .people-average-charts-body .section-header .dropdown-custom-trigger:active {
+            color: #657383;
+            border: none;
+            box-shadow: none; }
+      .people-average-charts-body .section-body {
+        overflow-y: auto;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */ }
+        .people-average-charts-body .section-body::-webkit-scrollbar {
+          /* WebKit */
+          width: 0;
+          height: 0; }
+      .people-average-charts-body .section .slider-trigger {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        color: #647282;
+        background-color: #FFF;
+        border: .5px solid #647282;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        cursor: pointer; }
+        .people-average-charts-body .section .slider-trigger-left {
+          left: -1rem; }
+        .people-average-charts-body .section .slider-trigger-right {
+          right: -1rem; }
+    .people-average-charts-body .section-averages {
+      margin-bottom: 4.5rem; }
+      .people-average-charts-body .section-averages .section-header {
+        margin-bottom: 0; }
+      .people-average-charts-body .section-averages .section-body {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0 2.5rem; }
+        @media (max-width: 991px) {
+          .people-average-charts-body .section-averages .section-body {
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr; } }
+        @media (max-width: 575px) {
+          .people-average-charts-body .section-averages .section-body {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr; } }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .people-average-charts-body .section-averages .section-body > * {
+            margin-right: 2.5rem; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            grid-row: 1;
+            grid-column: 1; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            grid-row: 1;
+            grid-column: 2; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-row: 1;
+            grid-column: 3; } }
+@media all and (-ms-high-contrast: none) and (max-width: 991px), (-ms-high-contrast: active) and (max-width: 991px) {
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-row: 1;
+    grid-column: 1; }
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-row: 1;
+    grid-column: 2; }
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-row: 2;
+    grid-column: 1; } }
+@media all and (-ms-high-contrast: none) and (max-width: 575px), (-ms-high-contrast: active) and (max-width: 575px) {
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-row: 1;
+    grid-column: 1; }
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-row: 2;
+    grid-column: 1; }
+  .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-row: 3;
+    grid-column: 1; } }
+
+        @supports (-ms-ime-align: auto) {
+          .people-average-charts-body .section-averages .section-body > * {
+            margin-right: 2.5rem; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            grid-row: 1;
+            grid-column: 1; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            grid-row: 1;
+            grid-column: 2; }
+          .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-row: 1;
+            grid-column: 3; }
+          @media (max-width: 991px) {
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+              -ms-grid-row: 1;
+              -ms-grid-column: 1;
+              grid-row: 1;
+              grid-column: 1; }
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+              -ms-grid-row: 1;
+              -ms-grid-column: 2;
+              grid-row: 1;
+              grid-column: 2; }
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+              -ms-grid-row: 2;
+              -ms-grid-column: 1;
+              grid-row: 2;
+              grid-column: 1; } }
+          @media (max-width: 575px) {
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(1) {
+              -ms-grid-row: 1;
+              -ms-grid-column: 1;
+              grid-row: 1;
+              grid-column: 1; }
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(2) {
+              -ms-grid-row: 2;
+              -ms-grid-column: 1;
+              grid-row: 2;
+              grid-column: 1; }
+            .people-average-charts-body .section-averages .section-body > :nth-of-type(3) {
+              -ms-grid-row: 3;
+              -ms-grid-column: 1;
+              grid-row: 3;
+              grid-column: 1; } } }
+    .people-average-charts-body .section-development {
+      margin-bottom: 3rem; }
+      .people-average-charts-body .section-development .section-header {
+        margin-bottom: 1.8rem; }
+      .people-average-charts-body .section-development .section-body {
+        padding: 0 0;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: minmax(30rem, 1fr) minmax(30rem, 1fr) minmax(30rem, 1fr);
+        grid-template-columns: minmax(30rem, 1fr) minmax(30rem, 1fr) minmax(30rem, 1fr);
+        grid-gap: 0 2rem;
+        margin-bottom: 2rem; }
+        @media (max-width: 1199px) {
+          .people-average-charts-body .section-development .section-body {
+            -ms-grid-columns: 50% 50% 50%;
+            grid-template-columns: 50% 50% 50%; } }
+        @media (max-width: 575px) {
+          .people-average-charts-body .section-development .section-body {
+            -ms-grid-columns: 100% 100% 100%;
+            grid-template-columns: 100% 100% 100%; } }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .people-average-charts-body .section-development .section-body > * {
+            margin-right: 2rem; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            grid-row: 1;
+            grid-column: 1; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            grid-row: 1;
+            grid-column: 2; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-row: 1;
+            grid-column: 3; } }
+        @supports (-ms-ime-align: auto) {
+          .people-average-charts-body .section-development .section-body > * {
+            margin-right: 2rem; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(1) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            grid-row: 1;
+            grid-column: 1; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(2) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            grid-row: 1;
+            grid-column: 2; }
+          .people-average-charts-body .section-development .section-body > :nth-of-type(3) {
+            -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            grid-row: 1;
+            grid-column: 3; } }
+      .people-average-charts-body .section-development .slider-trigger-left {
+        left: 0rem; }
+      .people-average-charts-body .section-development .slider-trigger-right {
+        right: 0rem; }
+
 .sign-in {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
@@ -6242,5 +6611,3 @@ i {
     /* height: 100%!important; */
     overflow: auto !important;
     max-height: 100% !important; } }
-
-/*# sourceMappingURL=style.css.map */

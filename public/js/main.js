@@ -20,21 +20,21 @@ function closeMenuOnSmall() {
 var tableDropdowTrigger = document.querySelector(
   '.table-dropdown-custom-trigger'
 );
+//TESTING NEW DROPDOWN
+// tableDropdowTrigger.addEventListener('focus', function () {
+//   var el = document.createElement('ul');
+//   el.innerHTML = `
+//   <li class="table-dropdown-custom-list-item">
+//     <a href="#" class="table-dropdown-custom-list-item-link">Open profile</a>
+//   </li>
 
-tableDropdowTrigger.addEventListener('focus', function () {
-  var el = document.createElement('ul');
-  el.innerHTML = `
-  <li class="table-dropdown-custom-list-item">
-    <a href="#" class="table-dropdown-custom-list-item-link">Open profile</a>
-  </li>
-
-  <li class="table-dropdown-custom-list-item">
-      <a href="#" class="table-dropdown-custom-list-item-link">Delete member</a>
-  </li>
-  `;
-  el.classList.add('test');
-  document.body.appendChild(el);
-});
+//   <li class="table-dropdown-custom-list-item">
+//       <a href="#" class="table-dropdown-custom-list-item-link">Delete member</a>
+//   </li>
+//   `;
+//   el.classList.add('test');
+//   document.body.appendChild(el);
+// });
 
 window.addEventListener('resize', closeMenuOnSmall);
 
