@@ -2532,6 +2532,10 @@ i {
           color: #333;
           border: 1px solid #DEDEDE;
           border-radius: 1.6rem;
+
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
   
           &::placeholder {
             color: #9699a6;
@@ -5115,6 +5119,9 @@ i {
             outline: none;
             color: #142840;
             
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
   
             &::placeholder {
               color: rgba($color: #142840, $alpha: .3);

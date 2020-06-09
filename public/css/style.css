@@ -1626,7 +1626,10 @@ i {
           line-height: 1.33;
           color: #333;
           border: 1px solid #DEDEDE;
-          border-radius: 1.6rem; }
+          border-radius: 1.6rem;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none; }
           .header-top-right .input-container input::placeholder {
             color: #9699a6; }
         .header-top-right .input-container i {
@@ -3575,7 +3578,10 @@ i {
         border: 0;
         border-bottom: 1px solid #DFE0E2;
         outline: none;
-        color: #142840; }
+        color: #142840;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none; }
         .give-feedback #feedbackModal .modal-body .input-container input::placeholder {
           color: rgba(20, 40, 64, 0.3); }
       .give-feedback #feedbackModal .modal-body .input-container:nth-of-type(4) {
