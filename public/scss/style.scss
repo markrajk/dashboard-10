@@ -619,8 +619,7 @@ label {
   padding: 0;
 }
 
-input,
-select {
+input, button, select, optgroup, textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
