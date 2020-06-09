@@ -619,6 +619,13 @@ label {
   padding: 0;
 }
 
+input,
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 ul {
   list-style: none;
 }
@@ -637,6 +644,8 @@ a:focus {
 .btn.active.focus {
   outline: none;
 }
+
+
 
 // ==================================
 // UTILITIES START
