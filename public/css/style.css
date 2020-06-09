@@ -3474,7 +3474,8 @@ i {
     -moz-align-items: center;
     align-items: center;
     border-bottom: none;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #DFE0E2; }
     .give-feedback #feedbackModal .modal-header img {
       margin-right: 1.19rem;
       width: 5.32rem;
