@@ -46,7 +46,7 @@ label {
   margin: 0;
   padding: 0; }
 
-input, button, select, optgroup, textarea {
+input, button, select, optgroup, textarea:not(input[type=checkbox]) {
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
   appearance: none !important; }
@@ -1135,6 +1135,7 @@ i {
   padding-left: 1.25rem;
   padding-top: 2.8rem; }
   .progress-custom-sub {
+    margin-bottom: .4rem;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.33;
@@ -1186,9 +1187,9 @@ i {
         margin-right: .5rem;
         font-size: 1.6rem; }
     .progress-custom-info .up {
-      color: #137efe; }
+      color: #14c732; }
       .progress-custom-info .up i {
-        color: #137efe; }
+        color: #14c732; }
     .progress-custom-info .down {
       color: #ff5555; }
       .progress-custom-info .down i {
@@ -1385,7 +1386,7 @@ i {
       width: 4.5rem;
       height: 4.5rem;
       font-size: 2.1rem;
-      color: #9ba6b2; }
+      color: #98A3AF; }
     .sidebar-main .logo img {
       margin-bottom: 0.9rem;
       width: 3.8rem;
@@ -1939,7 +1940,7 @@ i {
         width: 0;
         height: 0; }
     .teams-average-charts-body .section-averages {
-      margin-bottom: 4rem; }
+      margin-bottom: 5.4rem; }
       .teams-average-charts-body .section-averages .section-header {
         margin-bottom: 0; }
       .teams-average-charts-body .section-averages .section-body {
@@ -1948,7 +1949,7 @@ i {
         display: grid;
         -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem 2.5rem; }
+        grid-gap: 2rem 2.5rem; }
         @media (max-width: 991px) {
           .teams-average-charts-body .section-averages .section-body {
             -ms-grid-columns: 1fr 1fr;
@@ -2158,221 +2159,155 @@ i {
           .teams-average-charts-body .section-development .section-header {
             margin-bottom: 3rem; } }
       .teams-average-charts-body .section-development .section-body {
+        padding-bottom: 2rem;
+        width: 100%;
         max-width: 103rem;
-        padding: 0 0;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3rem 2rem; }
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start; }
         @media (max-width: 991px) {
           .teams-average-charts-body .section-development .section-body {
-            -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr; } }
-        @media (max-width: 575px) {
-          .teams-average-charts-body .section-development .section-body {
-            grid-gap: 3rem 3rem;
-            -ms-grid-columns: 1fr;
-            grid-template-columns: 1fr; } }
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .teams-average-charts-body .section-development .section-body > * {
-            margin-right: 2rem;
-            margin-bottom: 3rem; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 1;
-            grid-row: 1;
-            grid-column: 1; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 2;
-            grid-row: 1;
-            grid-column: 2; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 3;
-            grid-row: 1;
-            grid-column: 3; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 1;
-            grid-row: 2;
-            grid-column: 1; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 2;
-            grid-row: 2;
-            grid-column: 2; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 3;
-            grid-row: 2;
-            grid-column: 3; } }
-@media all and (-ms-high-contrast: none) and (max-width: 991px), (-ms-high-contrast: active) and (max-width: 991px) {
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-row: 1;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-row: 1;
-    grid-column: 2; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-row: 2;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-row: 2;
-    grid-column: 2; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-row: 3;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-row: 3;
-    grid-column: 2; } }
-@media all and (-ms-high-contrast: none) and (max-width: 575px), (-ms-high-contrast: active) and (max-width: 575px) {
-  .teams-average-charts-body .section-development .section-body > * {
-    margin-right: 3rem;
-    margin-bottom: 3rem; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-row: 1;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-row: 2;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-row: 3;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-row: 4;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-row: 5;
-    grid-column: 1; }
-  .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    grid-row: 6;
-    grid-column: 1; } }
-
-        @supports (-ms-ime-align: auto) {
-          .teams-average-charts-body .section-development .section-body > * {
-            margin-right: 2rem;
-            margin-bottom: 3rem; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 1;
-            grid-row: 1;
-            grid-column: 1; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 2;
-            grid-row: 1;
-            grid-column: 2; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 3;
-            grid-row: 1;
-            grid-column: 3; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 1;
-            grid-row: 2;
-            grid-column: 1; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 2;
-            grid-row: 2;
-            grid-column: 2; }
-          .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-            -ms-grid-row: 2;
-            -ms-grid-column: 3;
-            grid-row: 2;
-            grid-column: 3; }
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+        .teams-average-charts-body .section-development .section-body-chart {
+          width: 72%;
+          padding-right: 5.5rem;
+          border-right: 1.5px solid #f3f3f3; }
           @media (max-width: 991px) {
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-              -ms-grid-row: 1;
-              -ms-grid-column: 1;
-              grid-row: 1;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-              -ms-grid-row: 1;
-              -ms-grid-column: 2;
-              grid-row: 1;
-              grid-column: 2; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-              -ms-grid-row: 2;
-              -ms-grid-column: 1;
-              grid-row: 2;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-              -ms-grid-row: 2;
-              -ms-grid-column: 2;
-              grid-row: 2;
-              grid-column: 2; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-              -ms-grid-row: 3;
-              -ms-grid-column: 1;
-              grid-row: 3;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-              -ms-grid-row: 3;
-              -ms-grid-column: 2;
-              grid-row: 3;
-              grid-column: 2; } }
-          @media (max-width: 575px) {
-            .teams-average-charts-body .section-development .section-body > * {
-              margin-right: 3rem;
-              margin-bottom: 3rem; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(1) {
-              -ms-grid-row: 1;
-              -ms-grid-column: 1;
-              grid-row: 1;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(2) {
-              -ms-grid-row: 2;
-              -ms-grid-column: 1;
-              grid-row: 2;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(3) {
-              -ms-grid-row: 3;
-              -ms-grid-column: 1;
-              grid-row: 3;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(4) {
-              -ms-grid-row: 4;
-              -ms-grid-column: 1;
-              grid-row: 4;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(5) {
-              -ms-grid-row: 5;
-              -ms-grid-column: 1;
-              grid-row: 5;
-              grid-column: 1; }
-            .teams-average-charts-body .section-development .section-body > :nth-of-type(6) {
-              -ms-grid-row: 6;
-              -ms-grid-column: 1;
-              grid-row: 6;
-              grid-column: 1; } } }
+            .teams-average-charts-body .section-development .section-body-chart {
+              margin-bottom: 3rem;
+              width: 100%;
+              padding-right: 2rem;
+              border-right: 0; } }
+          .teams-average-charts-body .section-development .section-body-chart-header {
+            padding-top: 1rem;
+            padding-bottom: 2.8rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            -webkit-justify-content: flex-end;
+            -moz-justify-content: flex-end;
+            justify-content: flex-end;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            .teams-average-charts-body .section-development .section-body-chart-header .options a {
+              font-family: Roboto, sans-serif;
+              font-size: 1.5rem;
+              font-weight: 400;
+              line-height: 1.33;
+              color: #3d464d; }
+              .teams-average-charts-body .section-development .section-body-chart-header .options a.active {
+                font-weight: 700; }
+            .teams-average-charts-body .section-development .section-body-chart-header .options span {
+              margin: 0 .8rem;
+              font-size: 2rem;
+              color: #F2F2F2; }
+          .teams-average-charts-body .section-development .section-body-chart-main {
+            height: 30rem; }
+            .teams-average-charts-body .section-development .section-body-chart-main canvas {
+              height: 100%; }
+              @media (max-width: 991px) {
+                .teams-average-charts-body .section-development .section-body-chart-main canvas {
+                  margin: 0 auto; } }
+        .teams-average-charts-body .section-development .section-body-legend {
+          width: 28%;
+          padding-left: 5rem; }
+          @media (max-width: 991px) {
+            .teams-average-charts-body .section-development .section-body-legend {
+              width: 100%;
+              padding-left: 2rem; } }
+          .teams-average-charts-body .section-development .section-body-legend-header {
+            margin-top: 2rem;
+            margin-bottom: 2.8rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.33;
+            color: #1b2733; }
+          .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
+            max-width: 18.9rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 1.5px solid #f2f2f2; }
+            @media (max-width: 991px) {
+              .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
+                max-width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+          .teams-average-charts-body .section-development .section-body-legend-main .chart-label {
+            margin-bottom: 2rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            @media (max-width: 991px) {
+              .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+                margin-right: 3rem; } }
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label input {
+              transform: scale(1.2); }
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label p {
+              margin: 0 1rem;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.36;
+              letter-spacing: 0.14px;
+              color: #3d464d; }
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label span {
+              width: 1.2rem;
+              height: .35rem;
+              border-radius: 50%; }
+          .teams-average-charts-body .section-development .section-body-legend-main-share {
+            padding-top: 2.4rem; }
+            .teams-average-charts-body .section-development .section-body-legend-main-share a {
+              display: block;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.36;
+              letter-spacing: 0.14px;
+              color: #3d464d; }
+              @media (max-width: 991px) {
+                .teams-average-charts-body .section-development .section-body-legend-main-share a {
+                  display: inline-block; } }
+              .teams-average-charts-body .section-development .section-body-legend-main-share a:hover {
+                text-decoration: underline; }
+              .teams-average-charts-body .section-development .section-body-legend-main-share a:not(:last-of-type) {
+                margin-bottom: 1.8rem; }
+                @media (max-width: 991px) {
+                  .teams-average-charts-body .section-development .section-body-legend-main-share a:not(:last-of-type) {
+                    margin-bottom: 0rem;
+                    margin-right: 3rem; } }
       .teams-average-charts-body .section-development .slider-trigger-left {
         left: 0rem; }
       .teams-average-charts-body .section-development .slider-trigger-right {
@@ -5879,7 +5814,7 @@ i {
 .people-average-charts {
   padding: 2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 20rem);
+  max-height: calc(100vh - 10rem);
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -6180,62 +6115,353 @@ i {
       margin-bottom: 3rem; }
       .people-average-charts-body .section-development .section-header {
         margin-bottom: 1.8rem; }
-      .people-average-charts-body .section-development .section-body {
-        padding: 0 0;
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: minmax(30rem, 1fr) minmax(30rem, 1fr) minmax(30rem, 1fr);
-        grid-template-columns: minmax(30rem, 1fr) minmax(30rem, 1fr) minmax(30rem, 1fr);
-        grid-gap: 0 2rem;
-        margin-bottom: 2rem; }
-        @media (max-width: 1199px) {
-          .people-average-charts-body .section-development .section-body {
-            -ms-grid-columns: 50% 50% 50%;
-            grid-template-columns: 50% 50% 50%; } }
         @media (max-width: 575px) {
+          .people-average-charts-body .section-development .section-header {
+            margin-bottom: 3rem; } }
+      .people-average-charts-body .section-development .section-body {
+        padding-bottom: 2rem;
+        width: 100%;
+        max-width: 103rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start; }
+        @media (max-width: 991px) {
           .people-average-charts-body .section-development .section-body {
-            -ms-grid-columns: 100% 100% 100%;
-            grid-template-columns: 100% 100% 100%; } }
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .people-average-charts-body .section-development .section-body > * {
-            margin-right: 2rem; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(1) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 1;
-            grid-row: 1;
-            grid-column: 1; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(2) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 2;
-            grid-row: 1;
-            grid-column: 2; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(3) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 3;
-            grid-row: 1;
-            grid-column: 3; } }
-        @supports (-ms-ime-align: auto) {
-          .people-average-charts-body .section-development .section-body > * {
-            margin-right: 2rem; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(1) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 1;
-            grid-row: 1;
-            grid-column: 1; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(2) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 2;
-            grid-row: 1;
-            grid-column: 2; }
-          .people-average-charts-body .section-development .section-body > :nth-of-type(3) {
-            -ms-grid-row: 1;
-            -ms-grid-column: 3;
-            grid-row: 1;
-            grid-column: 3; } }
-      .people-average-charts-body .section-development .slider-trigger-left {
-        left: 0rem; }
-      .people-average-charts-body .section-development .slider-trigger-right {
-        right: 0rem; }
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+        .people-average-charts-body .section-development .section-body-chart {
+          width: 72%;
+          padding-right: 5.5rem;
+          border-right: 1.5px solid #f3f3f3; }
+          @media (max-width: 991px) {
+            .people-average-charts-body .section-development .section-body-chart {
+              margin-bottom: 3rem;
+              width: 100%;
+              padding-right: 2rem;
+              border-right: 0; } }
+          .people-average-charts-body .section-development .section-body-chart-header {
+            padding-top: 1rem;
+            padding-bottom: 2.8rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            -webkit-justify-content: flex-end;
+            -moz-justify-content: flex-end;
+            justify-content: flex-end;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            .people-average-charts-body .section-development .section-body-chart-header .options a {
+              font-family: Roboto, sans-serif;
+              font-size: 1.5rem;
+              font-weight: 400;
+              line-height: 1.33;
+              color: #3d464d; }
+              .people-average-charts-body .section-development .section-body-chart-header .options a.active {
+                font-weight: 700; }
+            .people-average-charts-body .section-development .section-body-chart-header .options span {
+              margin: 0 .8rem;
+              font-size: 2rem;
+              color: #F2F2F2; }
+          .people-average-charts-body .section-development .section-body-chart-main {
+            height: 30rem; }
+            .people-average-charts-body .section-development .section-body-chart-main canvas {
+              height: 100%; }
+              @media (max-width: 991px) {
+                .people-average-charts-body .section-development .section-body-chart-main canvas {
+                  margin: 0 auto; } }
+        .people-average-charts-body .section-development .section-body-legend {
+          width: 28%;
+          padding-left: 5rem; }
+          @media (max-width: 991px) {
+            .people-average-charts-body .section-development .section-body-legend {
+              width: 100%;
+              padding-left: 2rem; } }
+          .people-average-charts-body .section-development .section-body-legend-header {
+            margin-top: 2rem;
+            margin-bottom: 2.8rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.33;
+            color: #1b2733; }
+          .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
+            max-width: 18.9rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 1.5px solid #f2f2f2; }
+            @media (max-width: 991px) {
+              .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
+                max-width: 100%;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+                -webkit-flex-wrap: wrap;
+                -moz-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+          .people-average-charts-body .section-development .section-body-legend-main .chart-label {
+            margin-bottom: 2rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center; }
+            @media (max-width: 991px) {
+              .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+                margin-right: 3rem; } }
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label input {
+              transform: scale(1.2); }
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label p {
+              margin: 0 1rem;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.36;
+              letter-spacing: 0.14px;
+              color: #3d464d; }
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label span {
+              width: 1.2rem;
+              height: .35rem;
+              border-radius: 50%; }
+          .people-average-charts-body .section-development .section-body-legend-main-share {
+            padding-top: 2.4rem; }
+            .people-average-charts-body .section-development .section-body-legend-main-share a {
+              display: block;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.36;
+              letter-spacing: 0.14px;
+              color: #3d464d; }
+              @media (max-width: 991px) {
+                .people-average-charts-body .section-development .section-body-legend-main-share a {
+                  display: inline-block; } }
+              .people-average-charts-body .section-development .section-body-legend-main-share a:hover {
+                text-decoration: underline; }
+              .people-average-charts-body .section-development .section-body-legend-main-share a:not(:last-of-type) {
+                margin-bottom: 1.8rem; }
+                @media (max-width: 991px) {
+                  .people-average-charts-body .section-development .section-body-legend-main-share a:not(:last-of-type) {
+                    margin-bottom: 0rem;
+                    margin-right: 3rem; } }
+
+.people-feedback-received {
+  width: 100%; }
+  .people-feedback-received-header {
+    padding-top: 6rem;
+    max-width: 103rem;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .people-feedback-received-header {
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start; } }
+    .people-feedback-received-header-info {
+      margin-right: .5rem;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+      @media (max-width: 767px) {
+        .people-feedback-received-header-info-buttons {
+          margin-top: 1rem;
+          margin-left: 1.25rem;
+          -webkit-align-self: flex-end;
+          -moz-align-self: flex-end;
+          -ms-flex-item-align: end;
+          align-self: flex-end; } }
+      @media (max-width: 575px) {
+        .people-feedback-received-header-info-buttons {
+          -webkit-align-self: flex-start;
+          -moz-align-self: flex-start;
+          -ms-flex-item-align: start;
+          align-self: flex-start; } }
+      .people-feedback-received-header-info img {
+        margin-left: 1.25rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%; }
+      .people-feedback-received-header-info .name {
+        padding-left: 1.3rem;
+        margin-bottom: .2rem;
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.35;
+        color: #252525; }
+        .people-feedback-received-header-info .name .email {
+          margin-top: .4rem;
+          font-weight: 400;
+          display: block;
+          font-size: 1.4rem;
+          line-height: 1.36;
+          color: #383838; }
+    @media (max-width: 575px) {
+      .people-feedback-received-header .button {
+        margin-right: .5rem;
+        font-size: 1.2rem; } }
+    @media (max-width: 379px) {
+      .people-feedback-received-header .button {
+        font-size: 1rem; } }
+    .people-feedback-received-header .button:not(:last-of-type) {
+      margin-right: 1.4rem; }
+  .people-feedback-received-body .section-comments-header {
+    max-width: 103rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    padding-right: 1.5rem;
+    background-color: #f7f9fa;
+    border-radius: 1px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.28;
+    color: #647282; }
+    .people-feedback-received-body .section-comments-header .dropdown-custom-trigger {
+      padding: 0;
+      font-weight: 400;
+      border: 0;
+      white-space: nowrap; }
+      .people-feedback-received-body .section-comments-header .dropdown-custom-trigger i {
+        font-size: .8rem;
+        margin-left: .3rem; }
+      .people-feedback-received-body .section-comments-header .dropdown-custom-trigger:focus, .people-feedback-received-body .section-comments-header .dropdown-custom-trigger:active {
+        border: 0;
+        box-shadow: none;
+        color: inherit; }
+  .people-feedback-received-body .section-comments-body {
+    max-width: 103rem;
+    padding-top: 1.6rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 20rem;
+    grid-template-rows: 20rem;
+    grid-auto-rows: 20rem;
+    grid-gap: 2.9rem 2.6rem;
+    max-height: calc(100vh - 25rem - 1.5px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    @media (max-width: 767px) {
+      .people-feedback-received-body .section-comments-body {
+        max-height: calc(100vh - 35rem - 1.5px); } }
+    .people-feedback-received-body .section-comments-body::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0; }
+    @media (max-width: 991px) {
+      .people-feedback-received-body .section-comments-body {
+        -ms-grid-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 575px) {
+      .people-feedback-received-body .section-comments-body {
+        -ms-grid-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); } }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      .people-feedback-received-body .section-comments-body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between; }
+        .people-feedback-received-body .section-comments-body > * .comment-body {
+          max-height: 17.7rem; } }
+    @supports (-ms-ime-align: auto) {
+      .people-feedback-received-body .section-comments-body {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between; }
+        .people-feedback-received-body .section-comments-body > * .comment-body {
+          max-height: 17.7rem; } }
 
 .sign-in {
   font-family: Arial, Helvetica, sans-serif;
