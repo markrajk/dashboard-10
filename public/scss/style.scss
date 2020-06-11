@@ -8974,12 +8974,13 @@ i {
 
               
 
-              & input {
-                //margin-right: 1rem;
-                transform: scale(1.2);
+              & .pretty {
+                margin-right: -1rem;
+                font-size: 1.5rem;
+
               }
 
-              & p {
+              &-label {
                 margin: 0 1rem;
                 font-size: 1.4rem;
                 font-weight: 400;

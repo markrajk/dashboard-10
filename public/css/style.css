@@ -6247,9 +6247,10 @@ i {
             @media (max-width: 991px) {
               .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
                 margin-right: 3rem; } }
-            .people-average-charts-body .section-development .section-body-legend-main .chart-label input {
-              transform: scale(1.2); }
-            .people-average-charts-body .section-development .section-body-legend-main .chart-label p {
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
+              margin-right: -1rem;
+              font-size: 1.5rem; }
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
               font-size: 1.4rem;
               font-weight: 400;
