@@ -1289,18 +1289,18 @@ i {
     padding: .9em;
     font-size: 1.5rem;
     color: #333;
-    margin: 1.7rem;
+    margin: 1.5rem 1.7rem;
     border-color: #E6E9EF;
     border-radius: 8px; }
     .button-mobile .play-icon {
       width: 2.0132rem;
       height: 2.1504rem;
-      margin-left: 1.2rem; }
+      margin-left: 1.4rem; }
     .button-mobile .apple-icon {
       width: 1.98rem;
       height: 1.98rem;
       margin-bottom: 0.15rem;
-      margin-left: 0.4rem; }
+      margin-left: 0.7rem; }
     .button-mobile:hover, .button-mobile:focus {
       color: #333;
       background-color: #efefef; }
@@ -1360,7 +1360,7 @@ i {
     .sidebar-main-top .sidebar-main-item:nth-of-type(1) {
       margin-bottom: 2.5rem; }
     .sidebar-main-top .sidebar-main-item:nth-of-type(2) {
-      margin-bottom: 2.5rem; }
+      margin-bottom: 2.8rem; }
       .sidebar-main-top .sidebar-main-item:nth-of-type(2) a i {
         font-size: 2.6rem; }
     .sidebar-main-top .sidebar-main-item:nth-of-type(3) {
@@ -1386,7 +1386,7 @@ i {
       width: 4.5rem;
       height: 4.5rem;
       font-size: 2.1rem;
-      color: #98A3AF; }
+      color: #8b97a5; }
     .sidebar-main .logo img {
       margin-bottom: 0.9rem;
       width: 3.8rem;
@@ -1501,7 +1501,7 @@ i {
           font-size: 1.4rem;
           line-height: 1.36;
           letter-spacing: 0.17px;
-          color: #9699a6; }
+          color: #626572; }
           .sidebar-menu-list-item-link:hover, .sidebar-menu-list-item-link:focus, .sidebar-menu-list-item-link.active {
             color: #1a9cfc;
             border-radius: 8px;
@@ -1516,6 +1516,7 @@ i {
         font-size: 1.7rem;
         font-weight: 700;
         line-height: 1.35;
+        letter-spacing: 0.17px;
         color: #333333;
         border-top: 1.5px solid #F2F2F2;
         border-bottom: 1.5px solid #F2F2F2; }
@@ -1576,6 +1577,7 @@ i {
     justify-content: space-between;
     height: 6.3rem; }
     .header-top-left-title {
+      margin-left: .2rem;
       font-size: 2.8rem;
       font-weight: 500;
       line-height: 1.32;
@@ -1584,10 +1586,12 @@ i {
     .header-top-left-small {
       margin-top: 0.7rem;
       font-size: 1.45rem;
-      line-height: 1.38;
+      line-height: 1.31;
+      letter-spacing: 0.07px;
       font-weight: 400;
       color: #9699a6; }
     .header-top-right {
+      margin-bottom: .6rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;

@@ -2167,21 +2167,21 @@ i {
     padding: .9em;
     font-size: 1.5rem;
     color: #333;
-    margin: 1.7rem;
+    margin: 1.5rem 1.7rem;
     border-color: #E6E9EF;
     border-radius: 8px;
 
     & .play-icon {
       width: resize(7.19, 0.28) * 1rem;
       height: resize(7.68, 0.28) * 1rem;
-      margin-left: 1.2rem;
+      margin-left: 1.4rem;
     }
 
     & .apple-icon {
       width: resize(2.2, .9) * 1rem;
       height: resize(2.2, .9) * 1rem;
       margin-bottom: 0.15rem;
-      margin-left: 0.4rem;
+      margin-left: 0.7rem;
     }
 
     &:hover,
@@ -2250,7 +2250,7 @@ i {
         }
 
         &:nth-of-type(2)  {
-          margin-bottom: 2.5rem;
+          margin-bottom: 2.8rem;
 
           & a i {
             font-size: 2.6rem;
@@ -2275,7 +2275,7 @@ i {
         width: 4.5rem;
         height: 4.5rem;
         font-size: 2.1rem;
-        color: #98A3AF;
+        color: #8b97a5;
       }
     }
 
@@ -2377,7 +2377,7 @@ i {
           font-size: 1.4rem;
           line-height: 1.36;
           letter-spacing: 0.17px;
-          color: #9699a6;
+          color: #626572;
 
           &:hover,
           &:focus,
@@ -2403,6 +2403,7 @@ i {
         font-size: 1.7rem;
         font-weight: 700;
         line-height: 1.35;
+        letter-spacing: 0.17px;
         color: #333333;
         border-top: 1.5px solid #F2F2F2;
         border-bottom: 1.5px solid #F2F2F2;
@@ -2477,23 +2478,26 @@ i {
     &-left {
 
       &-title {
+        margin-left: .2rem;
         font-size: 2.8rem;
         font-weight: 500;
         line-height: 1.32;
-        letter-spacing: -0.28px;
+        letter-spacing: -0.28px;      
         color: #1f1f1f;
       }
 
       &-small {
         margin-top: 0.7rem;
         font-size: 1.45rem;
-        line-height: 1.38;
+        line-height: 1.31;
+        letter-spacing: 0.07px;
         font-weight: 400;
         color: #9699a6;
       }
     }
 
     &-right {
+      margin-bottom: .6rem;
       @include flexbox;
       @include align-items(center);
 
