@@ -1091,7 +1091,7 @@ i {
       .comment-body-feedback-productivity {
         margin-bottom: 1.2rem; }
     .comment-body-text, .comment-body-text-trunc {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       line-height: 1.38;
       color: #383838;
       transition: opacity .3s ease-in-out .3s; }
@@ -2274,13 +2274,19 @@ i {
             -ms-flex-align: center;
             -webkit-align-items: center;
             -moz-align-items: center;
-            align-items: center; }
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            justify-content: flex-start; }
             @media (max-width: 991px) {
               .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
                 margin-right: 3rem; } }
-            .teams-average-charts-body .section-development .section-body-legend-main .chart-label input {
-              transform: scale(1.2); }
-            .teams-average-charts-body .section-development .section-body-legend-main .chart-label p {
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
+              margin-right: -1rem;
+              font-size: 1.5rem; }
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
               font-size: 1.4rem;
               font-weight: 400;
@@ -3324,7 +3330,7 @@ i {
         line-height: 1.33;
         letter-spacing: -0.12px;
         border-radius: 2rem;
-        border: solid 1.5px #EBEBEB;
+        border: solid 1.5px #d8d8d8;
         background-color: #ffffff;
         outline: none; }
         .give-feedback-people .input-container input::placeholder {
@@ -6864,6 +6870,9 @@ i {
     font-weight: 500;
     line-height: 1.33;
     color: #ffffff; }
+
+p:not(.no-ls), span:not(.no-ls), a, li {
+  letter-spacing: .2px; }
 
 @media (max-width: 1024px) {
   body,

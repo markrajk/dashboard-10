@@ -1917,7 +1917,7 @@ i {
 
     &-text,
     &-text-trunc {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       line-height: 1.38;
       color: #383838;
       transition: opacity .3s ease-in-out .3s;
@@ -3233,6 +3233,7 @@ i {
               margin-bottom: 2rem;
               @include flexbox;
               @include align-items(center);
+              @include justify-content(flex-start);
 
               &:not(:last-of-type) {
 
@@ -3243,12 +3244,12 @@ i {
 
               
 
-              & input {
-                //margin-right: 1rem;
-                transform: scale(1.2);
+              & .pretty {
+                margin-right: -1rem;
+                font-size: 1.5rem;
               }
 
-              & p {
+              &-label {
                 margin: 0 1rem;
                 font-size: 1.4rem;
                 font-weight: 400;
@@ -5114,7 +5115,8 @@ i {
         line-height: 1.33;
         letter-spacing: -0.12px;
         border-radius: 2rem;
-        border: solid 1.5px #EBEBEB;
+        border: solid 1.5px #d8d8d8;
+
         background-color: #ffffff;
         outline: none;
 
@@ -9866,6 +9868,10 @@ i {
 // ==================================
 // CUSTOMER SERVICE END
 // ==================================
+
+p:not(.no-ls), span:not(.no-ls), a, li {
+  letter-spacing: .2px;
+}
 
 
 @media (max-width: 1024px) {
