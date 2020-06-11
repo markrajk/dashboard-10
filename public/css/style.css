@@ -4504,7 +4504,7 @@ i {
     .create-new-team .btn-custom-primary.outline:hover, .create-new-team .btn-custom-primary.outline:focus {
       background-color: #f5f5f5; }
   .create-new-team-body {
-    max-height: calc(100vh - 27.8rem - 1.5px); }
+    max-height: calc(100vh - 27.8rem - 10rem - 1.5px); }
     .create-new-team-body-caption {
       font-size: 1.7rem;
       font-weight: 400;
