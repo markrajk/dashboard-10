@@ -3681,6 +3681,10 @@ i {
         @include respond(desktop-xsm) {
           display: none;
         }
+
+        & .button {
+          padding: .6rem 2.6rem;
+        }
       }
   
       &:nth-of-type(4) {
@@ -3934,7 +3938,7 @@ i {
   & #inviteNewModal {
     
     & .modal {
-          &-content {
+      &-content {
       margin: auto;
       border-radius: .3rem;
     }
@@ -6144,6 +6148,7 @@ i {
 
   &::before {
     content: '';
+    margin-top: 3.4rem;
     display: block;
     position: sticky;
     top: 0;
@@ -6155,7 +6160,7 @@ i {
 
 
   &-header {
-    padding-top: 3rem;
+    padding-top: 4.1rem;
     margin-bottom: 3.8rem;
 
     &-team {
