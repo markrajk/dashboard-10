@@ -641,7 +641,12 @@ a:focus {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: none;
+  outline: none!important;
+}
+
+button {
+  outline: none!important;
+  cursor: pointer;
 }
 
 
@@ -664,6 +669,7 @@ a:focus {
   border: .1rem solid #0f2882;
   background-color: #0f2882;
   white-space: nowrap;
+  outline: none!important;
 
   @include respond(desktop-xsm) {
     font-size: 1rem;
@@ -704,6 +710,7 @@ a:focus {
   color: #333;
   border-radius: 8px;
   border: solid 1px #e6e9ef;
+  outline: none!important;
 
   &:hover,
   &:focus {
@@ -722,6 +729,7 @@ a:focus {
   letter-spacing: 0.24px;
   color: #fff;
   border-radius: 3px;
+  outline: none!important;
 
   &:hover,
   &:focus {
@@ -2083,6 +2091,7 @@ i {
   transition-property: background-color, color, border-color;
   white-space: nowrap;
   cursor: pointer;
+  outline: none!important;
 
   &-primary {
     background-color: #1273DD;
@@ -2325,9 +2334,16 @@ i {
         color: #333333;
       }
 
+      & button {
+        background-color: transparent!important;
+        border: none!important;
+        outline: none!important;
+      }
+
       i {
         font-size: 2.65rem;
         color: #1a9cfc;
+        
       }
     }
 
@@ -4628,7 +4644,7 @@ i {
               //   @include flex(1)
               // }
 
-              & a:first-of-type {
+              & button:first-of-type {
                  margin-right: 1.3rem;
               }
             }
@@ -6810,7 +6826,7 @@ i {
             //   @include flex(1)
             // }
 
-            & a:first-of-type {
+            & button:first-of-type {
                margin-right: 1.3rem;
             }
           }
@@ -7724,7 +7740,7 @@ i {
             //   @include flex(1)
             // }
 
-            & a:first-of-type {
+            & button:first-of-type {
                margin-right: 1.3rem;
             }
           }
