@@ -3359,9 +3359,10 @@ i {
       padding-left: .7rem;
       display: -ms-grid;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
       grid-gap: 2.8rem 3.2rem;
       max-height: calc(100vh - 36.3rem - 2px);
+      justify-items: flex-start;
       overflow-y: auto;
       scrollbar-width: none;
       /* Firefox */
@@ -3394,6 +3395,7 @@ i {
           -ms-flex-wrap: wrap;
           flex-wrap: wrap; } }
       .give-feedback-people-body-person {
+        align-self: flex-start;
         text-align: center;
         display: inline-block;
         cursor: pointer; }
@@ -3410,6 +3412,19 @@ i {
           width: 7.5rem;
           height: 7.5rem;
           border-radius: 50%; }
+        .give-feedback-people-body-person-initials {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: .98rem;
+          width: 7.5rem;
+          height: 7.5rem;
+          border-radius: 50%;
+          background-color: #FFD800;
+          color: #FFF;
+          font-size: 3rem;
+          font-weight: 700;
+          letter-spacing: 2px; }
         .give-feedback-people-body-person p {
           font-size: 1.25rem;
           font-weight: 500;
