@@ -645,6 +645,8 @@ a:focus {
 }
 
 button {
+  background-color: transparent;
+  border: none;
   outline: none!important;
   cursor: pointer;
 }
@@ -1876,6 +1878,20 @@ i {
       border-radius: 50%;
     }
 
+    &-initials {
+      @include inline-flex;
+      @include align-items(center);
+      @include justify-content(center);
+      margin-right: .76rem;
+      width: 3.97rem;
+      height: 3.97rem;
+      border-radius: 50%;
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: #FFF;
+      background-color: #FFd800;
+    }
+
     &-name {
       font-size: 1.5rem;
       font-weight: 500;
@@ -2306,6 +2322,7 @@ i {
       background-color: #ffd800;
       border-radius: 50%;
       color: #fff;
+      text-transform: uppercase;
     }
   }
 
@@ -2672,6 +2689,23 @@ i {
                   height: 3.3rem;
                   border-radius: 50%;
                 }
+
+                &-initials {
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-right: 1.6rem;
+                  min-width: 3.3rem;
+                  min-height: 3.3rem;
+                  width: 3.3rem;
+                  height: 3.3rem;
+                  border-radius: 50%;
+                  text-transform: uppercase;
+                  background-color: #FFd800;
+                  font-weight: 700;
+                  color: #FFF;
+                  letter-spacing: 1px;
+                }
   
                 &-main {
   
@@ -2765,6 +2799,21 @@ i {
                 height: 4rem;
                 border-radius: 50%;
               }
+
+              & .initials {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1.2rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                text-transform: uppercase;
+                background-color: #FFd800;
+                font-weight: 700;
+                color: #FFF;
+                letter-spacing: 2px;
+              }
     
               & .user-info {
     
@@ -2835,7 +2884,8 @@ i {
       @include flexbox;
       @include align-items(center);
       margin-right: auto;
-      & a {
+      & a,
+      button {
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
@@ -3738,6 +3788,20 @@ i {
             width: 4.1rem;
             height: 4.1rem;
             border-radius: 50%;
+          }
+
+          & .initials {
+            @include inline-flex;
+            @include align-items(center);
+            @include justify-content(center);
+            margin-right: 1.5rem;
+            width: 4.1rem;
+            height: 4.1rem;
+            border-radius: 50%;
+            color: #FFF;
+            font-weight: 500;
+            background-color: #FFd800;
+            letter-spacing: 1px;
           }
           & .name {
             font-size: 1.4rem;
@@ -8662,6 +8726,21 @@ i {
         height: 5.8rem;
         border-radius: 50%;
 
+      }
+
+      & .initials {
+        @include inline-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+        background-color: #ffd800;
+        font-size: 2.3rem;
+        font-weight: 500;
+        color: #FFF;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       & .name {
