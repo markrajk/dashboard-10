@@ -3721,6 +3721,41 @@ i {
         height: 0;
       }
     }
+
+    & .no-team-members {
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content(center);
+      @include flex-direction(column);
+      position: relative;
+      height: 100%;
+      max-height: calc(100vh - 11rem - 16rem - 8rem);
+      border-radius: 5px;
+      box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
+      border: solid 1px #eaeaea;
+      background-color: #ffffff;
+      text-align: center;
+
+      &-title {
+        margin-bottom: 1.35rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: -0.2px;
+        color: #292929;
+      }
+
+      &-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #383838;
+
+        & button {
+          font-weight: 500;
+          color: #137efe;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   & .table-custom {
@@ -3848,7 +3883,6 @@ i {
     }
 
   }
-
 
   // & .panel {
   //   &-body {
