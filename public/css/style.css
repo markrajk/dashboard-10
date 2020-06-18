@@ -1132,6 +1132,12 @@ i {
         margin-left: .2rem;
         font-weight: 500;
         color: #939393; }
+      .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
+        margin-bottom: 1rem;
+        display: block;
+        font-weight: 700; }
+        .comment-body-text-compliment span, .comment-body-text-improver span, .comment-body-text-trunc-compliment span, .comment-body-text-trunc-improver span {
+          font-weight: 400; }
       .comment-body-text .close, .comment-body-text-trunc .close {
         display: none; }
   .comment.open {

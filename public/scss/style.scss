@@ -1952,6 +1952,17 @@ i {
         color: #939393;
       }
 
+      &-compliment,
+      &-improver {
+        margin-bottom: 1rem;
+        display: block;
+        font-weight: 700;
+
+        & span {
+          font-weight: 400;
+        }
+      }
+
       
     & .close {
       display: none;
