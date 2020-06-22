@@ -1140,6 +1140,7 @@ i {
       .comment-body-feedback-productivity {
         margin-bottom: 1.2rem; }
     .comment-body-text, .comment-body-text-trunc {
+      white-space: nowrap;
       margin-top: 1.2rem;
       padding-top: 1.2rem;
       font-size: 1.35rem;
@@ -1152,12 +1153,22 @@ i {
         font-weight: 500;
         color: #939393; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
+        white-space: nowrap;
+        position: relative;
+        max-width: calc(100% - 9.5rem);
         font-size: 1.3rem;
         margin-bottom: .5rem;
         display: block;
         font-weight: 500; }
         .comment-body-text-compliment span, .comment-body-text-improver span, .comment-body-text-trunc-compliment span, .comment-body-text-trunc-improver span {
+          max-width: 100%;
           font-weight: 400; }
+        .comment-body-text-compliment .read-more, .comment-body-text-improver .read-more, .comment-body-text-trunc-compliment .read-more, .comment-body-text-trunc-improver .read-more {
+          display: inline-block;
+          padding-left: .2rem;
+          padding-right: 10rem;
+          background-color: #FFF;
+          white-space: nowrap; }
       .comment-body-text .close, .comment-body-text-trunc .close {
         display: none; }
   .comment.open {
@@ -6639,8 +6650,8 @@ i {
     display: grid;
     -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 21.6rem;
-    grid-template-rows: 21.6rem;
+    -ms-grid-rows: minmax(21.6rem, 23rem);
+    grid-template-rows: minmax(21.6rem, 23rem);
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     max-height: calc(100vh - 25rem - 1.5px);

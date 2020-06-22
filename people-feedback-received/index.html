@@ -310,7 +310,7 @@
                                     <p class="comment-header-name no-ls">Maria Rodriguez</p>
                                     <p class="comment-header-date no-ls">24.5.2020</p>
                                 </div>
-                                
+
                                 <div class="comment-body">
                                     <div class="comment-body-feedback">
                                         <div class="comment-body-feedback-teamwork">
@@ -364,6 +364,7 @@
     <script src="../public/js/main.js"></script>
 
     <script>
+        
         // TRUNCATE COMMENTS
         var commentsBody = document.querySelectorAll('.comment-body');
         var commentsBodyText = document.querySelectorAll('.comment-body-text');
@@ -378,11 +379,19 @@
             var commentsBodyTextCompliment = commentsBody[i].querySelector('.comment-body-text-compliment span');
             var commentsBodyTextImprover = commentsBody[i].querySelector('.comment-body-text-improver span');
 
+            //GETTING WRONG WIDTH WITH OFFSETWIDTH
+            // var el = document.querySelector('.comment')
+            // var width = el.offsetWidth;
+            // var rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+            // var numOfCharsCompliment = (width) / (1.3 * rem);
+            // console.log(width, rem, numOfCharsCompliment)
+
+
             var commentsBodyTextTrunc = `
             <div class="comment-body-text-trunc">
                 <p class="comment-body-text-compliment">
                     Compliment: 
-                    <span>${commentsBodyTextCompliment.innerText.substr(0,13-1)+(commentsBodyTextCompliment.innerText.length>15?'...'+readMoreLink:'')}</span>
+                    <span >${commentsBodyTextCompliment.innerText.substr(0,15-1)+(commentsBodyTextCompliment.innerText.length>15?'...'+readMoreLink:'')}</span>
                 </p>
 
                 <p class="comment-body-text-improver">
@@ -405,6 +414,7 @@
                 var complimentBool = e.target.parentElement.parentElement.classList.contains('comment-body-text-compliment');
                 var messageContent = complimentBool ? commentsBodyTextCompliment.innerText : commentsBodyTextImprover.innerText;
                 var messageContainer = comment.querySelector('.comment-body-message');
+
                 messageContainer.innerHTML = `
                 <div class="comment-body-message-header">
                     ${complimentBool ? `Compliment` : `Improver`}
