@@ -1140,8 +1140,8 @@ i {
       .comment-body-feedback-productivity {
         margin-bottom: 1.2rem; }
     .comment-body-text, .comment-body-text-trunc {
-      margin-top: 1rem;
-      padding-top: 1rem;
+      margin-top: 1.2rem;
+      padding-top: 1.2rem;
       font-size: 1.35rem;
       line-height: 1.38;
       color: #383838;
@@ -1152,9 +1152,10 @@ i {
         font-weight: 500;
         color: #939393; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: .5rem;
         display: block;
-        font-weight: 700; }
+        font-weight: 600; }
         .comment-body-text-compliment span, .comment-body-text-improver span, .comment-body-text-trunc-compliment span, .comment-body-text-trunc-improver span {
           font-weight: 400; }
       .comment-body-text .close, .comment-body-text-trunc .close {
@@ -6638,8 +6639,8 @@ i {
     display: grid;
     -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 22rem;
-    grid-template-rows: 22rem;
+    -ms-grid-rows: 21.6rem;
+    grid-template-rows: 21.6rem;
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     max-height: calc(100vh - 25rem - 1.5px);
