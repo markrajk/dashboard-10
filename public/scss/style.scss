@@ -651,6 +651,12 @@ button {
   cursor: pointer;
 }
 
+select > option {
+  font-size: inherit!important;
+  outline: none!important;
+  border: 0!important;
+}
+
 
 
 // ==================================
@@ -688,6 +694,7 @@ button {
   }
 
   &.outline {
+    font-weight: 400;
     color: #1B2733;
     background-color: #fff;
     border-radius: 3px;
@@ -1554,15 +1561,25 @@ i {
       
 
       & select {
-        width: 95%;
+        position: relative;
+        width: 90%;
+        max-width: 21.2rem;
         outline: none;
-        padding: .55rem 1.3rem;
+        padding: .5rem 1.3rem;
         font-size: 1.4rem;
-        color: #1b2733;
         line-height: 1.36;
         color: #1b2733;
         border-radius: 4px;
         border: solid 1px #c1c7cd;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 50%;
 
         & option {
           font-size: 1.2rem;
@@ -1753,8 +1770,8 @@ i {
       color: #647282;
 
       & i {
-        margin-left: .5rem;
-        font-size: 1rem;
+        margin-left: .8rem;
+        font-size: .8rem;
       }
 
       &:hover {
@@ -1965,7 +1982,6 @@ i {
 
     &-text,
     &-text-trunc {
-      white-space: nowrap;
       margin-top: 1.2rem;
       padding-top: 1.2rem;
       font-size: 1.35rem;
@@ -2791,6 +2807,10 @@ i {
   
                   &-buttons {
                     margin-bottom: 1.2rem;
+
+                    & .button:first-of-type {
+                      margin-right: .5rem;
+                    }
   
                     & .btn-custom-primary {
                       padding: .6rem 1.3rem;
@@ -2809,8 +2829,8 @@ i {
                         color: #fd0000;
                       }
   
-                      &:nth-of-type(1) {
-                        margin-right: .5rem;
+                      & .button:nth-of-type(1) {
+                        margin-right: 1.5rem;
                       }
                     }
                   }
@@ -3674,7 +3694,7 @@ i {
       padding-top: 2.5rem;
       @include grid;
       @include grid-template-columns(repeat(3,1fr));
-      @include grid-template-rows(12rem);
+      @include grid-template-rows(12.8rem);
       grid-auto-rows: 12rem;
       grid-gap: 2.6rem 2.6rem;
       max-height: calc(100vh - 23.95rem - .5rem - 1px);
@@ -3689,6 +3709,13 @@ i {
         /* WebKit */
         width: 0;
         height: 0;
+      }
+
+      & .comment-body-text,
+      & .comment-body-text-trunc {
+        padding: 0;
+        margin: 0;
+        border: 0;
       }
 
       @include respond(desktop-md) {
@@ -4285,7 +4312,6 @@ i {
           font-weight: 500;
           line-height: 1.33;
           color: #647282;
-          text-transform: uppercase;
         }
       }
 
@@ -4352,6 +4378,7 @@ i {
         }
 
         & .column-01 {
+          padding-right: 1.5rem;
           margin-right: auto;
         }
 
@@ -4704,7 +4731,7 @@ i {
 
       &-info {
         width: 100%;
-        max-width: 36rem;
+        max-width: 39rem;
 
         & .subheader-text {
           margin-bottom: .5rem;
@@ -4727,7 +4754,7 @@ i {
       }
     }
 
-    .table-custom {
+    & .table-custom {
       margin-top: 2.2rem;
 
         &-body {
@@ -6945,7 +6972,7 @@ i {
   }
 
 
-  .table-custom {
+  & .table-custom {
     
     max-width: 72rem;
     //margin-top: 2.2rem;
@@ -8338,6 +8365,7 @@ i {
         }
 
         & .column-01 {
+          padding-right: 1.5rem;
           margin-right: auto;
         }
 

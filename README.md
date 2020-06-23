@@ -65,3 +65,5 @@ Link all pages and make modals work on all pages with that functionality.
     * teams-members ... (symbol, and in all tables where it is present)
     * teams-settings-feedback select options changed.
 - CSS changes & bug fixes.
+## Changes 23.06.2020
+-Team-settings-general & user-settings-general input fields added & <p class="column-01"> class text-truncate removed

@@ -348,14 +348,14 @@
   cursor: not-allowed; }
 
 .pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
-  background-color: #428bca !important; }
+  background-color: #1273DD !important; }
 .pretty input:checked ~ .state.p-primary .icon,
 .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon,
 .pretty.p-toggle .state.p-primary .svg {
   color: #fff;
   stroke: #fff; }
 .pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
-  border-color: #428bca; }
+  border-color: #1273DD; }
 .pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
   background-color: transparent; }
 .pretty input:checked ~ .state.p-primary-o .icon,
@@ -363,17 +363,17 @@
 .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon,
 .pretty.p-toggle .state.p-primary-o .svg,
 .pretty.p-toggle .state.p-primary-o svg {
-  color: #428bca;
-  stroke: #428bca; }
+  color: #1273DD;
+  stroke: #1273DD; }
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
-  background-color: #428bca !important; }
+  background-color: #1273DD !important; }
 .pretty.p-switch input:checked ~ .state.p-primary:before {
-  border-color: #428bca; }
+  border-color: #1273DD; }
 .pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
-  background-color: #428bca !important; }
+  background-color: #1273DD !important; }
 .pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
-  border-color: #245682;
-  background-color: #245682 !important; }
+  border-color: #0a427f;
+  background-color: #0a427f !important; }
 .pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
   background-color: #5bc0de !important; }
 .pretty input:checked ~ .state.p-info .icon,
@@ -402,14 +402,14 @@
   border-color: #2390b0;
   background-color: #2390b0 !important; }
 .pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
-  background-color: #34c759 !important; }
+  background-color: #48bc20 !important; }
 .pretty input:checked ~ .state.p-success .icon,
 .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon,
 .pretty.p-toggle .state.p-success .svg {
   color: #fff;
   stroke: #fff; }
 .pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
-  border-color: #34c759; }
+  border-color: #48bc20; }
 .pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
   background-color: transparent; }
 .pretty input:checked ~ .state.p-success-o .icon,
@@ -417,17 +417,17 @@
 .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon,
 .pretty.p-toggle .state.p-success-o .svg,
 .pretty.p-toggle .state.p-success-o svg {
-  color: #34c759;
-  stroke: #34c759; }
+  color: #48bc20;
+  stroke: #48bc20; }
 .pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
-  background-color: #34c759 !important; }
+  background-color: #48bc20 !important; }
 .pretty.p-switch input:checked ~ .state.p-success:before {
-  border-color: #34c759; }
+  border-color: #48bc20; }
 .pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
-  background-color: #34c759 !important; }
+  background-color: #48bc20 !important; }
 .pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
-  border-color: #1f7635;
-  background-color: #1f7635 !important; }
+  border-color: #276511;
+  background-color: #276511 !important; }
 .pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
   background-color: #f0ad4e !important; }
 .pretty input:checked ~ .state.p-warning .icon,
