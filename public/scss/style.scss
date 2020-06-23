@@ -1963,13 +1963,14 @@ i {
       color: #383838;
 
       & p {
+        margin-right: .9rem;
         width: 8.5rem;
         display: inline-block;
       }
 
       & i {
-        margin-right: .2rem;
-        font-size: 1.3rem;
+        margin-right: .3rem;
+        font-size: 1.4rem;
         color: #ffd800;
       }
 
@@ -9318,7 +9319,7 @@ i {
         padding-top: 1.6rem;
         @include grid;
         @include grid-template-columns(repeat(3,1fr));
-        @include grid-template-rows(minmax(21.6rem, 23rem));
+        @include grid-template-rows(minmax(21rem, 22.3rem));
         grid-auto-rows: 20rem;
         grid-gap: 2.9rem 2.6rem;
         max-height: calc(100vh - 25rem - 1.5px);
