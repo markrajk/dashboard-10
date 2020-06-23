@@ -4504,6 +4504,7 @@ i {
       }
 
       & th, & td {
+        margin-right: 1rem!important;
         @include flexbox;
         @include align-items(center);
 
@@ -4513,6 +4514,7 @@ i {
             padding-left: 1.7rem;
           }
         }
+
       }
 
       & td > * {
@@ -4731,8 +4733,8 @@ i {
     top: 0;
     left: 0;
     z-index: 10;
-    width: 80rem;
-    max-width: 80rem;
+    width: 81.7rem;
+    max-width: 81.7rem;
     border-top: 1px solid #e1e1e1;
   }
 
@@ -4741,14 +4743,15 @@ i {
     max-width: 72rem;
     padding-top: 2.6rem;
     margin-bottom: 3.3rem;
+
+    & button {
+      margin-right: 1.4rem;
+    }
   }
 
-  & .button {
-    margin-right: 1.4rem;
-  }
 
   &-body {
-    max-width: 72rem;
+    max-width: 81.7rem;
     max-height: calc(100vh - 27rem - 1.5px);
 
 
@@ -4759,42 +4762,64 @@ i {
 
       &-info {
         width: 100%;
-        max-width: 55rem;
+        max-width: 60rem;
 
         & .subheader-text {
-          margin-bottom: .5rem;
-          font-size: 1.6rem;
-          line-height: 1.33;
+          margin-bottom: 1.4rem;
+          font-size: 1.7rem;
+          font-weight: 400;
+          line-height: 1.18;
           color: #1b2733;
     
           &-small {
-            font-size: 1.3rem;
-            line-height: 1.5;
-            color: #778391;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.29;
+            letter-spacing: 0.07px;
+            color: #647282;
           }
         }
       }
 
-      & a {
-        @include align-self(flex-end);
-        margin-right: 0;
-        margin-left: .5rem;
+      & a,button {
+        font-weight: 400;
+        padding: .6rem 1.9rem;
+        font-size: 1.5rem;
+        margin-right: 0!important;
+        @include align-self(center);
       }
     }
 
     & .table-custom {
       margin-top: 2.2rem;
 
+      &-head {
+        
+        & tr {
+          padding-left: 1.7rem;
+            padding-right: 1.7rem;
+        }
+      }
+
         &-body {
           font-size: 1.35rem;
           font-weight: 400;
 
           & tr {
-            //padding: 0 1.7rem;
             border-bottom: solid 1px #e6e8eb;
 
             &:last-child {
               border: none;
+            }
+
+            & > td,
+            & > td a {
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.14;
+              letter-spacing: 0.07px;
+              text-align: left;
+              color: #1b2733;
             }
           }
 
@@ -4825,6 +4850,8 @@ i {
           &-col-04 {
             font-size: 1.3rem;
             color: #647282;
+
+           
           }
 
           & .choose {
@@ -4854,31 +4881,24 @@ i {
               outline: none;
               border: none;
               font-family: Roboto;
-              font-size: 1.35rem;
+              font-size: 1.4rem;
               font-weight: 400;
-              line-height: 1.33;
+              line-height: 1.14;
+              color: #1b2733;
 
               &::placeholder {
-                opacity: 0.67;
+                color: #1b2733;
               }
             }
 
             & td {
-              //display: inline-block;
+              &:not(:last-of-type) {
+                margin-right: 1rem;
+              }
             }
 
             & .table-custom-col-01 {
               width: 25%;
-
-              & input {
-                &::placeholder {
-                  color: #1165f4;
-                }
-              }
-
-              // @include respond(desktop-xxsm) {
-              //   width: 30%;
-              // }
               @include respond(desktop-xsm) {
                 width: 35%;
               }
@@ -4886,10 +4906,6 @@ i {
 
             & .table-custom-col-02 {
               width: 25%;
-              // @include respond(desktop-xxsm) {
-              //   @include flex(none);
-              //   width: 30%!important;
-              // }
 
               @include respond(desktop-xsm) {
                 width: 25%;
@@ -4911,14 +4927,9 @@ i {
               @include flexbox;
               @include justify-content(flex-end);
 
-              // @include respond(desktop-xsm) {
-              //   @include flex(.6);
-              //   width: auto!important;
-              // }
-
-              // @include respond(desktop-xxsm) {
-              //   @include flex(1)
-              // }
+             & .btn-custom-primary {
+               padding: .5rem 2.5rem;
+             }
 
               & button:first-of-type {
                  margin-right: 1.3rem;
@@ -4936,89 +4947,55 @@ i {
           }
         }
 
-        &-col-01,
-        &-col-02,
-        &-col-03,
-        &-col-04 {
-          flex: none;
-        }
+        & .table-custom-col-01 {
+          @include flex(1);
 
-        &-col-01 {
-          width: 25%;
-
-          @include respond(desktop-xsm) {
-            width: 35%;
+          @include respond(desktop-md) {
+            @include flex(.8);
           }
 
-          // @include respond(desktop-xxsm) {
-          //   width: 80%;
-          // }
-        }
-
-        &-col-02 {
-          width: 40%;
-
           @include respond(desktop-xsm) {
-            width: 45%;
+            @include flex(1);
           }
-
-          // @include respond(desktop-xxsm) {
-          //   display: none;
-          // }
+  
         }
+  
+        & .table-custom-col-02 {
+          @include flex(1);
 
-        &-col-03 {
-          width: 25%;
-
+          
+          
           @include respond(desktop-xsm) {
             display: none;
           }
         }
+  
+        & .table-custom-col-03 {
+          @include flex(1);
 
-        &-col-04 {
-          @include justify-content(center);
-          width: 10%;
+          @include respond(desktop-md) {
+            @include flex(.5);
+          }
 
           @include respond(desktop-xsm) {
-            width: 20%;
+            @include flex(.8);
+          }
+        }
+  
+        & .table-custom-col-04 {
+          @include flex(.48);
+          @include justify-content(center);
+
+          & a,button:not(.btn-custom-primary) {
+            text-align: center;
+            width: 100%;
+            max-width: 9.4rem;
+            color: #ff2424;
           }
         }
 
         & td,
         & th {
-
-        //   &:nth-of-type(1) {
-        //     @include flex(1.20);
-
-        //     @include respond(desktop-xsm) {
-        //       @include flex(1);
-        //     }
-        //   }
-
-        //   &:nth-of-type(2) {
-        //     @include flex(1.35);
-        //     @include respond(desktop-xxsm) {
-        //       display: none;
-        //     }
-        //   }
-
-        //   &:nth-of-type(3) {
-        //     @include flex(1);
-        //     @include respond(desktop-xsm) {
-        //       display: none;
-        //     }
-        //   }
-
-        //   &:nth-of-type(4) {
-        //     @include flex(none);
-        //     width: 5.5rem!important;
-
-        //     @include respond(desktop-xsm) {
-        //       @include flex(.6);
-        //       @include justify-content(flex-end);
-        //     }
-        //   }
-
 
           @include target-ie() {
         
@@ -5029,244 +5006,10 @@ i {
         }
     }
 
-    // & .panel {
-    //   margin-top: 2.2rem;
-
-    //   &-body {
-    //     & .table-header-fixed {
-    //       max-width: 72rem;
-    //       border: solid 1px #e6e8eb;
-    //       border-radius: 3px;
-         
-    //       & thead {
-           
-    //         background-color: #f7f9fa;
-    //         border-bottom: solid 1px #e6e8eb;
-    //         border-top-left-radius: 3px;
-    //         border-top-right-radius: 3px;
-            
-  
-    //         & tr {
-    //           height: 3.7rem;
-    //           padding: .4rem 1.7rem;
-    //           padding-right: 3rem;
-    //           & i {
-    //             font-size: .8rem;
-    //           }
-    //         }
-            
-    //         & th {
-    //           font-size: 1.2rem;
-    //           font-weight: 400;
-    //           line-height: 1.33;
-    //           color: #647282;
-  
-    //           & i {
-    //             margin-left: 0.6rem;
-    //           }
-  
-    //           & .dropdown-custom {
-    //             &-trigger {
-    //               @include inline-flex;
-    //               @include align-items(center);
-    //               @include justify-content(space-between);
-    //               padding: .6rem;
-    //               & i:first-of-type {
-    //                 margin-top: -.1rem;
-    //                 font-size: 1.3rem;
-    //                 margin-left: .8rem;
-    //               }
-    //             }
-    //           }
-    //         }
-    //       }
-  
-    //       & tbody {
-    //         max-height: calc(100vh - 40rem);
-    //       }
-  
-    //       & tbody {
-    //         & tr {
-    //           padding: .5rem 1.7rem;
-    //           padding-right: 3rem;
-    //           border-bottom: solid 1px #e6e8eb;
-  
-    //           &:last-child {
-    //             border: none;
-    //           }
-    //         }
-    //       }
-  
-    //       & td,
-    //       & th {
-  
-    //         &:nth-of-type(1) {
-    //           @include flex(1.20);
-  
-    //           @include respond(desktop-xsm) {
-    //             @include flex(1);
-    //           }
-    //         }
-  
-    //         &:nth-of-type(2) {
-    //           @include flex(1.35);
-    //           @include respond(desktop-xxsm) {
-    //             display: none;
-    //           }
-    //         }
-  
-    //         &:nth-of-type(3) {
-    //           @include flex(1);
-    //           @include respond(desktop-xsm) {
-    //             display: none;
-    //           }
-    //         }
-  
-    //         &:nth-of-type(4) {
-    //           @include flex(none);
-    //           width: 5.5rem!important;
-
-    //           @include respond(desktop-xsm) {
-    //             @include flex(.6);
-    //             @include justify-content(flex-end);
-    //           }
-    //         }
-
-
-    //         @include target-ie() {
-          
-    //           &:nth-of-type(4.4) {
-    //             padding-left: 1.7rem;
-    //           }
-    //         }
-    //       }
-  
-    //       &-col-1 {
-            
-    //         & a {
-    //           font-size: 1.35rem;
-    //           line-height: 1.33;
-    //           color: #1165f4;
-    //         }
-    //       }
-  
-    //       &-col-2 {
-    //         font-size: 1.4rem;
-    //         line-height: 1.36;
-    //         color: #1b2733;
-    //       }
-  
-    //       &-col-3 {
-    //         font-size: 1.4rem;
-    //       }
-  
-    //       &-col-4 {
-    //         font-size: 1.3rem;
-    //         color: #647282;
-    //       }
-
-    //       & .choose {
-
-    //         & .confirm,
-    //         & .divider {
-    //           color: #00d900;
-    //         }
-  
-    //         & .deny {
-    //           color: #fd0000;
-    //         }
-  
-    //         & .divider {
-    //           font-weight: 500;
-    //           margin: 0 .15rem;
-    //         }
-    //       }
-
-    //       & .input-row {
-    //         display: none;
-    //         @include align-items(center);
-
-    //         & input {
-    //           min-width: 1px;
-    //           max-width: 100%;
-    //           outline: none;
-    //           border: none;
-    //           font-family: Roboto;
-    //           font-size: 1.35rem;
-    //           font-weight: 400;
-    //           line-height: 1.33;
-
-    //           &::placeholder {
-    //             opacity: 0.67;
-    //           }
-    //         }
-
-    //         & .table-header-fixed-col-1 {
-    //           display: inline-block!important;
-
-    //           & input {
-    //             &::placeholder {
-    //               color: #1165f4;
-    //             }
-    //           }
-
-    //           @include respond(desktop-xxsm) {
-    //             @include flex(none);
-    //             width: 30%;
-    //           }
-    //         }
-
-    //         & .table-header-fixed-col-2 {
-    //           display: inline-block!important;
-
-    //           @include respond(desktop-xxsm) {
-    //             @include flex(none);
-    //             width: 30%!important;
-    //           }
-    //         }
-
-    //         & .table-header-fixed-col-3 {
-    //           @include flex(none);
-    //           width: 5.5rem;
-              
-
-    //           @include respond(desktop-xsm) {
-    //             @include flex(none)
-    //           }
-    //         }
-  
-    //         & .table-header-fixed-col-4 {
-    //           @include flexbox;
-    //           @include justify-content(space-between);
-    //           @include flex(1);
-
-    //           @include respond(desktop-xsm) {
-    //             @include flex(.6);
-    //             width: auto!important;
-    //           }
-
-    //           @include respond(desktop-xxsm) {
-    //             @include flex(1)
-    //           }
-    //         }
-            
-
-    //         & .btn-custom-primary {
-    //           margin-right: 0;
-    //         }
-
-    //         &-open {
-    //           @include flexbox;
-    //         }
-    //       }
-    //     }
-    //   }
-    // }
-
     & .table-01 {
-     
+     margin-top: 2.5rem;
       &:not(:last-of-type) {
-        margin-bottom: 4.6rem;
+        margin-bottom: 3.2rem;
       }
 
       & tbody {
@@ -5291,7 +5034,6 @@ i {
       border-top: none;
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
-      //transition: opacity .2s ease-out;
 
       & input {
         border: 0;
