@@ -449,42 +449,83 @@
     <script src="../public/js/main.js"></script>
 
     <script>
-         // TRUNCATE COMMENTS
-         var commentsBody = document.querySelectorAll('.comment-body');
-        var commentsBodyText = document.querySelectorAll('.comment-body-text');
-        var commentsBodyTextCompliment = document.querySelectorAll('.comment-body-text-compliment');
-        var commentsBodyTextImprover = document.querySelectorAll('.comment-body-text-improver');
-        var readMoreLink = '<a href="#" class="read-more">Read more</a>';
-            console.log(commentsBodyTextCompliment)
-        
-    
-        for(var i = 0; i < commentsBody.length; i++) {
-            var commentsBodyText = commentsBody[i].querySelector('.comment-body-text');
-            var commentsBodyTextCompliment = commentsBody[i].querySelector('.comment-body-text-compliment span');
-            console.log(commentsBodyTextCompliment)
-            //console.log(commentsBodyText)
-            var commentsBodyTextTrunc =
-                    '<div class="comment-body-text-trunc">'
-                        +'<span class="comment-body-text-compliment">'
-                            +'Compliment:'
-                                +'<span>'+commentsBodyTextCompliment.innerText.substr(0,50-1)+(commentsBodyTextCompliment.innerText.length>50?'...'+readMoreLink:'')
-                                +'<span>'
-                            +'</span>'
-                        // +commentsBodyText.innerText.substr(0,70-1)+(commentsBodyText.innerText.length>70?'...'+readMoreLink:'')
-                    +'</div>';
-           
-            commentsBody[i].insertAdjacentHTML( 'beforeend', commentsBodyTextTrunc );
-            commentsBodyText.style.display = 'none';
+        function truncateText() {
+            // TRUNCATE COMMENTS
+            var commentsBody = document.querySelectorAll('.comment-body');
+            var commentsBodyText = document.querySelectorAll('.comment-body-text');
+            var commentsBodyTextCompliment = document.querySelectorAll('.comment-body-text-compliment');
+            var commentsBodyTextImprover = document.querySelectorAll('.comment-body-text-improver');
+            var readMoreLink = '<a href="#" class="read-more">Read more</a>';
+            console.log(commentsBodyTextCompliment.length)
+
+
+            for (var i = 0; i < commentsBody.length; i++) {
+                var commentsBodyText = commentsBody[i].querySelector('.comment-body-text');
+                var commentsBodyTextCompliment = commentsBody[i].querySelector('.comment-body-text-compliment span');
+                var commentsBodyTextImprover = commentsBody[i].querySelector('.comment-body-text-improver span');
+                console.log(commentsBodyTextCompliment,commentsBodyTextImprover)
+
+                var el = document.querySelector('.comment')
+                var width = el.offsetWidth;
+                var rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
+                var numOfCharsCompliment = (width - 16 * rem) / ((.8 * rem));
+                var numOfCharsImprover = (width - 13 * rem) / ((.8 * rem));
+                console.log(width, rem, numOfCharsCompliment, 1.3 * rem)
+
+
+                var commentsBodyTextTrunc = `
+                <div class="comment-body-text-trunc">
+                <p class="comment-body-text-compliment">
+                    Compliment: 
+                    <span >${commentsBodyTextCompliment.innerText.substr(0,numOfCharsCompliment-1)+(commentsBodyTextCompliment.innerText.length>numOfCharsCompliment?'...'+readMoreLink:'')}</span>
+                </p>
+
+                <p class="comment-body-text-improver">
+                    Improver: 
+                    <span>${commentsBodyTextImprover.innerText.substr(0,numOfCharsImprover-1)+(commentsBodyTextImprover.innerText.length>numOfCharsImprover?'...'+readMoreLink:'')}</span>
+                </p>
+                <span><span><i class="icon-close read-more close"></i></span></span>
+            </div>
+            `;
+            if(!commentsBody[i].querySelector('.comment-body-text-trunc')) {
+                commentsBody[i].insertAdjacentHTML('beforeend', commentsBodyTextTrunc);
+                commentsBodyText.style.display = 'none';
+            }
+            
+            }
+
+            var readMoreTriggers = document.querySelectorAll('.read-more');
+
+            for (var i = 0; i < readMoreTriggers.length; i++) {
+                readMoreTriggers[i].addEventListener('click', function (e) {
+                    var comment = e.target.parentElement.parentElement.parentElement.parentElement
+                    .parentElement;
+                    var complimentBool = e.target.parentElement.parentElement.classList.contains(
+                        'comment-body-text-compliment');
+                    var messageContent = complimentBool ? commentsBodyTextCompliment.innerText :
+                        commentsBodyTextImprover.innerText;
+                    var messageContainer = comment.querySelector('.comment-body-message');
+
+                    messageContainer.innerHTML = `
+                    <div class="comment-body-message-header">
+                        ${complimentBool ? `Compliment` : `Improver`}
+                        <span><span><i class="icon-close read-more close"></i></span></span>
+                    </div>
+                    <div class="comment-body-message-main">
+                        ${messageContent}
+                    </div>
+                    `;
+                    messageContainer.querySelector('.close').addEventListener('click', function () {
+                        comment.classList.remove('open');
+                    })
+                    comment.classList.toggle('open');
+                })
+            }
         }
-    
-        var readMoreTriggers = document.querySelectorAll('.read-more');
-        for(var i = 0; i < readMoreTriggers.length; i++) {
-            readMoreTriggers[i].addEventListener('click', function(e) {
-                var comment = e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
-                comment.classList.toggle('open');
-            })
-        }
+
+        window.addEventListener('load', truncateText);
     </script>
+
 
 </body>
 

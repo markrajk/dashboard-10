@@ -2348,9 +2348,9 @@ i {
         margin-bottom: 2rem;
       }
 
-      &:hover a,
-      &:focus a,
-      &.active a {
+      &:hover .sidebar-main-link,
+      &:focus .sidebar-main-link,
+      &.active .sidebar-main-link {
         color: #00bcca;
         background-color: #f0f6f7;
         border-radius: 50%;
@@ -6758,7 +6758,8 @@ i {
         font-weight: 400;
 
         & tr {
-          padding: 0 1.7rem;
+          padding-left: 1.7rem;
+          padding-right: 1.7rem;
           border-bottom: solid 1px #e6e8eb;
 
           &:last-child {
@@ -7672,7 +7673,8 @@ i {
         font-weight: 400;
 
         & tr {
-          padding: 0 1.7rem;
+          padding-left: 1.7rem;
+          padding-right: 1.7rem;
           border-bottom: solid 1px #e6e8eb;
 
           &:last-child {
@@ -9324,7 +9326,7 @@ i {
         @include grid;
         @include grid-template-columns(repeat(3,1fr));
         //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
-        @include grid-template-rows(repeat(1, minmax(21rem, auto)));
+        @include grid-template-rows(repeat(auto-fill, minmax(21rem, auto)));
         grid-auto-rows: 20rem;
         grid-gap: 2.9rem 2.6rem;
         max-height: calc(100vh - 25rem - 1.5px);
@@ -9345,11 +9347,13 @@ i {
   
         @include respond(desktop-md) {
           @include grid-template-columns(repeat(2,1fr));
+
           //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
         }
   
         @include respond(desktop-xsm) {
           @include grid-template-columns(repeat(1,1fr));
+
         }
 
         @include target-ie() {

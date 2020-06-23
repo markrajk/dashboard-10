@@ -1449,7 +1449,7 @@ i {
       text-align: center; }
     .sidebar-main-item:not(:last-child) {
       margin-bottom: 2rem; }
-    .sidebar-main-item:hover a, .sidebar-main-item:focus a, .sidebar-main-item.active a {
+    .sidebar-main-item:hover .sidebar-main-link, .sidebar-main-item:focus .sidebar-main-link, .sidebar-main-item.active .sidebar-main-link {
       color: #00bcca;
       background-color: #f0f6f7;
       border-radius: 50%; }
@@ -5217,7 +5217,8 @@ i {
       font-size: 1.35rem;
       font-weight: 400; }
       .company-members .table-custom-body tr {
-        padding: 0 1.7rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
         border-bottom: solid 1px #e6e8eb; }
         .company-members .table-custom-body tr:last-child {
           border: none; }
@@ -5700,7 +5701,8 @@ i {
       font-size: 1.35rem;
       font-weight: 400; }
       .company-admin .table-custom-body tr {
-        padding: 0 1.7rem;
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
         border-bottom: solid 1px #e6e8eb; }
         .company-admin .table-custom-body tr:last-child {
           border: none; }
@@ -6801,8 +6803,8 @@ i {
     display: grid;
     -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: repeat(1, minmax(21rem, auto));
-    grid-template-rows: repeat(1, minmax(21rem, auto));
+    -ms-grid-rows: repeat(auto-fill, minmax(21rem, auto));
+    grid-template-rows: repeat(auto-fill, minmax(21rem, auto));
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     max-height: calc(100vh - 25rem - 1.5px);

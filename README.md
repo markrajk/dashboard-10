@@ -66,4 +66,16 @@ Link all pages and make modals work on all pages with that functionality.
     * teams-settings-feedback select options changed.
 - CSS changes & bug fixes.
 ## Changes 23.06.2020
--Team-settings-general & user-settings-general input fields added & <p class="column-01"> class text-truncate removed
+- HTML changes:
+    * team-settings-general & user-settings-general input fields added & from (p class="column-01") class text-truncate removed
+    * team-settings-feedback & team-settings-rights new tables (HTML changed)
+    * To every dropdown-custom-trigger element HTML attribute tabindex="0" added (safari bug fix)
+    * teams-average-charts & people-average-charts chart settings changed(fontSize changed & fontStyle added)
+    * teams-settings-general & user-settings-general input fields & save buttons
+    * people-feedback-received & people-feedback-given truncate text function changed(in script tag)
+- CSS changes:
+    * ./public/css/pretty-checkbox.css file updated
+    * Many changes in CSS file, most of trello bugs fixed
+    * Logout link now can be button tag
+
+
