@@ -1042,7 +1042,8 @@ i {
   height: 100%;
   border: 1px solid #EAEAEA;
   border-radius: 5px;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 25.5rem; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .comment {
       width: calc(33.3% - 1.73rem);
@@ -1083,6 +1084,7 @@ i {
     .comment-header-img {
       margin-right: .76rem;
       width: 3.97rem;
+      min-width: 3.97rem;
       height: 3.97rem;
       border-radius: 50%; }
     .comment-header-initials {
@@ -1103,6 +1105,7 @@ i {
       justify-content: center;
       margin-right: .76rem;
       width: 3.97rem;
+      min-width: 3.97rem;
       height: 3.97rem;
       border-radius: 50%;
       font-size: 1.7rem;
@@ -1170,9 +1173,7 @@ i {
         font-weight: 500;
         color: #939393; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
-        white-space: nowrap;
         position: relative;
-        max-width: calc(100% - 9.5rem);
         font-size: 1.3rem;
         margin-bottom: .5rem;
         display: block;
@@ -1183,9 +1184,10 @@ i {
         .comment-body-text-compliment .read-more, .comment-body-text-improver .read-more, .comment-body-text-trunc-compliment .read-more, .comment-body-text-trunc-improver .read-more {
           display: inline-block;
           padding-left: .2rem;
-          padding-right: 10rem;
           background-color: #FFF;
           white-space: nowrap; }
+      .comment-body-text-improver, .comment-body-text-trunc-improver {
+        margin-bottom: 1rem; }
       .comment-body-text .close, .comment-body-text-trunc .close {
         display: none; }
   .comment.open {
@@ -6799,8 +6801,8 @@ i {
     display: grid;
     -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: minmax(21rem, 22.3rem);
-    grid-template-rows: minmax(21rem, 22.3rem);
+    -ms-grid-rows: repeat(1, minmax(21rem, auto));
+    grid-template-rows: repeat(1, minmax(21rem, auto));
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     max-height: calc(100vh - 25rem - 1.5px);
