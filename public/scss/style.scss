@@ -1534,7 +1534,7 @@ i {
     }
 
 
-    .table-custom-col-01 {
+    & .table-custom-col-01 {
       @include flex(1);
       margin-right: 1.3rem;
 
@@ -1556,7 +1556,7 @@ i {
       }
     }
 
-    .table-custom-col-02 {
+    & .table-custom-col-02 {
       @include flex(.85);
       line-height: 1.36;
       
@@ -1821,6 +1821,7 @@ i {
     }
 
     & tr {
+      padding: 1.8rem 1.7rem;
 
       &:not(:last-of-type) {
         border-bottom: solid 1px #e6e8eb;
@@ -1828,7 +1829,7 @@ i {
     }
 
     & td {
-      padding: .7rem 0;
+      padding: 0 0;
       //height: 5.6rem;
 
       & > * {
@@ -4463,20 +4464,22 @@ i {
   }
 
   &-body {
-    max-width: 80.5rem;
+    max-width: 81.7rem;
     max-height: calc(100vh - 27.8rem - 1.5px);
 
     & .subheader-text {
-      margin-bottom: .2rem;
-      font-size: 1.6rem;
-      line-height: 1.33;
+      margin-bottom: 1.4rem;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.18;
       color: #1b2733;
 
       &-small {
-
-        font-size: 1.3rem;
-        line-height: 1.75;
-        color: #778391;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: 0.07px;
+        color: #647282;
       }
     }
 
@@ -4485,9 +4488,12 @@ i {
       @include justify-content(space-between);
       @include align-items(center);
 
-      & a {
-        margin-right: 0;
-        @include align-self(flex-end);
+      & a,button {
+        font-weight: 400;
+        padding: .6rem 1.9rem;
+        font-size: 1.5rem;
+        margin-right: 0!important;
+        @include align-self(center);
       }
     }
 
@@ -4510,6 +4516,7 @@ i {
       }
 
       & td > * {
+
         @include respond(desktop-xsm) {
           font-size: 1.2rem;
         }
@@ -4548,6 +4555,23 @@ i {
           @include target-ie() {
             height: 5.7rem;
           }
+
+          &.table-section-start {
+            padding: 1.8rem 1.7rem;
+            border-top: solid 1px #e6e8eb!important;
+
+            & + tr:not(.table-section-start) {
+              padding-top: .4rem;
+            }
+          }
+
+          &.table-section-end {
+            padding-bottom: 1.8rem;
+          }
+
+          &:not(:last-of-type) {
+            border: none;
+          }
         }
       }
     }
@@ -4555,13 +4579,13 @@ i {
 
 
     & .table-02 {
-      margin-top: 2rem;
+      margin-top: 2.5rem;
       
       & .table-custom-body {
 
         & tr td {
           font-size: 1.4rem;
-          line-height: 1.36;
+          line-height: 1.14;
           color: #1b2733;
           &:not(:last-child) {
             margin-right: .3rem;
@@ -4575,7 +4599,6 @@ i {
 
       & .table-custom-col-01 {
         @include flex(1);
-        font-weight: 500;
 
       }
 
@@ -4616,9 +4639,12 @@ i {
       }
 
       & .table-custom-col-04 {
-        @include flex(.6);
+        @include flex(.48);
         @include justify-content(center);
         & a {
+          text-align: center;
+          width: 100%;
+          max-width: 9.4rem;
           color: #ff2424;
         }
       }
@@ -4732,7 +4758,7 @@ i {
 
       &-info {
         width: 100%;
-        max-width: 39rem;
+        max-width: 55rem;
 
         & .subheader-text {
           margin-bottom: .5rem;
@@ -4763,7 +4789,7 @@ i {
           font-weight: 400;
 
           & tr {
-            padding: 0 1.7rem;
+            //padding: 0 1.7rem;
             border-bottom: solid 1px #e6e8eb;
 
             &:last-child {
@@ -6612,7 +6638,7 @@ i {
         }
       }
 
-      .table-custom-col-02 {
+      & .table-custom-col-02 {
         @include flex(.85);
         line-height: 1.36;
         
@@ -7887,7 +7913,7 @@ i {
   }
 
 
-  .table-custom {
+  & .table-custom {
     
     max-width: 72rem;
     //margin-top: 2.2rem;
