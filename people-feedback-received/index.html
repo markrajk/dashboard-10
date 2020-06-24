@@ -425,24 +425,44 @@
                 var el = document.querySelector('.comment')
                 var width = el.offsetWidth;
                 var rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-                var numOfCharsCompliment = (width - ) / ((.8 * rem));
+                var numOfCharsCompliment = (width) / ((.8 * rem));
                 var numOfCharsImprover = (width - 12.7 * rem - 3.2 * rem) / ((.8 * rem));
                 console.log(width, rem, numOfCharsCompliment, 1.3 * rem)
 
-
+///////////////
+//<span >${commentsBodyTextCompliment.innerText.substr(0,numOfCharsCompliment-1)+(commentsBodyTextCompliment.innerText.length>numOfCharsCompliment?'...'//+readMoreLink:'')}</span>
+/////////
                 var commentsBodyTextTrunc = `
                 <div class="comment-body-text-trunc">
-                <p class="comment-body-text-compliment">
-                    Compliment: 
-                    <span >${commentsBodyTextCompliment.innerText.substr(0,numOfCharsCompliment-1)+(commentsBodyTextCompliment.innerText.length>numOfCharsCompliment?'...'+readMoreLink:'')}</span>
-                </p>
-
-                <p class="comment-body-text-improver">
-                    Improver: 
-                    <span>${commentsBodyTextImprover.innerText.substr(0,numOfCharsImprover-1)+(commentsBodyTextImprover.innerText.length>numOfCharsImprover?'...'+readMoreLink:'')}</span>
-                </p>
-                <span><span><i class="icon-close read-more close"></i></span></span>
-            </div>
+                    <div class="comment-body-text-trunc-compliment-container">
+                        <p class="comment-body-text-compliment">
+                            Compliment: 
+                            <span >${commentsBodyTextCompliment.innerText}</span>
+                        </p>
+                        ${
+                            (
+                                commentsBody[i].querySelector('.comment-body-text-compliment').offsetWidth <
+                                commentsBody[i].querySelector('.comment-body-text-compliment').scrollWidth ?
+                                readMoreLink : ''
+                            )
+                        }
+                    </div>
+                    
+                    <div class="comment-body-text-trunc-improver-container">
+                        <p class="comment-body-text-improver">
+                            Improver: 
+                            <span >${commentsBodyTextImprover.innerText}</span>
+                        </p>
+                        ${
+                            (
+                                commentsBody[i].querySelector('.comment-body-text-improver').offsetWidth <
+                                commentsBody[i].querySelector('.comment-body-text-improver').scrollWidth ?
+                                readMoreLink : ''
+                            )
+                        }
+                    </div>
+                    <span><span><i class="icon-close read-more close"></i></span></span>
+                </div>
             `;
             if(!commentsBody[i].querySelector('.comment-body-text-trunc')) {
                 commentsBody[i].insertAdjacentHTML('beforeend', commentsBodyTextTrunc);
@@ -455,10 +475,12 @@
 
             for (var i = 0; i < readMoreTriggers.length; i++) {
                 readMoreTriggers[i].addEventListener('click', function (e) {
-                    var comment = e.target.parentElement.parentElement.parentElement.parentElement
+                    console.log(e.target, e.target.parentElement)
+                    var comment = e.target.parentElement.parentElement.parentElement
                     .parentElement;
-                    var complimentBool = e.target.parentElement.parentElement.classList.contains(
-                        'comment-body-text-compliment');
+                    var complimentBool = e.target.parentElement.classList.contains(
+                        'comment-body-text-trunc-compliment-container');
+                        console.log(complimentBool)
                     var messageContent = complimentBool ? commentsBodyTextCompliment.innerText :
                         commentsBodyTextImprover.innerText;
                     var messageContainer = comment.querySelector('.comment-body-message');

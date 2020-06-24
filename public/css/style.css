@@ -1173,7 +1173,8 @@ i {
       .comment-body-text .read-more, .comment-body-text-trunc .read-more {
         margin-left: .2rem;
         font-weight: 500;
-        color: #939393; }
+        color: #939393;
+        white-space: nowrap; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
         position: relative;
         font-size: 1.3rem;
@@ -1188,6 +1189,18 @@ i {
           padding-left: .2rem;
           background-color: #FFF;
           white-space: nowrap; }
+      .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
+        position: relative;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+        .comment-body-text-compliment span, .comment-body-text-improver span, .comment-body-text-trunc-compliment span, .comment-body-text-trunc-improver span {
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .comment-body-text-compliment-container, .comment-body-text-improver-container, .comment-body-text-trunc-compliment-container, .comment-body-text-trunc-improver-container {
+          display: flex;
+          align-items: baseline;
+          justify-content: space-between; }
       .comment-body-text-improver, .comment-body-text-trunc-improver {
         margin-bottom: 1rem; }
       .comment-body-text .close, .comment-body-text-trunc .close {
