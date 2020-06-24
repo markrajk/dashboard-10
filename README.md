@@ -77,5 +77,14 @@ Link all pages and make modals work on all pages with that functionality.
     * ./public/css/pretty-checkbox.css file updated
     * Many changes in CSS file, most of trello bugs fixed
     * Logout link now can be button tag
+## Changes 24.06.2020
+- HTML changes:
+    * Checkboxes in report-team & report-member changed
+    * people-feedback-given html of comments updated so its up to date with people-feedback-received
+- CSS changes:
+    * CSS file changed
+- JS
+    * people-feedback-received & people-feedback-given javascript function changed (in script tag)
+    
 
 

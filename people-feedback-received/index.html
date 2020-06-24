@@ -413,25 +413,13 @@
             var commentsBodyTextCompliment = document.querySelectorAll('.comment-body-text-compliment');
             var commentsBodyTextImprover = document.querySelectorAll('.comment-body-text-improver');
             var readMoreLink = '<a href="#" class="read-more">Read more</a>';
-            console.log(commentsBodyTextCompliment.length)
 
 
             for (var i = 0; i < commentsBody.length; i++) {
                 var commentsBodyText = commentsBody[i].querySelector('.comment-body-text');
                 var commentsBodyTextCompliment = commentsBody[i].querySelector('.comment-body-text-compliment span');
                 var commentsBodyTextImprover = commentsBody[i].querySelector('.comment-body-text-improver span');
-                console.log(commentsBodyTextCompliment,commentsBodyTextImprover)
 
-                var el = document.querySelector('.comment')
-                var width = el.offsetWidth;
-                var rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
-                var numOfCharsCompliment = (width) / ((.8 * rem));
-                var numOfCharsImprover = (width - 12.7 * rem - 3.2 * rem) / ((.8 * rem));
-                console.log(width, rem, numOfCharsCompliment, 1.3 * rem)
-
-///////////////
-//<span >${commentsBodyTextCompliment.innerText.substr(0,numOfCharsCompliment-1)+(commentsBodyTextCompliment.innerText.length>numOfCharsCompliment?'...'//+readMoreLink:'')}</span>
-/////////
                 var commentsBodyTextTrunc = `
                 <div class="comment-body-text-trunc">
                     <div class="comment-body-text-trunc-compliment-container">
