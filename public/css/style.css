@@ -481,14 +481,14 @@ i {
     display: block;
     cursor: pointer;
     width: 3.7rem;
-    color: #c3c3c3; }
+    color: #e1e1e1e1; }
     .stars label::before {
       content: "\e913";
       font-family: 'app-icons';
       position: relative;
       display: block;
       font-size: 3rem;
-      color: #c1c1c1; }
+      color: #e1e1e1e1; }
     .stars label::after {
       content: "\e913";
       font-family: 'app-icons';
@@ -706,6 +706,8 @@ i {
   line-height: 1.33;
   color: #ffffff; }
 #inviteNewMemberModal .table-custom th, #inviteNewMemberModal .table-custom td {
+  padding-top: 0;
+  padding-bottom: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -730,7 +732,7 @@ i {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
   #inviteNewMemberModal .table-custom-head tr {
-    padding: 1.3rem 1.7rem; }
+    padding: 1rem 1.7rem; }
 #inviteNewMemberModal .table-custom-body {
   border: solid 1px #e6e8eb;
   border-radius: 3px;
@@ -2434,7 +2436,7 @@ i {
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
               height: .35rem;
-              border-radius: 50%; }
+              border-radius: 1px; }
           .teams-average-charts-body .section-development .section-body-legend-main-share {
             padding-top: 2.4rem; }
             .teams-average-charts-body .section-development .section-body-legend-main-share a {
@@ -6649,7 +6651,7 @@ i {
             .people-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
               height: .35rem;
-              border-radius: 50%; }
+              border-radius: 1px; }
           .people-average-charts-body .section-development .section-body-legend-main-share {
             padding-top: 2.4rem; }
             .people-average-charts-body .section-development .section-body-legend-main-share a {
