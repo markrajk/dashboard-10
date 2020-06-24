@@ -3295,7 +3295,7 @@ i {
     max-width: 72rem;
     padding-top: 2.6rem;
     margin-bottom: 3.3rem; }
-    .teams-settings-rights-header button {
+    .teams-settings-rights-header a, .teams-settings-rights-header button {
       margin-right: 1.4rem; }
   .teams-settings-rights-body {
     max-width: 81.7rem;
