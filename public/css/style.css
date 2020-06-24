@@ -2745,9 +2745,11 @@ i {
     max-height: calc(100vh - 11rem - 16rem - 8rem);
     border-bottom: solid 1px #e6e8eb; }
     .teams-people-view .table-custom-body tr {
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
       padding-left: .7rem; }
     .teams-people-view .table-custom-body td {
-      padding: .8rem 0; }
+      padding: 0 0; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -5357,10 +5359,7 @@ i {
   .company-teams-body {
     padding-top: 3.4rem;
     max-width: 80.5rem;
-    max-height: calc(100vh - 20.7rem - 1.5px); }
-    @media (max-width: 575px) {
-      .company-teams-body {
-        max-height: calc(100vh - 20rem - 1.5px); } }
+    max-height: calc(100vh - 17.1rem - 1.5px); }
     .company-teams-body .subheader-text {
       margin-bottom: 1.4rem;
       font-size: 1.7rem;

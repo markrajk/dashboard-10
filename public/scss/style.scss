@@ -3909,12 +3909,14 @@ i {
       border-bottom: solid 1px #e6e8eb;
 
       & tr {
+        padding-top: 1.4rem;
+        padding-bottom: 1.4rem;
         padding-left: .7rem;
       }
 
       & td {
         //height: 5.8rem;
-        padding: .8rem 0;
+        padding: 0 0;
       }
 
       .table-custom-col-01 {     
@@ -7294,11 +7296,11 @@ i {
   &-body {
     padding-top: 3.4rem;
     max-width: 80.5rem;
-    max-height: calc(100vh - 20.7rem - 1.5px);
+    max-height: calc(100vh - 17.1rem - 1.5px);
 
-    @include respond(desktop-xsm) {
-      max-height: calc(100vh - 20rem - 1.5px);
-    }
+    // @include respond(desktop-xsm) {
+    //   max-height: calc(100vh - 17.1rem - 1.5px);
+    // }
 
     & .subheader-text {
       margin-bottom: 1.4rem;
