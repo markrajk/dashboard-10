@@ -1214,6 +1214,7 @@ i {
     .comment.open .comment-body-message {
       height: 100%;
       padding: 2rem;
+      padding-bottom: 0;
       display: block; }
       .comment.open .comment-body-message-main {
         padding-top: 3rem;
