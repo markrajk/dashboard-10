@@ -4764,11 +4764,9 @@ i {
         .report-team-body-options-list-item:not(:last-child),
         .report-member-body-options-list-item:not(:last-child) {
           margin-bottom: 1.7rem; }
-    .report-team-body .btn-custom-primary,
-    .report-member-body .btn-custom-primary {
-      padding: .8rem 2.1rem;
-      background-color: #1273dd;
-      border-color: #1273dd; }
+    .report-team-body .button-primary,
+    .report-member-body .button-primary {
+      padding: .7rem 2.1rem; }
 
 .create-new-team {
   padding: 2.5rem 0;
