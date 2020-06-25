@@ -51,6 +51,10 @@ input, button, select, optgroup, textarea:not(input[type=checkbox]) {
   -webkit-appearance: none !important;
   appearance: none !important; }
 
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1a9cfc !important; }
+
 ul {
   list-style: none; }
 
@@ -532,7 +536,7 @@ i {
     background-color: #ffffff;
     z-index: 1000;
     transition: display 1s ease-in-out; }
-    .dropdown-custom-list:focus, .dropdown-custom-list:active {
+    .dropdown-custom-list:focus, .dropdown-custom-list:active, .dropdown-custom-list:hover {
       display: block; }
     .dropdown-custom-list-item {
       font-weight: 400;
@@ -1127,7 +1131,9 @@ i {
       letter-spacing: -0.15px;
       color: #5d5d5d; }
   .comment-body {
-    padding: 1.5rem 1.6rem 1.5rem; }
+    padding: 1.5rem 1.6rem 1.5rem;
+    padding-bottom: 0;
+    padding-top: 0; }
     .comment-body-message {
       display: none;
       position: absolute;
@@ -1160,6 +1166,8 @@ i {
         color: #ffd800; }
       .comment-body-feedback-teamwork {
         margin-bottom: .5rem; }
+        .comment-body-feedback-teamwork:first-of-type {
+          margin-top: 1.2rem; }
       .comment-body-feedback-productivity {
         margin-bottom: 1.2rem; }
     .comment-body-text, .comment-body-text-trunc {
@@ -1205,6 +1213,27 @@ i {
         margin-bottom: 1rem; }
       .comment-body-text .close, .comment-body-text-trunc .close {
         display: none; }
+    .comment-body.double {
+      font-size: 1.35rem;
+      line-height: 1.38; }
+      .comment-body.double .comment-body-text-double {
+        display: block;
+        margin-top: 1.2rem;
+        padding-top: 0;
+        color: #383838;
+        transition: opacity .3s ease-in-out .3s;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* number of lines to show */
+        -webkit-box-orient: vertical; }
+      .comment-body.double .read-more {
+        font-weight: 500;
+        color: #939393;
+        white-space: nowrap; }
+      .comment-body.double .close {
+        display: none; }
   .comment.open {
     position: relative; }
     .comment.open .comment-header {
@@ -1240,6 +1269,26 @@ i {
         cursor: pointer; }
     .comment.open .comment-body-text-trunc {
       display: none; }
+    .comment.open .comment-body.double .comment-body-text-double {
+      margin-top: 0;
+      display: block;
+      max-height: 100%;
+      overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */ }
+      .comment.open .comment-body.double .comment-body-text-double::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0; }
+    .comment.open .comment-body.double .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-75%, 75%);
+      display: inline-block !important;
+      cursor: pointer; }
 
 .progress-custom {
   padding-right: 2.2rem;
@@ -1247,7 +1296,7 @@ i {
   padding-top: 2.8rem; }
   .progress-custom-sub {
     margin-bottom: .4rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.33;
     letter-spacing: normal;
@@ -1271,7 +1320,7 @@ i {
     .progress-custom-info h3 {
       margin-top: 0rem;
       margin-right: 1rem;
-      font-size: 3rem;
+      font-size: 3.2rem;
       font-weight: 700;
       line-height: 1.3;
       color: #1f1f1f; }
@@ -2534,8 +2583,8 @@ i {
       display: grid;
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
-      -ms-grid-rows: 12.8rem;
-      grid-template-rows: 12.8rem;
+      -ms-grid-rows: 14rem;
+      grid-template-rows: 14rem;
       grid-auto-rows: 12rem;
       grid-gap: 2.6rem 2.6rem;
       max-height: calc(100vh - 23.95rem - .5rem - 1px);
@@ -3164,7 +3213,7 @@ i {
       border-top-left-radius: 0;
       border-top-right-radius: 0; }
       .teams-settings-feedback-body .table-custom-body tr {
-        padding: 1.2rem 1.7rem; }
+        padding: 1rem 1.7rem; }
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           .teams-settings-feedback-body .table-custom-body tr {
             height: 5.7rem; } }
@@ -3172,7 +3221,6 @@ i {
           .teams-settings-feedback-body .table-custom-body tr {
             height: 5.7rem; } }
         .teams-settings-feedback-body .table-custom-body tr.table-section-start {
-          padding: 1.8rem 1.7rem;
           border-top: solid 1px #e6e8eb !important; }
           .teams-settings-feedback-body .table-custom-body tr.table-section-start + tr:not(.table-section-start) {
             padding-top: .4rem; }
@@ -3386,6 +3434,7 @@ i {
         .teams-settings-rights-body .table-custom-body-col-03 {
           font-size: 1.4rem; }
         .teams-settings-rights-body .table-custom-body-col-04 {
+          text-align: center;
           font-size: 1.3rem;
           color: #647282; }
         .teams-settings-rights-body .table-custom-body .choose .confirm {
@@ -3405,6 +3454,7 @@ i {
           align-items: center; }
           .teams-settings-rights-body .table-custom-body .input-row input {
             min-width: 1px;
+            width: 100%;
             max-width: 100%;
             outline: none;
             border: none;
@@ -3474,12 +3524,12 @@ i {
             flex: 0.8; } }
         @media (max-width: 575px) {
           .teams-settings-rights-body .table-custom .table-custom-col-01 {
-            -webkit-box-flex: 1;
-            -webkit-flex: 1;
-            -moz-box-flex: 1;
-            -moz-flex: 1;
-            -ms-flex: 1;
-            flex: 1; } }
+            -webkit-box-flex: 1.1;
+            -webkit-flex: 1.1;
+            -moz-box-flex: 1.1;
+            -moz-flex: 1.1;
+            -ms-flex: 1.1;
+            flex: 1.1; } }
       .teams-settings-rights-body .table-custom .table-custom-col-02 {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
@@ -3491,12 +3541,12 @@ i {
           .teams-settings-rights-body .table-custom .table-custom-col-02 {
             display: none; } }
       .teams-settings-rights-body .table-custom .table-custom-col-03 {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1;
-        -moz-box-flex: 1;
-        -moz-flex: 1;
-        -ms-flex: 1;
-        flex: 1; }
+        -webkit-box-flex: 0.5;
+        -webkit-flex: 0.5;
+        -moz-box-flex: 0.5;
+        -moz-flex: 0.5;
+        -ms-flex: 0.5;
+        flex: 0.5; }
         @media (max-width: 991px) {
           .teams-settings-rights-body .table-custom .table-custom-col-03 {
             -webkit-box-flex: 0.5;
@@ -3507,19 +3557,19 @@ i {
             flex: 0.5; } }
         @media (max-width: 575px) {
           .teams-settings-rights-body .table-custom .table-custom-col-03 {
-            -webkit-box-flex: 0.8;
-            -webkit-flex: 0.8;
-            -moz-box-flex: 0.8;
-            -moz-flex: 0.8;
-            -ms-flex: 0.8;
-            flex: 0.8; } }
+            -webkit-box-flex: 0.5;
+            -webkit-flex: 0.5;
+            -moz-box-flex: 0.5;
+            -moz-flex: 0.5;
+            -ms-flex: 0.5;
+            flex: 0.5; } }
       .teams-settings-rights-body .table-custom .table-custom-col-04 {
-        -webkit-box-flex: 0.48;
-        -webkit-flex: 0.48;
-        -moz-box-flex: 0.48;
-        -moz-flex: 0.48;
-        -ms-flex: 0.48;
-        flex: 0.48;
+        -webkit-box-flex: 0.6;
+        -webkit-flex: 0.6;
+        -moz-box-flex: 0.6;
+        -moz-flex: 0.6;
+        -ms-flex: 0.6;
+        flex: 0.6;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
@@ -3528,8 +3578,15 @@ i {
         .teams-settings-rights-body .table-custom .table-custom-col-04 a, .teams-settings-rights-body .table-custom .table-custom-col-04 button:not(.btn-custom-primary) {
           text-align: center;
           width: 100%;
-          max-width: 9.4rem;
           color: #ff2424; }
+        @media (max-width: 575px) {
+          .teams-settings-rights-body .table-custom .table-custom-col-04 {
+            -webkit-box-flex: 0.8;
+            -webkit-flex: 0.8;
+            -moz-box-flex: 0.8;
+            -moz-flex: 0.8;
+            -ms-flex: 0.8;
+            flex: 0.8; } }
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .teams-settings-rights-body .table-custom td:nth-of-type(4.4), .teams-settings-rights-body .table-custom th:nth-of-type(4.4) {
           padding-left: 1.7rem; } }
@@ -3779,11 +3836,11 @@ i {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 100%;
-    max-width: 73.7rem !important;
-    max-width: 53.7rem !important;
+    max-width: 50.7rem !important;
     margin: auto; }
   .give-feedback #feedbackModal .modal-header {
-    padding: 1.9rem 3rem;
+    padding: 1.9rem 4.5rem;
+    padding-right: 2.5rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -3795,28 +3852,26 @@ i {
     -moz-align-items: center;
     align-items: center;
     border-bottom: none;
-    margin-bottom: 2rem;
     border-bottom: 1px solid #DFE0E2; }
     .give-feedback #feedbackModal .modal-header img {
-      margin-right: 1.19rem;
+      margin-right: 1.8rem;
       width: 5.32rem;
       height: 5.32rem;
       border-radius: 50%; }
     .give-feedback #feedbackModal .modal-header h5 {
-      margin-top: -.2rem;
-      font-size: 1.2rem;
+      margin-top: -.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
-      line-height: 1.17;
+      line-height: 1.08;
       color: #007aff; }
       .give-feedback #feedbackModal .modal-header h5 .name {
-        margin-bottom: -.5rem;
         display: block;
-        font-size: 2.3rem;
+        margin-bottom: -1rem;
+        font-size: 2.5rem;
         font-weight: 700;
-        line-height: 1.22;
-        letter-spacing: 0.23px;
-        color: #000000;
-        text-transform: capitalize; }
+        line-height: 1.12;
+        letter-spacing: 0.25px;
+        color: #000000; }
     .give-feedback #feedbackModal .modal-header .close {
       font-size: 1.6rem;
       -webkit-align-self: flex-start;
@@ -3824,9 +3879,9 @@ i {
       -ms-flex-item-align: start;
       align-self: flex-start; }
   .give-feedback #feedbackModal .modal-body {
-    padding: 3rem;
-    padding-top: 1.4rem;
-    padding-bottom: 6rem;
+    padding: 4.5rem;
+    padding-top: 4.5rem;
+    padding-bottom: 5rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -3866,26 +3921,33 @@ i {
       justify-content: space-between;
       text-align: center;
       width: 100%;
-      max-width: 38rem; }
+      max-width: 34.5rem; }
+      .give-feedback #feedbackModal .modal-body .rating label {
+        width: 3.4rem; }
+      .give-feedback #feedbackModal .modal-body .rating label, .give-feedback #feedbackModal .modal-body .rating label::before, .give-feedback #feedbackModal .modal-body .rating label::after {
+        font-size: 2.8rem; }
+        .give-feedback #feedbackModal .modal-body .rating label:not(:last-of-type), .give-feedback #feedbackModal .modal-body .rating label::before:not(:last-of-type), .give-feedback #feedbackModal .modal-body .rating label::after:not(:last-of-type) {
+          margin-right: 0; }
       .give-feedback #feedbackModal .modal-body .rating p {
-        margin-right: .45rem;
-        font-size: 1.85rem;
+        font-size: 1.8rem;
         font-weight: 500;
-        line-height: 1.3;
+        line-height: 1.33;
+        letter-spacing: 0.09px;
+        text-align: left;
         color: #000000; }
       .give-feedback #feedbackModal .modal-body .rating:not(:last-of-type) {
-        margin-bottom: 3.7rem; }
+        margin-bottom: 2.8rem; }
     .give-feedback #feedbackModal .modal-body .input-container {
       width: 100%;
       max-width: 42rem;
-      margin-top: 5rem; }
+      margin-top: 4.3rem; }
       .give-feedback #feedbackModal .modal-body .input-container label {
         display: block;
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.33;
-        letter-spacing: 0.2px;
-        color: #2d2d2d; }
+        letter-spacing: 0.23px;
+        color: #1d1d1d; }
       .give-feedback #feedbackModal .modal-body .input-container input {
         width: 100%;
         padding: 1rem 0;
@@ -3904,9 +3966,11 @@ i {
           color: rgba(20, 40, 64, 0.3); }
       .give-feedback #feedbackModal .modal-body .input-container:nth-of-type(4) {
         color: red !important;
-        margin-top: 2.7rem; }
+        margin-top: 3.3rem; }
     .give-feedback #feedbackModal .modal-body .button {
-      margin-top: 4.1rem; }
+      padding: 1rem  3.8rem;
+      font-size: 1.7rem;
+      margin-top: 7rem; }
 
 .single-user {
   padding: 2.5rem 0;
@@ -5963,14 +6027,16 @@ i {
     margin-top: 3.3rem;
     margin-bottom: 3.4rem; }
     .user-settings-general-header .subheader-text {
-      margin-bottom: .6rem;
+      margin-bottom: 1.4rem;
       font-size: 1.7rem;
-      line-height: 1.35;
+      font-weight: 400;
+      line-height: 1.18;
       color: #1b2733; }
       .user-settings-general-header .subheader-text-small {
-        margin-bottom: 3.2rem;
-        font-size: 1.3rem;
-        line-height: 1.38;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.29;
+        letter-spacing: 0.07px;
         color: #647282; }
   .user-settings-general-body {
     max-height: calc(100vh - 30rem); }
@@ -6024,8 +6090,9 @@ i {
       .user-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
       .user-settings-general-body .settings-table-row img {
-        width: 5.59rem;
-        height: 5.59rem;
+        max-width: 5.59rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
         border-radius: 50%; }
       .user-settings-general-body .settings-table-row:last-child {
         padding-top: 1.7rem;
@@ -6064,7 +6131,7 @@ i {
         font-size: 1.35rem;
         font-weight: 400; }
         .user-settings-teams-body .table-custom-body tr {
-          padding: 0 1.7rem;
+          padding: 1rem 1.7rem;
           border-bottom: solid 1px #e6e8eb; }
           .user-settings-teams-body .table-custom-body tr:last-child {
             border: none; }

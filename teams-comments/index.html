@@ -286,10 +286,10 @@
                                 <p class="comment-header-name">Maria Rodriguez</p>
                                 <p class="comment-header-date">24.5.2020</p>
                             </div>
-                            <div class="comment-body">
-                                <p class="comment-body-text">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
-                                <i class="icon-close read-more close"></i>
+                            <div class="comment-body double">
+                                <p class="comment-body-text-double">
+                                    Lorem ipsum, dolor sit amet
+                                    <i class="icon-close read-more close"></i>
                                 </p>
                             </div>
                         </div>
@@ -300,11 +300,12 @@
                                 <p class="comment-header-name">Maria Rodriguez</p>
                                 <p class="comment-header-date">24.5.2020</p>
                             </div>
-                            <div class="comment-body">
-                                <p class="comment-body-text">
+                            <div class="comment-body double">
+                                <p class="comment-body-text-double">
                                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ut eius aliquam unde error voluptatum nesciunt tempora ratione a aspernatur veniam, possimus officiis? Quae maiores temporibus officia vero cupiditate alias, eos odio fugiat ea vel minus enim qui sequi dolorem accusamus explicabo? Voluptatem tenetur consequatur, repellat quibusdam, praesentium odit totam hic tempora sint necessitatibus laboriosam accusamus mollitia a doloremque ipsum impedit molestias temporibus quas nisi? Quidem eos itaque alias asperiores cupiditate voluptatibus amet hic odio. Voluptatem maiores reiciendis quam, consequuntur temporibus in modi natus ipsa illo magni amet, quas aspernatur similique ipsum sit, sequi error esse qui? Enim, praesentium est.
-                                <i class="icon-close read-more close"></i>
+                                    
                                 </p>
+                                <i class="icon-close read-more close"></i>
                             </div>
                         </div>
 
@@ -322,27 +323,50 @@
         <script>
             // TRUNCATE COMMENTS
             var commentsBody = document.querySelectorAll('.comment-body');
-            var commentsBodyText = document.querySelectorAll('.comment-body-text');
+            // var commentsBodyText = document.querySelectorAll('.comment-body-text-double');
             var readMoreLink = '<a href="#" class="read-more">Read more</a>';
+            var closeBtn = '<i class="icon-close read-more close"></i>';
 
             for(var i = 0; i < commentsBody.length; i++) {
-                var commentsBodyText = commentsBody[i].querySelector('.comment-body-text');
-                var commentsBodyTextTrunc = 
-                        '<div class="comment-body-text-trunc">'
-                            +commentsBody[i].innerText.substr(0,70-1)+(commentsBody[i].innerText.length>70?'...'+readMoreLink:'')
-                        +'</div>';
-               
-                commentsBody[i].insertAdjacentHTML( 'beforeend', commentsBodyTextTrunc );
-                commentsBodyText.style.display = 'none';
+                var commentsBodyDouble = commentsBody[i].querySelector('.comment-body-text-double');
+            
+               if(commentsBodyDouble.scrollHeight > commentsBodyDouble.clientWidth) {
+                    commentsBody[i].insertAdjacentHTML( 'beforeend', readMoreLink );
+               }
             }
 
             var readMoreTriggers = document.querySelectorAll('.read-more');
             for(var i = 0; i < readMoreTriggers.length; i++) {
                 readMoreTriggers[i].addEventListener('click', function(e) {
-                    var comment = e.target.parentElement.parentElement.parentElement;
+                    var comment = e.target.parentElement.parentElement;
                     comment.classList.toggle('open');
                 })
             }
+
+
+            // // TRUNCATE COMMENTS
+            // var commentsBody = document.querySelectorAll('.comment-body');
+            // var commentsBodyText = document.querySelectorAll('.comment-body-text-double');
+            // var readMoreLink = '<a href="#" class="read-more">Read more</a>';
+
+            // for(var i = 0; i < commentsBody.length; i++) {
+            //     var commentsBodyText = commentsBody[i].querySelector('.comment-body-text-double');
+            //     var commentsBodyTextTrunc = 
+            //             '<div class="comment-body-text-trunc">'
+            //                 +commentsBody[i].innerText.substr(0,70-1)+(commentsBody[i].innerText.length>70?'...'+readMoreLink:'')
+            //             +'</div>';
+               
+            //     commentsBody[i].insertAdjacentHTML( 'beforeend', commentsBodyTextTrunc );
+            //     commentsBodyText.style.display = 'none';
+            // }
+
+            // var readMoreTriggers = document.querySelectorAll('.read-more');
+            // for(var i = 0; i < readMoreTriggers.length; i++) {
+            //     readMoreTriggers[i].addEventListener('click', function(e) {
+            //         var comment = e.target.parentElement.parentElement.parentElement;
+            //         comment.classList.toggle('open');
+            //     })
+            // }
         </script>
 </body>
 
