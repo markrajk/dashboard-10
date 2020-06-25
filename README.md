@@ -85,6 +85,17 @@ Link all pages and make modals work on all pages with that functionality.
     * CSS file changed
 - JS
     * people-feedback-received & people-feedback-given javascript function changed (in script tag)
+## Changes 25.06.2020
+- HTML changes:
+    * teams-settings-feedback page table-section-end class removed from table rows table-section-start remains for purpopse of dividing table in sections (has some special style) 
+    * teams-settings-rights table code changed (again)
+    * teams-comments HTML for comments changed (as well as js function, just note, treat them as different type of comments from other ones with stars)
+    * give-feedback page have example of empty notification menu (div class="dropdown-custom-list-body-none) and badge with numeber of notifications (span class="notification-menu-badge")
+- CSS changes:
+    * CSS file changed
+    * Now clicking inside menu shouldn't close it
+- JS
+    * teams-comments function changed (in script tag)
     
 
 
