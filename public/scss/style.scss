@@ -4699,6 +4699,8 @@ i {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
 
+        max-height: calc(100vh - 26.3rem - 1.5px - 15.4rem);
+
         & tr {
           padding: 1rem 1.7rem;
 
