@@ -3225,7 +3225,7 @@ i {
       .teams-settings-general-body .settings-table-row img {
         width: 5.59rem;
         height: 5.59rem;
-        border-radius: 50%; }
+        clip-path: circle(48% at 50% 50%); }
       .teams-settings-general-body .settings-table-row:nth-of-type(4) {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem; }

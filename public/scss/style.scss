@@ -4642,7 +4642,7 @@ i {
         & img {
           width: 5.59rem;
           height: 5.59rem;
-          border-radius: 50%;
+          clip-path: circle(48% at 50% 50%);
         }
 
         &:not(:last-child) {
