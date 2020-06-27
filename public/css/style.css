@@ -31,7 +31,7 @@ html {
       -webkit-text-size-adjust: none; } }
   @media (max-width: 575px) {
     html {
-      font-size: 40%;
+      font-size: 7px;
       -webkit-text-size-adjust: none; } }
 
 body {
@@ -2928,8 +2928,8 @@ i {
     max-height: calc(100vh - 11rem - 16rem - 8rem);
     border-bottom: solid 1px #e6e8eb; }
     .teams-people-view .table-custom-body tr {
-      padding-top: 1.4rem;
-      padding-bottom: 1.4rem;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
       padding-left: .7rem; }
     .teams-people-view .table-custom-body td {
       padding: 0 0; }
@@ -3884,7 +3884,7 @@ i {
         line-height: 1.33;
         letter-spacing: -0.12px;
         border-radius: 2rem;
-        border: solid 1.5px #d8d8d8;
+        border: solid 1.25px #D8D8D8;
         background-color: #ffffff;
         outline: none; }
         .give-feedback-people .input-container input::placeholder {
