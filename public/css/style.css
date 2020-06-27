@@ -3294,7 +3294,8 @@ i {
       .teams-settings-general-body .settings-table-row .button-outlined {
         padding: .7rem 1.3rem;
         font-size: 1.4rem;
-        font-weight: 400; }
+        font-weight: 400;
+        color: #1b2733; }
       .teams-settings-general-body .settings-table-row .column-01 {
         padding-right: 1.5rem;
         margin-right: auto; }
