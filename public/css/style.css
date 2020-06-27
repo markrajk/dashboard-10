@@ -3104,15 +3104,7 @@ i {
 .teams-settings-general {
   padding: 2.5rem 0;
   padding-bottom: 0;
-  padding-top: 0;
-  overflow-y: auto;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-  .teams-settings-general::-webkit-scrollbar {
-    width: 0;
-    height: 0; }
+  padding-top: 0; }
   .teams-settings-general::before {
     content: '';
     display: block;
@@ -3130,8 +3122,7 @@ i {
     .teams-settings-general-header .button {
       margin-right: 1.4rem; }
   .teams-settings-general-body {
-    max-width: 72rem;
-    max-height: calc(100vh - 30rem); }
+    max-width: 72rem; }
     .teams-settings-general-body .settings-table-header {
       height: 3.7rem;
       padding: 1rem 1.7rem;
@@ -3141,6 +3132,17 @@ i {
         font-weight: 500;
         line-height: 1.33;
         color: #647282; }
+    .teams-settings-general-body .settings-table-body {
+      padding-bottom: 5rem;
+      max-height: calc(100% - 26.2rem);
+      overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */ }
+      .teams-settings-general-body .settings-table-body::-webkit-scrollbar {
+        width: 0;
+        height: 0; }
     .teams-settings-general-body .settings-table-row {
       padding: 2.8rem 1.7rem;
       padding-bottom: 2.6rem;
@@ -3159,9 +3161,11 @@ i {
       -webkit-align-items: center;
       -moz-align-items: center;
       align-items: center;
-      white-space: nowrap; }
-      .teams-settings-general-body .settings-table-row:not(:nth-of-type(4)) {
-        height: 7.3rem; }
+      white-space: nowrap;
+      height: 7.2rem;
+      border-bottom: 1px solid #E6E8EB; }
+      .teams-settings-general-body .settings-table-row:nth-of-type(4), .teams-settings-general-body .settings-table-row:nth-of-type(5), .teams-settings-general-body .settings-table-row:nth-of-type(7) {
+        height: 9.2rem; }
       .teams-settings-general-body .settings-table-row .settings-input {
         margin-right: 1.6rem;
         padding: .5rem 1.1rem;
@@ -3200,9 +3204,19 @@ i {
         .teams-settings-general-body .settings-table-row select option {
           font-size: 1.2rem;
           padding-left: 1.3rem; }
+      .teams-settings-general-body .settings-table-row .button-outlined {
+        padding: .7rem 1.3rem;
+        font-size: 1.4rem;
+        font-weight: 400; }
       .teams-settings-general-body .settings-table-row .column-01 {
         padding-right: 1.5rem;
         margin-right: auto; }
+        .teams-settings-general-body .settings-table-row .column-01 span {
+          display: block;
+          margin-top: .6rem;
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: #6F7A89; }
       .teams-settings-general-body .settings-table-row .column-02 {
         margin-left: 1rem;
         margin-right: 1.5rem; }
@@ -3212,13 +3226,17 @@ i {
         width: 5.59rem;
         height: 5.59rem;
         border-radius: 50%; }
-      .teams-settings-general-body .settings-table-row:not(:last-child) {
-        border-bottom: 1px solid #E6E8EB; }
       .teams-settings-general-body .settings-table-row:nth-of-type(4) {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem; }
       .teams-settings-general-body .settings-table-row:last-child {
         padding-top: 2.74rem; }
+    .teams-settings-general-body .delete-team {
+      padding-top: 2.2rem;
+      padding-left: 1.6rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #FF2424; }
 
 .teams-settings-feedback {
   padding: 2.5rem 0;

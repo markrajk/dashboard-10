@@ -4477,14 +4477,14 @@ i {
   //border-top: 1px solid #e1e1e1;
   
 
-  overflow-y: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  // overflow-y: auto;
+  // scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none; /* Internet Explorer 10+ */
 
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
 
   &::before {
     content: '';
@@ -4509,11 +4509,11 @@ i {
   }
 
   &-body {
+    //max-height: calc(100% - 27rem);
     max-width: 72rem;
-    max-height: calc(100vh - 30rem);
 
     & .settings-table {
-
+      //height: 100%;
       &-header {
         height: 3.7rem;
         padding: 1rem 1.7rem;
@@ -4524,6 +4524,19 @@ i {
           font-weight: 500;
           line-height: 1.33;
           color: #647282;
+        }
+      }
+
+      &-body {
+        padding-bottom: 5rem;
+        max-height: calc(100% - 26.2rem);
+        overflow-y: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
         }
       }
 
@@ -4538,9 +4551,13 @@ i {
         line-height: 1.36;
         @include align-items(center);
         white-space: nowrap;
+        height: 7.2rem;
+        border-bottom: 1px solid #E6E8EB;
         
-        &:not(:nth-of-type(4)) {
-          height: 7.3rem;
+        &:nth-of-type(4),
+        &:nth-of-type(5), 
+        &:nth-of-type(7) {
+            height: 9.2rem;
         }
 
         & .settings-input {
@@ -4593,9 +4610,23 @@ i {
           }
         }
 
+        & .button-outlined {
+          padding: .7rem 1.3rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+
         & .column-01 {
           padding-right: 1.5rem;
           margin-right: auto;
+
+          & span {
+            display: block;
+            margin-top: .6rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #6F7A89;
+          }
         }
 
         & .column-02 {
@@ -4615,7 +4646,7 @@ i {
         }
 
         &:not(:last-child) {
-          border-bottom: 1px solid #E6E8EB;
+          // border-bottom: 1px solid #E6E8EB;
         }
 
         &:nth-of-type(4) {
@@ -4627,6 +4658,14 @@ i {
           padding-top: 2.74rem;
         }
       }
+    }
+
+    & .delete-team {
+      padding-top: 2.2rem;
+      padding-left: 1.6rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #FF2424;
     }
   }
 }
