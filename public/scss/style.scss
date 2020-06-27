@@ -556,26 +556,32 @@ html {
 
   @include respond(desktop-xxl) {
     font-size: 62.5%;
+    -webkit-text-size-adjust: none;
   }
 
   @include respond(desktop-xl) {
     font-size: 59.5%;
+    -webkit-text-size-adjust: none;
   }
 
   @include respond(desktop-lg) {
     font-size: 57%;
+    -webkit-text-size-adjust: none;
   }
 
   @include respond(desktop-md) {
     font-size: 52.5%;
+    -webkit-text-size-adjust: none;
   }
 
   @include respond(desktop-sm) {
     font-size: 47.5%;
+    -webkit-text-size-adjust: none;
   }
 
   @include respond(desktop-xsm) {
     font-size: 40%;
+    -webkit-text-size-adjust: none;
   }
 
   // @include respond(desktop-xxl) {
