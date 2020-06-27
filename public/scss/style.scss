@@ -550,6 +550,7 @@ $text-color-primary: #1c1c1c;
 html {
   width: 100%;
   //font-size: 67.5%;
+  -webkit-text-size-adjust: none;
 
   font-size: 60%;
 
