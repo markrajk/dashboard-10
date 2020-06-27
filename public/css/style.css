@@ -1029,6 +1029,8 @@ i {
       padding: 1.8rem 1.7rem; }
       .table-custom-body tr:not(:last-of-type) {
         border-bottom: solid 1px #e6e8eb; }
+      .table-custom-body tr:last-of-type {
+        border-bottom: none !important; }
     .table-custom-body td {
       padding: 0 0; }
       .table-custom-body td > * {
@@ -1473,6 +1475,54 @@ i {
     border-radius: 1.8rem;
     border: 0; }
 
+.no-feedback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: calc(100vh - 11rem - 16rem - 8rem);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 100; }
+  .no-feedback-title {
+    margin-bottom: 1.35rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    color: #292929; }
+  .no-feedback-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #383838;
+    max-width: 37rem; }
+    .no-feedback-text button {
+      font-weight: 500;
+      color: #137efe;
+      text-decoration: underline; }
+
 .sidebar {
   position: relative;
   display: -webkit-inline-box;
@@ -1817,6 +1867,29 @@ i {
       .header-top-right .face {
         width: 3.2rem;
         height: 3.2rem; }
+      .header-top-right .user-initials {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        color: #FFF;
+        background-color: #FFD800;
+        font-weight: 500;
+        letter-spacing: 1px; }
       .header-top-right .notification-menu {
         position: relative; }
         .header-top-right .notification-menu-badge {
@@ -2461,7 +2534,7 @@ i {
             .teams-average-charts-body .section-development .section-body-chart-header .options span {
               margin: 0 .8rem;
               font-size: 2rem;
-              color: #F2F2F2; }
+              color: #e3e3e3; }
           .teams-average-charts-body .section-development .section-body-chart-main {
             height: 30rem; }
             .teams-average-charts-body .section-development .section-body-chart-main canvas {
@@ -2616,6 +2689,7 @@ i {
           box-shadow: none;
           color: inherit; }
     .teams-comments .section-comments-body {
+      position: relative;
       padding-top: 2.5rem;
       display: -ms-grid;
       display: grid;
@@ -2626,6 +2700,7 @@ i {
       grid-auto-rows: 12rem;
       grid-gap: 2.6rem 2.6rem;
       max-height: calc(100vh - 23.95rem - .5rem - 1px);
+      height: calc(100vh - 23.95rem - .5rem - 1px);
       max-width: 103rem;
       overflow-y: auto;
       scrollbar-width: none;
@@ -3078,6 +3153,8 @@ i {
       -moz-align-items: center;
       align-items: center;
       white-space: nowrap; }
+      .teams-settings-general-body .settings-table-row:not(:nth-of-type(4)) {
+        height: 7.3rem; }
       .teams-settings-general-body .settings-table-row .settings-input {
         margin-right: 1.6rem;
         padding: .5rem 1.1rem;
@@ -3422,6 +3499,9 @@ i {
       .teams-settings-rights-body .section-caption-info {
         width: 100%;
         max-width: 60rem; }
+        @media (max-width: 991px) {
+          .teams-settings-rights-body .section-caption-info {
+            max-width: 60%; } }
         .teams-settings-rights-body .section-caption-info .subheader-text {
           margin-bottom: 1.4rem;
           font-size: 1.7rem;
@@ -3451,10 +3531,10 @@ i {
       .teams-settings-rights-body .table-custom-body {
         font-size: 1.35rem;
         font-weight: 400; }
+        .teams-settings-rights-body .table-custom-body > tr:not(.input-row):nth-last-child(2) {
+          border-bottom: none; }
         .teams-settings-rights-body .table-custom-body tr {
           border-bottom: solid 1px #e6e8eb; }
-          .teams-settings-rights-body .table-custom-body tr:last-child {
-            border: none; }
           .teams-settings-rights-body .table-custom-body tr > td, .teams-settings-rights-body .table-custom-body tr > td a {
             font-size: 1.4rem;
             font-weight: 400;
@@ -3487,6 +3567,7 @@ i {
           font-weight: 500;
           margin: 0 .15rem; }
         .teams-settings-rights-body .table-custom-body .input-row {
+          border-top: solid 1px #e6e8eb;
           display: none;
           -webkit-box-align: center;
           -ms-flex-align: center;
@@ -3639,9 +3720,25 @@ i {
       .teams-settings-rights-body .table-01:not(:last-of-type) {
         margin-bottom: 3.2rem; }
       .teams-settings-rights-body .table-01 tbody {
-        max-height: 22.4rem !important; }
+        max-height: 22.4rem !important;
+        overflow-y: auto;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */ }
+        .teams-settings-rights-body .table-01 tbody::-webkit-scrollbar {
+          width: 0;
+          height: 0; }
     .teams-settings-rights-body .table-02 tbody {
-      max-height: 22.4rem !important; }
+      max-height: 22.2rem !important;
+      overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */ }
+      .teams-settings-rights-body .table-02 tbody::-webkit-scrollbar {
+        width: 0;
+        height: 0; }
     .teams-settings-rights-body .table-bottom-input {
       padding: 1.2rem 1.7rem;
       padding-right: 3rem;
@@ -5991,6 +6088,10 @@ i {
       align-items: center;
       white-space: nowrap;
       border-bottom: 1px solid #E6E8EB; }
+      .company-settings-body .settings-table-row:nth-last-of-type(2) {
+        height: 7.2rem; }
+      .company-settings-body .settings-table-row:not(:nth-of-type(2)) {
+        height: 8.8rem; }
       .company-settings-body .settings-table-row .column-01 {
         margin-right: auto; }
       .company-settings-body .settings-table-row .column-02 {
@@ -6327,19 +6428,10 @@ i {
 .people-average-charts {
   padding: 2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 10rem);
-  overflow-y: auto;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-  .people-average-charts::-webkit-scrollbar {
-    width: 0;
-    height: 0; }
+  max-height: calc(100vh - 20rem); }
   .people-average-charts-header {
     max-width: 103rem;
     padding-top: 6rem;
-    margin-bottom: 2.2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -6445,7 +6537,16 @@ i {
     .people-average-charts-header .button:not(:last-of-type) {
       margin-right: 1.4rem; }
   .people-average-charts-body {
-    max-width: 103rem; }
+    max-width: 103rem;
+    max-height: calc(100% - 11.45rem - 4.1rem);
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    .people-average-charts-body::-webkit-scrollbar {
+      width: 0;
+      height: 0; }
     .people-average-charts-body .section {
       position: relative; }
       .people-average-charts-body .section-header {
@@ -6531,6 +6632,7 @@ i {
         .people-average-charts-body .section .slider-trigger-right {
           right: -1rem; }
     .people-average-charts-body .section-averages {
+      padding-top: 2.2rem;
       margin-bottom: 4.5rem; }
       .people-average-charts-body .section-averages .section-header {
         margin-bottom: 0; }
@@ -6715,7 +6817,7 @@ i {
             .people-average-charts-body .section-development .section-body-chart-header .options span {
               margin: 0 .8rem;
               font-size: 2rem;
-              color: #F2F2F2; }
+              color: #e3e3e3; }
           .people-average-charts-body .section-development .section-body-chart-main {
             height: 30rem; }
             .people-average-charts-body .section-development .section-body-chart-main canvas {
@@ -6934,6 +7036,7 @@ i {
         box-shadow: none;
         color: inherit; }
   .people-feedback-received-body .section-comments-body {
+    position: relative;
     max-width: 103rem;
     padding-top: 1.6rem;
     display: -ms-grid;
@@ -6960,11 +7063,16 @@ i {
     @media (max-width: 991px) {
       .people-feedback-received-body .section-comments-body {
         -ms-grid-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr); } }
+        grid-template-columns: repeat(2, 1fr);
+        max-height: calc(100vh - 25rem - 1.5px); } }
+    @media (max-width: 767px) {
+      .people-feedback-received-body .section-comments-body {
+        max-height: calc(100vh - 26rem - 1.5px); } }
     @media (max-width: 575px) {
       .people-feedback-received-body .section-comments-body {
         -ms-grid-columns: repeat(1, 1fr);
-        grid-template-columns: repeat(1, 1fr); } }
+        grid-template-columns: repeat(1, 1fr);
+        max-height: calc(100vh - 25.5rem - 1.5px); } }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       .people-feedback-received-body .section-comments-body {
         display: -webkit-box;

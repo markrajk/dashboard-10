@@ -1834,6 +1834,10 @@ i {
       &:not(:last-of-type) {
         border-bottom: solid 1px #e6e8eb;
       }
+
+      &:last-of-type {
+        border-bottom: none!important;
+      }
     }
 
     & td {
@@ -2425,6 +2429,44 @@ i {
   }
 }
 
+.no-feedback {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-height: calc(100vh - 11rem - 16rem - 8rem);
+  border-radius: 5px;
+  box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  text-align: center;
+  z-index: 100;
+
+  &-title {
+    margin-bottom: 1.35rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    color: #292929;
+  }
+
+  &-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #383838;
+    max-width: 37rem;
+
+    & button {
+      font-weight: 500;
+      color: #137efe;
+      text-decoration: underline;
+    }
+  }
+}
+
 // ==================================
 // SIDEBAR START
 // ==================================
@@ -2801,6 +2843,19 @@ i {
       & .face {
         width: 3.2rem;
         height: 3.2rem;
+      }
+
+      & .user-initials {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        color: #FFF;
+        background-color: #FFD800;
+        font-weight: 500;
+        letter-spacing: 1px;
       }
 
       .notification-menu {
@@ -3477,7 +3532,7 @@ i {
               & span {
                 margin: 0 .8rem;
                 font-size: 2rem;
-                color: #F2F2F2;
+                color: #e3e3e3;
               }
             }
           }
@@ -3837,6 +3892,7 @@ i {
     }
 
     &-body {
+      position: relative;
       padding-top: 2.5rem;
       @include grid;
       @include grid-template-columns(repeat(3,1fr));
@@ -3844,6 +3900,7 @@ i {
       grid-auto-rows: 12rem;
       grid-gap: 2.6rem 2.6rem;
       max-height: calc(100vh - 23.95rem - .5rem - 1px);
+      height: calc(100vh - 23.95rem - .5rem - 1px);
       // padding-right: calc(100% - 103rem);
       max-width: 103rem;
 
@@ -4474,6 +4531,10 @@ i {
         line-height: 1.36;
         @include align-items(center);
         white-space: nowrap;
+        
+        &:not(:nth-of-type(4)) {
+          height: 7.3rem;
+        }
 
         & .settings-input {
           margin-right: 1.6rem;
@@ -4912,6 +4973,10 @@ i {
         width: 100%;
         max-width: 60rem;
 
+        @include respond(desktop-md) {
+          max-width: 60%;
+        }
+
         & .subheader-text {
           margin-bottom: 1.4rem;
           font-size: 1.7rem;
@@ -4953,12 +5018,17 @@ i {
           font-size: 1.35rem;
           font-weight: 400;
 
+          & > tr:not(.input-row) {
+
+            &:nth-last-child(2) {
+              border-bottom: none;
+            }
+          }
+
           & tr {
             border-bottom: solid 1px #e6e8eb;
 
-            &:last-child {
-              border: none;
-            }
+            
 
             & > td,
             & > td a {
@@ -5021,6 +5091,7 @@ i {
           }
 
           & .input-row {
+            border-top: solid 1px #e6e8eb;
             display: none;
             @include align-items(center);
 
@@ -5094,6 +5165,8 @@ i {
             &-open {
               @include flexbox;
             }
+
+            
           }
         }
 
@@ -5168,12 +5241,28 @@ i {
 
       & tbody {
         max-height: 22.4rem!important;
+          overflow-y: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
       }
     }
 
     & .table-02 {
       & tbody {
-        max-height: 22.4rem!important;
+        max-height: 22.2rem!important;
+         overflow-y: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+        }
       }
     }
 
@@ -8131,6 +8220,14 @@ i {
         white-space: nowrap;
         border-bottom: 1px solid #E6E8EB;
 
+        &:nth-last-of-type(2) {
+          height: 7.2rem;
+        }
+
+        &:not(:nth-of-type(2)) {
+          height: 8.8rem;
+        }
+
         & .column-01 {
           margin-right: auto;
         }
@@ -8829,15 +8926,15 @@ i {
 .people-average-charts {
   padding:2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 10rem);
-  overflow-y: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  max-height: calc(100vh - 20rem);
+  // overflow-y: auto;
+  // scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none; /* Internet Explorer 10+ */
 
-  &::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-  }
+  // &::-webkit-scrollbar {
+  //   width: 0;
+  //   height: 0;
+  // }
 
   // &::before {
   //   content: '';
@@ -8853,7 +8950,6 @@ i {
   &-header {
     max-width: 103rem;
     padding-top: 6rem;
-    margin-bottom: 2.2rem;
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
@@ -8940,6 +9036,17 @@ i {
 
   &-body {
     max-width: 103rem;
+    max-height: calc(100% - 11.45rem - 4.1rem);
+
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
     & .section {
       position: relative;
 
@@ -9026,6 +9133,7 @@ i {
     }
 
     & .section-averages {
+      padding-top: 2.2rem;
       margin-bottom: 4.5rem;
 
       & .section-header {
@@ -9178,7 +9286,7 @@ i {
               & span {
                 margin: 0 .8rem;
                 font-size: 2rem;
-                color: #F2F2F2;
+                color: #e3e3e3;
               }
             }
           }
@@ -9462,6 +9570,12 @@ i {
   }
 
   &-body {
+    // max-width: 103rem;
+    // max-height: calc(100% - 11.45rem - 4.1rem);
+
+    // overflow-y: auto;
+    // scrollbar-width: none; /* Firefox */
+    // -ms-overflow-style: none; /* Internet Explorer 10+ */
     & .section-comments {
 
       &-header {
@@ -9501,6 +9615,7 @@ i {
       }
   
       &-body {
+        position: relative;
         max-width: 103rem;
         padding-top: 1.6rem;
         @include grid;
@@ -9527,13 +9642,20 @@ i {
   
         @include respond(desktop-md) {
           @include grid-template-columns(repeat(2,1fr));
+          max-height: calc(100vh - 25rem - 1.5px);
+
+          //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
+        }
+
+        @include respond(desktop-sm) {
+          max-height: calc(100vh - 26rem - 1.5px);
 
           //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
         }
   
         @include respond(desktop-xsm) {
           @include grid-template-columns(repeat(1,1fr));
-
+          max-height: calc(100vh - 25.5rem - 1.5px);
         }
 
         @include target-ie() {
