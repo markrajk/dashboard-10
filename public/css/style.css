@@ -11,22 +11,28 @@ html {
   font-size: 60%; }
   @media (max-width: 1720px) {
     html {
-      font-size: 62.5%; } }
+      font-size: 62.5%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 1379px) {
     html {
-      font-size: 59.5%; } }
+      font-size: 59.5%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 1199px) {
     html {
-      font-size: 57%; } }
+      font-size: 57%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 991px) {
     html {
-      font-size: 52.5%; } }
+      font-size: 52.5%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 767px) {
     html {
-      font-size: 47.5%; } }
+      font-size: 47.5%;
+      -webkit-text-size-adjust: none; } }
   @media (max-width: 575px) {
     html {
-      font-size: 40%; } }
+      font-size: 40%;
+      -webkit-text-size-adjust: none; } }
 
 body {
   min-height: 100vh;
