@@ -1725,6 +1725,93 @@ i {
   }
 }
 
+#transferOwnership, 
+#transferOwnershipConfirm {
+
+  & .modal-dialog {
+    max-width: 40rem;
+    border-radius: 4px;
+  }
+
+  & .modal-header {
+    padding: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  & .modal-body {
+    padding-top: 1.2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 5rem;
+  }
+  
+  & .title {
+    margin-bottom: 2.3rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.32;
+    letter-spacing: 0.19px;
+    color: #65737e;
+  }
+
+  & .text {
+    margin-bottom: 1.9rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.13px;
+    color: #7b8993;
+    white-space: nowrap;
+
+    @include respond(desktop-xsm) {
+      white-space: normal;
+    }
+  }
+
+  & input {
+    margin-bottom: 2rem;
+    padding: .6rem 1.1rem;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4px;
+    border: solid 1px #0070e0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.15px;
+    
+    &::placeholder {
+      color: #a9a9a9;
+    }
+  }
+
+  & .buttons {
+    width: 100%;
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    & .button {
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+        width: 48.5%;
+        border-radius: 3px;
+        border: solid 1px #bbbbbb;
+    }
+  }
+}
+
+#transferOwnershipConfirm {
+  
+  & .modal-body {
+    @include align-items(flex-start);
+  }
+}
+
 
 // CUSTOM TABLE
 .table-custom {
@@ -5555,9 +5642,9 @@ i {
         border-bottom: 1px solid #DFE0E2;
 
         & img {
-          margin-right: 1.8rem;
-          width: 5.32rem;
-          height: 5.32rem;
+          margin-right: 1.2rem;
+          width: 5.65rem;
+          height: 5.65rem;
           border-radius: 50%;
         }
   
@@ -5569,6 +5656,7 @@ i {
           color: #007aff;
   
           & .name {
+            padding-top: .4rem;
             display: block;
             margin-bottom: -1rem;
             font-size: 2.5rem;
