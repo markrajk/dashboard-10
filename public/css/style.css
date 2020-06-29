@@ -7483,6 +7483,341 @@ i {
         .sign-in-footer-text {
           margin: 0 auto; } }
 
+.company-sign-in {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  min-height: 60rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .company-sign-in .btn {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color .3s;
+    white-space: nowrap;
+    border: solid 1.5px transparent; }
+    .company-sign-in .btn-primary {
+      color: #FFF;
+      background-color: #48bc20; }
+      .company-sign-in .btn-primary:hover, .company-sign-in .btn-primary:focus {
+        background-color: #76dd53; }
+      .company-sign-in .btn-primary.outline {
+        color: #48bc20;
+        background-color: #FFF;
+        border-color: #48bc20; }
+        .company-sign-in .btn-primary.outline:hover, .company-sign-in .btn-primary.outline:focus {
+          color: #fff;
+          border-color: #76dd53;
+          background-color: #76dd53; }
+  .company-sign-in .show-md {
+    display: none; }
+    @media (max-width: 991px) {
+      .company-sign-in .show-md {
+        display: inline-flex; } }
+  .company-sign-in .show-xsm {
+    display: none; }
+    @media (max-width: 575px) {
+      .company-sign-in .show-xsm {
+        display: inline-flex; } }
+  @media (max-width: 991px) {
+    .company-sign-in .hide-md {
+      display: none !important; } }
+  @media (max-width: 767px) {
+    .company-sign-in .hide-sm {
+      display: none !important; } }
+  @media (max-width: 575px) {
+    .company-sign-in .hide-xsm {
+      display: none !important; } }
+  @media (max-width: 379px) {
+    .company-sign-in .hide-xxsm {
+      display: none !important; } }
+  .company-sign-in .invisible {
+    visibility: hidden;
+    opacity: 0; }
+  .company-sign-in .onscreen {
+    transform: translate(0, 0) !important; }
+  .company-sign-in-header {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem 2.7rem;
+    height: 8.4rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.16); }
+    .company-sign-in-header-img {
+      height: 4.5rem; }
+    .company-sign-in-header-page {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #000000;
+      transform: translate(-50%, -50%); }
+  .company-sign-in-card {
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 43rem;
+    position: absolute;
+    top: 46.2%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .company-sign-in-card-title {
+      margin-bottom: 1.65rem;
+      font-size: 3.1rem;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.1px;
+      text-align: center;
+      color: #000000; }
+    .company-sign-in-card-redirect {
+      margin-bottom: 3.58rem;
+      font-size: 1.9rem;
+      font-weight: 500;
+      line-height: 1.58;
+      text-align: center;
+      color: #606060; }
+      .company-sign-in-card-redirect a {
+        text-decoration: none;
+        font-weight: 600;
+        color: #48bc20; }
+        .company-sign-in-card-redirect a:hover, .company-sign-in-card-redirect a:focus {
+          text-decoration: underline; }
+      .company-sign-in-card-redirect.small {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        line-height: 1.36;
+        text-align: left;
+        color: #707070; }
+        .company-sign-in-card-redirect.small a {
+          font-weight: 500; }
+    .company-sign-in-card-input {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 2rem;
+      padding: 1.4rem 1.6rem;
+      width: 100%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #1c1c1c;
+      line-height: 1.33;
+      border-radius: 4px;
+      box-shadow: 0 3px 6px 0 rgba(224, 224, 224, 0.07);
+      border: solid 1px #e8e8e8;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+      .company-sign-in-card-input:focus {
+        outline-color: #48bc20; }
+      .company-sign-in-card-input::placeholder {
+        color: #9b9b9b; }
+      .company-sign-in-card-input.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+    .company-sign-in-card .input-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 0 1rem;
+      align-items: flex-start; }
+      @media (max-width: 379px) {
+        .company-sign-in-card .input-container {
+          grid-template-columns: 1fr; } }
+      .company-sign-in-card .input-container input:last-of-type {
+        margin-bottom: 2rem; }
+    .company-sign-in-card .btn-primary {
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1.9rem;
+      padding: 1.1rem 0;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.3; }
+      .company-sign-in-card .btn-primary.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+        .company-sign-in-card .btn-primary.disabled:hover, .company-sign-in-card .btn-primary.disabled:focus {
+          background-color: #48bc20; }
+  .company-sign-in-footer {
+    width: 92%;
+    max-width: 120rem;
+    padding: .3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1.25px solid #EAEAEA; }
+    .company-sign-in-footer-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.5;
+      color: #868686; }
+      @media (max-width: 575px) {
+        .company-sign-in-footer-text {
+          margin: 0 auto; } }
+
+.company-register {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  min-height: 90rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .company-register .btn {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color .3s;
+    white-space: nowrap;
+    border: solid 1.5px transparent; }
+    .company-register .btn-primary {
+      color: #FFF;
+      background-color: #48bc20; }
+      .company-register .btn-primary:hover, .company-register .btn-primary:focus {
+        background-color: #76dd53; }
+      .company-register .btn-primary.outline {
+        color: #48bc20;
+        background-color: #FFF;
+        border-color: #48bc20; }
+        .company-register .btn-primary.outline:hover, .company-register .btn-primary.outline:focus {
+          color: #fff;
+          border-color: #76dd53;
+          background-color: #76dd53; }
+  .company-register-header {
+    position: relative;
+    width: 100%;
+    padding: 1.2rem 2.7rem;
+    height: 8.4rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(163, 163, 163, 0.16); }
+    .company-register-header-img {
+      height: 4.5rem; }
+    .company-register-header-page {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #000000;
+      transform: translate(-50%, -50%); }
+  .company-register-card {
+    padding: 0 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    max-width: 56.3rem;
+    position: absolute;
+    top: 46.2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left; }
+    .company-register-card-title {
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #000000; }
+    .company-register-card .input-container {
+      margin-bottom: 2.9rem; }
+      .company-register-card .input-container label {
+        display: block;
+        margin-bottom: 1.1rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.31;
+        color: #000000; }
+      .company-register-card .input-container input {
+        padding: 1rem 1.4rem;
+        width: 100%;
+        border-radius: 4px;
+        border: solid 1px #868686;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.31; }
+        .company-register-card .input-container input::placeholder {
+          color: #616061; }
+    .company-register-card .inputs {
+      padding-bottom: 6.7rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      border-bottom: 1.5px solid #f1f1f1; }
+      .company-register-card .inputs .input-container {
+        width: 48%; }
+    .company-register-card .btn-primary {
+      margin-top: 5.5rem;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 1.9rem;
+      padding: 1.1rem 2.2rem;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #ffffff; }
+      .company-register-card .btn-primary.disabled {
+        opacity: .3;
+        cursor: not-allowed; }
+        .company-register-card .btn-primary.disabled:hover, .company-register-card .btn-primary.disabled:focus {
+          background-color: #48bc20; }
+  .company-register-footer {
+    width: 92%;
+    max-width: 120rem;
+    padding: .3rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1.25px solid #EAEAEA; }
+    .company-register-footer-text {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 2.5;
+      color: #868686; }
+      @media (max-width: 575px) {
+        .company-register-footer-text {
+          margin: 0 auto; } }
+
 .page-not-found {
   padding-left: .5rem; }
   .page-not-found-title {
