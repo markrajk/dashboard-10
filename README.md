@@ -96,6 +96,16 @@ Link all pages and make modals work on all pages with that functionality.
     * Now clicking inside menu shouldn't close it
 - JS
     * teams-comments function changed (in script tag)
+## Changes 27.06.2020
+- HTML changes:
+    * teams-settings-general html changed, more rows and 2 modals added.
+    * teams-comments, people-feedback-received & people-feedback-given placeholder element (no-feedback, class) added.
+    * give-feedback page top right user menu enitials element added (user-initials) in dropdown-custom-trigger element.
+        - On button tag dropdown trigger, same page, i added onclick="this.focus()", wich solves safari dropdown bug, with button element.
+  
+- CSS changes:
+    * CSS file changed
+
     
 
 
