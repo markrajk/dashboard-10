@@ -1553,6 +1553,7 @@ i {
   }
 
   & .footer {
+    border-top: 1px solid #E1E1E1;
     text-align: right;
     width: 100%;
     @include align-self(flex-end);
