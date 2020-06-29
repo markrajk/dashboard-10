@@ -3212,8 +3212,7 @@ i {
     .teams-settings-general-header .button {
       margin-right: 1.4rem; }
   .teams-settings-general-body {
-    max-width: 79.7rem;
-    animation: 1.2s ease-in teams-settings-out; }
+    max-width: 79.7rem; }
     .teams-settings-general-body .settings-table-header {
       height: 3.7rem;
       padding: 1rem 1.7rem;
@@ -3361,8 +3360,7 @@ i {
     margin-right: 1.4rem; }
   .teams-settings-feedback-body {
     max-width: 81.7rem;
-    max-height: calc(100vh - 26.3rem - 1.5px);
-    animation: 1.2s ease-in teams-settings-in; }
+    max-height: calc(100vh - 26.3rem - 1.5px); }
     .teams-settings-feedback-body .subheader-text {
       margin-bottom: 1.4rem;
       font-size: 1.7rem;
@@ -7630,20 +7628,6 @@ i {
     line-height: 1.33;
     color: #ffffff; }
 
-@keyframes teams-settings-out {
-  from {
-    transform: translateX(0%);
-    opacity: 1; }
-  to {
-    transform: translateX(-100%);
-    opacity: 0; } }
-@keyframes teams-settings-in {
-  from {
-    transform: translateX(100%);
-    opacity: 0; }
-  to {
-    transform: translateX(0%);
-    opacity: 1; } }
 p:not(.no-ls), span:not(.no-ls), a, li {
   letter-spacing: .2px; }
 

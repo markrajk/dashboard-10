@@ -4601,7 +4601,6 @@ i {
   &-body {
     //max-height: calc(100% - 27rem);
     max-width: 79.7rem;
-    animation: 1.2s ease-in teams-settings-out;
 
     & .settings-table {
       //height: 100%;
@@ -4812,7 +4811,6 @@ i {
   &-body {
     max-width: 81.7rem;
     max-height: calc(100vh - 26.3rem - 1.5px);
-    animation: 1.2s ease-in teams-settings-in;
 
     & .subheader-text {
       margin-bottom: 1.4rem;
@@ -10414,29 +10412,29 @@ i {
 // ================================================
 //              ANIMATION
 // ================================================
-@keyframes teams-settings-out{
-  from {
-    transform: translateX(0%);
-    opacity: 1;
-  }
+// @keyframes teams-settings-out{
+//   from {
+//     transform: translateX(0%);
+//     opacity: 1;
+//   }
 
-  to {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-}
+//   to {
+//     transform: translateX(-100%);
+//     opacity: 0;
+//   }
+// }
 
-@keyframes teams-settings-in{
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
+// @keyframes teams-settings-in{
+//   from {
+//     transform: translateX(100%);
+//     opacity: 0;
+//   }
 
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
+//   to {
+//     transform: translateX(0%);
+//     opacity: 1;
+//   }
+// }
 
 p:not(.no-ls), span:not(.no-ls), a, li {
   letter-spacing: .2px;
