@@ -682,6 +682,121 @@ i {
     color: #7f7f7f;
     text-decoration: underline; }
 
+#inviteEmployeesModal .modal-dialog {
+  max-width: 55.1rem; }
+#inviteEmployeesModal .modal-content {
+  border-radius: 4px; }
+#inviteEmployeesModal .modal-header {
+  padding-bottom: 0; }
+  #inviteEmployeesModal .modal-header-title {
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.32;
+    letter-spacing: 0.19px;
+    color: #65737e; }
+#inviteEmployeesModal .modal-body {
+  padding: 5rem 1.6rem 2.5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+  #inviteEmployeesModal .modal-body .info {
+    margin-bottom: 1.1rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.13px;
+    color: #7b8993; }
+    #inviteEmployeesModal .modal-body .info span {
+      font-weight: 700; }
+  #inviteEmployeesModal .modal-body textarea {
+    padding: .9rem;
+    margin-bottom: 2.6rem;
+    width: 100%;
+    height: 24rem;
+    border-radius: 4px;
+    border: solid 1px #0070e0;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.15px; }
+    #inviteEmployeesModal .modal-body textarea::placeholder {
+      color: #a9a9a9; }
+  #inviteEmployeesModal .modal-body .choice {
+    padding: 1.4rem 1.6rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    border-radius: 4px;
+    border: solid 1px #d0d4d9;
+    background-color: #f6f9fc; }
+    #inviteEmployeesModal .modal-body .choice .pretty {
+      margin-right: 0;
+      font-size: 2.5rem; }
+    #inviteEmployeesModal .modal-body .choice-label {
+      width: 100%;
+      cursor: pointer; }
+      #inviteEmployeesModal .modal-body .choice-label-top {
+        margin-bottom: .4rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+        color: #3d464d; }
+      #inviteEmployeesModal .modal-body .choice-label-bot {
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.38;
+        letter-spacing: 0.13px;
+        color: #7b8993; }
+    #inviteEmployeesModal .modal-body .choice:first-of-type {
+      margin-bottom: .8rem; }
+#inviteEmployeesModal .footer {
+  text-align: right;
+  width: 100%;
+  -webkit-align-self: flex-end;
+  -moz-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 1.7rem;
+  background-color: #f7f9fa; }
+  #inviteEmployeesModal .footer .button {
+    padding: .5rem 2.2rem;
+    font-size: 1.5rem; }
+  #inviteEmployeesModal .footer .button-outlined {
+    margin-right: 1.2rem; }
+
 #inviteNewMemberModal .modal-dialog {
   max-width: 84.6rem; }
   #inviteNewMemberModal .modal-dialog .modal-content {
