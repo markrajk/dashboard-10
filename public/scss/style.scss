@@ -7472,7 +7472,19 @@ i {
       
       & tr {
         padding-left: 1.7rem;
-          padding-right: 1.7rem;
+        padding-right: 1.7rem;
+
+        & td {
+          & .icon-caret-down,
+          & .icon-caret-up {
+            margin-left: .3rem;
+            font-size: .8rem;
+          }
+
+          & button {
+            color: #647282;
+          }
+        }
       }
     }
 
@@ -7790,6 +7802,18 @@ i {
         & tr {
           padding-left: 1.7rem;
             padding-right: 1.7rem;
+
+            & td {
+              & .icon-caret-down,
+              & .icon-caret-up {
+                margin-left: .3rem;
+                font-size: .8rem;
+              }
+    
+              & button {
+                color: #647282;
+              }
+            }
         }
       }
   
@@ -8161,6 +8185,18 @@ i {
       & tr {
         padding-left: 1.7rem;
           padding-right: 1.7rem;
+
+          & td {
+            & .icon-caret-down,
+            & .icon-caret-up {
+              margin-left: .3rem;
+              font-size: .8rem;
+            }
+  
+            & button {
+              color: #647282;
+            }
+          }
       }
     }
 
