@@ -632,7 +632,8 @@ input, button, select, optgroup, textarea:not(input[type=checkbox]) {
   appearance: none!important;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus {
   outline: none;
   border-color: #1a9cfc!important;
 }
@@ -8414,7 +8415,7 @@ i {
 .company-settings {
   padding:2.5rem 0;
   border-top: 1px solid #e1e1e1;
-  max-width: 80.5rem;
+  max-width: 80rem;
   padding-top: 0;
   //padding-right: calc(100% - 72rem);
 
@@ -8440,7 +8441,7 @@ i {
   }
 
   &-body {
-    max-width: 72rem;
+    max-width: 80rem;
     max-height: calc(100vh - 30rem);
 
     & .settings-table {
@@ -8505,10 +8506,18 @@ i {
           text-align: left;
           border-radius: 4px;
           border: solid 1px #cfd7e0;
+
+          &::placeholder {
+            color: #1b2733;
+          }
         }
 
         & .column-03 {
           color: #1267fb;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
 
@@ -8540,6 +8549,7 @@ i {
         margin-top: 2.14rem;
         margin-left: 1rem;
         font-size: 1.4rem;
+        font-weight: 500;
         line-height: 1.36;
         color: #ff3636;
       }
