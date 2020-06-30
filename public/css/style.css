@@ -803,6 +803,85 @@ i {
   #inviteEmployeesModal .footer .button-outlined {
     margin-right: 1.2rem; }
 
+#updateAddressModal .modal-dialog,
+#updateContactModal .modal-dialog {
+  max-width: 39rem; }
+#updateAddressModal .modal-content,
+#updateContactModal .modal-content {
+  border-radius: 4px;
+  background-color: #ffffff; }
+#updateAddressModal .modal-body,
+#updateContactModal .modal-body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 29rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+  #updateAddressModal .modal-body .title,
+  #updateContactModal .modal-body .title {
+    margin-bottom: 2.3rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    line-height: 1.32;
+    color: #454545; }
+  #updateAddressModal .modal-body .input-container,
+  #updateContactModal .modal-body .input-container {
+    width: 100%; }
+    #updateAddressModal .modal-body .input-container label,
+    #updateContactModal .modal-body .input-container label {
+      display: block;
+      margin-bottom: .8rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.38;
+      letter-spacing: 0.13px;
+      color: #7b8993; }
+    #updateAddressModal .modal-body .input-container input,
+    #updateContactModal .modal-body .input-container input {
+      padding: .6rem 1.1rem;
+      margin-bottom: 2.8rem;
+      width: 100%;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.36;
+      letter-spacing: 0.14px;
+      color: #6a6a6a;
+      border-radius: 4px;
+      border: solid 1px #d6d6d6; }
+#updateAddressModal .modal-footer,
+#updateContactModal .modal-footer {
+  background-color: #f7f9fa; }
+  #updateAddressModal .modal-footer .buttons,
+  #updateContactModal .modal-footer .buttons {
+    margin: 0 auto;
+    padding: 1.6rem 1rem;
+    max-width: 29rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    #updateAddressModal .modal-footer .buttons .button,
+    #updateContactModal .modal-footer .buttons .button {
+      width: 48%; }
+      #updateAddressModal .modal-footer .buttons .button-outlined,
+      #updateContactModal .modal-footer .buttons .button-outlined {
+        background-color: #FFF; }
+
 #inviteNewMemberModal .modal-dialog {
   max-width: 84.6rem; }
   #inviteNewMemberModal .modal-dialog .modal-content {
@@ -5937,11 +6016,11 @@ i {
     top: 0;
     left: 0;
     z-index: 10;
-    max-width: 101.2rem;
+    max-width: 89.5rem;
     border-top: 1px solid #e1e1e1; }
   .company-teams-body {
     padding-top: 3.4rem;
-    max-width: 101.2rem;
+    max-width: 89.5rem;
     max-height: calc(100vh - 17.1rem - 1.5px); }
     .company-teams-body .subheader-text {
       margin-bottom: 1.4rem;
@@ -6215,12 +6294,12 @@ i {
         .company-teams-body .table-custom .table-custom-col-03 {
           display: none; } }
     .company-teams-body .table-custom .table-custom-col-05 {
-      -webkit-box-flex: 0.6;
-      -webkit-flex: 0.6;
-      -moz-box-flex: 0.6;
-      -moz-flex: 0.6;
-      -ms-flex: 0.6;
-      flex: 0.6;
+      -webkit-box-flex: 0.3;
+      -webkit-flex: 0.3;
+      -moz-box-flex: 0.3;
+      -moz-flex: 0.3;
+      -ms-flex: 0.3;
+      flex: 0.3;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       -webkit-justify-content: center;
@@ -6229,15 +6308,15 @@ i {
       .company-teams-body .table-custom .table-custom-col-05 a, .company-teams-body .table-custom .table-custom-col-05 button:not(.btn-custom-primary) {
         text-align: center;
         width: 100%;
-        color: #ff2424; }
+        color: #647282; }
       @media (max-width: 575px) {
         .company-teams-body .table-custom .table-custom-col-05 {
-          -webkit-box-flex: 0.8;
-          -webkit-flex: 0.8;
-          -moz-box-flex: 0.8;
-          -moz-flex: 0.8;
-          -ms-flex: 0.8;
-          flex: 0.8; } }
+          -webkit-box-flex: 0.3;
+          -webkit-flex: 0.3;
+          -moz-box-flex: 0.3;
+          -moz-flex: 0.3;
+          -ms-flex: 0.3;
+          flex: 0.3; } }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       .company-teams-body .table-custom td:nth-of-type(4.4), .company-teams-body .table-custom th:nth-of-type(4.4) {
         padding-left: 1.7rem; } }
@@ -6643,6 +6722,17 @@ i {
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 1.5rem; }
+      .company-settings-body .settings-table-row input.column-02 {
+        width: 100%;
+        max-width: 40rem;
+        padding: .6rem 1.1rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        color: #1b2733;
+        text-align: left;
+        border-radius: 4px;
+        border: solid 1px #cfd7e0; }
       .company-settings-body .settings-table-row .column-03 {
         color: #1267fb; }
       .company-settings-body .settings-table-row img {

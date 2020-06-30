@@ -1580,6 +1580,84 @@ i {
   }
 }
 
+#updateAddressModal,
+#updateContactModal {
+  & .modal-dialog {
+    max-width: 39rem;
+  }
+
+  & .modal-content {
+    border-radius: 4px;
+    background-color: #ffffff;
+  }
+
+  & .modal-header {}
+
+  & .modal-body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 29rem;
+    @include align-items(flex-start);
+
+    & .title {
+      margin-bottom: 2.3rem;
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 1.32;
+      color: #454545;
+    }
+
+    & .input-container {
+        width: 100%;
+
+      & label {
+        display: block;
+        margin-bottom: .8rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.38;
+        letter-spacing: 0.13px;
+        color: #7b8993;
+      }
+
+      & input {
+        padding: .6rem 1.1rem;
+        margin-bottom: 2.8rem;
+        width: 100%;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        letter-spacing: 0.14px;
+        color: #6a6a6a;
+        border-radius: 4px;
+        border: solid 1px #d6d6d6;
+      }
+    }
+  }
+
+  & .modal-footer {
+    background-color: #f7f9fa;
+
+    & .buttons {
+      margin: 0 auto;
+      padding: 1.6rem 1rem;
+      max-width: 29rem;
+      width: 100%;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      & .button {
+        width: 48%;
+
+        &-outlined {
+          background-color: #FFF;
+        }
+      }
+    }
+  }
+}
+
 #inviteNewMemberModal {
   & .modal-dialog {
     max-width: 84.6rem;
@@ -7606,13 +7684,13 @@ i {
     top: 0;
     left: 0;
     z-index: 10;
-    max-width: 101.2rem;
+    max-width: 89.5rem;
     border-top: 1px solid #e1e1e1;
   }
 
   &-body {
     padding-top: 3.4rem;
-    max-width: 101.2rem;
+    max-width: 89.5rem;
     max-height: calc(100vh - 17.1rem - 1.5px);
 
     // @include respond(desktop-xsm) {
@@ -7916,18 +7994,18 @@ i {
         }
   
         & .table-custom-col-05 {
-          @include flex(.6);
+          @include flex(.3);
           @include justify-content(center);
   
           & a,button:not(.btn-custom-primary) {
             text-align: center;
             width: 100%;
+            color: #647282;
             // max-width: 9.4rem;
-            color: #ff2424;
           }
   
           @include respond(desktop-xsm) {
-            @include flex(.8);
+            @include flex(.3);
           }
         }
   
@@ -8402,6 +8480,8 @@ i {
           height: 8.8rem;
         }
 
+        
+
         & .column-01 {
           margin-right: auto;
         }
@@ -8412,6 +8492,19 @@ i {
           @include flex-direction(column);
           margin-left: 1rem;
           margin-right: 1.5rem;
+        }
+
+        & input.column-02 {
+          width: 100%;
+          max-width: 40rem;
+          padding: .6rem 1.1rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #1b2733;
+          text-align: left;
+          border-radius: 4px;
+          border: solid 1px #cfd7e0;
         }
 
         & .column-03 {
