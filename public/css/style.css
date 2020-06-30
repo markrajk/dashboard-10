@@ -6134,7 +6134,7 @@ i {
       padding-right: 1.7rem; }
       .company-teams-body .table-custom-head tr td .icon-caret-down, .company-teams-body .table-custom-head tr td .icon-caret-up {
         margin-left: .3rem;
-        font-size: .8rem; }
+        font-size: 0.75rem !important; }
       .company-teams-body .table-custom-head tr td button {
         color: #647282; }
     .company-teams-body .table-custom-body {
