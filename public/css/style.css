@@ -5886,6 +5886,9 @@ i {
       color: #B1B1B1;
       cursor: pointer;
       transition: all .3s ease-in-out; }
+      .company-members .table-custom .table-custom-col-04 .icon-close:hover {
+        transition: all .2s ease-in-out;
+        transform: translate(-100%, -50%) scale(1.5); }
     @media (max-width: 575px) {
       .company-members .table-custom .table-custom-col-04 {
         -webkit-box-flex: 0.8;

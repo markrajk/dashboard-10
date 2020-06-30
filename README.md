@@ -105,7 +105,11 @@ Link all pages and make modals work on all pages with that functionality.
   
 - CSS changes:
     * CSS file changed
-
+## Changes 30.06.2020
+- HTML changes:
+  
+- CSS changes:
+    * CSS file changed
     
 
 
