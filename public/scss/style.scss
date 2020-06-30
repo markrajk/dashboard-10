@@ -3471,6 +3471,7 @@ i {
   }
 
   &-bottom {
+    max-width: 128.2rem;
     @include flexbox;
     @include align-items(center);
     padding: 4.5rem 0 1.1rem;
@@ -4155,7 +4156,7 @@ i {
 // COMPARE TEAMS START
 // ==================================
 .teams-compare {
-  //max-width: 103rem;
+  max-width: 128.2rem;
   //padding-right: calc(100% - 103rem);
 
   // max-height: calc(100vh - 20rem - 1.5px);
@@ -4176,7 +4177,7 @@ i {
     position: sticky;
     top: 0;
     left: 0;
-    max-width: 100%;
+    //max-width: 128.2rem;
     border-top: 1px solid #e1e1e1;
     z-index: 10;
   }

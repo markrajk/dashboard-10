@@ -2425,6 +2425,7 @@ i {
               font-weight: 400;
               line-height: 1.33; }
   .header-bottom {
+    max-width: 128.2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2944,6 +2945,7 @@ i {
         right: 0rem; }
 
 .teams-compare {
+  max-width: 128.2rem;
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -2955,7 +2957,6 @@ i {
     position: sticky;
     top: 0;
     left: 0;
-    max-width: 100%;
     border-top: 1px solid #e1e1e1;
     z-index: 10; }
   .teams-compare::-webkit-scrollbar {
