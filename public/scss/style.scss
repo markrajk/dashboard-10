@@ -7395,7 +7395,11 @@ i {
         & tr {
           border-bottom: solid 1px #e6e8eb;
 
-          
+          &:hover {
+            & .icon-close {
+              display: block;
+            }
+          }
 
           & > td,
           & > td a {
@@ -7459,7 +7463,7 @@ i {
       }
 
       & .table-custom-col-01 {
-        @include flex(1);
+        @include flex(.8);
 
         @include respond(desktop-md) {
           @include flex(.8);
@@ -7482,14 +7486,14 @@ i {
       }
 
       & .table-custom-col-03 {
-        @include flex(.5);
+        @include flex(.7);
 
         @include respond(desktop-md) {
-          @include flex(.5);
+          @include flex(.7);
         }
 
         @include respond(desktop-xsm) {
-          @include flex(.5);
+          @include flex(.8);
         }
       }
 
@@ -7507,6 +7511,7 @@ i {
         }
 
         & .icon-close {
+          display: none;
           position: absolute;
           top: 50%;
           left: 100%;
