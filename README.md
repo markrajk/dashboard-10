@@ -107,7 +107,9 @@ Link all pages and make modals work on all pages with that functionality.
     * CSS file changed
 ## Changes 30.06.2020
 - HTML changes:
-  
+  * company-teams, company-members & company-admin tables changed, few changes during day not sure what version you have.
+  * company-settings, company description input added, as well as 2 modals for address and contact person
+  * teams-settings-lead added as well as button for same page on other teams settings pages.
 - CSS changes:
     * CSS file changed
     
