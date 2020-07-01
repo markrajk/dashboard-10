@@ -4197,7 +4197,7 @@ i {
       padding-top: 2.7rem;
       padding-bottom: 4.7rem;
       @include flexbox;
-      @include align-items(center);
+      @include align-items(flex-start);
       @include justify-content(space-between);
 
       //TABLET
@@ -4235,7 +4235,7 @@ i {
           padding-bottom: 1.5rem;
           position: relative;
           text-align: center;
-          border-bottom: 1.75px solid #EDEDED;
+          // border-bottom: 1.75px solid #EDEDED;
 
           &-title {
             font-size: 2.6rem;
@@ -4253,30 +4253,45 @@ i {
           }
 
           &-close {
-            width: 2rem;
-            height: 2rem;
-            @include flexbox();
-            @include align-items(center);
-            @include justify-content(center);
-            border: 1px solid #868686;
-            border-radius: 50%;
+            // width: 2rem;
+            // height: 2rem;
+            // @include flexbox();
+            // @include align-items(center);
+            // @include justify-content(center);
+            // border: 1px solid #868686;
+            // border-radius: 50%;
             position: absolute;
             top: 0;
             left: 100%;
-            transform: translate(-200%, 100%);
+            transform: translate(-150%, 50%);
             cursor: pointer;
 
-            & .icon-close {
-              font-size: .8rem;
-              color: #868686;
-            }
+            // & .icon-close {
+            //   font-size: .8rem;
+            //   color: #868686;
+            // }
+          }
+        }
+
+        & .b-b {
+          margin-left: auto;
+          margin-right: auto;
+          // padding-left: 11%;
+          // padding-right: 11%;
+          width: 78%;
+          // height: 1.75px;
+          // background-color: #ededed;
+          border-bottom: 1.75px solid #EDEDED;
+
+          &-header {
+            width: 90%;
           }
         }
 
         &-main {
-          //height: 100%;
-          padding-bottom: 5.6rem;
-          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem - 10rem);
+          height: 100%;
+          // padding-bottom: 5.6rem;
+          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem);
 
           overflow-y: auto;
           scrollbar-width: none; /* Firefox */
@@ -4292,11 +4307,11 @@ i {
 
           & .graph-card {
             height: 31rem;
-            padding: 2.8rem 11.25% 2.2rem;
+            padding: 3rem 11.25% 2.2rem;
+            margin-bottom: 1rem;
             // padding-left: 11.25%;
             // padding-right: 11.25%;
             border: 0;
-            border-bottom: 1.25px solid #EDEDED;
 
             &-header {
               margin-left: -5.6%;
@@ -4331,16 +4346,74 @@ i {
             &-body {
               padding-left: 0;
               padding-right: 0;
+
+              & .bar {
+                max-height: 14.9rem;
+                width: 1.85rem;
+                border-radius: .4rem;
+
+                &-fill {
+
+                  width: 1.85rem;
+                  border-radius: .4rem;
+                }
+
+                &-info {
+                  bottom: -1.3rem;
+                  font-family: HankRnd-Bold;
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  line-height: 1.28;
+                  letter-spacing: 0.13px;
+                  color: #6f6e77;
+                }
+              }
             }
           }
 
           & .progress-custom {
             padding-left: 11.25%;
             padding-right: 11.25%;
+
+            &-sub {
+              margin-bottom: 0;
+              font-size: 1.5rem;
+              font-weight: 500;
+              line-height: 1.33;
+              color: #818181;
+            }
+
+            &-info {
+              @include align-items(baseline);
+
+              & h3 {
+                font-size: 3.5rem;
+                font-weight: 700;
+                line-height: 1.31;
+                color: #1f1f1f;
+              }
+              & .up {
+                font-size: 1.65rem;
+
+                & i {
+                  font-size: 1.7rem;
+                }
+              }
+            }
+
+            &-bar {
+              height: 1.3rem;
+              border-radius: .4rem;
+
+              &-fill {
+                border-radius: .4rem;
+              }
+            }
           }
         }
 
         &-footer {
+          margin-top: 5.6rem;
           padding-top: 2.6rem;
           padding-bottom: 5.2rem;
           padding-left: 4.6rem;
