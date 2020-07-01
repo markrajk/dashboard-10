@@ -112,6 +112,11 @@ Link all pages and make modals work on all pages with that functionality.
   * teams-settings-lead added as well as button for same page on other teams settings pages.
 - CSS changes:
     * CSS file changed
+## Changes 01.07.2020
+- HTML changes:
+  * company pages header bottom page links "Rights" changed to "Admin rights"
+- CSS changes:
+    * CSS file changed
     
 
 
