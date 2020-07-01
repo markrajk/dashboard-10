@@ -2486,6 +2486,7 @@ i {
       letter-spacing: 0.15px;
       color: #1b2733; }
       .header-bottom .compare-add button {
+        font-weight: 500;
         color: #1264a3;
         text-decoration: underline; }
 
@@ -2965,7 +2966,7 @@ i {
     height: 0; }
   .teams-compare-body {
     padding-top: 2.7rem;
-    padding-bottom: 4.7rem;
+    padding-bottom: 2.7rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2994,7 +2995,7 @@ i {
       width: 31%;
       border-radius: 8px;
       box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
-      border: solid 1.5px #ebebeb; }
+      border: solid 1.25px #ebebeb; }
       @media (max-width: 991px) {
         .teams-compare-body-card {
           width: 50%; }
@@ -3035,7 +3036,7 @@ i {
           width: 90%; }
       .teams-compare-body-card-main {
         height: 100%;
-        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem);
+        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem + 2.3rem);
         overflow-y: auto;
         scrollbar-width: none;
         /* Firefox */
@@ -3079,6 +3080,9 @@ i {
                 font-weight: 500;
                 line-height: 1.33;
                 color: #137efe; }
+                .teams-compare-body-card-main .graph-card-header h4 span svg {
+                  margin-right: .3rem;
+                  margin-top: -.3rem; }
             .teams-compare-body-card-main .graph-card-header h3 {
               font-size: 3.2rem;
               font-weight: 700;
@@ -3096,9 +3100,9 @@ i {
                 border-radius: .4rem; }
               .teams-compare-body-card-main .graph-card-body .bar-info {
                 bottom: -1.3rem;
-                font-family: HankRnd-Bold;
-                font-size: 1.25rem;
-                font-weight: 700;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 500;
                 line-height: 1.28;
                 letter-spacing: 0.13px;
                 color: #6f6e77; }
