@@ -3451,8 +3451,6 @@ i {
   .teams-people-view .table-custom-head {
     border: none;
     height: 3.7rem; }
-    .teams-people-view .table-custom-head .icon-caret-up, .teams-people-view .table-custom-head .icon-caret-down {
-      font-size: .725rem; }
   .teams-people-view .table-custom-body {
     border: none;
     max-height: calc(100vh - 11rem - 16rem - 5rem);

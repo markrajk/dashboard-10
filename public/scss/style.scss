@@ -11507,7 +11507,6 @@ p:not(.no-ls), span:not(.no-ls), a, li {
     & .icon-caret-up,
     & .icon-caret-down {
         font-size: .8rem!important;
-        color: red!important;
       }
   }
 }
@@ -11521,8 +11520,7 @@ p:not(.no-ls), span:not(.no-ls), a, li {
   
       & .icon-caret-up,
       & .icon-caret-down {
-          font-size: .4rem!important;
-          color: red!important;
+          font-size: 8px!important;
         }
     }
   }
