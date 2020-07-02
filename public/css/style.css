@@ -8667,4 +8667,4 @@ p:not(.no-ls), span:not(.no-ls), a, li {
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-      font-size: 7px !important; } } }
+      font-size: 7.5px !important; } } }
