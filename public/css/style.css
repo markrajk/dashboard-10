@@ -3453,6 +3453,8 @@ i {
   .teams-people-view .table-custom-head {
     border: none;
     height: 3.7rem; }
+    .teams-people-view .table-custom-head .icon-caret-up, .teams-people-view .table-custom-head .icon-caret-down {
+      font-size: .725rem; }
   .teams-people-view .table-custom-body {
     border: none;
     max-height: calc(100vh - 11rem - 16rem - 5rem);
@@ -8666,3 +8668,12 @@ p:not(.no-ls), span:not(.no-ls), a, li {
     /* height: 100%!important; */
     overflow: auto !important;
     max-height: 100% !important; } }
+.table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
+  font-size: 0.8rem !important;
+  color: red; }
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
+      font-size: 0.7rem !important;
+      color: red; } } }

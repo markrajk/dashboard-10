@@ -4752,6 +4752,11 @@ i {
     &-head {
       border: none;
       height: 3.7rem;
+
+      & .icon-caret-up,
+      & .icon-caret-down {
+        font-size: .725rem;
+      }
     }
 
     &-body {
@@ -11503,3 +11508,29 @@ p:not(.no-ls), span:not(.no-ls), a, li {
     max-height: 100% !important;
   }
 }
+
+.table-custom {
+
+  &-head {
+
+    & .icon-caret-up,
+    & .icon-caret-down {
+        font-size: .8rem!important;
+      }
+  }
+}
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+  .table-custom {
+
+    &-head {
+  
+      & .icon-caret-up,
+      & .icon-caret-down {
+          font-size: .7rem!important;
+        }
+    }
+  }
+}}
