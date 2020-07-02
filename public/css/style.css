@@ -2990,7 +2990,6 @@ i {
         -moz-justify-content: space-evenly;
         justify-content: space-evenly; } }
     .teams-compare-body-card {
-      height: 100%;
       max-width: 40rem;
       width: 31%;
       border-radius: 8px;
