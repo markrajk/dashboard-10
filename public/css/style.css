@@ -83,7 +83,8 @@ button {
   background-color: transparent;
   border: none;
   outline: none !important;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: inherit; }
 
 select > option {
   font-size: inherit !important;
