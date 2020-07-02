@@ -308,7 +308,7 @@
                                                 <path
                                                     d="M11.132,3.375a7.757,7.757,0,1,0,7.757,7.757A7.756,7.756,0,0,0,11.132,3.375ZM4.419,11.132a6.714,6.714,0,0,1,13.423-.283,2.271,2.271,0,0,0-1.634-.9c-1.026,0-1.555.958-1.9,1.593-.052.093-.1.183-.145.261a1.846,1.846,0,0,1-1.585,1.078,1.51,1.51,0,0,1-1.2-1.074A2.909,2.909,0,0,0,9.4,9.976a1.776,1.776,0,0,0-1.667.8c-.119.149-.257.351-.414.582-.388.578-.977,1.447-1.421,1.522a1.7,1.7,0,0,1-1.358-.459A6.689,6.689,0,0,1,4.419,11.132Z"
                                                     transform="translate(-3.375 -3.375)" fill="#137efe" />
-                                                </svg>Months</span></h4>
+                                            </svg>Months</span></h4>
                                     <h3 class="text-truncate">Positive</h3>
                                 </div>
 
@@ -477,7 +477,7 @@
                                                 <path
                                                     d="M11.132,3.375a7.757,7.757,0,1,0,7.757,7.757A7.756,7.756,0,0,0,11.132,3.375ZM4.419,11.132a6.714,6.714,0,0,1,13.423-.283,2.271,2.271,0,0,0-1.634-.9c-1.026,0-1.555.958-1.9,1.593-.052.093-.1.183-.145.261a1.846,1.846,0,0,1-1.585,1.078,1.51,1.51,0,0,1-1.2-1.074A2.909,2.909,0,0,0,9.4,9.976a1.776,1.776,0,0,0-1.667.8c-.119.149-.257.351-.414.582-.388.578-.977,1.447-1.421,1.522a1.7,1.7,0,0,1-1.358-.459A6.689,6.689,0,0,1,4.419,11.132Z"
                                                     transform="translate(-3.375 -3.375)" fill="#137efe" />
-                                                </svg>Months</span></h4>
+                                            </svg>Months</span></h4>
                                     <h3 class="text-truncate">Positive</h3>
                                 </div>
 
@@ -646,7 +646,7 @@
                                                 <path
                                                     d="M11.132,3.375a7.757,7.757,0,1,0,7.757,7.757A7.756,7.756,0,0,0,11.132,3.375ZM4.419,11.132a6.714,6.714,0,0,1,13.423-.283,2.271,2.271,0,0,0-1.634-.9c-1.026,0-1.555.958-1.9,1.593-.052.093-.1.183-.145.261a1.846,1.846,0,0,1-1.585,1.078,1.51,1.51,0,0,1-1.2-1.074A2.909,2.909,0,0,0,9.4,9.976a1.776,1.776,0,0,0-1.667.8c-.119.149-.257.351-.414.582-.388.578-.977,1.447-1.421,1.522a1.7,1.7,0,0,1-1.358-.459A6.689,6.689,0,0,1,4.419,11.132Z"
                                                     transform="translate(-3.375 -3.375)" fill="#137efe" />
-                                                </svg>Months</span></h4>
+                                            </svg>Months</span></h4>
                                     <h3 class="text-truncate">Positive</h3>
                                 </div>
 
@@ -796,6 +796,7 @@
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
     <script src="../public/js/main.js"></script>
+    <script src="../public/js/loadash.js"></script>
 
     <script>
         // CHART & NUMBER OF BARS
@@ -834,6 +835,25 @@
         })
 
         window.addEventListener('resize', numberOfChartBars);
+
+
+
+
+        //SCROLL
+        var compareCards = document.querySelectorAll('.teams-compare-body-card-main');
+        for (var i = 0; i < compareCards.length; i++) {
+            compareCards[i].addEventListener('scroll', function (e) {
+                var currentScroll = this.scrollTop;
+
+                for (var j = 0; j < compareCards.length; j++) {
+                    if (compareCards[j] === this) {
+                        continue
+                    } else {
+                        compareCards[j].scrollTop = currentScroll;
+                    }
+                }
+            })
+        }
     </script>
 
 </body>
