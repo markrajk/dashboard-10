@@ -4606,6 +4606,7 @@ i {
 // ==================================
 .teams-people-view {
   padding:2.5rem 0;
+  padding-bottom: 0;
   border-top: 1px solid #e1e1e1;
   max-width: 79.9rem;
 
@@ -4683,7 +4684,7 @@ i {
       @include flex-direction(column);
       position: relative;
       height: 100%;
-      max-height: calc(100vh - 11rem - 16rem - 8rem);
+      max-height: calc(100vh - 11rem - 16rem - 5rem);
       border-radius: 5px;
       box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
       border: solid 1px #eaeaea;
@@ -4755,7 +4756,7 @@ i {
 
     &-body {
       border: none;
-      max-height: calc(100vh - 11rem - 16rem - 8rem);
+      max-height: calc(100vh - 11rem - 16rem - 5rem);
       border-bottom: solid 1px #e6e8eb;
 
       & tr {
@@ -5465,17 +5466,20 @@ i {
         max-height: calc(100vh - 26.3rem - 1.5px - 15.4rem);
 
         & tr {
-          padding: 1rem 1.7rem;
+          padding: 0rem 1.7rem;
+          padding-bottom: 1.4rem;
 
           @include target-ie() {
             height: 5.7rem;
           }
 
           &.table-section-start {
+            padding-top: 1.4rem;
+            padding-top: 1.4rem;
             border-top: solid 1px #e6e8eb!important;
 
-            & + tr:not(.table-section-start) {
-              padding-top: .4rem;
+            & ~ tr:not(.table-section-start) {
+              //background-color: red;
             }
           }
 
