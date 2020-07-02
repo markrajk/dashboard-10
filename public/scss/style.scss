@@ -11459,6 +11459,298 @@ i {
 // CUSTOMER SERVICE END
 // ==================================
 
+// ==================================
+// REGISTER START
+// ==================================
+.register {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+
+  &-side {
+    padding-top: 22vh;
+    padding-right: 8.8rem;
+    padding-left: 4.2rem;
+    @include flexbox();
+    @include align-items(flex-start);
+    @include justify-content(flex-end);
+    height: 100%;
+    width: 38%;
+    box-shadow: 0 0 16px 0 rgba(178, 178, 178, 0.17);
+    background-color: #f6f6f6;
+
+    //TABLET
+    @include respond(desktop-md) {
+      @include justify-content(center);
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    &-list {
+
+      &-item {
+
+        white-space: nowrap;
+        &:not(:last-of-type) {
+          margin-bottom: 3rem;
+        }
+
+        &-link {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          font-size: 1.4rem;
+          font-weight: 700;
+          line-height: 1.36;
+          letter-spacing: 0.56px;
+          color: #b1b1b1;
+
+          &.active {
+            color: #1758b8;
+          }
+
+          &.completed {
+            & .symbol {
+              display: none;
+            }
+          }
+
+          & .check {
+            margin-right: 2.1rem;
+
+            & svg {
+              width: 2.7rem;
+              height: 2.7rem;
+            }
+          }
+
+          & .symbol {
+            margin-right: 2.1rem;
+            @include inline-flex();
+            @include align-items(center);
+            @include justify-content(center);
+            width: 2.7rem;
+            height: 2.7rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.33;
+            letter-spacing: 0.6px;
+            color: #1758b8;
+            border: solid 1.3px #1758b8;
+            border-radius: 50%;
+          }
+        }
+
+
+        &-nested-list {
+          margin-top: 2.6rem;
+          margin-left: 4.8rem;
+
+          &-item {
+            white-space: nowrap;
+            position: relative;
+            &:not(:last-of-type) {
+              margin-bottom: 2.4rem;
+            }
+
+            &-link {
+              font-size: 1.55rem;
+              font-weight: 400;
+              line-height: 1.29;
+              letter-spacing: 0.23px;
+              color: #7f7f7f;
+
+              &.active {
+                color: #3c3d43;
+              }
+
+              & span {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(200%, -50%);
+
+                //TABLET
+                @include respond(desktop-md) {
+                  transform: translate(0, -50%);
+                }
+
+                & svg {
+                  fill: #B5B5B5;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-body {
+    padding-top: 10.3vh;
+    padding-left: 8.8rem;
+    padding-right: 5rem;
+    padding-bottom: 7.8vh;
+    @include flexbox();
+    @include align-items(flex-start);
+    @include justify-content(flex-start);
+    @include flex-direction(column);
+    height: 100%;
+    width: 62%;
+    background-color: #eeeff1;
+
+    //TABLET
+    @include respond(desktop-md) {
+      @include justify-content(center);
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    //SMALL
+    @include respond(desktop-sm) {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+    &-top {
+      width: 100%;
+      max-width: 61.5rem;
+
+      &-help {
+        margin-bottom: 6.2vh;
+        text-align: right;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.31;
+        letter-spacing: 0.24px;
+        color: #707070;
+
+        & button {
+          font-weight: 500;
+          color: #2066d6;
+        }
+      }
+    }
+
+    &-header {
+      margin-bottom: 6.1vh;
+
+      &-title {
+        margin-bottom: 1.4rem;
+        font-size: 2.6rem;
+        font-weight: 500;
+        line-height: 1.31;
+        letter-spacing: 0.13px;
+        color: #2d2e33;
+      }
+
+      &-text {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: 0.15px;
+        color: #707070;
+      
+      }
+    }
+
+    &-main {
+      width: 100%;
+      max-width: 51.3rem;
+      margin-bottom: auto;
+
+      & .input-container {
+        width: 100%;
+
+        &:not(:last-of-type) {
+          margin-bottom: 2.6rem;
+        }
+
+        & label {
+          margin-bottom: 1rem;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: 0.14px;
+          color: #5c5d62;
+        }
+
+        & input {
+          padding: 1rem 1.4rem;
+          width: 100%;
+
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 1.31;
+          letter-spacing: 0.16px;
+
+          border-radius: 2px;
+          border: solid 1px #e6e5ea;
+          background-color: rgba(255, 255, 255, 0.59);
+
+          &::placeholder {
+            color: #cbcbcb;
+          }
+        }
+      }
+
+      &-input-double {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+
+        & .input-container {
+          width: 46.5%;
+          margin-bottom: 0!important;
+        }
+      }
+    }
+
+    &-bottom {
+      margin-top: 4rem;
+      width: 100%;
+      max-width: 51.3rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      &-prev {
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.36;
+        letter-spacing: 0.56px;
+        color: #797981;
+      }
+
+      &-next {
+        @include inline-flex();
+        @include align-items(center);
+        @include justify-content(center);
+        padding: 1rem 2.6rem;
+        padding-right: 2.2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.36;
+        letter-spacing: 0.56px;
+        color: #ffffff;
+
+        border-radius: 3px;
+        background-color: #0065f7;
+
+        & svg {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+// ==================================
+// REGISTER END
+// ==================================
+
 // ================================================
 //              ANIMATION
 // ================================================
