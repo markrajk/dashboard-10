@@ -8777,6 +8777,7 @@ i {
             letter-spacing: 0.23px;
             color: #7f7f7f; }
             .register-side-list-item-nested-list-item-link.active {
+              font-weight: 500;
               color: #3c3d43; }
             .register-side-list-item-nested-list-item-link span {
               position: absolute;
@@ -8927,7 +8928,7 @@ i {
       justify-content: space-between; }
       .register-body-bottom-prev {
         font-size: 1.4rem;
-        font-weight: 700;
+        font-weight: 500;
         line-height: 1.36;
         letter-spacing: 0.56px;
         color: #797981; }
