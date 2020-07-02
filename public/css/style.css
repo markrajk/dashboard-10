@@ -3937,6 +3937,8 @@ i {
         -ms-flex: 1;
         flex: 1; }
         .teams-settings-feedback-body .table-02 .table-custom-col-03 select {
+          margin-top: 1px;
+          margin-bottom: 1px;
           position: relative;
           width: 90%;
           max-width: 21.2rem;
@@ -4260,6 +4262,8 @@ i {
           text-align: center;
           width: 100%;
           color: #ff2424; }
+        .teams-settings-rights-body .table-custom .table-custom-col-04 .choose {
+          text-align: center; }
         @media (max-width: 575px) {
           .teams-settings-rights-body .table-custom .table-custom-col-04 {
             -webkit-box-flex: 0.8;

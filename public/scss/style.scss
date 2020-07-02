@@ -5525,6 +5525,8 @@ i {
         @include flex(1);
 
         & select {
+          margin-top: 1px;
+          margin-bottom: 1px;
           position: relative;
           width: 90%;
           max-width: 21.2rem;
@@ -5916,6 +5918,10 @@ i {
             width: 100%;
             // max-width: 9.4rem;
             color: #ff2424;
+          }
+
+          & .choose {
+            text-align: center;
           }
 
           @include respond(desktop-xsm) {
