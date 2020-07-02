@@ -2012,6 +2012,8 @@ i {
         padding-left: .3rem;
         width: 100%; }
         .sidebar-menu-list-item-link {
+          font-family: inherit;
+          text-align: left;
           font-weight: 400;
           display: inline-block;
           padding: 0.9rem 1.2rem;
@@ -8919,7 +8921,7 @@ i {
           width: 46.5%;
           margin-bottom: 0 !important; }
     .register-body-bottom {
-      margin-top: 4rem;
+      margin-top: 6rem;
       width: 100%;
       max-width: 51.3rem;
       display: -webkit-box;

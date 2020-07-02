@@ -117,6 +117,12 @@ Link all pages and make modals work on all pages with that functionality.
   * company pages header bottom page links "Rights" changed to "Admin rights"
 - CSS changes:
     * CSS file changed
-    
+## Changes 02.07.2020
+- HTML changes:
+  * teams-compare page added
+  * company-register page added
+  * In give feedback page in side menu links (Team marketing etc.) changed to buttons and i.icon-close added
+- CSS changes:
+    * CSS file changed
 
 
