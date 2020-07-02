@@ -6291,7 +6291,7 @@ i {
       .company-teams-body .table-custom-head tr td button {
         color: #647282; }
       .company-teams-body .table-custom-head tr td:last-of-type {
-        color: red; }
+        text-align: center; }
     .company-teams-body .table-custom-body {
       font-size: 1.35rem;
       font-weight: 400; }
