@@ -8669,9 +8669,11 @@ p:not(.no-ls), span:not(.no-ls), a, li {
     overflow: auto !important;
     max-height: 100% !important; } }
 .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-  font-size: 0.8rem !important; }
+  font-size: 0.8rem !important;
+  color: red !important; }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-      font-size: 0.7rem !important; } } }
+      font-size: 0.4rem !important;
+      color: red !important; } } }
