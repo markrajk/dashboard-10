@@ -1302,8 +1302,7 @@ i {
         margin-top: -.1rem;
         font-size: 1.2rem; }
         .table-custom-head .dropdown-custom-trigger i:first-of-type + i {
-          margin-left: .5rem;
-          font-size: .8rem; }
+          margin-left: .5rem; }
   .table-custom-body {
     display: block;
     overflow-y: auto;
