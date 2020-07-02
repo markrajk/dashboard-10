@@ -8693,7 +8693,8 @@ i {
     height: 100%;
     width: 38%;
     box-shadow: 0 0 16px 0 rgba(178, 178, 178, 0.17);
-    background-color: #f6f6f6; }
+    background-color: #f6f6f6;
+    z-index: 100; }
     @media (max-width: 991px) {
       .register-side {
         -webkit-box-pack: center;
@@ -8727,11 +8728,16 @@ i {
         font-weight: 700;
         line-height: 1.36;
         letter-spacing: 0.56px;
-        color: #b1b1b1; }
+        color: #787e7e; }
         .register-side-list-item-link.active {
           color: #1758b8; }
-        .register-side-list-item-link.completed .symbol {
-          display: none; }
+          .register-side-list-item-link.active .symbol {
+            color: #1758b8;
+            border: solid 1.5px #1758b8; }
+        .register-side-list-item-link.completed {
+          color: #b1b1b1; }
+          .register-side-list-item-link.completed .symbol {
+            display: none; }
         .register-side-list-item-link .check {
           margin-right: 2.1rem; }
           .register-side-list-item-link .check svg {
@@ -8760,8 +8766,8 @@ i {
           font-weight: 500;
           line-height: 1.33;
           letter-spacing: 0.6px;
-          color: #1758b8;
-          border: solid 1.3px #1758b8;
+          color: #7d7d7d;
+          border: solid 1.5px #dedede;
           border-radius: 50%; }
       .register-side-list-item-nested-list {
         margin-top: 2.6rem;
@@ -8780,7 +8786,10 @@ i {
             .register-side-list-item-nested-list-item-link.active {
               font-weight: 500;
               color: #3c3d43; }
+              .register-side-list-item-nested-list-item-link.active span {
+                display: block; }
             .register-side-list-item-nested-list-item-link span {
+              display: none;
               position: absolute;
               top: 50%;
               right: 0;
@@ -8791,10 +8800,10 @@ i {
               .register-side-list-item-nested-list-item-link span svg {
                 fill: #B5B5B5; }
   .register-body {
-    padding-top: 10.3vh;
+    padding-top: 6.6vh;
     padding-left: 8.8rem;
-    padding-right: 5rem;
-    padding-bottom: 7.8vh;
+    padding-right: 5.8rem;
+    padding-bottom: 14vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -8818,7 +8827,7 @@ i {
     flex-direction: column;
     height: 100%;
     width: 62%;
-    background-color: #eeeff1; }
+    background-color: #f3f6fa; }
     @media (max-width: 991px) {
       .register-body {
         -webkit-box-pack: center;
@@ -8833,10 +8842,10 @@ i {
         padding-left: 3rem;
         padding-right: 3rem; } }
     .register-body-top {
+      margin-bottom: 4.3vh;
       width: 100%;
-      max-width: 61.5rem; }
+      max-width: 100%; }
       .register-body-top-help {
-        margin-bottom: 6.2vh;
         text-align: right;
         font-size: 1.6rem;
         font-weight: 400;
@@ -8844,10 +8853,11 @@ i {
         letter-spacing: 0.24px;
         color: #707070; }
         .register-body-top-help button {
+          font-size: 1.6rem;
           font-weight: 500;
           color: #2066d6; }
     .register-body-header {
-      margin-bottom: 6.1vh; }
+      margin-bottom: 6.7vh; }
       .register-body-header-title {
         margin-bottom: 1.4rem;
         font-size: 2.6rem;
@@ -8929,7 +8939,7 @@ i {
       justify-content: space-between; }
       .register-body-bottom-prev {
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1.36;
         letter-spacing: 0.56px;
         color: #797981; }

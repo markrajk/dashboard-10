@@ -11481,6 +11481,7 @@ i {
     width: 38%;
     box-shadow: 0 0 16px 0 rgba(178, 178, 178, 0.17);
     background-color: #f6f6f6;
+    z-index: 100;
 
     //TABLET
     @include respond(desktop-md) {
@@ -11506,13 +11507,19 @@ i {
           font-weight: 700;
           line-height: 1.36;
           letter-spacing: 0.56px;
-          color: #b1b1b1;
+          color: #787e7e;
 
           &.active {
             color: #1758b8;
+
+            & .symbol {
+              color: #1758b8;
+              border: solid 1.5px #1758b8;
+            }
           }
 
           &.completed {
+            color: #b1b1b1;
             & .symbol {
               display: none;
             }
@@ -11538,8 +11545,8 @@ i {
             font-weight: 500;
             line-height: 1.33;
             letter-spacing: 0.6px;
-            color: #1758b8;
-            border: solid 1.3px #1758b8;
+            color: #7d7d7d;
+            border: solid 1.5px #dedede;
             border-radius: 50%;
           }
         }
@@ -11566,9 +11573,14 @@ i {
               &.active {
                 font-weight: 500;
                 color: #3c3d43;
+
+                & span {
+                  display: block;
+                }
               }
 
               & span {
+                display: none;
                 position: absolute;
                 top: 50%;
                 right: 0;
@@ -11591,17 +11603,17 @@ i {
   }
 
   &-body {
-    padding-top: 10.3vh;
+    padding-top: 6.6vh;
     padding-left: 8.8rem;
-    padding-right: 5rem;
-    padding-bottom: 7.8vh;
+    padding-right: 5.8rem;
+    padding-bottom: 14vh;
     @include flexbox();
     @include align-items(flex-start);
     @include justify-content(flex-start);
     @include flex-direction(column);
     height: 100%;
     width: 62%;
-    background-color: #eeeff1;
+    background-color: #f3f6fa;
 
     //TABLET
     @include respond(desktop-md) {
@@ -11617,11 +11629,11 @@ i {
     }
 
     &-top {
+      margin-bottom: 4.3vh;
       width: 100%;
-      max-width: 61.5rem;
+      max-width: 100%;
 
       &-help {
-        margin-bottom: 6.2vh;
         text-align: right;
         font-size: 1.6rem;
         font-weight: 400;
@@ -11630,6 +11642,7 @@ i {
         color: #707070;
 
         & button {
+          font-size: 1.6rem;
           font-weight: 500;
           color: #2066d6;
         }
@@ -11637,7 +11650,7 @@ i {
     }
 
     &-header {
-      margin-bottom: 6.1vh;
+      margin-bottom: 6.7vh;
 
       &-title {
         margin-bottom: 1.4rem;
@@ -11721,7 +11734,7 @@ i {
 
       &-prev {
         font-size: 1.4rem;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1.36;
         letter-spacing: 0.56px;
         color: #797981;
