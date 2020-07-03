@@ -9763,6 +9763,20 @@ i {
         color: #1758b8;
         text-decoration: underline; }
 
+.teams-settings-general-header .button-dark:hover, .teams-settings-general-header .button-dark:focus,
+.teams-settings-lead-header .button-dark:hover,
+.teams-settings-lead-header .button-dark:focus,
+.teams-settings-feedback-header .button-dark:hover,
+.teams-settings-feedback-header .button-dark:focus,
+.teams-settings-rights-header .button-dark:hover,
+.teams-settings-rights-header .button-dark:focus,
+.people-average-charts-header .button-dark:hover,
+.people-average-charts-header .button-dark:focus,
+.people-feedback-received-header .button-dark:hover,
+.people-feedback-received-header .button-dark:focus {
+  background-color: #0f2882;
+  border-color: #0f2882; }
+
 #not-yet {
   height: 6.6rem;
   margin: 4.5rem 0;

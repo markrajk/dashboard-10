@@ -12423,6 +12423,22 @@ i {
 //   }
 // }
 
+.teams-settings-general-header,
+.teams-settings-lead-header,
+.teams-settings-feedback-header,
+.teams-settings-rights-header,
+.people-average-charts-header,
+.people-feedback-received-header {
+  & .button-dark {
+    
+    &:hover,
+    &:focus {
+      background-color: #0f2882;
+      border-color: #0f2882;
+    }
+  }
+}
+
 #not-yet {
   height: 6.6rem;
   margin: 4.5rem 0;
