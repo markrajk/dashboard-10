@@ -1116,21 +1116,25 @@ i {
   margin-bottom: 2rem; }
 
 #transferOwnership .modal-dialog,
-#transferOwnershipConfirm .modal-dialog {
+#transferOwnershipConfirm .modal-dialog,
+#linkTeamModal .modal-dialog {
   max-width: 40rem;
   border-radius: 4px; }
 #transferOwnership .modal-header,
-#transferOwnershipConfirm .modal-header {
+#transferOwnershipConfirm .modal-header,
+#linkTeamModal .modal-header {
   padding: 2.5rem;
   padding-bottom: 0; }
 #transferOwnership .modal-body,
-#transferOwnershipConfirm .modal-body {
+#transferOwnershipConfirm .modal-body,
+#linkTeamModal .modal-body {
   padding-top: 1.2rem;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-bottom: 5rem; }
 #transferOwnership .title,
-#transferOwnershipConfirm .title {
+#transferOwnershipConfirm .title,
+#linkTeamModal .title {
   margin-bottom: 2.3rem;
   font-size: 1.9rem;
   font-weight: 400;
@@ -1138,7 +1142,8 @@ i {
   letter-spacing: 0.19px;
   color: #65737e; }
 #transferOwnership .text,
-#transferOwnershipConfirm .text {
+#transferOwnershipConfirm .text,
+#linkTeamModal .text {
   margin-bottom: 1.9rem;
   font-size: 1.3rem;
   font-weight: 500;
@@ -1148,10 +1153,12 @@ i {
   white-space: nowrap; }
   @media (max-width: 575px) {
     #transferOwnership .text,
-    #transferOwnershipConfirm .text {
+    #transferOwnershipConfirm .text,
+    #linkTeamModal .text {
       white-space: normal; } }
 #transferOwnership input,
-#transferOwnershipConfirm input {
+#transferOwnershipConfirm input,
+#linkTeamModal input {
   margin-bottom: 2rem;
   padding: .6rem 1.1rem;
   width: 100%;
@@ -1163,10 +1170,12 @@ i {
   line-height: 1.33;
   letter-spacing: 0.15px; }
   #transferOwnership input::placeholder,
-  #transferOwnershipConfirm input::placeholder {
+  #transferOwnershipConfirm input::placeholder,
+  #linkTeamModal input::placeholder {
     color: #a9a9a9; }
 #transferOwnership .buttons,
-#transferOwnershipConfirm .buttons {
+#transferOwnershipConfirm .buttons,
+#linkTeamModal .buttons {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1184,7 +1193,8 @@ i {
   -moz-justify-content: space-between;
   justify-content: space-between; }
   #transferOwnership .buttons .button,
-  #transferOwnershipConfirm .buttons .button {
+  #transferOwnershipConfirm .buttons .button,
+  #linkTeamModal .buttons .button {
     padding-top: .7rem;
     padding-bottom: .7rem;
     font-size: 1.5rem;
@@ -1194,6 +1204,28 @@ i {
     width: 48.5%;
     border-radius: 3px;
     border: solid 1px #bbbbbb; }
+
+#linkTeamModal .modal-dialog {
+  max-width: 39rem;
+  border-radius: 4px; }
+#linkTeamModal .modal-body {
+  padding-bottom: 3.2rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+#linkTeamModal .title {
+  text-align: left; }
+#linkTeamModal .text {
+  margin-bottom: 3rem;
+  max-width: 24.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0.14px;
+  color: #7b8993;
+  white-space: normal; }
 
 #transferOwnershipConfirm .modal-body {
   -webkit-box-align: start;
@@ -3753,6 +3785,10 @@ i {
       .teams-settings-general-body .settings-table-row .column-02 {
         margin-left: 1rem;
         margin-right: 1.5rem; }
+        .teams-settings-general-body .settings-table-row .column-02.linked {
+          margin-right: 0; }
+          .teams-settings-general-body .settings-table-row .column-02.linked span {
+            font-weight: 500; }
       .teams-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
       .teams-settings-general-body .settings-table-row img {
@@ -9251,6 +9287,126 @@ i {
         #terms-and-conditions .register-body-bottom-next svg,
         #invite-employees .register-body-bottom-next svg {
           margin-left: 1rem; }
+  #subscription-plan .register-dropdown,
+  #organization-info-one .register-dropdown,
+  #organization-info-two .register-dropdown,
+  #primary-contact .register-dropdown,
+  #terms-and-conditions .register-dropdown,
+  #invite-employees .register-dropdown {
+    position: relative;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.31;
+    letter-spacing: 0.16px;
+    color: #717171; }
+    #subscription-plan .register-dropdown-trigger,
+    #organization-info-one .register-dropdown-trigger,
+    #organization-info-two .register-dropdown-trigger,
+    #primary-contact .register-dropdown-trigger,
+    #terms-and-conditions .register-dropdown-trigger,
+    #invite-employees .register-dropdown-trigger {
+      padding: .95rem 1.4rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      border-radius: 2px;
+      border: solid 1px #e6e5ea;
+      background-color: rgba(255, 255, 255, 0.59);
+      outline: none;
+      cursor: pointer; }
+      #subscription-plan .register-dropdown-trigger:active + .register-dropdown-menu, #subscription-plan .register-dropdown-trigger:focus + .register-dropdown-menu,
+      #organization-info-one .register-dropdown-trigger:active + .register-dropdown-menu,
+      #organization-info-one .register-dropdown-trigger:focus + .register-dropdown-menu,
+      #organization-info-two .register-dropdown-trigger:active + .register-dropdown-menu,
+      #organization-info-two .register-dropdown-trigger:focus + .register-dropdown-menu,
+      #primary-contact .register-dropdown-trigger:active + .register-dropdown-menu,
+      #primary-contact .register-dropdown-trigger:focus + .register-dropdown-menu,
+      #terms-and-conditions .register-dropdown-trigger:active + .register-dropdown-menu,
+      #terms-and-conditions .register-dropdown-trigger:focus + .register-dropdown-menu,
+      #invite-employees .register-dropdown-trigger:active + .register-dropdown-menu,
+      #invite-employees .register-dropdown-trigger:focus + .register-dropdown-menu {
+        display: block !important; }
+      #subscription-plan .register-dropdown-trigger-symbol,
+      #organization-info-one .register-dropdown-trigger-symbol,
+      #organization-info-two .register-dropdown-trigger-symbol,
+      #primary-contact .register-dropdown-trigger-symbol,
+      #terms-and-conditions .register-dropdown-trigger-symbol,
+      #invite-employees .register-dropdown-trigger-symbol {
+        padding-left: 1rem;
+        border-left: 1.25px solid #D9D9D9; }
+    #subscription-plan .register-dropdown-menu,
+    #organization-info-one .register-dropdown-menu,
+    #organization-info-two .register-dropdown-menu,
+    #primary-contact .register-dropdown-menu,
+    #terms-and-conditions .register-dropdown-menu,
+    #invite-employees .register-dropdown-menu {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      transform: translate(0, 100%);
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border: solid 1px #d1d7dd;
+      border-top: 0;
+      background-color: #FAFBFD; }
+      #subscription-plan .register-dropdown-menu:hover,
+      #organization-info-one .register-dropdown-menu:hover,
+      #organization-info-two .register-dropdown-menu:hover,
+      #primary-contact .register-dropdown-menu:hover,
+      #terms-and-conditions .register-dropdown-menu:hover,
+      #invite-employees .register-dropdown-menu:hover {
+        display: block; }
+      #subscription-plan .register-dropdown-menu.open,
+      #organization-info-one .register-dropdown-menu.open,
+      #organization-info-two .register-dropdown-menu.open,
+      #primary-contact .register-dropdown-menu.open,
+      #terms-and-conditions .register-dropdown-menu.open,
+      #invite-employees .register-dropdown-menu.open {
+        display: block; }
+      #subscription-plan .register-dropdown-menu-item:not(:last-of-type),
+      #organization-info-one .register-dropdown-menu-item:not(:last-of-type),
+      #organization-info-two .register-dropdown-menu-item:not(:last-of-type),
+      #primary-contact .register-dropdown-menu-item:not(:last-of-type),
+      #terms-and-conditions .register-dropdown-menu-item:not(:last-of-type),
+      #invite-employees .register-dropdown-menu-item:not(:last-of-type) {
+        border-bottom: 1px solid #DBE0E4; }
+      #subscription-plan .register-dropdown-menu-item-link,
+      #organization-info-one .register-dropdown-menu-item-link,
+      #organization-info-two .register-dropdown-menu-item-link,
+      #primary-contact .register-dropdown-menu-item-link,
+      #terms-and-conditions .register-dropdown-menu-item-link,
+      #invite-employees .register-dropdown-menu-item-link {
+        width: 100%;
+        padding: .95rem 1.4rem;
+        font-size: inherit;
+        font-weight: 400;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: inherit; }
+        #subscription-plan .register-dropdown-menu-item-link:hover,
+        #organization-info-one .register-dropdown-menu-item-link:hover,
+        #organization-info-two .register-dropdown-menu-item-link:hover,
+        #primary-contact .register-dropdown-menu-item-link:hover,
+        #terms-and-conditions .register-dropdown-menu-item-link:hover,
+        #invite-employees .register-dropdown-menu-item-link:hover {
+          background-color: #EFEFEF; }
 
 #primary-contact .register-body-main #email {
   max-width: 75%; }
@@ -9606,6 +9762,30 @@ i {
         font-weight: 500;
         color: #1758b8;
         text-decoration: underline; }
+
+#not-yet {
+  height: 6.6rem;
+  margin: 4.5rem 0;
+  border-top: solid 1px #e6e8eb !important;
+  border-bottom: solid 1px #e6e8eb !important; }
+  #not-yet-td {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.08px;
+    color: #1b2733; }
 
 p:not(.no-ls), span:not(.no-ls), a, li {
   letter-spacing: .2px; }

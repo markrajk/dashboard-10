@@ -1950,7 +1950,8 @@ i {
 }
 
 #transferOwnership, 
-#transferOwnershipConfirm {
+#transferOwnershipConfirm,
+#linkTeamModal {
 
   & .modal-dialog {
     max-width: 40rem;
@@ -2027,6 +2028,35 @@ i {
         border: solid 1px #bbbbbb;
     }
   }
+}
+
+#linkTeamModal {
+
+  & .modal-dialog {
+    max-width: 39rem;
+    border-radius: 4px;
+  }
+
+  & .modal-body {
+    padding-bottom: 3.2rem;
+    @include align-items(flex-start);
+  }
+
+  & .title {
+    text-align: left;
+  }
+
+  & .text {
+    margin-bottom: 3rem;
+    max-width: 24.8rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: 0.14px;
+    color: #7b8993;
+    white-space: normal;
+  }
+
 }
 
 #transferOwnershipConfirm {
@@ -5298,6 +5328,14 @@ i {
         & .column-02 {
           margin-left: 1rem;
           margin-right: 1.5rem;
+
+          &.linked {
+            margin-right: 0;
+
+            & span {
+              font-weight: 500;
+            }
+          }
         }
 
         & .column-03 {
@@ -11858,6 +11896,87 @@ i {
         }
       }
     }
+
+    &-dropdown {
+      position: relative;
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.31;
+      letter-spacing: 0.16px;
+      color: #717171;
+
+      &-trigger {
+        padding: .95rem 1.4rem;
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+        border-radius: 2px;
+        border: solid 1px #e6e5ea;
+        background-color: rgba(255, 255, 255, 0.59);
+        outline: none;
+        cursor: pointer;
+
+        &:active + .register-dropdown-menu,
+        &:focus + .register-dropdown-menu {
+            display: block!important;
+        }
+
+        &-symbol {
+          padding-left: 1rem;
+          // padding-right: 1rem;
+          border-left: 1.25px solid #D9D9D9;
+
+        }
+      }
+
+      &-menu {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0, 100%);
+        border-radius: 3px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border: solid 1px #d1d7dd;
+        border-top: 0;
+        background-color: #FAFBFD;
+
+        &:hover {
+          display: block;
+        }
+
+        &.open {
+          display: block;
+        }
+
+        &-item {
+
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #DBE0E4;
+          }
+
+          &-link {
+            //font-size: 1.3rem;
+            width: 100%;
+            padding: .95rem 1.4rem;
+            font-size: inherit;
+            font-weight: 400;
+            line-height: 1.38;
+            letter-spacing: normal;
+            text-align: left;
+            color: inherit;
+            // color: #262626;
+
+            &:hover {
+              background-color: #EFEFEF;
+            }
+          }
+        }
+      }
+    }
   }
 }
 //PAGE SPECIFIC MODIFIERS
@@ -12048,14 +12167,7 @@ i {
     }
   }
 }
-// ==================================
-// REGISTER END
-// ==================================
 
-
-// ==================================
-// SUBSCRIPTION START
-// ==================================
 #subscription-plan {
   & .register {
   
@@ -12310,6 +12422,24 @@ i {
 //     opacity: 1;
 //   }
 // }
+
+#not-yet {
+  height: 6.6rem;
+  margin: 4.5rem 0;
+  border-top: solid 1px #e6e8eb!important;
+  border-bottom: solid 1px #e6e8eb!important;
+
+  &-td {
+    @include flex(1);
+    @include justify-content(center);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.08px;
+    color: #1b2733;
+  }
+}
 
 p:not(.no-ls), span:not(.no-ls), a, li {
   letter-spacing: .2px;

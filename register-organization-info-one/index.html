@@ -10,6 +10,7 @@
     integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
   <link rel="stylesheet" href="../public/css/bootstrap.css">
   <link rel="stylesheet" href="../public/css/style.css" />
+  <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -133,7 +134,28 @@
         <div class="register-body-main">
           <div class="input-container">
             <label for="organizationName">Organization name</label>
-            <input type="text" id="organizationName" id="organizationName" placeholder="Enter here...">
+            <div class="register-dropdown">
+              <div class="register-dropdown-trigger" onclick="this.focus()" tabindex="0">
+                <span class="register-dropdown-trigger-value">Example Company</span>
+                <div class="register-dropdown-trigger-symbol">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div>
+
+              <ul class="register-dropdown-menu">
+                <li class="register-dropdown-menu-item">
+                  <button class="register-dropdown-menu-item-link">Option I</button>
+                </li>
+
+                <li class="register-dropdown-menu-item">
+                  <button class="register-dropdown-menu-item-link">Option II</button>
+                </li>
+
+                <li class="register-dropdown-menu-item">
+                  <button class="register-dropdown-menu-item-link">Option III</button>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="input-container">
@@ -144,7 +166,28 @@
           <div class="register-body-main-input-double">
             <div class="input-container">
               <label for="employees">Employees</label>
-              <input type="text" id="employees" id="employees" placeholder="Enter here...">
+              <div class="register-dropdown">
+                <div class="register-dropdown-trigger" onclick="this.focus()" tabindex="0">
+                  <span class="register-dropdown-trigger-value">Example Company</span>
+                  <div class="register-dropdown-trigger-symbol">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </div>
+
+                <ul class="register-dropdown-menu">
+                  <li class="register-dropdown-menu-item">
+                    <button class="register-dropdown-menu-item-link">Option I</button>
+                  </li>
+
+                  <li class="register-dropdown-menu-item">
+                    <button class="register-dropdown-menu-item-link">Option II</button>
+                  </li>
+
+                  <li class="register-dropdown-menu-item">
+                    <button class="register-dropdown-menu-item-link">Option III</button>
+                  </li>
+                </ul>
+              </div>
             </div>
 
             <div class="input-container">
@@ -198,6 +241,28 @@
         registerBody.querySelector('.b-b').style.display = 'none';
       }
     }
+
+    //DROPDOWN
+    // var regDropdowns = document.querySelectorAll('.register-dropdown');
+
+    // for (var i = 0; i < regDropdowns.length; i++) {
+    //   var currentTrigger = regDropdowns[i].querySelector('.register-dropdown-trigger');
+    //   var currentTriggerValue = regDropdowns[i].querySelector('.register-dropdown-trigger-value');
+    //   var currentSymbol = regDropdowns[i].querySelector('.register-dropdown-trigger-symbol');
+    //   var currentMenu = regDropdowns[i].querySelector('.register-dropdown-menu');
+    //   var currentMenuItems = regDropdowns[i].querySelectorAll('.register-dropdown-menu-item');
+
+    //   currentSymbol.addEventListener('click', function (e) {
+    //     currentMenu.classList.toggle('open');
+    //   }, false)
+
+    //   for (var j = 0; j < currentMenuItems.length; j++) {
+    //     currentMenuItems[j].addEventListener('click', function (e) {
+    //       currentTriggerValue.innerText = this.innerText;
+    //       currentMenu.classList.remove('open');
+    //     })
+    //   }
+    // }
   </script>
 </body>
 
