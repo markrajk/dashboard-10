@@ -211,6 +211,7 @@
       <div class="register-body">
         <div class="register-body-top">
           <p class="register-body-top-help">Having trouble? <button>Get Help</button></p>
+          <div class="b-b"></div>
         </div>
 
         <div class="register-body-header">
@@ -255,8 +256,7 @@
         <div class="register-body-bottom">
           <button class="register-body-bottom-prev"
             onclick="location.href='../register-terms-and-conditions/index.html';">PREVIOUS STEP</button>
-          <button class="register-body-bottom-next"
-            onclick="location.href='../registerteams-average-charts/index.html'">NEXT
+          <button class="register-body-bottom-next" onclick="location.href='../teams-average-charts/index.html'">NEXT
             <svg xmlns="http://www.w3.org/2000/svg" width="16.586" height="11.777" viewBox="0 0 16.586 11.777">
               <defs>
                 <style>
@@ -282,6 +282,21 @@
   <script src="../public/js/jquery-3.4.1.min.js"></script>
   <script src="../public/js/bootstrap.bundle.js"></script>
   <script src="../public/js/main.js"></script>
+
+  <script>
+    topBorderOnScroll()
+    window.addEventListener('resize', topBorderOnScroll)
+
+    function topBorderOnScroll() {
+      var registerBody = document.querySelector('.register-body');
+
+      if (registerBody.scrollHeight > registerBody.clientHeight) {
+        registerBody.querySelector('.b-b').style.display = 'block';
+      } else {
+        registerBody.querySelector('.b-b').style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>
