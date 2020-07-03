@@ -11922,6 +11922,12 @@ i {
         outline: none;
         cursor: pointer;
 
+        &:active,
+        &:focus {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
         &:active + .register-dropdown-menu,
         &:focus + .register-dropdown-menu {
             display: block!important;
@@ -11945,7 +11951,7 @@ i {
         border-radius: 3px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        border: solid 1px #d1d7dd;
+        border: solid 1px #e6e5ea;
         border-top: 0;
         background-color: #FAFBFD;
 
@@ -11960,7 +11966,7 @@ i {
         &-item {
 
           &:not(:last-of-type) {
-            border-bottom: 1px solid #DBE0E4;
+            border-bottom: 1px solid #e6e5ea;
           }
 
           &-link {

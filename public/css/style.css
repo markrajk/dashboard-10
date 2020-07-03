@@ -9330,6 +9330,19 @@ i {
       background-color: rgba(255, 255, 255, 0.59);
       outline: none;
       cursor: pointer; }
+      #subscription-plan .register-dropdown-trigger:active, #subscription-plan .register-dropdown-trigger:focus,
+      #organization-info-one .register-dropdown-trigger:active,
+      #organization-info-one .register-dropdown-trigger:focus,
+      #organization-info-two .register-dropdown-trigger:active,
+      #organization-info-two .register-dropdown-trigger:focus,
+      #primary-contact .register-dropdown-trigger:active,
+      #primary-contact .register-dropdown-trigger:focus,
+      #terms-and-conditions .register-dropdown-trigger:active,
+      #terms-and-conditions .register-dropdown-trigger:focus,
+      #invite-employees .register-dropdown-trigger:active,
+      #invite-employees .register-dropdown-trigger:focus {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
       #subscription-plan .register-dropdown-trigger:active + .register-dropdown-menu, #subscription-plan .register-dropdown-trigger:focus + .register-dropdown-menu,
       #organization-info-one .register-dropdown-trigger:active + .register-dropdown-menu,
       #organization-info-one .register-dropdown-trigger:focus + .register-dropdown-menu,
@@ -9365,7 +9378,7 @@ i {
       border-radius: 3px;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
-      border: solid 1px #d1d7dd;
+      border: solid 1px #e6e5ea;
       border-top: 0;
       background-color: #FAFBFD; }
       #subscription-plan .register-dropdown-menu:hover,
@@ -9388,7 +9401,7 @@ i {
       #primary-contact .register-dropdown-menu-item:not(:last-of-type),
       #terms-and-conditions .register-dropdown-menu-item:not(:last-of-type),
       #invite-employees .register-dropdown-menu-item:not(:last-of-type) {
-        border-bottom: 1px solid #DBE0E4; }
+        border-bottom: 1px solid #e6e5ea; }
       #subscription-plan .register-dropdown-menu-item-link,
       #organization-info-one .register-dropdown-menu-item-link,
       #organization-info-two .register-dropdown-menu-item-link,

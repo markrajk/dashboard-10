@@ -243,15 +243,18 @@
     }
 
 
-    var regDropdownItemLinks = document.querySelectorAll('.register-dropdown-menu-item');
+    // var regDropdownItemLinks = document.querySelectorAll('.register-dropdown-menu-item');
+    // console.log(regDropdownItemLinks)
 
-    for (var i = 0; i < regDropdownItemLinks.length; i++) {
-      regDropdownItemLinks[i].addEventListener('click', function (e) {
-        var dropdown = this.parentElement.parentElement;
-        dropdown.querySelector('.register-dropdown-trigger-value').innerHTML = this.innerText;
-        dropdown.querySelector('.register-dropdown-menu').style.display = 'none';
-      });
-    }
+    // for (var i = 0; i < regDropdownItemLinks.length; i++) {
+    //   regDropdownItemLinks[i].addEventListener('click', function (e) {
+    //     console.log(this.innerText)
+    //     console.log('clicked')
+    //     var dropdown = this.parentElement.parentElement;
+    //     dropdown.querySelector('.register-dropdown-trigger-value').innerHTML = this.innerText;
+    //     dropdown.querySelector('.register-dropdown-menu').style.display = 'none';
+    //   });
+    // }
 
     //DROPDOWN
     // var regDropdowns = document.querySelectorAll('.register-dropdown');
