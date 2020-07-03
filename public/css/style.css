@@ -9027,6 +9027,9 @@ i {
         max-width: 27%;
         padding-left: 4rem;
         padding-right: 4rem; } }
+    @media (max-width: 1100px) {
+      #subscription-plan .register-side {
+        display: none; } }
     @media (max-width: 991px) {
       #subscription-plan .register-side {
         -webkit-box-pack: center;
@@ -9035,8 +9038,7 @@ i {
         -moz-justify-content: center;
         justify-content: center;
         padding-left: 3rem;
-        padding-right: 3rem;
-        display: none; } }
+        padding-right: 3rem; } }
     #subscription-plan .register-side-list-item {
       white-space: nowrap; }
       #subscription-plan .register-side-list-item:not(:last-of-type) {
@@ -9138,10 +9140,9 @@ i {
               #subscription-plan .register-side-list-item-nested-list-item-link span svg {
                 fill: #B5B5B5; }
   #subscription-plan .register-body {
-    padding-top: 6.6vh;
     padding-left: 8rem;
     padding-right: 5.8rem;
-    padding-bottom: 13vh;
+    padding-bottom: 8vh;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -9166,7 +9167,17 @@ i {
     height: 100%;
     width: 100%;
     max-width: 66.2%;
-    background-color: #f3f6fa; }
+    background-color: #f3f6fa;
+    transform: translate(0, 0);
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    #subscription-plan .register-body::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0; }
     @media (max-width: 1400px) {
       #subscription-plan .register-body {
         padding-left: 5rem;
@@ -9174,7 +9185,7 @@ i {
     @media (max-width: 1300px) {
       #subscription-plan .register-body {
         max-width: 73%; } }
-    @media (max-width: 991px) {
+    @media (max-width: 1100px) {
       #subscription-plan .register-body {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -9187,9 +9198,18 @@ i {
         padding-left: 3rem;
         padding-right: 3rem; } }
     #subscription-plan .register-body-top {
-      margin-bottom: 4.3vh;
+      padding-top: 6.6vh;
+      top: 0;
+      right: 0;
+      position: sticky;
+      margin-bottom: 2.5vh;
       width: 100%;
-      max-width: 100%; }
+      max-width: 100%;
+      background-color: #f3f6fa; }
+      #subscription-plan .register-body-top .b-b {
+        padding-top: 1.35rem;
+        width: 100%;
+        border-bottom: 1px solid #D7D9DC; }
       #subscription-plan .register-body-top-help {
         text-align: right;
         font-size: 1.6rem;
@@ -9313,6 +9333,7 @@ i {
           width: 100%; }
           #subscription-plan .register-body-main-card-main-item {
             padding: 1.2rem 1.6rem;
+            padding-right: 0;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -9397,7 +9418,7 @@ i {
           #subscription-plan .register-body-main-card-btn:hover {
             background-color: #f9f9f9; }
     #subscription-plan .register-body-bottom {
-      margin-top: 6rem;
+      margin-top: 4rem;
       width: 100%;
       max-width: 51.3rem; }
       #subscription-plan .register-body-bottom-text {

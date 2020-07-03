@@ -24,6 +24,12 @@ $text-color-primary: #1c1c1c;
   }
 }
 
+@mixin custom-respond-vertical($value) {
+  @media(max-height: $value * 1px) {
+    @content;
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == desktop-xxsm {
     @media (max-width: 379px) {
@@ -11814,13 +11820,18 @@ i {
         padding-left: 4rem;
         padding-right: 4rem;
       }
+
+      //CUSTOM RESPOND
+      @include custom-respond(1100) {
+        display: none;
+      }
   
       //TABLET
       @include respond(desktop-md) {
         @include justify-content(center);
         padding-left: 3rem;
         padding-right: 3rem;
-        display: none;
+       
       }
   
       &-list {
@@ -11945,10 +11956,10 @@ i {
     }
   
     &-body {
-      padding-top: 6.6vh;
+      //padding-top: 6.6vh;
       padding-left: 8rem;
       padding-right: 5.8rem;
-      padding-bottom: 13vh;
+      padding-bottom: 8vh;
       @include flexbox();
       @include align-items(flex-start);
       @include justify-content(flex-start);
@@ -11957,6 +11968,17 @@ i {
       width: 100%;
       max-width: 66.2%;
       background-color: #f3f6fa;
+      transform: translate(0,0);
+
+      overflow-y: auto;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+      &::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+      }
 
       //CUSTOM RESPOND
       @include custom-respond(1400) {
@@ -11968,14 +11990,19 @@ i {
       @include custom-respond(1300) {
         max-width: 73%;
       }
-  
-      //TABLET
-      @include respond(desktop-md) {
+
+      //CUSTOM RESPOND
+      @include custom-respond(1100) {
         @include justify-content(center);
         max-width: 100%;
-        // padding-left: 5rem;
-        // padding-right: 5rem;
       }
+  
+      // //TABLET
+      // @include respond(desktop-md) {
+        
+      //   // padding-left: 5rem;
+      //   // padding-right: 5rem;
+      // }
   
       //SMALL
       @include respond(desktop-sm) {
@@ -11984,9 +12011,20 @@ i {
       }
   
       &-top {
-        margin-bottom: 4.3vh;
+        padding-top: 6.6vh;
+        top:  0;
+        right:  0;
+        position: sticky;
+        margin-bottom: 2.5vh;
         width: 100%;
         max-width: 100%;
+        background-color: #f3f6fa;
+
+        & .b-b {
+          padding-top: 1.35rem;
+          width: 100%;
+          border-bottom: 1px solid #D7D9DC;
+        }
   
         &-help {
           text-align: right;
@@ -12101,6 +12139,7 @@ i {
             &-item {
              
               padding: 1.2rem 1.6rem;
+              padding-right: 0;
               @include flexbox();
               @include align-items(center);
               @include justify-content(flex-start);
@@ -12171,7 +12210,7 @@ i {
       }
   
       &-bottom {
-        margin-top: 6rem;
+        margin-top: 4rem;
         width: 100%;
         max-width: 51.3rem;
         // @include flexbox();

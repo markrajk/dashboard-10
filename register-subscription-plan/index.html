@@ -123,7 +123,9 @@
       <div class="register-body">
         <div class="register-body-top">
           <p class="register-body-top-help">Having trouble? <button>Get Help</button></p>
+          <div class="b-b"></div>
         </div>
+
 
         <div class="register-body-header">
           <h1 class="register-body-header-title">Team Feedback Company Registration</h1>
@@ -311,6 +313,21 @@
   <script src="../public/js/jquery-3.4.1.min.js"></script>
   <script src="../public/js/bootstrap.bundle.js"></script>
   <script src="../public/js/main.js"></script>
+
+  <script>
+    topBorderOnScroll()
+    window.addEventListener('resize', topBorderOnScroll)
+
+    function topBorderOnScroll() {
+      var registerBody = document.querySelector('.register-body');
+
+      if (registerBody.scrollHeight > registerBody.clientHeight) {
+        registerBody.querySelector('.b-b').style.display = 'block';
+      } else {
+        registerBody.querySelector('.b-b').style.display = 'none';
+      }
+    }
+  </script>
 </body>
 
 </html>
