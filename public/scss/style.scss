@@ -8442,24 +8442,25 @@ i {
   }
 
 
+  /////////////////////////////////////////////
   & .table-custom {
 
     &-head {
       
       & tr {
         padding-left: 1.7rem;
-          padding-right: 1.7rem;
+        padding-right: 1.7rem;
 
-          & td {
-            & .icon-caret-down,
-            & .icon-caret-up {
-              margin-left: .3rem;
-            }
-  
-            & button {
-              color: #647282;
-            }
+        & td {
+          & .icon-caret-down,
+          & .icon-caret-up {
+            margin-left: .3rem;
           }
+
+          & button {
+            color: #647282;
+          }
+        }
       }
     }
 
@@ -8467,23 +8468,22 @@ i {
         font-size: 1.35rem;
         font-weight: 400;
 
-        & > tr:not(.input-row) {
-
-          &:nth-last-child(2) {
-            border-bottom: none;
-          }
-        }
-
         & tr {
-          border-bottom: solid 1px #e6e8eb;
+          &:nth-last-of-type(2) {
+            border-bottom: 0!important;
+          }
 
-          
+          &:hover {
+            & .icon-close {
+              transform:translate(-100%, -50%) scale(1);
+            }
+          }
 
           & > td,
           & > td a {
             font-size: 1.4rem;
             font-weight: 400;
-            line-height: 1.14;
+            line-height: 1.4;
             letter-spacing: 0.07px;
             text-align: left;
             color: #1b2733;
@@ -8655,14 +8655,33 @@ i {
       }
 
       & .table-custom-col-04 {
+        position: relative;
         @include flex(.6);
         @include justify-content(center);
+        text-align: center;
 
-        & a,button:not(.btn-custom-primary) {
-          text-align: center;
-          width: 100%;
-          // max-width: 9.4rem;
-          color: #ff2424;
+        & .green {
+          color: #03AD17;
+        }
+
+        & .red {
+          color: #FF2424;
+        }
+
+        & .icon-close {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          transform: translate(-100%, -50%) scale(0);
+          font-size: 1.2rem;
+          color: #B1B1B1;
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            transition: all .2s ease-in-out;
+            transform: translate(-100%, -50%) scale(1.25);
+          }
         }
 
         @include respond(desktop-xsm) {

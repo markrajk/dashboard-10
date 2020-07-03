@@ -6622,17 +6622,17 @@ i {
   .company-admin .table-custom-body {
     font-size: 1.35rem;
     font-weight: 400; }
-    .company-admin .table-custom-body > tr:not(.input-row):nth-last-child(2) {
-      border-bottom: none; }
-    .company-admin .table-custom-body tr {
-      border-bottom: solid 1px #e6e8eb; }
-      .company-admin .table-custom-body tr > td, .company-admin .table-custom-body tr > td a {
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 1.14;
-        letter-spacing: 0.07px;
-        text-align: left;
-        color: #1b2733; }
+    .company-admin .table-custom-body tr:nth-last-of-type(2) {
+      border-bottom: 0 !important; }
+    .company-admin .table-custom-body tr:hover .icon-close {
+      transform: translate(-100%, -50%) scale(1); }
+    .company-admin .table-custom-body tr > td, .company-admin .table-custom-body tr > td a {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.07px;
+      text-align: left;
+      color: #1b2733; }
     .company-admin .table-custom-body-col-01 input::placeholder {
       color: #1b2733; }
     .company-admin .table-custom-body-col-01 a {
@@ -6777,6 +6777,7 @@ i {
         -ms-flex: 0.8;
         flex: 0.8; } }
   .company-admin .table-custom .table-custom-col-04 {
+    position: relative;
     -webkit-box-flex: 0.6;
     -webkit-flex: 0.6;
     -moz-box-flex: 0.6;
@@ -6787,11 +6788,24 @@ i {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
-    justify-content: center; }
-    .company-admin .table-custom .table-custom-col-04 a, .company-admin .table-custom .table-custom-col-04 button:not(.btn-custom-primary) {
-      text-align: center;
-      width: 100%;
-      color: #ff2424; }
+    justify-content: center;
+    text-align: center; }
+    .company-admin .table-custom .table-custom-col-04 .green {
+      color: #03AD17; }
+    .company-admin .table-custom .table-custom-col-04 .red {
+      color: #FF2424; }
+    .company-admin .table-custom .table-custom-col-04 .icon-close {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(-100%, -50%) scale(0);
+      font-size: 1.2rem;
+      color: #B1B1B1;
+      cursor: pointer;
+      transition: all .3s ease-in-out; }
+      .company-admin .table-custom .table-custom-col-04 .icon-close:hover {
+        transition: all .2s ease-in-out;
+        transform: translate(-100%, -50%) scale(1.25); }
     @media (max-width: 575px) {
       .company-admin .table-custom .table-custom-col-04 {
         -webkit-box-flex: 0.8;
