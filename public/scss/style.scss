@@ -11480,7 +11480,8 @@ i {
     @include align-items(flex-start);
     @include justify-content(flex-end);
     height: 100%;
-    width: 38%;
+    width: 100%;
+    max-width: 33.8%;
     box-shadow: 0 0 16px 0 rgba(178, 178, 178, 0.17);
     background-color: #f6f6f6;
     z-index: 100;
@@ -11606,15 +11607,16 @@ i {
 
   &-body {
     padding-top: 6.6vh;
-    padding-left: 8.8rem;
+    padding-left: 8rem;
     padding-right: 5.8rem;
-    padding-bottom: 14vh;
+    padding-bottom: 13vh;
     @include flexbox();
     @include align-items(flex-start);
     @include justify-content(flex-start);
     @include flex-direction(column);
     height: 100%;
-    width: 62%;
+    width: 100%;
+    max-width: 66.2%;
     background-color: #f3f6fa;
 
     //TABLET
