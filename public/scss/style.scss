@@ -2043,6 +2043,7 @@ i {
   }
 
   & .title {
+    font-size: 2rem;
     text-align: left;
   }
 
@@ -2055,6 +2056,10 @@ i {
     letter-spacing: 0.14px;
     color: #7b8993;
     white-space: normal;
+
+    & span {
+      font-weight: 700;
+    }
   }
 
 }

@@ -242,6 +242,17 @@
       }
     }
 
+
+    var regDropdownItemLinks = document.querySelectorAll('.register-dropdown-menu-item');
+
+    for (var i = 0; i < regDropdownItemLinks.length; i++) {
+      regDropdownItemLinks[i].addEventListener('click', function (e) {
+        var dropdown = this.parentElement.parentElement;
+        dropdown.querySelector('.register-dropdown-trigger-value').innerHTML = this.innerText;
+        dropdown.querySelector('.register-dropdown-menu').style.display = 'none';
+      });
+    }
+
     //DROPDOWN
     // var regDropdowns = document.querySelectorAll('.register-dropdown');
 

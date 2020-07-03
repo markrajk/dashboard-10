@@ -124,5 +124,11 @@ Link all pages and make modals work on all pages with that functionality.
   * In give feedback page in side menu links (Team marketing etc.) changed to buttons and i.icon-close added
 - CSS changes:
     * CSS file changed
+## Changes 03.07.2020
+- HTML changes:
+  * company-teams & company-members no entries placeholder added.
+  * teams-settings-general modal added (row with modal link is commented) there is only, linked version of row, visible.
+- CSS changes:
+    * CSS file changed
 
 

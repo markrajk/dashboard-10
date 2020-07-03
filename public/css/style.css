@@ -1216,6 +1216,7 @@ i {
   -moz-align-items: flex-start;
   align-items: flex-start; }
 #linkTeamModal .title {
+  font-size: 2rem;
   text-align: left; }
 #linkTeamModal .text {
   margin-bottom: 3rem;
@@ -1226,6 +1227,8 @@ i {
   letter-spacing: 0.14px;
   color: #7b8993;
   white-space: normal; }
+  #linkTeamModal .text span {
+    font-weight: 700; }
 
 #transferOwnershipConfirm .modal-body {
   -webkit-box-align: start;
