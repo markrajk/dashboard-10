@@ -1206,7 +1206,8 @@ i {
     border: solid 1px #bbbbbb; }
 
 #linkTeamModal .modal-dialog {
-  max-width: 39rem;
+  max-width: 39rem; }
+#linkTeamModal .modal-content {
   border-radius: 4px; }
 #linkTeamModal .modal-body {
   padding-bottom: 3.2rem;
