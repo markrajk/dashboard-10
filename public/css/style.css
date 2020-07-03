@@ -8658,7 +8658,11 @@ i {
 .register-page-wrapper {
   width: 100%; }
 
-#organization-info .register {
+#organization-info-one .register,
+#organization-info-two .register,
+#primary-contact .register,
+#terms-and-conditions .register,
+#invite-employees .register {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   display: -webkit-box;
@@ -8676,7 +8680,11 @@ i {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   justify-content: center; }
-  #organization-info .register-side {
+  #organization-info-one .register-side,
+  #organization-info-two .register-side,
+  #primary-contact .register-side,
+  #terms-and-conditions .register-side,
+  #invite-employees .register-side {
     padding-top: 22vh;
     padding-right: 8.8rem;
     padding-left: 4.2rem;
@@ -8702,7 +8710,11 @@ i {
     background-color: #f6f6f6;
     z-index: 100; }
     @media (max-width: 991px) {
-      #organization-info .register-side {
+      #organization-info-one .register-side,
+      #organization-info-two .register-side,
+      #primary-contact .register-side,
+      #terms-and-conditions .register-side,
+      #invite-employees .register-side {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
@@ -8710,11 +8722,23 @@ i {
         justify-content: center;
         padding-left: 3rem;
         padding-right: 3rem; } }
-    #organization-info .register-side-list-item {
+    #organization-info-one .register-side-list-item,
+    #organization-info-two .register-side-list-item,
+    #primary-contact .register-side-list-item,
+    #terms-and-conditions .register-side-list-item,
+    #invite-employees .register-side-list-item {
       white-space: nowrap; }
-      #organization-info .register-side-list-item:not(:last-of-type) {
+      #organization-info-one .register-side-list-item:not(:last-of-type),
+      #organization-info-two .register-side-list-item:not(:last-of-type),
+      #primary-contact .register-side-list-item:not(:last-of-type),
+      #terms-and-conditions .register-side-list-item:not(:last-of-type),
+      #invite-employees .register-side-list-item:not(:last-of-type) {
         margin-bottom: 3rem; }
-      #organization-info .register-side-list-item-link {
+      #organization-info-one .register-side-list-item-link,
+      #organization-info-two .register-side-list-item-link,
+      #primary-contact .register-side-list-item-link,
+      #terms-and-conditions .register-side-list-item-link,
+      #invite-employees .register-side-list-item-link {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -8735,21 +8759,68 @@ i {
         line-height: 1.36;
         letter-spacing: 0.56px;
         color: #787e7e; }
-        #organization-info .register-side-list-item-link.active {
+        #organization-info-one .register-side-list-item-link.active,
+        #organization-info-two .register-side-list-item-link.active,
+        #primary-contact .register-side-list-item-link.active,
+        #terms-and-conditions .register-side-list-item-link.active,
+        #invite-employees .register-side-list-item-link.active {
           color: #1758b8; }
-          #organization-info .register-side-list-item-link.active .symbol {
+          #organization-info-one .register-side-list-item-link.active .symbol,
+          #organization-info-two .register-side-list-item-link.active .symbol,
+          #primary-contact .register-side-list-item-link.active .symbol,
+          #terms-and-conditions .register-side-list-item-link.active .symbol,
+          #invite-employees .register-side-list-item-link.active .symbol {
             color: #1758b8;
             border: solid 1.5px #1758b8; }
-        #organization-info .register-side-list-item-link.completed {
-          color: #b1b1b1; }
-          #organization-info .register-side-list-item-link.completed .symbol {
+          #organization-info-one .register-side-list-item-link.active .check,
+          #organization-info-two .register-side-list-item-link.active .check,
+          #primary-contact .register-side-list-item-link.active .check,
+          #terms-and-conditions .register-side-list-item-link.active .check,
+          #invite-employees .register-side-list-item-link.active .check {
             display: none; }
-        #organization-info .register-side-list-item-link .check {
+          #organization-info-one .register-side-list-item-link.active + .register-side-list-item-nested-list,
+          #organization-info-two .register-side-list-item-link.active + .register-side-list-item-nested-list,
+          #primary-contact .register-side-list-item-link.active + .register-side-list-item-nested-list,
+          #terms-and-conditions .register-side-list-item-link.active + .register-side-list-item-nested-list,
+          #invite-employees .register-side-list-item-link.active + .register-side-list-item-nested-list {
+            display: block; }
+        #organization-info-one .register-side-list-item-link.completed,
+        #organization-info-two .register-side-list-item-link.completed,
+        #primary-contact .register-side-list-item-link.completed,
+        #terms-and-conditions .register-side-list-item-link.completed,
+        #invite-employees .register-side-list-item-link.completed {
+          color: #b1b1b1; }
+          #organization-info-one .register-side-list-item-link.completed .symbol,
+          #organization-info-two .register-side-list-item-link.completed .symbol,
+          #primary-contact .register-side-list-item-link.completed .symbol,
+          #terms-and-conditions .register-side-list-item-link.completed .symbol,
+          #invite-employees .register-side-list-item-link.completed .symbol {
+            display: none; }
+          #organization-info-one .register-side-list-item-link.completed .check,
+          #organization-info-two .register-side-list-item-link.completed .check,
+          #primary-contact .register-side-list-item-link.completed .check,
+          #terms-and-conditions .register-side-list-item-link.completed .check,
+          #invite-employees .register-side-list-item-link.completed .check {
+            display: block; }
+        #organization-info-one .register-side-list-item-link .check,
+        #organization-info-two .register-side-list-item-link .check,
+        #primary-contact .register-side-list-item-link .check,
+        #terms-and-conditions .register-side-list-item-link .check,
+        #invite-employees .register-side-list-item-link .check {
+          display: none;
           margin-right: 2.1rem; }
-          #organization-info .register-side-list-item-link .check svg {
+          #organization-info-one .register-side-list-item-link .check svg,
+          #organization-info-two .register-side-list-item-link .check svg,
+          #primary-contact .register-side-list-item-link .check svg,
+          #terms-and-conditions .register-side-list-item-link .check svg,
+          #invite-employees .register-side-list-item-link .check svg {
             width: 2.7rem;
             height: 2.7rem; }
-        #organization-info .register-side-list-item-link .symbol {
+        #organization-info-one .register-side-list-item-link .symbol,
+        #organization-info-two .register-side-list-item-link .symbol,
+        #primary-contact .register-side-list-item-link .symbol,
+        #terms-and-conditions .register-side-list-item-link .symbol,
+        #invite-employees .register-side-list-item-link .symbol {
           margin-right: 2.1rem;
           display: -webkit-inline-box;
           display: -webkit-inline-flex;
@@ -8775,37 +8846,78 @@ i {
           color: #7d7d7d;
           border: solid 1.5px #dedede;
           border-radius: 50%; }
-      #organization-info .register-side-list-item-nested-list {
+      #organization-info-one .register-side-list-item-nested-list,
+      #organization-info-two .register-side-list-item-nested-list,
+      #primary-contact .register-side-list-item-nested-list,
+      #terms-and-conditions .register-side-list-item-nested-list,
+      #invite-employees .register-side-list-item-nested-list {
+        display: none;
         margin-top: 2.6rem;
         margin-left: 4.8rem; }
-        #organization-info .register-side-list-item-nested-list-item {
+        #organization-info-one .register-side-list-item-nested-list-item,
+        #organization-info-two .register-side-list-item-nested-list-item,
+        #primary-contact .register-side-list-item-nested-list-item,
+        #terms-and-conditions .register-side-list-item-nested-list-item,
+        #invite-employees .register-side-list-item-nested-list-item {
           white-space: nowrap;
           position: relative; }
-          #organization-info .register-side-list-item-nested-list-item:not(:last-of-type) {
+          #organization-info-one .register-side-list-item-nested-list-item:not(:last-of-type),
+          #organization-info-two .register-side-list-item-nested-list-item:not(:last-of-type),
+          #primary-contact .register-side-list-item-nested-list-item:not(:last-of-type),
+          #terms-and-conditions .register-side-list-item-nested-list-item:not(:last-of-type),
+          #invite-employees .register-side-list-item-nested-list-item:not(:last-of-type) {
             margin-bottom: 2.4rem; }
-          #organization-info .register-side-list-item-nested-list-item-link {
+          #organization-info-one .register-side-list-item-nested-list-item-link,
+          #organization-info-two .register-side-list-item-nested-list-item-link,
+          #primary-contact .register-side-list-item-nested-list-item-link,
+          #terms-and-conditions .register-side-list-item-nested-list-item-link,
+          #invite-employees .register-side-list-item-nested-list-item-link {
             font-size: 1.55rem;
             font-weight: 400;
             line-height: 1.29;
             letter-spacing: 0.23px;
             color: #7f7f7f; }
-            #organization-info .register-side-list-item-nested-list-item-link.active {
+            #organization-info-one .register-side-list-item-nested-list-item-link.active,
+            #organization-info-two .register-side-list-item-nested-list-item-link.active,
+            #primary-contact .register-side-list-item-nested-list-item-link.active,
+            #terms-and-conditions .register-side-list-item-nested-list-item-link.active,
+            #invite-employees .register-side-list-item-nested-list-item-link.active {
               font-weight: 500;
               color: #3c3d43; }
-              #organization-info .register-side-list-item-nested-list-item-link.active span {
+              #organization-info-one .register-side-list-item-nested-list-item-link.active span,
+              #organization-info-two .register-side-list-item-nested-list-item-link.active span,
+              #primary-contact .register-side-list-item-nested-list-item-link.active span,
+              #terms-and-conditions .register-side-list-item-nested-list-item-link.active span,
+              #invite-employees .register-side-list-item-nested-list-item-link.active span {
                 display: block; }
-            #organization-info .register-side-list-item-nested-list-item-link span {
+            #organization-info-one .register-side-list-item-nested-list-item-link span,
+            #organization-info-two .register-side-list-item-nested-list-item-link span,
+            #primary-contact .register-side-list-item-nested-list-item-link span,
+            #terms-and-conditions .register-side-list-item-nested-list-item-link span,
+            #invite-employees .register-side-list-item-nested-list-item-link span {
               display: none;
               position: absolute;
               top: 50%;
               right: 0;
               transform: translate(200%, -50%); }
               @media (max-width: 991px) {
-                #organization-info .register-side-list-item-nested-list-item-link span {
+                #organization-info-one .register-side-list-item-nested-list-item-link span,
+                #organization-info-two .register-side-list-item-nested-list-item-link span,
+                #primary-contact .register-side-list-item-nested-list-item-link span,
+                #terms-and-conditions .register-side-list-item-nested-list-item-link span,
+                #invite-employees .register-side-list-item-nested-list-item-link span {
                   transform: translate(0, -50%); } }
-              #organization-info .register-side-list-item-nested-list-item-link span svg {
+              #organization-info-one .register-side-list-item-nested-list-item-link span svg,
+              #organization-info-two .register-side-list-item-nested-list-item-link span svg,
+              #primary-contact .register-side-list-item-nested-list-item-link span svg,
+              #terms-and-conditions .register-side-list-item-nested-list-item-link span svg,
+              #invite-employees .register-side-list-item-nested-list-item-link span svg {
                 fill: #B5B5B5; }
-  #organization-info .register-body {
+  #organization-info-one .register-body,
+  #organization-info-two .register-body,
+  #primary-contact .register-body,
+  #terms-and-conditions .register-body,
+  #invite-employees .register-body {
     padding-top: 6.6vh;
     padding-left: 8rem;
     padding-right: 5.8rem;
@@ -8836,7 +8948,11 @@ i {
     max-width: 66.2%;
     background-color: #f3f6fa; }
     @media (max-width: 991px) {
-      #organization-info .register-body {
+      #organization-info-one .register-body,
+      #organization-info-two .register-body,
+      #primary-contact .register-body,
+      #terms-and-conditions .register-body,
+      #invite-employees .register-body {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         -webkit-justify-content: center;
@@ -8845,48 +8961,92 @@ i {
         padding-left: 5rem;
         padding-right: 5rem; } }
     @media (max-width: 767px) {
-      #organization-info .register-body {
+      #organization-info-one .register-body,
+      #organization-info-two .register-body,
+      #primary-contact .register-body,
+      #terms-and-conditions .register-body,
+      #invite-employees .register-body {
         padding-left: 3rem;
         padding-right: 3rem; } }
-    #organization-info .register-body-top {
+    #organization-info-one .register-body-top,
+    #organization-info-two .register-body-top,
+    #primary-contact .register-body-top,
+    #terms-and-conditions .register-body-top,
+    #invite-employees .register-body-top {
       margin-bottom: 4.3vh;
       width: 100%;
       max-width: 100%; }
-      #organization-info .register-body-top-help {
+      #organization-info-one .register-body-top-help,
+      #organization-info-two .register-body-top-help,
+      #primary-contact .register-body-top-help,
+      #terms-and-conditions .register-body-top-help,
+      #invite-employees .register-body-top-help {
         text-align: right;
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.31;
         letter-spacing: 0.24px;
         color: #707070; }
-        #organization-info .register-body-top-help button {
+        #organization-info-one .register-body-top-help button,
+        #organization-info-two .register-body-top-help button,
+        #primary-contact .register-body-top-help button,
+        #terms-and-conditions .register-body-top-help button,
+        #invite-employees .register-body-top-help button {
           font-size: 1.6rem;
           font-weight: 500;
           color: #2066d6; }
-    #organization-info .register-body-header {
+    #organization-info-one .register-body-header,
+    #organization-info-two .register-body-header,
+    #primary-contact .register-body-header,
+    #terms-and-conditions .register-body-header,
+    #invite-employees .register-body-header {
       margin-bottom: 6.7vh; }
-      #organization-info .register-body-header-title {
+      #organization-info-one .register-body-header-title,
+      #organization-info-two .register-body-header-title,
+      #primary-contact .register-body-header-title,
+      #terms-and-conditions .register-body-header-title,
+      #invite-employees .register-body-header-title {
         margin-bottom: 1.4rem;
         font-size: 2.6rem;
         font-weight: 500;
         line-height: 1.31;
         letter-spacing: 0.13px;
         color: #2d2e33; }
-      #organization-info .register-body-header-text {
+      #organization-info-one .register-body-header-text,
+      #organization-info-two .register-body-header-text,
+      #primary-contact .register-body-header-text,
+      #terms-and-conditions .register-body-header-text,
+      #invite-employees .register-body-header-text {
         font-size: 1.5rem;
         font-weight: 400;
         line-height: 1.33;
         letter-spacing: 0.15px;
         color: #707070; }
-    #organization-info .register-body-main {
+    #organization-info-one .register-body-main,
+    #organization-info-two .register-body-main,
+    #primary-contact .register-body-main,
+    #terms-and-conditions .register-body-main,
+    #invite-employees .register-body-main {
       width: 100%;
       max-width: 51.3rem;
       margin-bottom: auto; }
-      #organization-info .register-body-main .input-container {
+      #organization-info-one .register-body-main .input-container,
+      #organization-info-two .register-body-main .input-container,
+      #primary-contact .register-body-main .input-container,
+      #terms-and-conditions .register-body-main .input-container,
+      #invite-employees .register-body-main .input-container {
         width: 100%; }
-        #organization-info .register-body-main .input-container:not(:last-of-type) {
+        #organization-info-one .register-body-main .input-container:not(:last-of-type),
+        #organization-info-two .register-body-main .input-container:not(:last-of-type),
+        #primary-contact .register-body-main .input-container:not(:last-of-type),
+        #terms-and-conditions .register-body-main .input-container:not(:last-of-type),
+        #invite-employees .register-body-main .input-container:not(:last-of-type) {
           margin-bottom: 2.6rem; }
-        #organization-info .register-body-main .input-container label {
+        #organization-info-one .register-body-main .input-container label,
+        #organization-info-two .register-body-main .input-container label,
+        #primary-contact .register-body-main .input-container label,
+        #terms-and-conditions .register-body-main .input-container label,
+        #invite-employees .register-body-main .input-container label {
           margin-bottom: 1rem;
           display: block;
           font-size: 1.4rem;
@@ -8894,7 +9054,11 @@ i {
           line-height: 1.36;
           letter-spacing: 0.14px;
           color: #5c5d62; }
-        #organization-info .register-body-main .input-container input {
+        #organization-info-one .register-body-main .input-container input,
+        #organization-info-two .register-body-main .input-container input,
+        #primary-contact .register-body-main .input-container input,
+        #terms-and-conditions .register-body-main .input-container input,
+        #invite-employees .register-body-main .input-container input {
           padding: 1rem 1.4rem;
           width: 100%;
           font-size: 1.6rem;
@@ -8904,9 +9068,17 @@ i {
           border-radius: 2px;
           border: solid 1px #e6e5ea;
           background-color: rgba(255, 255, 255, 0.59); }
-          #organization-info .register-body-main .input-container input::placeholder {
+          #organization-info-one .register-body-main .input-container input::placeholder,
+          #organization-info-two .register-body-main .input-container input::placeholder,
+          #primary-contact .register-body-main .input-container input::placeholder,
+          #terms-and-conditions .register-body-main .input-container input::placeholder,
+          #invite-employees .register-body-main .input-container input::placeholder {
             color: #cbcbcb; }
-      #organization-info .register-body-main-input-double {
+      #organization-info-one .register-body-main-input-double,
+      #organization-info-two .register-body-main-input-double,
+      #primary-contact .register-body-main-input-double,
+      #terms-and-conditions .register-body-main-input-double,
+      #invite-employees .register-body-main-input-double {
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
@@ -8922,10 +9094,18 @@ i {
         -webkit-justify-content: space-between;
         -moz-justify-content: space-between;
         justify-content: space-between; }
-        #organization-info .register-body-main-input-double .input-container {
+        #organization-info-one .register-body-main-input-double .input-container,
+        #organization-info-two .register-body-main-input-double .input-container,
+        #primary-contact .register-body-main-input-double .input-container,
+        #terms-and-conditions .register-body-main-input-double .input-container,
+        #invite-employees .register-body-main-input-double .input-container {
           width: 46.5%;
           margin-bottom: 0 !important; }
-    #organization-info .register-body-bottom {
+    #organization-info-one .register-body-bottom,
+    #organization-info-two .register-body-bottom,
+    #primary-contact .register-body-bottom,
+    #terms-and-conditions .register-body-bottom,
+    #invite-employees .register-body-bottom {
       margin-top: 6rem;
       width: 100%;
       max-width: 51.3rem;
@@ -8944,13 +9124,21 @@ i {
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
       justify-content: space-between; }
-      #organization-info .register-body-bottom-prev {
+      #organization-info-one .register-body-bottom-prev,
+      #organization-info-two .register-body-bottom-prev,
+      #primary-contact .register-body-bottom-prev,
+      #terms-and-conditions .register-body-bottom-prev,
+      #invite-employees .register-body-bottom-prev {
         font-size: 1.4rem;
         font-weight: 700;
         line-height: 1.36;
         letter-spacing: 0.56px;
         color: #797981; }
-      #organization-info .register-body-bottom-next {
+      #organization-info-one .register-body-bottom-next,
+      #organization-info-two .register-body-bottom-next,
+      #primary-contact .register-body-bottom-next,
+      #terms-and-conditions .register-body-bottom-next,
+      #invite-employees .register-body-bottom-next {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
         display: -moz-inline-flex;
@@ -8975,8 +9163,159 @@ i {
         color: #ffffff;
         border-radius: 3px;
         background-color: #0065f7; }
-        #organization-info .register-body-bottom-next svg {
+        #organization-info-one .register-body-bottom-next svg,
+        #organization-info-two .register-body-bottom-next svg,
+        #primary-contact .register-body-bottom-next svg,
+        #terms-and-conditions .register-body-bottom-next svg,
+        #invite-employees .register-body-bottom-next svg {
           margin-left: 1rem; }
+
+#primary-contact .register-body-main #email {
+  max-width: 75%; }
+#primary-contact .register-body-main-input-double {
+  margin-bottom: 2.6rem; }
+
+#terms-and-conditions .register-body-main .tac-label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: 0.14px;
+  color: #5c5d62; }
+#terms-and-conditions .register-body-main .tac-text {
+  padding: 1.3rem 5rem 2rem 1.8rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  max-height: 25rem;
+  max-width: 51.8rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.13px;
+  color: #4e4e4e;
+  border: solid 1px #e6e5ea;
+  background-color: rgba(255, 255, 255, 0.59);
+  overflow-y: auto; }
+  #terms-and-conditions .register-body-main .tac-text p:not(:last-of-type) {
+    margin-bottom: 2rem; }
+#terms-and-conditions .register-body-main-radio-info {
+  margin-bottom: 1.7rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: 0.14px;
+  color: #5c5d62; }
+#terms-and-conditions .register-body-main-radio .pretty-wrapper {
+  margin-bottom: 1.7rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start; }
+  #terms-and-conditions .register-body-main-radio .pretty-wrapper .pretty {
+    font-size: 1.5rem;
+    margin-right: 0; }
+  #terms-and-conditions .register-body-main-radio .pretty-wrapper-label {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.15px;
+    color: #5c5d62;
+    cursor: pointer; }
+
+#invite-employees .register-body-main .info {
+  margin-bottom: 1.1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.36;
+  letter-spacing: 0.14px;
+  color: #5c5d62; }
+  #invite-employees .register-body-main .info span {
+    color: #4f5458;
+    font-weight: 400; }
+#invite-employees .register-body-main textarea {
+  padding: .9rem;
+  margin-bottom: 2.6rem;
+  width: 100%;
+  height: 24rem;
+  border-radius: 2px;
+  border: solid 1px #e6e5ea;
+  background-color: rgba(255, 255, 255, 0.59);
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.15px; }
+  #invite-employees .register-body-main textarea::placeholder {
+    color: #a9a9a9; }
+#invite-employees .register-body-main .choice {
+  padding: 1.4rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  border-radius: 2px;
+  border: solid 1px #e6e5ea;
+  background-color: rgba(255, 255, 255, 0.59); }
+  #invite-employees .register-body-main .choice .pretty {
+    margin-right: 0;
+    font-size: 2.5rem; }
+  #invite-employees .register-body-main .choice-label {
+    width: 100%;
+    cursor: pointer; }
+    #invite-employees .register-body-main .choice-label-top {
+      margin-bottom: .4rem;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.33;
+      letter-spacing: 0.15px;
+      color: #3d464d; }
+    #invite-employees .register-body-main .choice-label-bot {
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.38;
+      letter-spacing: 0.13px;
+      color: #7b8993; }
+  #invite-employees .register-body-main .choice:first-of-type {
+    margin-bottom: .8rem; }
 
 #subscription-plan .register {
   font-family: "Roboto", sans-serif;

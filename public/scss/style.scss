@@ -11480,7 +11480,12 @@ i {
 // REGISTER START
 // ==================================
 
-#organization-info {
+#organization-info-one,
+#organization-info-two,
+#primary-contact,
+#terms-and-conditions,
+#invite-employees {
+
   & .register {
     font-family: "Roboto", sans-serif;
     height: 100vh;
@@ -11535,6 +11540,14 @@ i {
                 color: #1758b8;
                 border: solid 1.5px #1758b8;
               }
+
+              & .check {
+                display: none;
+              }
+
+              & + .register-side-list-item-nested-list {
+                display: block;
+              }
             }
   
             &.completed {
@@ -11542,9 +11555,14 @@ i {
               & .symbol {
                 display: none;
               }
+
+              & .check {
+                display: block;
+              }
             }
   
             & .check {
+              display: none;
               margin-right: 2.1rem;
   
               & svg {
@@ -11572,6 +11590,7 @@ i {
   
   
           &-nested-list {
+            display: none;
             margin-top: 2.6rem;
             margin-left: 4.8rem;
   
@@ -11777,6 +11796,193 @@ i {
   
           & svg {
             margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+//PAGE SPECIFIC MODIFIERS
+#primary-contact {
+  & .register {
+
+    &-body {
+
+      &-main {
+
+        & #email {
+          max-width: 75%;
+        }
+
+        &-input-double {
+          margin-bottom: 2.6rem;
+        }
+
+      }
+    }
+  }
+}
+
+#terms-and-conditions {
+  & .register {
+
+    &-body {
+
+      &-main {
+
+        & .tac {
+
+          &-label {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.36;
+            letter-spacing: 0.14px;
+            color: #5c5d62;
+          }
+
+          &-text {
+            padding: 1.3rem 5rem 2rem 1.8rem;
+            margin-bottom: 5rem;
+            width: 100%;
+            max-height: 25rem;
+            max-width: 51.8rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.38;
+            letter-spacing: 0.13px;
+            color: #4e4e4e;
+            border: solid 1px #e6e5ea;
+            background-color: rgba(255, 255, 255, 0.59);
+            overflow-y: auto;
+
+            & p:not(:last-of-type) {
+              margin-bottom: 2rem;
+            }
+          }
+        }
+
+        &-radio {
+
+          &-info {
+            margin-bottom: 1.7rem;
+            font-size: 1.4rem;
+            font-weight: 400;
+            line-height: 1.36;
+            letter-spacing: 0.14px;
+            color: #5c5d62;
+          }
+
+          & .pretty-wrapper {
+            margin-bottom: 1.7rem;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(flex-start);
+
+            & .pretty {
+              font-size: 1.5rem;
+              margin-right: 0;
+            }
+
+            &-label {
+              font-size: 1.5rem;
+              font-weight: 400;
+              line-height: 1.33;
+              letter-spacing: 0.15px;
+              color: #5c5d62;
+              cursor: pointer;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+#invite-employees {
+
+  & .register {
+
+    &-body {
+
+      &-main {
+
+        & .info {
+          margin-bottom: 1.1rem;
+          width: 100%;
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(space-between);
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: 0.14px;
+          color: #5c5d62;
+    
+          & span {
+            color: #4f5458;
+            font-weight: 400;
+          }
+        }
+    
+        & textarea {
+          padding: .9rem;
+          margin-bottom: 2.6rem;
+          width: 100%;
+          height: 24rem;
+          border-radius: 2px;
+          border: solid 1px #e6e5ea;
+          background-color: rgba(255, 255, 255, 0.59);
+          outline: none;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.33;
+          letter-spacing: 0.15px;
+    
+          &::placeholder {
+            color: #a9a9a9;
+          }
+        }
+    
+        & .choice {
+          padding: 1.4rem 1.6rem;
+          @include flexbox;
+          @include align-items(center);
+          @include justify-content(flex-start);
+          width: 100%;
+          border-radius: 2px;
+          border: solid 1px #e6e5ea;
+          background-color: rgba(255, 255, 255, 0.59);
+    
+          & .pretty {
+            margin-right: 0;
+            font-size: 2.5rem;
+          }
+    
+          &-label {
+            width: 100%;
+            cursor: pointer;
+            &-top {
+              margin-bottom: .4rem;
+              font-size: 1.5rem;
+              font-weight: 400;
+              line-height: 1.33;
+              letter-spacing: 0.15px;
+              color: #3d464d;
+            }
+    
+            &-bot {
+              font-size: 1.3rem;
+              font-weight: 400;
+              line-height: 1.38;
+              letter-spacing: 0.13px;
+              color: #7b8993;
+            }
+          }
+    
+          &:first-of-type {
+            margin-bottom: .8rem;
           }
         }
       }
