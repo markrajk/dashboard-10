@@ -1832,12 +1832,11 @@ i {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  height: 100%;
+  height: calc(100% - 5rem);
   width: 100%;
-  max-height: calc(100vh - 11rem - 16rem - 8rem -2rem);
   border-radius: 5px;
   box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
-  border: solid 1px #eaeaea;
+  border: solid 1px #eaeaea !important;
   background-color: #ffffff;
   text-align: center;
   z-index: 100; }
@@ -2253,31 +2252,31 @@ i {
           font-size: 1.4rem;
           line-height: 1.36;
           letter-spacing: 0.17px;
-          color: #626572; }
+          color: #626572;
+          border-radius: 8px; }
           .sidebar-menu-list-item-link:hover, .sidebar-menu-list-item-link:focus {
-            border-radius: 8px;
             background-color: #f1f1f1;
             transition: all .3s ease-in-out; }
           .sidebar-menu-list-item-link.active {
             color: #1a9cfc;
             border-radius: 8px;
             background-color: #d1ebfe;
-            transition: all .3s ease-in-out; }
+            transition: transform .3s ease-in-out; }
           .sidebar-menu-list-item-link.active {
             font-weight: 500; }
             .sidebar-menu-list-item-link.active .icon-close {
-              opacity: 1; }
+              visibility: visible; }
+              .sidebar-menu-list-item-link.active .icon-close:hover {
+                transform: translate(-120%, -50%) scale(1.2); }
         .sidebar-menu-list-item .icon-close {
-          opacity: 0;
+          visibility: hidden;
           position: absolute;
           top: 50%;
           right: 0;
-          transform: translate(-120%, -50%);
+          transform: translate(-120%, -50%) scale(1);
           font-size: 1.2rem;
           color: #B0C5D5;
           transition: all .2s ease-in-out; }
-          .sidebar-menu-list-item .icon-close:hover {
-            transform: translate(-120%, -50%) scale(1.2); }
     .sidebar-menu-footer {
       margin-top: auto; }
       .sidebar-menu-footer-create-new {
