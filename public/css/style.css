@@ -2092,7 +2092,8 @@ i {
         -moz-justify-content: space-between;
         justify-content: space-between;
         background-color: #f0f0f0;
-        z-index: 10; }
+        z-index: 10;
+        cursor: pointer; }
         .explainer-main-card-header-title {
           font-size: 1.5rem;
           font-weight: 500;

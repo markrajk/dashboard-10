@@ -3097,6 +3097,7 @@ i {
         @include justify-content(space-between);
         background-color: #f0f0f0;
         z-index: 10;
+        cursor: pointer;
 
         &-title {
           font-size: 1.5rem;
