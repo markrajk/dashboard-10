@@ -270,7 +270,7 @@
                 <div class="teams-settings-feedback-header">
                     <a href="../teams-settings-general/index.html" class="button button-outlined">General</a>
                     <a href="../teams-settings-lead/index.html" class="button button-outlined">Team lead</a>
-                    <a href="../teams-settings-feedback/index.html" class="button button-dark">Feedback settings</a>
+                    <a href="../teams-settings-feedback/index.html" class="button button-dark">Feedback requests</a>
                     <a href="../teams-settings-rights/index.html" class="button button-outlined">Rights</a>
                 </div>
                 <div class="teams-settings-feedback-body">
@@ -307,7 +307,14 @@
                                         <option value="value01">Random Name</option>
                                     </select>
                                 </td>
-                                <td class="table-custom-col-02 text-truncate">
+
+                            <tr id="not-yet">
+                                <td id="not-yet-td" colspan="5">
+                                    <p id="not-yet-td-text">No feedback requests at the moment</p>
+                                    <p id="not-yet-td-info">Click <button>here</button> to create your first one</p>
+                                </td>
+                            </tr>
+                            <!-- <td class="table-custom-col-02 text-truncate">
                                     <select class="text-truncate" name="input-row-select-01" id="input-row-select-01">
                                         <option value="value01" selected>Select member</option>
                                         <option value="value01">Random Name</option>
@@ -662,7 +669,7 @@
                                 <td class="table-custom-col-04">
                                     <a href="#">Delete</a>
                                 </td>
-                            </tr>
+                            </tr> -->
 
                         </tbody>
                     </table>

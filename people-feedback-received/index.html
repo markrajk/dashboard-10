@@ -316,10 +316,10 @@
 
                         <div class="section-comments-body">
 
-                            <div class="no-feedback">
+                            <!-- <div class="no-feedback">
                                 <p class="no-feedback-title">No feedback received yet</p>
                                 <p class="no-feedback-text">Here you will soon find the feedback that <span>Julia</span> reviews.</p>
-                            </div>
+                            </div> -->
 
                             <div class="comment">
                                 <div class="comment-header">
@@ -396,7 +396,7 @@
                                 </div>
                             </div>
 
-                            
+
 
                         </div>
 
@@ -459,11 +459,11 @@
                     <span><span><i class="icon-close read-more close"></i></span></span>
                 </div>
             `;
-            if(!commentsBody[i].querySelector('.comment-body-text-trunc')) {
-                commentsBody[i].insertAdjacentHTML('beforeend', commentsBodyTextTrunc);
-                commentsBodyText.style.display = 'none';
-            }
-            
+                if (!commentsBody[i].querySelector('.comment-body-text-trunc')) {
+                    commentsBody[i].insertAdjacentHTML('beforeend', commentsBodyTextTrunc);
+                    commentsBodyText.style.display = 'none';
+                }
+
             }
 
             var readMoreTriggers = document.querySelectorAll('.read-more');
@@ -472,10 +472,10 @@
                 readMoreTriggers[i].addEventListener('click', function (e) {
                     console.log(e.target, e.target.parentElement)
                     var comment = e.target.parentElement.parentElement.parentElement
-                    .parentElement;
+                        .parentElement;
                     var complimentBool = e.target.parentElement.classList.contains(
                         'comment-body-text-trunc-compliment-container');
-                        console.log(complimentBool)
+                    console.log(complimentBool)
                     var messageContent = complimentBool ? commentsBodyTextCompliment.innerText :
                         commentsBodyTextImprover.innerText;
                     var messageContainer = comment.querySelector('.comment-body-message');
