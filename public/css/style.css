@@ -2002,6 +2002,7 @@ i {
 
 .explainer {
   padding: 2rem 1.3rem;
+  width: 100%;
   max-width: 29rem;
   position: fixed;
   top: 50%;
@@ -2010,7 +2011,31 @@ i {
   border-radius: 2px;
   box-shadow: 0 3px 10px 0 rgba(190, 190, 190, 0.4);
   border: solid 1.5px #eaeaea;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: transform .3s ease-in-out; }
+  .explainer-side {
+    padding: 2.7rem .3rem;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0) rotateZ(-180deg);
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.29;
+    color: #3d464d;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-align: right;
+    height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px 0 rgba(190, 190, 190, 0.4);
+    border: solid 1.5px #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer; }
+    .explainer-side svg {
+      margin-top: .5rem;
+      transform: rotateZ(180deg); }
   .explainer-header {
     padding: 0 .9rem 2.1rem;
     display: -webkit-box;
@@ -2038,85 +2063,108 @@ i {
       font-size: 1.3rem;
       color: #1d1d1d;
       cursor: pointer; }
-  .explainer-main-card {
-    margin-bottom: .8rem;
-    padding: 1.6rem;
-    padding-top: .8rem;
-    padding-bottom: 1.2rem;
-    border-radius: 2px;
-    background-color: #f0f0f0; }
-    .explainer-main-card-header {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      -webkit-justify-content: space-between;
-      -moz-justify-content: space-between;
-      justify-content: space-between; }
-      .explainer-main-card-header-title {
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 1.47;
-        letter-spacing: 0.08px;
-        color: #1d1d1d; }
-      .explainer-main-card-header .fa-chevron-up, .explainer-main-card-header .fa-chevron-down {
-        font-size: 1.4rem;
-        cursor: pointer; }
-    .explainer-main-card-body {
-      padding-top: 1rem;
-      display: none; }
-      .explainer-main-card-body-img {
-        min-width: 0;
-        width: 100%;
-        max-width: 100%; }
-      .explainer-main-card-body-text {
+  .explainer-main {
+    width: 100%; }
+    .explainer-main-card {
+      position: relative;
+      margin-bottom: .8rem;
+      padding: 1.6rem;
+      padding-top: .8rem;
+      padding-bottom: 1.2rem;
+      width: 100%;
+      border-radius: 2px;
+      background-color: #f0f0f0;
+      overflow: hidden; }
+      .explainer-main-card-header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+        z-index: 10; }
+        .explainer-main-card-header-title {
+          font-size: 1.5rem;
+          font-weight: 500;
+          line-height: 1.47;
+          letter-spacing: 0.08px;
+          color: #1d1d1d; }
+        .explainer-main-card-header .icon-chevron-left {
+          transform: rotateZ(-90deg);
+          font-size: 1.4rem;
+          cursor: pointer; }
+          .explainer-main-card-header .icon-chevron-left.closed {
+            transform: rotateZ(90deg); }
+      .explainer-main-card-body {
+        top: 0;
+        left: 0;
         padding-top: 1rem;
-        padding-bottom: 1.5rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        line-height: 1.47;
-        color: #5a5a5a; }
-      .explainer-main-card-body-buttons {
-        padding-bottom: .4rem;
-        font-size: 1.5rem;
-        line-height: 1.47;
-        color: #ffffff; }
-        .explainer-main-card-body-buttons-blue {
-          margin-right: 1.1rem;
-          display: -webkit-inline-box;
-          display: -webkit-inline-flex;
-          display: -moz-inline-flex;
-          display: -ms-inline-flexbox;
-          display: inline-flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          -webkit-justify-content: center;
-          -moz-justify-content: center;
-          justify-content: center;
-          padding: .6rem 1.3rem;
-          font-weight: 500;
-          color: #FFF;
-          border-radius: 2px;
-          background-color: #0d2481; }
-        .explainer-main-card-body-buttons-link {
-          font-weight: 500;
-          color: #1d1d1d;
-          text-decoration: underline; }
-    .explainer-main-card.open .explainer-main-card-body {
-      display: block !important; }
+        transition: transform .4s ease-in-out;
+        z-index: -1; }
+        .explainer-main-card-body-img {
+          min-width: 0;
+          width: 100%;
+          max-width: 100%; }
+        .explainer-main-card-body-text {
+          padding-top: 1rem;
+          padding-bottom: 1.5rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.47;
+          color: #5a5a5a; }
+        .explainer-main-card-body-buttons {
+          padding-bottom: .4rem;
+          font-size: 1.5rem;
+          line-height: 1.47;
+          color: #ffffff; }
+          .explainer-main-card-body-buttons-blue {
+            margin-right: 1.1rem;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            padding: .6rem 1.3rem;
+            font-weight: 500;
+            color: #FFF;
+            border-radius: 2px;
+            background-color: #0d2481; }
+          .explainer-main-card-body-buttons-link {
+            font-weight: 500;
+            color: #1d1d1d;
+            text-decoration: underline; }
+      .explainer-main-card.closed .explainer-main-card-body {
+        top: 0;
+        left: 0;
+        position: absolute;
+        transform: translate(0, -100%); }
+  .explainer.closed {
+    transform: translate(100%, -50%); }
+    .explainer.closed .explainer-side {
+      visibility: visible;
+      transition: all .4s ease-in-out;
+      transition-property: visibility;
+      transition-delay: .4s; }
 
 .new-dropdown {
   position: relative;

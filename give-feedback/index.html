@@ -375,15 +375,26 @@
 
 
     <div class="explainer">
+        <div class="explainer-side explainer-toggle">
+            Get started
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.678" height="15" viewBox="0 0 14.678 15">
+                <g transform="translate(-1421.75 -128)">
+                    <path
+                        d="M6.568,13.043,6,13.609a.61.61,0,0,1-.865,0L.176,8.652a.61.61,0,0,1,0-.865l4.96-4.96a.61.61,0,0,1,.865,0l.566.566a.613.613,0,0,1-.01.875L3.483,7.2h7.333a.611.611,0,0,1,.612.612v.816a.611.611,0,0,1-.612.612H3.483l3.074,2.929A.609.609,0,0,1,6.568,13.043Z"
+                        transform="translate(1425 127.782)" fill="#3d464d" />
+                    <line y2="15" transform="translate(1422.5 128)" fill="none" stroke="#3d464d" stroke-width="1.5" />
+                </g>
+            </svg>
+        </div>
         <div class="explainer-header">
             <h3 class="explainer-header-title">Let's get started</h3>
-            <i class="icon-close"></i>
+            <i class="icon-close explainer-toggle"></i>
         </div>
         <div class="explainer-main">
-            <div class="explainer-main-card open">
+            <div class="explainer-main-card">
                 <div class="explainer-main-card-header">
                     <h4 class="explainer-main-card-header-title">Let us create your <br> first team</h4>
-                    <i class="fas fa-chevron-up"></i>
+                    <i class="icon-chevron-left explainer-main-card-toggle"></i>
                 </div>
                 <div class="explainer-main-card-body">
                     <img src="../public/img/explainer-img.png" alt="Explain image" class="explainer-main-card-body-img">
@@ -400,7 +411,7 @@
             <div class="explainer-main-card closed">
                 <div class="explainer-main-card-header">
                     <h4 class="explainer-main-card-header-title">Let us create your <br> first team</h4>
-                    <i class="fas fa-chevron-up"></i>
+                    <i class="icon-chevron-left explainer-main-card-toggle closed"></i>
                 </div>
                 <div class="explainer-main-card-body">
                     <img src="../public/img/explainer-img.png" alt="Explain image" class="explainer-main-card-body-img">
@@ -420,6 +431,33 @@
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="../public/js/main.js"></script>
+
+    <script>
+        var explainerCards = document.querySelectorAll('.explainer-main-card');
+        var explainerCardTriggers = document.querySelectorAll('.explainer-main-card-header');
+
+        for (var i = 0; i < explainerCardTriggers.length; i++) {
+            explainerCardTriggers[i].addEventListener('click', function (e) {
+
+                if (e.target.classList.contains('explainer-main-card-toggle')) {
+                    console.log(e.target.parentElement.parentElement)
+                    e.target.parentElement.parentElement.classList
+                        .toggle('closed');
+                    e.target.classList
+                        .toggle('closed');
+                }
+            })
+        }
+
+        var explainer = document.querySelector('.explainer');
+        var explainerToggles = document.querySelectorAll('.explainer-toggle');
+
+        for (var i = 0; i < explainerToggles.length; i++) {
+            explainerToggles[i].addEventListener('click', function (e) {
+                explainer.classList.toggle('closed');
+            })
+        }
+    </script>
 </body>
 
 </html>
