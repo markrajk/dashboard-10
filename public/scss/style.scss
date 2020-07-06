@@ -2021,14 +2021,27 @@ i {
     & .table-custom {
       margin-bottom: 2.6rem;
 
+      &-head {
+        border: 0!important;
+      }
+
       &-body {
         max-height: 23.1rem;
+        border: 0!important;
+        border-bottom: 1px solid #EFF0F2!important;
+
         & tr {
+          padding-left: 1.3rem;
+          padding-right: 1.3rem;
+          
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #EFF0F2!important;
+          }
 
           & td {
 
             &.column-01 {
-              flex: 1;
+              flex: 1.1;
 
               & .initials {
                 margin-right: 1.6rem;
@@ -2077,6 +2090,8 @@ i {
             }
 
             &.column-03 {
+              margin-right: 0;
+              @include justify-content(center);
               flex: .3;
 
               & .button {
