@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Team Feedback | Viewing Rights Modal</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../public/css/bootstrap.css" />
+  <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+  <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+
+<body>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#requestViewingRightsModal">
+    Launch demo modal
+  </button>
+
+  <!-- INVITE EMPLOYEES -->
+  <div class="modal fade modal-custom" id="requestViewingRightsModal" tabindex="-1" role="dialog"
+    aria-labelledby="inviteEmpoyeesModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-body-title">Request viewing rights</h2>
+          <p class="modal-body-text">To follow the development of other teams you need to get viewing rights. </p>
+          <div class="input-container">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search team by team leaders name">
+          </div>
+
+          <table class="table-custom">
+            <thead class="table-custom-head">
+              <td>Search results</td>
+            </thead>
+            <tbody class="table-custom-body">
+
+              <tr>
+                <td class="column-01">
+                  <div class="initials"><i class="icon-users"></i></div>
+                  <div class="info">
+                    <p class="info-top">Team Construction Garage 22 </p>
+                    <p class="info-bot">22 Members</p>
+                  </div>
+                </td>
+
+                <td class="column-02">maxmatinpalo@me.com</td>
+
+                <td class="column-03">
+                  <button class="button button-outlined">Select</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-01">
+                  <div class="initials"><i class="icon-users"></i></div>
+                  <div class="info">
+                    <p class="info-top">Team Construction Garage 22 </p>
+                    <p class="info-bot">22 Members</p>
+                  </div>
+                </td>
+
+                <td class="column-02">maxmatinpalo@me.com</td>
+
+                <td class="column-03">
+                  <button class="button button-dark">Selected</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-01">
+                  <div class="initials"><i class="icon-users"></i></div>
+                  <div class="info">
+                    <p class="info-top">Team Construction Garage 22 </p>
+                    <p class="info-bot">22 Members</p>
+                  </div>
+                </td>
+
+                <td class="column-02">maxmatinpalo@me.com</td>
+
+                <td class="column-03">
+                  <button class="button button-outlined">Select</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-01">
+                  <div class="initials"><i class="icon-users"></i></div>
+                  <div class="info">
+                    <p class="info-top">Team Construction Garage 22 </p>
+                    <p class="info-bot">22 Members</p>
+                  </div>
+                </td>
+
+                <td class="column-02">maxmatinpalo@me.com</td>
+
+                <td class="column-03">
+                  <button class="button button-dark">Selected</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="column-01">
+                  <div class="initials"><i class="icon-users"></i></div>
+                  <div class="info">
+                    <p class="info-top">Team Construction Garage 22 </p>
+                    <p class="info-bot">22 Members</p>
+                  </div>
+                </td>
+
+                <td class="column-02">maxmatinpalo@me.com</td>
+
+                <td class="column-03">
+                  <button class="button button-outlined request-button">Select</button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <button class="button button-dark">Request rights</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../public/js/jquery-3.4.1.min.js"></script>
+  <script src="../public/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="../public/js/main.js"></script>
+</body>
+
+</html>
