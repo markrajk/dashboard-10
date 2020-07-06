@@ -1113,10 +1113,10 @@ i {
 #requestViewingRightsModal .modal-dialog {
   max-width: 84.6rem; }
 #requestViewingRightsModal .modal-header {
-  padding-top: 3.6rem;
+  padding-top: 2.9rem;
   padding-right: 3.6rem; }
   #requestViewingRightsModal .modal-header .close {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
 #requestViewingRightsModal .modal-body {
   padding-top: 0;
   padding-left: 5.6rem;
@@ -1148,7 +1148,7 @@ i {
     line-height: 1.29;
     color: #647282; }
   #requestViewingRightsModal .modal-body .input-container {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.6rem;
     position: relative;
     width: 100%;
     max-width: 31.4rem; }
@@ -1172,20 +1172,21 @@ i {
       left: 0;
       transform: translate(75%, -50%); }
   #requestViewingRightsModal .modal-body .table-custom {
-    margin-bottom: 2.6rem; }
+    margin-bottom: 2.8rem; }
     #requestViewingRightsModal .modal-body .table-custom-head {
       border: 0 !important; }
     #requestViewingRightsModal .modal-body .table-custom-body {
-      max-height: 23.1rem;
+      max-height: 17.4rem;
       border: 0 !important;
       border-bottom: 1px solid #EFF0F2 !important; }
       #requestViewingRightsModal .modal-body .table-custom-body tr {
-        padding-left: 1.3rem;
+        height: 5.8rem;
+        padding-left: .8rem;
         padding-right: 1.3rem; }
         #requestViewingRightsModal .modal-body .table-custom-body tr:not(:last-of-type) {
           border-bottom: 1px solid #EFF0F2 !important; }
         #requestViewingRightsModal .modal-body .table-custom-body tr td.column-01 {
-          flex: 1.1; }
+          flex: 1; }
           #requestViewingRightsModal .modal-body .table-custom-body tr td.column-01 .initials {
             margin-right: 1.6rem;
             display: -webkit-inline-box;
@@ -1203,8 +1204,8 @@ i {
             -webkit-justify-content: center;
             -moz-justify-content: center;
             justify-content: center;
-            width: 4rem;
-            height: 4rem;
+            width: 4.06rem;
+            height: 4.06rem;
             font-size: 2.7rem;
             color: #FFF;
             background-color: #ffd800;

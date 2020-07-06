@@ -1946,11 +1946,11 @@ i {
   }
 
   & .modal-header {
-    padding-top: 3.6rem;
+    padding-top: 2.9rem;
     padding-right: 3.6rem;
 
     & .close {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -1987,7 +1987,7 @@ i {
     }
 
     & .input-container {
-      margin-bottom: 1.8rem;
+      margin-bottom: 1.6rem;
       position: relative;
       width: 100%;
       max-width: 31.4rem;
@@ -2019,19 +2019,20 @@ i {
     }
 
     & .table-custom {
-      margin-bottom: 2.6rem;
+      margin-bottom: 2.8rem;
 
       &-head {
         border: 0!important;
       }
 
       &-body {
-        max-height: 23.1rem;
+        max-height: 17.4rem;
         border: 0!important;
         border-bottom: 1px solid #EFF0F2!important;
 
         & tr {
-          padding-left: 1.3rem;
+          height: 5.8rem;
+          padding-left: .8rem;
           padding-right: 1.3rem;
           
           &:not(:last-of-type) {
@@ -2041,15 +2042,15 @@ i {
           & td {
 
             &.column-01 {
-              flex: 1.1;
+              flex: 1;
 
               & .initials {
                 margin-right: 1.6rem;
                 @include inline-flex();
                 @include align-items(center);
                 @include justify-content(center);
-                width: 4rem;
-                height: 4rem;
+                width: 4.06rem;
+                height: 4.06rem;
                 font-size: 2.7rem;
                 color: #FFF;
                 background-color: #ffd800;
