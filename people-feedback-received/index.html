@@ -480,8 +480,7 @@
                     var complimentBool = e.target.parentElement.classList.contains(
                         'comment-body-text-trunc-compliment-container');
                     console.log(complimentBool)
-                    var messageContent = complimentBool ? commentsBodyTextCompliment.innerText :
-                        commentsBodyTextImprover.innerText;
+                    var messageContent = e.target.parentElement.querySelector('span').innerText;
                     var messageContainer = comment.querySelector('.comment-body-message');
 
                     messageContainer.innerHTML = `

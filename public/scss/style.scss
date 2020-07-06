@@ -3016,11 +3016,12 @@ i {
 
 .explainer {
   padding: 2rem 1.3rem;
+  padding-right: 1.5rem;
   width: 100%;
   max-width: 29rem;
   position: fixed;
   top: 50%;
-  right: 0;
+  right: -2;
   transform: translate(0, -50%);
   border-radius: 2px;
   box-shadow: 0 3px 10px 0 rgba(190, 190, 190, 0.4);
