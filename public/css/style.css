@@ -1172,15 +1172,17 @@ i {
       left: 0;
       transform: translate(75%, -50%); }
   #requestViewingRightsModal .modal-body .table-custom {
-    margin-bottom: 2.8rem; }
+    margin-bottom: 3rem; }
     #requestViewingRightsModal .modal-body .table-custom-head {
-      border: 0 !important; }
+      height: 3.7rem;
+      border: 0 !important;
+      font-size: 1.25rem; }
     #requestViewingRightsModal .modal-body .table-custom-body {
       max-height: 17.4rem;
       border: 0 !important;
       border-bottom: 1px solid #EFF0F2 !important; }
       #requestViewingRightsModal .modal-body .table-custom-body tr {
-        height: 5.8rem;
+        height: 6rem;
         padding-left: .8rem;
         padding-right: 1.3rem; }
         #requestViewingRightsModal .modal-body .table-custom-body tr:not(:last-of-type) {

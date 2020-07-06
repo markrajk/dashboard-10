@@ -2019,10 +2019,12 @@ i {
     }
 
     & .table-custom {
-      margin-bottom: 2.8rem;
+      margin-bottom: 3rem;
 
       &-head {
+        height: 3.7rem;
         border: 0!important;
+        font-size: 1.25rem;
       }
 
       &-body {
@@ -2031,7 +2033,7 @@ i {
         border-bottom: 1px solid #EFF0F2!important;
 
         & tr {
-          height: 5.8rem;
+          height: 6rem;
           padding-left: .8rem;
           padding-right: 1.3rem;
           
