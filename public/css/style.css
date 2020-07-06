@@ -1855,6 +1855,124 @@ i {
       color: #137efe;
       text-decoration: underline; }
 
+.explainer {
+  padding: 2rem 1.3rem;
+  max-width: 29rem;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  border-radius: 2px;
+  box-shadow: 0 3px 10px 0 rgba(190, 190, 190, 0.4);
+  border: solid 1.5px #eaeaea;
+  background-color: #ffffff; }
+  .explainer-header {
+    padding: 0 .9rem 2.1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+    .explainer-header-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.22;
+      letter-spacing: 0.09px;
+      color: #1d1d1d; }
+    .explainer-header .icon-close {
+      font-size: 1.3rem;
+      color: #1d1d1d;
+      cursor: pointer; }
+  .explainer-main-card {
+    margin-bottom: .8rem;
+    padding: 1.6rem;
+    padding-top: .8rem;
+    padding-bottom: 1.2rem;
+    border-radius: 2px;
+    background-color: #f0f0f0; }
+    .explainer-main-card-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between; }
+      .explainer-main-card-header-title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.47;
+        letter-spacing: 0.08px;
+        color: #1d1d1d; }
+      .explainer-main-card-header .fa-chevron-up, .explainer-main-card-header .fa-chevron-down {
+        font-size: 1.4rem;
+        cursor: pointer; }
+    .explainer-main-card-body {
+      padding-top: 1rem;
+      display: none; }
+      .explainer-main-card-body-img {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%; }
+      .explainer-main-card-body-text {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.47;
+        color: #5a5a5a; }
+      .explainer-main-card-body-buttons {
+        padding-bottom: .4rem;
+        font-size: 1.5rem;
+        line-height: 1.47;
+        color: #ffffff; }
+        .explainer-main-card-body-buttons-blue {
+          margin-right: 1.1rem;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -moz-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center;
+          padding: .6rem 1.3rem;
+          font-weight: 500;
+          color: #FFF;
+          border-radius: 2px;
+          background-color: #0d2481; }
+        .explainer-main-card-body-buttons-link {
+          font-weight: 500;
+          color: #1d1d1d;
+          text-decoration: underline; }
+    .explainer-main-card.open .explainer-main-card-body {
+      display: block !important; }
+
 .sidebar {
   position: relative;
   display: -webkit-inline-box;
@@ -9787,7 +9905,13 @@ i {
         color: #1758b8;
         text-decoration: underline; }
 
-.teams-settings-general-header .button-dark:hover, .teams-settings-general-header .button-dark:focus,
+.single-user .button-dark:hover, .single-user .button-dark:focus,
+.single-user-feedback .button-dark:hover,
+.single-user-feedback .button-dark:focus,
+.single-user-feedback-given .button-dark:hover,
+.single-user-feedback-given .button-dark:focus,
+.teams-settings-general-header .button-dark:hover,
+.teams-settings-general-header .button-dark:focus,
 .teams-settings-lead-header .button-dark:hover,
 .teams-settings-lead-header .button-dark:focus,
 .teams-settings-feedback-header .button-dark:hover,
@@ -9834,9 +9958,18 @@ p:not(.no-ls), span:not(.no-ls), a, li {
     /* height: 100%!important; */
     overflow: auto !important;
     max-height: 100% !important; } }
+.icon-caret-up,
+.icon-caret-down {
+  font-size: 0.8rem !important; }
+
 .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
   font-size: 0.8rem !important; }
 
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .icon-caret-up,
+    .icon-caret-down {
+      font-size: 7.5px !important; } } }
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
