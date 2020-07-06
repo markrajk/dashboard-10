@@ -2969,21 +2969,28 @@ i {
     }
 
     & .input-container {
+      padding-left: 2.4rem;
       position: relative;
       @include flexbox;
 
       & input {
         background-color: transparent;
         padding: 0;
-        padding-left: 4.8rem;
+        padding-left: 2.6rem;
+        padding-bottom: .4rem;
         border: none;
         outline: none;
         font-size: 1.5rem;
         font-weight: 400;
         color: #333;
+        border-bottom: 1.5px solid transparent;
 
         &::placeholder {
           color: #9699a6;
+        }
+
+        &:focus {
+          border-bottom: 1.5px solid #1A9CFC;
         }
       }
 
@@ -2991,8 +2998,8 @@ i {
         margin-top: -.1rem;
         position: absolute;
         top: 50%;
-        left: 2.4rem;
-        transform: translate(0, -50%);
+        left: 2.8rem;
+        transform: translate(0, -65%);
         font-size: 1.5rem;
         color: #9699a6;
       }
@@ -3020,8 +3027,15 @@ i {
           letter-spacing: 0.17px;
           color: #626572;
 
+
           &:hover,
-          &:focus,
+          &:focus {
+            border-radius: 8px;
+            background-color: #f1f1f1;
+            transition: all .3s ease-in-out;
+          }
+
+
           &.active {
             color: #1a9cfc;
             border-radius: 8px;
@@ -3038,9 +3052,9 @@ i {
           }
 
           
-        &:hover .icon-close {
-          opacity: 1;
-        }
+        // &:hover .icon-close {
+        //   opacity: 1;
+        // }
         }
 
         & .icon-close {
