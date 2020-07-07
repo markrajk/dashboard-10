@@ -130,5 +130,22 @@ Link all pages and make modals work on all pages with that functionality.
   * teams-settings-general modal added (row with modal link is commented) there is only, linked version of row, visible.
 - CSS changes:
     * CSS file changed
+## Changes 06.07.2020
+- HTML changes:
+    * create-new-team page changed, some elements removed textarea, new dropdown added & header text changed
+    * user-settings-advanced links removed from user-settings pages
+    * user-settings-general initials placeholder for profile picture added
+    * teams-average-charts & people-average-charts padding settings changed
+    * teams-settings pages feedback settings button changed to feedback request
+    * teams-settings-rights no enteries placeholder added
+    * teams-settings-feedback no enteries placeholder added
+    * teams-settings-general team image changed & img folder have new images
+    * give-feedback page data-toggle="modal" data-target="#feedbackModal" removed from give-feedback-people-body and added to individual person cards
+    * give-feedback new element added explainer(get started)
+    * give-feedback page is where i put new features so its most complete, here is example for sidebar menu items hover/active, close(x) functionality aswell as notification elements before, if needed i can implement in other pages.
+- CSS changes:
+    * CSS file changed
+- JS changes:
+    * people-feedback-received, people-feedback-given comments function updated (The one i sent you yesterday, nothing new just adding to readme)
 
 
