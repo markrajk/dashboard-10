@@ -798,7 +798,7 @@ select > option {
     margin-left: 0;
   }
 
-  & + .page-content {
+  & ~ .page-content {
     //width: calc(100% - 8.4rem);
     width: calc(100% - 33.8rem);
   }

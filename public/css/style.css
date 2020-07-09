@@ -204,7 +204,7 @@ select > option {
 
 .sidebar-menu-open-anim .sidebar-menu {
   margin-left: 0; }
-.sidebar-menu-open-anim + .page-content {
+.sidebar-menu-open-anim ~ .page-content {
   width: calc(100% - 33.8rem); }
 
 .sidebar-menu-close-icon-rotate {
