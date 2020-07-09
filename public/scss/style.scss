@@ -3683,6 +3683,7 @@ i {
       & .face {
         width: 3.2rem;
         height: 3.2rem;
+        border-radius: 50%;
       }
 
       & .user-initials {
@@ -5730,7 +5731,7 @@ i {
         border-radius: 2.5px;
 
         & .column-01 {
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           font-weight: 500;
           line-height: 1.33;
           color: #647282;
@@ -6771,7 +6772,7 @@ i {
         }
 
         &:hover {
-          animation: bounce .4s ease-in-out;
+          transform: scale(1.1);
         }
 
         & img {
@@ -7882,6 +7883,7 @@ i {
     }
 
     &-caption {
+      margin-bottom: 1.1rem;
       font-size: 1.7rem;
       font-weight: 400;
       line-height: 1.35;
@@ -12933,7 +12935,6 @@ p:not(.no-ls), span:not(.no-ls), a, li {
   }
 
 .table-custom {
-  margin-left: .5rem!important;
 
   &-head {
 
@@ -12976,8 +12977,7 @@ p:not(.no-ls), span:not(.no-ls), a, li {
 }
 
 
-@keyframes bounce {
-  0% { transform: scale(.95)}
-  50% { transform: scale(1.1)}
-  80% { transform: scale(0.9) }
-}
+// @keyframes bounce {
+//   0% { transform: scale(.95)}
+//   100% { transform: scale(0.9) }
+// }

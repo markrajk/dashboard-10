@@ -2591,7 +2591,8 @@ i {
           color: #9699a6; }
       .header-top-right .face {
         width: 3.2rem;
-        height: 3.2rem; }
+        height: 3.2rem;
+        border-radius: 50%; }
       .header-top-right .user-initials {
         display: -webkit-box;
         display: -webkit-flex;
@@ -4129,7 +4130,7 @@ i {
       background-color: #f7f9fa;
       border-radius: 2.5px; }
       .teams-settings-general-body .settings-table-header .column-01 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         font-weight: 500;
         line-height: 1.33;
         color: #647282; }
@@ -5011,7 +5012,7 @@ i {
             margin-right: 3.2rem;
             margin-bottom: 2.8rem; } }
         .give-feedback-people-body-person:hover {
-          animation: bounce .4s ease-in-out; }
+          transform: scale(1.1); }
         .give-feedback-people-body-person img {
           margin-bottom: .98rem;
           width: 7.5rem;
@@ -6151,6 +6152,7 @@ i {
       width: 0;
       height: 0; }
     .create-new-team-body-caption {
+      margin-bottom: 1.1rem;
       font-size: 1.7rem;
       font-weight: 400;
       line-height: 1.35;
@@ -10157,11 +10159,9 @@ p:not(.no-ls), span:not(.no-ls), a, li {
 .icon-caret-down {
   font-size: 0.75rem !important; }
 
-.table-custom {
-  margin-left: 0.5rem !important; }
-  .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-    margin-left: 0.5rem !important;
-    font-size: 0.75rem !important; }
+.table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
+  margin-left: 0.5rem !important;
+  font-size: 0.75rem !important; }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
@@ -10175,11 +10175,3 @@ p:not(.no-ls), span:not(.no-ls), a, li {
 .page-wrapper .page-content main {
   margin-left: 3.65rem;
   margin-right: 3.2rem; }
-
-@keyframes bounce {
-  0% {
-    transform: scale(0.95); }
-  50% {
-    transform: scale(1.1); }
-  80% {
-    transform: scale(0.9); } }
