@@ -3493,6 +3493,7 @@ i {
         border-top: 1.5px solid #F2F2F2;
         border-bottom: 1.5px solid #F2F2F2;
         text-align: left;
+        border-radius: 3px;
 
         &:hover {
           color: #333333;
@@ -3501,6 +3502,16 @@ i {
 
         &:nth-last-of-type(2) {
           border-top: 0;
+        }
+
+        &.active {
+          background-color: #6a6a6a;
+          border-color: #6a6a6a;
+          color: #FFF;
+
+          &:hover {
+            background-color: #757575;
+          }
         }
       }
 
