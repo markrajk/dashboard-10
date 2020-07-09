@@ -3540,7 +3540,6 @@ i {
   }
 
   &-menu-toggle {
-    transform: rotateZ(0);
     @include flexbox;
     @include justify-content(center);
     @include align-items(center);
@@ -3549,7 +3548,7 @@ i {
     position: absolute;
     top: 1.84rem;
     right: .175rem;
-    transform: translate(50%, 0);
+    transform: translate(50%, 0) rotateZ(-180deg);
     border: solid 1.4px #e5e5e5;
     border-radius: 50%;
     background-color: #fff;
@@ -3566,7 +3565,7 @@ i {
     }
 
     &:hover {
-      transform: translate(50%, 0) scale(1.1);
+      transform: translate(50%, 0) rotateZ(-180deg) scale(1.1);
       transition: all .2s ease-in-out;
     }
   }
