@@ -3389,7 +3389,6 @@ i {
         right: 0rem; }
 
 .teams-compare {
-  max-width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important; }
   .teams-compare::before {
@@ -3406,7 +3405,7 @@ i {
   .teams-compare-body {
     padding-top: 2.7rem;
     padding-left: 3.65rem;
-    width: 100%;
+    min-width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -3423,13 +3422,6 @@ i {
     -moz-justify-content: flex-start;
     justify-content: flex-start;
     overflow-x: auto; }
-    @media (max-width: 991px) {
-      .teams-compare-body {
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        -webkit-justify-content: space-evenly;
-        -moz-justify-content: space-evenly;
-        justify-content: space-evenly; } }
     .teams-compare-body-card {
       margin-right: 4rem;
       min-width: 28.5rem;
@@ -3437,13 +3429,6 @@ i {
       border-radius: 8px;
       box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
       border: solid 1.25px #ebebeb; }
-      @media (max-width: 991px) {
-        .teams-compare-body-card {
-          width: 50%; }
-          .teams-compare-body-card:nth-of-type(1) {
-            margin-right: 3rem; }
-          .teams-compare-body-card:nth-of-type(3) {
-            display: none; } }
       .teams-compare-body-card-header {
         margin-left: 2.3rem;
         margin-right: 2rem;
@@ -3482,7 +3467,7 @@ i {
         padding-right: 2rem;
         padding-bottom: 7rem;
         max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem);
-        overflow-y: auto;
+        overflow-x: auto;
         scrollbar-width: none;
         /* Firefox */
         -ms-overflow-style: none;

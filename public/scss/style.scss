@@ -4712,7 +4712,7 @@ i {
 // COMPARE TEAMS START
 // ==================================
 .teams-compare {
-  max-width: 100%;
+  // max-width: 100%;
   margin-left: 0!important;
   margin-right: 0!important;
   //padding-right: calc(100% - 103rem);
@@ -4746,19 +4746,13 @@ i {
     &-body {
       padding-top: 2.7rem;
       padding-left: 3.65rem;
-      width: 100%;
+      min-width: 100%;
       //max-width: calc(100vw -  37.2rem - 3.2rem - .5rem);
       @include flexbox;
       @include align-items(flex-start);
       @include justify-content(flex-start);
 
       overflow-x: auto;
-
-      //TABLET
-      @include respond(desktop-md) {
-        @include justify-content(space-evenly);
-        // @include flex-wrap(wrap);
-      }
 
       &-card {
         margin-right: 4rem;
@@ -4768,19 +4762,6 @@ i {
         border-radius: 8px;
         box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
         border: solid 1.25px #ebebeb;
-
-        //TABLET
-        @include respond(desktop-md) {
-          width: 50%;
-
-          &:nth-of-type(1) {
-            margin-right: 3rem;
-          }
-
-          &:nth-of-type(3) {
-            display: none;
-          }
-        }
 
         &-header {
           margin-left: 2.3rem;
@@ -4849,7 +4830,7 @@ i {
           padding-bottom: 7rem;
           max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem);
 
-          overflow-y: auto;
+          overflow-x: auto;
           scrollbar-width: none; /* Firefox */
           -ms-overflow-style: none; /* Internet Explorer 10+ */
 
