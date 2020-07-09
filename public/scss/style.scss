@@ -4844,11 +4844,10 @@ i {
         }
 
         &-main {
-          height: 100%;
           padding-left: 2.3rem;
           padding-right: 2rem;
           padding-bottom: 7rem;
-          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px);
+          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem);
 
           overflow-y: auto;
           scrollbar-width: none; /* Firefox */
