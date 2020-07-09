@@ -792,7 +792,14 @@ select > option {
 }
 // animation
 .sidebar-menu-close-anim {
-  margin-left: -25.4rem;
+
+  & .sidebar-menu {
+    margin-left: -25.4rem;
+  }
+
+  & + .page-content {
+    width: calc(100% - 8.4rem);
+  }
 }
 
 .sidebar-menu-close-icon-rotate {
@@ -949,9 +956,10 @@ i {
 }
 
 .page-content {
-  padding: 3.4rem 3.2rem 0 3.65rem;
-  width: calc(100% - 8.96rem);
+  padding: 3.4rem 0 0 0;
+  width: calc(100% - 33.8rem);
   height: 100%;
+  transition: all 0.3s ease-in-out;
 
   @include respond(desktop-xsm) {
     padding: 2rem;
@@ -3556,6 +3564,9 @@ i {
 // ==================================
 .header {
   font-size: 1.6rem;
+  margin-left: 3.65rem;
+  margin-right: 3.2rem;
+
 
   &-top {
     @include flexbox;
@@ -4701,7 +4712,9 @@ i {
 // COMPARE TEAMS START
 // ==================================
 .teams-compare {
-  max-width: 128.2rem;
+  max-width: 100%;
+  margin-left: 0!important;
+  margin-right: 0!important;
   //padding-right: calc(100% - 103rem);
 
   // max-height: calc(100vh - 20rem - 1.5px);
@@ -4717,6 +4730,9 @@ i {
   // }
 
   &::before {
+    margin-top: 3.6rem;
+    margin-left: 3.65rem;
+    margin-right: 3.2rem;
     content: '';
     display: block;
     position: sticky;
@@ -4729,8 +4745,9 @@ i {
 
     &-body {
       padding-top: 2.7rem;
-      padding-bottom: 1rem;
-      max-width: calc(100vw -  37.2rem - 3.2rem - .5rem);
+      padding-left: 3.65rem;
+      width: 100%;
+      //max-width: calc(100vw -  37.2rem - 3.2rem - .5rem);
       @include flexbox;
       @include align-items(flex-start);
       @include justify-content(flex-start);
@@ -4831,7 +4848,7 @@ i {
           padding-left: 2.3rem;
           padding-right: 2rem;
           padding-bottom: 7rem;
-          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem + 2.3rem);
+          max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px);
 
           overflow-y: auto;
           scrollbar-width: none; /* Firefox */
@@ -12945,6 +12962,10 @@ p:not(.no-ls), span:not(.no-ls), a, li {
   }
 }}
 
+.page-wrapper .page-content main {
+  margin-left: 3.65rem;
+  margin-right: 3.2rem;
+}
 
 
 @keyframes bounce {

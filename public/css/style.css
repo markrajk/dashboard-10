@@ -202,8 +202,10 @@ select > option {
   .btn-custom-table.yellow {
     background: #ffcc19; }
 
-.sidebar-menu-close-anim {
+.sidebar-menu-close-anim .sidebar-menu {
   margin-left: -25.4rem; }
+.sidebar-menu-close-anim + .page-content {
+  width: calc(100% - 8.4rem); }
 
 .sidebar-menu-close-icon-rotate {
   transform: rotateZ(180deg); }
@@ -323,9 +325,10 @@ i {
   height: 100%; }
 
 .page-content {
-  padding: 3.4rem 3.2rem 0 3.65rem;
-  width: calc(100% - 8.96rem);
-  height: 100%; }
+  padding: 3.4rem 0 0 0;
+  width: calc(100% - 33.8rem);
+  height: 100%;
+  transition: all 0.3s ease-in-out; }
   @media (max-width: 575px) {
     .page-content {
       padding: 2rem;
@@ -2487,7 +2490,9 @@ i {
       transition: all .2s ease-in-out; }
 
 .header {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-left: 3.65rem;
+  margin-right: 3.2rem; }
   .header-top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3384,8 +3389,13 @@ i {
         right: 0rem; }
 
 .teams-compare {
-  max-width: 128.2rem; }
+  max-width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
   .teams-compare::before {
+    margin-top: 3.6rem;
+    margin-left: 3.65rem;
+    margin-right: 3.2rem;
     content: '';
     display: block;
     position: sticky;
@@ -3395,8 +3405,8 @@ i {
     z-index: 10; }
   .teams-compare-body {
     padding-top: 2.7rem;
-    padding-bottom: 1rem;
-    max-width: calc(100vw -  37.2rem - 3.2rem - .5rem);
+    padding-left: 3.65rem;
+    width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -3472,7 +3482,7 @@ i {
         padding-left: 2.3rem;
         padding-right: 2rem;
         padding-bottom: 7rem;
-        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 7.5rem + 2.3rem);
+        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px);
         overflow-y: auto;
         scrollbar-width: none;
         /* Firefox */
@@ -10137,6 +10147,10 @@ p:not(.no-ls), span:not(.no-ls), a, li {
   @supports (-webkit-appearance: none) {
     .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
       font-size: 7.5px !important; } } }
+.page-wrapper .page-content main {
+  margin-left: 3.65rem;
+  margin-right: 3.2rem; }
+
 @keyframes bounce {
   0% {
     transform: scale(0.95); }
