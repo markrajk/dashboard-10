@@ -202,10 +202,10 @@ select > option {
   .btn-custom-table.yellow {
     background: #ffcc19; }
 
-.sidebar-menu-close-anim .sidebar-menu {
-  margin-left: -25.4rem; }
-.sidebar-menu-close-anim + .page-content {
-  width: calc(100% - 8.4rem); }
+.sidebar-menu-open-anim .sidebar-menu {
+  margin-left: 0; }
+.sidebar-menu-open-anim + .page-content {
+  width: calc(100% - 33.8rem); }
 
 .sidebar-menu-close-icon-rotate {
   transform: rotateZ(180deg); }
@@ -326,7 +326,7 @@ i {
 
 .page-content {
   padding: 3.4rem 0 0 0;
-  width: calc(100% - 33.8rem);
+  width: calc(100% - 8.4rem);
   height: 100%;
   transition: all 0.3s ease-in-out; }
   @media (max-width: 575px) {
@@ -2307,6 +2307,7 @@ i {
       color: #fff;
       text-transform: uppercase; }
   .sidebar-menu {
+    margin-left: -25.4rem;
     min-width: 25.4rem;
     max-width: 25.4rem;
     height: 100%;
@@ -3464,6 +3465,18 @@ i {
           line-height: 1.36;
           letter-spacing: 0.07px;
           color: #7d808e; }
+        .teams-compare-body-card-header .change-order {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(0, 0);
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          .teams-compare-body-card-header .change-order-left, .teams-compare-body-card-header .change-order-right {
+            padding: 1rem; }
         .teams-compare-body-card-header-close {
           padding: 1rem;
           position: absolute;
@@ -3520,10 +3533,14 @@ i {
             color: #626262;
             text-transform: capitalize; }
             .teams-compare-body-card-main .graph-card-header h4 span {
+              display: inline-block;
               font-size: 1.4rem;
               font-weight: 500;
               line-height: 1.33;
-              color: #137efe; }
+              color: #137efe;
+              cursor: pointer; }
+              .teams-compare-body-card-main .graph-card-header h4 span:hover {
+                transform: scale(1.1); }
               .teams-compare-body-card-main .graph-card-header h4 span svg {
                 margin-right: .5rem;
                 margin-top: -.3rem; }
@@ -6250,7 +6267,7 @@ i {
               font-size: 1.4rem;
               font-weight: 400;
               line-height: 1.5;
-              color: #8181A5; }
+              color: #7b7b7b; }
             .company-overview-body-charts-chart-header-card-main h3 {
               font-size: 2rem;
               font-weight: 700;
@@ -6272,11 +6289,11 @@ i {
                 color: #FFB100;
                 background-color: #FFF2D6; }
         .company-overview-body-charts-chart-body {
+          margin-bottom: 2.2rem;
           border-radius: 6px;
           border: solid 1px #e6e8eb;
           background-color: #ffffff; }
           .company-overview-body-charts-chart-body-header {
-            margin-bottom: 3.2rem;
             padding: 1.65rem 2.2rem;
             background-color: #f7f9fa;
             border-bottom: 1px solid #E6E8EB; }
@@ -6286,7 +6303,7 @@ i {
               line-height: 1.71;
               color: #000a19; }
           .company-overview-body-charts-chart-body .canvas-container {
-            padding: 0 1.5rem; }
+            padding: 2.5rem 4.4rem 3.3rem; }
           .company-overview-body-charts-chart-body canvas {
             width: 100% !important;
             height: auto !important; }

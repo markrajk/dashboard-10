@@ -4,16 +4,16 @@ var sidenavMenuToggle = document.querySelector('.sidebar-menu-toggle');
 var sidenavMenuToggleIcon = document.querySelector('.sidebar-menu-toggle i');
 
 sidenavMenuToggle.addEventListener('click', function () {
-  sidenav.classList.toggle('sidebar-menu-close-anim');
+  sidenav.classList.toggle('sidebar-menu-open-anim');
   sidenavMenuToggleIcon.classList.toggle('sidebar-menu-close-icon-rotate');
 });
 
 function closeMenuOnSmall() {
   if (window.innerWidth < 1320) {
-    sidenav.classList.add('sidebar-menu-close-anim');
+    sidenav.classList.add('sidebar-menu-open-anim');
     sidenavMenuToggleIcon.classList.add('sidebar-menu-close-icon-rotate');
   } else {
-    sidenav.classList.remove('sidebar-menu-close-anim');
+    sidenav.classList.remove('sidebar-menu-open-anim');
     sidenavMenuToggleIcon.classList.remove('sidebar-menu-close-icon-rotate');
   }
 }

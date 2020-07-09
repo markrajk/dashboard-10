@@ -321,21 +321,19 @@
               </div>
               <div class="company-overview-body-charts-chart-body">
                 <div class="company-overview-body-charts-chart-body-header">
-                  <h4>Registered employees and teams</h4>
+                  <h4>Amount of registered employees</h4>
                 </div>
                 <div class="canvas-container">
                   <canvas id="chart-01" height="290" width="530"></canvas>
                 </div>
-                <div class="canvas-legend">
-                  <div class="canvas-legend-card">
-                    <span class="canvas-legend-card-dot blue"></span>
-                    <p class="canvas-legend-card-text">Employees</p>
-                  </div>
+              </div>
 
-                  <div class="canvas-legend-card">
-                    <span class="canvas-legend-card-dot red"></span>
-                    <p class="canvas-legend-card-text">Teams</p>
-                  </div>
+              <div class="company-overview-body-charts-chart-body">
+                <div class="company-overview-body-charts-chart-body-header">
+                  <h4>Total amount of feedback per month</h4>
+                </div>
+                <div class="canvas-container">
+                  <canvas id="chart-03" height="290" width="530"></canvas>
                 </div>
               </div>
             </div>
@@ -354,7 +352,7 @@
 
                 <div class="company-overview-body-charts-chart-header-card">
                   <div class="text-truncate company-overview-body-charts-chart-header-card-main">
-                    <p class="text-truncate">Feedbacks per user</p>
+                    <p class="text-truncate">Ø Feedbacks per user</p>
                     <h3>2.345</h3>
                   </div>
                   <div class="company-overview-body-charts-chart-header-card-icon orange">
@@ -364,22 +362,19 @@
               </div>
               <div class="company-overview-body-charts-chart-body">
                 <div class="company-overview-body-charts-chart-body-header">
-                  <h4>Amount of given feedback</h4>
+                  <h4>Amount of registered teams</h4>
                 </div>
                 <div class="canvas-container">
                   <canvas id="chart-02" height="290" width="530"></canvas>
                 </div>
+              </div>
 
-                <div class="canvas-legend">
-                  <div class="canvas-legend-card">
-                    <span class="canvas-legend-card-dot blue"></span>
-                    <p class="canvas-legend-card-text">Employees</p>
-                  </div>
-
-                  <div class="canvas-legend-card">
-                    <span class="canvas-legend-card-dot red"></span>
-                    <p class="canvas-legend-card-text">Teams</p>
-                  </div>
+              <div class="company-overview-body-charts-chart-body">
+                <div class="company-overview-body-charts-chart-body-header">
+                  <h4>Average amount of feedback per employee per month</h4>
+                </div>
+                <div class="canvas-container">
+                  <canvas id="chart-04" height="290" width="530"></canvas>
                 </div>
               </div>
             </div>
@@ -398,29 +393,21 @@
   <script>
     var ctx1 = document.getElementById('chart-01').getContext('2d');
     var ctx2 = document.getElementById('chart-02').getContext('2d');
+    var ctx3 = document.getElementById('chart-03').getContext('2d');
+    var ctx4 = document.getElementById('chart-04').getContext('2d');
     var myLineChart1 = new Chart(ctx1, {
       type: 'line',
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
         datasets: [{
-            backgroundColor: '#1da0f2',
-            fill: false,
-            borderColor: '#1da0f2',
-            label: 'Employees',
-            yAxisID: 'Employees',
-            data: [100, 150, 189, 200, 300, 370, 420, 440],
-            order: 1,
-          },
-          {
-            backgroundColor: '#e16630',
-            fill: false,
-            borderColor: '#e16630',
-            label: 'Teams',
-            yAxisID: 'Teams',
-            data: [3, 22, 35, 38, 39, 42, 55, 58],
-            order: 2,
-          },
-        ],
+          backgroundColor: '#1da0f2',
+          fill: false,
+          borderColor: '#1da0f2',
+          label: 'Employees',
+          yAxisID: 'Employees',
+          data: [100, 150, 189, 200, 300, 370, 420, 440],
+          order: 1,
+        }],
       },
       options: {
         legend: {
@@ -438,48 +425,26 @@
         responsive: true,
         scales: {
           yAxes: [{
-              id: 'Employees',
-              type: 'linear',
-              position: 'left',
-              ticks: {
-                fontFamily: "'Roboto', sans-serif",
-                fontColor: '#5E636B',
-                fontSize: 11,
-                min: 0,
-                maxTicksLimit: 4,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false,
-                drawTicks: false,
-                color: '#F2F2F2',
-                lineWidth: 1.5,
-                zeroLineColor: '#F2F2F2',
-                zeroLineWidth: 1.5
-              }
+            id: 'Employees',
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 11,
+              min: 0,
+              maxTicksLimit: 4,
+              padding: 20
             },
-            {
-              id: 'Teams',
-              type: 'linear',
-              position: 'right',
-              ticks: {
-                fontFamily: "'Roboto', sans-serif",
-                fontColor: '#5E636B',
-                fontSize: 11,
-                min: 0,
-                maxTicksLimit: 4,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false,
-                drawTicks: false,
-                color: '#F2F2F2',
-                lineWidth: 1.5,
-                zeroLineColor: '#F2F2F2',
-                zeroLineWidth: 1.5
-              }
-            },
-          ],
+            gridLines: {
+              drawBorder: false,
+              drawTicks: false,
+              color: '#F2F2F2',
+              lineWidth: 1.5,
+              zeroLineColor: '#F2F2F2',
+              zeroLineWidth: 1.5
+            }
+          }],
           xAxes: [{
             gridLines: {
               drawOnChartArea: false,
@@ -503,24 +468,14 @@
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
         datasets: [{
-            backgroundColor: '#1da0f2',
-            fill: false,
-            borderColor: '#1da0f2',
-            label: 'Employees',
-            yAxisID: 'Employees',
-            data: [50, 70, 80, 120, 170, 140, 150, 155],
-            order: 1,
-          },
-          {
-            backgroundColor: '#e16630',
-            fill: false,
-            borderColor: '#e16630',
-            label: 'Teams',
-            yAxisID: 'Teams',
-            data: [3, 22, 80, 120, 200, 300, 400, 600],
-            order: 2,
-          },
-        ],
+          backgroundColor: '#1da0f2',
+          fill: false,
+          borderColor: '#1da0f2',
+          label: 'Employees',
+          yAxisID: 'Employees',
+          data: [100, 150, 189, 200, 300, 370, 420, 440],
+          order: 1,
+        }],
       },
       options: {
         legend: {
@@ -538,48 +493,162 @@
         responsive: true,
         scales: {
           yAxes: [{
-              id: 'Employees',
-              type: 'linear',
-              position: 'left',
-              ticks: {
-                fontFamily: "'Roboto', sans-serif",
-                fontColor: '#5E636B',
-                fontSize: 11,
-                min: 0,
-                maxTicksLimit: 4,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false,
-                drawTicks: false,
-                color: '#F2F2F2',
-                lineWidth: 1.5,
-                zeroLineColor: '#F2F2F2',
-                zeroLineWidth: 1.5
-              }
+            id: 'Employees',
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 11,
+              min: 0,
+              maxTicksLimit: 4,
+              padding: 20
             },
-            {
-              id: 'Teams',
-              type: 'linear',
-              position: 'right',
-              ticks: {
-                fontFamily: "'Roboto', sans-serif",
-                fontColor: '#5E636B',
-                fontSize: 11,
-                min: 0,
-                maxTicksLimit: 4,
-                padding: 20
-              },
-              gridLines: {
-                drawBorder: false,
-                drawTicks: false,
-                color: '#F2F2F2',
-                lineWidth: 1.5,
-                zeroLineColor: '#F2F2F2',
-                zeroLineWidth: 1.5
-              }
+            gridLines: {
+              drawBorder: false,
+              drawTicks: false,
+              color: '#F2F2F2',
+              lineWidth: 1.5,
+              zeroLineColor: '#F2F2F2',
+              zeroLineWidth: 1.5
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false,
+              drawTicks: false
+              //drawBorder: false
             },
-          ],
+
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 10,
+              padding: 20,
+            }
+          }]
+        },
+      },
+    });
+
+    var myLineChart3 = new Chart(ctx3, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        datasets: [{
+          backgroundColor: '#1da0f2',
+          fill: false,
+          borderColor: '#1da0f2',
+          label: 'Employees',
+          yAxisID: 'Employees',
+          data: [100, 150, 189, 200, 300, 370, 420, 440],
+          order: 1,
+        }],
+      },
+      options: {
+        legend: {
+          position: 'bottom',
+          align: 'start',
+          display: false,
+          labels: {
+            boxWidth: 5,
+            usePointStyle: true,
+            fontSize: 11,
+            padding: 30
+            // fontColor: 'rgb(255, 99, 132)'
+          }
+        },
+        responsive: true,
+        scales: {
+          yAxes: [{
+            id: 'Employees',
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 11,
+              min: 0,
+              maxTicksLimit: 4,
+              padding: 20
+            },
+            gridLines: {
+              drawBorder: false,
+              drawTicks: false,
+              color: '#F2F2F2',
+              lineWidth: 1.5,
+              zeroLineColor: '#F2F2F2',
+              zeroLineWidth: 1.5
+            }
+          }],
+          xAxes: [{
+            gridLines: {
+              drawOnChartArea: false,
+              drawTicks: false
+              //drawBorder: false
+            },
+
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 10,
+              padding: 20,
+            }
+          }]
+        },
+      },
+    });
+
+    var myLineChart4 = new Chart(ctx4, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        datasets: [{
+          backgroundColor: '#1da0f2',
+          fill: false,
+          borderColor: '#1da0f2',
+          label: 'Employees',
+          yAxisID: 'Employees',
+          data: [100, 150, 189, 200, 300, 370, 420, 440],
+          order: 1,
+        }],
+      },
+      options: {
+        legend: {
+          position: 'bottom',
+          align: 'start',
+          display: false,
+          labels: {
+            boxWidth: 5,
+            usePointStyle: true,
+            fontSize: 11,
+            padding: 30
+            // fontColor: 'rgb(255, 99, 132)'
+          }
+        },
+        responsive: true,
+        scales: {
+          yAxes: [{
+            id: 'Employees',
+            type: 'linear',
+            position: 'left',
+            ticks: {
+              fontFamily: "'Roboto', sans-serif",
+              fontColor: '#5E636B',
+              fontSize: 11,
+              min: 0,
+              maxTicksLimit: 4,
+              padding: 20
+            },
+            gridLines: {
+              drawBorder: false,
+              drawTicks: false,
+              color: '#F2F2F2',
+              lineWidth: 1.5,
+              zeroLineColor: '#F2F2F2',
+              zeroLineWidth: 1.5
+            }
+          }],
           xAxes: [{
             gridLines: {
               drawOnChartArea: false,

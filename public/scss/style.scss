@@ -791,14 +791,16 @@ select > option {
   }
 }
 // animation
-.sidebar-menu-close-anim {
+.sidebar-menu-open-anim {
 
   & .sidebar-menu {
-    margin-left: -25.4rem;
+    //margin-left: -25.4rem;
+    margin-left: 0;
   }
 
   & + .page-content {
-    width: calc(100% - 8.4rem);
+    //width: calc(100% - 8.4rem);
+    width: calc(100% - 33.8rem);
   }
 }
 
@@ -957,7 +959,9 @@ i {
 
 .page-content {
   padding: 3.4rem 0 0 0;
-  width: calc(100% - 33.8rem);
+  //width: calc(100% - 33.8rem);
+  width: calc(100% - 8.4rem);
+
   height: 100%;
   transition: all 0.3s ease-in-out;
 
@@ -3330,6 +3334,7 @@ i {
   }
 
   &-menu {
+    margin-left: -25.4rem;
     min-width: 25.4rem;
     max-width: 25.4rem;
     height: 100%;
@@ -4811,6 +4816,19 @@ i {
             color: #7d808e;
           }
 
+          & .change-order {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            @include flexbox();
+
+            &-left,
+            &-right {
+              padding: 1rem;
+            }
+          }
+
           &-close {
             padding: 1rem;
             // width: 2rem;
@@ -4895,10 +4913,16 @@ i {
                 text-transform: capitalize;
 
                 & span {
+                  display: inline-block;
                   font-size: 1.4rem;
                   font-weight: 500;
                   line-height: 1.33;
                   color: #137efe;
+                  cursor: pointer;
+
+                  &:hover {
+                    transform: scale(1.1);
+                  }
 
                   & svg {
                     margin-right: .5rem;
@@ -8054,7 +8078,7 @@ i {
                 font-size: 1.4rem;
                 font-weight: 400;
                 line-height: 1.5;
-                color: #8181A5;
+                color: #7b7b7b;
               }
 
               & h3 {
@@ -8093,12 +8117,12 @@ i {
 
         &-body {
           //max-height: 38rem;
+          margin-bottom: 2.2rem;
           border-radius: 6px;
           border: solid 1px #e6e8eb;
           background-color: #ffffff;
 
           &-header {
-            margin-bottom: 3.2rem;
             padding: 1.65rem 2.2rem;
             background-color: #f7f9fa;
             border-bottom: 1px solid #E6E8EB;
@@ -8112,7 +8136,7 @@ i {
           }
 
           & .canvas-container {
-            padding: 0 1.5rem;
+            padding: 2.5rem 4.4rem 3.3rem;
           }
           & canvas {
             width: 100%!important;
