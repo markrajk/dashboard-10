@@ -2352,7 +2352,8 @@ i {
       .sidebar-menu-header button, .sidebar-menu-header .create-new-circle {
         background-color: transparent !important;
         border: none !important;
-        outline: none !important; }
+        outline: none !important;
+        padding: .2rem; }
         .sidebar-menu-header button:hover, .sidebar-menu-header .create-new-circle:hover {
           transform: scale(1.1);
           transition: all .2s ease-in-out; }
@@ -6311,7 +6312,27 @@ i {
               line-height: 1.71;
               color: #000a19; }
           .company-overview-body-charts-chart-body .canvas-container {
-            padding: 2.5rem 4.4rem 3.3rem; }
+            padding: 1.9rem 4.4rem 3.3rem; }
+            .company-overview-body-charts-chart-body .canvas-container .options {
+              margin-bottom: 1.1rem;
+              text-align: right; }
+              .company-overview-body-charts-chart-body .canvas-container .options a {
+                font-family: Roboto, sans-serif;
+                font-size: 1.3rem;
+                font-weight: 400;
+                line-height: 1.33;
+                color: #3D464D; }
+                .company-overview-body-charts-chart-body .canvas-container .options a:hover {
+                  text-decoration: underline; }
+                .company-overview-body-charts-chart-body .canvas-container .options a.active {
+                  font-weight: 700;
+                  color: #3D464D; }
+                  .company-overview-body-charts-chart-body .canvas-container .options a.active:hover {
+                    text-decoration: none; }
+              .company-overview-body-charts-chart-body .canvas-container .options span {
+                margin: 0 .5rem;
+                font-size: 2rem;
+                color: #E3E3E3; }
           .company-overview-body-charts-chart-body canvas {
             width: 100% !important;
             height: auto !important; }
