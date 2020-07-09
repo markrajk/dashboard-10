@@ -3465,10 +3465,11 @@ i {
           letter-spacing: 0.07px;
           color: #7d808e; }
         .teams-compare-body-card-header-close {
+          padding: 1rem;
           position: absolute;
           top: 0;
           left: 100%;
-          transform: translate(-50%, 50%);
+          transform: translate(-50%, 0);
           cursor: pointer; }
           .teams-compare-body-card-header-close:hover svg {
             transform: scale(1.1); }
