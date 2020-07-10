@@ -1580,14 +1580,36 @@ i {
       height: 100%;
       background-color: #FFF; }
       .comment-body-message-header {
+        margin-left: -2rem;
+        margin-right: -2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: .9rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between;
         position: relative;
         font-size: 2rem;
-        font-weight: 600; }
+        font-weight: 600;
+        border-bottom: 1px solid #EAEAEA; }
       .comment-body-message-main {
         font-size: 1.3rem;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.38;
-        color: #383838; }
+        color: #383838;
+        white-space: normal; }
     .comment-body-feedback {
       font-size: 1.3rem;
       font-weight: 500;
@@ -2446,14 +2468,13 @@ i {
         letter-spacing: 0.17px;
         color: #333333;
         border-top: 1.5px solid #F2F2F2;
-        border-bottom: 1.5px solid #F2F2F2;
         text-align: left;
         border-radius: 3px; }
+        .sidebar-menu-footer-create-new:nth-of-type(2) {
+          border-bottom: 1.5px solid #F2F2F2; }
         .sidebar-menu-footer-create-new:hover {
           color: #333333;
           background-color: #f9f9f9; }
-        .sidebar-menu-footer-create-new:nth-last-of-type(2) {
-          border-top: 0; }
         .sidebar-menu-footer-create-new.active {
           background-color: #6a6a6a;
           border-color: #6a6a6a;
@@ -3470,7 +3491,7 @@ i {
           position: absolute;
           top: 0;
           left: 0;
-          transform: translate(-35%, 0);
+          transform: translate(-39%, -1%);
           display: -webkit-box;
           display: -webkit-flex;
           display: -moz-flex;
@@ -3479,8 +3500,10 @@ i {
           .teams-compare-body-card-header .change-order-left, .teams-compare-body-card-header .change-order-right {
             padding: 1rem;
             cursor: pointer; }
-            .teams-compare-body-card-header .change-order-left:hover, .teams-compare-body-card-header .change-order-right:hover {
+            .teams-compare-body-card-header .change-order-left:hover svg, .teams-compare-body-card-header .change-order-right:hover svg {
               transform: scale(1.1); }
+            .teams-compare-body-card-header .change-order-left:hover path, .teams-compare-body-card-header .change-order-right:hover path {
+              fill: #525252; }
           .teams-compare-body-card-header .change-order-left {
             padding-right: .15rem; }
           .teams-compare-body-card-header .change-order-right {
@@ -3490,10 +3513,12 @@ i {
           position: absolute;
           top: 0;
           left: 100%;
-          transform: translate(-50%, 0);
+          transform: translate(-50%, -1%);
           cursor: pointer; }
           .teams-compare-body-card-header-close:hover svg {
             transform: scale(1.1); }
+          .teams-compare-body-card-header-close:hover path {
+            fill: #525252; }
       .teams-compare-body-card .b-b {
         margin-left: auto;
         margin-right: auto;
@@ -3912,27 +3937,31 @@ i {
       .teams-people-view .table-custom-body tr:not(:last-of-type) {
         border-bottom: 1px solid #EBEDEF !important; }
       .teams-people-view .table-custom-body tr#not-yet {
-        margin-top: 8rem;
-        margin-bottom: 8rem;
-        border: 0 !important; }
-        .teams-people-view .table-custom-body tr#not-yet #not-yet-td {
-          -webkit-box-direction: normal;
-          -webkit-box-orient: vertical;
-          -webkit-flex-direction: column;
-          -moz-flex-direction: column;
-          -ms-flex-direction: column;
-          flex-direction: column; }
-          .teams-people-view .table-custom-body tr#not-yet #not-yet-td #not-yet-td-text {
-            margin-bottom: 1.2rem;
-            font-size: 1.5rem;
-            font-weight: 500;
-            color: #1B2733; }
-          .teams-people-view .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info {
-            font-size: 1.4rem;
-            font-weight: 400;
-            color: #1B2733; }
-            .teams-people-view .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info button {
-              color: #2D76AD; }
+        border-left: 1px solid #EBEDEF !important;
+        border-right: 1px solid #EBEDEF !important; }
+        .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+          border-top: 0 !important;
+          border-bottom: 0 !important; }
+          .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td {
+            -webkit-box-direction: normal;
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-text {
+              margin-bottom: 1.2rem;
+              font-size: 1.5rem;
+              font-weight: 500;
+              color: #1B2733; }
+            .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-info {
+              font-size: 1.4rem;
+              font-weight: 400;
+              color: #1B2733; }
+              .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-info button {
+                color: #2D76AD; }
     .teams-people-view .table-custom-body td {
       padding: 0 0; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {
@@ -10141,9 +10170,9 @@ i {
 
 #not-yet {
   height: 6.6rem;
-  margin: 4.5rem 0;
-  border-top: solid 1px #e6e8eb !important;
-  border-bottom: solid 1px #e6e8eb !important; }
+  margin: 0;
+  border-top: 0 !important;
+  border-bottom: 0 !important; }
   #not-yet-td {
     text-align: center;
     -webkit-box-flex: 1;
@@ -10159,7 +10188,7 @@ i {
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.33;
     letter-spacing: 0.08px;
     color: #1b2733; }

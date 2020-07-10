@@ -318,13 +318,20 @@
                             </tr>
                         </thead>
                         <tbody class="table-custom-body">
-                            <div class="no-team-members">
-                                <p class="no-team-members-title">No team members yet</p>
-                                <p class="no-team-members-text">Click <button>here</button> to start inviting your team
-                                    members.
-                                </p>
-                            </div>
-                            <tr>
+                            <tr id="not-yet">
+                                <td id="not-yet-td" colspan="5">
+                                    <p id="not-yet-td-text">No team members yet</p>
+                                    <p id="not-yet-td-info">
+                                        Click <button>here</button> to start inviting your team
+                                        members.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr id="not-yet" class="not-yet-search">
+                                <td id="not-yet-td" colspan="5">No admin rights at the moment</td>
+                            </tr>
+                            <!-- <tr>
                                 <td class="table-custom-col-01">
                                     <a href="../single-user/index.html">
                                         <div class="initials">MM</div>
@@ -850,7 +857,7 @@
                                         </ul>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
 
                         </tbody>
                     </table>
