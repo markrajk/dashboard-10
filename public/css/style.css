@@ -2472,8 +2472,7 @@ i {
         letter-spacing: 0.17px;
         color: #333333;
         border-top: 1.5px solid #F2F2F2;
-        text-align: left;
-        border-radius: 3px; }
+        text-align: left; }
         .sidebar-menu-footer-create-new:nth-of-type(2) {
           border-bottom: 1.5px solid #F2F2F2; }
         .sidebar-menu-footer-create-new:hover {
@@ -2484,6 +2483,7 @@ i {
           border-color: #6a6a6a;
           color: #FFF; }
           .sidebar-menu-footer-create-new.active:hover {
+            border-color: #757575;
             background-color: #757575; }
   .sidebar-menu-toggle {
     display: -webkit-box;
@@ -2931,7 +2931,7 @@ i {
             content: '';
             width: calc(100% + 2.6rem);
             height: 1px;
-            background-color: #333;
+            background-color: #656363;
             position: absolute;
             bottom: -1.2rem;
             left: 50%;
@@ -2955,7 +2955,7 @@ i {
             content: '';
             width: calc(100% + 2.6rem);
             height: 1px;
-            background-color: #333;
+            background-color: #656363;
             position: absolute;
             bottom: -1.2rem;
             left: 50%;
@@ -3468,12 +3468,13 @@ i {
       min-width: 3.2rem;
       min-height: 3.2rem; }
     .teams-compare-body-card {
-      margin-right: 4rem;
       min-width: 28.5rem;
       width: 28.5rem;
       border-radius: 8px;
       box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
       border: solid 1.25px #ebebeb; }
+      .teams-compare-body-card:not(:last-of-type) {
+        margin-right: 4rem; }
       .teams-compare-body-card-header {
         margin-left: 2.3rem;
         margin-right: 2rem;
@@ -3536,8 +3537,6 @@ i {
         .teams-compare-body-card .b-b-body {
           margin-bottom: .5rem; }
       .teams-compare-body-card-main {
-        padding-left: 2.3rem;
-        padding-right: 2rem;
         padding-bottom: 7rem;
         max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem - 2rem);
         overflow-x: auto;
@@ -3552,6 +3551,8 @@ i {
         .teams-compare-body-card-main .graph-card {
           height: 25.7rem;
           padding: 2.5rem 0 0;
+          padding-left: 2.3rem;
+          padding-right: 2rem;
           border: 0; }
           .teams-compare-body-card-main .graph-card-header h4 {
             display: -webkit-box;
@@ -3606,8 +3607,8 @@ i {
                 letter-spacing: 0.13px;
                 color: #6f6e77; }
         .teams-compare-body-card-main .progress-custom {
-          padding-left: 0;
-          padding-right: 1rem;
+          padding-left: 2.3rem;
+          padding-right: 3rem;
           padding-top: 2.4rem; }
           .teams-compare-body-card-main .progress-custom-sub {
             margin-bottom: 0;
@@ -4518,7 +4519,7 @@ i {
       display: none;
       padding-top: 1.8rem !important;
       padding-bottom: 1.8rem !important;
-      border-bottom: solid 1px #e6e8eb; }
+      border-top: solid 1px #e6e8eb !important; }
       .teams-settings-feedback-body .input-row select {
         width: 90%;
         max-width: 21.2rem;
@@ -6156,7 +6157,7 @@ i {
       .create-new-team-header-inputs .input-container label {
         margin-bottom: 1.1rem;
         display: block;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         font-weight: 400;
         line-height: 1.35;
         color: #1b2733; }
@@ -7611,9 +7612,8 @@ i {
       .user-settings-general-body .settings-table-row img {
         width: 5.6rem;
         height: 5.6rem;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%; }
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%); }
       .user-settings-general-body .settings-table-row:last-child {
         padding-top: 1.7rem;
         padding-bottom: 1.7rem; }
@@ -7918,7 +7918,7 @@ i {
       margin-right: 1.4rem; }
   .people-average-charts-body {
     max-width: 103rem;
-    max-height: calc(100% - 11.45rem - 4.1rem);
+    max-height: calc(100% - 13.4rem - 4.1rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -7927,6 +7927,12 @@ i {
     .people-average-charts-body::-webkit-scrollbar {
       width: 0;
       height: 0; }
+    @media (max-width: 767px) {
+      .people-average-charts-body {
+        max-height: calc(100% - 14.4rem - 4.1rem); } }
+    @media (max-width: 575px) {
+      .people-average-charts-body {
+        max-height: calc(100% - 12.4rem - 4.1rem); } }
     .people-average-charts-body .section {
       position: relative; }
       .people-average-charts-body .section-header {

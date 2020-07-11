@@ -3512,7 +3512,6 @@ i {
         color: #333333;
         border-top: 1.5px solid #F2F2F2;
         text-align: left;
-        border-radius: 3px;
 
         &:nth-of-type(2) {
           border-bottom: 1.5px solid #F2F2F2;
@@ -3530,6 +3529,7 @@ i {
           color: #FFF;
 
           &:hover {
+            border-color: #757575;
             background-color: #757575;
           }
         }
@@ -4064,7 +4064,7 @@ i {
             content: '';
             width: calc(100% + 2.6rem);
             height: 1px;
-            background-color: #333;
+            background-color: #656363;
             position: absolute;
             bottom: -1.2rem;
             left: 50%;
@@ -4092,7 +4092,7 @@ i {
             content: '';
             width: calc(100% + 2.6rem);
             height: 1px;
-            background-color: #333;
+            background-color: #656363;
             position: absolute;
             bottom: -1.2rem;
             left: 50%;
@@ -4786,13 +4786,17 @@ i {
       }
 
       &-card {
-        margin-right: 4rem;
+
         min-width: 28.5rem;
         width: 28.5rem;
 
         border-radius: 8px;
         box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
         border: solid 1.25px #ebebeb;
+
+        &:not(:last-of-type) {
+          margin-right: 4rem;
+        }
 
         &-header {
           margin-left: 2.3rem;
@@ -4885,8 +4889,6 @@ i {
         }
 
         &-main {
-          padding-left: 2.3rem;
-          padding-right: 2rem;
           padding-bottom: 7rem;
           max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem - 2rem);
 
@@ -4905,6 +4907,8 @@ i {
           & .graph-card {
             height: 25.7rem;
             padding: 2.5rem 0 0;
+            padding-left: 2.3rem;
+            padding-right: 2rem;
             border: 0;
 
             &-header {
@@ -4976,8 +4980,8 @@ i {
           }
 
           & .progress-custom {
-            padding-left: 0;
-            padding-right: 1rem;
+            padding-left: 2.3rem;
+            padding-right: 3rem;
             padding-top: 2.4rem;
             &-sub {
               margin-bottom: 0;
@@ -6208,7 +6212,7 @@ i {
       display: none;
       padding-top: 1.8rem!important;
       padding-bottom: 1.8rem!important;
-      border-bottom: solid 1px #e6e8eb;
+      border-top: solid 1px #e6e8eb!important;
 
       & select {
         width: 90%;
@@ -7866,7 +7870,7 @@ i {
         & label {
           margin-bottom: 1.1rem;
           display: block;
-          font-size: 1.7rem;
+          font-size: 1.6rem;
           font-weight: 400;
           line-height: 1.35;
           color: #1b2733;
@@ -9673,9 +9677,8 @@ i {
         & img {
           width: 5.6rem;
           height: 5.6rem;
-          -webkit-border-radius:  50%; 
-          -moz-border-radius:  50%; 
-          border-radius: 50%;
+          clip-path: circle(48% at 50% 50%);
+          -webkit-clip-path: circle(48% at 50% 50%);
         }
 
         &:last-child {
@@ -10279,7 +10282,7 @@ i {
 
   &-body {
     max-width: 103rem;
-    max-height: calc(100% - 11.45rem - 4.1rem);
+    max-height: calc(100% - 13.4rem - 4.1rem);
 
     overflow-y: auto;
     scrollbar-width: none; /* Firefox */
@@ -10288,6 +10291,14 @@ i {
     &::-webkit-scrollbar {
       width: 0;
       height: 0;
+    }
+
+    @include respond(desktop-sm) {
+      max-height: calc(100% - 14.4rem - 4.1rem);
+    }
+
+    @include respond(desktop-xsm) {
+      max-height: calc(100% - 12.4rem - 4.1rem);
     }
 
     & .section {
