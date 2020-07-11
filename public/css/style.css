@@ -2618,7 +2618,8 @@ i {
       .header-top-right .face {
         width: 3.2rem;
         height: 3.2rem;
-        border-radius: 50%; }
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%); }
       .header-top-right .user-initials {
         display: -webkit-box;
         display: -webkit-flex;
@@ -2838,11 +2839,8 @@ i {
                 margin-right: 1.2rem;
                 width: 4rem;
                 height: 4rem;
-                -webkit-border-radius: 50%;
-                -moz-border-radius: 50%;
-                border-radius: 50%;
-                -khtml-border-radius: 50%;
-                vertical-align: middle; }
+                clip-path: circle(48% at 50% 50%);
+                -webkit-clip-path: circle(48% at 50% 50%); }
               .header-top-right .user-menu .dropdown-custom-list-header .initials {
                 display: inline-flex;
                 align-items: center;
