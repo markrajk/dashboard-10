@@ -683,6 +683,9 @@ select > option {
   border: 0!important;
 }
 
+svg {
+  overflow: visible;
+}
 
 
 // ==================================
@@ -3948,7 +3951,11 @@ i {
                 margin-right: 1.2rem;
                 width: 4rem;
                 height: 4rem;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
                 border-radius: 50%;
+                -khtml-border-radius: 50%;
+                vertical-align: middle;
               }
 
               & .initials {

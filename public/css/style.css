@@ -91,6 +91,9 @@ select > option {
   outline: none !important;
   border: 0 !important; }
 
+svg {
+  overflow: visible; }
+
 .btn-custom-primary {
   padding: .5em 1.1em;
   display: -webkit-inline-box;
@@ -2835,7 +2838,11 @@ i {
                 margin-right: 1.2rem;
                 width: 4rem;
                 height: 4rem;
-                border-radius: 50%; }
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                -khtml-border-radius: 50%;
+                vertical-align: middle; }
               .header-top-right .user-menu .dropdown-custom-list-header .initials {
                 display: inline-flex;
                 align-items: center;
