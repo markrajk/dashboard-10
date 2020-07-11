@@ -2368,7 +2368,7 @@ i {
   box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
   border: solid 1px #eaeaea;
   overflow: hidden;
-  max-height: 25.5rem;
+  max-height: 23rem;
 
   @include target-ie() {
     width: calc(33.3% - 1.73rem);
@@ -2429,7 +2429,7 @@ i {
 
     &-date {
       margin-left: auto;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       line-height: 1.36;
       letter-spacing: -0.15px;
       color: #5d5d5d;
@@ -3375,6 +3375,7 @@ i {
         border: none!important;
         outline: none!important;
         padding: .2rem;
+        overflow: visible;
 
         &:hover {
           transform: scale(1.1);
@@ -4818,6 +4819,7 @@ i {
             left: 0;
             transform: translate(-39%, -1%);
             @include flexbox();
+            overflow: visible;
 
             &-left,
             &-right {
@@ -4853,6 +4855,7 @@ i {
             left: 100%;
             transform: translate(-50%, -1%);
             cursor: pointer;
+            overflow: visible;
 
             &:hover svg {
               transform: scale(1.1);
@@ -8059,6 +8062,10 @@ i {
           }
         }
 
+        & .company-overview-body-charts-chart-body:nth-of-type(2) .canvas-container {
+          padding-top: 2.5rem!important;
+        }
+
         &-header {
           margin-bottom: 2rem;
           display: flex;
@@ -8071,7 +8078,7 @@ i {
             display: inline-flex;
             align-items: center;
             justify-content: space-between;
-            border-radius: 10px;
+            border-radius: 8px;
             border: solid 1px #e6e8eb;
             background-color: #ffffff;
 
@@ -10966,7 +10973,7 @@ i {
         @include grid;
         @include grid-template-columns(repeat(3,1fr));
         //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
-        @include grid-template-rows(repeat(auto-fill, minmax(22rem, auto)));
+        @include grid-template-rows(repeat(auto-fill, minmax(23rem, 23rem)));
         grid-auto-rows: 20rem;
         grid-gap: 2.9rem 2.6rem;
         height: 100%;
