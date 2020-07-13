@@ -3346,9 +3346,7 @@ i {
             line-height: 1.33;
             color: #1b2733; }
           .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
-            max-width: 18.9rem;
-            padding-bottom: 1.4rem;
-            border-bottom: 1.5px solid #f2f2f2; }
+            padding-bottom: 1.4rem; }
             @media (max-width: 991px) {
               .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
                 max-width: 100%;
@@ -3382,7 +3380,8 @@ i {
             -ms-flex-pack: start;
             -webkit-justify-content: flex-start;
             -moz-justify-content: flex-start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+            white-space: nowrap; }
             @media (max-width: 991px) {
               .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
                 margin-right: 3rem; } }
@@ -8224,9 +8223,8 @@ i {
             line-height: 1.33;
             color: #1b2733; }
           .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
-            max-width: 18.9rem;
-            padding-bottom: 1.4rem;
-            border-bottom: 1.5px solid #f2f2f2; }
+            white-space: nowrap;
+            padding-bottom: 1.4rem; }
             @media (max-width: 991px) {
               .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
                 max-width: 100%;

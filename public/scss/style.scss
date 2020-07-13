@@ -4483,9 +4483,7 @@ i {
           &-main {
 
             & #chart-legends {
-              max-width: 18.9rem;
               padding-bottom: 1.4rem;
-              border-bottom: 1.5px solid #f2f2f2;
 
               @include respond(desktop-md) {
                 max-width: 100%;
@@ -4500,6 +4498,7 @@ i {
               @include flexbox;
               @include align-items(center);
               @include justify-content(flex-start);
+              white-space: nowrap;
 
               &:not(:last-of-type) {
 
@@ -10585,9 +10584,8 @@ i {
           &-main {
 
             & #chart-legends {
-              max-width: 18.9rem;
+              white-space: nowrap;
               padding-bottom: 1.4rem;
-              border-bottom: 1.5px solid #f2f2f2;
 
               @include respond(desktop-md) {
                 max-width: 100%;

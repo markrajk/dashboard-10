@@ -147,5 +147,10 @@ Link all pages and make modals work on all pages with that functionality.
     * CSS file changed
 - JS changes:
     * people-feedback-received, people-feedback-given comments function updated (The one i sent you yesterday, nothing new just adding to readme)
+## Changes 06.07.2020
+- HTML changes:
+    * teams-average-charts & people-average-cahrts 2 more labels added & export PDF footer part removed
+- CSS changes:
+    * css file changed
 
 
