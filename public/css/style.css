@@ -10211,6 +10211,17 @@ i {
       margin: 0;
       width: 18.5em;
       height: 18.5em; }
+      .new-reg-sidecard #circ .steps {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 1.21;
+        letter-spacing: 0.14px;
+        color: #7d7d88;
+        white-space: nowrap; }
     .new-reg-sidecard-list {
       padding-top: 11.9em;
       padding-bottom: 5em; }
