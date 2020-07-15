@@ -13193,9 +13193,9 @@ i {
     background-color: #f8f8f8;
 
     //TABLET
-    @include respond(desktop-md) {
-      width: 35%;
-    }
+    // @include respond(desktop-md) {
+    //   width: 35%;
+    // }
 
     //CUSTOM 700
     @include custom-respond(700) {
@@ -13331,10 +13331,10 @@ i {
 
     //TABLET
     @include respond(desktop-md) {
-      margin-left: 35%;
+      // margin-left: 35%;
       padding-left: 4em;
       padding-right: 4em;
-      width: 65%;
+      // width: 65%;
     }
 
     //CUSTOM 700
@@ -13355,7 +13355,7 @@ i {
 
         //CUSTOM 1200
       @include custom-respond(1200) {
-        width: calc(65% - 6em);
+        // width: calc(65% - 6em);
         margin-right: 6em;
       }
 
