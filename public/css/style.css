@@ -10206,6 +10206,12 @@ i {
     width: 32%;
     border-right: solid 1.5px #f0f0f0;
     background-color: #f8f8f8; }
+    @media (max-width: 991px) {
+      .new-reg-sidecard {
+        width: 35%; } }
+    @media (max-width: 700px) {
+      .new-reg-sidecard {
+        display: none; } }
     .new-reg-sidecard #circ {
       position: relative;
       margin: 0;
@@ -10295,8 +10301,14 @@ i {
     width: 68%; }
     @media (max-width: 991px) {
       .new-reg-main {
+        margin-left: 35%;
         padding-left: 4em;
-        padding-right: 4em; } }
+        padding-right: 4em;
+        width: 65%; } }
+    @media (max-width: 700px) {
+      .new-reg-main {
+        margin-left: 0;
+        width: 100%; } }
     .new-reg-main-help {
       padding-top: 5.3rem;
       padding-bottom: 1rem;
@@ -10308,8 +10320,11 @@ i {
       background-color: #FFF; }
       @media (max-width: 991px) {
         .new-reg-main-help {
-          width: calc(68% - 4em);
-          padding-right: 4em; } }
+          width: calc(65% - 4em);
+          margin-right: 4em; } }
+      @media (max-width: 700px) {
+        .new-reg-main-help {
+          width: calc(100% - 4em); } }
       .new-reg-main-help-text {
         text-align: right;
         font-size: 1.5rem;

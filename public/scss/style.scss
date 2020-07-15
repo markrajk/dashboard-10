@@ -13192,6 +13192,16 @@ i {
     border-right: solid 1.5px #f0f0f0;
     background-color: #f8f8f8;
 
+    //TABLET
+    @include respond(desktop-md) {
+      width: 35%;
+    }
+
+    //CUSTOM 700
+    @include custom-respond(700) {
+      display: none;
+    }
+
     & #circ {
       position: relative;
       margin: 0;
@@ -13315,9 +13325,17 @@ i {
 
     //TABLET
     @include respond(desktop-md) {
+      margin-left: 35%;
       padding-left: 4em;
       padding-right: 4em;
+      width: 65%;
     }
+
+      //CUSTOM 700
+      @include custom-respond(700) {
+        margin-left: 0;
+        width: 100%;
+      }
 
     &-help {
       padding-top: 5.3rem;
@@ -13330,10 +13348,15 @@ i {
       background-color: #FFF;
 
       //TABLET
-    @include respond(desktop-md) {
-      width: calc(68% - 4em);
-      padding-right: 4em;
-    }
+      @include respond(desktop-md) {
+        width: calc(65% - 4em);
+        margin-right: 4em;
+      }
+
+      //CUSTOM 700
+      @include custom-respond(700) {
+        width: calc(100% - 4em);
+      }
       
       &-text {
         // width: 100%;
