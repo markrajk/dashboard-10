@@ -10271,6 +10271,8 @@ i {
           display: none;
           color: #1758b8;
           border-color: #1758b8; }
+        .new-reg-sidecard-list-item.done .new-reg-sidecard-list-item-link {
+          color: #b4b4b4; }
         .new-reg-sidecard-list-item.active .not-checked {
           color: #1758b8;
           border-color: #1758b8; }
