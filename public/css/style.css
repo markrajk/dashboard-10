@@ -10429,6 +10429,8 @@ i {
 @media (max-width: 991px) {
   #subscription .new-reg-sidecard {
     display: none; } }
+#subscription .new-reg-sidecard #circ {
+  opacity: 0 !important; }
 @media (max-width: 991px) {
   #subscription .new-reg-main {
     margin-left: 0; } }

@@ -13508,10 +13508,16 @@ i {
 
   & .new-reg {
 
+    
+
     &-sidecard {
       //TABLET
       @include respond(desktop-md) {
         display: none;
+      }
+
+      & #circ {
+        opacity: 0!important;
       }
     }
 
