@@ -13323,6 +13323,12 @@ i {
     margin-left: 32%;
     width: 68%;
 
+    //CUSTOM 1200
+    @include custom-respond(1200) {
+      padding-left: 6em;
+      padding-right: 6em;
+    }
+
     //TABLET
     @include respond(desktop-md) {
       margin-left: 35%;
@@ -13331,11 +13337,11 @@ i {
       width: 65%;
     }
 
-      //CUSTOM 700
-      @include custom-respond(700) {
-        margin-left: 0;
-        width: 100%;
-      }
+    //CUSTOM 700
+    @include custom-respond(700) {
+      margin-left: 0;
+      width: 100%;
+    }
 
     &-help {
       padding-top: 5.3rem;
@@ -13346,6 +13352,12 @@ i {
       top:0;
       right: 0;
       background-color: #FFF;
+
+        //CUSTOM 1200
+      @include custom-respond(1200) {
+        width: calc(65% - 6em);
+        margin-right: 6em;
+      }
 
       //TABLET
       @include respond(desktop-md) {
@@ -13476,7 +13488,18 @@ i {
 
   & .new-reg {
 
+    &-sidecard {
+      //TABLET
+      @include respond(desktop-md) {
+        display: none;
+      }
+    }
+
     &-main {
+        //TABLET
+        @include respond(desktop-md) {
+        margin-left: 0;
+      }
 
       &-body {
         @include flexbox();
@@ -13486,7 +13509,7 @@ i {
         &-card {
           padding-top: 3.6em;
           width: 25em;
-          min-width: 20em;
+          min-width: 25em;
           max-width: 30%;
           border-radius: 9px;
           background-color: #ffffff;
@@ -13554,7 +13577,7 @@ i {
             &-item {
 
               padding: 1.2em 1.6em;
-              padding-right: 0;
+              padding-right: 1.6em;
               @include flexbox();
               @include align-items(center);
               @include justify-content(flex-start);

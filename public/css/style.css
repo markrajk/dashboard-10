@@ -10299,6 +10299,10 @@ i {
     padding-top: 8rem;
     margin-left: 32%;
     width: 68%; }
+    @media (max-width: 1200px) {
+      .new-reg-main {
+        padding-left: 6em;
+        padding-right: 6em; } }
     @media (max-width: 991px) {
       .new-reg-main {
         margin-left: 35%;
@@ -10318,6 +10322,10 @@ i {
       top: 0;
       right: 0;
       background-color: #FFF; }
+      @media (max-width: 1200px) {
+        .new-reg-main-help {
+          width: calc(65% - 6em);
+          margin-right: 6em; } }
       @media (max-width: 991px) {
         .new-reg-main-help {
           width: calc(65% - 4em);
@@ -10410,6 +10418,12 @@ i {
       border-radius: 3.5px;
       background-color: #19cf40; }
 
+@media (max-width: 991px) {
+  #subscription .new-reg-sidecard {
+    display: none; } }
+@media (max-width: 991px) {
+  #subscription .new-reg-main {
+    margin-left: 0; } }
 #subscription .new-reg-main-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10424,7 +10438,7 @@ i {
   #subscription .new-reg-main-body-card {
     padding-top: 3.6em;
     width: 25em;
-    min-width: 20em;
+    min-width: 25em;
     max-width: 30%;
     border-radius: 9px;
     background-color: #ffffff;
@@ -10502,7 +10516,7 @@ i {
       width: 100%; }
       #subscription .new-reg-main-body-card-main-item {
         padding: 1.2em 1.6em;
-        padding-right: 0;
+        padding-right: 1.6em;
         display: -webkit-box;
         display: -webkit-flex;
         display: -moz-flex;
