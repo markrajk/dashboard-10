@@ -128,27 +128,51 @@
 
       <div class="new-reg-main-body">
         <div class="new-reg-main-body-input-container">
-          <label for="organizationName">Organization name</label>
-          <input type="text" id="organizationName" name="organizationName" placeholder="Required">
+          <label for="orgCountry">Country</label>
+          <div class="new-dropdown">
+            <div class="new-dropdown-trigger" onclick="this.focus()" tabindex="0" id="orgCountry">
+              <span class="new-dropdown-trigger-value">Select</span>
+              <div class="new-dropdown-trigger-symbol">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.419" height="7.669" viewBox="0 0 12.419 7.669">
+                  <path d="M10.459,11.76l4.75,4.74,4.75-4.74,1.459,1.459-6.209,6.209L9,13.219Z"
+                    transform="translate(-9 -11.76)" fill="#818181" /></svg>
+              </div>
+            </div>
+
+            <ul class="new-dropdown-menu">
+              <li class="new-dropdown-menu-item">
+                <button class="new-dropdown-menu-item-link">Option I</button>
+              </li>
+
+              <li class="new-dropdown-menu-item">
+                <button class="new-dropdown-menu-item-link">Option II</button>
+              </li>
+
+              <li class="new-dropdown-menu-item">
+                <button class="new-dropdown-menu-item-link">Option III</button>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="new-reg-main-body-input-container">
-          <label for="website">Webside URL</label>
-          <input type="text" id="website" name="website" placeholder="Required">
+          <label for="orgStreet">Street</label>
+          <input type="text" id="orgStreet" name="orgStreet" placeholder="Required">
         </div>
 
         <div class="new-reg-main-body-input-double">
           <div class="new-reg-main-body-input-container">
-            <label for="employees">Employees</label>
-            <input type="text" id="employees" name="employees" placeholder="Required">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Required">
           </div>
           <div class="new-reg-main-body-input-container">
-            <label for="duns">D-U-N-S number</label>
-            <input type="text" id="duns" name="duns" placeholder="Optional">
+            <label for="postalCode">Postal code</label>
+            <input type="text" id="postalCode" name="postalCode" placeholder="Required">
           </div>
         </div>
 
-        <button class="button-register-primary">Confirm</button>
+        <button class="button-register-primary"
+          onclick="location.href='../new-register-personal/index.html'">Confirm</button>
       </div>
 
     </div>
