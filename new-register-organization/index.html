@@ -178,11 +178,13 @@
       }
 
       if (window.innerHeight < 800) {
-        console.log('LESS')
-        console.log(sidecard.offetHeight, sidecard)
         sidecard.style.fontSize = `${(window.innerHeight / 900)}em`
       } else {
         sidecard.style.fontSize = '1em';
+      }
+
+      if (window.innerWidth < 830) {
+        sidecard.style.fontSize = `${(window.innerWidth / 830)}em`
       }
     }
 

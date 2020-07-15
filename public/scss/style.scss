@@ -13215,6 +13215,7 @@ i {
     &-list {
       padding-top: 11.9em;
       padding-bottom: 5em;
+      white-space: nowrap;
       
       &-item {
         font-size: 1em;
@@ -13312,6 +13313,12 @@ i {
     margin-left: 32%;
     width: 68%;
 
+    //TABLET
+    @include respond(desktop-md) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+
     &-help {
       padding-top: 5.3rem;
       padding-bottom: 1rem;
@@ -13321,6 +13328,12 @@ i {
       top:0;
       right: 0;
       background-color: #FFF;
+
+      //TABLET
+    @include respond(desktop-md) {
+      width: calc(68% - 4em);
+      padding-right: 4em;
+    }
       
       &-text {
         // width: 100%;

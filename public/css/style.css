@@ -10224,7 +10224,8 @@ i {
         white-space: nowrap; }
     .new-reg-sidecard-list {
       padding-top: 11.9em;
-      padding-bottom: 5em; }
+      padding-bottom: 5em;
+      white-space: nowrap; }
       .new-reg-sidecard-list-item {
         font-size: 1em; }
         .new-reg-sidecard-list-item:not(:last-of-type) {
@@ -10292,6 +10293,10 @@ i {
     padding-top: 8rem;
     margin-left: 32%;
     width: 68%; }
+    @media (max-width: 991px) {
+      .new-reg-main {
+        padding-left: 4em;
+        padding-right: 4em; } }
     .new-reg-main-help {
       padding-top: 5.3rem;
       padding-bottom: 1rem;
@@ -10301,6 +10306,10 @@ i {
       top: 0;
       right: 0;
       background-color: #FFF; }
+      @media (max-width: 991px) {
+        .new-reg-main-help {
+          width: calc(68% - 4em);
+          padding-right: 4em; } }
       .new-reg-main-help-text {
         text-align: right;
         font-size: 1.5rem;
