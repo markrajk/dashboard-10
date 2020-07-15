@@ -13352,6 +13352,80 @@ i {
         line-height: 1.2;
         color: #0e1321;
       }
+
+      &-text {
+        padding-top: emcalc(3.3,1.4);
+        max-width: emcalc(54,1.4);
+        font-size: 1.4em;
+        font-weight: 400;
+        line-height: 1.86;
+        letter-spacing: 0.07px;
+        color: #151515;
+
+        & button {
+          font-weight: 500;
+          color: #0053b4;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    &-body {
+
+      &-input-container {
+        width: 100%;
+
+        &:not(:last-of-type) {
+          margin-bottom: 4.7em;
+        }
+
+        & label {
+          margin-bottom: emcalc(1.4,1.3);
+          display: block;
+          font-size: 1.3em;
+          font-weight: 600;
+          color: #4a4a4a;
+        }
+
+        & input {
+          padding: emcalc(1.3,1.5) emcalc(1.7,1.5);
+          width: 100%;
+          font-size: 1.5em;
+          font-weight: 500;
+          line-height: 1.73;
+          border-radius: 4px;
+          border: solid 1.3px #dedede;
+
+          &::placeholder {
+            opacity: .19;
+            color: #3c3c3c;
+          }
+        }
+      }
+
+      &-input-double {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+
+        & .new-reg-main-body-input-container {
+          margin-bottom: 0;
+          width: 48%;
+        }
+      }
+
+      & .button-register-primary {
+        padding: emcalc(1.4, 1.7) emcalc(3.2, 1.7);
+        font-size: 1.7em;
+        font-weight: 600;
+        letter-spacing: 0.34px;
+        color: #ffffff;
+        border-radius: 3.5px;
+        background-color: #19cf40;
+      }
     }
   }
 }
@@ -13514,6 +13588,24 @@ i {
             }
           }
 
+        }
+      }
+    }
+  }
+}
+
+//ORGANIZATION
+#organization {
+
+  & .new-reg {
+
+    &-main {
+
+      &-body {
+        max-width: 45em;
+
+        & .button-register-primary {
+          margin-top: emcalc(7.5,1.7);
         }
       }
     }
