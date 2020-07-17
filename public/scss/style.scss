@@ -7059,6 +7059,8 @@ i {
         @include align-items(center);
         border-bottom: 1px solid #E1E1E1;
         background-color: #f7f9fa;
+        border-top-left-radius: 7.5px;
+        border-top-right-radius: 7.5px;
 
         & .close {
           color: #bdbebf;
@@ -7201,6 +7203,8 @@ i {
         padding: 1.5em 2.1em;
         background-color: #f7f9fa;
         border-top: 1px solid #E1E1E1;
+        border-bottom-left-radius: 7.5px;
+        border-bottom-right-radius: 7.5px;
 
         &-buttons {
 

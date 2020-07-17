@@ -5127,7 +5127,9 @@ i {
       -moz-align-items: center;
       align-items: center;
       border-bottom: 1px solid #E1E1E1;
-      background-color: #f7f9fa; }
+      background-color: #f7f9fa;
+      border-top-left-radius: 7.5px;
+      border-top-right-radius: 7.5px; }
       .give-feedback #feedbackModal .modal-header .close {
         color: #bdbebf; }
       .give-feedback #feedbackModal .modal-header img {
@@ -5255,7 +5257,9 @@ i {
     .give-feedback #feedbackModal .modal-footer {
       padding: 1.5em 2.1em;
       background-color: #f7f9fa;
-      border-top: 1px solid #E1E1E1; }
+      border-top: 1px solid #E1E1E1;
+      border-bottom-left-radius: 7.5px;
+      border-bottom-right-radius: 7.5px; }
       .give-feedback #feedbackModal .modal-footer-buttons .button {
         font-size: 1.5em;
         font-weight: 400;
