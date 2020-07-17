@@ -3975,9 +3975,10 @@ i {
         border-left: 1px solid #EBEDEF !important;
         border-right: 1px solid #EBEDEF !important; }
         .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) {
-          padding-top: 8rem;
-          padding-bottom: 8rem;
-          border-top: 0 !important;
+          margin-top: 2rem;
+          padding-top: 15rem;
+          padding-bottom: 15rem;
+          border-top: solid 1px #EBEDEF !important;
           border-bottom: 0 !important; }
           .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td {
             -webkit-box-direction: normal;
@@ -3996,7 +3997,8 @@ i {
               font-weight: 400;
               color: #1B2733; }
               .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-info button {
-                color: #2D76AD; }
+                color: #2D76AD;
+                text-decoration: underline; }
     .teams-people-view .table-custom-body td {
       padding: 0 0; }
     .teams-people-view .table-custom-body .table-custom-col-01 a {

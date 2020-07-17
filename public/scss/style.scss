@@ -5498,9 +5498,11 @@ i {
           border-right: 1px solid #EBEDEF !important;
 
           &:not(.not-yet-search) {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-            border-top: 0 !important;
+            margin-top: 2rem;
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            border-top: solid 1px #EBEDEF!important;
+            // border-top: 0 !important;
             border-bottom: 0 !important;
 
             & #not-yet-td {
@@ -5520,6 +5522,7 @@ i {
 
                 & button {
                   color: #2D76AD;
+                  text-decoration: underline;
                 }
               }
             }
