@@ -8390,7 +8390,7 @@ i {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap; } }
           .people-average-charts-body .section-development .section-body-legend-main .chart-label {
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -8412,14 +8412,16 @@ i {
                 margin-right: 3rem; } }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.5rem; }
+              font-size: 1.8rem; }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
-              font-size: 1.4rem;
+              font-size: 1.35rem;
               font-weight: 400;
-              line-height: 1.36;
+              line-height: 1.33;
               letter-spacing: 0.14px;
               color: #3d464d; }
+              .people-average-charts-body .section-development .section-body-legend-main .chart-label-label .name {
+                font-weight: 500; }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
               height: .35rem;
