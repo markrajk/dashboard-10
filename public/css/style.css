@@ -3308,13 +3308,15 @@ i {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
         .teams-average-charts-body .section-development .section-body-chart {
-          width: 72%;
+          width: 100%;
+          min-width: 0;
+          max-width: 67.4rem;
           padding: 0 3.3rem 1.8rem;
           border-right: 1.5px solid #f3f3f3; }
           @media (max-width: 991px) {
             .teams-average-charts-body .section-development .section-body-chart {
               margin-bottom: 3rem;
-              width: 100%;
+              max-width: 100%;
               padding-right: 2rem;
               border-right: 0; } }
           .teams-average-charts-body .section-development .section-body-chart-header {
@@ -3351,14 +3353,13 @@ i {
               font-size: 2rem;
               color: #e3e3e3; }
           .teams-average-charts-body .section-development .section-body-chart-main {
-            height: 32rem; }
+            width: 100%; }
             .teams-average-charts-body .section-development .section-body-chart-main canvas {
-              height: 100%; }
+              width: 100%; }
               @media (max-width: 991px) {
                 .teams-average-charts-body .section-development .section-body-chart-main canvas {
                   margin: 0 auto; } }
         .teams-average-charts-body .section-development .section-body-legend {
-          width: 28%;
           padding-left: 5rem; }
           @media (max-width: 991px) {
             .teams-average-charts-body .section-development .section-body-legend {
@@ -5028,6 +5029,55 @@ i {
         top: 50%;
         right: 0;
         transform: translate(-0.5rem, -50%); }
+    .give-feedback-people .no-search-results {
+      margin-top: 1.2rem;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+      .give-feedback-people .no-search-results-icons {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center; }
+        .give-feedback-people .no-search-results-icons svg {
+          margin-right: 4rem; }
+      .give-feedback-people .no-search-results-message {
+        margin-left: 1.2rem; }
+        .give-feedback-people .no-search-results-message-text {
+          margin-bottom: 1.3rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: #292929; }
+        .give-feedback-people .no-search-results-message-info {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: #383838; }
+          .give-feedback-people .no-search-results-message-info button {
+            font-weight: 500;
+            color: #137EFE; }
     .give-feedback-people-body {
       max-width: 79rem;
       padding-left: .7rem;
@@ -6606,6 +6656,14 @@ i {
         letter-spacing: 0.07px;
         text-align: left;
         color: #1b2733; }
+      .company-members .table-custom-body tr#not-yet {
+        padding: 0;
+        margin: 4.5rem 0; }
+        .company-members .table-custom-body tr#not-yet #not-yet-td {
+          font-weight: 500;
+          padding: 2rem 0;
+          border-top: 1px solid #E6E8EB !important;
+          border-bottom: 1px solid #E6E8EB !important; }
     .company-members .table-custom-body-col-01 input::placeholder {
       color: #1b2733; }
     .company-members .table-custom-body-col-01 a {
@@ -6895,6 +6953,14 @@ i {
           letter-spacing: 0.07px;
           text-align: left;
           color: #1b2733; }
+        .company-teams-body .table-custom-body tr#not-yet {
+          padding: 0;
+          margin: 4.5rem 0; }
+          .company-teams-body .table-custom-body tr#not-yet #not-yet-td {
+            font-weight: 500;
+            padding: 2rem 0;
+            border-top: 1px solid #E6E8EB !important;
+            border-bottom: 1px solid #E6E8EB !important; }
       .company-teams-body .table-custom-body-col-01 input::placeholder {
         color: #1b2733; }
       .company-teams-body .table-custom-body-col-01 a {
@@ -8214,13 +8280,15 @@ i {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
         .people-average-charts-body .section-development .section-body-chart {
-          width: 72%;
+          min-width: 0;
+          width: 100%;
+          max-width: 67.4rem;
           padding: 0 3.3rem 1.8rem;
           border-right: 1.5px solid #f3f3f3; }
           @media (max-width: 991px) {
             .people-average-charts-body .section-development .section-body-chart {
               margin-bottom: 3rem;
-              width: 100%;
+              max-width: 100%;
               padding-right: 2rem;
               border-right: 0; } }
           .people-average-charts-body .section-development .section-body-chart-header {
@@ -8257,14 +8325,13 @@ i {
               font-size: 2rem;
               color: #e3e3e3; }
           .people-average-charts-body .section-development .section-body-chart-main {
-            height: 32rem; }
+            width: 100%; }
             .people-average-charts-body .section-development .section-body-chart-main canvas {
-              height: 100%; }
+              width: 100%; }
               @media (max-width: 991px) {
                 .people-average-charts-body .section-development .section-body-chart-main canvas {
                   margin: 0 auto; } }
         .people-average-charts-body .section-development .section-body-legend {
-          width: 28%;
           padding-left: 5rem; }
           @media (max-width: 991px) {
             .people-average-charts-body .section-development .section-body-legend {

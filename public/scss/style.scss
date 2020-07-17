@@ -4551,13 +4551,15 @@ i {
         }
 
         &-chart {
-          width: 72%;
+          width: 100%;
+          min-width: 0;
+          max-width: 67.4rem;
           padding: 0 3.3rem 1.8rem;
           border-right: 1.5px solid #f3f3f3;
 
           @include respond(desktop-md) {
             margin-bottom: 3rem;
-            width: 100%;
+            max-width: 100%;
             padding-right: 2rem;
             border-right: 0;
           }
@@ -4599,10 +4601,11 @@ i {
           }
 
           &-main {
-            height: 32rem;
+            width: 100%;
+            // height: 32rem;
 
             & canvas {
-              height: 100%;
+              width: 100%;
 
               @include respond(desktop-md) {
                 margin: 0 auto;
@@ -4612,7 +4615,7 @@ i {
         }
 
         &-legend {
-          width: 28%;
+          // width: 28%;
           padding-left: 5rem;
 
           @include respond(desktop-md) {
@@ -6963,6 +6966,46 @@ i {
       }
     }
 
+    & .no-search-results {
+      margin-top: 1.2rem;
+      @include inline-flex();
+      @include align-items(center);
+      @include justify-content(center);
+
+      &-icons {
+        @include inline-flex();
+        @include align-items(center);
+        @include justify-content(center);
+
+        & svg {
+          margin-right: 4rem;
+        }
+      }
+
+      &-message {
+        margin-left: 1.2rem;
+
+        &-text {
+
+          margin-bottom: 1.3rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: #292929;
+        }
+
+        &-info {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: #383838;
+
+          & button {
+            font-weight: 500;
+            color: #137EFE;
+          }
+        }
+      }
+    }
+
     &-body {
       max-width: 79rem;
       padding-left: .7rem;
@@ -8660,6 +8703,17 @@ i {
           text-align: left;
           color: #1b2733;
         }
+
+        &#not-yet {
+          padding: 0;
+          margin: 4.5rem 0;
+          & #not-yet-td {
+            font-weight: 500;
+            padding: 2rem 0;
+            border-top: 1px solid #E6E8EB!important;
+            border-bottom: 1px solid #E6E8EB!important;
+          }
+        }
       }
 
       &-col-01 {
@@ -9002,6 +9056,17 @@ i {
             letter-spacing: 0.07px;
             text-align: left;
             color: #1b2733;
+          }
+
+          &#not-yet {
+            padding: 0;
+            margin: 4.5rem 0;
+            & #not-yet-td {
+              font-weight: 500;
+              padding: 2rem 0;
+              border-top: 1px solid #E6E8EB!important;
+              border-bottom: 1px solid #E6E8EB!important;
+            }
           }
         }
 
@@ -10812,13 +10877,15 @@ i {
         }
 
         &-chart {
-          width: 72%;
+          min-width: 0;
+          width: 100%;
+          max-width: 67.4rem;
           padding: 0 3.3rem 1.8rem;
           border-right: 1.5px solid #f3f3f3;
 
           @include respond(desktop-md) {
             margin-bottom: 3rem;
-            width: 100%;
+            max-width: 100%;
             padding-right: 2rem;
             border-right: 0;
           }
@@ -10860,10 +10927,10 @@ i {
           }
 
           &-main {
-            height: 32rem;
+           width: 100%;
 
             & canvas {
-              height: 100%;
+              width: 100%;
 
               @include respond(desktop-md) {
                 margin: 0 auto;
@@ -10873,7 +10940,6 @@ i {
         }
 
         &-legend {
-          width: 28%;
           padding-left: 5rem;
 
           @include respond(desktop-md) {
