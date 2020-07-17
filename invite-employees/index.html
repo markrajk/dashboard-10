@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Team Feedback | Register company | Sign in</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../public/css/bootstrap.css" />
-    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
-    <link rel="stylesheet" href="../public/css/style.css" />
-  </head>
-  <body>
-  
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inviteEmployeesModal">
-      Launch demo modal
-    </button>
 
-    <!-- INVITE EMPLOYEES -->
-    <div class="modal fade modal-custom" id="inviteEmployeesModal" tabindex="-1" role="dialog"
+<head>
+  <title>Team Feedback | Register company | Sign in</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e9f50f9a1c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../public/css/bootstrap.css" />
+  <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+  <link rel="stylesheet" href="../public/css/style.css" />
+</head>
+
+<body>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inviteEmployeesModal">
+    Launch demo modal
+  </button>
+
+  <!-- INVITE EMPLOYEES -->
+  <div class="modal fade modal-custom" id="inviteEmployeesModal" tabindex="-1" role="dialog"
     aria-labelledby="inviteEmpoyeesModal" aria-hidden="true">
-       <div class="modal-dialog modal-dialog-centered" role="document">
-           <div class="modal-content">
-               <div class="modal-header">
-                 <h2 class="modal-header-title">Invite employess</h2>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                       <i class="icon-close"></i>
-                   </button>
-               </div>
-               <div class="modal-body">
-                 <p class="info">Enter or copy paste here your employees emails <span>80/100 added</span></p>
-                 <textarea name="employees" id="employees" placeholder="Enter emails"></textarea>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-header-title">Invite new team members</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-container">
+            <label>Select team</label>
+            <div class="new-dropdown">
+              <div class="new-dropdown-trigger" onclick="this.focus()" tabindex="0">
+                <span class="new-dropdown-trigger-value">Team Marketing</span>
+                <div class="new-dropdown-trigger-symbol">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12.419" height="7.669" viewBox="0 0 12.419 7.669">
+                    <path d="M10.459,11.76l4.75,4.74,4.75-4.74,1.459,1.459-6.209,6.209-3.4-3.4L9,13.219Z"
+                      transform="translate(-9 -11.76)" fill="#818181" /></svg>
+                </div>
+              </div>
+
+              <ul class="new-dropdown-menu">
+                <li class="new-dropdown-menu-item">
+                  <button class="new-dropdown-menu-item-link">Option I</button>
+                </li>
+
+                <li class="new-dropdown-menu-item">
+                  <button class="new-dropdown-menu-item-link">Option II</button>
+                </li>
+
+                <li class="new-dropdown-menu-item">
+                  <button class="new-dropdown-menu-item-link">Option III</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="info">Enter here the emails of the people who you want to invite <span>15
+              added</span>
+          </p>
+          <textarea name="employees" id="employees" placeholder="Enter emails"></textarea>
 
 
-                 <p class="info">Email invitation type</span></p>
+          <p class="info">Email invitation type</span></p>
 
-                  <div class="choice">
-                    <div class="pretty p-default p-round">
-                      <input type="radio" name="settings" id="choice-01" />
-                      <div class="state p-primary-o">
-                          <label>&nbsp</label>
-                      </div>
-                    </div>
-                    <label class="choice-label" for="choice-01">
-                      <p class="choice-label-top">Send general email</p>
-                      <p class="choice-label-bot">Use the basic email text. Click here to read.</p>
-                    </label>
-                  </div>
+          <div class="choice">
+            <div class="pretty p-default p-round">
+              <input type="radio" name="settings" id="choice-01" />
+              <div class="state p-primary-o">
+                <label>&nbsp</label>
+              </div>
+            </div>
+            <label class="choice-label" for="choice-01">
+              <p class="choice-label-top">Send general email</p>
+              <p class="choice-label-bot">Use the basic email text. Click here to read.</p>
+            </label>
+          </div>
 
-                  <div class="choice">
-                    <div class="pretty p-default p-round">
-                      <input type="radio" name="settings" id="choice-02" />
-                      <div class="state p-primary-o">
-                          <label>&nbsp</label>
-                      </div>
-                    </div>
-                    <label class="choice-label" for="choice-02">
-                      <p class="choice-label-top">Customize email text</p>
-                      <p class="choice-label-bot">Customize the email text which is sent to your employees</p>
-                    </label>
-                  </div>
+          <div class="choice">
+            <div class="pretty p-default p-round">
+              <input type="radio" name="settings" id="choice-02" />
+              <div class="state p-primary-o">
+                <label>&nbsp</label>
+              </div>
+            </div>
+            <label class="choice-label" for="choice-02">
+              <p class="choice-label-top">Customize email text</p>
+              <p class="choice-label-bot">Customize the email text which is sent to your
+                employees</p>
+            </label>
+          </div>
 
-               </div>
-               <div class="footer">
-                <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
-                <button class="button button-primary">Confirm</button>
-               </div>
-               
-           </div>
-       </div>
-   </div>
+        </div>
+        <div class="footer">
+          <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button-primary">Confirm</button>
+        </div>
 
-    <script src="../public/js/jquery-3.4.1.min.js"></script>
-    <script src="../public/js/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-    <script src="../public/js/main.js"></script>
-  </body>
+      </div>
+    </div>
+  </div>
+
+  <script src="../public/js/jquery-3.4.1.min.js"></script>
+  <script src="../public/js/bootstrap.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="../public/js/main.js"></script>
+</body>
+
 </html>

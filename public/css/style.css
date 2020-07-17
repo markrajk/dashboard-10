@@ -588,8 +588,8 @@ i {
 .modal-custom.modal .modal-dialog {
   max-width: 53.3rem; }
 .modal-custom.modal .modal-content {
-  border-radius: 17px;
-  border: solid 1.3px rgba(229, 229, 229, 0.55); }
+  border-radius: 6px;
+  border: solid 1px #e2e2e2; }
   .modal-custom.modal .modal-content .modal-header {
     padding: 2rem;
     padding-bottom: .5rem;
@@ -621,8 +621,8 @@ i {
 .modal-custom-title {
   margin-bottom: .7rem;
   font-family: Roboto;
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: -0.08px;
   color: #000000; }
@@ -703,7 +703,7 @@ i {
 #inviteEmployeesModal .modal-dialog {
   max-width: 57.2rem; }
 #inviteEmployeesModal .modal-content {
-  border-radius: 4px; }
+  border-radius: 5px; }
 #inviteEmployeesModal .modal-header {
   padding-bottom: 0; }
   #inviteEmployeesModal .modal-header-title {
@@ -719,6 +719,17 @@ i {
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
   align-items: flex-start; }
+  #inviteEmployeesModal .modal-body .input-container {
+    margin-bottom: 3.7rem;
+    width: 100%;
+    max-width: 32.6rem; }
+    #inviteEmployeesModal .modal-body .input-container label {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.38;
+      letter-spacing: 0.13px;
+      color: #6c7b86; }
   #inviteEmployeesModal .modal-body .info {
     margin-bottom: 1.1rem;
     width: 100%;
@@ -780,6 +791,8 @@ i {
     border-radius: 4px;
     border: solid 1px #d0d4d9;
     background-color: #f6f9fc; }
+    #inviteEmployeesModal .modal-body .choice:not(:last-of-type) {
+      margin-bottom: .8rem; }
     #inviteEmployeesModal .modal-body .choice .pretty {
       margin-right: 0;
       font-size: 2.5rem; }
@@ -909,6 +922,12 @@ i {
   align-items: center; }
   #inviteNewMemberModal .modal-header .close {
     font-size: 1.2rem; }
+  #inviteNewMemberModal .modal-header .modal-title {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    color: #454545; }
 #inviteNewMemberModal .modal-body {
   padding: 3rem 2.6rem;
   -webkit-box-align: start;
@@ -952,6 +971,9 @@ i {
     line-height: 1.38;
     letter-spacing: 0.13px;
     color: #6c7b86; }
+    #inviteNewMemberModal .modal-body .info span {
+      font-weight: 700;
+      color: #4f5458; }
   #inviteNewMemberModal .modal-body textarea {
     padding: 1rem 1.3rem;
     width: 100%;
@@ -1232,6 +1254,7 @@ i {
 #transferOwnership .modal-dialog,
 #transferOwnershipConfirm .modal-dialog,
 #linkTeamModal .modal-dialog {
+  width: 100%;
   max-width: 39rem; }
 #transferOwnership .modal-content,
 #transferOwnershipConfirm .modal-content,
@@ -3392,7 +3415,7 @@ i {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap; } }
           .teams-average-charts-body .section-development .section-body-legend-main .chart-label {
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -3414,14 +3437,16 @@ i {
                 margin-right: 3rem; } }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.5rem; }
+              font-size: 1.8rem; }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
-              font-size: 1.4rem;
+              font-size: 1.35rem;
               font-weight: 400;
-              line-height: 1.36;
+              line-height: 1.33;
               letter-spacing: 0.14px;
               color: #3d464d; }
+              .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label .name {
+                font-weight: 500; }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
               height: .35rem;
@@ -8380,7 +8405,8 @@ i {
             -ms-flex-pack: start;
             -webkit-justify-content: flex-start;
             -moz-justify-content: flex-start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+            white-space: nowrap; }
             @media (max-width: 991px) {
               .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
                 margin-right: 3rem; } }
