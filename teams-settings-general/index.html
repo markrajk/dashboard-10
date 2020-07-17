@@ -315,6 +315,23 @@
                                 <!-- <p class="column-02 text-truncate">Twice per month</p>
                                 <a href="#" class="column-03" data-toggle="modal" data-target="#linkTeamModal">Edit</a> -->
                             </div>
+
+                            <div class="settings-table-row">
+                                <div class="column-01">
+                                    <p>Team leader feedback frequency</p>
+                                    <span>Select how often team leader feedback will be requested</span>
+                                </div>
+                                <select class="text-truncate" name="feedback-01" id="feedback-01">
+                                    <option value="value01">Twice per month</option>
+                                    <option value="value01">Every second week</option>
+                                    <option value="value01">Every third week</option>
+                                    <option value="value01" selected>Monthly</option>
+                                </select>
+                                <a href="#" class="column-03">Save</a>
+                                <!-- <p class="column-02 text-truncate">Twice per month</p>
+                                <a href="#" class="column-03" data-toggle="modal" data-target="#linkTeamModal">Edit</a> -->
+                            </div>
+
                             <div class="settings-table-row">
                                 <p class="column-01">Link team to company</p>
                                 <p class="column-02 text-truncate linked">Linked to <span>Nokia Oyj</span></p>
@@ -375,14 +392,14 @@
                             </div>
                             <div class="modal-body">
                                 <h2 class="title">Transfer team ownership</h2>
-                                <p class="text">Enter the email of the new owner of this team</p>
+                                <p class="text">Enter of the new owner</p>
                                 <input type="email" placeholder="Enter email">
                                 <div class="buttons">
                                     <button class="button button-outlined" data-dismiss="modal"
                                         aria-label="Close">Cancel</button>
                                     <button class="button button-primary" data-toggle="modal"
                                         data-target="#transferOwnershipConfirm" data-dismiss="modal"
-                                        aria-label="Close">Confirm</button>
+                                        aria-label="Close">Update</button>
                                 </div>
                             </div>
                         </div>
@@ -400,12 +417,13 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <h2 class="title">Confirm</h2>
-                                <p class="text">Are you sure you want to delete this team leader?</p>
+                                <h2 class="title">Confirmation</h2>
+                                <p class="text">Are you sure you want to link this team
+                                    and all its employees to Google?</p>
                                 <div class="buttons">
                                     <button class="button button-outlined" data-dismiss="modal"
-                                        aria-label="Close">No</button>
-                                    <button class="button button-primary">Yes</button>
+                                        aria-label="Close">Cancel</button>
+                                    <button class="button button-primary">Update</button>
                                 </div>
                             </div>
                         </div>

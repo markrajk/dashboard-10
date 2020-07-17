@@ -1422,6 +1422,7 @@ i {
         height: 100%;
         color: inherit;
         transition: all .1s ease-in-out;
+        white-space: nowrap;
 
         &:hover,
         &:focus {
@@ -1801,6 +1802,10 @@ i {
     padding: 3rem 2.6rem;
     @include align-items(flex-start);
 
+    & .new-dropdown {
+      font-size: 1.4rem;
+    }
+
     & .input-container {
       margin-bottom: 3.6rem;
       width: 100%;
@@ -1985,8 +1990,12 @@ i {
     max-width: 84.6rem;
   }
 
+  & .modal-content {
+    border-radius: 5px;
+  }
+
   & .modal-header {
-    padding-top: 2.9rem;
+    padding-top: 2rem;
     padding-right: 3.6rem;
 
     & .close {
@@ -1998,7 +2007,7 @@ i {
     padding-top: 0;
     padding-left: 5.6rem;
     padding-right: 4.1rem;
-    padding-bottom: 6.4rem;
+    padding-bottom: 4.4rem;
     @include align-items(flex-start);
 
     overflow-y: auto;
@@ -2013,15 +2022,16 @@ i {
     }
 
     &-title {
-      margin-bottom: .7rem;
-      font-size: 1.8rem;
+      margin-bottom: 1.1rem;
+      font-size: 2rem;
       font-weight: 400;
-      line-height: 1.33;
-      color: #1b2733;
+      line-height: 1.3;
+      letter-spacing: 0.2px;
+      color: #454545;
     }
 
     &-text {
-      margin-bottom: 3.1rem;
+      margin-bottom: 2.5rem;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 1.29;
@@ -2029,7 +2039,7 @@ i {
     }
 
     & .input-container {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2rem;
       position: relative;
       width: 100%;
       max-width: 31.4rem;
@@ -2061,7 +2071,7 @@ i {
     }
 
     & .table-custom {
-      margin-bottom: 3rem;
+      margin-bottom: 2.8rem;
 
       &-head {
         height: 3.7rem;
@@ -2137,15 +2147,16 @@ i {
             &.column-03 {
               margin-right: 0;
               @include justify-content(center);
-              flex: .3;
+              flex: .36;
 
               & .button {
-                width: 7.7rem;
+                width: 8rem;
                 font-size: 1.4rem;
                 font-weight: 500;
                 line-height: 1.36;
 
                 &-dark {
+                  
 
                   &:hover,
                   &:focus {
@@ -2184,12 +2195,16 @@ i {
 #linkTeamModal {
 
   & .modal-dialog {
-    max-width: 40rem;
-    border-radius: 4px;
+    max-width: 39rem;
+    
+  }
+
+  & .modal-content {
+    border-radius: 6px;
   }
 
   & .modal-header {
-    padding: 2.5rem;
+    padding: 2rem;
     padding-bottom: 0;
   }
 
@@ -2197,20 +2212,21 @@ i {
     padding-top: 1.2rem;
     padding-left: 6rem;
     padding-right: 6rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.5rem;
+    @include align-items(flex-start);
   }
 
   & .title {
-    margin-bottom: 2.3rem;
-    font-size: 1.9rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 1.32;
-    letter-spacing: 0.19px;
-    color: #65737e;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    color: #454545;
   }
 
   & .text {
-    margin-bottom: 1.9rem;
+    margin-bottom: .8rem;
     font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.38;
@@ -2224,7 +2240,7 @@ i {
   }
 
   & input {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     padding: .6rem 1.1rem;
     width: 100%;
     max-width: 100%;
@@ -2256,6 +2272,17 @@ i {
       width: 48.5%;
       border-radius: 3px;
       border: solid 1px #bbbbbb;
+    }
+  }
+}
+
+#transferOwnershipConfirm {
+
+  & .modal-body {
+    & .text {
+      margin-bottom: 2.5rem;
+      font-size: 1.4rem;
+      white-space: normal;
     }
   }
 }
@@ -2497,7 +2524,7 @@ i {
     background-color: #FFF;
 
     &-img {
-      margin-right: .76rem;
+      margin-right: .9rem;
       width: 3.97rem;
       min-width: 3.97rem;
       height: 3.97rem;
@@ -2508,7 +2535,7 @@ i {
       @include inline-flex;
       @include align-items(center);
       @include justify-content(center);
-      margin-right: .76rem;
+      margin-right: .9rem;
       width: 3.97rem;
       min-width: 3.97rem;
       height: 3.97rem;
@@ -2880,14 +2907,14 @@ i {
     margin-top: 1rem;
     width: 100%;
     height: 1.46rem;
-    border-radius: .6rem;
+    border-radius: 4px;
     background-color: #ecf0f6;
 
     &-fill {
       width: 0%;
       height: 100%;
-      border-top-left-radius: .6rem;
-      border-bottom-left-radius: .6rem;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
       transition: width .8s ease-out .1s;
 
       &.good {
@@ -3463,6 +3490,7 @@ i {
     z-index: 100;
 
     &-header {
+      height: 5rem;
       position: relative;
       padding: 2rem 2.4rem 0;
       margin-bottom: 1.4rem;
@@ -3584,6 +3612,10 @@ i {
             }
           }
 
+          &.placeholder {
+            text-align: center;
+          }
+
 
           // &:hover .icon-close {
           //   opacity: 1;
@@ -3618,9 +3650,9 @@ i {
         border-top: 1.5px solid #F2F2F2;
         text-align: left;
 
-        &:nth-of-type(2) {
-          border-bottom: 1.5px solid #F2F2F2;
-        }
+        // &:nth-of-type(2) {
+        //   border-bottom: 1.5px solid #F2F2F2;
+        // }
 
         &:hover {
           color: #333333;
@@ -3637,6 +3669,10 @@ i {
             border-color: #757575;
             background-color: #757575;
           }
+        }
+
+        &.compare-teams-btn {
+          border-bottom: 1.5px solid #F2F2F2;
         }
       }
 
@@ -5413,7 +5449,7 @@ i {
       }
 
       &:nth-of-type(2) {
-        @include flex(.6);
+        @include flex(.7);
 
         @include respond(desktop-xxsm) {
           display: none;
@@ -7001,50 +7037,50 @@ i {
   }
 
   & #feedbackModal {
-    & .modal {
+    font-size: 1em;
 
+    & .modal {
+      
       &-content {
-        margin: auto;
-        border-radius: 1.7rem;
-        border: 0;
-        border: 1.25px solid #E5E5E5;
+        border-radius: 7.5px;
       }
 
       &-dialog {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        width: 100%;
-        max-width: 50.7rem !important;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 49em;
       }
 
       &-header {
-        padding: 1.9rem 4.5rem;
-        padding-right: 2.5rem;
+        padding: 1.9em 4.6rem;
+        padding-right: 2.3rem;
+        padding-bottom: 1rem;
         @include flexbox;
         @include align-items(center);
         border-bottom: none;
-        border-bottom: 1px solid #DFE0E2;
+        border-bottom: none;
+        background-color: #f7f9fa;
 
         & img {
-          margin-right: 1.2rem;
-          width: 5.65rem;
-          height: 5.65rem;
+          margin-right: 1.5em;
+          width: 5.65em;
+          height: 5.65em;
           border-radius: 50%;
         }
 
         & h5 {
-          margin-top: -.5rem;
-          font-size: 1.3rem;
+          margin-left: .3rem;
+          // margin-top: 1rem;
+          font-size: 1.3em;
           font-weight: 500;
           line-height: 1.08;
           color: #007aff;
 
           & .name {
-            padding-top: .4rem;
+            margin-top: .2em;
+            padding-top: emcalc(1,emcalc(2.5,1.3));
             display: block;
-            margin-bottom: -1rem;
-            font-size: 2.5rem;
+            font-size: emcalc(2.5,1.3);
             font-weight: 700;
             line-height: 1.12;
             letter-spacing: 0.25px;
@@ -7053,15 +7089,15 @@ i {
         }
 
         & .close {
-          font-size: 1.6rem;
+          font-size: 1.6em;
           @include align-self(flex-start);
         }
       }
 
       &-body {
-        padding: 4.5rem;
-        padding-top: 4.5rem;
-        padding-bottom: 5rem;
+        padding: 4.5em;
+        padding-top: 4.8em;
+        padding-bottom: 0;
         @include flexbox;
         @include flex-direction(column);
         @include justify-content(flex-start);
@@ -7073,17 +7109,20 @@ i {
           @include justify-content(space-between);
           text-align: center;
           width: 100%;
-          max-width: 34.5rem;
+          max-width: 32.811em;
 
           & label {
-            width: 3.4rem;
+            width: emcalc(3.7,2.8);
           }
 
-          & label,
+          & label {
+            font-size: 2.5em;
+          }
+
           & label::before,
-          & label::after,
+          & label::after
             {
-            font-size: 2.8rem;
+            font-size: 1em;
 
             &:not(:last-of-type) {
               margin-right: 0;
@@ -7091,38 +7130,36 @@ i {
           }
 
           & p {
-            font-size: 1.8rem;
+            font-size: 1.7em;
             font-weight: 500;
-            line-height: 1.33;
-            letter-spacing: 0.09px;
-            text-align: left;
-            color: #000000;
+            line-height: 1.35;
+            letter-spacing: 0.17px;
+            color: #303238;
           }
 
           &:not(:last-of-type) {
-            margin-bottom: 2.8rem;
+            margin-bottom: emcalc(4.8,1.7);
           }
         }
 
         & .input-container {
           width: 100%;
-          max-width: 42rem;
-          margin-top: 4.3rem;
+          max-width: 42em;
 
           & label {
             display: block;
-            font-size: 1.5rem;
+            font-size: 1.5em;
             font-weight: 500;
             line-height: 1.33;
-            letter-spacing: 0.23px;
-            color: #1d1d1d;
+            letter-spacing: 0.15px;
+            color: #373b43;
           }
 
           & input {
             width: 100%;
-            padding: 1rem 0;
-            padding-top: 1.5rem;
-            font-size: 1.5rem;
+            padding: emcalc(1,1.5) 0;
+            padding-top: 1em;
+            font-size: 1.5em;
             font-weight: 500;
             line-height: 1.31;
             border: 0;
@@ -7139,9 +7176,13 @@ i {
             }
           }
 
-          &:nth-of-type(4) {
-            color: red !important;
-            margin-top: 3.3rem;
+          &.cont-01 {
+            margin-top: 3em;
+            margin-bottom: 4.7em;
+          }
+
+          &.cont-02 {
+            margin-bottom: 6em;
           }
         }
 
@@ -7149,6 +7190,32 @@ i {
           padding: 1rem 3.8rem;
           font-size: 1.7rem;
           margin-top: 7rem;
+        }
+      }
+
+      &-footer {
+        padding: 1.5em 2.1em;
+        background-color: #f7f9fa;
+
+        &-buttons {
+
+          & .button {
+            font-size: 1.5em;
+            font-weight: 400;
+            line-height: 1.33;
+            letter-spacing: 0.15px;
+
+            &-outlined {
+              margin-right: emcalc(1.2,1.5);
+              padding: emcalc(.7,1.5) emcalc(4,1.5);
+              background-color: #FFF;
+            }
+
+            &-primary {
+              padding: emcalc(.7,1.5) emcalc(2.1,1.5);
+              font-weight: 500;
+            }
+          }
         }
       }
     }
@@ -10104,7 +10171,7 @@ i {
       }
 
       &-col-02 {
-        width: 30%;
+        width: 25%;
 
         @include respond(desktop-xsm) {
           width: 45%;
@@ -10125,7 +10192,7 @@ i {
 
       &-col-04 {
         @include justify-content(center);
-        width: 10%;
+        width: 15%;
 
         @include respond(desktop-xsm) {
           width: 20%;
@@ -10384,7 +10451,7 @@ i {
 .people-average-charts {
   padding: 2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 20rem);
+  max-height: calc(100vh - 9.6rem - 1.5px);
   // overflow-y: auto;
   // scrollbar-width: none; /* Firefox */
   // -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -10404,6 +10471,17 @@ i {
   //   max-width: 103rem;
   //   border-top: 1px solid #e1e1e1;
   // }
+
+  overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
 
   &-header {
     margin-bottom: 2rem;
@@ -10496,18 +10574,18 @@ i {
 
   &-body {
     max-width: 103rem;
-    max-height: calc(100% - 13.4rem - 4.1rem);
+    // max-height: calc(100% - 13.4rem - 4.1rem);
 
-    overflow-y: auto;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
+    // overflow-y: auto;
+    // scrollbar-width: none;
+    // /* Firefox */
+    // -ms-overflow-style: none;
+    // /* Internet Explorer 10+ */
 
-    &::-webkit-scrollbar {
-      width: 0;
-      height: 0;
-    }
+    // &::-webkit-scrollbar {
+    //   width: 0;
+    //   height: 0;
+    // }
 
     @include respond(desktop-sm) {
       max-height: calc(100% - 14.4rem - 4.1rem);
