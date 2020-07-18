@@ -392,7 +392,16 @@
 
                                         <p class="comment-new-body-text-improver">
                                             Improver: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Veniam, quasi?</span>
+                                                Quasi ducimus molestias, quis accusantium velit odio pariatur tenetur
+                                                voluptatum consequatur commodi itaque placeat vel rem officiis
+                                                repellendus culpa earum qui obcaecati fugiat quam debitis sint totam?
+                                                Impedit mollitia velit sunt accusantium. Molestiae qui molestias tenetur
+                                                doloribus ullam adipisci quibusdam eaque harum eveniet ab aspernatur
+                                                itaque sed maxime ducimus consequatur, nihil, odit iusto, vero ut!
+                                                Aliquam non, ad, reprehenderit placeat debitis nisi impedit enim facilis
+                                                sapiente pariatur voluptatem, laborum ipsa veritatis ex quisquam natus
+                                                rem accusamus sint tenetur. At officia pariatur consequatur unde velit
+                                                ea quia aspernatur sint nam aut. Libero, a.</span>
                                         </p>
                                         <span><span><i class="icon-close read-more close"></i></span></span>
                                     </div>
@@ -436,13 +445,33 @@
 
                                     <div class="comment-new-body-text">
                                         <p class="comment-new-body-text-compliment">
-                                            Compliment: <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                                Obcaecati, voluptas modi exercitationem eos fugiat assumenda!</span>
+                                            Compliment: <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                Enim cupiditate in magnam ipsam reprehenderit consequatur ad deleniti.
+                                                Ea beatae quos aut nobis esse nesciunt quod, non rem atque autem enim,
+                                                impedit veritatis aperiam quia. Esse eaque iste in maxime quaerat
+                                                consequatur qui et voluptas delectus, nisi impedit perspiciatis saepe
+                                                sed voluptatem omnis praesentium temporibus quibusdam minima beatae
+                                                accusantium fugiat! Nostrum ratione modi eos suscipit iure, obcaecati
+                                                vero magnam aliquid animi voluptatibus eum nihil illo explicabo
+                                                doloribus eaque non officiis deserunt itaque tempore repudiandae
+                                                deleniti unde laboriosam reiciendis enim? Aperiam id consectetur
+                                                voluptas doloribus quibusdam quisquam non officia aliquid mollitia
+                                                iure.</span>
                                         </p>
 
                                         <p class="comment-new-body-text-improver">
-                                            Improver: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Veniam, quasi?</span>
+                                            Improver: <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                Quisquam delectus excepturi veritatis architecto debitis quis maiores
+                                                illo aut, deserunt est perspiciatis dolor corrupti natus suscipit iusto,
+                                                similique beatae ad doloremque. Earum eveniet, quod minima nostrum in
+                                                odit voluptas nisi, perspiciatis ducimus vero accusantium. Deleniti esse
+                                                sunt sapiente rerum hic quaerat sint modi vitae repellendus et
+                                                voluptatibus tenetur praesentium veritatis natus veniam delectus
+                                                adipisci maiores optio, facere laborum doloremque voluptatem distinctio
+                                                labore quod? Possimus qui beatae, odit tenetur excepturi ipsum,
+                                                provident voluptas blanditiis velit expedita consequatur nemo error. Eum
+                                                dolor sed veniam temporibus quisquam eligendi aut, praesentium modi?
+                                                Recusandae, corporis eum.</span>
                                         </p>
                                         <span><span><i class="icon-close read-more close"></i></span></span>
                                     </div>
@@ -654,18 +683,14 @@
                 if (compliment.offsetHeight < compliment.scrollHeight) {
                     let readme = document.createElement('a');
                     readme.innerHTML =
-                        '<a href="#" class="read-more read-more-new">...Read more</a>';
+                        '<a href="#" class="read-more read-more-new">...  Read more</a>';
                     compliment.insertAdjacentElement('beforeend', readme);
-
-                    e.document.querySelector('.read-more').addEventListener('click', function () {
-                        console.log('clicked!!!!!@@@@')
-                    })
                 }
 
                 if (improver.offsetHeight < improver.scrollHeight) {
                     let readme = document.createElement('a');
-                    readme.innerHTML = '<a href="#" class="read-more read-more-new">...Read more</a>';
-                    compliment.insertAdjacentElement('beforeend', readme);
+                    readme.innerHTML = '<a href="#" class="read-more read-more-new">...  Read more</a>';
+                    improver.insertAdjacentElement('beforeend', readme);
                 }
 
                 // console.log(compliment, improver)
