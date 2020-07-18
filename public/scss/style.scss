@@ -3026,8 +3026,8 @@ i {
 
     &-text,
     &-text-trunc {
-      margin-top: 1.2rem;
-      padding-top: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.45rem;
       padding-bottom: .9rem;
       padding-right: .4rem;
       font-size: 1.35rem;
@@ -3048,9 +3048,10 @@ i {
       &-improver {
         position: relative;
         font-size: 1.3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1.4rem;
         display: block;
         font-weight: 500;
+        line-height: 1.38;
 
         & span {
           margin-left: 0rem;

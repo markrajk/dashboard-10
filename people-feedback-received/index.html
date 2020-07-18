@@ -635,8 +635,10 @@
                     console.log(e.target, e.target.parentElement)
                     var comment = e.target.parentElement.parentElement.parentElement
                         .parentElement;
-                    var complimentBool = e.target.parentElement.classList.contains(
-                        'comment-body-text-trunc-compliment-container');
+                    // var complimentBool = e.target.parentElement.classList.contains(
+                    //     'comment-body-text-trunc-compliment-container');
+                    var complimentBool = e.target.parentElement.parentElement.classList.contains(
+                        'comment-new-body-text-compliment');
                     console.log(complimentBool)
                     var messageContent = e.target.parentElement.querySelector('span') ? e.target.parentElement
                         .querySelector('span').innerText : e.target.parentElement.parentElement.parentElement

@@ -1955,8 +1955,8 @@ i {
       .comment-new-body-feedback-productivity {
         margin-bottom: 1.2rem; }
     .comment-new-body-text, .comment-new-body-text-trunc {
-      margin-top: 1.2rem;
-      padding-top: 1rem;
+      margin-top: 1.5rem;
+      padding-top: 1.45rem;
       padding-bottom: .9rem;
       padding-right: .4rem;
       font-size: 1.35rem;
@@ -1972,9 +1972,10 @@ i {
       .comment-new-body-text-compliment, .comment-new-body-text-improver, .comment-new-body-text-trunc-compliment, .comment-new-body-text-trunc-improver {
         position: relative;
         font-size: 1.3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 1.4rem;
         display: block;
-        font-weight: 500; }
+        font-weight: 500;
+        line-height: 1.38; }
         .comment-new-body-text-compliment span, .comment-new-body-text-improver span, .comment-new-body-text-trunc-compliment span, .comment-new-body-text-trunc-improver span {
           margin-left: 0rem;
           max-width: 100%;
