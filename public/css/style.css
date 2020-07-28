@@ -11550,3 +11550,78 @@ li {
 .page-wrapper .page-content main {
   margin-left: 3.65rem;
   margin-right: 3.2rem; }
+
+.pdf-wrapper {
+  min-height: 100vh;
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  background-color: #f1f1f1; }
+
+.pdf-document {
+  background-color: #FFF;
+  width: 595px; }
+  .pdf-document-page {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 60px 60px 50px;
+    width: 100%;
+    page-break-before: always; }
+    .pdf-document-page-header {
+      margin-bottom: 10px; }
+      .pdf-document-page-header-subtitle {
+        font-size: 8.5px;
+        font-weight: 500;
+        line-height: 1.29;
+        letter-spacing: 0.09px;
+        text-align: left;
+        color: #707070; }
+      .pdf-document-page-header-title {
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 1.48;
+        color: #000000; }
+    .pdf-document-page-body {
+      width: 100%;
+      height: 630px; }
+    .pdf-document-page-footer {
+      margin-top: 27px;
+      padding-top: 9.7px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between;
+      border-top: .75px solid #EAEAEA; }
