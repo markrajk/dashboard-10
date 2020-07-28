@@ -542,14 +542,14 @@ i {
     color: #e1e1e1e1; }
     .stars label::before {
       content: "\e913";
-      font-family: 'app-icons';
+      font-family: 'dashboard-icons';
       position: relative;
       display: block;
       font-size: 3rem;
       color: #e1e1e1e1; }
     .stars label::after {
       content: "\e913";
-      font-family: 'app-icons';
+      font-family: 'dashboard-icons';
       position: absolute;
       display: block;
       font-size: 3rem;
