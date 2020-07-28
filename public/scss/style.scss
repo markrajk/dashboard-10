@@ -3272,13 +3272,13 @@ i {
       @include align-self(flex-end);
       @include flexbox;
       @include align-items(center);
-      font-size: 1.25rem;
+      font-size: 1.55rem;
       font-weight: 500;
       line-height: 1.33;
 
       & i {
         margin-right: .5rem;
-        font-size: 1.6rem;
+        font-size: 1.75rem;
       }
     }
 
@@ -3883,7 +3883,7 @@ i {
     @include flex-direction(column);
     border-right: 1.5px solid #F2F2F2;
     transition: margin 0.3s ease-in-out;
-    z-index: 100;
+    //z-index: 100;
 
     &-header {
       height: 5rem;
@@ -3901,7 +3901,6 @@ i {
         color: #333333;
       }
 
-      & button,
       & .create-new-circle {
         background-color: transparent !important;
         border: none !important;
@@ -3918,6 +3917,59 @@ i {
       i {
         font-size: 2.65rem;
         color: #1a9cfc;
+      }
+
+      & .dd-new.dropdown-custom {
+
+        &-trigger {
+          padding: 0!important;
+          outline: none!important;
+          border: none!important;
+          box-shadow: none!important;
+        }
+
+        &-list {
+          padding: .7rem;
+          min-width: 26.2rem;
+          bottom: 100%;
+          left: 3.5rem;
+          z-index: 400;
+
+          &-item {
+            height: 4.2rem;
+            @include flexbox();
+            @include align-items(center);
+
+            &-link {
+              padding-left: 1rem;
+              padding-top: 1.4rem;
+              padding-right: 1.7rem;
+              padding-bottom: 1.2rem;
+              @include flexbox();
+              @include align-items(center);
+              font-size: 1.4rem;
+              font-weight: 400;
+              letter-spacing: 0.07px;
+              color: #3b4046;
+              border-radius: 2px;
+
+              &:hover,
+              &:focus {
+                background-color: #efefef;
+              }
+
+              & svg {
+                margin-right: 1.4rem;
+              }
+
+              & i {
+                margin-left: auto;
+                font-size: 1rem;
+                color: #94a4b5;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -3986,6 +4038,8 @@ i {
           &:focus {
             background-color: #f1f1f1;
             transition: all .3s ease-in-out;
+            color: #64677B;
+            font-weight: 500;
           }
 
 
@@ -4217,7 +4271,7 @@ i {
           appearance: none;
 
           &::placeholder {
-            color: #9699a6;
+            color: #8b949f;
           }
 
         }
@@ -4228,7 +4282,7 @@ i {
           left: 0;
           transform: translate(100%, -50%);
           font-size: 1.5rem;
-          color: #9699a6;
+          color: #B4B5B7;
         }
 
       }
@@ -5302,7 +5356,8 @@ i {
 // ==================================
 // COMPARE TEAMS START
 // ==================================
-.teams-compare {
+.teams-compare,
+.people-compare {
   // max-width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -5342,6 +5397,11 @@ i {
       min-height: 3.2rem;
     }
 
+    &-wrapper {
+      @include flexbox();
+      @include flex-direction('row');
+    }
+
     &-card {
 
       min-width: 28.5rem;
@@ -5350,6 +5410,7 @@ i {
       border-radius: 8px;
       box-shadow: 0 4px 8px 0 rgba(234, 234, 234, 0.16);
       border: solid 1.25px #ebebeb;
+      background-color: #FFF;
 
       &:not(:last-of-type) {
         margin-right: 4rem;
@@ -5366,14 +5427,14 @@ i {
 
         &-title {
           margin-bottom: .55rem;
-          font-size: 2.1rem;
+          font-size: 1.95rem;
           font-weight: 500;
-          line-height: 1.31;
+          line-height: 1.28;
           color: #000001;
         }
 
         &-text {
-          font-size: 1.4rem;
+          font-size: 1.33rem;
           font-weight: 400;
           line-height: 1.36;
           letter-spacing: 0.07px;
@@ -5430,6 +5491,43 @@ i {
             fill: #525252;
           }
         }
+
+        &-info {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(flex-start);
+          text-align: left;
+
+          &-img {
+            margin-right: 1.28rem;
+            width: 5.5rem;
+            height: 5.5rem;
+            border-radius: 50%;
+          }
+
+          &-person {
+            @include flexbox();
+            flex-direction: column;
+            @include align-items(flex-start);
+            @include justify-content(center);
+
+            &-name {
+              margin-bottom: .3rem;
+              font-size: 1.45rem;
+              font-weight: 500;
+              line-height: 1.31;
+              color: #000001;
+            }
+
+            &-position {
+              font-size: 1.23rem;
+              font-weight: 400;
+              line-height: 1.31;
+              letter-spacing: 0.06px;
+              color: #7d808e;
+            }
+          }
+        }
       }
 
       & .b-b {
@@ -5438,9 +5536,6 @@ i {
         width: 100%;
         border-bottom: 1.5px solid #F4F4F4;
 
-        &-body {
-          margin-bottom: .5rem;
-        }
       }
 
       &-main {
@@ -5474,11 +5569,11 @@ i {
               @include flexbox();
               @include align-items(center);
               @include justify-content(space-between);
-              font-size: 1.5rem;
+              font-size: 1.4rem;
               font-weight: 500;
-              line-height: 1.33;
-              color: #626262;
-              text-transform: capitalize;
+              line-height: 1.36;
+              color: #393b40;
+              text-transform: none;
 
               & span {
                 display: inline-block;
@@ -5524,7 +5619,7 @@ i {
               }
 
               &-info {
-                bottom: -1.3rem;
+                bottom: -1.5rem;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 500;
@@ -5536,10 +5631,12 @@ i {
           }
         }
 
+
         & .progress-custom {
-          padding-left: 2.3rem;
-          padding-right: 3rem;
-          padding-top: 2.4rem;
+          padding-left: 2.4rem;
+          padding-right: 2.7rem;
+          padding-top: 3rem;
+
 
           &-sub {
             margin-bottom: 0;
@@ -5553,17 +5650,17 @@ i {
             @include align-items(baseline);
 
             & h3 {
-              font-size: 1.5rem;
+              font-size: 1.4rem;
               font-weight: 500;
-              line-height: 1.33;
-              color: #626262;
+              line-height: 1.36;
+              color: #393b40;
             }
 
             & h4 {
-              font-size: 1.8rem;
+              font-size: 1.65rem;
               font-weight: 700;
-              line-height: 1.33;
-              color: #4b4b4b;
+              line-height: 1.27;
+              color: #3d404e;
             }
 
             & .up {
@@ -5576,7 +5673,7 @@ i {
           }
 
           &-bar {
-            height: 1.3rem;
+            height: 1.1rem;
             border-radius: 3px;
 
             &-fill {
@@ -5584,6 +5681,7 @@ i {
             }
           }
         }
+
       }
 
       &-footer {
@@ -5884,6 +5982,57 @@ i {
     &-head {
       border: none;
       height: 3.7rem;
+
+      & .dd-new.dropdown-custom {
+
+        &-trigger {
+          padding: 0!important;
+          outline: none!important;
+          border: none!important;
+          box-shadow: none!important;
+        }
+
+        &-list {
+          padding: .7rem;
+          min-width: 26.2rem;
+          z-index: 400;
+
+          &-item {
+            height: 4.2rem;
+            @include flexbox();
+            @include align-items(center);
+
+            &-link {
+              padding-left: 1rem;
+              padding-top: 1.4rem;
+              padding-right: 1.7rem;
+              padding-bottom: 1.2rem;
+              @include flexbox();
+              @include align-items(center);
+              font-size: 1.4rem;
+              font-weight: 400;
+              letter-spacing: 0.07px;
+              color: #3b4046;
+              border-radius: 2px;
+
+              &:hover,
+              &:focus {
+                background-color: #efefef;
+              }
+
+              & svg {
+                margin-right: 1.4rem;
+              }
+
+              & i {
+                margin-left: auto;
+                font-size: 1rem;
+                color: #94a4b5;
+              }
+            }
+          }
+        }
+      }
     }
 
     &-body {
