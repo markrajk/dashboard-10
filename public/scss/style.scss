@@ -5835,7 +5835,6 @@ i {
   padding: 2.5rem 0;
   padding-bottom: 0;
   border-top: 1.5px solid #f2f2f2;
-  max-width: 79.9rem;
 
   & .dd-new.dropdown-custom {
 
@@ -5844,12 +5843,24 @@ i {
       outline: none!important;
       border: none!important;
       box-shadow: none!important;
+
+      &.top {
+        & + .dropdown-custom-list {
+          bottom: 0;
+          transform: translate(-100%, 0);
+        }
+      }
     }
 
     &-list {
+      left: 0;
+      bottom: 100%;
+      transform: translate(-100%, 100%);
       padding: .7rem;
       min-width: 26.2rem;
       z-index: 400;
+
+      
 
       &-item {
         height: 4.2rem;
@@ -5942,13 +5953,21 @@ i {
   }
 
   &-body {
+
     @include target-ie() {
+      height: 100%;
       max-height: calc(100vh - 35rem);
+      
+    }
+
+    .table-wrapper {
+      height: 100%;
+      max-height: calc(100vh - 29.5rem - 2px);
       overflow-y: auto;
-      scrollbar-width: none;
-      /* Firefox */
-      -ms-overflow-style: none;
-      /* Internet Explorer 10+ */
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
 
       &::-webkit-scrollbar {
         /* WebKit */
@@ -5994,7 +6013,8 @@ i {
   }
 
   & .table-custom {
-
+    max-width: 79.9rem;
+    
     & td,
     & th {
       &:nth-of-type(1) {
@@ -6038,8 +6058,9 @@ i {
 
     &-body {
       border: none;
-      max-height: calc(100vh - 11rem - 16rem - 5rem);
+      //max-height: calc(100vh - 11rem - 16rem - 5rem);
       border-bottom: solid 1px #e6e8eb;
+      overflow: visible;
 
       & tr {
         padding-top: .6rem;
@@ -14789,91 +14810,91 @@ li {
   margin-right: 3.2rem;
 }
 
-.pdf-wrapper {
-  min-height: 100vh;
-  padding: 30px;
-  @include flexbox();
-  @include justify-content(center);
-  @include align-items(flex-start);
-  background-color: #f1f1f1;
+// .pdf-wrapper {
+//   min-height: 100vh;
+//   padding: 30px;
+//   @include flexbox();
+//   @include justify-content(center);
+//   @include align-items(flex-start);
+//   background-color: #f1f1f1;
 
-}
-.pdf-document {
-  background-color: #FFF;
-  width: 595px;
+// }
+// .pdf-document {
+//   background-color: #FFF;
+//   width: 595px;
   
-  &-page {
+//   &-page {
     
-    @include flexbox();
-    @include flex-direction(column);
-    padding: 60px 60px 50px;
-    width: 100%;
-    page-break-before: always;
+//     @include flexbox();
+//     @include flex-direction(column);
+//     padding: 60px 60px 50px;
+//     width: 100%;
+//     page-break-before: always;
 
-    &-header {
-      margin-bottom: 10px;
+//     &-header {
+//       margin-bottom: 10px;
 
-      &-subtitle {
-        font-size: 8.5px;
-        font-weight: 500;
-        line-height: 1.29;
-        letter-spacing: 0.09px;
-        text-align: left;
-        color: #707070;
-      }
+//       &-subtitle {
+//         font-size: 8.5px;
+//         font-weight: 500;
+//         line-height: 1.29;
+//         letter-spacing: 0.09px;
+//         text-align: left;
+//         color: #707070;
+//       }
 
-      &-title {
-        font-size: 23px;
-        font-weight: 700;
-        line-height: 1.48;
-        color: #000000;
-      }
-    }
+//       &-title {
+//         font-size: 23px;
+//         font-weight: 700;
+//         line-height: 1.48;
+//         color: #000000;
+//       }
+//     }
 
-    &-body {
-      width: 100%;
-      height: 630px;
-    }
-    &-footer {
-      position: relative;
-      margin-top: 27px;
-      padding-top: 9.7px;
-      @include flexbox();
-      @include align-items(center);
-      @include justify-content(space-between);
-      border-top: .75px solid #EAEAEA;
+//     &-body {
+//       width: 100%;
+//       height: 630px;
+//     }
+//     &-footer {
+//       position: relative;
+//       margin-top: 27px;
+//       padding-top: 9.7px;
+//       @include flexbox();
+//       @include align-items(center);
+//       @include justify-content(space-between);
+//       border-top: .75px solid #EAEAEA;
 
-      &-info {
-        font-size: 7px;
-        font-weight: 400;
-        letter-spacing: 0.04px;
-        color: #4e4e4e;
+//       &-info {
+//         font-size: 7px;
+//         font-weight: 400;
+//         letter-spacing: 0.04px;
+//         color: #4e4e4e;
 
-        &-name {
-          font-weight: bold;
-        }
-      }
+//         &-name {
+//           font-weight: bold;
+//         }
+//       }
 
-      &-team {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        font-size: 7px;
-        font-weight: bold;
-        letter-spacing: 0.09px;
-        color: #4e4e4e;
-      }
+//       &-team {
+//         position: absolute;
+//         bottom: 0;
+//         left: 50%;
+//         transform: translate(-50%, 0);
+//         font-size: 7px;
+//         font-weight: bold;
+//         letter-spacing: 0.09px;
+//         color: #4e4e4e;
+//       }
 
-      &-date {
-        font-size: 7px;
-        font-weight: 400;
-        letter-spacing: 0.04px;
-        color: #4e4e4e;
-      }
-    }
-  }
-}
+//       &-date {
+//         font-size: 7px;
+//         font-weight: 400;
+//         letter-spacing: 0.04px;
+//         color: #4e4e4e;
+//       }
+//     }
+//   }
+// }
 
 
 // @keyframes bounce {
