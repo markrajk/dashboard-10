@@ -1041,6 +1041,7 @@ i {
 // LAYOUT START
 // ==================================
 .page-wrapper {
+  position: relative;
   @include flexbox;
   height: 100%;
 }
@@ -5609,12 +5610,12 @@ i {
 
             & .bar {
               max-height: 14.9rem;
-              width: 1.85rem;
+              width: 1.7rem;
               border-radius: 4px;
 
               &-fill {
 
-                width: 1.85rem;
+                width: 1.7rem;
                 border-radius: 4px;
               }
 
@@ -5836,6 +5837,57 @@ i {
   border-top: 1.5px solid #f2f2f2;
   max-width: 79.9rem;
 
+  & .dd-new.dropdown-custom {
+
+    &-trigger {
+      padding: 0!important;
+      outline: none!important;
+      border: none!important;
+      box-shadow: none!important;
+    }
+
+    &-list {
+      padding: .7rem;
+      min-width: 26.2rem;
+      z-index: 400;
+
+      &-item {
+        height: 4.2rem;
+        @include flexbox();
+        @include align-items(center);
+
+        &-link {
+          padding-left: 1rem;
+          padding-top: 1.4rem;
+          padding-right: 1.7rem;
+          padding-bottom: 1.2rem;
+          @include flexbox();
+          @include align-items(center);
+          font-size: 1.4rem;
+          font-weight: 400;
+          letter-spacing: 0.07px;
+          color: #3b4046;
+          border-radius: 2px;
+
+          &:hover,
+          &:focus {
+            background-color: #efefef;
+          }
+
+          & svg {
+            margin-right: 1.4rem;
+          }
+
+          & i {
+            margin-left: auto;
+            font-size: 1rem;
+            color: #94a4b5;
+          }
+        }
+      }
+    }
+  }
+
   &-header {
     margin-bottom: 2.7rem;
 
@@ -5982,57 +6034,6 @@ i {
     &-head {
       border: none;
       height: 3.7rem;
-
-      & .dd-new.dropdown-custom {
-
-        &-trigger {
-          padding: 0!important;
-          outline: none!important;
-          border: none!important;
-          box-shadow: none!important;
-        }
-
-        &-list {
-          padding: .7rem;
-          min-width: 26.2rem;
-          z-index: 400;
-
-          &-item {
-            height: 4.2rem;
-            @include flexbox();
-            @include align-items(center);
-
-            &-link {
-              padding-left: 1rem;
-              padding-top: 1.4rem;
-              padding-right: 1.7rem;
-              padding-bottom: 1.2rem;
-              @include flexbox();
-              @include align-items(center);
-              font-size: 1.4rem;
-              font-weight: 400;
-              letter-spacing: 0.07px;
-              color: #3b4046;
-              border-radius: 2px;
-
-              &:hover,
-              &:focus {
-                background-color: #efefef;
-              }
-
-              & svg {
-                margin-right: 1.4rem;
-              }
-
-              & i {
-                margin-left: auto;
-                font-size: 1rem;
-                color: #94a4b5;
-              }
-            }
-          }
-        }
-      }
     }
 
     &-body {
@@ -14628,6 +14629,27 @@ i {
         transform: scale(1.1);
       }
     }
+  }
+}
+
+.oot-dropdown-menu {
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &.top {
+    & .dropdown-custom-list {
+      bottom: -2.5rem;
+      transform: translate(0,0%)!important;
+    }
+    
+  }
+
+  & .dropdown-custom-list {
+    display: block;
   }
 }
 

@@ -324,6 +324,7 @@ i {
   font-size: 3rem; }
 
 .page-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -4090,11 +4091,11 @@ i {
             .teams-compare-body-card-main .graph-card-body .bar,
             .people-compare-body-card-main .graph-card-body .bar {
               max-height: 14.9rem;
-              width: 1.85rem;
+              width: 1.7rem;
               border-radius: 4px; }
               .teams-compare-body-card-main .graph-card-body .bar-fill,
               .people-compare-body-card-main .graph-card-body .bar-fill {
-                width: 1.85rem;
+                width: 1.7rem;
                 border-radius: 4px; }
               .teams-compare-body-card-main .graph-card-body .bar-info,
               .people-compare-body-card-main .graph-card-body .bar-info {
@@ -4294,6 +4295,55 @@ i {
   padding-bottom: 0;
   border-top: 1.5px solid #f2f2f2;
   max-width: 79.9rem; }
+  .teams-people-view .dd-new.dropdown-custom-trigger {
+    padding: 0 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important; }
+  .teams-people-view .dd-new.dropdown-custom-list {
+    padding: .7rem;
+    min-width: 26.2rem;
+    z-index: 400; }
+    .teams-people-view .dd-new.dropdown-custom-list-item {
+      height: 4.2rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+      .teams-people-view .dd-new.dropdown-custom-list-item-link {
+        padding-left: 1rem;
+        padding-top: 1.4rem;
+        padding-right: 1.7rem;
+        padding-bottom: 1.2rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 0.07px;
+        color: #3b4046;
+        border-radius: 2px; }
+        .teams-people-view .dd-new.dropdown-custom-list-item-link:hover, .teams-people-view .dd-new.dropdown-custom-list-item-link:focus {
+          background-color: #efefef; }
+        .teams-people-view .dd-new.dropdown-custom-list-item-link svg {
+          margin-right: 1.4rem; }
+        .teams-people-view .dd-new.dropdown-custom-list-item-link i {
+          margin-left: auto;
+          font-size: 1rem;
+          color: #94a4b5; }
   .teams-people-view-header {
     margin-bottom: 2.7rem; }
     @media (max-width: 379px) {
@@ -4446,55 +4496,6 @@ i {
   .teams-people-view .table-custom-head {
     border: none;
     height: 3.7rem; }
-    .teams-people-view .table-custom-head .dd-new.dropdown-custom-trigger {
-      padding: 0 !important;
-      outline: none !important;
-      border: none !important;
-      box-shadow: none !important; }
-    .teams-people-view .table-custom-head .dd-new.dropdown-custom-list {
-      padding: .7rem;
-      min-width: 26.2rem;
-      z-index: 400; }
-      .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item {
-        height: 4.2rem;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        align-items: center; }
-        .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item-link {
-          padding-left: 1rem;
-          padding-top: 1.4rem;
-          padding-right: 1.7rem;
-          padding-bottom: 1.2rem;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          align-items: center;
-          font-size: 1.4rem;
-          font-weight: 400;
-          letter-spacing: 0.07px;
-          color: #3b4046;
-          border-radius: 2px; }
-          .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item-link:hover, .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item-link:focus {
-            background-color: #efefef; }
-          .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item-link svg {
-            margin-right: 1.4rem; }
-          .teams-people-view .table-custom-head .dd-new.dropdown-custom-list-item-link i {
-            margin-left: auto;
-            font-size: 1rem;
-            color: #94a4b5; }
   .teams-people-view .table-custom-body {
     border: none;
     max-height: calc(100vh - 11rem - 16rem - 5rem);
@@ -11455,6 +11456,19 @@ i {
   transform: scale(1); }
   .modal-header .close:hover {
     transform: scale(1.1); }
+
+.oot-dropdown-menu {
+  background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .oot-dropdown-menu.top .dropdown-custom-list {
+    bottom: -2.5rem;
+    transform: translate(0, 0%) !important; }
+  .oot-dropdown-menu .dropdown-custom-list {
+    display: block; }
 
 .single-user .button-dark:hover, .single-user .button-dark:focus,
 .single-user-feedback .button-dark:hover,
