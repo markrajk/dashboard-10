@@ -14835,12 +14835,42 @@ li {
       height: 630px;
     }
     &-footer {
+      position: relative;
       margin-top: 27px;
       padding-top: 9.7px;
       @include flexbox();
       @include align-items(center);
       @include justify-content(space-between);
       border-top: .75px solid #EAEAEA;
+
+      &-info {
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        color: #4e4e4e;
+
+        &-name {
+          font-weight: bold;
+        }
+      }
+
+      &-team {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 7px;
+        font-weight: bold;
+        letter-spacing: 0.09px;
+        color: #4e4e4e;
+      }
+
+      &-date {
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        color: #4e4e4e;
+      }
     }
   }
 }

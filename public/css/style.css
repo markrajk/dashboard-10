@@ -11607,6 +11607,7 @@ li {
       width: 100%;
       height: 630px; }
     .pdf-document-page-footer {
+      position: relative;
       margin-top: 27px;
       padding-top: 9.7px;
       display: -webkit-box;
@@ -11625,3 +11626,24 @@ li {
       -moz-justify-content: space-between;
       justify-content: space-between;
       border-top: .75px solid #EAEAEA; }
+      .pdf-document-page-footer-info {
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        color: #4e4e4e; }
+        .pdf-document-page-footer-info-name {
+          font-weight: bold; }
+      .pdf-document-page-footer-team {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 7px;
+        font-weight: bold;
+        letter-spacing: 0.09px;
+        color: #4e4e4e; }
+      .pdf-document-page-footer-date {
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        color: #4e4e4e; }
