@@ -218,15 +218,15 @@ svg {
   transform: rotateZ(180deg); }
 
 @font-face {
-  font-family: 'app-icons';
-  src: url("../fonts/app-icons.eot?n6os4c");
-  src: url("../fonts/app-icons.eot?n6os4c#iefix") format("embedded-opentype"), url("../fonts/app-icons.ttf?n6os4c") format("truetype"), url("../fonts/app-icons.woff?n6os4c") format("woff"), url("../fonts/app-icons.svg?n6os4c#app-icons") format("svg");
+  font-family: 'dashboard-icons';
+  src: url("../fonts/dashboard-icons.eot?us7kwn");
+  src: url("../fonts/dashboard-icons.eot?us7kwn#iefix") format("embedded-opentype"), url("../fonts/dashboard-icons.ttf?us7kwn") format("truetype"), url("../fonts/dashboard-icons.woff?us7kwn") format("woff"), url("../fonts/dashboard-icons.svg?us7kwn#dashboard-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'app-icons' !important;
+  font-family: 'dashboard-icons' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -236,6 +236,35 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-circle-plus .path1:before {
+  content: "\e915"; }
+
+.icon-circle-plus .path2:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: #c5c5c5; }
+
+.icon-circle-plus .path3:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: #c5c5c5; }
+
+.icon-shield:before {
+  margin-left: -.1em;
+  content: "\e918"; }
+
+.icon-user-check:before {
+  content: "\e919"; }
+
+.icon-bin:before {
+  content: "\e91f"; }
+
+.icon-chevron-down:before {
+  content: "\e91a"; }
+
+.icon-chevron-up:before {
+  content: "\e91b"; }
 
 .icon-user:before {
   content: "\e91d"; }
@@ -2715,34 +2744,25 @@ i {
       .sidebar-menu-header i {
         font-size: 2.65rem;
         color: #1a9cfc; }
-      .sidebar-menu-header .dd-new.dropdown-custom-trigger {
-        padding: 0 !important;
-        outline: none !important;
-        border: none !important;
-        box-shadow: none !important; }
-      .sidebar-menu-header .dd-new.dropdown-custom-list {
-        padding: .7rem;
-        min-width: 26.2rem;
-        bottom: 100%;
-        left: 3.5rem;
-        z-index: 400; }
-        .sidebar-menu-header .dd-new.dropdown-custom-list-item {
-          height: 4.2rem;
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          -webkit-align-items: center;
-          -moz-align-items: center;
-          align-items: center; }
-          .sidebar-menu-header .dd-new.dropdown-custom-list-item-link {
-            padding-left: 1rem;
-            padding-top: 1.4rem;
-            padding-right: 1.7rem;
-            padding-bottom: 1.2rem;
+      .sidebar-menu-header svg {
+        margin-top: -.4rem;
+        width: 2.89rem;
+        height: 2.89rem; }
+      .sidebar-menu-header .dd-new.dropdown-custom {
+        padding: 0; }
+        .sidebar-menu-header .dd-new.dropdown-custom-trigger {
+          padding: 0 !important;
+          outline: none !important;
+          border: none !important;
+          box-shadow: none !important; }
+        .sidebar-menu-header .dd-new.dropdown-custom-list {
+          padding: .7rem;
+          min-width: 26.2rem;
+          bottom: 100%;
+          left: 3.5rem;
+          z-index: 400; }
+          .sidebar-menu-header .dd-new.dropdown-custom-list-item {
+            height: 4.2rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -2752,20 +2772,38 @@ i {
             -ms-flex-align: center;
             -webkit-align-items: center;
             -moz-align-items: center;
-            align-items: center;
-            font-size: 1.4rem;
-            font-weight: 400;
-            letter-spacing: 0.07px;
-            color: #3b4046;
-            border-radius: 2px; }
-            .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:hover, .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:focus {
-              background-color: #efefef; }
-            .sidebar-menu-header .dd-new.dropdown-custom-list-item-link svg {
-              margin-right: 1.4rem; }
-            .sidebar-menu-header .dd-new.dropdown-custom-list-item-link i {
-              margin-left: auto;
-              font-size: 1rem;
-              color: #94a4b5; }
+            align-items: center; }
+            .sidebar-menu-header .dd-new.dropdown-custom-list-item-link {
+              padding-left: 1rem;
+              padding-top: 1.4rem;
+              padding-right: 1.7rem;
+              padding-bottom: 1.2rem;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              -webkit-align-items: center;
+              -moz-align-items: center;
+              align-items: center;
+              font-size: 1.4rem;
+              font-weight: 400;
+              letter-spacing: 0.07px;
+              color: #3b4046;
+              border-radius: 2px; }
+              .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:hover, .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:focus {
+                background-color: #efefef; }
+              .sidebar-menu-header .dd-new.dropdown-custom-list-item-link i {
+                color: #798796;
+                font-size: 2.2rem;
+                margin-right: 1.4rem; }
+              .sidebar-menu-header .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
+                margin-right: 0;
+                margin-left: auto;
+                font-size: 1rem;
+                color: #94a4b5; }
     .sidebar-menu .input-container {
       padding-left: 2.4rem;
       position: relative;
@@ -4343,9 +4381,12 @@ i {
         border-radius: 2px; }
         .teams-people-view .dd-new.dropdown-custom-list-item-link:hover, .teams-people-view .dd-new.dropdown-custom-list-item-link:focus {
           background-color: #efefef; }
-        .teams-people-view .dd-new.dropdown-custom-list-item-link svg {
-          margin-right: 1.4rem; }
         .teams-people-view .dd-new.dropdown-custom-list-item-link i {
+          color: #798796;
+          font-size: 1.8rem;
+          margin-right: 1.4rem; }
+        .teams-people-view .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
+          margin-right: 0;
           margin-left: auto;
           font-size: 1rem;
           color: #94a4b5; }
