@@ -72,9 +72,48 @@
             <div class="sidebar-menu">
                 <div class="sidebar-menu-header">
                     <h2>Teams</h2>
-                    <button data-toggle="modal" data-target="#createNewTeamModal01">
-                        <i class="icon-plus-circle"></i>
-                    </button>
+                    <div class="dropdown-custom dd-new">
+                        <button class="dropdown-custom-trigger dd-new" tabindex="0" onclick="this.focus()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27">
+                                <g transform="translate(-285.67 -17.9)">
+                                    <circle cx="13.5" cy="13.5" r="13.5" transform="translate(285.67 17.9)"
+                                        fill="#1a9cfc" />
+                                    <g transform="translate(1)">
+                                        <line y2="13.5" transform="translate(298.17 25.088)" fill="none"
+                                            stroke="#f3faff" stroke-linecap="round" stroke-width="2.25" />
+                                        <line x1="13.5" transform="translate(291.5 31.565)" fill="none" stroke="#f3faff"
+                                            stroke-linecap="round" stroke-width="2.25" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+
+                        <div class="dropdown-custom-list dd-new">
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-users"></i>
+                                    Create a new team
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-user-check"></i>
+                                    Invite new member
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-shield"></i>
+                                    Request viewing rights
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+                        </div>
+                    </div>
                 </div>
                 <div class="input-container">
                     <i class="icon-search"></i>
@@ -316,13 +355,13 @@
 
                         <div class="section-comments-body">
 
-                            <!-- <div class="no-feedback">
+                            <div class="no-feedback">
                                 <p class="no-feedback-title">No feedback received yet</p>
                                 <p class="no-feedback-text">Here you will soon find the feedback that <span>Julia</span>
                                     reviews.</p>
-                            </div> -->
+                            </div>
 
-                            <div class="comment">
+                            <!-- <div class="comment">
                                 <div class="comment-header">
 
                                     <div class="comment-header-initials">MR</div>
@@ -444,7 +483,7 @@
                                     </div>
                                     <p class="comment-body-message"></p>
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
