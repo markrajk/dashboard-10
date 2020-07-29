@@ -2927,8 +2927,8 @@ i {
         color: #1a9cfc; }
       .sidebar-menu-header svg {
         margin-top: -.4rem;
-        width: 2.8rem;
-        height: 2.8rem; }
+        width: 2.7rem;
+        height: 2.7rem; }
         .sidebar-menu-header svg:hover {
           transform: scale(1.1); }
       .sidebar-menu-header .dd-new.dropdown-custom {
@@ -3114,7 +3114,7 @@ i {
     top: 1.84rem;
     right: .175rem;
     transform: translate(50%, 0) rotateZ(-180deg);
-    border: solid 1.4px #e5e5e5;
+    border: solid 1.75px #e5e5e5;
     border-radius: 50%;
     background-color: #fff;
     cursor: pointer;
