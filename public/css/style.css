@@ -958,7 +958,7 @@ i {
       font-weight: 700; }
   #inviteEmployeesModal .modal-body textarea {
     padding: .9rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: .4rem;
     width: 100%;
     height: 24rem;
     border-radius: 4px;
@@ -1820,7 +1820,7 @@ i {
       font-size: 1.3rem;
       line-height: 1.36;
       letter-spacing: -0.15px;
-      color: #5d5d5d; }
+      color: #7a7c83; }
   .comment-body {
     padding: 1.5rem 1.5rem 1.5rem;
     padding-bottom: 0;
@@ -1896,18 +1896,20 @@ i {
       .comment-body-text .read-more, .comment-body-text-trunc .read-more {
         margin-left: .2rem;
         font-weight: 500;
-        color: #939393;
+        color: #ADADAD;
         white-space: nowrap; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
         position: relative;
         font-size: 1.3rem;
         margin-bottom: .5rem;
         display: block;
-        font-weight: 500; }
+        font-weight: 500;
+        color: #383838; }
         .comment-body-text-compliment span, .comment-body-text-improver span, .comment-body-text-trunc-compliment span, .comment-body-text-trunc-improver span {
           margin-left: 0rem;
           max-width: 100%;
-          font-weight: 400; }
+          font-weight: 400;
+          color: #464950; }
         .comment-body-text-compliment .read-more, .comment-body-text-improver .read-more, .comment-body-text-trunc-compliment .read-more, .comment-body-text-trunc-improver .read-more {
           display: inline-block;
           padding-left: .2rem;
@@ -1946,7 +1948,7 @@ i {
         -webkit-box-orient: vertical; }
       .comment-body.double .read-more {
         font-weight: 500;
-        color: #939393;
+        color: #ADADAD;
         white-space: nowrap; }
       .comment-body.double .close {
         display: none; }
@@ -2094,7 +2096,7 @@ i {
       font-size: 1.3rem;
       line-height: 1.36;
       letter-spacing: -0.15px;
-      color: #5d5d5d; }
+      color: #7a7c83; }
   .comment-new-body {
     padding: 1.5rem 1.5rem 1.5rem;
     padding-bottom: 0;
@@ -2182,12 +2184,14 @@ i {
         .comment-new-body-text-compliment span, .comment-new-body-text-improver span, .comment-new-body-text-trunc-compliment span, .comment-new-body-text-trunc-improver span {
           margin-left: 0rem;
           max-width: 100%;
-          font-weight: 400; }
+          font-weight: 400;
+          color: #464950; }
         .comment-new-body-text-compliment .read-more, .comment-new-body-text-improver .read-more, .comment-new-body-text-trunc-compliment .read-more, .comment-new-body-text-trunc-improver .read-more {
           display: inline-block;
           padding-left: .2rem;
           background-color: #FFF;
-          white-space: nowrap; }
+          white-space: nowrap;
+          color: #ADADAD; }
           .comment-new-body-text-compliment .read-more-new, .comment-new-body-text-improver .read-more-new, .comment-new-body-text-trunc-compliment .read-more-new, .comment-new-body-text-trunc-improver .read-more-new {
             position: absolute;
             bottom: 0;
@@ -2923,8 +2927,8 @@ i {
         color: #1a9cfc; }
       .sidebar-menu-header svg {
         margin-top: -.4rem;
-        width: 2.89rem;
-        height: 2.89rem; }
+        width: 2.8rem;
+        height: 2.8rem; }
         .sidebar-menu-header svg:hover {
           transform: scale(1.1); }
       .sidebar-menu-header .dd-new.dropdown-custom {
@@ -3145,13 +3149,14 @@ i {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between;
-    height: 6.3rem; }
+    height: 6.3rem;
+    margin-bottom: 2rem; }
     .header-top-left-title {
       font-size: 2.8rem;
       font-weight: 500;
       line-height: 1.32;
       letter-spacing: -0.28px;
-      color: #1f1f1f; }
+      color: #3E3E3E; }
     .header-top-left-small {
       margin-top: 0.7rem;
       font-size: 1.45rem;
@@ -3498,7 +3503,7 @@ i {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center;
-    padding: 4.5rem 0 1.1rem; }
+    padding: 2.5rem 0 1.1rem; }
     .header-bottom .choose {
       display: -webkit-box;
       display: -webkit-flex;
@@ -4039,7 +4044,8 @@ i {
               height: .35rem;
               border-radius: 1px; }
           .teams-average-charts-body .section-development .section-body-legend-main-share {
-            padding-top: 2.4rem; }
+            padding-top: 2.4rem;
+            border-top: 1.6px solid #F2F2F2; }
             .teams-average-charts-body .section-development .section-body-legend-main-share a {
               display: block;
               font-size: 1.4rem;
@@ -4768,22 +4774,22 @@ i {
       height: 3.7rem; }
     .teams-people-view .table-custom-body {
       border: none;
-      border-bottom: solid 1px #e6e8eb;
+      border-bottom: solid 1.25px #F2F2F2;
       overflow: visible; }
       .teams-people-view .table-custom-body tr {
         padding-top: .6rem;
         padding-bottom: .6rem;
         padding-left: .7rem; }
         .teams-people-view .table-custom-body tr:not(:last-of-type) {
-          border-bottom: 1px solid #EBEDEF !important; }
+          border-bottom: 1.25px solid #F2F2F2 !important; }
         .teams-people-view .table-custom-body tr#not-yet {
-          border-left: 1px solid #EBEDEF !important;
-          border-right: 1px solid #EBEDEF !important; }
+          border-left: 1.25px solid #F2F2F2 !important;
+          border-right: 1.25px solid #F2F2F2 !important; }
           .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) {
             margin-top: 2rem;
             padding-top: 15rem;
             padding-bottom: 15rem;
-            border-top: solid 1px #EBEDEF !important;
+            border-top: solid 1.25px #F2F2F2 !important;
             border-bottom: 0 !important; }
             .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td {
               -webkit-box-direction: normal;
@@ -4842,11 +4848,11 @@ i {
           width: 4.1rem;
           height: 4.1rem;
           border-radius: 50%;
-          font-size: 2.3rem;
+          font-size: 1.7rem;
           color: #FFF;
-          font-weight: 500;
+          font-weight: 700;
           background-color: #FFd800;
-          letter-spacing: 1px; }
+          letter-spacing: 0; }
         .teams-people-view .table-custom-body .table-custom-col-01 a .name {
           font-size: 1.4rem;
           line-height: 1.36;
@@ -5104,6 +5110,8 @@ i {
         margin-right: 2rem; }
       .teams-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
+      .teams-settings-general-body .settings-table-row a.column-03:hover {
+        text-decoration: underline; }
       .teams-settings-general-body .settings-table-row img {
         width: 5.59rem;
         height: 5.59rem;
@@ -5281,7 +5289,7 @@ i {
                 .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info button {
                   color: #2D76AD; }
     .teams-settings-feedback-body .table-02 {
-      margin-top: 2.5rem; }
+      margin-top: 2rem; }
       .teams-settings-feedback-body .table-02 .table-custom-body tr td {
         font-size: 1.4rem;
         line-height: 1.14;
@@ -5323,7 +5331,7 @@ i {
           line-height: 1.36;
           color: #1b2733;
           border-radius: 4px;
-          border: solid 1px #c1c7cd;
+          border: solid 1px #D8DFE6;
           -moz-appearance: none;
           -webkit-appearance: none;
           appearance: none;
@@ -5365,7 +5373,7 @@ i {
         line-height: 1.36;
         color: #1b2733;
         border-radius: 4px;
-        border: solid 1px #c1c7cd;
+        border: solid 1px #D8DFE6;
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -8354,6 +8362,8 @@ i {
       margin-right: 2rem; }
     .user-settings-general-body .settings-table-row .column-03 {
       color: #1267fb; }
+    .user-settings-general-body .settings-table-row a.column-03:hover {
+      text-decoration: underline; }
     .user-settings-general-body .settings-table-row .initials {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -8577,7 +8587,7 @@ i {
 .people-average-charts {
   padding: 2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 9.6rem - 1.5px);
+  max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -8587,9 +8597,10 @@ i {
     width: 0;
     height: 0; }
   .people-average-charts-header {
+    position: relative;
     margin-bottom: 2.7rem;
     max-width: 103rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -8604,7 +8615,8 @@ i {
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
-    align-items: center; }
+    align-items: center;
+    transform: translate(0, 0); }
     @media (max-width: 767px) {
       .people-average-charts-header {
         -webkit-box-direction: normal;
@@ -8619,6 +8631,7 @@ i {
         -moz-align-items: flex-start;
         align-items: flex-start; } }
     .people-average-charts-header-info {
+      position: relative;
       margin-right: 1.5rem;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -8629,7 +8642,18 @@ i {
       -ms-flex-align: center;
       -webkit-align-items: center;
       -moz-align-items: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 100; }
+      .people-average-charts-header-info::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background-color: red;
+        z-index: 1000000; }
       @media (max-width: 767px) {
         .people-average-charts-header-info-buttons {
           margin-top: 1rem;
@@ -8677,7 +8701,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #1f1f1f; }
+        color: #3E3E3E; }
         .people-average-charts-header-info .name .team {
           margin-left: .2rem;
           margin-top: .4rem;
@@ -9094,7 +9118,7 @@ i {
   padding-left: 3.65rem;
   width: 100%; }
   .people-feedback-received-header {
-    padding-top: 6rem;
+    padding-top: 4rem;
     max-width: calc(103rem - 3.65rem);
     margin-bottom: 2.7rem;
     display: -webkit-box;
@@ -9162,7 +9186,7 @@ i {
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
-        color: #252525; }
+        color: #3E3E3E; }
         .people-feedback-received-header-info .name .email {
           margin-top: .4rem;
           font-weight: 400;
@@ -9230,7 +9254,7 @@ i {
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     height: 100%;
-    max-height: calc(100vh - 25rem - 1.5px);
+    max-height: calc(100vh - 25rem - 1.5px - 2rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -9305,7 +9329,7 @@ i {
     grid-auto-rows: 20rem;
     grid-gap: 2.9rem 2.6rem;
     height: 100%;
-    max-height: calc(100vh - 25rem - 1.5px);
+    max-height: calc(100vh - 25rem - 1.5px - .7rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -9322,15 +9346,15 @@ i {
       .people-feedback-received-body .section-comments-body-new {
         -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
-        max-height: calc(100vh - 25rem - 1.5px); } }
+        max-height: calc(100vh - 25rem - 1.5px - .7rem); } }
     @media (max-width: 767px) {
       .people-feedback-received-body .section-comments-body-new {
-        max-height: calc(100vh - 26rem - 1.5px); } }
+        max-height: calc(100vh - 26rem - 1.5px - .7rem); } }
     @media (max-width: 575px) {
       .people-feedback-received-body .section-comments-body-new {
         -ms-grid-columns: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
-        max-height: calc(100vh - 25.5rem - 1.5px); } }
+        max-height: calc(100vh - 25.5rem - 1.5px - .7rem); } }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
       .people-feedback-received-body .section-comments-body-new {
         display: -webkit-box;
@@ -11646,25 +11670,25 @@ li {
 
 .icon-caret-up,
 .icon-caret-down {
-  font-size: .75rem !important; }
+  font-size: .7rem !important; }
 
 .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-  margin-left: .5rem !important;
-  font-size: .75rem !important; }
+  margin-left: .6rem !important;
+  font-size: .7rem !important; }
 
 .section-header .icon-caret-down {
-  margin-left: .5rem !important; }
+  margin-left: .6rem !important; }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .icon-caret-up,
     .icon-caret-down {
-      font-size: 7.5px !important; } } }
+      font-size: 7px !important; } } }
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .table-custom-head .icon-caret-up, .table-custom-head .icon-caret-down {
-      margin-left: .5rem !important;
-      font-size: 7.5px !important; } } }
+      margin-left: .6rem !important;
+      font-size: 7px !important; } } }
 .page-wrapper .page-content main {
   margin-left: 3.65rem;
   margin-right: 3.2rem; }

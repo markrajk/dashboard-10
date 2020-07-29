@@ -1959,7 +1959,7 @@ i {
 
     & textarea {
       padding: .9rem;
-      margin-bottom: 2.6rem;
+      margin-bottom: .4rem;
       width: 100%;
       height: 24rem;
       border-radius: 4px;
@@ -2922,7 +2922,7 @@ i {
       font-size: 1.3rem;
       line-height: 1.36;
       letter-spacing: -0.15px;
-      color: #5d5d5d;
+      color: #7a7c83;
     }
   }
 
@@ -3011,7 +3011,7 @@ i {
       & .read-more {
         margin-left: .2rem;
         font-weight: 500;
-        color: #939393;
+        color: #ADADAD;
         white-space: nowrap;
       }
 
@@ -3022,11 +3022,13 @@ i {
         margin-bottom: .5rem;
         display: block;
         font-weight: 500;
+        color: #383838;
 
         & span {
           margin-left: 0rem;
           max-width: 100%;
           font-weight: 400;
+          color: #464950;
         }
 
         & .read-more {
@@ -3102,7 +3104,7 @@ i {
 
       & .read-more {
         font-weight: 500;
-        color: #939393;
+        color: #ADADAD;
         white-space: nowrap;
       }
 
@@ -3276,7 +3278,7 @@ i {
       font-size: 1.3rem;
       line-height: 1.36;
       letter-spacing: -0.15px;
-      color: #5d5d5d;
+      color: #7a7c83;
     }
   }
 
@@ -3382,6 +3384,7 @@ i {
           margin-left: 0rem;
           max-width: 100%;
           font-weight: 400;
+          color: #464950;
         }
 
         & .read-more {
@@ -3393,6 +3396,7 @@ i {
           // left: 100%;
           // transform: translate(0, 0);
           white-space: nowrap;
+          color: #ADADAD;
 
           &-new {
             position: absolute;
@@ -4250,8 +4254,8 @@ i {
 
       & svg {
         margin-top: -.4rem;
-        width: 2.89rem;
-        height: 2.89rem;
+        width: 2.8rem;
+        height: 2.8rem;
 
         &:hover {
           transform: scale(1.1);
@@ -4542,6 +4546,7 @@ i {
     @include align-items(center);
     @include justify-content(space-between);
     height: 6.3rem;
+    margin-bottom: 2rem;
 
     &-left {
 
@@ -4550,7 +4555,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #1f1f1f;
+        color: #3E3E3E;
       }
 
       &-small {
@@ -4974,7 +4979,7 @@ i {
     max-width: 128.2rem;
     @include flexbox;
     @include align-items(center);
-    padding: 4.5rem 0 1.1rem;
+    padding: 2.5rem 0 1.1rem;
 
     & .choose {
       @include flexbox;
@@ -5521,7 +5526,7 @@ i {
 
             &-share {
               padding-top: 2.4rem;
-
+              border-top: 1.6px solid #F2F2F2;
 
               & a {
                 display: block;
@@ -6453,7 +6458,7 @@ i {
     &-body {
       border: none;
       //max-height: calc(100vh - 11rem - 16rem - 5rem);
-      border-bottom: solid 1px #e6e8eb;
+      border-bottom: solid 1.25px #F2F2F2;
       overflow: visible;
 
       & tr {
@@ -6462,18 +6467,18 @@ i {
         padding-left: .7rem;
 
         &:not(:last-of-type) {
-          border-bottom: 1px solid #EBEDEF !important;
+          border-bottom: 1.25px solid #F2F2F2 !important;
         }
 
         &#not-yet {
-          border-left: 1px solid #EBEDEF !important;
-          border-right: 1px solid #EBEDEF !important;
+          border-left: 1.25px solid #F2F2F2 !important;
+          border-right: 1.25px solid #F2F2F2 !important;
 
           &:not(.not-yet-search) {
             margin-top: 2rem;
             padding-top: 15rem;
             padding-bottom: 15rem;
-            border-top: solid 1px #EBEDEF!important;
+            border-top: solid 1.25px #F2F2F2!important;
             // border-top: 0 !important;
             border-bottom: 0 !important;
 
@@ -6527,11 +6532,11 @@ i {
             width: 4.1rem;
             height: 4.1rem;
             border-radius: 50%;
-            font-size: 2.3rem;
+            font-size: 1.7rem;
             color: #FFF;
-            font-weight: 500;
+            font-weight: 700;
             background-color: #FFd800;
-            letter-spacing: 1px;
+            letter-spacing: 0;
           }
 
           & .name {
@@ -7046,6 +7051,13 @@ i {
           color: #1267fb;
         }
 
+        & a.column-03 {
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
 
         & img {
           width: 5.59rem;
@@ -7283,7 +7295,7 @@ i {
 
 
     & .table-02 {
-      margin-top: 2.5rem;
+      margin-top: 2rem;
 
       & .table-custom-body {
 
@@ -7327,7 +7339,7 @@ i {
           line-height: 1.36;
           color: #1b2733;
           border-radius: 4px;
-          border: solid 1px #c1c7cd;
+          border: solid 1px #D8DFE6;
 
           -moz-appearance: none;
           -webkit-appearance: none;
@@ -7375,7 +7387,7 @@ i {
         line-height: 1.36;
         color: #1b2733;
         border-radius: 4px;
-        border: solid 1px #c1c7cd;
+        border: solid 1px #D8DFE6;
 
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -10809,6 +10821,12 @@ i {
           color: #1267fb;
         }
 
+        & a.column-03 {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
         & .initials {
           @include inline-flex;
           @include align-items(center);
@@ -11326,7 +11344,7 @@ i {
 .people-average-charts {
   padding: 2.5rem 0;
   padding-top: 0;
-  max-height: calc(100vh - 9.6rem - 1.5px);
+  max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   // overflow-y: auto;
   // scrollbar-width: none; /* Firefox */
   // -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -11359,22 +11377,48 @@ i {
     }
 
   &-header {
+    position: relative;
     margin-bottom: 2.7rem;
     max-width: 103rem;
-    padding-top: 6rem;
+    padding-top: 4rem;
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
+    transform:  translate(0,0);
 
     @include respond(desktop-sm) {
       @include flex-direction(column);
       @include align-items(flex-start);
     }
 
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 2rem;
+    //   background-color: red;
+    // }
+
     &-info {
+      position: relative;
       margin-right: 1.5rem;
       @include inline-flex;
       @include align-items(center);
+      z-index: 100;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background-color: red;
+        z-index: 1000000;
+      }
 
       &-buttons {
         @include respond(desktop-sm) {
@@ -11417,7 +11461,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #1f1f1f;
+        color: #3E3E3E;
 
         & .team {
           margin-left: .2rem;
@@ -12049,7 +12093,7 @@ i {
 
 
   &-header {
-    padding-top: 6rem;
+    padding-top: 4rem;
     max-width: calc(103rem - 3.65rem);
     margin-bottom: 2.7rem;
     @include flexbox;
@@ -12092,7 +12136,7 @@ i {
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
-        color: #252525;
+        color: #3E3E3E;
 
         & .email {
           margin-top: .4rem;
@@ -12178,7 +12222,7 @@ i {
         grid-auto-rows: 20rem;
         grid-gap: 2.9rem 2.6rem;
         height: 100%;
-        max-height: calc(100vh - 25rem - 1.5px);
+        max-height: calc(100vh - 25rem - 1.5px - 2rem);
 
         @include respond(desktop-sm) {
           max-height: calc(100vh - 35rem - 1.5px);
@@ -12237,7 +12281,7 @@ i {
         grid-auto-rows: 20rem;
         grid-gap: 2.9rem 2.6rem;
         height: 100%;
-        max-height: calc(100vh - 25rem - 1.5px);
+        max-height: calc(100vh - 25rem - 1.5px - .7rem);
 
         @include respond(desktop-sm) {
           max-height: calc(100vh - 35rem - 1.5px);
@@ -12257,20 +12301,20 @@ i {
 
         @include respond(desktop-md) {
           @include grid-template-columns(repeat(2, 1fr));
-          max-height: calc(100vh - 25rem - 1.5px);
+          max-height: calc(100vh - 25rem - 1.5px - .7rem);
 
           //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
         }
 
         @include respond(desktop-sm) {
-          max-height: calc(100vh - 26rem - 1.5px);
+          max-height: calc(100vh - 26rem - 1.5px - .7rem);
 
           //@include grid-template-columns(repeat(2,minmax(32rem, 1fr)));
         }
 
         @include respond(desktop-xsm) {
           @include grid-template-columns(repeat(1, 1fr));
-          max-height: calc(100vh - 25.5rem - 1.5px);
+          max-height: calc(100vh - 25.5rem - 1.5px - .7rem);
         }
 
         @include target-ie() {
@@ -14985,7 +15029,7 @@ li {
 
 .icon-caret-up,
 .icon-caret-down {
-  font-size: .75rem !important;
+  font-size: .7rem !important;
 }
 
 .table-custom {
@@ -14994,15 +15038,15 @@ li {
 
     & .icon-caret-up,
     & .icon-caret-down {
-      margin-left: .5rem !important;
-      font-size: .75rem !important;
+      margin-left: .6rem !important;
+      font-size: .7rem !important;
     }
   }
 }
 
 .section-header {
   & .icon-caret-down {
-    margin-left: .5rem !important;
+    margin-left: .6rem !important;
   }
 }
 
@@ -15011,7 +15055,7 @@ li {
 
     .icon-caret-up,
     .icon-caret-down {
-      font-size: 7.5px !important;
+      font-size: 7px !important;
     }
   }
 }
@@ -15025,8 +15069,8 @@ li {
 
         & .icon-caret-up,
         & .icon-caret-down {
-          margin-left: .5rem !important;
-          font-size: 7.5px !important;
+          margin-left: .6rem !important;
+          font-size: 7px !important;
         }
       }
     }
