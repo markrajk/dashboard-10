@@ -2344,6 +2344,7 @@ i {
       line-height: 1.29;
       letter-spacing: 0.12px; }
       .progress-custom-info .up i, .progress-custom-info .down i {
+        margin-top: -.05rem;
         margin-right: .55rem;
         font-size: 1.75rem; }
     .progress-custom-info .up {
