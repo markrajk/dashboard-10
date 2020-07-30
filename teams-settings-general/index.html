@@ -326,7 +326,8 @@
                             <div class="settings-table-row">
                                 <p class="column-01">Team image</p>
                                 <img src="../public/img/user-placeholder-orange.png" alt="#" class="column-02">
-                                <a href="#" class="column-03">Upload</a>
+                                <a href="#" class="column-03" data-toggle="modal"
+                                    data-target="#uploadImageModal">Upload</a>
                             </div>
                             <div class="settings-table-row">
                                 <div class="column-01">
@@ -406,10 +407,8 @@
                     </div>
                 </div>
 
-
-
-                <!-- TRANSFER OWNERSHIP 01 -->
-                <div class="modal fade modal-custom" id="transferOwnership" tabindex="-1" role="dialog"
+                <!-- UPLOAD IMAGE MODAL -->
+                <div class="modal fade modal-custom" id="uploadImageModal" tabindex="-1" role="dialog"
                     aria-labelledby="linkTeamModalTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -419,47 +418,74 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <h2 class="title">Transfer team ownership</h2>
-                                <p class="text">Enter of the new owner</p>
-                                <input type="email" placeholder="Enter email">
+                                <h2 class="title">Looks good!</h2>
+                                <img src="../public/img/p-01.png" alt="User's profile image">
                                 <div class="buttons">
                                     <button class="button button-outlined" data-dismiss="modal"
-                                        aria-label="Close">Cancel</button>
+                                        aria-label="Close">Upload
+                                        new</button>
                                     <button class="button button-primary" data-toggle="modal"
                                         data-target="#transferOwnershipConfirm" data-dismiss="modal"
-                                        aria-label="Close">Update</button>
+                                        aria-label="Close">Done</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- TRANSFER OWNERSHIP 02 -->
-                <div class="modal fade modal-custom" id="transferOwnershipConfirm" tabindex="-1" role="dialog"
-                    aria-labelledby="linkTeamModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <i class="icon-close"></i>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h2 class="title">Confirmation</h2>
-                                <p class="text">Are you sure you want to link this team
-                                    and all its employees to Google?</p>
-                                <div class="buttons">
-                                    <button class="button button-outlined" data-dismiss="modal"
-                                        aria-label="Close">Cancel</button>
-                                    <button class="button button-primary">Update</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </main>
         </div>
+
+        <!-- TRANSFER OWNERSHIP 01 -->
+        <div class="modal fade modal-custom" id="transferOwnership" tabindex="-1" role="dialog"
+            aria-labelledby="linkTeamModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="title">Transfer team ownership</h2>
+                        <p class="text">Enter of the new owner</p>
+                        <input type="email" placeholder="Enter email">
+                        <div class="buttons">
+                            <button class="button button-outlined" data-dismiss="modal"
+                                aria-label="Close">Cancel</button>
+                            <button class="button button-primary" data-toggle="modal"
+                                data-target="#transferOwnershipConfirm" data-dismiss="modal"
+                                aria-label="Close">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRANSFER OWNERSHIP 02 -->
+        <div class="modal fade modal-custom" id="transferOwnershipConfirm" tabindex="-1" role="dialog"
+            aria-labelledby="linkTeamModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="icon-close"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="title">Confirmation</h2>
+                        <p class="text">Are you sure you want to link this team
+                            and all its employees to Google?</p>
+                        <div class="buttons">
+                            <button class="button button-outlined" data-dismiss="modal"
+                                aria-label="Close">Cancel</button>
+                            <button class="button button-primary">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+    </div>
     </div>
 
     <script src="../public/js/jquery-3.4.1.min.js"></script>
