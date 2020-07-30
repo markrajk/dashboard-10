@@ -7971,7 +7971,7 @@ i {
 // NEW FEEDBACK START
 // ==================================
 .new-feedback {
-  max-height: calc(100vh - 13.72rem - 3.4rem);
+  max-height: calc(100vh - 13.72rem - 3.4rem - 1px);
   max-width: 121.1rem;
   overflow-y: auto;
   scrollbar-width: none;
@@ -8022,6 +8022,15 @@ i {
     border-top: 1px solid #F0F0F0;
     border-bottom: 1px solid #F0F0F0;
 
+
+
+    // &:hover {
+    //   cursor: pointer;
+    //   & .todo-row-name {
+    //     text-decoration: underline;
+    //   }
+    // }
+
     &-row {
       padding-left: .3rem;
       padding-right: 1rem;
@@ -8029,6 +8038,13 @@ i {
       @include align-items(center);
       @include justify-content(flex-start);
       height: 6rem;
+
+      &:hover {
+        cursor: pointer;
+        & .todo-row-text {
+          text-decoration: underline;
+        }
+      }
 
       &:not(:last-of-type) {
         border-bottom: 1px solid #F0F0F0;
@@ -8063,11 +8079,33 @@ i {
     @include justify-content(space-between);
     border-bottom: 1px solid #F0F0F0;
 
+    & .section-caption {
+      margin-right: 2rem;
+
+      @include respond(desktop-xxsm) {
+        display: none;
+      }
+    }
+
     & .input-container {
+      margin-top: 4.55rem;
+      margin-bottom: 2.7rem;
       width: 100%;
       max-width: 30rem;
       display: inline-block;
       position: relative;
+
+      @include respond(desktop-sm) {
+        max-width: 25rem;
+      }
+
+      @include respond(desktop-xsm) {
+        max-width: 20rem;
+      }
+
+      @include respond(desktop-xxsm) {
+        max-width: 30rem;
+      }
 
       & input {
         padding: .8rem 2.1rem;
