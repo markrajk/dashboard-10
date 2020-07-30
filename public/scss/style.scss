@@ -4096,6 +4096,7 @@ i {
       height: 5rem;
       position: relative;
       padding: 2rem 2.4rem 0;
+      padding-right: 1.9rem;
       margin-bottom: 1.4rem;
       @include flexbox;
       @include justify-content(space-between);
@@ -4114,10 +4115,12 @@ i {
         outline: none !important;
         padding: .2rem;
         overflow: visible;
+        margin-top: 0;
+        padding: .5rem!important;
+        transition: none!important;
 
         &:hover {
           transform: scale(1.1);
-          transition: all .2s ease-in-out;
         }
       }
 
@@ -4145,7 +4148,7 @@ i {
         padding: 0;
 
         &-trigger {
-          margin-top: -.4rem;
+          margin-top: 0;
           padding: 0!important;
           outline: none!important;
           border: none!important;
@@ -4484,7 +4487,7 @@ i {
 
         }
 
-        @include respond(desktop-xsm) {
+        @include custom-respond(690) {
           min-width: 10rem;
           max-width: 15rem;
           display: none;
@@ -6422,7 +6425,7 @@ i {
             width: 4.1rem;
             height: 4.1rem;
             border-radius: 50%;
-            font-size: 1.7rem;
+            font-size: 1.65rem;
             color: #FFF;
             font-weight: 700;
             background-color: #FFd800;
@@ -7964,6 +7967,175 @@ i {
 // GIVE FEEDBACK END
 // ==================================
 
+// ==================================
+// NEW FEEDBACK START
+// ==================================
+.new-feedback {
+  max-height: calc(100vh - 13.72rem - 3.4rem);
+  max-width: 121.1rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: 121.1rem;
+    border-top: 1.5px solid #f2f2f2;
+    z-index: 10;
+  }
+
+  .section-caption {
+    margin-top: 4.55rem;
+    margin-bottom: 2.7rem;
+
+    &-title {
+      margin-bottom: .6rem;
+      font-size: 1.7rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: #1b2733;
+    }
+
+    &-text {
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.38;
+      color: #647282;
+    }
+  }
+
+  .todo {
+    width: 100%;
+    max-width: 37rem;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
+
+    &-row {
+      padding-left: .3rem;
+      padding-right: 1rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(flex-start);
+      height: 6rem;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #F0F0F0;
+      }
+
+      &-img {
+        margin-right: 1.57rem;
+        width: 3.85rem;
+        height: 3.85rem;
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%);
+      }
+
+      &-text {
+        margin-right: auto;
+        font-size: 1.35rem;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #242936;
+      }
+
+      & .icon-chevron-right {
+        font-size: 1.3rem;
+        color: #bbbac1;
+      }
+    }
+  }
+
+  & .bottom-caption {
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(space-between);
+    border-bottom: 1px solid #F0F0F0;
+
+    & .input-container {
+      width: 100%;
+      max-width: 30rem;
+      display: inline-block;
+      position: relative;
+
+      & input {
+        padding: .8rem 2.1rem;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.33;
+        letter-spacing: -0.12px;
+        border-radius: 2rem;
+        border: solid 1.25px #D8D8D8;
+
+        background-color: #ffffff;
+        outline: none;
+
+        &::placeholder {
+          color: #9a9a9a;
+        }
+      }
+
+      & i {
+        font-size: 3rem;
+        color: #c5c5c5;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-.5rem, -50%);
+      }
+    }
+  }
+
+  & .people {
+    padding-left: .3rem;
+    padding-top: 2.7rem;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(flex-start);
+    @include flex-wrap(wrap);
+
+    &-person {
+      margin-bottom: 3.3rem;
+      margin-right: 4.4rem;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &-img {
+        margin-bottom: .79rem;
+        width: 7.49rem;
+        height: 7.49rem;
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%);
+      }
+
+      &-name {
+        font-size: 1.23rem;
+        font-weight: 500;
+        line-height: 1.31;
+        color: #23252b;
+      }
+    }
+  }
+}
+// ==================================
+// NEW FEEDBACK END
+// ==================================
+
 
 
 // ==================================
@@ -9289,6 +9461,10 @@ i {
           border: solid 1px #dedede;
           border-radius: 1.8rem;
 
+          &:focus {
+            border-color: #9FACBA!important;
+          }
+
           &::placeholder {
             color: #647282;
           }
@@ -9300,7 +9476,7 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #647282;
+          color: #99A5B2 ;
         }
       }
 
@@ -9650,6 +9826,10 @@ i {
           &::placeholder {
             color: #647282;
           }
+
+          &:focus {
+            border-color: #9FACBA!important;
+          }
         }
 
         & i {
@@ -9658,7 +9838,7 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #647282;
+          color: #99A5B2;
         }
       }
 
@@ -10047,6 +10227,10 @@ i {
           &::placeholder {
             color: #647282;
           }
+
+          &:focus {
+            border-color: #9FACBA!important;
+          }
         }
 
         & i {
@@ -10055,7 +10239,7 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #647282;
+          color: #99A5B2 ;
         }
       }
 
@@ -11778,6 +11962,7 @@ i {
 
             &-share {
               padding-top: 2.4rem;
+              border-top: 1.6px solid #F2F2F2;
 
 
               & a {
@@ -14962,7 +15147,8 @@ li {
   }
 }
 
-.section-header {
+.section-header,
+.section-comments-header {
   & .icon-caret-down {
     margin-left: .6rem !important;
   }
