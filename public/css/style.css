@@ -936,6 +936,7 @@ i {
   border-radius: 6px; }
 #addQuestionModal .modal-body {
   margin: 0 auto;
+  width: 100%;
   max-width: 27rem;
   padding: 0;
   padding-bottom: 4.5rem;
