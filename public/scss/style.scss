@@ -12381,7 +12381,7 @@ i {
           height: 0;
         }
 
-        @include respond(desktop-md) {
+        @include respond(desktop-lg) {
           @include grid-template-columns(repeat(2, 1fr));
           max-height: calc(100vh - 25rem - 1.5px);
 
@@ -12440,7 +12440,7 @@ i {
           height: 0;
         }
 
-        @include respond(desktop-md) {
+        @include respond(desktop-lg) {
           @include grid-template-columns(repeat(2, 1fr));
           max-height: calc(100vh - 25rem - 1.5px - .7rem);
 

@@ -9465,7 +9465,7 @@ i {
       /* WebKit */
       width: 0;
       height: 0; }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       .people-feedback-received-body .section-comments-body {
         -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -9540,7 +9540,7 @@ i {
       /* WebKit */
       width: 0;
       height: 0; }
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
       .people-feedback-received-body .section-comments-body-new {
         -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
