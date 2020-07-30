@@ -875,129 +875,13 @@ svg {
   transform: rotateZ(180deg);
 }
 
-// icons
-// @font-face {
-//   font-family: 'app-icons';
-//   src: url('../fonts/app-icons.eot?n6os4c');
-//   src: url('../fonts/app-icons.eot?n6os4c#iefix') format('embedded-opentype'),
-//     url('../fonts/app-icons.ttf?n6os4c') format('truetype'),
-//     url('../fonts/app-icons.woff?n6os4c') format('woff'),
-//     url('../fonts/app-icons.svg?n6os4c#app-icons') format('svg');
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: block;
-// }
-
-// i {
-//   /* use !important to prevent issues with browser extensions that change fonts */
-//   font-family: 'app-icons' !important;
-//   speak: never;
-//   font-style: normal;
-//   font-weight: normal;
-//   font-variant: normal;
-//   text-transform: none;
-//   line-height: 1;
-
-//   /* Better Font Rendering =========== */
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
-
-// .icon-user:before {
-//   content: "\e91d";
-// }
-
-// .icon-business:before {
-//   content: "\e914";
-// }
-
-// .icon-list:before {
-//   content: "\e901";
-// }
-
-// .icon-user-outline:before {
-//   content: "\e902";
-// }
-
-// .icon-arrow-circle-down:before {
-//   content: "\e911";
-// }
-
-// .icon-arrow-circle-up:before {
-//   content: "\e912";
-// }
-
-// .icon-star:before {
-//   content: "\e913";
-// }
-
-// .icon-close:before {
-//   content: "\e900";
-// }
-
-// .icon-bell:before {
-//   content: "\e903";
-// }
-
-// .icon-caret-down:before {
-//   content: "\e904";
-// }
-
-// .icon-caret-up:before {
-//   content: "\e905";
-// }
-
-// .icon-check:before {
-//   content: "\e906";
-// }
-
-// .icon-chevron-left:before {
-//   content: "\e907";
-// }
-
-// .icon-chevron-right:before {
-//   content: "\e908";
-// }
-
-// .icon-ellipsis:before {
-//   content: "\e909";
-// }
-
-// .icon-exit:before {
-//   content: "\e90a";
-// }
-
-// .icon-phone:before {
-//   content: "\e90b";
-// }
-
-// .icon-plus-circle:before {
-//   content: "\e90c";
-// }
-
-// .icon-question:before {
-//   content: "\e90d";
-// }
-
-// .icon-search:before {
-//   content: "\e90e";
-// }
-
-// .icon-settings:before {
-//   content: "\e90f";
-// }
-
-// .icon-users:before {
-//   content: "\e910";
-// }
-
 @font-face {
   font-family: 'dashboard-icons';
-  src:  url('../fonts/dashboard-icons.eot?us7kwn');
-  src:  url('../fonts/dashboard-icons.eot?us7kwn#iefix') format('embedded-opentype'),
-    url('../fonts/dashboard-icons.ttf?us7kwn') format('truetype'),
-    url('../fonts/dashboard-icons.woff?us7kwn') format('woff'),
-    url('../fonts/dashboard-icons.svg?us7kwn#dashboard-icons') format('svg');
+  src:  url('../fonts/dashboard-icons.eot?pbs3li');
+  src:  url('../fonts/dashboard-icons.eot?pbs3li#iefix') format('embedded-opentype'),
+    url('../fonts/dashboard-icons.ttf?pbs3li') format('truetype'),
+    url('../fonts/dashboard-icons.woff?pbs3li') format('woff'),
+    url('../fonts/dashboard-icons.svg?pbs3li#dashboard-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1018,21 +902,10 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-circle-plus .path1:before {
-  content: "\e915";
-}
-.icon-circle-plus .path2:before {
-  content: "\e916";
-  margin-left: -1em;
-  color: rgb(197, 197, 197);
-}
-.icon-circle-plus .path3:before {
-  content: "\e917";
-  margin-left: -1em;
-  color: rgb(197, 197, 197);
+.icon-circle-plus:before {
+  content: "\e900";
 }
 .icon-shield:before {
-  margin-left: -.1em;
   content: "\e918";
 }
 .icon-user-check:before {
@@ -1069,36 +942,33 @@ i {
   content: "\e913";
 }
 .icon-close:before {
-  content: "\e900";
-}
-.icon-bell:before {
   content: "\e903";
 }
-.icon-caret-down:before {
+.icon-bell:before {
   content: "\e904";
 }
-.icon-caret-up:before {
+.icon-caret-down:before {
   content: "\e905";
 }
-.icon-check:before {
+.icon-caret-up:before {
   content: "\e906";
 }
-.icon-chevron-left:before {
+.icon-check:before {
   content: "\e907";
 }
-.icon-chevron-right:before {
+.icon-chevron-left:before {
   content: "\e908";
 }
-.icon-ellipsis:before {
+.icon-chevron-right:before {
   content: "\e909";
 }
-.icon-exit:before {
+.icon-ellipsis:before {
   content: "\e90a";
 }
-.icon-phone:before {
+.icon-exit:before {
   content: "\e90b";
 }
-.icon-plus-circle:before {
+.icon-phone:before {
   content: "\e90c";
 }
 .icon-question:before {
@@ -1113,6 +983,10 @@ i {
 .icon-users:before {
   content: "\e910";
 }
+
+
+
+
 
 
 // fonts
@@ -4247,31 +4121,44 @@ i {
         }
       }
 
-      i {
-        font-size: 2.65rem;
+      // i {
+      //   font-size: 2.7rem;
+      //   color: #1a9cfc;
+
+      //   transform: scale(1);
+
+      //   &:hover {
+      //     transform: scale(1.1);
+      //   }
+      // }
+
+      & svg,
+      & .icon-circle-plus {
+        font-size: 2.7rem;
         color: #1a9cfc;
-      }
+        // width: 2.7rem;
+        // height: 2.7rem;
 
-      & svg {
-        margin-top: -.4rem;
-        width: 2.7rem;
-        height: 2.7rem;
-        transform: scale(1);
-        background-color: red;
-
-        &:hover {
-          transform: scale(1.1);
-        }
       }
 
       & .dd-new.dropdown-custom {
         padding: 0;
 
         &-trigger {
+          margin-top: -.4rem;
           padding: 0!important;
           outline: none!important;
           border: none!important;
           box-shadow: none!important;
+
+          transform: scale(1);
+          -webkit-transform: scale(1);
+          transition: none!important;
+    
+            &:hover {
+              transform: scale(1.1);
+              -webkit-transform: scale(1.1);
+            }
         }
 
         &-list {
