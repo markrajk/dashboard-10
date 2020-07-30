@@ -2919,6 +2919,7 @@ i {
           outline: none !important;
           border: none !important;
           box-shadow: none !important;
+          padding: 0.5rem !important;
           transform: scale(1);
           -webkit-transform: scale(1);
           transition: none !important; }
