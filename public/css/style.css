@@ -1966,6 +1966,7 @@ i {
       font-size: 1.35rem;
       line-height: 1.38; }
       .comment-body.double .comment-body-text-double {
+        margin-bottom: .5rem;
         display: block;
         margin-top: 1.2rem;
         padding-top: 0;
@@ -4521,7 +4522,10 @@ i {
       font-weight: 500;
       line-height: 1.28;
       color: #647282;
-      border-radius: 2.5px; }
+      border-radius: 2.5px;
+      font-weight: 400; }
+      .teams-comments .section-comments-header span {
+        font-weight: 500; }
       .teams-comments .section-comments-header .dropdown-custom-trigger {
         padding: 0;
         font-weight: 400;
@@ -4541,7 +4545,7 @@ i {
       display: grid;
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 14rem;
+      grid-auto-rows: 14.5rem;
       grid-gap: 2.6rem 2.6rem;
       max-width: 103rem;
       overflow-y: auto;

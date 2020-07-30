@@ -3010,6 +3010,7 @@ i {
       line-height: 1.38;
 
       & .comment-body-text-double {
+        margin-bottom: .5rem;
         display: block;
         margin-top: 1.2rem;
         padding-top: 0;
@@ -6101,6 +6102,11 @@ i {
       line-height: 1.28;
       color: #647282;
       border-radius: 2.5px;
+      font-weight: 400;
+
+      & span {
+        font-weight: 500;
+      }
 
       & .dropdown-custom {
         &-trigger {
@@ -6130,7 +6136,7 @@ i {
       @include grid;
       @include grid-template-columns(repeat(3, 1fr));
       // @include grid-auto-rows(14rem);
-      grid-auto-rows: 14rem;
+      grid-auto-rows: 14.5rem;
       grid-gap: 2.6rem 2.6rem;
       // padding-right: calc(100% - 103rem);
       max-width: 103rem;
