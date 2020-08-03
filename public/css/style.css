@@ -2548,7 +2548,7 @@ i {
   .button-outlined {
     color: #515558;
     border-color: #D1D7DD;
-    background-color: transparent; }
+    background-color: #FFF; }
     .button-outlined:hover, .button-outlined:focus {
       color: #515558;
       background-color: #efefef !important; }
@@ -2604,6 +2604,8 @@ i {
     border: 0; }
 
 .no-feedback {
+  padding-left: 2rem;
+  padding-right: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
@@ -2646,7 +2648,7 @@ i {
     font-size: 1.4rem;
     font-weight: 400;
     color: #383838;
-    max-width: 45rem;
+    max-width: 100%;
     padding-left: 2rem;
     padding-right: 2rem; }
     .no-feedback-text button {
@@ -3219,10 +3221,8 @@ i {
           background-color: #f9f9f9; }
         .sidebar-menu-footer-create-new.active {
           background-color: #6a6a6a;
-          border-color: #6a6a6a;
           color: #FFF; }
           .sidebar-menu-footer-create-new.active:hover {
-            border-color: #757575;
             background-color: #757575; }
         .sidebar-menu-footer-create-new.compare-teams-btn {
           border-bottom: 1.5px solid #F2F2F2; }
@@ -3290,7 +3290,7 @@ i {
       font-weight: 500;
       line-height: 1.32;
       letter-spacing: -0.28px;
-      color: #3E3E3E; }
+      color: #434343; }
     .header-top-left-small {
       margin-top: 0.7rem;
       font-size: 1.45rem;
@@ -3755,6 +3755,67 @@ i {
     height: 0; }
   .teams-average-charts-body {
     padding-top: 3.5rem; }
+    .teams-average-charts-body .no-data {
+      max-width: 103rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      margin-top: 2.5rem; }
+      .teams-average-charts-body .no-data-main {
+        text-align: center; }
+        .teams-average-charts-body .no-data-main svg {
+          margin-bottom: 2rem; }
+        .teams-average-charts-body .no-data-main-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929; }
+        .teams-average-charts-body .no-data-main-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838; }
+        .teams-average-charts-body .no-data-main-link {
+          font-weight: 500;
+          color: #137efe; }
+    .teams-average-charts-body .no-teams {
+      padding-top: 12.5rem; }
+      .teams-average-charts-body .no-teams-card-title {
+        margin-bottom: 1.36rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: #292929; }
+      .teams-average-charts-body .no-teams-card-text {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        color: #383838; }
+      .teams-average-charts-body .no-teams-card:not(:last-of-type) {
+        margin-bottom: 11rem; }
     .teams-average-charts-body .section-header {
       max-width: 103rem;
       height: 3.7rem;
@@ -4079,7 +4140,8 @@ i {
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.33;
-                color: #1b2733; }
+                color: #494F64;
+                text-transform: capitalize; }
                 .teams-average-charts-body .section-development .section-body-chart-header .options a:hover {
                   text-decoration: underline; }
                 .teams-average-charts-body .section-development .section-body-chart-header .options a.active {
@@ -4120,7 +4182,7 @@ i {
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.33;
-            color: #1b2733; }
+            color: #494F64; }
           .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
             padding-bottom: 1.4rem; }
             @media (max-width: 991px) {
@@ -4163,7 +4225,7 @@ i {
                 margin-right: 3rem; } }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.8rem; }
+              font-size: 1.9rem; }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
               font-size: 1.35rem;
@@ -4221,6 +4283,8 @@ i {
     z-index: 10; }
   .teams-compare-body,
   .people-compare-body {
+    max-height: calc(100vh - 14.3rem - 1px);
+    height: 100%;
     padding-top: 2.7rem;
     padding-left: 3.65rem;
     padding-bottom: 3rem;
@@ -4240,7 +4304,17 @@ i {
     -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     justify-content: flex-start;
-    overflow-x: auto; }
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */ }
+    .teams-compare-body::-webkit-scrollbar,
+    .people-compare-body::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0; }
     .teams-compare-body::after,
     .people-compare-body::after {
       order: 99999;
@@ -4262,6 +4336,84 @@ i {
       -moz-flex-direction: "row";
       -ms-flex-direction: "row";
       flex-direction: "row"; }
+    .teams-compare-body .no-data,
+    .people-compare-body .no-data {
+      height: 32rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start; }
+      .teams-compare-body .no-data-main-title,
+      .people-compare-body .no-data-main-title {
+        margin-bottom: 1.3rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: #292929; }
+      .teams-compare-body .no-data-main-text,
+      .people-compare-body .no-data-main-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        color: #383838; }
+    .teams-compare-body .no-data-feedback,
+    .people-compare-body .no-data-feedback {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+      .teams-compare-body .no-data-feedback-main,
+      .people-compare-body .no-data-feedback-main {
+        text-align: center; }
+        .teams-compare-body .no-data-feedback-main svg,
+        .people-compare-body .no-data-feedback-main svg {
+          margin-bottom: 2rem; }
+        .teams-compare-body .no-data-feedback-main-title,
+        .people-compare-body .no-data-feedback-main-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929; }
+        .teams-compare-body .no-data-feedback-main-text,
+        .people-compare-body .no-data-feedback-main-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838; }
+        .teams-compare-body .no-data-feedback-main-link,
+        .people-compare-body .no-data-feedback-main-link {
+          font-weight: 500;
+          color: #137efe; }
     .teams-compare-body-card,
     .people-compare-body-card {
       min-width: 28.5rem;
@@ -8638,6 +8790,16 @@ i {
     max-width: 80rem;
     max-height: calc(100vh - 30rem); }
     .company-settings-body .settings-table-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
       height: 4.2rem;
       padding: 1rem 1.2rem;
       background-color: #f7f9fa;
@@ -8656,6 +8818,7 @@ i {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
+      height: 8.8rem;
       font-size: 1.4rem;
       font-weight: 400;
       color: #1b2733;
@@ -8850,7 +9013,7 @@ i {
       border-radius: 4px;
       border: solid 1px #cfd7e0; }
       .user-settings-general-body .settings-table-row .settings-input::placeholder {
-        color: #1b2733; }
+        color: #AAA; }
     .user-settings-general-body .settings-table-row .column-01 {
       padding-right: 1.5rem;
       margin-right: auto; }
@@ -9085,6 +9248,7 @@ i {
 
 .people-average-charts {
   padding: 2.5rem 0;
+  padding-top: 3.65rem;
   padding-top: 0;
   max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   overflow-y: auto;
@@ -9092,6 +9256,15 @@ i {
   /* Firefox */
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */ }
+  .people-average-charts::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 103rem;
+    border-top: 1px solid #e1e1e1; }
   .people-average-charts::-webkit-scrollbar {
     width: 0;
     height: 0; }
@@ -9200,7 +9373,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #3E3E3E; }
+        color: #434343; }
         .people-average-charts-header-info .name .team {
           margin-left: .2rem;
           margin-top: .4rem;
@@ -9226,6 +9399,66 @@ i {
     @media (max-width: 575px) {
       .people-average-charts-body {
         max-height: calc(100% - 12.4rem - 4.1rem); } }
+    .people-average-charts-body .no-data {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      margin-top: 2.5rem; }
+      .people-average-charts-body .no-data-main {
+        text-align: center; }
+        .people-average-charts-body .no-data-main svg {
+          margin-bottom: 2rem; }
+        .people-average-charts-body .no-data-main-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929; }
+        .people-average-charts-body .no-data-main-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838; }
+        .people-average-charts-body .no-data-main-link {
+          font-weight: 500;
+          color: #137efe; }
+    .people-average-charts-body .no-teams {
+      padding-top: 12.5rem; }
+      .people-average-charts-body .no-teams-card-title {
+        margin-bottom: 1.36rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: #292929; }
+      .people-average-charts-body .no-teams-card-text {
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        color: #383838; }
+      .people-average-charts-body .no-teams-card:not(:last-of-type) {
+        margin-bottom: 11rem; }
     .people-average-charts-body .section {
       position: relative; }
       .people-average-charts-body .section-header {
@@ -9269,6 +9502,8 @@ i {
             color: #657383;
             border: none;
             box-shadow: none; }
+        .people-average-charts-body .section-header.empty {
+          margin-top: 4rem; }
       .people-average-charts-body .section-body {
         overflow-y: auto;
         scrollbar-width: none;
@@ -9488,7 +9723,8 @@ i {
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.33;
-                color: #1b2733; }
+                color: #494F64;
+                text-transform: capitalize; }
                 .people-average-charts-body .section-development .section-body-chart-header .options a:hover {
                   text-decoration: underline; }
                 .people-average-charts-body .section-development .section-body-chart-header .options a.active {
@@ -9529,7 +9765,7 @@ i {
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.33;
-            color: #1b2733; }
+            color: #494F64; }
           .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
             white-space: nowrap;
             padding-bottom: 1.4rem; }
@@ -9573,7 +9809,7 @@ i {
                 margin-right: 3rem; } }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.8rem; }
+              font-size: 1.9rem; }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
               font-size: 1.35rem;
@@ -9617,6 +9853,15 @@ i {
   margin-left: 0 !important;
   padding-left: 3.65rem;
   width: 100%; }
+  .people-feedback-received::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: calc(103rem - 3.65rem);
+    border-top: 1px solid #e1e1e1; }
   .people-feedback-received-header {
     padding-top: 4rem;
     max-width: calc(103rem - 3.65rem);
@@ -9686,7 +9931,7 @@ i {
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
-        color: #3E3E3E; }
+        color: #434343; }
         .people-feedback-received-header-info .name .email {
           margin-top: .4rem;
           font-weight: 400;

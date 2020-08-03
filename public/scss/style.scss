@@ -3726,7 +3726,7 @@ i {
   &-outlined {
     color: #515558;
     border-color: #D1D7DD;
-    background-color: transparent;
+    background-color: #FFF;
 
     &:hover,
     &:focus {
@@ -3817,6 +3817,8 @@ i {
 }
 
 .no-feedback {
+  padding-left: 2rem;
+  padding-right: 2rem;
   @include flexbox;
   @include align-items(center);
   @include justify-content(center);
@@ -3847,7 +3849,7 @@ i {
     font-size: 1.4rem;
     font-weight: 400;
     color: #383838;
-    max-width: 45rem;
+    max-width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
 
@@ -4503,11 +4505,9 @@ i {
 
         &.active {
           background-color: #6a6a6a;
-          border-color: #6a6a6a;
           color: #FFF;
 
           &:hover {
-            border-color: #757575;
             background-color: #757575;
           }
         }
@@ -4597,7 +4597,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #3E3E3E;
+        color: #434343;
       }
 
       &-small {
@@ -5178,6 +5178,73 @@ i {
   &-body {
     padding-top: 3.5rem;
 
+    & .no-data {
+      max-width: 103rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      margin-top: 2.5rem;
+      &-main {
+        text-align: center;
+
+        & svg {
+          margin-bottom: 2rem;
+        }
+        &-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+        &-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838;
+        }
+        &-link {
+          font-weight: 500;
+          color: #137efe;
+        }
+      }
+    }
+
+    .no-teams {
+      padding-top: 12.5rem;
+      
+      &-card {
+        &-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+
+        &-text {
+          margin-bottom: 2rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #383838;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 11rem;
+        }
+      }
+    }
+
     & .section {
       // position: relative;
 
@@ -5453,7 +5520,8 @@ i {
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.33;
-                color: #1b2733;
+                color: #494F64;
+                text-transform: capitalize;
 
                 &:hover {
                   text-decoration: underline;
@@ -5509,7 +5577,7 @@ i {
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.33;
-            color: #1b2733;
+            color: #494F64;
           }
 
           &-main {
@@ -5543,7 +5611,7 @@ i {
 
               & .pretty {
                 margin-right: -1rem;
-                font-size: 1.8rem;
+                font-size: 1.9rem;
               }
 
               &-label {
@@ -5783,9 +5851,11 @@ i {
 // ==================================
 .teams-compare,
 .people-compare {
+
   // max-width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  
 
   &::before {
     margin-top: 3.6rem;
@@ -5802,6 +5872,8 @@ i {
   }
 
   &-body {
+    max-height: calc(100vh - 14.3rem - 1px);
+    height: 100%;
     padding-top: 2.7rem;
     padding-left: 3.65rem;
     padding-bottom: 3rem;
@@ -5812,6 +5884,17 @@ i {
     @include justify-content(flex-start);
 
     overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: none;
+     /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
 
     &::after {
       order: 99999;
@@ -5825,6 +5908,68 @@ i {
     &-wrapper {
       @include flexbox();
       @include flex-direction('row');
+    }
+
+    & .no-data {
+      //height: 100%;
+      height: 32rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(flex-start);
+
+      &-main {
+        &-title {
+          margin-bottom: 1.3rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+  
+        &-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #383838;
+        }
+      }
+    }
+
+    & .no-data-feedback {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      &-main {
+        text-align: center;
+
+        & svg {
+          margin-bottom: 2rem;
+        }
+        &-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+        &-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838;
+        }
+        &-link {
+          font-weight: 500;
+          color: #137efe;
+        }
+      }
     }
 
     &-card {
@@ -11039,6 +11184,8 @@ i {
     & .settings-table {
 
       &-header {
+        @include flexbox();
+        @include align-items(center);
         height: 4.2rem;
         padding: 1rem 1.2rem;
         background-color: #f7f9fa;
@@ -11057,6 +11204,7 @@ i {
         padding-bottom: 2.6rem;
         padding-right: 2rem;
         @include flexbox;
+        height: 8.8rem;
         font-size: 1.4rem;
         font-weight: 400;
         color: #1b2733;
@@ -11326,7 +11474,7 @@ i {
           border: solid 1px #cfd7e0;
 
           &::placeholder {
-            color: #1b2733;
+            color: #AAA;
           }
         }
 
@@ -11872,6 +12020,7 @@ i {
 // ==================================
 .people-average-charts {
   padding: 2.5rem 0;
+  padding-top: 3.65rem;
   padding-top: 0;
   max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   // overflow-y: auto;
@@ -11883,16 +12032,16 @@ i {
   //   height: 0;
   // }
 
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: sticky;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   max-width: 103rem;
-  //   border-top: 1px solid #e1e1e1;
-  // }
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 103rem;
+    border-top: 1px solid #e1e1e1;
+  }
 
   overflow-y: auto;
     scrollbar-width: none;
@@ -11990,7 +12139,7 @@ i {
         font-weight: 500;
         line-height: 1.32;
         letter-spacing: -0.28px;
-        color: #3E3E3E;
+        color: #434343;
 
         & .team {
           margin-left: .2rem;
@@ -12043,6 +12192,72 @@ i {
       max-height: calc(100% - 12.4rem - 4.1rem);
     }
 
+    & .no-data {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(center);
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      margin-top: 2.5rem;
+      &-main {
+        text-align: center;
+
+        & svg {
+          margin-bottom: 2rem;
+        }
+        &-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+        &-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838;
+        }
+        &-link {
+          font-weight: 500;
+          color: #137efe;
+        }
+      }
+    }
+
+    .no-teams {
+      padding-top: 12.5rem;
+      
+      &-card {
+        &-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929;
+        }
+
+        &-text {
+          margin-bottom: 2rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #383838;
+        }
+
+        &:not(:last-of-type) {
+          margin-bottom: 11rem;
+        }
+      }
+    }
+
     & .section {
       position: relative;
 
@@ -12087,6 +12302,10 @@ i {
               box-shadow: none;
             }
           }
+        }
+
+        &.empty {
+          margin-top: 4rem;
         }
       }
 
@@ -12275,7 +12494,8 @@ i {
                 font-size: 1.5rem;
                 font-weight: 400;
                 line-height: 1.33;
-                color: #1b2733;
+                color: #494F64;
+                text-transform: capitalize;
 
                 &:hover {
                   text-decoration: underline;
@@ -12329,7 +12549,7 @@ i {
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.33;
-            color: #1b2733;
+            color: #494F64;
           }
 
           &-main {
@@ -12364,7 +12584,7 @@ i {
 
               & .pretty {
                 margin-right: -1rem;
-                font-size: 1.8rem;
+                font-size: 1.9rem;
               }
 
               &-label {
@@ -12610,16 +12830,16 @@ i {
   // height: 100%;
   // max-height: calc(100vh - 20rem);
 
-  // &::before {
-  //   content: '';
-  //   display: block;
-  //   position: sticky;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 10;
-  //   max-width: 103rem;
-  //   border-top: 1px solid #e1e1e1;
-  // }
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: calc(103rem - 3.65rem);
+    border-top: 1px solid #e1e1e1;
+  }
 
 
   &-header {
@@ -12666,7 +12886,7 @@ i {
         font-size: 1.7rem;
         font-weight: 500;
         line-height: 1.35;
-        color: #3E3E3E;
+        color: #434343;
 
         & .email {
           margin-top: .4rem;
