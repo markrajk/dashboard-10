@@ -1152,6 +1152,36 @@ i {
 //   }
 // }
 
+.no-teams {
+  max-width: 103rem;
+  padding-top: 12.5rem;
+  margin-left: 3.65rem;
+  border-top: 1.5px solid #f2f2f2;
+  
+  &-card {
+    &-title {
+      margin-bottom: 1.36rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.33;
+      letter-spacing: -0.2px;
+      color: #292929;
+    }
+
+    &-text {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.36;
+      color: #383838;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 11rem;
+    }
+  }
+}
+
 .graph-card {
   width: 100%;
   padding: .9rem 1.35rem;
@@ -1914,6 +1944,150 @@ i {
         &-outlined {
           font-weight: 400;
         }
+      }
+    }
+  }
+}
+
+#teamLeadFeedbackModal {
+  & .modal-dialog {
+    width: 100%;
+    max-width: 58.5rem;
+  }
+
+   & .modal-content {
+    border-radius: 7.5px;
+    max-height: calc(90vh - 36px);
+  }
+
+  & .modal-header {
+    height: 19rem;
+    padding-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+    border-bottom: 2px solid #F4F4F4;
+    background-color: #FFF;
+    z-index: 100;
+
+    & .header-main {
+      text-align: center;
+
+      &-img {
+        margin-bottom: 1.1rem;
+        width: 8rem;
+        height: 8rem;
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%);
+      }
+
+      &-subtitle {
+        margin-bottom: .3rem;
+        font-size: 1.38rem;
+        font-weight: 500;
+        line-height: 1.02;
+        letter-spacing: normal;
+        color: #969696;
+      }
+
+      &-title {
+        margin-bottom: 2.2rem;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: -0.12px;
+        text-align: center;
+        color: #2f3038;
+      }
+    }
+  }
+
+  & .modal-body {
+    height: 100%;
+    max-height: calc(100%);
+    padding: 19rem 4.5rem 7rem;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    & .feedback {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+      width: 100%;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+      
+      &:not(:last-of-type) {
+        border-bottom: 1.25px solid #F0F0F0;
+      }
+
+      &.input {
+        @include align-items(flex-start);
+      @include justify-content(center);
+        @include flex-direction(column);
+      }
+
+      &-text,
+      &-label {
+        max-width: 235px;
+        font-size: 1.45rem;
+        font-weight: 400;
+        line-height: 1.72;
+        letter-spacing: -0.07px;
+        color: #3b3e45;
+      }
+
+      &-label {
+        margin-bottom: 1.3rem;
+      }
+
+      &-input {
+        padding-bottom: 1.28rem;
+        width: 100%;
+        font-size: 1.45rem;
+        font-weight: 400;
+        line-height: 1.72;
+        letter-spacing: -0.07px;
+        color: #afafaf;
+        outline: none;
+        border: none;
+        border-bottom: 1.25px solid #F0F0F0;
+
+        &::placeholder {
+          color: #afafaf;
+        }
+      }
+    }
+  }
+
+  & .modal-footer {
+    z-index: 100;
+    height: 7rem;
+    padding: 1.5rem 4.5rem;
+    background-color: #F7F9FA;
+
+    & .button {
+      padding: .7rem 2.1rem;
+      font-size: 1.5rem;
+      line-height: 1.33;
+      letter-spacing: 0.15px;
+
+      &-outlined {
+        margin-right: 1.2rem;
       }
     }
   }
@@ -2710,6 +2884,49 @@ i {
 
   & .modal-body {
     @include align-items(flex-start);
+  }
+}
+
+.no-data {
+  max-width: 103rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+  height: 42.7rem;
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  &-main {
+    max-width: 44.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    & svg {
+      margin-bottom: 2rem;
+    }
+    &-title {
+      margin-bottom: 1.36rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.33;
+      letter-spacing: -0.2px;
+      color: #292929;
+    }
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.36;
+      letter-spacing: normal;
+      color: #383838;
+    }
+    &-link {
+      font-weight: 500;
+      color: #137efe;
+    }
   }
 }
 
@@ -3624,7 +3841,7 @@ i {
       @include align-self(flex-end);
       @include flexbox;
       @include align-items(center);
-      font-size: 1.55rem;
+      font-size: 1.525rem;
       font-weight: 500;
       line-height: 1.29;
       letter-spacing: 0.12px;
@@ -3632,7 +3849,7 @@ i {
       & i {
         margin-top: -.05rem;
         margin-right: .55rem;
-        font-size: 1.75rem;
+        font-size: 1.7rem;
       }
     }
 
@@ -3714,23 +3931,24 @@ i {
   &-dark {
     background-color: #0f2882;
     border-color: #0f2882;
+    color: #FFF!important;
 
     &:hover,
     &:focus {
-      color: #FFF;
+      color: #FFF!important;
       background-color: #4862be;
       border-color: #4862be;
     }
   }
 
   &-outlined {
-    color: #515558;
+    color: #515558!important;
     border-color: #D1D7DD;
     background-color: #FFF;
 
     &:hover,
     &:focus {
-      color: #515558;
+      color: #515558!important;
       background-color: #efefef!important;
     }
 
@@ -3738,31 +3956,31 @@ i {
     &-success {
       font-weight: 400;
       font-size: 1.3rem;
-      border-radius: 4px;
+      border-radius: 3.5px;
 
       &:hover,
       &:focus {
         color: #efefef;
-        background-color: #515558;
+        background-color: #FFF;
       }
     }
 
     &-success {
-      color: #4dc424;
+      color: #4dc424!important;
 
       &:hover {
-        color: #FFF;
-        background-color: #86df68;
+        color: #4dc424!important;
+        background-color: #FFF!important;
         border-color: #86df68;
       }
     }
 
     &-danger {
-      color: #fd0000;
+      color: #fd0000!important;
 
       &:hover {
-        color: #FFF;
-        background-color: #ff4a4a;
+        color: #fd0000!important;
+        background-color: #FFF!important;
         border-color: #ff4a4a;
       }
     }
@@ -3823,11 +4041,12 @@ i {
   @include align-items(center);
   @include justify-content(center);
   @include flex-direction(column);
-  position: absolute;
-  top: 2rem;
-  left: 0;
+  // position: absolute;
+  // top: 2rem;
+  // left: 0;
   //height: calc(100% - 5rem);
-  height: calc(100% - 4rem);
+  //height: calc(100% - 4rem);
+  min-height: 30rem;
   width: 100%;
   //max-height: calc(100vh - 11rem - 16rem - 8rem -5rem);
   border-radius: 5px;
@@ -4288,6 +4507,8 @@ i {
 
       & svg,
       & .icon-circle-plus {
+        display: inline-block;
+        margin-top: -.25rem;
         font-size: 2.7rem;
         color: #1a9cfc;
         // width: 2.7rem;
@@ -4299,7 +4520,6 @@ i {
         padding: 0;
 
         &-trigger {
-          margin-top: 0;
           padding: 0!important;
           outline: none!important;
           border: none!important;
@@ -4504,7 +4724,8 @@ i {
 
 
         &.active {
-          background-color: #6a6a6a;
+          background-color: #4A4F5A;
+          border-bottom: 1.5px solid #F2F2F2;
           color: #FFF;
 
           &:hover {
@@ -4681,8 +4902,8 @@ i {
       }
 
       & .face {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 3.8rem;
+        height: 3.8rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%);
       }
@@ -4823,16 +5044,14 @@ i {
                   align-items: center;
                   justify-content: center;
                   margin-right: 1.6rem;
-                  min-width: 3.3rem;
-                  min-height: 3.3rem;
-                  width: 3.3rem;
-                  height: 3.3rem;
+                  width: 3.8rem;
+                  height: 3.8rem;
+                  font-size: 1.8rem;
                   border-radius: 50%;
                   text-transform: uppercase;
                   background-color: #FFd800;
                   font-weight: 700;
                   color: #FFF;
-                  letter-spacing: 1px;
                 }
 
                 &-main {
@@ -4929,8 +5148,7 @@ i {
             min-width: 26.6rem;
 
             &-header {
-              margin-bottom: 1.5rem;
-              padding: 2.3rem 1.6rem;
+              padding: 2.3rem 1.7rem;
               @include flexbox;
               @include align-items(center);
               border-bottom: 1px solid #E6E8EB;
@@ -4948,14 +5166,14 @@ i {
                 align-items: center;
                 justify-content: center;
                 margin-right: 1.2rem;
-                width: 4rem;
-                height: 4rem;
+                width: 3.8rem;
+                height: 3.8rem;
+                font-size: 1.8rem;
                 border-radius: 50%;
                 text-transform: uppercase;
                 background-color: #FFd800;
                 font-weight: 700;
                 color: #FFF;
-                letter-spacing: 2px;
               }
 
               & .user-info {
@@ -4967,7 +5185,8 @@ i {
                   color: #3d464d;
                 }
 
-                & a {
+                & a,
+                & button {
                   margin-left: 0;
                   font-size: 1.3rem;
                   line-height: 1.38;
@@ -4983,6 +5202,10 @@ i {
 
             &-item {
               &-link {
+                width: 100%;
+                height: 100%;
+                font-size: 1.5rem;
+                padding: 1.1rem 1.7rem;
                 &.active {
                   color: #0061ff;
                 }
@@ -4990,8 +5213,6 @@ i {
             }
 
             &-footer {
-              margin-top: 1.5rem;
-              padding: 2rem 1.6rem;
               border-top: 1px solid #E6E8EB;
               cursor: pointer;
 
@@ -5000,7 +5221,10 @@ i {
                 background-color: #f7f9fa;
               }
 
-              & a {
+              & a,
+              & button {
+                text-align: left;
+                padding: 2rem 1.7rem;
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -5218,33 +5442,6 @@ i {
       }
     }
 
-    .no-teams {
-      padding-top: 12.5rem;
-      
-      &-card {
-        &-title {
-          margin-bottom: 1.36rem;
-          font-size: 1.8rem;
-          font-weight: 500;
-          line-height: 1.33;
-          letter-spacing: -0.2px;
-          color: #292929;
-        }
-
-        &-text {
-          margin-bottom: 2rem;
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.36;
-          color: #383838;
-        }
-
-        &:not(:last-of-type) {
-          margin-bottom: 11rem;
-        }
-      }
-    }
-
     & .section {
       // position: relative;
 
@@ -5255,10 +5452,11 @@ i {
         @include align-items(center);
         @include justify-content(space-between);
         margin-bottom: 2.2rem;
-        padding: 1rem 1.35rem;
-        padding-right: 1.5rem;
-        background-color: #F7F9FA;
+        padding: 1rem 1.25rem;
+        padding-right: 2rem;
+        background-color: #f5f7f8;
         border-radius: 2.5px;
+        
 
         & p {
           font-size: 1.25rem;
@@ -5273,7 +5471,6 @@ i {
             border: none;
             box-shadow: none;
             font-size: 1.25rem;
-            font-weight: 400;
             line-height: 1.28;
             color: #657383;
             padding: 0;
@@ -5291,6 +5488,10 @@ i {
               box-shadow: none;
             }
           }
+        }
+
+        &.empty {
+          margin-top: 4rem;
         }
       }
 
@@ -6300,7 +6501,7 @@ i {
   padding: 2.5rem 0;
   padding-top: 0;
   padding-bottom: 0;
-  //max-width: 103rem;
+  max-width: 103rem;
   max-height: calc(100vh - 17.2rem - 1px);
 
   overflow-y: auto;
@@ -7106,6 +7307,8 @@ i {
     }
   }
 
+
+
   &-body {
     //max-height: calc(100% - 27rem);
     max-width: 79.7rem;
@@ -7320,6 +7523,49 @@ i {
     width: 80rem;
     max-width: 80rem;
     border-top: 1.5px solid #f2f2f2;
+  }
+
+  & .no-data {
+    max-width: 103rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    height: 42.7rem;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+    &-main {
+      max-width: 44.6rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      & svg {
+        margin-bottom: 2rem;
+      }
+      &-title {
+        margin-bottom: 1.36rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.33;
+        letter-spacing: -0.2px;
+        color: #292929;
+      }
+      &-text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.36;
+        letter-spacing: normal;
+        color: #383838;
+      }
+      &-link {
+        font-weight: 500;
+        color: #137efe;
+      }
+    }
   }
 
   &-header {
@@ -12032,7 +12278,7 @@ i {
   //   height: 0;
   // }
 
-  &::before {
+  &.empty::before {
     content: '';
     display: block;
     position: sticky;
@@ -12058,7 +12304,7 @@ i {
     position: relative;
     margin-bottom: 2.7rem;
     max-width: 103rem;
-    padding-top: 4rem;
+    padding-top: 3.2rem;
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
@@ -12233,6 +12479,9 @@ i {
 
     .no-teams {
       padding-top: 12.5rem;
+      margin-left: 0;
+      max-width: auto;
+      border-top: none;
       
       &-card {
         &-title {
@@ -12271,6 +12520,7 @@ i {
         padding-right: 2rem;
         background-color: #f5f7f8;
         border-radius: 2.5px;
+        
 
         & p {
           font-size: 1.25rem;
@@ -12350,7 +12600,7 @@ i {
     }
 
     & .section-averages {
-      margin-bottom: 4.5rem;
+      margin-bottom: 5.4rem;
 
       & .section-header {
         margin-bottom: 0;
@@ -12830,21 +13080,21 @@ i {
   // height: 100%;
   // max-height: calc(100vh - 20rem);
 
-  &::before {
-    content: '';
-    display: block;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    max-width: calc(103rem - 3.65rem);
-    border-top: 1px solid #e1e1e1;
-  }
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   position: sticky;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 10;
+  //   max-width: calc(103rem - 3.65rem);
+  //   border-top: 1px solid #e1e1e1;
+  // }
 
 
   &-header {
-    padding-top: 4rem;
-    max-width: calc(103rem - 3.65rem);
+    padding-top: 3.2rem;
+    max-width: calc(106.65rem - 3.65rem);
     margin-bottom: 2.7rem;
     @include flexbox;
     @include justify-content(space-between);
@@ -12922,48 +13172,105 @@ i {
     // overflow-y: auto;
     // scrollbar-width: none; /* Firefox */
     // -ms-overflow-style: none; /* Internet Explorer 10+ */
+    & .no-feedback {
+      position: absolute;
+      width: 100%;
+      top: 2rem;
+      left: 0;
+    }
     & .section-comments {
 
       &-header {
-        max-width: calc(103rem - 3.65rem);
+        max-width: calc(106.65rem - 3.65rem);
+        height: 3.7rem;
         @include flexbox;
-        @include justify-content(space-between);
         @include align-items(center);
-        padding: 1rem 1.2rem;
-        padding-right: 1.5rem;
-        background-color: #f7f9fa;
-        border-radius: 1px;
-        font-size: 1.25rem;
-        font-weight: 500;
-        line-height: 1.28;
-        color: #647282;
+        @include justify-content(space-between);
+        margin-bottom: 2.2rem;
+        padding: 1rem 1.25rem;
+        padding-right: 2rem;
+        background-color: #f5f7f8;
         border-radius: 2.5px;
+        
+
+        & p {
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 1.28;
+          color: #647282;
+        }
 
         & .dropdown-custom {
+
           &-trigger {
+            border: none;
+            box-shadow: none;
+            font-size: 1.25rem;
+            line-height: 1.28;
+            color: #657383;
             padding: 0;
-            font-weight: 400;
-            border: 0;
-            white-space: nowrap;
 
             & i {
               font-size: .8rem;
               margin-left: .3rem;
             }
 
+
             &:focus,
             &:active {
-              border: 0;
+              color: #657383;
+              border: none;
               box-shadow: none;
-              color: inherit;
             }
           }
         }
+
+        &.empty {
+          margin-top: 4rem;
+        }
       }
+
+      // &-header {
+      //   height: 3.7rem;
+      //   max-width: calc(103rem - 3.65rem);
+      //   @include flexbox;
+      //   @include justify-content(space-between);
+      //   @include align-items(center);
+      //   padding: 1rem 1.2rem;
+      //   padding-right: 1.5rem;
+      //   background-color: #f5f7f8;
+      //   border-radius: 1px;
+      //   font-size: 1.25rem;
+      //   font-weight: 500;
+      //   line-height: 1.28;
+      //   color: #647282;
+      //   border-radius: 2.5px;
+
+      //   & .dropdown-custom {
+      //     &-trigger {
+      //       padding: 0;
+      //       font-weight: 400;
+      //       border: 0;
+      //       white-space: nowrap;
+
+      //       & i {
+      //         font-size: .8rem;
+      //         margin-left: .3rem;
+      //       }
+
+      //       &:focus,
+      //       &:active {
+      //         border: 0;
+      //         box-shadow: none;
+      //         color: inherit;
+      //       }
+      //     }
+      //   }
+      // }
 
       &-body {
         position: relative;
-        max-width: calc(103rem - 3.65rem);
+        max-width: calc(106.65rem - 3.65rem);
         padding-top: 1.6rem;
         @include grid;
         @include grid-template-columns(repeat(3, 1fr));
@@ -13022,7 +13329,7 @@ i {
 
       &-body-new {
         position: relative;
-        max-width: calc(103rem - 3.65rem);
+        max-width: calc(106.65rem - 3.65rem);
         padding-top: 1.6rem;
         @include grid;
         @include grid-template-columns(repeat(3, 1fr));
