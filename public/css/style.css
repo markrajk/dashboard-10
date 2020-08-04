@@ -1157,7 +1157,9 @@ i {
       -webkit-flex-direction: column;
       -moz-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      border-bottom: none;
+      padding-bottom: 0; }
     #teamLeadFeedbackModal .modal-body .feedback-text, #teamLeadFeedbackModal .modal-body .feedback-label {
       max-width: 235px;
       font-size: 1.45rem;

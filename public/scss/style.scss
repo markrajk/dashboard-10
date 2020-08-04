@@ -2037,8 +2037,10 @@ i {
 
       &.input {
         @include align-items(flex-start);
-      @include justify-content(center);
+        @include justify-content(center);
         @include flex-direction(column);
+        border-bottom: none;
+        padding-bottom: 0;
       }
 
       &-text,
