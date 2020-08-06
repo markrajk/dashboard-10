@@ -1199,6 +1199,22 @@ i {
       #teamLeadFeedbackModal .modal-body .feedback-input::placeholder,
       #teamFeedbackModal .modal-body .feedback-input::placeholder {
         color: #afafaf; }
+  #teamLeadFeedbackModal .modal-body .feedback-success,
+  #teamFeedbackModal .modal-body .feedback-success {
+    text-align: center; }
+    #teamLeadFeedbackModal .modal-body .feedback-success svg,
+    #teamFeedbackModal .modal-body .feedback-success svg {
+      margin-bottom: 6rem;
+      margin-top: 10rem;
+      width: 13rem;
+      height: 13rem; }
+    #teamLeadFeedbackModal .modal-body .feedback-success-text,
+    #teamFeedbackModal .modal-body .feedback-success-text {
+      margin-bottom: 3rem;
+      font-size: 1.65rem;
+      font-weight: 400;
+      line-height: 1.52;
+      color: #3b3e45; }
 #teamLeadFeedbackModal .modal-footer,
 #teamFeedbackModal .modal-footer {
   z-index: 100;
@@ -1214,6 +1230,9 @@ i {
     #teamLeadFeedbackModal .modal-footer .button-outlined,
     #teamFeedbackModal .modal-footer .button-outlined {
       margin-right: 1.2rem; }
+    #teamLeadFeedbackModal .modal-footer .button-grey,
+    #teamFeedbackModal .modal-footer .button-grey {
+      background-color: #6c6c6c; }
 
 #inviteEmployeesModal .modal-dialog {
   max-width: 57.2rem; }
