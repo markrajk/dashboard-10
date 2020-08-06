@@ -22,7 +22,11 @@
   </button>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamLeadFeedbackModal">
-    Modal01
+    Modal02
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inviteTeamMembersModal">
+    Invite team members new
   </button>
 
   <!-- TEAM FEEDBACK -->
@@ -299,6 +303,30 @@
           <button class="button button-grey">Sent</button>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <!-- NORMAL INVITE NEW TEAM MEMBERS -->
+  <div class="modal fade modal-custom" id="inviteTeamMembersModal" tabindex="-1" role="dialog"
+    aria-labelledby="inviteTeamMembersModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="title">Team React Native</h2>
+          <p class="text">Invite new team members</p>
+          <input type="email" placeholder="Enter email">
+          <input class="input-next" type="email" placeholder="Enter email">
+          <div class="buttons">
+            <button class="button button-primary" data-toggle="modal" data-target="#transferOwnershipConfirm"
+              data-dismiss="modal" aria-label="Close">Send invites</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

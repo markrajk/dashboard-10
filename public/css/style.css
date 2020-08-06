@@ -1234,6 +1234,50 @@ i {
     #teamFeedbackModal .modal-footer .button-grey {
       background-color: #6c6c6c; }
 
+#inviteTeamMembersModal .modal-dialog {
+  max-width: 40.2rem; }
+#inviteTeamMembersModal .modal-content {
+  border-radius: 6px; }
+#inviteTeamMembersModal .modal-body {
+  padding: 0 6rem 5rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+  #inviteTeamMembersModal .modal-body .title {
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    color: #454545; }
+  #inviteTeamMembersModal .modal-body .text {
+    margin-bottom: .8rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.38;
+    letter-spacing: 0.13px;
+    color: #7b8993; }
+  #inviteTeamMembersModal .modal-body input {
+    margin-bottom: 1.4rem;
+    padding: .75rem 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: 0.14px;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px; }
+    #inviteTeamMembersModal .modal-body input::placeholder {
+      color: #7e7e7e; }
+    #inviteTeamMembersModal .modal-body input.input-next {
+      background-color: #FAFDFF; }
+      #inviteTeamMembersModal .modal-body input.input-next::placeholder {
+        color: #cccccc; }
+  #inviteTeamMembersModal .modal-body .buttons {
+    margin-top: 1.4rem; }
+
 #inviteEmployeesModal .modal-dialog {
   max-width: 57.2rem; }
 #inviteEmployeesModal .modal-content {
