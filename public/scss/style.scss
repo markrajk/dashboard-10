@@ -1949,7 +1949,8 @@ i {
   }
 }
 
-#teamLeadFeedbackModal {
+#teamLeadFeedbackModal,
+#teamFeedbackModal {
   & .modal-dialog {
     width: 100%;
     max-width: 58.5rem;
@@ -3150,7 +3151,6 @@ i {
     }
 
     &-name {
-      margin-top: .3rem;
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.33;
@@ -4279,6 +4279,10 @@ i {
     outline: none;
     cursor: pointer;
 
+    &-value {
+      font-weight: 500;
+    }
+
     & .you {
       font-weight: 500;
     }
@@ -4511,7 +4515,7 @@ i {
       & .icon-circle-plus {
         display: inline-block;
         margin-top: -.25rem;
-        font-size: 2.7rem;
+        font-size: 2.65rem;
         color: #1a9cfc;
         // width: 2.7rem;
         // height: 2.7rem;
@@ -4532,10 +4536,14 @@ i {
           -webkit-transform: scale(1);
           transition: none!important;
     
-            &:hover {
-              transform: scale(1.1);
-              -webkit-transform: scale(1.1);
-            }
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+          }
+
+          &:hover+.dropdown-custom-list {
+            display: block !important;
+          }
         }
 
         &-list {
@@ -4678,6 +4686,7 @@ i {
           }
 
           &.placeholder {
+            border-radius: 6px;
             text-align: center;
           }
 
@@ -6079,7 +6088,7 @@ i {
     height: 100%;
     padding-top: 2.7rem;
     padding-left: 3.65rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     min-width: 100%;
     //max-width: calc(100vw -  37.2rem - 3.2rem - .5rem);
     @include flexbox;
@@ -6273,8 +6282,8 @@ i {
 
           &-img {
             margin-right: 1.28rem;
-            width: 5.5rem;
-            height: 5.5rem;
+            width: 5.25rem;
+            height: 5.25rem;
             border-radius: 50%;
           }
 
@@ -6283,9 +6292,9 @@ i {
             @include align-items(center);
             @include justify-content(center);
             margin-right: 1.28rem;
-            width: 5.5rem;
-            height: 5.5rem;
-            font-size: 2.2rem;
+            width: 5.25rem;
+            height: 5.25rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #FFF;
             border-radius: 50%;
@@ -6327,7 +6336,7 @@ i {
 
       &-main {
         padding-bottom: 3.5rem;
-        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem - 2rem);
+        max-height: calc(100vh - 17.8rem - 1.5px - 6.8rem - 1.75px - 1rem - 2rem);
 
         overflow-x: auto;
         scrollbar-width: none;
@@ -6547,7 +6556,6 @@ i {
       line-height: 1.28;
       color: #647282;
       border-radius: 2.5px;
-      font-weight: 400;
 
       & span {
         font-weight: 500;
@@ -6726,7 +6734,7 @@ i {
 
       & input {
         width: 100%;
-        padding: .65rem 2.8rem;
+        padding: .6rem 2.8rem;
         padding-right: 1.5rem;
         font-size: 1.4rem;
         line-height: 1.36;
@@ -6833,7 +6841,7 @@ i {
       &:nth-of-type(2) {
         @include flex(.7);
 
-        @include respond(desktop-xxsm) {
+        @include custom-respond(500) {
           display: none;
         }
       }
@@ -6846,7 +6854,8 @@ i {
         }
 
         & .button {
-          padding: .6rem 2.6rem;
+          width: 9rem;
+          padding: .6rem 0;
         }
       }
 
@@ -6859,6 +6868,19 @@ i {
     &-head {
       border: none;
       height: 3.7rem;
+
+      & tr {
+        padding: 1rem 1.7rem;
+        background-color: #f7f9fa;
+        border-radius: 2.5px;
+      }
+
+        & td {
+          font-size: 1.25rem;
+          font-weight: 500;
+          line-height: 1.33;
+          color: #647282;
+        }
     }
 
     &-body {
@@ -6870,7 +6892,7 @@ i {
       & tr {
         padding-top: .6rem;
         padding-bottom: .6rem;
-        padding-left: .7rem;
+        padding-left: 1.7rem;
 
         &:not(:last-of-type) {
           border-bottom: 1.25px solid #F2F2F2 !important;
@@ -6946,9 +6968,30 @@ i {
           }
 
           & .name {
+            position: relative;
             font-size: 1.4rem;
             line-height: 1.36;
             color: #1b2733;
+
+            & .crown {
+              position: absolute;
+              top: 0;
+              right: -.7rem;
+              transform: translate(100%, 100%);
+              display: none;
+
+              & svg {
+                width: 1.38rem;
+                height: 1.1rem;
+              }
+            }
+
+            &.lead {
+              & .crown {
+                margin-top: -1rem;
+                display: inline-block;
+              }
+            }
           }
 
           & .email {
@@ -6970,12 +7013,27 @@ i {
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
+
+        & .update-jobtitle,
+        & p {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          border: 0;
+          outline: none;
+          letter-spacing: normal!important;
+          color: #1b2733;
+
+          &::placeholder {
+            color: #1b2733;
+          }
+        }
       }
 
       .table-custom-col-03 {
         & .btn-custom-table {
+          width: 8rem;
           display: inline-block;
-          padding: .6rem 1.8rem;
+          padding: .6rem 0rem;
           font-size: 1.4rem;
           font-weight: 500;
           line-height: 1.36;
@@ -7302,10 +7360,11 @@ i {
   &-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 2.7rem;
+    margin-bottom: 1.2rem;
 
     .button {
       margin-right: 1.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -7386,6 +7445,12 @@ i {
           &.desc {
             width: 100%;
             max-width: 40rem;
+
+            &.empty {
+              &::placeholder {
+                color: #c6c6c6!important;
+              }
+            }
           }
         }
 
@@ -7406,7 +7471,7 @@ i {
           -webkit-appearance: none;
           appearance: none;
 
-          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
           background-repeat: no-repeat;
           background-position-x: 95%;
           background-position-y: 50%;
@@ -7550,14 +7615,14 @@ i {
       }
       &-title {
         margin-bottom: 1.36rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.33;
         letter-spacing: -0.2px;
         color: #292929;
       }
       &-text {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         font-weight: 400;
         line-height: 1.36;
         letter-spacing: normal;
@@ -7573,10 +7638,11 @@ i {
   &-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 2.7rem;
+    margin-bottom: 1.2rem;
 
     .button {
       margin-right: 1.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 
@@ -7812,11 +7878,12 @@ i {
   &-header {
     max-width: 80.5rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.3rem;
+    margin-bottom: 1.8rem;
   }
 
   & .button {
     margin-right: 1.4rem;
+    margin-bottom: 1.5rem;
   }
 
   &-body {
@@ -7938,9 +8005,10 @@ i {
           }
 
           &#not-yet {
-            margin-top: 8rem;
-            margin-bottom: 8rem;
+            padding-top: 8rem;
+            padding-bottom: 8rem;
             border: 0 !important;
+            border-top: solid 1px #e6e8eb!important;
 
             & #not-yet-td {
               @include flex-direction(column);
@@ -8137,11 +8205,12 @@ i {
   &-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.3rem;
+    margin-bottom: 1.8rem;
 
     & a,
     button {
       margin-right: 1.4rem;
+      margin-bottom: 1.5rem;
     }
   }
 

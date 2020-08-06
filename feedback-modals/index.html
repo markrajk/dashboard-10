@@ -17,13 +17,17 @@
 
 <body>
 
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamLeadFeedbackModal">
-    Launch demo modal
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamFeedbackModal">
+    Modal01
   </button>
 
-  <!-- INVITE EMPLOYEES -->
-  <div class="modal fade modal-custom" id="teamLeadFeedbackModal" tabindex="-1" role="dialog"
-    aria-labelledby="teamLeadFeedbackModal" aria-hidden="true">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamLeadFeedbackModal">
+    Modal01
+  </button>
+
+  <!-- TEAM FEEDBACK -->
+  <div class="modal fade modal-custom" id="teamFeedbackModal" tabindex="-1" role="dialog"
+    aria-labelledby="teamFeedbackModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -155,6 +159,80 @@
           <div class="feedback feedback-02">
             <p class="feedback-text">How well do you think work
               is planned in this team?</p>
+            <div class="stars">
+              <input type="radio" name="attitude" id="attitude1">
+              <label for="attitude1"></label>
+
+              <input type="radio" name="attitude" id="attitude2">
+              <label for="attitude2"></label>
+
+              <input type="radio" name="attitude" id="attitude3">
+              <label for="attitude3"></label>
+
+              <input type="radio" name="attitude" id="attitude4">
+              <label for="attitude4"></label>
+
+              <input type="radio" name="attitude" id="attitude5">
+              <label for="attitude5"></label>
+            </div>
+          </div>
+
+          <div class="feedback input feedback-03">
+            <label for="idea01" class="feedback-label">Add an improvement idea</label>
+            <input type="text" class="feedback-input" placeholder="Write here..." name="idea01" id="idea01">
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button-primary">Send feedback</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TEAM LEAD FEEDBACK -->
+  <div class="modal fade modal-custom" id="teamLeadFeedbackModal" tabindex="-1" role="dialog"
+    aria-labelledby="teamLeadFeedbackModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+          <div class="header-main">
+            <img src="../public/img/p-01.png" alt="" class="header-main-img">
+            <p class="header-main-subtitle">Give anonymous feedback about</p>
+            <h3 class="header-main-title">Nikhil Bhatia</h3>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="feedback feedback-01">
+            <p class="feedback-text">How do you feel working in
+              this team at the moment?</p>
+            <div class="stars">
+              <input type="radio" name="attitude" id="attitude1">
+              <label for="attitude1"></label>
+
+              <input type="radio" name="attitude" id="attitude2">
+              <label for="attitude2"></label>
+
+              <input type="radio" name="attitude" id="attitude3">
+              <label for="attitude3"></label>
+
+              <input type="radio" name="attitude" id="attitude4">
+              <label for="attitude4"></label>
+
+              <input type="radio" name="attitude" id="attitude5">
+              <label for="attitude5"></label>
+            </div>
+          </div>
+
+          <div class="feedback feedback-02">
+            <p class="feedback-text">How good and clear instructions does this team lead give?</p>
             <div class="stars">
               <input type="radio" name="attitude" id="attitude1">
               <label for="attitude1"></label>

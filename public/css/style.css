@@ -1048,13 +1048,16 @@ i {
       #addQuestionModal .modal-body .buttons .button-outlined {
         font-weight: 400; }
 
-#teamLeadFeedbackModal .modal-dialog {
+#teamLeadFeedbackModal .modal-dialog,
+#teamFeedbackModal .modal-dialog {
   width: 100%;
   max-width: 58.5rem; }
-#teamLeadFeedbackModal .modal-content {
+#teamLeadFeedbackModal .modal-content,
+#teamFeedbackModal .modal-content {
   border-radius: 7.5px;
   max-height: calc(90vh - 36px); }
-#teamLeadFeedbackModal .modal-header {
+#teamLeadFeedbackModal .modal-header,
+#teamFeedbackModal .modal-header {
   height: 19rem;
   padding-bottom: 0;
   position: absolute;
@@ -1085,22 +1088,26 @@ i {
   border-bottom: 2px solid #F4F4F4;
   background-color: #FFF;
   z-index: 100; }
-  #teamLeadFeedbackModal .modal-header .header-main {
+  #teamLeadFeedbackModal .modal-header .header-main,
+  #teamFeedbackModal .modal-header .header-main {
     text-align: center; }
-    #teamLeadFeedbackModal .modal-header .header-main-img {
+    #teamLeadFeedbackModal .modal-header .header-main-img,
+    #teamFeedbackModal .modal-header .header-main-img {
       margin-bottom: 1.1rem;
       width: 8rem;
       height: 8rem;
       clip-path: circle(48% at 50% 50%);
       -webkit-clip-path: circle(48% at 50% 50%); }
-    #teamLeadFeedbackModal .modal-header .header-main-subtitle {
+    #teamLeadFeedbackModal .modal-header .header-main-subtitle,
+    #teamFeedbackModal .modal-header .header-main-subtitle {
       margin-bottom: .3rem;
       font-size: 1.38rem;
       font-weight: 500;
       line-height: 1.02;
       letter-spacing: normal;
       color: #969696; }
-    #teamLeadFeedbackModal .modal-header .header-main-title {
+    #teamLeadFeedbackModal .modal-header .header-main-title,
+    #teamFeedbackModal .modal-header .header-main-title {
       margin-bottom: 2.2rem;
       font-size: 2.4rem;
       font-weight: 500;
@@ -1108,7 +1115,8 @@ i {
       letter-spacing: -0.12px;
       text-align: center;
       color: #2f3038; }
-#teamLeadFeedbackModal .modal-body {
+#teamLeadFeedbackModal .modal-body,
+#teamFeedbackModal .modal-body {
   height: 100%;
   max-height: calc(100%);
   padding: 19rem 4.5rem 7rem;
@@ -1117,10 +1125,12 @@ i {
   /* Firefox */
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */ }
-  #teamLeadFeedbackModal .modal-body::-webkit-scrollbar {
+  #teamLeadFeedbackModal .modal-body::-webkit-scrollbar,
+  #teamFeedbackModal .modal-body::-webkit-scrollbar {
     width: 0;
     height: 0; }
-  #teamLeadFeedbackModal .modal-body .feedback {
+  #teamLeadFeedbackModal .modal-body .feedback,
+  #teamFeedbackModal .modal-body .feedback {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     width: 100%;
@@ -1139,9 +1149,11 @@ i {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between; }
-    #teamLeadFeedbackModal .modal-body .feedback:not(:last-of-type) {
+    #teamLeadFeedbackModal .modal-body .feedback:not(:last-of-type),
+    #teamFeedbackModal .modal-body .feedback:not(:last-of-type) {
       border-bottom: 1.25px solid #F0F0F0; }
-    #teamLeadFeedbackModal .modal-body .feedback.input {
+    #teamLeadFeedbackModal .modal-body .feedback.input,
+    #teamFeedbackModal .modal-body .feedback.input {
       -webkit-box-align: start;
       -ms-flex-align: start;
       -webkit-align-items: flex-start;
@@ -1160,16 +1172,20 @@ i {
       flex-direction: column;
       border-bottom: none;
       padding-bottom: 0; }
-    #teamLeadFeedbackModal .modal-body .feedback-text, #teamLeadFeedbackModal .modal-body .feedback-label {
+    #teamLeadFeedbackModal .modal-body .feedback-text, #teamLeadFeedbackModal .modal-body .feedback-label,
+    #teamFeedbackModal .modal-body .feedback-text,
+    #teamFeedbackModal .modal-body .feedback-label {
       max-width: 235px;
       font-size: 1.45rem;
       font-weight: 400;
       line-height: 1.72;
       letter-spacing: -0.07px;
       color: #3b3e45; }
-    #teamLeadFeedbackModal .modal-body .feedback-label {
+    #teamLeadFeedbackModal .modal-body .feedback-label,
+    #teamFeedbackModal .modal-body .feedback-label {
       margin-bottom: 1.3rem; }
-    #teamLeadFeedbackModal .modal-body .feedback-input {
+    #teamLeadFeedbackModal .modal-body .feedback-input,
+    #teamFeedbackModal .modal-body .feedback-input {
       padding-bottom: 1.28rem;
       width: 100%;
       font-size: 1.45rem;
@@ -1180,19 +1196,23 @@ i {
       outline: none;
       border: none;
       border-bottom: 1.25px solid #F0F0F0; }
-      #teamLeadFeedbackModal .modal-body .feedback-input::placeholder {
+      #teamLeadFeedbackModal .modal-body .feedback-input::placeholder,
+      #teamFeedbackModal .modal-body .feedback-input::placeholder {
         color: #afafaf; }
-#teamLeadFeedbackModal .modal-footer {
+#teamLeadFeedbackModal .modal-footer,
+#teamFeedbackModal .modal-footer {
   z-index: 100;
   height: 7rem;
   padding: 1.5rem 4.5rem;
   background-color: #F7F9FA; }
-  #teamLeadFeedbackModal .modal-footer .button {
+  #teamLeadFeedbackModal .modal-footer .button,
+  #teamFeedbackModal .modal-footer .button {
     padding: .7rem 2.1rem;
     font-size: 1.5rem;
     line-height: 1.33;
     letter-spacing: 0.15px; }
-    #teamLeadFeedbackModal .modal-footer .button-outlined {
+    #teamLeadFeedbackModal .modal-footer .button-outlined,
+    #teamFeedbackModal .modal-footer .button-outlined {
       margin-right: 1.2rem; }
 
 #inviteEmployeesModal .modal-dialog {
@@ -2153,7 +2173,6 @@ i {
       color: #FFF;
       background-color: #FFd800; }
     .comment-header-name {
-      margin-top: .3rem;
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.33;
@@ -3068,6 +3087,8 @@ i {
     background-color: rgba(255, 255, 255, 0.59);
     outline: none;
     cursor: pointer; }
+    .new-dropdown-trigger-value {
+      font-weight: 500; }
     .new-dropdown-trigger .you {
       font-weight: 500; }
     .new-dropdown-trigger:active, .new-dropdown-trigger:focus {
@@ -3273,7 +3294,7 @@ i {
       .sidebar-menu-header svg, .sidebar-menu-header .icon-circle-plus {
         display: inline-block;
         margin-top: -.25rem;
-        font-size: 2.7rem;
+        font-size: 2.65rem;
         color: #1a9cfc; }
       .sidebar-menu-header .dd-new.dropdown-custom {
         padding: 0; }
@@ -3289,6 +3310,8 @@ i {
           .sidebar-menu-header .dd-new.dropdown-custom-trigger:hover {
             transform: scale(1.1);
             -webkit-transform: scale(1.1); }
+          .sidebar-menu-header .dd-new.dropdown-custom-trigger:hover + .dropdown-custom-list {
+            display: block !important; }
         .sidebar-menu-header .dd-new.dropdown-custom-list {
           padding: .7rem;
           min-width: 26.2rem;
@@ -3408,6 +3431,7 @@ i {
               .sidebar-menu-list-item-link.active .icon-close:hover {
                 transform: translate(-120%, -50%) scale(1.2); }
           .sidebar-menu-list-item-link.placeholder {
+            border-radius: 6px;
             text-align: center; }
         .sidebar-menu-list-item .icon-close {
           visibility: hidden;
@@ -4489,7 +4513,7 @@ i {
     height: 100%;
     padding-top: 2.7rem;
     padding-left: 3.65rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
     min-width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4717,8 +4741,8 @@ i {
           .teams-compare-body-card-header-info-img,
           .people-compare-body-card-header-info-img {
             margin-right: 1.28rem;
-            width: 5.5rem;
-            height: 5.5rem;
+            width: 5.25rem;
+            height: 5.25rem;
             border-radius: 50%; }
           .teams-compare-body-card-header-info-initials,
           .people-compare-body-card-header-info-initials {
@@ -4738,9 +4762,9 @@ i {
             -moz-justify-content: center;
             justify-content: center;
             margin-right: 1.28rem;
-            width: 5.5rem;
-            height: 5.5rem;
-            font-size: 2.2rem;
+            width: 5.25rem;
+            height: 5.25rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #FFF;
             border-radius: 50%;
@@ -4786,7 +4810,7 @@ i {
       .teams-compare-body-card-main,
       .people-compare-body-card-main {
         padding-bottom: 3.5rem;
-        max-height: calc(100vh - 17.8rem - 1.5px - 9.8rem - 1.75px - 1rem - 2rem);
+        max-height: calc(100vh - 17.8rem - 1.5px - 6.8rem - 1.75px - 1rem - 2rem);
         overflow-x: auto;
         scrollbar-width: none;
         /* Firefox */
@@ -4974,8 +4998,7 @@ i {
       font-weight: 500;
       line-height: 1.28;
       color: #647282;
-      border-radius: 2.5px;
-      font-weight: 400; }
+      border-radius: 2.5px; }
       .teams-comments .section-comments-header span {
         font-weight: 500; }
       .teams-comments .section-comments-header .dropdown-custom-trigger {
@@ -5136,7 +5159,7 @@ i {
       display: inline-block; }
       .teams-people-view-header .input-container input {
         width: 100%;
-        padding: .65rem 2.8rem;
+        padding: .6rem 2.8rem;
         padding-right: 1.5rem;
         font-size: 1.4rem;
         line-height: 1.36;
@@ -5244,7 +5267,7 @@ i {
       -moz-flex: 0.7;
       -ms-flex: 0.7;
       flex: 0.7; }
-      @media (max-width: 379px) {
+      @media (max-width: 500px) {
         .teams-people-view .table-custom td:nth-of-type(2), .teams-people-view .table-custom th:nth-of-type(2) {
           display: none; } }
     .teams-people-view .table-custom td:nth-of-type(3), .teams-people-view .table-custom th:nth-of-type(3) {
@@ -5258,7 +5281,8 @@ i {
         .teams-people-view .table-custom td:nth-of-type(3), .teams-people-view .table-custom th:nth-of-type(3) {
           display: none; } }
       .teams-people-view .table-custom td:nth-of-type(3) .button, .teams-people-view .table-custom th:nth-of-type(3) .button {
-        padding: .6rem 2.6rem; }
+        width: 9rem;
+        padding: .6rem 0; }
     .teams-people-view .table-custom td:nth-of-type(4), .teams-people-view .table-custom th:nth-of-type(4) {
       -webkit-box-flex: none;
       -webkit-flex: none;
@@ -5270,6 +5294,15 @@ i {
     .teams-people-view .table-custom-head {
       border: none;
       height: 3.7rem; }
+      .teams-people-view .table-custom-head tr {
+        padding: 1rem 1.7rem;
+        background-color: #f7f9fa;
+        border-radius: 2.5px; }
+      .teams-people-view .table-custom-head td {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #647282; }
     .teams-people-view .table-custom-body {
       border: none;
       border-bottom: solid 1.25px #F2F2F2;
@@ -5277,7 +5310,7 @@ i {
       .teams-people-view .table-custom-body tr {
         padding-top: .6rem;
         padding-bottom: .6rem;
-        padding-left: .7rem; }
+        padding-left: 1.7rem; }
         .teams-people-view .table-custom-body tr:not(:last-of-type) {
           border-bottom: 1.25px solid #F2F2F2 !important; }
         .teams-people-view .table-custom-body tr#not-yet {
@@ -5352,9 +5385,22 @@ i {
           background-color: #FFd800;
           letter-spacing: 0; }
         .teams-people-view .table-custom-body .table-custom-col-01 a .name {
+          position: relative;
           font-size: 1.4rem;
           line-height: 1.36;
           color: #1b2733; }
+          .teams-people-view .table-custom-body .table-custom-col-01 a .name .crown {
+            position: absolute;
+            top: 0;
+            right: -.7rem;
+            transform: translate(100%, 100%);
+            display: none; }
+            .teams-people-view .table-custom-body .table-custom-col-01 a .name .crown svg {
+              width: 1.38rem;
+              height: 1.1rem; }
+          .teams-people-view .table-custom-body .table-custom-col-01 a .name.lead .crown {
+            margin-top: -1rem;
+            display: inline-block; }
         .teams-people-view .table-custom-body .table-custom-col-01 a .email {
           margin-top: .2rem;
           display: block;
@@ -5368,9 +5414,19 @@ i {
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733; }
+        .teams-people-view .table-custom-body .table-custom-col-02 .update-jobtitle, .teams-people-view .table-custom-body .table-custom-col-02 p {
+          font-size: 1.4rem;
+          line-height: 1.36;
+          border: 0;
+          outline: none;
+          letter-spacing: normal !important;
+          color: #1b2733; }
+          .teams-people-view .table-custom-body .table-custom-col-02 .update-jobtitle::placeholder, .teams-people-view .table-custom-body .table-custom-col-02 p::placeholder {
+            color: #1b2733; }
       .teams-people-view .table-custom-body .table-custom-col-03 .btn-custom-table {
+        width: 8rem;
         display: inline-block;
-        padding: .6rem 1.8rem;
+        padding: .6rem 0rem;
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 1.36;
@@ -5496,9 +5552,10 @@ i {
   .teams-settings-general-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 2.7rem; }
+    margin-bottom: 1.2rem; }
     .teams-settings-general-header .button {
-      margin-right: 1.4rem; }
+      margin-right: 1.4rem;
+      margin-bottom: 1.5rem; }
   .teams-settings-general-body {
     max-width: 79.7rem; }
     .teams-settings-general-body .settings-table-header {
@@ -5561,6 +5618,8 @@ i {
         .teams-settings-general-body .settings-table-row .settings-input.desc {
           width: 100%;
           max-width: 40rem; }
+          .teams-settings-general-body .settings-table-row .settings-input.desc.empty::placeholder {
+            color: #c6c6c6 !important; }
       .teams-settings-general-body .settings-table-row select {
         margin-right: 0;
         position: relative;
@@ -5576,7 +5635,7 @@ i {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
         background-repeat: no-repeat;
         background-position-x: 95%;
         background-position-y: 50%; }
@@ -5676,13 +5735,13 @@ i {
         margin-bottom: 2rem; }
       .teams-settings-question .no-data-main-title {
         margin-bottom: 1.36rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.33;
         letter-spacing: -0.2px;
         color: #292929; }
       .teams-settings-question .no-data-main-text {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         font-weight: 400;
         line-height: 1.36;
         letter-spacing: normal;
@@ -5693,9 +5752,10 @@ i {
   .teams-settings-question-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 2.7rem; }
+    margin-bottom: 1.2rem; }
     .teams-settings-question-header .button {
-      margin-right: 1.4rem; }
+      margin-right: 1.4rem;
+      margin-bottom: 1.5rem; }
   .teams-settings-question-body {
     max-width: 79.7rem; }
     .teams-settings-question-body .button-primary.add-new {
@@ -5851,9 +5911,10 @@ i {
   .teams-settings-feedback-header {
     max-width: 80.5rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.3rem; }
+    margin-bottom: 1.8rem; }
   .teams-settings-feedback .button {
-    margin-right: 1.4rem; }
+    margin-right: 1.4rem;
+    margin-bottom: 1.5rem; }
   .teams-settings-feedback-body {
     max-width: 81.7rem;
     max-height: calc(100vh - 26.3rem - 1.5px); }
@@ -5962,9 +6023,10 @@ i {
           .teams-settings-feedback-body .table-custom-body tr:not(:last-of-type) {
             border: none; }
           .teams-settings-feedback-body .table-custom-body tr#not-yet {
-            margin-top: 8rem;
-            margin-bottom: 8rem;
-            border: 0 !important; }
+            padding-top: 8rem;
+            padding-bottom: 8rem;
+            border: 0 !important;
+            border-top: solid 1px #e6e8eb !important; }
             .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td {
               -webkit-box-direction: normal;
               -webkit-box-orient: vertical;
@@ -6113,10 +6175,11 @@ i {
   .teams-settings-rights-header {
     max-width: 72rem;
     padding-top: 2.6rem;
-    margin-bottom: 3.3rem; }
+    margin-bottom: 1.8rem; }
     .teams-settings-rights-header a,
     .teams-settings-rights-header button {
-      margin-right: 1.4rem; }
+      margin-right: 1.4rem;
+      margin-bottom: 1.5rem; }
   .teams-settings-rights-body {
     max-width: 81.7rem;
     max-height: calc(100vh - 27rem - 1.5px); }
