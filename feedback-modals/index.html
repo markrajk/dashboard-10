@@ -18,11 +18,15 @@
 <body>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamFeedbackModal">
-    Modal01
+    Team feedback
   </button>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#teamLeadFeedbackModal">
-    Modal02
+    Team lead Feedback
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#peerFeedbackModal">
+    Peer to peer
   </button>
 
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#inviteTeamMembersModal">
@@ -256,6 +260,117 @@
 
             <div class="feedback feedback-02">
               <p class="feedback-text">How good and clear instructions does this team lead give?</p>
+              <div class="stars">
+                <input type="radio" name="attitude" id="attitude1">
+                <label for="attitude1"></label>
+
+                <input type="radio" name="attitude" id="attitude2">
+                <label for="attitude2"></label>
+
+                <input type="radio" name="attitude" id="attitude3">
+                <label for="attitude3"></label>
+
+                <input type="radio" name="attitude" id="attitude4">
+                <label for="attitude4"></label>
+
+                <input type="radio" name="attitude" id="attitude5">
+                <label for="attitude5"></label>
+              </div>
+            </div>
+
+            <div class="feedback input feedback-03">
+              <label for="idea01" class="feedback-label">Add an improvement idea</label>
+              <input type="text" class="feedback-input" placeholder="Write here..." name="idea01" id="idea01">
+            </div>
+          </div>
+
+          <div class="feedback-success">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
+              <g transform="translate(-656 -417)">
+                <g transform="translate(656 417)" fill="none" stroke="#57cb29" stroke-width="5">
+                  <circle cx="65" cy="65" r="65" stroke="none" />
+                  <circle cx="65" cy="65" r="62.5" fill="none" />
+                </g>
+                <path d="M17780.848,7906.437l-33.137,32.151-14.869-14.511" transform="translate(-17035 -7440)"
+                  fill="none" stroke="#57cb29" stroke-linecap="round" stroke-width="6" />
+              </g>
+            </svg>
+            <p class="feedback-success-text">Feedback sent successfully.</p>
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button-primary">Send feedback</button>
+          <button class="button button-primary">Sending</button>
+          <button class="button button-grey">Sent</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- PEER TO PEER FEEDBACK -->
+  <div class="modal fade modal-custom" id="peerFeedbackModal" tabindex="-1" role="dialog"
+    aria-labelledby="peerFeedbackModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+          <div class="header-main">
+            <img src="../public/img/p-01.png" alt="" class="header-main-img">
+            <p class="header-main-subtitle">Give feedback to</p>
+            <h3 class="header-main-title">Nikhil Bhatia</h3>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="feedback-container">
+            <div class="feedback feedback-01">
+              <p class="feedback-text">Attitude</p>
+              <div class="stars">
+                <input type="radio" name="attitude" id="attitude1">
+                <label for="attitude1"></label>
+
+                <input type="radio" name="attitude" id="attitude2">
+                <label for="attitude2"></label>
+
+                <input type="radio" name="attitude" id="attitude3">
+                <label for="attitude3"></label>
+
+                <input type="radio" name="attitude" id="attitude4">
+                <label for="attitude4"></label>
+
+                <input type="radio" name="attitude" id="attitude5">
+                <label for="attitude5"></label>
+              </div>
+            </div>
+
+            <div class="feedback feedback-02">
+              <p class="feedback-text">Productivity</p>
+              <div class="stars">
+                <input type="radio" name="attitude" id="attitude1">
+                <label for="attitude1"></label>
+
+                <input type="radio" name="attitude" id="attitude2">
+                <label for="attitude2"></label>
+
+                <input type="radio" name="attitude" id="attitude3">
+                <label for="attitude3"></label>
+
+                <input type="radio" name="attitude" id="attitude4">
+                <label for="attitude4"></label>
+
+                <input type="radio" name="attitude" id="attitude5">
+                <label for="attitude5"></label>
+              </div>
+            </div>
+
+            <div class="feedback feedback-03">
+              <p class="feedback-text">Teamworking</p>
               <div class="stars">
                 <input type="radio" name="attitude" id="attitude1">
                 <label for="attitude1"></label>

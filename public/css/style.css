@@ -1049,15 +1049,18 @@ i {
         font-weight: 400; }
 
 #teamLeadFeedbackModal .modal-dialog,
-#teamFeedbackModal .modal-dialog {
+#teamFeedbackModal .modal-dialog,
+#peerFeedbackModal .modal-dialog {
   width: 100%;
-  max-width: 58.5rem; }
+  max-width: 56.1rem; }
 #teamLeadFeedbackModal .modal-content,
-#teamFeedbackModal .modal-content {
+#teamFeedbackModal .modal-content,
+#peerFeedbackModal .modal-content {
   border-radius: 7.5px;
   max-height: calc(90vh - 36px); }
 #teamLeadFeedbackModal .modal-header,
-#teamFeedbackModal .modal-header {
+#teamFeedbackModal .modal-header,
+#peerFeedbackModal .modal-header {
   height: 19rem;
   padding-bottom: 0;
   position: absolute;
@@ -1089,25 +1092,30 @@ i {
   background-color: #FFF;
   z-index: 100; }
   #teamLeadFeedbackModal .modal-header .header-main,
-  #teamFeedbackModal .modal-header .header-main {
+  #teamFeedbackModal .modal-header .header-main,
+  #peerFeedbackModal .modal-header .header-main {
     text-align: center; }
     #teamLeadFeedbackModal .modal-header .header-main-img,
-    #teamFeedbackModal .modal-header .header-main-img {
+    #teamFeedbackModal .modal-header .header-main-img,
+    #peerFeedbackModal .modal-header .header-main-img {
       margin-bottom: 1.1rem;
       width: 8rem;
       height: 8rem;
       clip-path: circle(48% at 50% 50%);
       -webkit-clip-path: circle(48% at 50% 50%); }
     #teamLeadFeedbackModal .modal-header .header-main-subtitle,
-    #teamFeedbackModal .modal-header .header-main-subtitle {
-      margin-bottom: .3rem;
+    #teamFeedbackModal .modal-header .header-main-subtitle,
+    #peerFeedbackModal .modal-header .header-main-subtitle {
+      margin-bottom: .7rem;
       font-size: 1.38rem;
       font-weight: 500;
       line-height: 1.02;
       letter-spacing: normal;
       color: #969696; }
     #teamLeadFeedbackModal .modal-header .header-main-title,
-    #teamFeedbackModal .modal-header .header-main-title {
+    #teamFeedbackModal .modal-header .header-main-title,
+    #peerFeedbackModal .modal-header .header-main-title {
+      height: 3.2rem;
       margin-bottom: 2.2rem;
       font-size: 2.4rem;
       font-weight: 500;
@@ -1116,7 +1124,8 @@ i {
       text-align: center;
       color: #2f3038; }
 #teamLeadFeedbackModal .modal-body,
-#teamFeedbackModal .modal-body {
+#teamFeedbackModal .modal-body,
+#peerFeedbackModal .modal-body {
   height: 100%;
   max-height: calc(100%);
   padding: 19rem 4.5rem 7rem;
@@ -1126,11 +1135,17 @@ i {
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */ }
   #teamLeadFeedbackModal .modal-body::-webkit-scrollbar,
-  #teamFeedbackModal .modal-body::-webkit-scrollbar {
+  #teamFeedbackModal .modal-body::-webkit-scrollbar,
+  #peerFeedbackModal .modal-body::-webkit-scrollbar {
     width: 0;
     height: 0; }
+  #teamLeadFeedbackModal .modal-body .feedback-container,
+  #teamFeedbackModal .modal-body .feedback-container,
+  #peerFeedbackModal .modal-body .feedback-container {
+    width: 100%; }
   #teamLeadFeedbackModal .modal-body .feedback,
-  #teamFeedbackModal .modal-body .feedback {
+  #teamFeedbackModal .modal-body .feedback,
+  #peerFeedbackModal .modal-body .feedback {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     width: 100%;
@@ -1150,10 +1165,24 @@ i {
     -moz-justify-content: space-between;
     justify-content: space-between; }
     #teamLeadFeedbackModal .modal-body .feedback:not(:last-of-type),
-    #teamFeedbackModal .modal-body .feedback:not(:last-of-type) {
+    #teamFeedbackModal .modal-body .feedback:not(:last-of-type),
+    #peerFeedbackModal .modal-body .feedback:not(:last-of-type) {
       border-bottom: 1.25px solid #F0F0F0; }
+    #teamLeadFeedbackModal .modal-body .feedback .stars label,
+    #teamFeedbackModal .modal-body .feedback .stars label,
+    #peerFeedbackModal .modal-body .feedback .stars label {
+      width: 3.2rem; }
+      #teamLeadFeedbackModal .modal-body .feedback .stars label::before,
+      #teamFeedbackModal .modal-body .feedback .stars label::before,
+      #peerFeedbackModal .modal-body .feedback .stars label::before {
+        font-size: 2.5rem; }
+      #teamLeadFeedbackModal .modal-body .feedback .stars label::after,
+      #teamFeedbackModal .modal-body .feedback .stars label::after,
+      #peerFeedbackModal .modal-body .feedback .stars label::after {
+        font-size: 2.5rem; }
     #teamLeadFeedbackModal .modal-body .feedback.input,
-    #teamFeedbackModal .modal-body .feedback.input {
+    #teamFeedbackModal .modal-body .feedback.input,
+    #peerFeedbackModal .modal-body .feedback.input {
       -webkit-box-align: start;
       -ms-flex-align: start;
       -webkit-align-items: flex-start;
@@ -1174,7 +1203,9 @@ i {
       padding-bottom: 0; }
     #teamLeadFeedbackModal .modal-body .feedback-text, #teamLeadFeedbackModal .modal-body .feedback-label,
     #teamFeedbackModal .modal-body .feedback-text,
-    #teamFeedbackModal .modal-body .feedback-label {
+    #teamFeedbackModal .modal-body .feedback-label,
+    #peerFeedbackModal .modal-body .feedback-text,
+    #peerFeedbackModal .modal-body .feedback-label {
       max-width: 235px;
       font-size: 1.45rem;
       font-weight: 400;
@@ -1182,10 +1213,12 @@ i {
       letter-spacing: -0.07px;
       color: #3b3e45; }
     #teamLeadFeedbackModal .modal-body .feedback-label,
-    #teamFeedbackModal .modal-body .feedback-label {
+    #teamFeedbackModal .modal-body .feedback-label,
+    #peerFeedbackModal .modal-body .feedback-label {
       margin-bottom: 1.3rem; }
     #teamLeadFeedbackModal .modal-body .feedback-input,
-    #teamFeedbackModal .modal-body .feedback-input {
+    #teamFeedbackModal .modal-body .feedback-input,
+    #peerFeedbackModal .modal-body .feedback-input {
       padding-bottom: 1.28rem;
       width: 100%;
       font-size: 1.45rem;
@@ -1197,46 +1230,59 @@ i {
       border: none;
       border-bottom: 1.25px solid #F0F0F0; }
       #teamLeadFeedbackModal .modal-body .feedback-input::placeholder,
-      #teamFeedbackModal .modal-body .feedback-input::placeholder {
+      #teamFeedbackModal .modal-body .feedback-input::placeholder,
+      #peerFeedbackModal .modal-body .feedback-input::placeholder {
         color: #afafaf; }
   #teamLeadFeedbackModal .modal-body .feedback-success,
-  #teamFeedbackModal .modal-body .feedback-success {
+  #teamFeedbackModal .modal-body .feedback-success,
+  #peerFeedbackModal .modal-body .feedback-success {
     text-align: center; }
     #teamLeadFeedbackModal .modal-body .feedback-success svg,
-    #teamFeedbackModal .modal-body .feedback-success svg {
+    #teamFeedbackModal .modal-body .feedback-success svg,
+    #peerFeedbackModal .modal-body .feedback-success svg {
       margin-bottom: 6rem;
       margin-top: 10rem;
       width: 13rem;
       height: 13rem; }
     #teamLeadFeedbackModal .modal-body .feedback-success-text,
-    #teamFeedbackModal .modal-body .feedback-success-text {
+    #teamFeedbackModal .modal-body .feedback-success-text,
+    #peerFeedbackModal .modal-body .feedback-success-text {
       margin-bottom: 3rem;
       font-size: 1.65rem;
       font-weight: 400;
       line-height: 1.52;
       color: #3b3e45; }
 #teamLeadFeedbackModal .modal-footer,
-#teamFeedbackModal .modal-footer {
+#teamFeedbackModal .modal-footer,
+#peerFeedbackModal .modal-footer {
   z-index: 100;
   height: 7rem;
   padding: 1.5rem 4.5rem;
   background-color: #F7F9FA; }
   #teamLeadFeedbackModal .modal-footer .button,
-  #teamFeedbackModal .modal-footer .button {
+  #teamFeedbackModal .modal-footer .button,
+  #peerFeedbackModal .modal-footer .button {
     padding: .7rem 2.1rem;
     font-size: 1.5rem;
     line-height: 1.33;
     letter-spacing: 0.15px; }
     #teamLeadFeedbackModal .modal-footer .button-outlined,
-    #teamFeedbackModal .modal-footer .button-outlined {
+    #teamFeedbackModal .modal-footer .button-outlined,
+    #peerFeedbackModal .modal-footer .button-outlined {
       margin-right: 1.2rem; }
     #teamLeadFeedbackModal .modal-footer .button-grey,
-    #teamFeedbackModal .modal-footer .button-grey {
+    #teamFeedbackModal .modal-footer .button-grey,
+    #peerFeedbackModal .modal-footer .button-grey {
       background-color: #6c6c6c; }
+
+#peerFeedbackModal .modal-body .feedback {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
 
 #inviteTeamMembersModal .modal-dialog {
   max-width: 40.2rem; }
 #inviteTeamMembersModal .modal-content {
+  max-height: calc(90vh - 36px);
   border-radius: 6px; }
 #inviteTeamMembersModal .modal-body {
   padding: 0 6rem 5rem;
@@ -1244,7 +1290,16 @@ i {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -moz-align-items: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  max-height: calc(100%);
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  #inviteTeamMembersModal .modal-body::-webkit-scrollbar {
+    width: 0;
+    height: 0; }
   #inviteTeamMembersModal .modal-body .title {
     margin-bottom: 2.5rem;
     font-size: 2rem;
@@ -1277,6 +1332,10 @@ i {
         color: #cccccc; }
   #inviteTeamMembersModal .modal-body .buttons {
     margin-top: 1.4rem; }
+    #inviteTeamMembersModal .modal-body .buttons .button {
+      padding: .7rem 2.2rem;
+      font-size: 1.5rem;
+      font-weight: 500; }
 
 #inviteEmployeesModal .modal-dialog {
   max-width: 57.2rem; }
@@ -2161,7 +2220,7 @@ i {
   height: 100%;
   max-height: 23rem;
   border-radius: 5px;
-  box-shadow: 0 3px 8px 0 rgba(213, 213, 213, 0.21);
+  box-shadow: 0 3px 8px 0 rgba(222, 222, 222, 0.15);
   border: solid 1px rgba(234, 234, 234, 0.7);
   background-color: #ffffff;
   overflow: hidden; }
@@ -10341,7 +10400,7 @@ i {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.2rem;
     padding: 1rem 1.25rem;
     padding-right: 2rem;
     background-color: #f5f7f8;
