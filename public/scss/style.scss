@@ -4795,10 +4795,13 @@ i {
         width: 100%;
 
         &-link {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(space-between);
           font-family: inherit;
           text-align: left;
           font-weight: 400;
-          display: inline-block;
+          // display: inline-block;
           padding: 0.9rem 1.2rem;
           width: 100%;
           font-size: 1.4rem;
@@ -4814,6 +4817,10 @@ i {
             transition: all .3s ease-in-out;
             color: #64677B;
             font-weight: 500;
+          }
+
+          &:hover .star {
+            display: inline-block;
           }
 
 
@@ -4839,6 +4846,15 @@ i {
           &.placeholder {
             border-radius: 6px;
             text-align: center;
+          }
+
+          & .star {
+            display: none;
+
+            & svg {
+              width: 2.1rem; 
+              height: 1.9rem;
+            }
           }
 
 
