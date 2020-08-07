@@ -674,6 +674,18 @@ body {
   font-size: 1rem;
   box-sizing: border-box;
   background: #fff;
+
+        overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */
+
+      &::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+      }
 }
 
 h1,
@@ -6228,7 +6240,12 @@ i {
   padding-top: 0;
   max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   max-width: 103rem;
+  min-width: 65rem;
+
+  @include custom-respond(700) {
   min-width: 38rem;
+
+  }
 
   &::before {
     content: '';
@@ -6385,7 +6402,7 @@ i {
     //grid-template-columns: repeat(auto-fill, minmax(auto, 44.6rem));
     grid-gap: 3.2rem 3.2rem;
 
-    &.one-column {
+    @include custom-respond(700) {
       @include grid-template-columns(grid-repeat(1, minmax(auto, 44.6rem)));
     }
 

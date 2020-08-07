@@ -39,7 +39,16 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   box-sizing: border-box;
-  background: #fff; }
+  background: #fff;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  body::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0; }
 
 h1,
 h2,
@@ -4651,12 +4660,15 @@ i {
   padding-top: 0;
   max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
   max-width: 103rem;
-  min-width: 38rem;
+  min-width: 65rem;
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */ }
+  @media (max-width: 767px) {
+    .teams-overview {
+      min-width: 38rem; } }
   .teams-overview::before {
     content: '';
     display: block;
@@ -4808,9 +4820,10 @@ i {
     -ms-grid-columns: minmax(auto, 44.6rem) minmax(auto, 44.6rem);
     grid-template-columns: minmax(auto, 44.6rem) minmax(auto, 44.6rem);
     grid-gap: 3.2rem 3.2rem; }
-    .teams-overview-body.one-column {
-      -ms-grid-columns: minmax(auto, 44.6rem);
-      grid-template-columns: minmax(auto, 44.6rem); }
+    @media (max-width: 767px) {
+      .teams-overview-body {
+        -ms-grid-columns: minmax(auto, 44.6rem);
+        grid-template-columns: minmax(auto, 44.6rem); } }
     .teams-overview-body .team-card {
       padding: 2rem 2.6rem 4rem;
       position: relative;
