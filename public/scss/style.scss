@@ -2124,7 +2124,8 @@ i {
     background-color: #F7F9FA;
 
     & .button {
-      padding: .7rem 2.1rem;
+      width: 14.5rem;
+      padding: .7rem 0;
       font-size: 1.5rem;
       line-height: 1.33;
       letter-spacing: 0.15px;
@@ -2145,8 +2146,15 @@ i {
   & .modal-body {
 
     & .feedback {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+
+      &-text {
+        font-size: 1.65rem;
+        font-weight: 400;
+        line-height: 1.52;
+        color: #3b3e45;
+      }
     }
   }
 }
@@ -4064,6 +4072,13 @@ i {
       background-color: #0e82d4!important;
       border-color: #0e82d4!important;
     }
+  }
+
+  &-secondary {
+    color: #505e79;
+    border-radius: 3px;
+    background-color: #f4f5f7;
+    border-color: #f4f5f7;
   }
 
   &-dark {
@@ -13272,6 +13287,339 @@ i {
 
 // ==================================
 // PEOPLE AVERAGE CHARTS END
+// ==================================
+
+
+// ==================================
+// PEOPLE OVERVIEW START
+// ==================================
+.people-overview {
+  padding: 2.5rem 0;
+  padding-top: 3.65rem;
+  padding-top: 0;
+  max-height: calc(100vh - 9.6rem - 1.5px - 2rem);
+  max-width: 103rem;
+
+  &::before {
+    content: '';
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    max-width: 103rem;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+  &-header {
+    position: relative;
+    margin-bottom: 2.7rem;
+    max-width: 103rem;
+    padding-top: 3.2rem;
+    @include flexbox;
+    @include justify-content(space-between);
+    @include align-items(center);
+    transform:  translate(0,0);
+
+    @include respond(desktop-sm) {
+      @include flex-direction(column);
+      @include align-items(flex-start);
+    }
+
+    & .input-container {
+      display: none;
+    }
+
+    &-settings {
+      margin-right: 1rem;
+      cursor: pointer;
+
+      & svg {
+        width:2.23rem; 
+        height:2.23rem;
+      }
+    }
+
+    &-info {
+      position: relative;
+      margin-right: 1.5rem;
+      @include inline-flex;
+      @include align-items(center);
+      z-index: 100;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background-color: red;
+        z-index: 1000000;
+      }
+
+      &-buttons {
+        @include respond(desktop-sm) {
+          margin-top: 1rem;
+          margin-left: 1.25rem;
+        }
+
+        @include respond(desktop-xsm) {
+          @include align-self(flex-start);
+        }
+      }
+
+      & img {
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+
+      }
+
+      & .initials {
+        @include inline-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+        background-color: #ffd800;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #FFF;
+        line-height: 1.32;
+        letter-spacing: -0.25px;
+        text-transform: uppercase;
+      }
+
+      & .name {
+        margin-bottom: .2rem;
+        font-size: 2.7rem;
+        font-weight: 400;
+        line-height: 1.32;
+        letter-spacing: -0.28px;
+        color: #434343;
+
+        & strong {
+          font-weight: 500;
+        }
+
+        & .team {
+          margin-left: .2rem;
+          margin-top: .4rem;
+          display: block;
+          font-size: 1.45rem;
+          font-weight: 400;
+          line-height: 1.31;
+          color: #7d808e;
+        }
+      }
+    }
+
+    & .button {
+      @include respond(desktop-xsm) {
+        margin-right: .5rem;
+        font-size: 1.2rem;
+      }
+
+      @include respond(desktop-xxsm) {
+        font-size: 1rem;
+      }
+
+      &:not(:last-of-type) {
+        margin-right: 1.4rem;
+      }
+    }
+  }
+
+  &-body {
+
+    &-header {
+      padding-top: 3.5rem;
+      padding-bottom: 2.3rem;
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      &-title {
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 1.35;
+        color: #172b4d;
+      }
+
+      &-buttons {
+
+        & .star {
+          margin-right: 1.5rem;
+
+          & .icon-star {
+            font-size: 2rem;
+            color: #feab29;
+          }
+        }
+
+        & .button {
+          height: 3.2rem;
+
+          &:not(:last-of-type) {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    &-main {
+      margin: -2.8rem 0 0 -2.8rem;
+      width: calc(100% + 2.8rem);
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include align-items(center);
+      @include justify-content(flex-start);
+
+      & .user-card {
+        position: relative;
+        margin-bottom: 3.6rem;
+        margin: 2.8rem 0 0 2.8rem;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        width: 14.8rem;
+        height: 18.1rem;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px 0 rgba(157, 157, 157, 0.29);
+        border: solid 0.8px rgba(234, 234, 234, 0.84);
+        background-color: #ffffff;
+
+        &:hover .user-card-backdrop {
+          @include flexbox();
+        }
+
+        &-icon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(-50%, 50%);
+        }
+
+        &-img {
+          margin-bottom: 1.65rem;
+          width: 7.54rem;
+          height: 7.54rem;
+          clip-path: circle(48% at 50% 50%);
+          -webkit-clip-path: circle(48% at 50% 50%);
+        }
+
+        &-initials {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+          margin-bottom: 1.65rem;
+          width: 7.54rem;
+          height: 7.54rem;
+          clip-path: circle(48% at 50% 50%);
+          -webkit-clip-path: circle(48% at 50% 50%);
+          font-size: 3.2rem;
+          font-weight: 500;
+          line-height: 1.34;
+          color: #ffffff;
+        }
+
+        &-title {
+          margin-bottom: .5rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          color: #1a2d4f;
+        }
+
+        &-position {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.33;
+          color: #6b778c;
+        }
+
+        &-backdrop {
+          display: none;
+          @include flex-direction(column);
+          @include align-items(center);
+          @include justify-content(center);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: #474753, $alpha: .73);
+          border-radius: 3px;
+
+          &-button {
+            margin-bottom: 1.3rem;
+            padding: .7rem 1.1rem;
+            font-size: 1.28rem;
+            font-weight: 500;
+            line-height: 1.25;
+            color: #2e3336;
+            border-radius: 2.5px;
+            border: solid 1.3px #d4d9de;
+            background-color: #ffffff;
+          }
+
+          &-delete {
+            cursor: pointer;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(-50%,-50%);
+          }
+        }
+
+        &.good {
+          & .user-card-initials {
+            background-color: #2ac175;
+          }
+        }
+
+        &.ok {
+          & .user-card-initials {
+            background-color: #fac52d;
+          }
+        }
+
+        &.bad {
+          & .user-card-initials {
+            background-color: #de3518;
+          }
+        }
+      }
+    }
+
+    & .add-to-favorites {
+      margin-top: 4.5rem;
+      padding: 1.3rem 1.7rem;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.36;
+      color: #656565;
+    }
+  }
+}
+
+// ==================================
+// PEOPLE OVERVIEW END
 // ==================================
 
 

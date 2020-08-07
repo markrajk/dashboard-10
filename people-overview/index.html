@@ -1,0 +1,626 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | People | Overview</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item active">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <div class="dropdown-custom dd-new">
+                        <button class="dropdown-custom-trigger dd-new" tabindex="0" onclick="this.focus()">
+                            <i class="icon-circle-plus"></i>
+                        </button>
+
+                        <div class="dropdown-custom-list dd-new">
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-users"></i>
+                                    Create a new team
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-user-check"></i>
+                                    Invite new member
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-shield"></i>
+                                    Request viewing rights
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="../teams-compare/index.html" class="sidebar-menu-footer-create-new">Compare teams</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <!-- <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
+                        <p class="header-top-left-small no-ls text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p> -->
+                        <div class="people-overview-header-info text-truncate">
+                            <!-- <img src="../public/img/p-05.png" alt="User's profile image"> -->
+                            <h2 class="name text-truncate"><strong>People</strong> Overview <span class="team">Select
+                                    and deselect people
+                                    to compare from the sidebar</span></h2>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                        <!-- <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div> -->
+                        <div class="people-overview-header-settings">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.311 22.311">
+                                <g transform="translate(-0.75 -0.75)">
+                                    <path
+                                        d="M19.176,16.338A2.838,2.838,0,1,1,16.338,13.5,2.838,2.838,0,0,1,19.176,16.338Z"
+                                        transform="translate(-4.432 -4.432)" fill="none" stroke="#647282"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    <path
+                                        d="M18.905,14.743a1.561,1.561,0,0,0,.312,1.722l.057.057A1.893,1.893,0,1,1,16.6,19.2l-.057-.057a1.573,1.573,0,0,0-2.668,1.116v.161a1.892,1.892,0,0,1-3.784,0v-.085a1.561,1.561,0,0,0-1.022-1.428,1.561,1.561,0,0,0-1.722.312l-.057.057A1.893,1.893,0,1,1,4.612,16.6l.057-.057a1.573,1.573,0,0,0-1.116-2.668H3.392a1.892,1.892,0,0,1,0-3.784h.085A1.561,1.561,0,0,0,4.905,9.068a1.561,1.561,0,0,0-.312-1.722l-.057-.057A1.893,1.893,0,1,1,7.213,4.612l.057.057a1.561,1.561,0,0,0,1.722.312h.076a1.561,1.561,0,0,0,.946-1.428V3.392a1.892,1.892,0,0,1,3.784,0v.085a1.573,1.573,0,0,0,2.668,1.116l.057-.057A1.893,1.893,0,1,1,19.2,7.213l-.057.057a1.561,1.561,0,0,0-.312,1.722v.076a1.561,1.561,0,0,0,1.428.946h.161a1.892,1.892,0,0,1,0,3.784h-.085a1.561,1.561,0,0,0-1.428.946Z"
+                                        transform="translate(0 0)" fill="none" stroke="#647282" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join
+                                                    team</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give
+                                                    rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny
+                                                    request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html"
+                                        class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html"
+                                        class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom d-none">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html" class="active">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="people-overview">
+
+                <div class="people-overview-body">
+                    <div class="people-overview-body-header">
+                        <p class="people-overview-body-header-title">Favourites</p>
+                        <div class="people-overview-body-header-buttons">
+                            <button class="star"><i class="icon-star"></i></button>
+                            <button class="button button-secondary">Sort by</button>
+                            <button class="button button-secondary">Edit layout</button>
+                            <button class="button button-secondary"><i class="icon-ellipsis"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="people-overview-body-main">
+                        <div class="user-card">
+                            <img src="../public/img/p-01.png" alt="User's profile picture" class="user-card-img">
+                            <p class="user-card-title">Invite new users</p>
+                            <button class="button button-secondary">Invite</button>
+                        </div>
+
+                        <div class="user-card good">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        fill="#00be20" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card ok">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        transform="translate(15.592 15.592) rotate(180)" fill="#fac52d" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card bad">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.59" height="15.59"
+                                    viewBox="0 0 15.59 15.59">
+                                    <path
+                                        d="M10.016,13.134h1.559v1.559H10.016Zm0-6.236h1.559v4.677H10.016ZM10.787,3a7.8,7.8,0,1,0,7.8,7.8A7.791,7.791,0,0,0,10.787,3ZM10.8,17.031A6.236,6.236,0,1,1,17.031,10.8,6.234,6.234,0,0,1,10.8,17.031Z"
+                                        transform="translate(-3 -3)" fill="#f52600" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card good">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        fill="#00be20" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card ok">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        transform="translate(15.592 15.592) rotate(180)" fill="#fac52d" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card bad">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.59" height="15.59"
+                                    viewBox="0 0 15.59 15.59">
+                                    <path
+                                        d="M10.016,13.134h1.559v1.559H10.016Zm0-6.236h1.559v4.677H10.016ZM10.787,3a7.8,7.8,0,1,0,7.8,7.8A7.791,7.791,0,0,0,10.787,3ZM10.8,17.031A6.236,6.236,0,1,1,17.031,10.8,6.234,6.234,0,0,1,10.8,17.031Z"
+                                        transform="translate(-3 -3)" fill="#f52600" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card good">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        fill="#00be20" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card ok">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        transform="translate(15.592 15.592) rotate(180)" fill="#fac52d" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card bad">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.59" height="15.59"
+                                    viewBox="0 0 15.59 15.59">
+                                    <path
+                                        d="M10.016,13.134h1.559v1.559H10.016Zm0-6.236h1.559v4.677H10.016ZM10.787,3a7.8,7.8,0,1,0,7.8,7.8A7.791,7.791,0,0,0,10.787,3ZM10.8,17.031A6.236,6.236,0,1,1,17.031,10.8,6.234,6.234,0,0,1,10.8,17.031Z"
+                                        transform="translate(-3 -3)" fill="#f52600" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card good">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        fill="#00be20" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="user-card ok">
+                            <div class="user-card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.592" height="15.592"
+                                    viewBox="0 0 15.592 15.592">
+                                    <path
+                                        d="M3.167,6.822H.731A.731.731,0,0,0,0,7.552v7.309a.731.731,0,0,0,.731.731H3.167a.731.731,0,0,0,.731-.731V7.552A.731.731,0,0,0,3.167,6.822ZM1.949,14.374a.731.731,0,1,1,.731-.731A.731.731,0,0,1,1.949,14.374ZM11.694,2.48c0,1.292-.791,2.016-1.013,2.879h3.1a1.82,1.82,0,0,1,1.814,1.769A2.2,2.2,0,0,1,15,8.627l0,0a2.544,2.544,0,0,1-.283,2.42,2.408,2.408,0,0,1-.5,2.277,1.617,1.617,0,0,1-.187,1.359c-.622.893-2.162.906-3.465.906h-.087a8.742,8.742,0,0,1-3.641-.966,4.793,4.793,0,0,0-1.6-.493.366.366,0,0,1-.359-.365V7.258A.365.365,0,0,1,4.981,7C6.187,5.806,6.706,4.544,7.695,3.554A3.688,3.688,0,0,0,8.468,1.76C8.6,1.2,8.887,0,9.5,0,10.232,0,11.694.244,11.694,2.48Z"
+                                        transform="translate(15.592 15.592) rotate(180)" fill="#fac52d" /></svg>
+                            </div>
+                            <div class="user-card-initials">MM</div>
+                            <p class="user-card-title">Max Matinpalo</p>
+                            <p class="user-card-position">Job title</p>
+                            <div class="user-card-backdrop">
+                                <button class="user-card-backdrop-button">Open profile</button>
+                                <button class="user-card-backdrop-button">Give feedback</button>
+                                <div class="user-card-backdrop-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="18.462"
+                                        viewBox="0 0 15 18.462">
+                                        <path
+                                            d="M5.653,7.7V19.236A1.157,1.157,0,0,0,6.806,20.39H17.191a1.157,1.157,0,0,0,1.154-1.154V7.7ZM9.114,18.082H7.96V10H9.114Zm2.308,0H10.268V10h1.154Zm2.308,0H12.576V10H13.73Zm2.308,0H14.883V10h1.154Zm2.6-13.846h-3.75V2.793a.868.868,0,0,0-.865-.865H9.98a.868.868,0,0,0-.865.865V4.236H5.364A.868.868,0,0,0,4.5,5.1V6.543h15V5.1a.868.868,0,0,0-.865-.865Zm-4.9,0H10.268V3.1H13.73V4.236Z"
+                                            transform="translate(-4.499 -1.928)" fill="#fff" /></svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <button class="button button-secondary add-to-favorites">Add people to your favourites</button>
+
+
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+</body>
+
+</html>
