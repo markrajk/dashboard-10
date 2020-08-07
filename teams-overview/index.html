@@ -1,0 +1,438 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Teams | Overview</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item logo">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link">
+                            <img src="../public/img/logo-png.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item active">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <div class="dropdown-custom dd-new">
+                        <button class="dropdown-custom-trigger dd-new" tabindex="0" onclick="this.focus()">
+                            <i class="icon-circle-plus"></i>
+                        </button>
+
+                        <div class="dropdown-custom-list dd-new">
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-users"></i>
+                                    Create a new team
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-user-check"></i>
+                                    Invite new member
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-shield"></i>
+                                    Request viewing rights
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link active">Team Marketing</a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys
+                            <div class="star full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                    <path
+                                        d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                        fill="#feab29" /></svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales
+                            <div class="star empty">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                    <g fill="none">
+                                        <path
+                                            d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                            stroke="none" />
+                                        <path
+                                            d="M 10.5 2.258346557617188 L 10.50000286102295 2.258350372314453 C 10.50000190734863 2.258352279663086 10.50000095367432 2.258354187011719 10.5 2.258356094360352 L 8.486530303955078 6.335386276245117 C 8.186090469360352 6.943765640258789 7.604490280151367 7.355075836181641 6.930769920349121 7.435646057128906 L 2.319850921630859 7.987046241760254 C 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 C 2.319847106933594 7.987048149108887 2.319847106933594 7.98705005645752 2.319845199584961 7.987052917480469 C 2.319847106933594 7.987053871154785 2.319849014282227 7.987054824829102 2.319850921630859 7.987055778503418 L 5.641329765319824 10.95067596435547 C 6.16886043548584 11.42136573791504 6.409950256347656 12.14433670043945 6.270520210266113 12.83746528625488 L 5.404689788818359 17.14100646972656 L 9.572039604187012 14.95834541320801 C 9.857199668884277 14.80898666381836 10.17807960510254 14.73003578186035 10.5 14.73003578186035 C 10.82190036773682 14.73003578186035 11.1427698135376 14.80897617340088 11.42794036865234 14.95833587646484 L 15.59527969360352 17.14099502563477 C 15.59528732299805 17.14098930358887 15.59529495239258 17.14098358154297 15.59531021118164 17.14101600646973 L 14.72947978973389 12.83744621276855 C 14.59004974365234 12.14433670043945 14.83114051818848 11.42136573791504 15.3586597442627 10.95067596435547 L 18.68014907836914 7.987055778503418 C 18.68015098571777 7.987055778503418 18.68015098571777 7.987055778503418 18.68016052246094 7.987055778503418 L 14.06924057006836 7.435646057128906 C 13.39550971984863 7.355075836181641 12.81390953063965 6.943765640258789 12.51346969604492 6.335395812988281 L 10.5 2.258346557617188 M 10.50000381469727 1.258350372314453 C 10.85658836364746 1.258350372314453 11.21317005157471 1.444080352783203 11.39661979675293 1.815546035766602 L 13.41008949279785 5.892596244812012 C 13.55974960327148 6.195646286010742 13.85236930847168 6.402585983276367 14.18797016143799 6.442715644836426 L 18.79890060424805 6.994126319885254 C 19.65405082702637 7.096396446228027 19.98855018615723 8.159826278686523 19.34592056274414 8.733216285705566 L 16.02442932128906 11.69683647155762 C 15.75955963134766 11.93316650390625 15.63982963562012 12.29221534729004 15.70983982086182 12.64022636413574 L 16.57567024230957 16.94377517700195 C 16.70752716064453 17.59919738769531 16.18846130371094 18.14339447021484 15.59577465057373 18.14339447021484 C 15.44252586364746 18.14339447021484 15.28447341918945 18.1070613861084 15.13134002685547 18.02685546875 L 10.96397018432617 15.8441858291626 C 10.81867504119873 15.76808547973633 10.65933704376221 15.73003578186035 10.5 15.73003578186035 C 10.34066295623779 15.73003578186035 10.18132495880127 15.76808547973633 10.03602981567383 15.8441858291626 L 5.868659973144531 18.02685546875 C 5.715571403503418 18.1070384979248 5.557430267333984 18.14339447021484 5.404224395751953 18.14339447021484 C 4.811477661132813 18.14339447021484 4.292455673217773 17.59924697875977 4.42432975769043 16.94377517700195 L 5.290160179138184 12.64022636413574 C 5.360170364379883 12.29221534729004 5.240440368652344 11.93316650390625 4.975570678710938 11.69683647155762 L 1.654079437255859 8.733216285705566 C 1.011449813842773 8.159826278686523 1.345949172973633 7.096396446228027 2.201099395751953 6.994126319885254 L 6.812029838562012 6.442715644836426 C 7.147629737854004 6.402585983276367 7.440250396728516 6.195646286010742 7.589909553527832 5.892596244812012 L 9.60338020324707 1.815555572509766 C 9.786829948425293 1.444086074829102 10.14341831207275 1.258350372314453 10.50000381469727 1.258350372314453 Z"
+                                            stroke="none" fill="#feab29" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <a href="../teams-compare/index.html" class="sidebar-menu-footer-create-new">Compare teams</a>
+                    <a href="#" class="button button-mobile">
+                        Get the mobile app
+                        <img src="../public/img/play-big.png" alt="google play store icon" class="play-icon">
+                        <img src="../public/img/apple-big.png" alt="apple store icon" class="apple-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <!-- <h1 class="header-top-left-title text-truncate">Team Marketing</h1>
+                        <p class="header-top-left-small no-ls text-truncate">
+                            We make great ads, campaigns and create a super brand.
+                        </p> -->
+                        <div class="teams-overview-header-info text-truncate">
+                            <!-- <img src="../public/img/p-05.png" alt="User's profile image"> -->
+                            <h2 class="name text-truncate"><strong>Teams</strong> Overview <span class="team">Add here
+                                    the most important teams for you.</span></h2>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                        <!-- <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div> -->
+                        <div class="teams-overview-header-settings">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.311 22.311">
+                                <g transform="translate(-0.75 -0.75)">
+                                    <path
+                                        d="M19.176,16.338A2.838,2.838,0,1,1,16.338,13.5,2.838,2.838,0,0,1,19.176,16.338Z"
+                                        transform="translate(-4.432 -4.432)" fill="none" stroke="#647282"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                    <path
+                                        d="M18.905,14.743a1.561,1.561,0,0,0,.312,1.722l.057.057A1.893,1.893,0,1,1,16.6,19.2l-.057-.057a1.573,1.573,0,0,0-2.668,1.116v.161a1.892,1.892,0,0,1-3.784,0v-.085a1.561,1.561,0,0,0-1.022-1.428,1.561,1.561,0,0,0-1.722.312l-.057.057A1.893,1.893,0,1,1,4.612,16.6l.057-.057a1.573,1.573,0,0,0-1.116-2.668H3.392a1.892,1.892,0,0,1,0-3.784h.085A1.561,1.561,0,0,0,4.905,9.068a1.561,1.561,0,0,0-.312-1.722l-.057-.057A1.893,1.893,0,1,1,7.213,4.612l.057.057a1.561,1.561,0,0,0,1.722.312h.076a1.561,1.561,0,0,0,.946-1.428V3.392a1.892,1.892,0,0,1,3.784,0v.085a1.573,1.573,0,0,0,2.668,1.116l.057-.057A1.893,1.893,0,1,1,19.2,7.213l-.057.057a1.561,1.561,0,0,0-.312,1.722v.076a1.561,1.561,0,0,0,1.428.946h.161a1.892,1.892,0,0,1,0,3.784h-.085a1.561,1.561,0,0,0-1.428.946Z"
+                                        transform="translate(0 0)" fill="none" stroke="#647282" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5" />
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Join
+                                                    team</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give
+                                                    rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny
+                                                    request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html"
+                                        class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html"
+                                        class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom d-none">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html" class="active">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <main class="teams-overview">
+
+                <div class="teams-overview-body">
+
+                    <div class="team-card good">
+                        <div class="team-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 22.5">
+                                <path
+                                    d="M4.57,9.844H1.055A1.055,1.055,0,0,0,0,10.9V21.445A1.055,1.055,0,0,0,1.055,22.5H4.57a1.055,1.055,0,0,0,1.055-1.055V10.9A1.055,1.055,0,0,0,4.57,9.844Zm-1.758,10.9a1.055,1.055,0,1,1,1.055-1.055A1.055,1.055,0,0,1,2.813,20.742ZM16.875,3.579c0,1.864-1.141,2.91-1.462,4.155h4.47A2.626,2.626,0,0,1,22.5,10.288a3.182,3.182,0,0,1-.854,2.162l0,0a3.671,3.671,0,0,1-.409,3.492,3.475,3.475,0,0,1-.72,3.285,2.333,2.333,0,0,1-.27,1.961c-.9,1.289-3.12,1.307-5,1.307h-.125a12.615,12.615,0,0,1-5.254-1.394,6.916,6.916,0,0,0-2.314-.711.527.527,0,0,1-.518-.527V10.473a.527.527,0,0,1,.156-.374C8.928,8.379,9.677,6.558,11.1,5.128A5.322,5.322,0,0,0,12.22,2.54c.2-.813.6-2.54,1.491-2.54C14.766,0,16.875.352,16.875,3.579Z"
+                                    fill="#0c2" /></svg>
+                        </div>
+                        <h3 class="team-card-title">Teams Marketing</h3>
+                        <p class="team-card-desc">This is the example description of this team</p>
+                        <button class="button team-card-button">Good</button>
+                        <div class="team-card-info">
+                            <p class="team-card-info-lead">Team Lead: <span>Anthony Joshua</span></p>
+                            <p class="team-card-info-members">Members: <span>32</span></p>
+                        </div>
+                        <p class="team-card-info-rights">Viewing rights: <span>Bent Borklin, Malte Kraus</span></p>
+
+                        <div class="team-card-backdrop">
+                            <button class="button team-card-backdrop-button">Open team</button>
+                            <button class="button team-card-backdrop-button">Invite new users</button>
+                        </div>
+                    </div>
+
+                    <div class="team-card ok">
+                        <div class="team-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 22.5">
+                                <path
+                                    d="M4.57,9.844H1.055A1.055,1.055,0,0,0,0,10.9V21.445A1.055,1.055,0,0,0,1.055,22.5H4.57a1.055,1.055,0,0,0,1.055-1.055V10.9A1.055,1.055,0,0,0,4.57,9.844Zm-1.758,10.9a1.055,1.055,0,1,1,1.055-1.055A1.055,1.055,0,0,1,2.813,20.742ZM16.875,3.579c0,1.864-1.141,2.91-1.462,4.155h4.47A2.626,2.626,0,0,1,22.5,10.288a3.182,3.182,0,0,1-.854,2.162l0,0a3.671,3.671,0,0,1-.409,3.492,3.475,3.475,0,0,1-.72,3.285,2.333,2.333,0,0,1-.27,1.961c-.9,1.289-3.12,1.307-5,1.307h-.125a12.615,12.615,0,0,1-5.254-1.394,6.916,6.916,0,0,0-2.314-.711.527.527,0,0,1-.518-.527V10.473a.527.527,0,0,1,.156-.374C8.928,8.379,9.677,6.558,11.1,5.128A5.322,5.322,0,0,0,12.22,2.54c.2-.813.6-2.54,1.491-2.54C14.766,0,16.875.352,16.875,3.579Z"
+                                    transform="translate(22.5 22.5) rotate(180)" fill="#ffa700" /></svg>
+                        </div>
+                        <h3 class="team-card-title">Teams Marketing</h3>
+                        <p class="team-card-desc">This is the example description of this team</p>
+                        <button class="button team-card-button">Ok -</button>
+                        <div class="team-card-info">
+                            <p class="team-card-info-lead">Team Lead: <span>Anthony Joshua</span></p>
+                            <p class="team-card-info-members">Members: <span>32</span></p>
+                        </div>
+                        <p class="team-card-info-rights">Viewing rights: <span>Bent Borklin, Malte Kraus</span></p>
+
+                        <div class="team-card-backdrop">
+                            <button class="button team-card-backdrop-button">Open team</button>
+                            <button class="button team-card-backdrop-button">Invite new users</button>
+                        </div>
+                    </div>
+
+
+                    <div class="team-card bad">
+                        <div class="team-card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 22.5">
+                                <path
+                                    d="M13.125,17.625h2.25v2.25h-2.25Zm0-9h2.25v6.75h-2.25ZM14.239,3A11.25,11.25,0,1,0,25.5,14.25,11.245,11.245,0,0,0,14.239,3Zm.011,20.25a9,9,0,1,1,9-9A9,9,0,0,1,14.25,23.25Z"
+                                    transform="translate(-3 -3)" fill="#f52600" /></svg>
+                        </div>
+                        <h3 class="team-card-title">Teams Marketing</h3>
+                        <p class="team-card-desc">This is the example description of this team</p>
+                        <button class="button team-card-button">Not good</button>
+                        <div class="team-card-info">
+                            <p class="team-card-info-lead">Team Lead: <span>Anthony Joshua</span></p>
+                            <p class="team-card-info-members">Members: <span>32</span></p>
+                        </div>
+                        <p class="team-card-info-rights">Viewing rights: <span>Bent Borklin, Malte Kraus</span></p>
+
+                        <div class="team-card-backdrop">
+                            <button class="button team-card-backdrop-button">Open team</button>
+                            <button class="button team-card-backdrop-button">Invite new users</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+        const teamsOverviewBody = document.querySelector('.teams-overview-body');
+
+        function checkGridSize() {
+            if (document.querySelector('.teams-overview-body')) {
+                if (teamsOverviewBody.offsetWidth < 550) {
+                    teamsOverviewBody.classList.add('one-column');
+                } else {
+                    teamsOverviewBody.classList.remove('one-column');
+                }
+            }
+        }
+
+        checkGridSize();
+        window.addEventListener('resize', checkGridSize)
+    </script>
+
+</body>
+
+</html>
