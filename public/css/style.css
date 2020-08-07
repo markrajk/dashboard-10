@@ -5085,6 +5085,7 @@ i {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 103rem;
+  height: 100%;
   max-height: calc(100vh - 17.2rem - 1px);
   overflow-y: auto;
   scrollbar-width: none;
@@ -5098,6 +5099,7 @@ i {
   .teams-comments::before {
     content: '';
     display: block;
+    margin-bottom: 3.45rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -5105,7 +5107,7 @@ i {
     max-width: 103rem;
     border-top: 1.5px solid #f2f2f2; }
   .teams-comments .section-comments {
-    padding-top: 3.45rem; }
+    margin-bottom: 3.45rem; }
     .teams-comments .section-comments-header {
       height: 3.7rem;
       max-width: 103rem;
@@ -5132,6 +5134,29 @@ i {
       line-height: 1.28;
       color: #647282;
       border-radius: 2.5px; }
+      .teams-comments .section-comments-header .open-comment-section {
+        height: 100%;
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        cursor: pointer; }
+        .teams-comments .section-comments-header .open-comment-section svg {
+          margin-top: -.15rem;
+          margin-left: .5rem;
+          width: .6rem;
+          height: 1.04rem; }
       .teams-comments .section-comments-header span {
         font-weight: 500; }
       .teams-comments .section-comments-header .dropdown-custom-trigger {
@@ -5213,6 +5238,13 @@ i {
           justify-content: space-between; }
           .teams-comments .section-comments-body > * .comment-body {
             max-height: 12rem; } }
+    .teams-comments .section-comments.closed {
+      margin-bottom: 0; }
+      .teams-comments .section-comments.closed .section-comments-body {
+        padding-top: 1.5rem;
+        height: 0; }
+      .teams-comments .section-comments.closed .open-comment-section svg {
+        transform: rotateZ(180deg); }
 
 .teams-people-view {
   padding: 2.5rem 0;

@@ -6664,6 +6664,7 @@ i {
   padding-top: 0;
   padding-bottom: 0;
   max-width: 103rem;
+  height: 100%;
   max-height: calc(100vh - 17.2rem - 1px);
 
   overflow-y: auto;
@@ -6681,6 +6682,7 @@ i {
   &::before {
     content: '';
     display: block;
+    margin-bottom: 3.45rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -6691,7 +6693,7 @@ i {
 
 
   & .section-comments {
-    padding-top: 3.45rem;
+    margin-bottom: 3.45rem;
 
     &-header {
       height: 3.7rem;
@@ -6707,6 +6709,21 @@ i {
       line-height: 1.28;
       color: #647282;
       border-radius: 2.5px;
+
+      & .open-comment-section {
+        height: 100%;
+        @include inline-flex();
+        @include align-items(center);
+        @include justify-content(center);
+        cursor: pointer;
+
+        & svg {
+          margin-top: -.15rem;
+          margin-left: .5rem;
+          width:.6rem; 
+          height:1.04rem;
+        }
+      }
 
       & span {
         font-weight: 500;
@@ -6732,6 +6749,8 @@ i {
           }
         }
       }
+      
+      
     }
 
     &-body {
@@ -6780,6 +6799,18 @@ i {
         &>* .comment-body {
           max-height: 12rem;
         }
+      }
+    }
+
+    &.closed {
+      margin-bottom: 0;
+      & .section-comments-body {
+        padding-top: 1.5rem;
+        height: 0;
+      }
+
+      & .open-comment-section svg {
+        transform: rotateZ(180deg);
       }
     }
   }
