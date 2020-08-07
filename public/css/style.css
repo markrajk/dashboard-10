@@ -10552,8 +10552,8 @@ i {
         transform: translate(-70%, 70%); }
       .people-overview-body-main .user-card-img {
         margin-bottom: 1.55rem;
-        width: 7.54rem;
-        height: 7.54rem;
+        width: 7.25rem;
+        height: 7.25rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%); }
       .people-overview-body-main .user-card-initials {
@@ -10573,8 +10573,8 @@ i {
         -moz-justify-content: center;
         justify-content: center;
         margin-bottom: 1.55rem;
-        width: 7.54rem;
-        height: 7.54rem;
+        width: 7.25rem;
+        height: 7.25rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%);
         font-size: 3.2rem;
