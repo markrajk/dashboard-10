@@ -4589,7 +4589,7 @@ i {
         width: 4.5rem;
         height: 4.5rem;
         font-size: 2.1rem;
-        color: #798796;
+        color: #606f80;
       }
     }
 
@@ -4824,7 +4824,7 @@ i {
 
         &:hover .sidebar-menu-list-item-link,
         &:focus .sidebar-menu-list-item-link {
-          color: #575757;
+          color: #585B64;
           font-weight: 500;
         }
 
@@ -4834,8 +4834,8 @@ i {
 
         &.active::before {
           display: block;
-          background-color: #d1ebfe;
-          border-color: #d1ebfe;
+          // background-color: #d1ebfe;
+          // border-color: #d1ebfe;
           z-index: 150;
         }
 
@@ -4875,10 +4875,10 @@ i {
           // display: inline-block;
           width: 100%;
           height: 100%;
-          font-size: 1.35rem;
+          font-size: 1.3rem;
           line-height: 1.33;
-          letter-spacing: 0.07px;
-          color: #575757;
+          letter-spacing: 0.14px;
+          color: #585B64;
           z-index: 200;
 
           &.placeholder {

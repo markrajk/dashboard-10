@@ -3348,7 +3348,7 @@ i {
       width: 4.5rem;
       height: 4.5rem;
       font-size: 2.1rem;
-      color: #798796; }
+      color: #606f80; }
     .sidebar-main .logo img {
       margin-bottom: 0.9rem;
       width: 3.8rem;
@@ -3579,14 +3579,12 @@ i {
         .sidebar-menu-list-item:hover:before, .sidebar-menu-list-item:focus:before {
           display: block; }
         .sidebar-menu-list-item:hover .sidebar-menu-list-item-link, .sidebar-menu-list-item:focus .sidebar-menu-list-item-link {
-          color: #575757;
+          color: #585B64;
           font-weight: 500; }
         .sidebar-menu-list-item:hover .star {
           display: inline-block; }
         .sidebar-menu-list-item.active::before {
           display: block;
-          background-color: #d1ebfe;
-          border-color: #d1ebfe;
           z-index: 150; }
         .sidebar-menu-list-item.active .sidebar-menu-list-item-link {
           font-weight: 500; }
@@ -3621,10 +3619,10 @@ i {
           font-weight: 400;
           width: 100%;
           height: 100%;
-          font-size: 1.35rem;
+          font-size: 1.3rem;
           line-height: 1.33;
-          letter-spacing: 0.07px;
-          color: #575757;
+          letter-spacing: 0.14px;
+          color: #585B64;
           z-index: 200; }
           .sidebar-menu-list-item-link.placeholder {
             border-radius: 6px;
