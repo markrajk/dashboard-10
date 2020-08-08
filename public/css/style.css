@@ -4729,6 +4729,7 @@ i {
       .teams-average-charts-body .section-development .slider-trigger-right {
         right: 0rem; }
     .teams-average-charts-body .section-feedback-given {
+      max-width: 103rem;
       margin-bottom: 3rem; }
       .teams-average-charts-body .section-feedback-given .section-body {
         display: -webkit-box;
