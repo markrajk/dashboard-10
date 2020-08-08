@@ -2093,7 +2093,6 @@ i {
         font-weight: 400;
         line-height: 1.72;
         letter-spacing: -0.07px;
-        color: #afafaf;
         outline: none;
         border: none;
         border-bottom: 1.25px solid #F0F0F0;
@@ -2868,7 +2867,8 @@ i {
 
                   &:hover,
                   &:focus {
-                    background-color: #0f2882;
+                    background-color: #1050C1;
+                    border-color: #1050C1;
                   }
                 }
               }
@@ -4096,8 +4096,8 @@ i {
     &:hover,
     &:focus {
       color: #FFF!important;
-      background-color: #4862be;
-      border-color: #4862be;
+      background-color: #1050C1;
+      border-color: #1050C1;
     }
   }
 
@@ -9514,6 +9514,46 @@ i {
     z-index: 10;
   }
 
+  & .no-search-results {
+    margin-top: 1.2rem;
+    @include inline-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    &-icons {
+      @include inline-flex();
+      @include align-items(center);
+      @include justify-content(center);
+
+      & svg {
+        margin-right: 4rem;
+      }
+    }
+
+    &-message {
+      margin-left: 1.2rem;
+
+      &-text {
+
+        margin-bottom: 1.3rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #292929;
+      }
+
+      &-info {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #383838;
+
+        & button {
+          font-weight: 500;
+          color: #137EFE;
+        }
+      }
+    }
+  }
+
   .section-caption {
     margin-top: 4.55rem;
     margin-bottom: 2.7rem;
@@ -9668,7 +9708,7 @@ i {
       cursor: pointer;
 
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       &-img {
@@ -17163,8 +17203,8 @@ i {
 
     &:hover,
     &:focus {
-      background-color: #0f2882;
-      border-color: #0f2882;
+      background-color: #1050C1;
+      border-color: #1050C1;
     }
   }
 }
