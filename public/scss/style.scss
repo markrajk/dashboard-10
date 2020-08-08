@@ -1052,10 +1052,12 @@ i {
 }
 
 .page-content {
+  position: relative;
   padding: 3.4rem 0 0 0;
   //width: calc(100% - 33.8rem);
   width: calc(100% - 8.4rem);
 
+  min-height: 100vh;
   height: 100%;
   transition: all 0.3s ease-in-out;
 
@@ -3307,6 +3309,8 @@ i {
       line-height: 1.33;
       letter-spacing: -0.17px;
       color: #292929;
+      white-space: nowrap;
+      margin-right: 1.5rem;
     }
 
     &-date {
@@ -3315,6 +3319,9 @@ i {
       line-height: 1.36;
       letter-spacing: -0.15px;
       color: #7a7c83;
+      white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
     }
   }
 
@@ -3664,6 +3671,7 @@ i {
       line-height: 1.33;
       letter-spacing: -0.17px;
       color: #292929;
+      margin-right: 1.5rem;
     }
 
     &-date {
@@ -3672,6 +3680,9 @@ i {
       line-height: 1.36;
       letter-spacing: -0.15px;
       color: #7a7c83;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -12522,7 +12533,8 @@ i {
           color: #1267fb;
         }
 
-        & a.column-03 {
+        & a.column-03,
+        & button.column-03 {
           &:hover {
             text-decoration: underline;
           }
