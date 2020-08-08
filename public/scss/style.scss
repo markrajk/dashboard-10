@@ -4759,14 +4759,14 @@ i {
         font-size: 1.5rem;
         font-weight: 400;
         color: #333;
-        border-bottom: 1.5px solid transparent;
+        border-bottom: 1.25px solid transparent;
 
         &::placeholder {
           color: #9699a6;
         }
 
         &:focus {
-          border-bottom: 1.5px solid #E6E6E6!important;
+          border-bottom: 1.25px solid #F0F0F0!important;
         }
       }
 
@@ -4782,7 +4782,7 @@ i {
     }
 
     &-list {
-      margin-top: .9rem;
+      margin-top: 2.95rem;
       padding: 0 2.4rem;
 
       &-item {
@@ -4795,7 +4795,10 @@ i {
         @include justify-content(space-between);
         // border-radius: 6px;
         height: 4.2rem;
-        border-top: 1.25px solid #F0F0F0;
+        
+        &:not(:first-of-type) {
+          border-top: 1.25px solid #F0F0F0;
+        }
 
         &::before {
           // display: none;
@@ -5647,6 +5650,7 @@ i {
       // position: relative;
 
       &-header {
+        position: relative;
         max-width: 103rem;
         height: 3.7rem;
         @include flexbox;
@@ -5657,6 +5661,25 @@ i {
         padding-right: 2rem;
         background-color: #f5f7f8;
         border-radius: 2.5px;
+
+        & .open-section {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 100%;
+          @include inline-flex();
+          @include align-items(center);
+          @include justify-content(center);
+          cursor: pointer;
+  
+          & svg {
+            margin-top: -.15rem;
+            margin-left: .5rem;
+            width:.6rem; 
+            height:1.04rem;
+          }
+        }
         
 
         & p {
@@ -5708,6 +5731,23 @@ i {
           /* WebKit */
           width: 0;
           height: 0;
+        }
+      }
+
+      &.closed {
+        margin-bottom: 0;
+
+        & .section-body {
+          padding-top: 0;
+          height: 0;
+        }
+
+        & .section-header {
+          margin-bottom: 2rem;
+        }
+  
+        & .open-section svg {
+          transform: rotateZ(180deg);
         }
       }
     }
@@ -6235,6 +6275,98 @@ i {
 
         &-right {
           right: 0rem;
+        }
+      }
+    }
+
+    & .section-feedback-given {
+      margin-bottom: 3rem;
+
+      & .section-body {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(space-between);
+      }
+
+      &-main {
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+
+        &-item {
+          margin-bottom: 1.7rem;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(flex-start);
+
+          &-img {
+            margin-right: 1.4rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            clip-path: circle(48% at 50% 50%);
+            -webkit-clip-path: circle(48% at 50% 50%);
+          }
+
+          &-bar {
+            padding-left: 1.1rem;
+            padding-right: 1.8rem;
+            height: 2.9rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.38;
+            color: #FFF;
+            @include flexbox();
+            @include align-items(center);
+            @include justify-content(space-between);
+            border-radius: 4px;
+            background-color: #325ab2;
+
+            &-wrapper {
+              width: 50rem;
+            }
+          }
+        }
+      }
+
+      &-progress {
+        padding-top: 1.5rem;
+        padding-left: 7.3rem;
+        padding-right: 7.3rem;
+        padding-bottom: 2.5rem;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(center);
+        border-left: 1.66px solid #F2F2F2;
+
+        & #circ {
+          position: relative;
+          margin: 0;
+          width: 18.5em;
+          height: 18.5em;
+    
+          & .steps {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.4em;
+            font-weight: 600;
+            line-height: 1.21;
+            letter-spacing: 0.14px;
+            color: #7d7d88;
+            white-space: nowrap;
+          }
+        }
+
+        &-info {
+          margin-top: 3.2rem;
+          max-width: 23rem;
+          font-size: 1.35rem;
+          font-weight: 500;
+          line-height: 1.63;
+          letter-spacing: 0.14px;
+          color: #62626e;
+          text-align: center;
         }
       }
     }
@@ -12905,6 +13037,9 @@ i {
       height: 0;
     }
 
+    & .no-teams {
+      margin-left: 0!important;
+    }
   &-header {
     position: relative;
     margin-bottom: 2.7rem;
@@ -12993,6 +13128,9 @@ i {
         color: #434343;
 
         & .team {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(flex-start);
           margin-left: .2rem;
           margin-top: .4rem;
           display: block;
@@ -13000,6 +13138,10 @@ i {
           font-weight: 400;
           line-height: 1.31;
           color: #7d808e;
+
+          & strong {
+            font-weight: 500;
+          }
         }
       }
     }
@@ -14467,7 +14609,7 @@ i {
 
   &-card {
     padding: 0 1.5rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     max-width: 43rem;
     position: absolute;
@@ -14477,6 +14619,7 @@ i {
 
     // GET STARTED
     &.get-started {
+
       top: 47%;
 
       @include respond(desktop-sm) {
@@ -14495,7 +14638,7 @@ i {
 
     // RESET PASSWORD 02
     &.reset-password-02 {
-      top: 50%;
+      top: 48.9%;
 
       @include respond(desktop-sm) {
         top: 45%;
@@ -14507,41 +14650,63 @@ i {
     }
 
     &-title {
-      margin-bottom: 1.65rem;
-      font-size: 3.1rem;
+      margin-bottom: 1.95rem;
+      font-size: 3.2rem;
       font-weight: 700;
       line-height: 1;
-      letter-spacing: -0.1px;
+      letter-spacing: normal;
       text-align: center;
-      color: #000000;
+      color: #1f1f1f;
 
       // GET STARTED
       &.get-started {
-        margin-bottom: 1.65rem;
+        font-size: 3.2rem;
+        margin-bottom: 1.85rem;
+      }
+
+      // RESET PASSWORD 01
+      &.reset-password-01 {
+        margin-bottom: 1.75rem;
+      }
+
+      // RESET PASSWORD 02
+      &.reset-password-02 {
+        margin-bottom: 1.7rem;
       }
     }
 
     // GET STARTED
     &-subtitle {
-      margin-bottom: 3.45rem;
-      font-size: 2.1rem;
+      margin-bottom: 2.7rem;
+      font-size: 1.83rem;
       font-weight: 400;
-      line-height: 1.43;
+      line-height: 1.64;
+      letter-spacing: 0.09px;
+      color: #6c6c6c;
       text-align: center;
-      color: #606060;
 
-      // RESET PASSWORD 01
-      &.reset-password-01 {
-        font-size: 1.9rem;
-        line-height: 1.58;
+      & button,
+      & a {
+        font-size: inherit;
+        font-weight: 500;
+        color: #48bc20;
       }
 
       // RESET PASSWORD 01
+      &.reset-password-01 {
+        margin-bottom: 3rem;
+        font-size: 1.83rem;
+        line-height: 1.64;
+      }
+
+      // RESET PASSWORD 02
       &.reset-password-02 {
+        margin-bottom: 3rem;
         margin-left: -10rem;
         margin-right: -10rem;
-        font-size: 1.9rem;
-        line-height: 1.58;
+        font-size: 1.83rem;
+        line-height: 1.64;
+        letter-spacing: 0.09px;
 
         @include respond(desktop-xsm) {
           margin-left: 0;
@@ -14551,16 +14716,17 @@ i {
     }
 
     &-redirect {
-      margin-bottom: 3.58rem;
-      font-size: 1.9rem;
-      font-weight: 500;
-      line-height: 1.58;
+      margin-bottom: 3rem;
+      font-size: 1.83rem;
+      font-weight: 400;
+      line-height: 1.64;
       text-align: center;
-      color: #606060;
+      letter-spacing: 0.09px;
+      color: #6c6c6c;
 
       & a {
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 500;
         color: #48bc20;
         text-decoration: underline;
       }
@@ -14572,7 +14738,7 @@ i {
         font-size: 1.4rem;
         line-height: 1.36;
         text-align: left;
-        color: #707070;
+        color: #717171;
 
         & a {
           font-weight: 500;
@@ -14582,7 +14748,7 @@ i {
 
     &-input {
       font-family: 'Roboto', sans-serif;
-      margin-bottom: 2rem;
+      margin-bottom: 1.9rem;
       padding: 1.4rem 1.6rem;
       width: 100%;
       font-size: 1.5rem;
@@ -14607,12 +14773,23 @@ i {
 
       // GET STARTED
       &.get-started {
-        margin-bottom: 2.43rem;
+        margin-bottom: 2rem;
 
         &:last-of-type {
-          margin-bottom: 1.1rem;
+          margin-bottom: 1.7rem;
         }
       }
+
+      // RESET PASSWORD 01
+      &.reset-password-01 {
+        margin-bottom: 2.2rem;
+      }
+
+      
+        // RESET PASSWORD 02
+        &.reset-password-02 {
+          margin-bottom: 2.4rem!important;
+        }
 
       // DISABLED
       &.disabled {
@@ -14640,12 +14817,13 @@ i {
 
     // GET STARTED
     &-password-info {
-      margin-bottom: 3rem;
+      margin-bottom: 2.2rem;
       margin-left: .4rem;
       font-family: 'Roboto', sans-serif;
       font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.38;
+      letter-spacing: normal;
       color: #707070;
 
       &-icon {
@@ -14656,7 +14834,7 @@ i {
 
     // GET STARTED
     &-check {
-      margin-bottom: 3rem;
+      margin-bottom: 2.7rem;
       margin-left: .3rem;
       display: flex;
       align-items: center;
@@ -14693,6 +14871,7 @@ i {
       &.get-started {
         padding: 1.3rem 0;
         font-size: 1.7rem;
+        letter-spacing: 0.09px;
       }
 
       // DISABLED
@@ -14721,9 +14900,9 @@ i {
 
     &-text {
       font-family: 'Roboto', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       font-weight: 500;
-      line-height: 2.5;
+      line-height: 2.55;
       color: #868686;
 
       @include respond(desktop-xsm) {
