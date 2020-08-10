@@ -2593,7 +2593,6 @@ i {
       color: #FFF;
       background-color: #FFd800; }
     .comment-new-header-name {
-      margin-top: .3rem;
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.33;
@@ -3534,11 +3533,11 @@ i {
         font-size: 1.5rem;
         font-weight: 400;
         color: #333;
-        border-bottom: 1.25px solid transparent; }
+        border-bottom: 1.25px solid #F0F0F0; }
         .sidebar-menu .input-container input::placeholder {
           color: #9699a6; }
         .sidebar-menu .input-container input:focus {
-          border-bottom: 1.25px solid #F0F0F0 !important; }
+          border-bottom: 1.25px solid #9699a6 !important; }
       .sidebar-menu .input-container i {
         margin-top: -.1rem;
         position: absolute;
@@ -3548,7 +3547,7 @@ i {
         font-size: 1.5rem;
         color: #9699a6; }
     .sidebar-menu-list {
-      margin-top: 2.95rem;
+      margin-top: 1.75rem;
       padding: 0 2.4rem; }
       .sidebar-menu-list-item {
         padding: 0;
@@ -3594,16 +3593,23 @@ i {
           color: #585B64;
           font-weight: 500; }
         .sidebar-menu-list-item:hover .star {
-          display: inline-block; }
+          display: inline-block !important; }
         .sidebar-menu-list-item.active::before {
           display: block;
           z-index: 150; }
+        .sidebar-menu-list-item.placeholder .sidebar-menu-list-item-link {
+          border-radius: 6px;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center; }
         .sidebar-menu-list-item.active .sidebar-menu-list-item-link {
           font-weight: 500; }
-        .sidebar-menu-list-item.active .icon-close {
+        .sidebar-menu-list-item.active .icon-close-svg {
           visibility: visible !important; }
-          .sidebar-menu-list-item.active .icon-close:hover {
-            transform: translate(-120%, -50%) scale(1.2); }
+          .sidebar-menu-list-item.active .icon-close-svg:hover {
+            transform: translate(0, -50%) scale(1.2); }
         .sidebar-menu-list-item .star {
           display: none;
           z-index: 200; }
@@ -3611,6 +3617,7 @@ i {
             width: 2.1rem;
             height: 1.9rem; }
         .sidebar-menu-list-item-link {
+          margin-right: 2.3rem;
           display: -webkit-box;
           display: -webkit-flex;
           display: -moz-flex;
@@ -3635,19 +3642,24 @@ i {
           line-height: 1.33;
           letter-spacing: 0.14px;
           color: #585B64;
-          z-index: 200; }
-          .sidebar-menu-list-item-link.placeholder {
-            border-radius: 6px;
-            text-align: center; }
-        .sidebar-menu-list-item .icon-close {
+          z-index: 200;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+        .sidebar-menu-list-item .icon-close-svg {
           visibility: hidden;
           position: absolute;
           top: 50%;
-          right: 0;
-          transform: translate(-120%, -50%) scale(1);
+          right: .3rem;
+          transform: translate(0, -50%) scale(1);
           font-size: 1.2rem;
           color: #B0C5D5;
-          transition: none; }
+          transition: none;
+          width: 1.2rem;
+          height: 1.199rem;
+          z-index: 220; }
+          .sidebar-menu-list-item .icon-close-svg .cls-1 {
+            fill: #b0c5d5; }
     .sidebar-menu-footer {
       margin-top: auto; }
       .sidebar-menu-footer-create-new {
@@ -3738,6 +3750,7 @@ i {
     height: 6.3rem;
     margin-bottom: 2rem; }
     .header-top-left-title {
+      margin-right: 2rem;
       font-size: 2.8rem;
       font-weight: 500;
       line-height: 1.32;
@@ -5129,8 +5142,19 @@ i {
           border-radius: 2.5px;
           border: solid 1.3px #d4d9de;
           background-color: #ffffff; }
+          .teams-overview-body .team-card-backdrop-button:hover, .teams-overview-body .team-card-backdrop-button:focus {
+            background-color: #383838;
+            border-color: #383838;
+            color: #FFF; }
           .teams-overview-body .team-card-backdrop-button:not(:last-of-type) {
             margin-right: 1.8rem; }
+        .teams-overview-body .team-card-backdrop-delete {
+          cursor: pointer;
+          position: absolute;
+          bottom: 2.7rem;
+          right: 2.5rem; }
+          .teams-overview-body .team-card-backdrop-delete:hover {
+            transform: scale(1.1); }
       .teams-overview-body .team-card.good .team-card-button {
         background-color: #00cc22;
         border-color: #00cc22; }
@@ -5161,7 +5185,7 @@ i {
   .people-compare-body {
     max-height: calc(100vh - 14.3rem - 1px);
     height: 100%;
-    padding-top: 2.7rem;
+    padding-top: 2.55rem;
     padding-left: 3.65rem;
     padding-bottom: 1rem;
     min-width: 100%;
@@ -5303,10 +5327,10 @@ i {
         margin-right: 4rem; }
       .teams-compare-body-card-header,
       .people-compare-body-card-header {
-        margin-left: 2.3rem;
+        margin-left: 1.95rem;
         margin-right: 2rem;
-        padding-top: 2.1rem;
-        padding-bottom: 1.8rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.55rem;
         position: relative;
         text-align: center;
         border-bottom: 1.5px solid #F4F4F4; }
@@ -5531,7 +5555,7 @@ i {
                 border-radius: 4px; }
               .teams-compare-body-card-main .graph-card-body .bar-info,
               .people-compare-body-card-main .graph-card-body .bar-info {
-                bottom: -1.5rem;
+                bottom: -1.8rem;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 500;
@@ -6095,14 +6119,20 @@ i {
         padding: 1.3rem 0;
         font-size: 1.4rem;
         line-height: 1.36;
-        color: #1b2733; }
+        color: #1b2733;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
         .teams-people-view .table-custom-body .table-custom-col-02 .update-jobtitle, .teams-people-view .table-custom-body .table-custom-col-02 p {
           font-size: 1.4rem;
           line-height: 1.36;
           border: 0;
           outline: none;
           letter-spacing: normal !important;
-          color: #1b2733; }
+          color: #1b2733;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
           .teams-people-view .table-custom-body .table-custom-col-02 .update-jobtitle::placeholder, .teams-people-view .table-custom-body .table-custom-col-02 p::placeholder {
             color: #1b2733; }
       .teams-people-view .table-custom-body .table-custom-col-03 .btn-custom-table {
@@ -6349,7 +6379,7 @@ i {
         margin-right: 2rem; }
       .teams-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
-      .teams-settings-general-body .settings-table-row a.column-03:hover {
+      .teams-settings-general-body .settings-table-row a.column-03:hover, .teams-settings-general-body .settings-table-row button.column-03:hover {
         text-decoration: underline; }
       .teams-settings-general-body .settings-table-row img {
         width: 5.59rem;
@@ -6409,25 +6439,30 @@ i {
     border-radius: 5px;
     margin-top: 2.5rem; }
     .teams-settings-question .no-data-main {
-      max-width: 44.6rem;
+      max-width: 42rem;
       margin-left: auto;
       margin-right: auto;
       text-align: center; }
       .teams-settings-question .no-data-main svg {
-        margin-bottom: 2rem; }
+        margin-bottom: 1.8rem;
+        width: 2.47rem;
+        height: 3.6rem; }
       .teams-settings-question .no-data-main-title {
-        margin-bottom: 1.36rem;
+        margin-bottom: .96rem;
         font-size: 1.6rem;
         font-weight: 500;
-        line-height: 1.33;
-        letter-spacing: -0.2px;
+        line-height: 1.31;
+        letter-spacing: -0.18px;
         color: #292929; }
       .teams-settings-question .no-data-main-text {
         font-size: 1.35rem;
         font-weight: 400;
-        line-height: 1.36;
+        line-height: 1.33;
         letter-spacing: normal;
         color: #383838; }
+        @media (max-width: 991px) {
+          .teams-settings-question .no-data-main-text br {
+            display: none; } }
       .teams-settings-question .no-data-main-link {
         font-weight: 500;
         color: #137efe; }
@@ -10237,6 +10272,10 @@ i {
         -moz-justify-content: center;
         justify-content: center;
         width: 15%; }
+        .user-settings-teams-body .table-custom-col-04 .delete-link {
+          color: red; }
+          .user-settings-teams-body .table-custom-col-04 .delete-link:hover, .user-settings-teams-body .table-custom-col-04 .delete-link:focus {
+            text-decoration: underline; }
         @media (max-width: 575px) {
           .user-settings-teams-body .table-custom-col-04 {
             width: 20%; } }
@@ -10440,11 +10479,13 @@ i {
           margin-top: .4rem;
           display: block;
           font-size: 1.45rem;
-          font-weight: 400;
+          font-weight: 500;
           line-height: 1.31;
           color: #7d808e; }
           .people-average-charts-header-info .name .team strong {
             font-weight: 500; }
+        .people-average-charts-header-info .name.you-modifier {
+          font-weight: 400; }
     @media (max-width: 575px) {
       .people-average-charts-header .button {
         margin-right: .5rem;
@@ -10484,7 +10525,7 @@ i {
       justify-content: center;
       border: 1px solid #EAEAEA;
       border-radius: 5px;
-      margin-top: 2.5rem; }
+      margin-top: 2rem; }
       .people-average-charts-body .no-data-main {
         text-align: center; }
         .people-average-charts-body .no-data-main svg {
@@ -11244,12 +11285,18 @@ i {
           border-radius: 2.5px;
           border: solid 1.3px #d4d9de;
           background-color: #ffffff; }
+          .people-overview-body-main .user-card-backdrop-button:hover, .people-overview-body-main .user-card-backdrop-button:focus {
+            background-color: #383838;
+            border-color: #383838;
+            color: #FFF; }
         .people-overview-body-main .user-card-backdrop-delete {
           cursor: pointer;
           position: absolute;
           bottom: 0;
           right: 0;
           transform: translate(-50%, -50%); }
+          .people-overview-body-main .user-card-backdrop-delete:hover {
+            transform: translate(-50%, -50%) scale(1.1); }
       .people-overview-body-main .user-card.invite .user-card-img {
         margin-bottom: 1.55rem;
         width: 7.25rem;
@@ -11381,7 +11428,7 @@ i {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0rem;
     padding: 1rem 1.25rem;
     padding-right: 2rem;
     background-color: #f5f7f8;
@@ -13811,8 +13858,8 @@ i {
 .people-average-charts-header .button-dark:focus,
 .people-feedback-received-header .button-dark:hover,
 .people-feedback-received-header .button-dark:focus {
-  background-color: #1050C1;
-  border-color: #1050C1; }
+  background-color: #0f2882;
+  border-color: #0f2882; }
 
 #not-yet {
   height: 6.6rem;

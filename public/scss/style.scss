@@ -3665,7 +3665,6 @@ i {
     }
 
     &-name {
-      margin-top: .3rem;
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.33;
@@ -4770,14 +4769,14 @@ i {
         font-size: 1.5rem;
         font-weight: 400;
         color: #333;
-        border-bottom: 1.25px solid transparent;
+        border-bottom: 1.25px solid #F0F0F0;
 
         &::placeholder {
           color: #9699a6;
         }
 
         &:focus {
-          border-bottom: 1.25px solid #F0F0F0!important;
+          border-bottom: 1.25px solid #9699a6!important;
         }
       }
 
@@ -4793,7 +4792,7 @@ i {
     }
 
     &-list {
-      margin-top: 2.95rem;
+      margin-top: 1.75rem;
       padding: 0 2.4rem;
 
       &-item {
@@ -4843,7 +4842,7 @@ i {
         }
 
         &:hover .star {
-          display: inline-block;
+          display: inline-block!important;
         }
 
         &.active::before {
@@ -4853,6 +4852,13 @@ i {
           z-index: 150;
         }
 
+        &.placeholder {
+          & .sidebar-menu-list-item-link{
+            border-radius: 6px;
+            @include justify-content(center);
+          }
+        }
+
         &.active  {
 
           & .sidebar-menu-list-item-link{
@@ -4860,11 +4866,11 @@ i {
           }
 
 
-          & .icon-close {
+          & .icon-close-svg {
             visibility: visible!important;
 
             &:hover {
-              transform: translate(-120%, -50%) scale(1.2);
+              transform: translate(0, -50%) scale(1.2);
             }
           }
         }
@@ -4880,6 +4886,7 @@ i {
         }
 
         &-link {
+          margin-right: 2.3rem;
           @include flexbox();
           @include align-items(center);
           @include justify-content(space-between);
@@ -4894,23 +4901,28 @@ i {
           letter-spacing: 0.14px;
           color: #585B64;
           z-index: 200;
-
-          &.placeholder {
-            border-radius: 6px;
-            text-align: center;
-          }
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
         }
 
-        & .icon-close {
+        & .icon-close-svg {
           visibility: hidden;
           position: absolute;
           top: 50%;
-          right: 0;
-          transform: translate(-120%, -50%) scale(1);
+          right: .3rem;
+          transform: translate(0, -50%) scale(1);
           font-size: 1.2rem;
           color: #B0C5D5;
           transition: none;
+          width:1.2rem;
+          height:1.199rem;
+          z-index: 220;
+
+         & .cls-1 {
+            fill: #b0c5d5;
+        }
         }
       }
     }
@@ -5029,6 +5041,7 @@ i {
     &-left {
 
       &-title {
+        margin-right: 2rem;
         font-size: 2.8rem;
         font-weight: 500;
         line-height: 1.32;
@@ -6666,8 +6679,26 @@ i {
           border: solid 1.3px #d4d9de;
           background-color: #ffffff;
 
+          &:hover,
+          &:focus {
+            background-color: #383838;
+            border-color: #383838;
+            color: #FFF;
+          }
+
           &:not(:last-of-type) {
             margin-right: 1.8rem;
+          }
+        }
+
+        &-delete {
+          cursor: pointer;
+          position: absolute;
+          bottom: 2.7rem;
+          right: 2.5rem;
+
+          &:hover {
+            transform: scale(1.1);
           }
         }
       }
@@ -6733,7 +6764,7 @@ i {
   &-body {
     max-height: calc(100vh - 14.3rem - 1px);
     height: 100%;
-    padding-top: 2.7rem;
+    padding-top: 2.55rem;
     padding-left: 3.65rem;
     padding-bottom: 1rem;
     min-width: 100%;
@@ -6846,10 +6877,10 @@ i {
       }
 
       &-header {
-        margin-left: 2.3rem;
+        margin-left: 1.95rem;
         margin-right: 2rem;
-        padding-top: 2.1rem;
-        padding-bottom: 1.8rem;
+        padding-top: 1.75rem;
+        padding-bottom: 1.55rem;
         position: relative;
         text-align: center;
         border-bottom: 1.5px solid #F4F4F4;
@@ -7062,7 +7093,7 @@ i {
               }
 
               &-info {
-                bottom: -1.5rem;
+                bottom: -1.8rem;
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.2rem;
                 font-weight: 500;
@@ -7691,6 +7722,9 @@ i {
         font-size: 1.4rem;
         line-height: 1.36;
         color: #1b2733;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         & .update-jobtitle,
         & p {
@@ -7700,6 +7734,9 @@ i {
           outline: none;
           letter-spacing: normal!important;
           color: #1b2733;
+          white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
           &::placeholder {
             color: #1b2733;
@@ -8202,7 +8239,8 @@ i {
           color: #1267fb;
         }
 
-        & a.column-03 {
+        & a.column-03,
+        & button.column-03 {
           
           &:hover {
             text-decoration: underline;
@@ -8282,29 +8320,38 @@ i {
     border: 1px solid #EAEAEA;
     border-radius: 5px;
     margin-top: 2.5rem;
+
     &-main {
-      max-width: 44.6rem;
+      max-width: 42rem;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
 
       & svg {
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
+        width:2.47rem;
+        height:3.6rem;
       }
       &-title {
-        margin-bottom: 1.36rem;
+        margin-bottom: .96rem;
         font-size: 1.6rem;
         font-weight: 500;
-        line-height: 1.33;
-        letter-spacing: -0.2px;
+        line-height: 1.31;
+        letter-spacing: -0.18px;
         color: #292929;
       }
       &-text {
         font-size: 1.35rem;
         font-weight: 400;
-        line-height: 1.36;
+        line-height: 1.33;
         letter-spacing: normal;
         color: #383838;
+
+        & br {
+          @include respond(desktop-md) {
+            display: none;
+          }
+        }
       }
       &-link {
         font-weight: 500;
@@ -12800,6 +12847,15 @@ i {
         @include justify-content(center);
         width: 15%;
 
+        & .delete-link {
+          color: red;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+
         @include respond(desktop-xsm) {
           width: 20%;
         }
@@ -13188,13 +13244,17 @@ i {
           margin-top: .4rem;
           display: block;
           font-size: 1.45rem;
-          font-weight: 400;
+          font-weight: 500;
           line-height: 1.31;
           color: #7d808e;
 
           & strong {
             font-weight: 500;
           }
+        }
+
+        &.you-modifier {
+          font-weight: 400;
         }
       }
     }
@@ -13248,7 +13308,7 @@ i {
       @include justify-content(center);
       border: 1px solid #EAEAEA;
       border-radius: 5px;
-      margin-top: 2.5rem;
+      margin-top: 2rem;
       &-main {
         text-align: center;
 
@@ -14155,6 +14215,13 @@ i {
             border-radius: 2.5px;
             border: solid 1.3px #d4d9de;
             background-color: #ffffff;
+
+            &:hover,
+          &:focus {
+            background-color: #383838;
+            border-color: #383838;
+            color: #FFF;
+          }
           }
 
           &-delete {
@@ -14163,6 +14230,10 @@ i {
             bottom: 0;
             right: 0;
             transform: translate(-50%,-50%);
+
+            &:hover {
+              transform: translate(-50%,-50%) scale(1.1);
+            }
           }
         }
 
@@ -14328,7 +14399,7 @@ i {
         @include flexbox;
         @include align-items(center);
         @include justify-content(space-between);
-        margin-bottom: 1.2rem;
+        margin-bottom: 0rem;
         padding: 1rem 1.25rem;
         padding-right: 2rem;
         background-color: #f5f7f8;
@@ -17215,8 +17286,8 @@ i {
 
     &:hover,
     &:focus {
-      background-color: #1050C1;
-      border-color: #1050C1;
+      background-color: #0f2882;
+      border-color: #0f2882;
     }
   }
 }
