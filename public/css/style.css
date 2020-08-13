@@ -2482,6 +2482,28 @@ i {
     .comment-body.double {
       font-size: 1.35rem;
       line-height: 1.38; }
+      .comment-body.double.improvement {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        -moz-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
       .comment-body.double .comment-body-text-double {
         margin-bottom: .5rem;
         display: block;
@@ -2495,6 +2517,10 @@ i {
         -webkit-line-clamp: 2;
         /* number of lines to show */
         -webkit-box-orient: vertical; }
+        .comment-body.double .comment-body-text-double.improvement-text {
+          -webkit-line-clamp: 3; }
+          .comment-body.double .comment-body-text-double.improvement-text .improvement-span {
+            font-weight: 700; }
       .comment-body.double .read-more {
         font-weight: 500;
         color: #ADADAD;
@@ -5843,6 +5869,8 @@ i {
           justify-content: space-between; }
           .teams-comments .section-comments-body > * .comment-body {
             max-height: 12rem; } }
+      .teams-comments .section-comments-body.improvements {
+        grid-auto-rows: 10.6rem; }
     .teams-comments .section-comments.closed {
       margin-bottom: 0; }
       .teams-comments .section-comments.closed .section-comments-body {
@@ -12264,7 +12292,7 @@ i {
         line-height: 1.43;
         letter-spacing: -0.14px;
         border-radius: 1px;
-        border: solid 0.5px #bfbfbf; }
+        border: solid 1px #b8c4c2; }
         .register-company-section-body-main .register-company-input::placeholder {
           color: #4e4e4e; }
       .register-company-section-body-main .input-container {
@@ -12314,7 +12342,7 @@ i {
         width: 100%;
         max-width: 30rem;
         border-radius: 1px;
-        border: solid 0.5px #bfbfbf; }
+        border: solid 1px #b8c4c2; }
         .register-company-section-plan .register-company-section-body-main .plan-card:not(:last-of-type) {
           margin-right: 5rem; }
         .register-company-section-plan .register-company-section-body-main .plan-card-header {

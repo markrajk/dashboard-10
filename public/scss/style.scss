@@ -3519,6 +3519,15 @@ i {
       font-size: 1.35rem;
       line-height: 1.38;
 
+      &.improvement {
+        @include flexbox();
+        @include align-items(flex-start);
+        @include justify-content(center);
+        @include flex-direction(column);
+        // margin-top: auto;
+        // margin-bottom: auto;
+      }
+
       & .comment-body-text-double {
         margin-bottom: .5rem;
         display: block;
@@ -3536,6 +3545,13 @@ i {
         -webkit-box-orient: vertical;
 
 
+        &.improvement-text {
+          -webkit-line-clamp: 3;
+
+          & .improvement-span {
+            font-weight: 700;
+          }
+        }
       }
 
       & .read-more {
@@ -7399,6 +7415,10 @@ i {
         &>* .comment-body {
           max-height: 12rem;
         }
+      }
+
+      &.improvements {
+        grid-auto-rows: 10.6rem;
       }
     }
 
@@ -15559,7 +15579,7 @@ border-bottom: none!important;
           line-height: 1.43;
           letter-spacing: -0.14px;
           border-radius: 1px;
-          border: solid 0.5px #bfbfbf;
+          border: solid 1px rgb(184, 196, 194);
 
           &::placeholder {
             color: #4e4e4e;
@@ -15603,7 +15623,7 @@ border-bottom: none!important;
             width: 100%;
             max-width: 30rem;
             border-radius: 1px;
-            border: solid 0.5px #bfbfbf;
+            border: solid 1px rgb(184, 196, 194);
 
             &:not(:last-of-type) {
               margin-right: 5rem;
