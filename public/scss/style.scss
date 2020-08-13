@@ -15579,7 +15579,7 @@ border-bottom: none!important;
           line-height: 1.43;
           letter-spacing: -0.14px;
           border-radius: 1px;
-          border: solid 1px rgb(184, 196, 194);
+          border: solid 2px #E5E5E5;
 
           &::placeholder {
             color: #4e4e4e;
@@ -15623,7 +15623,7 @@ border-bottom: none!important;
             width: 100%;
             max-width: 30rem;
             border-radius: 1px;
-            border: solid 1px rgb(184, 196, 194);
+            border: solid 1px #E5E5E5;
 
             &:not(:last-of-type) {
               margin-right: 5rem;
@@ -17945,7 +17945,10 @@ p:not(.no-ls),
 span:not(.no-ls),
 a,
 li {
-  letter-spacing: .2px;
+  
+  @include respond(desktop-sm) {
+    letter-spacing: .2px;
+  }
 }
 
 

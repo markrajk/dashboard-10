@@ -12292,7 +12292,7 @@ i {
         line-height: 1.43;
         letter-spacing: -0.14px;
         border-radius: 1px;
-        border: solid 1px #b8c4c2; }
+        border: solid 2px #E5E5E5; }
         .register-company-section-body-main .register-company-input::placeholder {
           color: #4e4e4e; }
       .register-company-section-body-main .input-container {
@@ -12342,7 +12342,7 @@ i {
         width: 100%;
         max-width: 30rem;
         border-radius: 1px;
-        border: solid 1px #b8c4c2; }
+        border: solid 1px #E5E5E5; }
         .register-company-section-plan .register-company-section-body-main .plan-card:not(:last-of-type) {
           margin-right: 5rem; }
         .register-company-section-plan .register-company-section-body-main .plan-card-header {
@@ -14466,11 +14466,12 @@ i {
     letter-spacing: 0.08px;
     color: #1b2733; }
 
-p:not(.no-ls),
-span:not(.no-ls),
-a,
-li {
-  letter-spacing: .2px; }
+@media (max-width: 767px) {
+  p:not(.no-ls),
+  span:not(.no-ls),
+  a,
+  li {
+    letter-spacing: .2px; } }
 
 @media (max-width: 1024px) {
   body,
