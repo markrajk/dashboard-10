@@ -12262,6 +12262,16 @@ i {
         letter-spacing: -0.2px;
         color: #464c4f; }
       .register-company-section-header-toggle {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
         font-size: 1.8rem;
         font-weight: 400;
         line-height: 1.05;
@@ -12269,6 +12279,7 @@ i {
         color: #196ab1;
         cursor: pointer; }
         .register-company-section-header-toggle i {
+          margin-bottom: -.1rem;
           margin-left: 1.8rem;
           font-size: 1.5rem;
           color: #babdbe; }
@@ -12293,7 +12304,7 @@ i {
         line-height: 1.43;
         letter-spacing: -0.14px;
         border-radius: 1px;
-        border: solid 2px #E5E5E5; }
+        border: solid 1px #E5E5E5; }
         .register-company-section-body-main .register-company-input::placeholder {
           color: #4e4e4e; }
       .register-company-section-body-main .input-container {
@@ -12493,9 +12504,6 @@ i {
               color: #ffffff;
               background-color: #5c6169;
               border-color: #5c6169; }
-              .register-company-section-plan .register-company-section-body-main .plan-card-footer-button.selected:hover {
-                background-color: #787c83;
-                border-color: #787c83; }
         .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol {
           background-color: #00a7ff; }
           .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol svg {
