@@ -12187,7 +12187,8 @@ i {
 
 .register-company {
   position: relative;
-  font-family: 'Inter', sans-serif; }
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fbfa; }
   .register-company-container {
     margin-left: auto;
     margin-right: auto;
@@ -12261,7 +12262,7 @@ i {
         letter-spacing: -0.2px;
         color: #464c4f; }
       .register-company-section-header-toggle {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         font-weight: 400;
         line-height: 1.05;
         letter-spacing: -0.19px;
@@ -12485,10 +12486,16 @@ i {
             color: #464c50;
             background-color: #fff;
             border-color: #bfbfbf; }
+            .register-company-section-plan .register-company-section-body-main .plan-card-footer-button:hover {
+              background-color: #e2e0e0;
+              border-color: #e2e0e0; }
             .register-company-section-plan .register-company-section-body-main .plan-card-footer-button.selected {
               color: #ffffff;
               background-color: #5c6169;
               border-color: #5c6169; }
+              .register-company-section-plan .register-company-section-body-main .plan-card-footer-button.selected:hover {
+                background-color: #787c83;
+                border-color: #787c83; }
         .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol {
           background-color: #00a7ff; }
           .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol svg {
@@ -12571,11 +12578,13 @@ i {
             margin-right: 0; } }
         .register-company-section-admin .register-company-section-body-main .input-container {
           margin-bottom: 1.8rem; }
-    .register-company-section.closed .register-company-section-body {
-      padding-top: 0;
-      height: 0;
-      visibility: hidden;
-      opacity: 0; }
+    .register-company-section.closed {
+      padding-bottom: 2.9rem; }
+      .register-company-section.closed .register-company-section-body {
+        padding-top: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0; }
   .register-company-footer {
     padding-left: 1.7rem;
     padding-right: 1.7rem;
@@ -12605,7 +12614,7 @@ i {
       letter-spacing: -0.26px;
       color: #43b1e5; }
     .register-company-footer-text {
-      max-width: 31.2rem;
+      max-width: 33.2rem;
       font-size: 1.15rem;
       font-weight: 400;
       font-style: italic;
