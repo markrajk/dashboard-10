@@ -15444,6 +15444,13 @@ border-bottom: none!important;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
 
+    @include custom-respond(750) {
+      padding-top: 5rem;
+      &-img {
+        display: none;
+      }
+    }
+
     &-img {
       width: 5rem;
       height: 5rem;
@@ -15479,6 +15486,10 @@ border-bottom: none!important;
     line-height: 1.66;
     letter-spacing: -0.15px;
     color: #464c4f;
+
+    & span {
+      font-weight: 600;
+    }
   }
 
   &-section {
@@ -15525,11 +15536,15 @@ border-bottom: none!important;
 
       &-caption {
         max-width: 35.5rem;
-        font-size: 13px;
+        font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.54;
         letter-spacing: -0.2px;
         color: #464c4f;
+
+        & span {
+          font-weight: 600;
+        }
       }
 
       &-main {
@@ -15566,7 +15581,7 @@ border-bottom: none!important;
       & .register-company-section-body {
   
         &-caption {
-          max-width: 35.5rem;
+          max-width: 38.8rem;
           font-size: 13px;
           font-weight: 400;
           line-height: 1.54;
@@ -15614,6 +15629,16 @@ border-bottom: none!important;
                 clip-path: circle(48% at 50% 50%);
                 -webkit-clip-path: circle(48% at 50% 50%);
               }
+
+              &-symbol {
+                margin-bottom: 1.8rem;
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(center);
+                width: 7.6rem;
+                height: 7.6rem;
+                border-radius: 50%;
+              }
   
               &-info {
                 font-size: 1.35rem;
@@ -15642,6 +15667,26 @@ border-bottom: none!important;
                   height: 3.75rem;
                   background-color: #edf8ff;
                   border-radius: 50%;
+
+                  &.symbol-01 svg {
+                    width:1.6091rem;
+                    height:1.9142rem;
+                  }
+  
+                  &.symbol-02 svg {
+                    width:2.2324rem;
+                    height:1.5626rem;
+                  }
+  
+                  &.symbol-03 svg {
+                    width:1.5814rem;
+                    height:1.8074rem;
+                  }
+  
+                  &.symbol-04 svg {
+                    width:1.1335rem;
+                    height:1.5881rem;
+                  }
                 }
               }
             }
@@ -15668,6 +15713,44 @@ border-bottom: none!important;
                 }
               }
             }
+
+            &.card-01 {
+              & .plan-card-header-symbol {
+                background-color: #00a7ff;
+
+                & svg {
+                  width:2.9258rem;
+                  height:3.3438rem;
+                }
+              }
+
+              & .plan-card-body-item-symbol {
+                & svg {
+                  & path {
+                    fill: #1ca7fc;
+                  }
+                }
+              }
+            }
+
+            &.card-02 {
+              & .plan-card-header-symbol {
+                background-color: #033658;
+
+                & svg {
+                  width:3.4275rem;
+                  height:4.3064rem;
+                }
+              }
+
+              & .plan-card-body-item-symbol {
+                & svg {
+                  & path {
+                    fill: #033658;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -15681,10 +15764,22 @@ border-bottom: none!important;
         @include align-items(flex-start);
         @include justify-content(space-between);
 
+        @include custom-respond(750) {
+          @include flex-direction(column);
+
+          &-main {
+            margin-top: 2.5rem;
+          }
+        }
+
         &-main {
+          margin-right: 5.5rem;
           width: 100%;
           max-width: 36rem;
 
+          @include respond(desktop-sm) {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -15697,10 +15792,22 @@ border-bottom: none!important;
         @include align-items(flex-start);
         @include justify-content(space-between);
 
+        @include custom-respond(750) {
+          @include flex-direction(column);
+
+          &-main {
+            margin-top: 2.5rem;
+          }
+        }
+
         &-main {
+          margin-right: 5.5rem;
           width: 100%;
           max-width: 36rem;
 
+          @include respond(desktop-sm) {
+            margin-right: 0;
+          }
           & .input-container {
             margin-bottom: 1.8rem;
           }

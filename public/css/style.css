@@ -12169,6 +12169,11 @@ i {
     height: 14.9rem;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff; }
+    @media (max-width: 750px) {
+      .register-company-header {
+        padding-top: 5rem; }
+        .register-company-header-img {
+          display: none; } }
     .register-company-header-img {
       width: 5rem;
       height: 5rem;
@@ -12195,6 +12200,8 @@ i {
     line-height: 1.66;
     letter-spacing: -0.15px;
     color: #464c4f; }
+    .register-company-caption span {
+      font-weight: 600; }
   .register-company-section {
     padding: 2.9rem 2.5rem;
     border-radius: 3.5px;
@@ -12239,11 +12246,13 @@ i {
       padding-top: 2.1rem; }
       .register-company-section-body-caption {
         max-width: 35.5rem;
-        font-size: 13px;
+        font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.54;
         letter-spacing: -0.2px;
         color: #464c4f; }
+        .register-company-section-body-caption span {
+          font-weight: 600; }
       .register-company-section-body-main .register-company-input {
         margin-bottom: 1.8rem;
         padding: .8rem 1.3rem;
@@ -12276,7 +12285,7 @@ i {
           margin-bottom: 0;
           max-width: 48%; }
     .register-company-section-plan .register-company-section-body-caption {
-      max-width: 35.5rem;
+      max-width: 38.8rem;
       font-size: 13px;
       font-weight: 400;
       line-height: 1.54;
@@ -12343,6 +12352,26 @@ i {
             height: 7.9rem;
             clip-path: circle(48% at 50% 50%);
             -webkit-clip-path: circle(48% at 50% 50%); }
+          .register-company-section-plan .register-company-section-body-main .plan-card-header-symbol {
+            margin-bottom: 1.8rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            width: 7.6rem;
+            height: 7.6rem;
+            border-radius: 50%; }
           .register-company-section-plan .register-company-section-body-main .plan-card-header-info {
             font-size: 1.35rem;
             font-weight: 600;
@@ -12388,6 +12417,18 @@ i {
             height: 3.75rem;
             background-color: #edf8ff;
             border-radius: 50%; }
+            .register-company-section-plan .register-company-section-body-main .plan-card-body-item-symbol.symbol-01 svg {
+              width: 1.6091rem;
+              height: 1.9142rem; }
+            .register-company-section-plan .register-company-section-body-main .plan-card-body-item-symbol.symbol-02 svg {
+              width: 2.2324rem;
+              height: 1.5626rem; }
+            .register-company-section-plan .register-company-section-body-main .plan-card-body-item-symbol.symbol-03 svg {
+              width: 1.5814rem;
+              height: 1.8074rem; }
+            .register-company-section-plan .register-company-section-body-main .plan-card-body-item-symbol.symbol-04 svg {
+              width: 1.1335rem;
+              height: 1.5881rem; }
         .register-company-section-plan .register-company-section-body-main .plan-card-footer {
           padding: 1.9rem 2.4rem;
           text-align: center; }
@@ -12405,6 +12446,20 @@ i {
               color: #ffffff;
               background-color: #5c6169;
               border-color: #5c6169; }
+        .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol {
+          background-color: #00a7ff; }
+          .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-header-symbol svg {
+            width: 2.9258rem;
+            height: 3.3438rem; }
+        .register-company-section-plan .register-company-section-body-main .plan-card.card-01 .plan-card-body-item-symbol svg path {
+          fill: #1ca7fc; }
+        .register-company-section-plan .register-company-section-body-main .plan-card.card-02 .plan-card-header-symbol {
+          background-color: #033658; }
+          .register-company-section-plan .register-company-section-body-main .plan-card.card-02 .plan-card-header-symbol svg {
+            width: 3.4275rem;
+            height: 4.3064rem; }
+        .register-company-section-plan .register-company-section-body-main .plan-card.card-02 .plan-card-body-item-symbol svg path {
+          fill: #033658; }
     .register-company-section-information .register-company-section-body {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12421,9 +12476,23 @@ i {
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
       justify-content: space-between; }
+      @media (max-width: 750px) {
+        .register-company-section-information .register-company-section-body {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .register-company-section-information .register-company-section-body-main {
+            margin-top: 2.5rem; } }
       .register-company-section-information .register-company-section-body-main {
+        margin-right: 5.5rem;
         width: 100%;
         max-width: 36rem; }
+        @media (max-width: 767px) {
+          .register-company-section-information .register-company-section-body-main {
+            margin-right: 0; } }
     .register-company-section-admin .register-company-section-body {
       display: -webkit-box;
       display: -webkit-flex;
@@ -12440,9 +12509,23 @@ i {
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
       justify-content: space-between; }
+      @media (max-width: 750px) {
+        .register-company-section-admin .register-company-section-body {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .register-company-section-admin .register-company-section-body-main {
+            margin-top: 2.5rem; } }
       .register-company-section-admin .register-company-section-body-main {
+        margin-right: 5.5rem;
         width: 100%;
         max-width: 36rem; }
+        @media (max-width: 767px) {
+          .register-company-section-admin .register-company-section-body-main {
+            margin-right: 0; } }
         .register-company-section-admin .register-company-section-body-main .input-container {
           margin-bottom: 1.8rem; }
     .register-company-section.closed .register-company-section-body {
