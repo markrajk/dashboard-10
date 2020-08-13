@@ -712,7 +712,8 @@ textarea:not(input[type=checkbox]) {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+input[type="password"]:focus {
   outline: none;
   border-color: #1a9cfc !important;
 }
@@ -15458,7 +15459,7 @@ border-bottom: none!important;
     }
 
     &-subtitle {
-      margin-bottom: .7rem;
+      margin-bottom: .9rem;
       font-size: 1.2rem;
       font-weight: 700;
       line-height: 1.33;
@@ -15476,11 +15477,11 @@ border-bottom: none!important;
   }
 
   &-body {
-    padding: 3rem 1.7rem 16.4rem;
+    padding: 2.8rem 1.7rem 16.4rem;
   }
 
   &-caption {
-    margin-bottom: 3rem;
+    margin-bottom: 3.4rem;
     font-size: 1.45rem;
     font-weight: 400;
     line-height: 1.66;
@@ -15493,7 +15494,7 @@ border-bottom: none!important;
   }
 
   &-section {
-    padding: 2.9rem 2.5rem;
+    padding: 2.9rem 2.8rem 4rem;
     border-radius: 3.5px;
     box-shadow: 0 1px 5px 0 rgba(201, 201, 201, 0.73);
     background-color: #ffffff;
@@ -15524,7 +15525,7 @@ border-bottom: none!important;
         cursor: pointer;
 
         & i {
-          margin-left: 2.4rem;
+          margin-left: 1.8rem;
           font-size: 1.5rem;
           color: #babdbe;
         }
@@ -15532,7 +15533,7 @@ border-bottom: none!important;
     }
     
     &-body {
-      padding-top: 2.1rem;
+      padding-top: 1.8rem;
 
       &-caption {
         max-width: 35.5rem;
@@ -15550,16 +15551,19 @@ border-bottom: none!important;
       &-main {
         & .register-company-input {
           margin-bottom: 1.8rem;
-          padding: .8rem 1.3rem;
+          padding: .65rem 1.3rem;
           width: 100%;
           display: block;
           font-size: 1.4rem;
           font-weight: 400;
           line-height: 1.43;
           letter-spacing: -0.14px;
-          color: #4e4e4e;
           border-radius: 1px;
           border: solid 0.5px #bfbfbf;
+
+          &::placeholder {
+            color: #4e4e4e;
+          }
         }
 
         & .input-container {
@@ -15688,6 +15692,25 @@ border-bottom: none!important;
                     height:1.5881rem;
                   }
                 }
+
+                &-info {
+                  &-title {
+                    margin-bottom: .34rem;
+                    font-size: 1.35rem;
+                    font-weight: 600;
+                    line-height: 1.19;
+                    letter-spacing: 0.14px;
+                    color: #353e53;
+                  }
+  
+                  &-text {
+                    font-size: 1.28rem;
+                    font-weight: 400;
+                    line-height: 1.18;
+                    letter-spacing: 0.13px;
+                    color: #868686;
+                  }
+                }
               }
             }
   
@@ -15773,7 +15796,7 @@ border-bottom: none!important;
         }
 
         &-main {
-          margin-right: 5.5rem;
+          margin-right: 4.2rem;
           width: 100%;
           max-width: 36rem;
 
@@ -15801,7 +15824,7 @@ border-bottom: none!important;
         }
 
         &-main {
-          margin-right: 5.5rem;
+          margin-right: 4.2rem;
           width: 100%;
           max-width: 36rem;
 
