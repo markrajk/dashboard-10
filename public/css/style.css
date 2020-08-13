@@ -12227,7 +12227,7 @@ i {
     font-size: 1.45rem;
     font-weight: 400;
     line-height: 1.66;
-    letter-spacing: -0.15px;
+    letter-spacing: -.15px;
     color: #464c4f; }
     .register-company-caption span {
       font-weight: 600; }
@@ -12316,7 +12316,7 @@ i {
           max-width: 48%; }
     .register-company-section-plan .register-company-section-body-caption {
       max-width: 38.8rem;
-      font-size: 13px;
+      font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.54;
       letter-spacing: -0.2px;
