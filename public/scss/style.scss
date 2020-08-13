@@ -15424,6 +15424,375 @@ border-bottom: none!important;
 // COMPANY SIGN IN END
 // ==================================
 
+// ==================================
+// REGISTER COMPANY START
+// ==================================
+.register-company {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+
+  &-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 86.7rem;
+  }
+
+  &-header {
+    padding: 1.3rem 1.7rem;
+    position: relative;
+    height: 14.9rem;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+
+    &-img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+    }
+
+    &-subtitle {
+      margin-bottom: .7rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.33;
+      letter-spacing: 0.12px;
+      color: #868686;
+    }
+
+    &-title {
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 1.32;
+      letter-spacing: -0.13px;
+      color: #464c4f;
+    }
+  }
+
+  &-body {
+    padding: 3rem 1.7rem 16.4rem;
+  }
+
+  &-caption {
+    margin-bottom: 3rem;
+    font-size: 1.45rem;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: -0.15px;
+    color: #464c4f;
+  }
+
+  &-section {
+    padding: 2.9rem 2.5rem;
+    border-radius: 3.5px;
+    box-shadow: 0 1px 5px 0 rgba(201, 201, 201, 0.73);
+    background-color: #ffffff;
+
+    &:not(:last-of-type) {
+      margin-bottom: 4.1rem;
+    }
+
+    &-header {
+      @include flexbox();
+      @include align-items(center);
+      @include justify-content(space-between);
+
+      &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.35;
+        letter-spacing: -0.2px;
+        color: #464c4f;
+      }
+
+      &-toggle {
+        font-size: 1.9rem;
+        font-weight: 400;
+        line-height: 1.05;
+        letter-spacing: -0.19px;
+        color: #196ab1;
+        cursor: pointer;
+
+        & i {
+          margin-left: 2.4rem;
+          font-size: 1.5rem;
+          color: #babdbe;
+        }
+      }
+    }
+    
+    &-body {
+      padding-top: 2.1rem;
+
+      &-caption {
+        max-width: 35.5rem;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.54;
+        letter-spacing: -0.2px;
+        color: #464c4f;
+      }
+
+      &-main {
+        & .register-company-input {
+          margin-bottom: 1.8rem;
+          padding: .8rem 1.3rem;
+          width: 100%;
+          display: block;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.43;
+          letter-spacing: -0.14px;
+          color: #4e4e4e;
+          border-radius: 1px;
+          border: solid 0.5px #bfbfbf;
+        }
+
+        & .input-container {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(space-between);
+
+          & .register-company-input {
+            margin-bottom: 0;
+            max-width: 48%;
+          }
+        }
+      }
+    }
+
+    //SECTION 01 PLANS SPECIFIC CSSS
+    &-plan {
+
+      & .register-company-section-body {
+  
+        &-caption {
+          max-width: 35.5rem;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 1.54;
+          letter-spacing: -0.2px;
+          color: #464c4f;
+        }
+  
+        &-main {
+          margin-top: 3.2rem;
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(center);
+  
+          & .plan-card {
+            width: 100%;
+            max-width: 30rem;
+            border-radius: 1px;
+            border: solid 0.5px #bfbfbf;
+
+            &:not(:last-of-type) {
+              margin-right: 5rem;
+            }
+  
+            &-header {
+              padding: 2.6rem 2.4rem 2.1rem;
+              @include flexbox();
+              @include flex-direction(column);
+              @include align-items(center);
+              @include justify-content(center);
+              border-bottom: 1px solid #F0F0F3;
+  
+              &-title {
+                margin-bottom: 1.9rem;
+                font-size: 1.7rem;
+                font-weight: 600;
+                line-height: 1.29;
+                letter-spacing: 0.26px;
+                color: #363636;
+              }
+  
+              &-img {
+                margin-bottom: 1.8rem;
+                width: 7.9rem;
+                height: 7.9rem;
+                clip-path: circle(48% at 50% 50%);
+                -webkit-clip-path: circle(48% at 50% 50%);
+              }
+  
+              &-info {
+                font-size: 1.35rem;
+                font-weight: 600;
+                line-height: 1.33;
+                letter-spacing: 0.14px;
+                color: #202f52;
+              }
+            }
+  
+            &-body {
+  
+              &-item {
+                padding: 1.1rem 2.3rem;
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(flex-start);
+                border-bottom: 1px solid #F0F0F3;
+  
+                &-symbol {
+                  margin-right: 1.45rem;
+                  @include inline-flex();
+                  @include align-items(center);
+                  @include justify-content(center);
+                  width: 3.75rem;
+                  height: 3.75rem;
+                  background-color: #edf8ff;
+                  border-radius: 50%;
+                }
+              }
+            }
+  
+            &-footer {
+              padding: 1.9rem 2.4rem;
+              text-align: center;
+  
+              &-button {
+                width: 100%;
+                max-width: 19.7rem;
+                height: 3.8rem;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 1.36;
+                color: #464c50;
+                background-color: #fff;
+                border-color: #bfbfbf;
+  
+                &.selected {
+                  color: #ffffff;
+                  background-color: #5c6169;
+                  border-color: #5c6169;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //SECTION 02 COMPANY INFORMATIONS SPECIFIC CSS
+    &-information {
+
+      & .register-company-section-body {
+        @include flexbox();
+        @include align-items(flex-start);
+        @include justify-content(space-between);
+
+        &-main {
+          width: 100%;
+          max-width: 36rem;
+
+        }
+      }
+    }
+
+    //SECTION 03 ADMIN SPECIFIC CSS
+    &-admin {
+
+      & .register-company-section-body {
+        @include flexbox();
+        @include align-items(flex-start);
+        @include justify-content(space-between);
+
+        &-main {
+          width: 100%;
+          max-width: 36rem;
+
+          & .input-container {
+            margin-bottom: 1.8rem;
+          }
+        }
+      }
+    }
+
+    &.closed {
+
+      & .register-company-section-body {
+        padding-top: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      // & .section-header {
+      //   margin-bottom: 2rem;
+      // }
+
+      // & .open-section svg {
+      //   transform: rotateZ(180deg);
+      // }
+    }
+
+  }
+
+  &-footer {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8.4rem;
+    box-shadow: 0 -5px 10px 0 rgba(198, 198, 198, 0.24);
+    background-color: #ffffff;
+
+    & .register-company-container {
+      height: 100%;
+      @include flexbox();
+      @include align-items(center);
+    }
+
+    &-big {
+      margin-right: 7%;
+      font-size: 2.6rem;
+      font-weight: 600;
+      letter-spacing: -0.26px;
+      color: #43b1e5;
+    }
+
+    &-text {
+      max-width: 31.2rem;
+      font-size: 1.15rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.39;
+      letter-spacing: -0.12px;
+      color: #818487;
+    }
+
+    &-buttons {
+      margin-left: auto;
+      @include flexbox();
+      @include align-items(center);
+
+      & .link {
+        margin-right: 3.7rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: -0.15px;
+        color: #89989b;
+        text-decoration: underline;
+      }
+
+      & .button-primary {
+        padding: 1.2rem 1.6rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.33;
+        letter-spacing: -0.15px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+// ==================================
+// REGISTER COMPANY END
+// ==================================
+
 
 // ==================================
 // COMPANY SIGN IN START
