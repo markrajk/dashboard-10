@@ -538,9 +538,11 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:100%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">32</p>
+                                        <div class="section-feedback-given-main-item-bar good" style="width:100%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">32</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -549,9 +551,11 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:80%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">28</p>
+                                        <div class="section-feedback-given-main-item-bar good" style="width:90%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">24</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -560,9 +564,11 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:70%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">26</p>
+                                        <div class="section-feedback-given-main-item-bar good" style="width:80%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">20</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -571,9 +577,11 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:50%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">22</p>
+                                        <div class="section-feedback-given-main-item-bar ok" style="width:60%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -582,9 +590,11 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:40%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">18</p>
+                                        <div class="section-feedback-given-main-item-bar bad" style="width:40%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -593,12 +603,15 @@
                                     <img src="../public/img/p-01.png" alt="User's profile picture"
                                         class="section-feedback-given-main-item-img">
                                     <div class="section-feedback-given-main-item-bar-wrapper">
-                                        <div class="section-feedback-given-main-item-bar" style="width:35%">
-                                            <p class="section-feedback-given-main-item-bar-text">Example Example</p>
-                                            <p class="section-feedback-given-main-item-bar-number">16</p>
+                                        <div class="section-feedback-given-main-item-bar bad" style="width:30%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                             <div class="section-feedback-given-progress">
                                 <div id="circ">
@@ -1164,7 +1177,7 @@
                         })
                         .join('');
                 },
-                maintainAspectRatio: false,
+                maintainAspectRatio: true,
                 scales: {
                     yAxes: [{
                         ticks: {

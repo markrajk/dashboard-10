@@ -577,6 +577,46 @@ i {
   .stars label:hover::after, .stars input:checked ~ label::after, .stars label:hover ~ label::after {
     opacity: 1; }
 
+.custom-toast {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-right: 2.4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  width: 40.2rem;
+  height: 6.5rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(41, 55, 72, 0.16);
+  border: solid 1.3px #eff0f5;
+  background-color: #ffffff; }
+  .custom-toast-icon {
+    width: 2.76rem;
+    height: 2.76rem; }
+  .custom-toast-message {
+    margin: 0 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #4a566e; }
+  .custom-toast-close {
+    position: absolute;
+    top: 50%;
+    right: 2.3rem;
+    transform: translate(0, -50%); }
+
 .dropdown-custom {
   padding: .3rem;
   position: relative; }
@@ -2925,6 +2965,10 @@ i {
     border-radius: 3px;
     background-color: #f4f5f7;
     border-color: #f4f5f7; }
+    .button-secondary:hover, .button-secondary:focus {
+      background-color: #d4d7df;
+      border-color: #d4d7df;
+      color: #666; }
   .button-dark {
     background-color: #0f2882;
     border-color: #0f2882;
@@ -3537,7 +3581,7 @@ i {
         .sidebar-menu .input-container input::placeholder {
           color: #9699a6; }
         .sidebar-menu .input-container input:focus {
-          border-bottom: 1.25px solid #9699a6 !important; }
+          border-bottom: 1.25px solid #E2E2E2 !important; }
       .sidebar-menu .input-container i {
         margin-top: -.1rem;
         position: absolute;
@@ -4798,32 +4842,51 @@ i {
             clip-path: circle(48% at 50% 50%);
             -webkit-clip-path: circle(48% at 50% 50%); }
           .teams-average-charts-body .section-feedback-given-main-item-bar {
+            position: relative;
             padding-left: 1.1rem;
             padding-right: 1.8rem;
-            height: 2.9rem;
+            height: 7px;
             font-size: 1.3rem;
             font-weight: 400;
             line-height: 1.38;
             color: #FFF;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            -moz-align-items: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            -webkit-justify-content: space-between;
-            -moz-justify-content: space-between;
-            justify-content: space-between;
             border-radius: 4px;
             background-color: #325ab2; }
+            .teams-average-charts-body .section-feedback-given-main-item-bar.good {
+              background-color: #19d84c; }
+            .teams-average-charts-body .section-feedback-given-main-item-bar.ok {
+              background-color: #ffa700; }
+            .teams-average-charts-body .section-feedback-given-main-item-bar.bad {
+              background-color: #fd1d1d; }
             .teams-average-charts-body .section-feedback-given-main-item-bar-wrapper {
+              padding-top: 2.4rem;
               width: 50rem; }
+              .teams-average-charts-body .section-feedback-given-main-item-bar-wrapper-info {
+                position: absolute;
+                top: -.9rem;
+                left: 0;
+                width: 100%;
+                transform: translate(0, -100%);
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                -webkit-justify-content: space-between;
+                -moz-justify-content: space-between;
+                justify-content: space-between; }
+            .teams-average-charts-body .section-feedback-given-main-item-bar-text, .teams-average-charts-body .section-feedback-given-main-item-bar-number {
+              font-size: 1.28rem;
+              font-weight: 500;
+              line-height: 1.25;
+              color: #30333b; }
       .teams-average-charts-body .section-feedback-given-progress {
         padding-top: 1.5rem;
         padding-left: 7.3rem;
@@ -5973,7 +6036,7 @@ i {
       -moz-flex: 0.7;
       -ms-flex: 0.7;
       flex: 0.7; }
-      @media (max-width: 500px) {
+      @media (max-width: 700px) {
         .teams-people-view .table-custom td:nth-of-type(2), .teams-people-view .table-custom th:nth-of-type(2) {
           display: none; } }
     .teams-people-view .table-custom td:nth-of-type(3), .teams-people-view .table-custom th:nth-of-type(3) {
@@ -6326,7 +6389,7 @@ i {
         border: solid 1px #cfd7e0;
         min-width: 0; }
         .teams-settings-general-body .settings-table-row .settings-input::placeholder {
-          color: #1b2733; }
+          color: #515558; }
         .teams-settings-general-body .settings-table-row .settings-input.desc {
           width: 100%;
           max-width: 40rem; }
@@ -6341,7 +6404,7 @@ i {
         padding: .5rem 1.1rem;
         font-size: 1.4rem;
         line-height: 1.36;
-        color: #1b2733;
+        color: #515558;
         border-radius: 4px;
         border: solid 1px #cfd7e0;
         -moz-appearance: none;
@@ -6376,7 +6439,7 @@ i {
           .teams-settings-general-body .settings-table-row .column-02.linked span {
             font-weight: 500; }
       .teams-settings-general-body .settings-table-row img.column-02, .teams-settings-general-body .settings-table-row .initials.column-02 {
-        margin-right: 2rem; }
+        margin-right: 1.7rem; }
       .teams-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
       .teams-settings-general-body .settings-table-row a.column-03:hover, .teams-settings-general-body .settings-table-row button.column-03:hover {
@@ -6577,10 +6640,17 @@ i {
           margin-top: .6rem;
           font-size: 1.3rem;
           font-weight: 400;
-          color: #6F7A89; }
+          color: #6F7A89;
+          white-space: normal; }
       .teams-settings-question-body .settings-table-row .column-02 {
+        max-width: 60rem;
         margin-left: 1rem;
-        margin-right: 1.5rem; }
+        margin-right: 1.5rem;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal; }
         .teams-settings-question-body .settings-table-row .column-02.linked {
           margin-right: 0; }
           .teams-settings-question-body .settings-table-row .column-02.linked span {
@@ -6761,7 +6831,8 @@ i {
                 font-weight: 400;
                 color: #1B2733; }
                 .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info button {
-                  color: #2D76AD; }
+                  color: #137efe;
+                  text-decoration: underline; }
     .teams-settings-feedback-body .table-02 {
       margin-top: 2rem; }
       .teams-settings-feedback-body .table-02 .table-custom-body tr td {
@@ -6946,9 +7017,11 @@ i {
         align-self: center; }
     .teams-settings-rights-body .table-custom {
       margin-top: 2.2rem; }
-      .teams-settings-rights-body .table-custom-head tr {
-        padding-left: 1.7rem;
-        padding-right: 1.7rem; }
+      .teams-settings-rights-body .table-custom-head {
+        border-bottom: none !important; }
+        .teams-settings-rights-body .table-custom-head tr {
+          padding-left: 1.7rem;
+          padding-right: 1.7rem; }
       .teams-settings-rights-body .table-custom-body {
         font-size: 1.35rem;
         font-weight: 400; }
@@ -6956,6 +7029,8 @@ i {
           border-bottom: none; }
         .teams-settings-rights-body .table-custom-body tr {
           border-bottom: solid 1px #e6e8eb; }
+          .teams-settings-rights-body .table-custom-body tr:first-of-type {
+            border-top: 1px solid #e6e8eb !important; }
           .teams-settings-rights-body .table-custom-body tr > td, .teams-settings-rights-body .table-custom-body tr > td a {
             font-size: 1.4rem;
             font-weight: 400;
@@ -6965,7 +7040,8 @@ i {
             color: #1b2733; }
           .teams-settings-rights-body .table-custom-body tr#not-yet {
             margin: 0;
-            border: 0 !important; }
+            border: 0 !important;
+            border-top: 1px solid #e6e8eb !important; }
             .teams-settings-rights-body .table-custom-body tr#not-yet #not-yet-td {
               font-size: 1.4rem !important;
               font-weight: 400 !important; }
@@ -7129,6 +7205,9 @@ i {
           text-align: center;
           width: 100%;
           color: #ff2424; }
+          .teams-settings-rights-body .table-custom .table-custom-col-04 a:hover,
+          .teams-settings-rights-body .table-custom .table-custom-col-04 button:not(.btn-custom-primary):hover {
+            text-decoration: underline; }
         .teams-settings-rights-body .table-custom .table-custom-col-04 .choose {
           text-align: center; }
         @media (max-width: 575px) {
@@ -8596,6 +8675,9 @@ i {
         font-weight: 400;
         line-height: 1.6;
         color: #656565; }
+        .create-new-team-header-team-picture:hover, .create-new-team-header-team-picture:focus {
+          color: #656565;
+          text-decoration: underline; }
     .create-new-team-header-inputs {
       display: -ms-grid;
       display: grid;
@@ -10104,7 +10186,10 @@ i {
     .user-settings-general-body .settings-table-row .column-03 {
       color: #1267fb; }
     .user-settings-general-body .settings-table-row a.column-03:hover, .user-settings-general-body .settings-table-row button.column-03:hover {
-      text-decoration: underline; }
+      text-decoration: underline !important; }
+    .user-settings-general-body .settings-table-row .column-03-input:hover button.column-03 {
+      text-decoration: underline !important;
+      cursor: pointer; }
     .user-settings-general-body .settings-table-row .initials {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -10173,6 +10258,7 @@ i {
         font-size: 1.35rem;
         font-weight: 400; }
         .user-settings-teams-body .table-custom-body tr {
+          height: 5rem;
           padding: 1rem 1.7rem;
           border-bottom: solid 1px #e6e8eb; }
           .user-settings-teams-body .table-custom-body tr:last-child {
@@ -11240,16 +11326,26 @@ i {
         line-height: 1.34;
         color: #ffffff; }
       .people-overview-body-main .user-card-title {
+        padding: 0 1.5rem;
+        max-width: 100%;
         margin-bottom: .6rem;
         font-size: 1.4rem;
         font-weight: 400;
         line-height: 1.36;
-        color: #1a2d4f; }
+        color: #1a2d4f;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .people-overview-body-main .user-card-position {
+        padding: 0 1.5rem;
+        max-width: 100%;
         font-size: 1.2rem;
         font-weight: 400;
         line-height: 1.33;
-        color: #6b778c; }
+        color: #6b778c;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .people-overview-body-main .user-card-backdrop {
         display: none;
         -webkit-box-direction: normal;
