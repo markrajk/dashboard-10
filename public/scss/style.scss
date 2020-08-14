@@ -15873,7 +15873,7 @@ border-bottom: none!important;
 
     //SECTION 03 ADMIN SPECIFIC CSS
     &-admin {
-      min-height: 32.5rem;
+
       & .register-company-section {
 
         &-header {
@@ -15886,6 +15886,7 @@ border-bottom: none!important;
           }
         }
         &-body {
+          height: 22.9rem;
           @include flexbox();
           @include align-items(flex-start);
           @include justify-content(space-between);

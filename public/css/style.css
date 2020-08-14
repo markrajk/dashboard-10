@@ -12570,55 +12570,54 @@ i {
         @media (max-width: 767px) {
           .register-company-section-information .register-company-section-body-main {
             margin-right: 0; } }
-    .register-company-section-admin {
-      min-height: 32.5rem; }
-      .register-company-section-admin .register-company-section-header-title span {
-        font-size: 2rem;
-        font-weight: 400;
-        color: #464c4f; }
-      .register-company-section-admin .register-company-section-body {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        -webkit-align-items: flex-start;
-        -moz-align-items: flex-start;
-        align-items: flex-start;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        -webkit-justify-content: space-between;
-        -moz-justify-content: space-between;
-        justify-content: space-between; }
-        @media (max-width: 750px) {
-          .register-company-section-admin .register-company-section-body {
-            -webkit-box-direction: normal;
-            -webkit-box-orient: vertical;
-            -webkit-flex-direction: column;
-            -moz-flex-direction: column;
-            -ms-flex-direction: column;
-            flex-direction: column; }
-            .register-company-section-admin .register-company-section-body-main {
-              margin-top: 2.5rem; } }
-        .register-company-section-admin .register-company-section-body-main {
-          margin-right: 4.2rem;
-          width: 100%;
-          max-width: 36rem; }
-          @media (max-width: 767px) {
-            .register-company-section-admin .register-company-section-body-main {
-              margin-right: 0; } }
-          .register-company-section-admin .register-company-section-body-main .input-container {
-            margin-bottom: 1.8rem; }
-          .register-company-section-admin .register-company-section-body-main .button-primary {
-            padding: .7rem 2.6rem;
-            font-size: 1.4rem;
-            font-weight: 400;
-            line-height: 1.43;
-            letter-spacing: -0.14px;
-            color: #ffffff;
-            border-radius: 1px; }
+    .register-company-section-admin .register-company-section-header-title span {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #464c4f; }
+    .register-company-section-admin .register-company-section-body {
+      height: 22.9rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      justify-content: space-between; }
+      @media (max-width: 750px) {
+        .register-company-section-admin .register-company-section-body {
+          -webkit-box-direction: normal;
+          -webkit-box-orient: vertical;
+          -webkit-flex-direction: column;
+          -moz-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .register-company-section-admin .register-company-section-body-main {
+            margin-top: 2.5rem; } }
+      .register-company-section-admin .register-company-section-body-main {
+        margin-right: 4.2rem;
+        width: 100%;
+        max-width: 36rem; }
+        @media (max-width: 767px) {
+          .register-company-section-admin .register-company-section-body-main {
+            margin-right: 0; } }
+        .register-company-section-admin .register-company-section-body-main .input-container {
+          margin-bottom: 1.8rem; }
+        .register-company-section-admin .register-company-section-body-main .button-primary {
+          padding: .7rem 2.6rem;
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.43;
+          letter-spacing: -0.14px;
+          color: #ffffff;
+          border-radius: 1px; }
     .register-company-section.closed {
       padding-bottom: 2.9rem; }
       .register-company-section.closed .register-company-section-body {
