@@ -336,10 +336,28 @@
                         <p class="people-overview-body-header-title">Favourites</p>
                         <div class="people-overview-body-header-buttons">
                             <button class="star"><i class="icon-star"></i></button>
-                            <button class="button button-secondary">Sort by</button>
+                            <div class="dropdown-custom">
+                                <button class="button button-secondary dropdown-custom-trigger" tabindex="0">Sort
+                                    by</button>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                             <button class="button button-secondary">Edit layout</button>
                             <button class="button button-secondary"><i class="icon-ellipsis"></i></button>
                         </div>
+                    </div>
+
+                    <div class="overview-placeholder">
+                        <p class="overview-placeholder-title">No people selected</p>
+                        <p class="overview-placeholder-text">Please select people from the sidebar to your overview.</p>
                     </div>
 
                     <div class="people-overview-body-main">

@@ -373,6 +373,21 @@ i {
       padding: 1rem;
       padding-top: 3.4rem; } }
 
+.overview-placeholder {
+  padding: 11rem 0; }
+  .overview-placeholder-title {
+    margin-bottom: 1.3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: -0.2px;
+    color: #292929; }
+  .overview-placeholder-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    color: #383838; }
+
 .no-teams {
   max-width: 103rem;
   padding-top: 12.5rem;
@@ -1301,6 +1316,11 @@ i {
       flex-direction: column;
       border-bottom: none;
       padding-bottom: 0; }
+      #teamLeadFeedbackModal .modal-body .feedback.input .feedback-label,
+      #teamFeedbackModal .modal-body .feedback.input .feedback-label,
+      #peerFeedbackModal .modal-body .feedback.input .feedback-label {
+        width: 100%;
+        max-width: 100%; }
     #teamLeadFeedbackModal .modal-body .feedback-text, #teamLeadFeedbackModal .modal-body .feedback-label,
     #teamFeedbackModal .modal-body .feedback-text,
     #teamFeedbackModal .modal-body .feedback-label,
@@ -5094,17 +5114,17 @@ i {
           height: 18.5em; }
           .teams-average-charts-body .section-feedback-given-progress #circ .steps {
             position: absolute;
-            top: 65%;
+            top: 67%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 1.4em;
-            font-weight: 600;
-            line-height: 1.21;
-            letter-spacing: 0.14px;
+            font-size: 1.35rem;
+            font-weight: 500;
+            line-height: 1.33;
+            letter-spacing: -0.07px;
             color: #7d7d88;
             white-space: nowrap; }
         .teams-average-charts-body .section-feedback-given-progress-info {
-          margin-top: 3.2rem;
+          margin-top: 2.8rem;
           max-width: 23rem;
           font-size: 1.35rem;
           font-weight: 500;
@@ -9529,6 +9549,18 @@ i {
         line-height: 1.29;
         letter-spacing: 0.07px;
         color: #647282; }
+    .company-teams-body .option-link {
+      margin-bottom: 2.3rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.29;
+      letter-spacing: 0.07px;
+      color: #647282; }
+      .company-teams-body .option-link.active {
+        color: #373a3f; }
+    .company-teams-body .option-divider {
+      margin: 0 .5rem;
+      font-size: 1.6rem; }
     .company-teams-body .input-group-custom {
       display: -webkit-box;
       display: -webkit-flex;
@@ -11477,6 +11509,10 @@ i {
       font-weight: 500;
       line-height: 1.35;
       color: #172b4d; }
+    .people-overview-body-header-buttons .dropdown-custom {
+      display: inline-block; }
+      .people-overview-body-header-buttons .dropdown-custom-trigger:focus {
+        border-radius: 3px; }
     .people-overview-body-header-buttons .star {
       margin-right: 1.5rem; }
       .people-overview-body-header-buttons .star .icon-star {

@@ -274,8 +274,13 @@
             <main class="company-teams">
                 <div class="company-teams-body">
                     <p class="subheader-text">Teams (42)</p>
-                    <p class="subheader-text-small">Following teams are linked to this company
-                    </p>
+                    <!-- <p class="subheader-text-small">Following teams are linked to this company
+                    </p> -->
+                    <div class="option">
+                        <button class="option-link active">Active Teams</button>
+                        <span class="option-divider">I</span>
+                        <button class="option-link">Archived Teams</button>
+                    </div>
 
                     <div class="input-group-custom">
                         <div class="input-container">
@@ -309,32 +314,6 @@
                             <tr id="not-yet">
                                 <td id="not-yet-td" colspan="5">No search results</td>
                             </tr>
-                            <!-- <tr>
-                                <td class="table-custom-col-01 text-truncate">
-                                    <a href="#" class="text-truncate">Example team</a>
-                                </td>
-                                <td class="table-custom-col-02 text-truncate">Example description</td>
-                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
-                                <td class="table-custom-col-04">32</td>
-                                <td class="table-custom-col-05">
-                                    <div class="dropdown-custom">
-                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
-                                            tabindex="0">
-                                            <i class="icon-ellipsis"></i>
-                                        </button>
-                                        <ul class="dropdown-custom-list">
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
-                                            </li>
-
-                                            <li class="dropdown-custom-list-item">
-                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-
                             <tr>
                                 <td class="table-custom-col-01 text-truncate">
                                     <a href="#" class="text-truncate">Example team</a>
@@ -411,7 +390,165 @@
                                         </ul>
                                     </div>
                                 </td>
-                            </tr> -->
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Example team</a>
+                                </td>
+                                <td class="table-custom-col-02 text-truncate">Example description</td>
+                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
+                                <td class="table-custom-col-04">32</td>
+                                <td class="table-custom-col-05">
+                                    <div class="dropdown-custom">
+                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
+                                            tabindex="0">
+                                            <i class="icon-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="table-custom table-01">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <td class="table-custom-col-01 "><button>Team name <i
+                                            class="icon-caret-up"></i></button></td>
+                                <td class="table-custom-col-02"><button>Team description <i
+                                            class="icon-caret-down"></i></button></td>
+                                <td class="table-custom-col-03"><button>Team lead <i
+                                            class="icon-caret-down"></i></button></td>
+                                <td class="table-custom-col-04"><button>Members <i class="icon-caret-down"></i></button>
+                                </td>
+                                <td class="table-custom-col-05">
+                                    <i class="icon-list"></i>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="table-custom-body">
+                            <tr id="not-yet">
+                                <td id="not-yet-td" colspan="5">No teams yet connected to this
+                                    company</td>
+                            </tr>
+
+                            <tr id="not-yet">
+                                <td id="not-yet-td" colspan="5">No search results</td>
+                            </tr>
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Example team</a>
+                                </td>
+                                <td class="table-custom-col-02 text-truncate">Example description</td>
+                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
+                                <td class="table-custom-col-04">32</td>
+                                <td class="table-custom-col-05">
+                                    <div class="dropdown-custom">
+                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
+                                            tabindex="0">
+                                            <i class="icon-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Example team</a>
+                                </td>
+                                <td class="table-custom-col-02 text-truncate">Example description</td>
+                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
+                                <td class="table-custom-col-04">32</td>
+                                <td class="table-custom-col-05">
+                                    <div class="dropdown-custom">
+                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
+                                            tabindex="0">
+                                            <i class="icon-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Example team</a>
+                                </td>
+                                <td class="table-custom-col-02 text-truncate">Example description</td>
+                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
+                                <td class="table-custom-col-04">32</td>
+                                <td class="table-custom-col-05">
+                                    <div class="dropdown-custom">
+                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
+                                            tabindex="0">
+                                            <i class="icon-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="table-custom-col-01 text-truncate">
+                                    <a href="#" class="text-truncate">Example team</a>
+                                </td>
+                                <td class="table-custom-col-02 text-truncate">Example description</td>
+                                <td class="table-custom-col-03">peter.brown@gmail.com</td>
+                                <td class="table-custom-col-04">32</td>
+                                <td class="table-custom-col-05">
+                                    <div class="dropdown-custom">
+                                        <button href="#" class="dropdown-custom-trigger" onclick="this.focus()"
+                                            tabindex="0">
+                                            <i class="icon-ellipsis"></i>
+                                        </button>
+                                        <ul class="dropdown-custom-list">
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Open profile</a>
+                                            </li>
+
+                                            <li class="dropdown-custom-list-item">
+                                                <a href="#" class="dropdown-custom-list-item-link">Delete member</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
 
                         </tbody>
                     </table>

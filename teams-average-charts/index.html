@@ -1226,7 +1226,7 @@
 
         //CIRCLE PROGRESS BAR
         var bar = new ProgressBar.Circle(circ, {
-            strokeWidth: 6,
+            strokeWidth: 4.2,
             easing: 'easeInOut',
             duration: 1400,
             color: '#19CF40',
@@ -1237,8 +1237,9 @@
                 autoStyleContainer: false
             },
             step: function (state, circle) {
+                console.log(circle.value())
 
-                var value = `${Math.round(circle.value() * 100)}%`;
+                var value = `${Math.round(circle.value() * 1000) / 10}`;
                 if (value === 0) {
                     circle.setText('');
                 } else {
@@ -1250,11 +1251,11 @@
 
         bar.text.style.fontFamily = '"Inter", sans-serif';
         bar.text.style.fontWeight = '600';
-        bar.text.style.fontSize = '3.5em';
+        bar.text.style.fontSize = '3.4em';
         bar.text.style.letterSpacing = '0.35px';
-        bar.text.style.top = '42%';
+        bar.text.style.top = '44%';
         bar.text.style.color = '#363636';
-        bar.animate(.2); // Number from 0.0 to 1.0
+        bar.animate(.128); // Number from 0.0 to 1.0
 
 
         //OPEN CLOSE SECTIONS
