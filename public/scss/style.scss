@@ -15570,6 +15570,11 @@ border-bottom: none!important;
         & span {
           font-weight: 600;
         }
+
+        & button {
+          color: #196ab1;
+          text-decoration: underline;
+        }
       }
 
       &-main {
@@ -15598,6 +15603,34 @@ border-bottom: none!important;
           & .register-company-input {
             margin-bottom: 0;
             max-width: 48%;
+          }
+
+          &-icon {
+            margin-bottom: 1.8rem;
+            position: relative;
+
+            & .register-company-input {
+              margin-bottom: 0;
+            }
+
+            & .icon-check {
+              position: absolute;
+              top: 50%;
+              right: 1.56rem;
+              transform: translate(0, -50%);
+              font-size: 1.74rem;
+              color: #03c419;
+            }
+
+            &.filled {
+              & .register-company-input {
+                background-color: #f5f5f5;
+
+                &::placeholder {
+                  color: #909090;
+                }
+              }
+            }
           }
         }
       }
@@ -15840,30 +15873,52 @@ border-bottom: none!important;
 
     //SECTION 03 ADMIN SPECIFIC CSS
     &-admin {
+      min-height: 32.5rem;
+      & .register-company-section {
 
-      & .register-company-section-body {
-        @include flexbox();
-        @include align-items(flex-start);
-        @include justify-content(space-between);
-
-        @include custom-respond(750) {
-          @include flex-direction(column);
-
-          &-main {
-            margin-top: 2.5rem;
+        &-header {
+          &-title {
+            & span {
+              font-size: 2rem;
+              font-weight: 400;
+              color: #464c4f;
+            }
           }
         }
-
-        &-main {
-          margin-right: 4.2rem;
-          width: 100%;
-          max-width: 36rem;
-
-          @include respond(desktop-sm) {
-            margin-right: 0;
+        &-body {
+          @include flexbox();
+          @include align-items(flex-start);
+          @include justify-content(space-between);
+  
+          @include custom-respond(750) {
+            @include flex-direction(column);
+  
+            &-main {
+              margin-top: 2.5rem;
+            }
           }
-          & .input-container {
-            margin-bottom: 1.8rem;
+  
+          &-main {
+            margin-right: 4.2rem;
+            width: 100%;
+            max-width: 36rem;
+  
+            @include respond(desktop-sm) {
+              margin-right: 0;
+            }
+            & .input-container {
+              margin-bottom: 1.8rem;
+            }
+
+            & .button-primary {
+              padding: .7rem 2.6rem;
+              font-size: 1.4rem;
+              font-weight: 400;
+              line-height: 1.43;
+              letter-spacing: -0.14px;
+              color: #ffffff;
+              border-radius: 1px;
+            }
           }
         }
       }

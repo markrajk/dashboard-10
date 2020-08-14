@@ -244,7 +244,35 @@
 
             <div class="register-company-section register-company-section-admin" id="section-03">
                <div class="register-company-section-header">
-                  <h2 class="register-company-section-header-title">Company Admin</h2>
+                  <h2 class="register-company-section-header-title">Company Admin <span>(in case email
+                        registered)</span></h2>
+                  <p class="register-company-section-header-toggle open-section" target-section="#section-03">
+                     Alexander Smith
+                     <i class="icon-chevron-down"></i>
+                  </p>
+               </div>
+
+               <div class="register-company-section-body">
+                  <p class="register-company-section-body-caption no-ls">
+                     <span>Great, this email is already registered.</span> Please enter
+                     your password. Click <button>here</button> to recover password.
+                  </p>
+
+                  <div class="register-company-section-body-main">
+                     <div class="input-container-icon">
+                        <input type="email" id="email" class="register-company-input" placeholder="Email">
+                        <i class="icon-check"></i>
+                     </div>
+                     <input type="password" id="password" class="register-company-input" placeholder="Password">
+                     <button class="button button-primary">Confirm</button>
+                  </div>
+               </div>
+            </div>
+
+            <div class="register-company-section register-company-section-admin" id="section-03">
+               <div class="register-company-section-header">
+                  <h2 class="register-company-section-header-title">Company Admin <span>(in case email
+                        not registered)</span></h2>
                   <p class="register-company-section-header-toggle open-section" target-section="#section-03">
                      Alexander Smith
                      <i class="icon-chevron-down"></i>
@@ -258,11 +286,9 @@
                   </p>
 
                   <div class="register-company-section-body-main">
-                     <input type="email" id="email" class="register-company-input" placeholder="Email">
-                     <input type="password" id="password" class="register-company-input" placeholder="Password">
-                     <div class="input-container">
-                        <input type="text" id="firstName" class="register-company-input" placeholder="First name">
-                        <input type="text" id="lastName" class="register-company-input" placeholder="Last name">
+                     <div class="input-container-icon filled">
+                        <input type="text" id="name" class="register-company-input" placeholder="Max Matinpalo">
+                        <i class="icon-check"></i>
                      </div>
                      <input type="text" id="position" class="register-company-input" placeholder="Position in company">
                      <input type="text" id="phone" class="register-company-input" placeholder="Phone">
