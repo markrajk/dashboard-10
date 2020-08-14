@@ -33,6 +33,14 @@
     Invite team members new
   </button>
 
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#verifyEmailModal">
+    Verify email
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteTeamModal">
+    Delete team
+  </button>
+
   <!-- TEAM FEEDBACK -->
   <div class="modal fade modal-custom" id="teamFeedbackModal" tabindex="-1" role="dialog"
     aria-labelledby="teamFeedbackModal" aria-hidden="true">
@@ -440,6 +448,50 @@
           <div class="buttons">
             <button class="button button-primary" data-toggle="modal" data-target="#transferOwnershipConfirm"
               data-dismiss="modal" aria-label="Close">Send invites</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERIFY EMAIL MODAL -->
+  <div class="modal fade modal-custom" id="verifyEmailModal" tabindex="-1" role="dialog"
+    aria-labelledby="verifyEmailModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="title">Please verify your email</h2>
+          <p class="text">We have sent you a verification code to you email <span>example@example.com</span></p>
+          <input type="text" placeholder="Please enter verification code">
+          <button class="button button-primary">Confirm</button>
+          <p class="text">Didn’t receive the code? <span>Click here</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DELETE TEAM MODAL-->
+  <div class="modal fade modal-custom" id="deleteTeamModal" tabindex="-1" role="dialog"
+    aria-labelledby="deleteTeamModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="title">Confirm</h2>
+          <p class="text">You are the owner of the team, deleting means all team members will loose access to this
+            forever.</p>
+          <div class="buttons">
+            <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+            <button class="button button-primary">Yes, delete</button>
           </div>
         </div>
       </div>

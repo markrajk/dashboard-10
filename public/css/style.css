@@ -1073,7 +1073,7 @@ i {
         border: solid 1px #d1d7dd; }
         #addQuestionModal .modal-body .input-container .new-dropdown-trigger-value {
           font-weight: 500;
-          color: #868686; }
+          color: #666565; }
   #addQuestionModal .modal-body .buttons {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1146,10 +1146,58 @@ i {
   #teamLeadFeedbackModal .modal-header .header-main,
   #teamFeedbackModal .modal-header .header-main,
   #peerFeedbackModal .modal-header .header-main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
     text-align: center; }
     #teamLeadFeedbackModal .modal-header .header-main-img,
     #teamFeedbackModal .modal-header .header-main-img,
     #peerFeedbackModal .modal-header .header-main-img {
+      margin-bottom: 1.1rem;
+      width: 8rem;
+      height: 8rem;
+      clip-path: circle(48% at 50% 50%);
+      -webkit-clip-path: circle(48% at 50% 50%); }
+    #teamLeadFeedbackModal .modal-header .header-main-initials,
+    #teamFeedbackModal .modal-header .header-main-initials,
+    #peerFeedbackModal .modal-header .header-main-initials {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      font-size: 3.2rem;
+      font-weight: 500;
+      color: #FFF;
+      text-transform: uppercase;
       margin-bottom: 1.1rem;
       width: 8rem;
       height: 8rem;
@@ -1335,6 +1383,59 @@ i {
     font-weight: 400;
     line-height: 1.52;
     color: #3b3e45; }
+
+#verifyEmailModal .modal-dialog {
+  max-width: 84.6rem; }
+#verifyEmailModal .modal-content {
+  border-radius: 5px; }
+#verifyEmailModal .modal-body {
+  padding: 2.3rem 5.2rem 5.7rem;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start; }
+  #verifyEmailModal .modal-body .title {
+    margin-bottom: 1.45rem;
+    font-size: 2.6rem;
+    font-weight: 500;
+    line-height: 1.31;
+    letter-spacing: -0.26px;
+    color: #373d58; }
+  #verifyEmailModal .modal-body .text {
+    margin-bottom: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    color: #7d808e; }
+    #verifyEmailModal .modal-body .text span {
+      font-weight: 500;
+      color: #1273dd;
+      cursor: pointer; }
+  #verifyEmailModal .modal-body input {
+    margin-bottom: 1.6rem;
+    padding: 1.2rem 1.8rem;
+    width: 100%;
+    max-width: 22rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.36;
+    letter-spacing: -0.17px;
+    border-radius: 1px;
+    border: solid 1px #cfd7e0;
+    background-color: #ffffff; }
+    #verifyEmailModal .modal-body input::placeholder {
+      color: #9b9fa3; }
+  #verifyEmailModal .modal-body .button-primary {
+    padding: .7rem 2rem;
+    margin-bottom: 2.7rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 0.07px;
+    color: #ffffff;
+    border-radius: 3px;
+    background-color: #1273dd; }
 
 #inviteTeamMembersModal .modal-dialog {
   max-width: 40.2rem; }
@@ -1952,21 +2053,25 @@ i {
 
 #transferOwnership .modal-dialog,
 #transferOwnershipConfirm .modal-dialog,
-#linkTeamModal .modal-dialog {
+#linkTeamModal .modal-dialog,
+#deleteTeamModal .modal-dialog {
   width: 100%;
   max-width: 39rem; }
 #transferOwnership .modal-content,
 #transferOwnershipConfirm .modal-content,
-#linkTeamModal .modal-content {
+#linkTeamModal .modal-content,
+#deleteTeamModal .modal-content {
   border-radius: 6px; }
 #transferOwnership .modal-header,
 #transferOwnershipConfirm .modal-header,
-#linkTeamModal .modal-header {
+#linkTeamModal .modal-header,
+#deleteTeamModal .modal-header {
   padding: 2rem;
   padding-bottom: 0; }
 #transferOwnership .modal-body,
 #transferOwnershipConfirm .modal-body,
-#linkTeamModal .modal-body {
+#linkTeamModal .modal-body,
+#deleteTeamModal .modal-body {
   padding-top: 1.2rem;
   padding-left: 6rem;
   padding-right: 6rem;
@@ -1978,7 +2083,8 @@ i {
   align-items: flex-start; }
 #transferOwnership .title,
 #transferOwnershipConfirm .title,
-#linkTeamModal .title {
+#linkTeamModal .title,
+#deleteTeamModal .title {
   margin-bottom: 2.5rem;
   font-size: 2rem;
   font-weight: 400;
@@ -1987,7 +2093,8 @@ i {
   color: #454545; }
 #transferOwnership .text,
 #transferOwnershipConfirm .text,
-#linkTeamModal .text {
+#linkTeamModal .text,
+#deleteTeamModal .text {
   margin-bottom: .8rem;
   font-size: 1.3rem;
   font-weight: 500;
@@ -1998,11 +2105,13 @@ i {
   @media (max-width: 575px) {
     #transferOwnership .text,
     #transferOwnershipConfirm .text,
-    #linkTeamModal .text {
+    #linkTeamModal .text,
+    #deleteTeamModal .text {
       white-space: normal; } }
 #transferOwnership input,
 #transferOwnershipConfirm input,
-#linkTeamModal input {
+#linkTeamModal input,
+#deleteTeamModal input {
   margin-bottom: 2.5rem;
   padding: .6rem 1.1rem;
   width: 100%;
@@ -2015,11 +2124,13 @@ i {
   letter-spacing: 0.15px; }
   #transferOwnership input::placeholder,
   #transferOwnershipConfirm input::placeholder,
-  #linkTeamModal input::placeholder {
+  #linkTeamModal input::placeholder,
+  #deleteTeamModal input::placeholder {
     color: #a9a9a9; }
 #transferOwnership .buttons,
 #transferOwnershipConfirm .buttons,
-#linkTeamModal .buttons {
+#linkTeamModal .buttons,
+#deleteTeamModal .buttons {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2038,7 +2149,8 @@ i {
   justify-content: space-between; }
   #transferOwnership .buttons .button,
   #transferOwnershipConfirm .buttons .button,
-  #linkTeamModal .buttons .button {
+  #linkTeamModal .buttons .button,
+  #deleteTeamModal .buttons .button {
     padding-top: .7rem;
     padding-bottom: .7rem;
     font-size: 1.5rem;
@@ -2087,6 +2199,11 @@ i {
   -moz-align-items: flex-start;
   align-items: flex-start; }
 
+#deleteTeamModal .modal-dialog {
+  max-width: 45rem; }
+#deleteTeamModal .modal-body .text {
+  white-space: normal; }
+
 .no-data {
   max-width: 103rem;
   padding-left: 2rem;
@@ -2133,7 +2250,8 @@ i {
       color: #383838; }
     .no-data-main-link {
       font-weight: 500;
-      color: #137efe; }
+      color: #137efe;
+      text-decoration: underline; }
 
 .table-custom {
   width: 100% !important;
@@ -3391,7 +3509,7 @@ i {
     align-items: center;
     border-right: 1.5px solid #F2F2F2;
     background-color: #fff;
-    z-index: 200; }
+    z-index: 1000; }
     .sidebar-main-top, .sidebar-main-bottom {
       text-align: center; }
     .sidebar-main-item:not(:last-child) {
@@ -3787,7 +3905,7 @@ i {
     border-radius: 50%;
     background-color: #fff;
     cursor: pointer;
-    z-index: 300; }
+    z-index: 1100; }
     .sidebar-menu-toggle i {
       margin-left: .075rem;
       margin-right: .075rem;
@@ -4862,6 +4980,31 @@ i {
           -webkit-justify-content: flex-start;
           -moz-justify-content: flex-start;
           justify-content: flex-start; }
+          .teams-average-charts-body .section-feedback-given-main-item-initials {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #FFF;
+            background-color: #ffd800;
+            margin-right: 1.4rem;
+            width: 4.5rem;
+            height: 4.5rem;
+            clip-path: circle(48% at 50% 50%);
+            -webkit-clip-path: circle(48% at 50% 50%); }
           .teams-average-charts-body .section-feedback-given-main-item-img {
             margin-right: 1.4rem;
             width: 4.5rem;
@@ -4913,7 +5056,10 @@ i {
               font-size: 1.28rem;
               font-weight: 500;
               line-height: 1.25;
-              color: #30333b; }
+              color: #30333b;
+              white-space: nowrap; }
+            .teams-average-charts-body .section-feedback-given-main-item-bar-text {
+              margin-right: 2rem; }
       .teams-average-charts-body .section-feedback-given-progress {
         padding-top: 1.5rem;
         padding-left: 7.3rem;
@@ -5739,7 +5885,53 @@ i {
     border-top: 1.5px solid #f2f2f2; }
   .teams-comments .section-comments {
     margin-bottom: 3.45rem; }
+    .teams-comments .section-comments .no-data {
+      max-width: 103rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 100%;
+      height: 42.7rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      border: 1px solid #EAEAEA;
+      border-radius: 5px;
+      margin-top: 2.5rem; }
+      .teams-comments .section-comments .no-data-main {
+        max-width: 33rem;
+        text-align: center; }
+        .teams-comments .section-comments .no-data-main svg {
+          margin-bottom: 2rem; }
+        .teams-comments .section-comments .no-data-main-title {
+          margin-bottom: 1.36rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          line-height: 1.33;
+          letter-spacing: -0.2px;
+          color: #292929; }
+        .teams-comments .section-comments .no-data-main-text {
+          font-size: 1.4rem;
+          font-weight: 400;
+          line-height: 1.36;
+          letter-spacing: normal;
+          color: #383838; }
+        .teams-comments .section-comments .no-data-main-link {
+          font-weight: 500;
+          color: #137efe; }
     .teams-comments .section-comments-header {
+      position: relative;
       height: 3.7rem;
       max-width: 103rem;
       display: -webkit-box;
@@ -5766,6 +5958,10 @@ i {
       color: #647282;
       border-radius: 2.5px; }
       .teams-comments .section-comments-header .open-comment-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         height: 100%;
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -6189,15 +6385,14 @@ i {
           color: #1b2733; }
           .teams-people-view .table-custom-body .table-custom-col-01 a .name .crown {
             position: absolute;
-            top: 0;
+            top: 50%;
             right: -.7rem;
-            transform: translate(100%, 100%);
+            transform: translate(100%, -50%);
             display: none; }
             .teams-people-view .table-custom-body .table-custom-col-01 a .name .crown svg {
               width: 1.38rem;
               height: 1.1rem; }
           .teams-people-view .table-custom-body .table-custom-col-01 a .name.lead .crown {
-            margin-top: -1rem;
             display: inline-block; }
         .teams-people-view .table-custom-body .table-custom-col-01 a .email {
           margin-top: .2rem;
@@ -6216,7 +6411,7 @@ i {
         overflow: hidden;
         text-overflow: ellipsis; }
         .teams-people-view .table-custom-body .table-custom-col-02 .update-jobtitle, .teams-people-view .table-custom-body .table-custom-col-02 p {
-          font-size: 1.4rem;
+          font-size: 1.35rem;
           line-height: 1.36;
           border: 0;
           outline: none;
@@ -6473,6 +6668,9 @@ i {
         color: #1267fb; }
       .teams-settings-general-body .settings-table-row a.column-03:hover, .teams-settings-general-body .settings-table-row button.column-03:hover {
         text-decoration: underline; }
+      .teams-settings-general-body .settings-table-row .column-03-input:hover button.column-03 {
+        text-decoration: underline !important;
+        cursor: pointer; }
       .teams-settings-general-body .settings-table-row img {
         width: 5.59rem;
         height: 5.59rem;
@@ -7669,6 +7867,32 @@ i {
           text-decoration: underline; }
       .new-feedback .todo-row:not(:last-of-type) {
         border-bottom: 1px solid #F0F0F0; }
+      .new-feedback .todo-row-initials {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #FFF;
+        margin-right: 1.57rem;
+        width: 3.85rem;
+        height: 3.85rem;
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%);
+        background-color: #ffd800;
+        text-transform: uppercase; }
       .new-feedback .todo-row-img {
         margin-right: 1.57rem;
         width: 3.85rem;
@@ -10596,7 +10820,11 @@ i {
           font-size: 1.45rem;
           font-weight: 500;
           line-height: 1.31;
-          color: #7d808e; }
+          color: #7d808e;
+          max-width: 37rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
           .people-average-charts-header-info .name .team strong {
             font-weight: 500; }
         .people-average-charts-header-info .name.you-modifier {
