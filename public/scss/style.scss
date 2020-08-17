@@ -3478,24 +3478,24 @@ i {
     }
 
     &-name {
-      font-size: 1.5rem;
+      font-size: 1.33rem;
       font-weight: 500;
-      line-height: 1.33;
-      letter-spacing: -0.17px;
-      color: #292929;
+      line-height: 1.21;
+      letter-spacing: -0.1px;
+      color: #1a1a1a;
       white-space: nowrap;
       margin-right: 1.5rem;
     }
 
     &-date {
       margin-left: auto;
-      font-size: 1.3rem;
-      line-height: 1.36;
-      letter-spacing: -0.15px;
-      color: #7a7c83;
+      font-size: 1.23rem;
+      line-height: 1.22;
+      letter-spacing: -0.09px;
+      color: #5a5f71;
       white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
@@ -3654,8 +3654,10 @@ i {
     }
 
     &.double {
-      font-size: 1.35rem;
-      line-height: 1.38;
+      font-size: 1.23rem;
+      line-height: 1.63;
+      letter-spacing: -0.06px;
+      color: #252b34;
 
       &.improvement {
         @include flexbox();
@@ -3671,7 +3673,6 @@ i {
         display: block;
         margin-top: 1.2rem;
         padding-top: 0;
-
         color: #383838;
         transition: opacity .3s ease-in-out .3s;
 
@@ -3696,6 +3697,11 @@ i {
         font-weight: 500;
         color: #ADADAD;
         white-space: nowrap;
+
+        font-size: 1.23rem;
+      line-height: 1.63;
+      letter-spacing: -0.06px;
+      color: #252b34;
       }
 
       & .close {
@@ -7616,7 +7622,7 @@ i {
       @include flexbox;
       @include justify-content(space-between);
       @include align-items(center);
-      padding: 1rem 1.35rem;
+      padding: 1rem 1.25rem;
       background-color: #f7f9fa;
       border-radius: 1px;
       font-size: 1.25rem;
@@ -7624,6 +7630,15 @@ i {
       line-height: 1.28;
       color: #647282;
       border-radius: 2.5px;
+
+      
+      & p {
+        font-size: 1.13rem;
+        font-weight: 500;
+        line-height: 1.24;
+        letter-spacing: -0.03px;
+        color: #526172;
+      }
 
       & .open-comment-section {
         position: absolute;
