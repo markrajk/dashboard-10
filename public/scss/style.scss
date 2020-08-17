@@ -9456,16 +9456,18 @@ i {
       margin-top: 2.2rem;
 
       &-head {
-border-bottom: none!important;
+        border-bottom: none!important;
+
         & tr {
           padding-left: 1.7rem;
           padding-right: 1.7rem;
           
           & td {
-            font-size: 1.15rem;
+            font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.22;
             color: #647282;
+            letter-spacing: -0.03px;
           }
         }
       }
@@ -9482,7 +9484,7 @@ border-bottom: none!important;
         }
 
         & tr {
-          padding: 1.65rem 1.7rem;
+          padding: 1.75rem 1.7rem;
           border-bottom: solid 1px #e6e8eb;
 
           &:first-of-type {
@@ -9722,7 +9724,7 @@ border-bottom: none!important;
       margin-top: 2rem;
 
       &:not(:last-of-type) {
-        margin-bottom: 4.7rem;
+        margin-bottom: 3.8rem;
       }
 
       & tbody {

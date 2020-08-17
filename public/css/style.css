@@ -7406,17 +7406,18 @@ i {
           padding-left: 1.7rem;
           padding-right: 1.7rem; }
           .teams-settings-rights-body .table-custom-head tr td {
-            font-size: 1.15rem;
+            font-size: 1.125rem;
             font-weight: 400;
             line-height: 1.22;
-            color: #647282; }
+            color: #647282;
+            letter-spacing: -0.03px; }
       .teams-settings-rights-body .table-custom-body {
         font-size: 1.35rem;
         font-weight: 400; }
         .teams-settings-rights-body .table-custom-body > tr:not(.input-row):nth-last-child(2) {
           border-bottom: none; }
         .teams-settings-rights-body .table-custom-body tr {
-          padding: 1.65rem 1.7rem;
+          padding: 1.75rem 1.7rem;
           border-bottom: solid 1px #e6e8eb; }
           .teams-settings-rights-body .table-custom-body tr:first-of-type {
             border-top: 1px solid #e6e8eb !important; }
@@ -7619,7 +7620,7 @@ i {
     .teams-settings-rights-body .table-01 {
       margin-top: 2rem; }
       .teams-settings-rights-body .table-01:not(:last-of-type) {
-        margin-bottom: 4.7rem; }
+        margin-bottom: 3.8rem; }
       .teams-settings-rights-body .table-01 tbody {
         max-height: 22.4rem !important;
         overflow-y: auto;
