@@ -3301,9 +3301,11 @@ i {
 
   &-head {
     @include flexbox;
-    height: 4.3rem;
-    font-size: 1.2rem;
-    line-height: 1.33;
+    height: 4.2rem;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.24;
+    letter-spacing: -0.03px;
     color: #647282;
     background-color: #f7f9fa;
     border: solid 1px #e6e8eb;
@@ -8826,8 +8828,13 @@ i {
     margin-bottom: 1.2rem;
 
     .button {
-      margin-right: 1.4rem;
+      padding: .7rem 1.7rem;
+      margin-right: 1.5rem;
       margin-bottom: 1.5rem;
+      font-size: 1.28rem;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -0.1px;
     }
   }
 
@@ -8838,9 +8845,10 @@ i {
     & .button-primary.add-new {
       margin-top: 3.4rem;
       padding: .8rem 3.9rem;
-      font-size: 1.5rem;
+      font-size: 1.28rem;
       font-weight: 500;
-      line-height: 1.33;
+      line-height: 1.18;
+      letter-spacing: -0.1px;
       color: #ffffff;
     }
 
@@ -8849,14 +8857,15 @@ i {
       //height: 100%;
       &-header {
         height: 3.7rem;
-        padding: 1rem 1.7rem;
+        padding: 1rem 1.3rem;
         background-color: #f7f9fa;
         border-radius: 2.5px;
 
         & .column-01 {
-          font-size: 1.25rem;
+          font-size: 1.18rem;
           font-weight: 500;
-          line-height: 1.33;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           color: #647282;
         }
       }
@@ -8877,14 +8886,15 @@ i {
       }
 
       &-row {
-        padding: 2.8rem 1.7rem;
+        padding: 2.8rem 1.3rem;
         padding-bottom: 2.6rem;
         padding-right: 2rem;
         @include flexbox;
-        font-size: 1.4rem;
+        font-size: 1.28rem;
         font-weight: 400;
-        color: #1b2733;
-        line-height: 1.36;
+        line-height: 1.18;
+        letter-spacing: -0.06px;
+        color: #1b2734;
         @include align-items(center);
         white-space: nowrap;
         height: 9.3rem;
@@ -8902,11 +8912,17 @@ i {
           min-width: 0;
           width: 100%;
           max-width: 20.5rem;
-          font-size: 1.4rem;
+          height: 3.4rem;
+          font-size: 1.23rem;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #2d3640;
           outline: none;
           border-radius: 4px;
           border: solid 1px #cfd7e0;
           min-width: 0;
+
+
 
           &::placeholder {
             color: #1b2733;
@@ -8915,6 +8931,12 @@ i {
           &.desc {
             width: 100%;
             max-width: 40rem;
+
+            &.empty {
+              &::placeholder {
+                color: #c6c6c6!important;
+              }
+            }
           }
         }
 
@@ -8922,12 +8944,14 @@ i {
           margin-right: 0;
           position: relative;
           width: 90%;
-          max-width: 17.7rem;
+          max-width: 16.8rem;
+          height: 3.4rem;
           outline: none;
           padding: .5rem 1.1rem;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733;
+          font-size: 1.23rem;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #2d3640;
           border-radius: 4px;
           border: solid 1px #cfd7e0;
 
@@ -8935,7 +8959,7 @@ i {
           -webkit-appearance: none;
           appearance: none;
 
-          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
           background-repeat: no-repeat;
           background-position-x: 95%;
           background-position-y: 50%;
@@ -8947,6 +8971,7 @@ i {
         }
 
         & .button-outlined {
+          height: 3.4rem;
           padding: .7rem 1.3rem;
           font-size: 1.4rem;
           font-weight: 400;
@@ -8960,10 +8985,11 @@ i {
           & span {
             display: block;
             margin-top: .6rem;
-            font-size: 1.3rem;
+            font-size: 1.15rem;
             font-weight: 400;
+            line-height: 1.22;
+            letter-spacing: -0.06px;
             color: #6F7A89;
-            white-space: normal;
           }
         }
 
@@ -9074,8 +9100,13 @@ i {
   }
 
   & .button {
-    margin-right: 1.4rem;
+    padding: .7rem 1.7rem;
+    margin-right: 1.5rem;
     margin-bottom: 1.5rem;
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.1px;
   }
 
   &-body {
@@ -9084,16 +9115,16 @@ i {
 
     & .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733;
 
       &-small {
-        font-size: 1.4rem;
+        font-size: 12.3px;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
       }
     }
@@ -9105,9 +9136,11 @@ i {
 
       & a,
       button {
+        height: 3.2rem;
+        font-size: 12.8px;
         font-weight: 400;
-        padding: .6rem 1.9rem;
-        font-size: 1.5rem;
+        line-height: 1.18;
+        color: #1b2733;
         margin-right: 0 !important;
         @include align-self(center);
       }
@@ -9129,7 +9162,7 @@ i {
         @include target-ie() {
 
           &:nth-of-type(1) {
-            padding-left: 1.7rem;
+            padding-left: 1.8rem;
           }
         }
 
@@ -9144,9 +9177,6 @@ i {
 
       &-head {
         height: 4.2rem;
-        font-size: 1.2rem;
-        line-height: 1.33;
-        color: #647282;
         background-color: #f7f9fa;
         border: solid 1px #e6e8eb;
         border-bottom: 0;
@@ -9171,7 +9201,7 @@ i {
         max-height: calc(100vh - 26.3rem - 1.5px - 15.4rem);
 
         & tr {
-          padding: 0rem 1.7rem;
+          padding: 0rem 1.8rem;
           padding-bottom: 1.4rem;
 
           @include target-ie() {
@@ -9236,8 +9266,10 @@ i {
       & .table-custom-body {
 
         & tr td {
-          font-size: 1.4rem;
-          line-height: 1.14;
+          font-size: 12.3px;
+          font-weight: 400;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           color: #1b2733;
 
           &:not(:last-child) {
@@ -9262,35 +9294,6 @@ i {
 
       & .table-custom-col-03 {
         @include flex(1);
-
-        & select {
-          margin-top: 1px;
-          margin-bottom: 1px;
-          position: relative;
-          width: 90%;
-          max-width: 21.2rem;
-          outline: none;
-          padding: .5rem 1.3rem;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733;
-          border-radius: 4px;
-          border: solid 1px #D8DFE6;
-
-          -moz-appearance: none;
-          -webkit-appearance: none;
-          appearance: none;
-
-          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-          background-repeat: no-repeat;
-          background-position-x: 95%;
-          background-position-y: 50%;
-
-          & option {
-            font-size: 1.2rem;
-            padding-left: 1.3rem;
-          }
-        }
       }
 
       & .table-custom-col-04 {
@@ -9298,6 +9301,10 @@ i {
         @include justify-content(center);
 
         & a {
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.23;
+          letter-spacing: -0.07px;
           text-align: center;
           width: 100%;
           max-width: 9.4rem;
@@ -9308,37 +9315,67 @@ i {
 
     }
 
+    & select {
+      margin-right: 0;
+      position: relative;
+      width: 90%;
+      max-width: 16.8rem;
+      height: 3.4rem;
+      outline: none;
+      padding: .5rem 1.1rem;
+      font-size: 1.23rem;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #2d3640;
+      border-radius: 4px;
+      border: solid 1px #cfd7e0;
+
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+
+      background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: 50%;
+
+      & option {
+        font-size: 1.2rem;
+        padding-left: 1.3rem;
+      }
+    }
+
     & .input-row {
       display: none;
       padding-top: 1.8rem !important;
       padding-bottom: 1.8rem !important;
       border-top: solid 1px #e6e8eb !important;
 
-      & select {
-        width: 90%;
-        max-width: 21.2rem;
-        outline: none;
-        padding: .5rem 1.3rem;
-        font-size: 1.4rem;
-        line-height: 1.36;
-        color: #1b2733;
-        border-radius: 4px;
-        border: solid 1px #D8DFE6;
+      // & select {
+      //   width: 90%;
+      //   max-width: 21.2rem;
+      //   outline: none;
+      //   padding: .5rem 1.3rem;
+      //   font-size: 1.4rem;
+      //   line-height: 1.36;
+      //   color: #1b2733;
+      //   border-radius: 4px;
+      //   border: solid 1px #D8DFE6;
 
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
+      //   -moz-appearance: none;
+      //   -webkit-appearance: none;
+      //   appearance: none;
 
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 50%;
+      //   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      //   background-repeat: no-repeat;
+      //   background-position-x: 95%;
+      //   background-position-y: 50%;
 
-        & option {
-          font-size: 1.2rem;
-          padding-left: 1.3rem;
-        }
-      }
+      //   & option {
+      //     font-size: 1.2rem;
+      //     padding-left: 1.3rem;
+      //   }
+      // }
 
       & .table-custom-col-04 {
         & a {
@@ -11978,17 +12015,17 @@ i {
 
     & .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733;
 
       &-small {
         margin-bottom: 2.3rem;
-        font-size: 1.4rem;
+        font-size: 12.3px;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
       }
     }
@@ -11996,20 +12033,20 @@ i {
     & .option {
       &-link {
         margin-bottom: 2.3rem;
-        font-size: 1.4rem;
+        font-size: 12.3px;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
 
         &.active {
-          color: #373a3f;
+          color: #1b2733;
         }
       }
 
       &-divider {
         margin: 0 .5rem;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
       }
     }
 
@@ -12025,20 +12062,20 @@ i {
         position: relative;
 
         & input {
+          height: 3.2rem;
           width: 100%;
           padding: .65rem 3.5rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
-          font-size: 1.5rem;
+          font-size: 1.28rem;
           font-weight: 400;
-          line-height: 1.33;
-          color: #333;
+          line-height: 1.18;
           border: solid 1px #dedede;
           border-radius: 1.8rem;
 
           &::placeholder {
-            color: #647282;
+            color: #9facba;
           }
 
           &:focus {
@@ -12052,7 +12089,7 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #99A5B2;
+          color: #9facba;
         }
       }
 
@@ -12126,14 +12163,21 @@ i {
           border-bottom: solid 1px #e6e8eb;
           height: 5.2rem;
 
+          &:hover:not(#not-yet) {
+            background-color: #faf9f9;
+          }
+
+          &:hover .table-custom-col-05 .dropdown-custom {
+            display: block!important;
+          }
+
 
           &>td,
           &>td a {
-            font-size: 1.4rem;
+            font-size: 12.3px;
             font-weight: 400;
-            line-height: 1.14;
-            letter-spacing: 0.07px;
-            text-align: left;
+            line-height: 1.22;
+            letter-spacing: -0.06px;
             color: #1b2733;
           }
 
@@ -12330,8 +12374,13 @@ i {
         @include flex(.3);
         @include justify-content(center);
 
+        & .dropdown-custom {
+          display: none;
+        }
+
         & a,
         button:not(.btn-custom-primary) {
+
           text-align: center;
           width: 100%;
           color: #647282;
@@ -13029,16 +13078,16 @@ i {
 
     & .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733;
 
       &-small {
-        font-size: 1.4rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
       }
     }
@@ -13050,28 +13099,30 @@ i {
 
       &-header {
         height: 3.7rem;
-        padding: 1rem 1.2rem;
+        padding: 1rem 1.3rem;
         background-color: #f7f9fa;
         border-radius: 2.5px;
 
         & .column-01 {
-          font-size: 1.2rem;
+          font-size: 1.15rem;
           font-weight: 500;
-          line-height: 1.33;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           color: #647282;
         }
       }
 
       &-row {
-        padding: 2.6rem 1.2rem;
+        padding: 2.6rem 1.3rem;
         padding-bottom: 2.6rem;
         padding-right: 2rem;
         @include flexbox;
         height: 7.2rem;
-        font-size: 1.4rem;
+        font-size: 1.28rem;
         font-weight: 400;
         color: #1b2733;
-        line-height: 1.36;
+        line-height: 1.18;
+        letter-spacing: -0.06px;
         @include align-items(center);
         white-space: nowrap;
         border-bottom: 1px solid #E6E8EB;
@@ -13080,12 +13131,14 @@ i {
           margin-right: 0;
           position: relative;
           width: 90%;
-          max-width: 17.7rem;
+          max-width: 16.8rem;
+          height: 3.4rem;
           outline: none;
           padding: .5rem 1.1rem;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733;
+          font-size: 1.23rem;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #2d3640;
           border-radius: 4px;
           border: solid 1px #cfd7e0;
 
@@ -13093,7 +13146,7 @@ i {
           -webkit-appearance: none;
           appearance: none;
 
-          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+          background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
           background-repeat: no-repeat;
           background-position-x: 95%;
           background-position-y: 50%;
@@ -13106,17 +13159,24 @@ i {
 
         & .settings-input {
           margin-right: 1.6rem;
-          padding: .5rem 1rem;
-          font-size: 1.4rem;
+          padding: .5rem 1.1rem;
           min-width: 0;
           width: 100%;
           max-width: 20.5rem;
+          height: 3.4rem;
+          font-size: 1.23rem;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #2d3640;
           outline: none;
           border-radius: 4px;
           border: solid 1px #cfd7e0;
+          min-width: 0;
+
+
 
           &::placeholder {
-            color: #AAA;
+            color: #1b2733;
           }
         }
 
@@ -13127,7 +13187,7 @@ i {
 
         & .column-02 {
           margin-left: 1rem;
-          margin-right: 1.5rem;
+          margin-right: 2.05rem;
 
         }
 
@@ -13137,6 +13197,7 @@ i {
         }
 
         & .column-03 {
+          font-weight: 500;
           color: #1267fb;
         }
 
@@ -13212,20 +13273,20 @@ i {
 
   &-header {
     margin-top: 3.3rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3.4rem;
 
     & .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733;
 
       &-small {
-        font-size: 1.4rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
       }
     }
@@ -13234,19 +13295,19 @@ i {
   &-body {
     max-height: calc(100vh - 30rem);
 
-    .table-custom {
+    & .table-custom {
 
       max-width: 80rem;
       //margin-top: 2.2rem;
 
       &-body {
         max-height: calc(100vh - 42rem);
-        font-size: 1.35rem;
+        // font-size: 1.35rem;
         font-weight: 400;
 
         & tr {
           height: 5rem;
-          padding: 1rem 1.7rem;
+          padding: 1rem 1.8rem;
           border-bottom: solid 1px #e6e8eb;
 
           &:last-child {
@@ -13254,29 +13315,7 @@ i {
           }
         }
 
-        &-col-01 {
 
-          & a {
-            font-size: 1.35rem;
-            line-height: 1.33;
-            color: #1165f4;
-          }
-        }
-
-        &-col-02 {
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733;
-        }
-
-        &-col-03 {
-          font-size: 1.4rem;
-        }
-
-        &-col-04 {
-          font-size: 1.3rem;
-          color: #647282;
-        }
 
         & .input-row {
           display: none;
@@ -13368,6 +13407,39 @@ i {
             @include flexbox;
           }
         }
+      }
+
+      &-col-01 {
+
+        & a {
+          font-size: 1.23rem!important;
+          font-weight: 400;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #1b2733;
+          //color: #1165f4;
+        }
+      }
+
+      &-col-02 {
+        font-size: 12.3px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #1b2733;
+      }
+
+      &-col-03 {
+        font-size: 12.3px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #1b2733;
+      }
+
+      &-col-04 {
+        font-size: 1.3rem;
+        color: #647282;
       }
 
       &-col-01,

@@ -2328,9 +2328,11 @@ i {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 4.3rem;
-    font-size: 1.2rem;
-    line-height: 1.33;
+    height: 4.2rem;
+    font-size: 1.13rem;
+    font-weight: 400;
+    line-height: 1.24;
+    letter-spacing: -0.03px;
     color: #647282;
     background-color: #f7f9fa;
     border: solid 1px #e6e8eb;
@@ -6921,26 +6923,33 @@ i {
     padding-top: 2.6rem;
     margin-bottom: 1.2rem; }
     .teams-settings-question-header .button {
-      margin-right: 1.4rem;
-      margin-bottom: 1.5rem; }
+      padding: .7rem 1.7rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.28rem;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -0.1px; }
   .teams-settings-question-body {
     max-width: 79.7rem; }
     .teams-settings-question-body .button-primary.add-new {
       margin-top: 3.4rem;
       padding: .8rem 3.9rem;
-      font-size: 1.5rem;
+      font-size: 1.28rem;
       font-weight: 500;
-      line-height: 1.33;
+      line-height: 1.18;
+      letter-spacing: -0.1px;
       color: #ffffff; }
     .teams-settings-question-body .settings-table-header {
       height: 3.7rem;
-      padding: 1rem 1.7rem;
+      padding: 1rem 1.3rem;
       background-color: #f7f9fa;
       border-radius: 2.5px; }
       .teams-settings-question-body .settings-table-header .column-01 {
-        font-size: 1.25rem;
+        font-size: 1.18rem;
         font-weight: 500;
-        line-height: 1.33;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
         color: #647282; }
     .teams-settings-question-body .settings-table-body {
       padding-bottom: 5rem;
@@ -6954,7 +6963,7 @@ i {
         width: 0;
         height: 0; }
     .teams-settings-question-body .settings-table-row {
-      padding: 2.8rem 1.7rem;
+      padding: 2.8rem 1.3rem;
       padding-bottom: 2.6rem;
       padding-right: 2rem;
       display: -webkit-box;
@@ -6962,10 +6971,11 @@ i {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      font-size: 1.4rem;
+      font-size: 1.28rem;
       font-weight: 400;
-      color: #1b2733;
-      line-height: 1.36;
+      line-height: 1.18;
+      letter-spacing: -0.06px;
+      color: #1b2734;
       -webkit-box-align: center;
       -ms-flex-align: center;
       -webkit-align-items: center;
@@ -6982,7 +6992,11 @@ i {
         min-width: 0;
         width: 100%;
         max-width: 20.5rem;
-        font-size: 1.4rem;
+        height: 3.4rem;
+        font-size: 1.23rem;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #2d3640;
         outline: none;
         border-radius: 4px;
         border: solid 1px #cfd7e0;
@@ -6992,22 +7006,26 @@ i {
         .teams-settings-question-body .settings-table-row .settings-input.desc {
           width: 100%;
           max-width: 40rem; }
+          .teams-settings-question-body .settings-table-row .settings-input.desc.empty::placeholder {
+            color: #c6c6c6 !important; }
       .teams-settings-question-body .settings-table-row select {
         margin-right: 0;
         position: relative;
         width: 90%;
-        max-width: 17.7rem;
+        max-width: 16.8rem;
+        height: 3.4rem;
         outline: none;
         padding: .5rem 1.1rem;
-        font-size: 1.4rem;
-        line-height: 1.36;
-        color: #1b2733;
+        font-size: 1.23rem;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #2d3640;
         border-radius: 4px;
         border: solid 1px #cfd7e0;
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
         background-repeat: no-repeat;
         background-position-x: 95%;
         background-position-y: 50%; }
@@ -7015,6 +7033,7 @@ i {
           font-size: 1.2rem;
           padding-left: 1.3rem; }
       .teams-settings-question-body .settings-table-row .button-outlined {
+        height: 3.4rem;
         padding: .7rem 1.3rem;
         font-size: 1.4rem;
         font-weight: 400;
@@ -7025,10 +7044,11 @@ i {
         .teams-settings-question-body .settings-table-row .column-01 span {
           display: block;
           margin-top: .6rem;
-          font-size: 1.3rem;
+          font-size: 1.15rem;
           font-weight: 400;
-          color: #6F7A89;
-          white-space: normal; }
+          line-height: 1.22;
+          letter-spacing: -0.06px;
+          color: #6F7A89; }
       .teams-settings-question-body .settings-table-row .column-02 {
         max-width: 60rem;
         margin-left: 1rem;
@@ -7087,22 +7107,27 @@ i {
     padding-top: 2.6rem;
     margin-bottom: 1.8rem; }
   .teams-settings-feedback .button {
-    margin-right: 1.4rem;
-    margin-bottom: 1.5rem; }
+    padding: .7rem 1.7rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.1px; }
   .teams-settings-feedback-body {
     max-width: 81.7rem;
     max-height: calc(100vh - 26.3rem - 1.5px); }
     .teams-settings-feedback-body .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733; }
       .teams-settings-feedback-body .subheader-text-small {
-        font-size: 1.4rem;
+        font-size: 12.3px;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282; }
     .teams-settings-feedback-body .section-caption {
       display: -webkit-box;
@@ -7122,9 +7147,11 @@ i {
       align-items: center; }
       .teams-settings-feedback-body .section-caption a,
       .teams-settings-feedback-body .section-caption button {
+        height: 3.2rem;
+        font-size: 12.8px;
         font-weight: 400;
-        padding: .6rem 1.9rem;
-        font-size: 1.5rem;
+        line-height: 1.18;
+        color: #1b2733;
         margin-right: 0 !important;
         -webkit-align-self: center;
         -moz-align-self: center;
@@ -7152,18 +7179,15 @@ i {
         align-items: center; }
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           .teams-settings-feedback-body .table-custom th:nth-of-type(1), .teams-settings-feedback-body .table-custom td:nth-of-type(1) {
-            padding-left: 1.7rem; } }
+            padding-left: 1.8rem; } }
         @supports (-ms-ime-align: auto) {
           .teams-settings-feedback-body .table-custom th:nth-of-type(1), .teams-settings-feedback-body .table-custom td:nth-of-type(1) {
-            padding-left: 1.7rem; } }
+            padding-left: 1.8rem; } }
       @media (max-width: 575px) {
         .teams-settings-feedback-body .table-custom td > * {
           font-size: 1.2rem; } }
       .teams-settings-feedback-body .table-custom-head {
         height: 4.2rem;
-        font-size: 1.2rem;
-        line-height: 1.33;
-        color: #647282;
         background-color: #f7f9fa;
         border: solid 1px #e6e8eb;
         border-bottom: 0;
@@ -7180,7 +7204,7 @@ i {
         border-top-right-radius: 0;
         max-height: calc(100vh - 26.3rem - 1.5px - 15.4rem); }
         .teams-settings-feedback-body .table-custom-body tr {
-          padding: 0rem 1.7rem;
+          padding: 0rem 1.8rem;
           padding-bottom: 1.4rem; }
           @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
             .teams-settings-feedback-body .table-custom-body tr {
@@ -7223,8 +7247,10 @@ i {
     .teams-settings-feedback-body .table-02 {
       margin-top: 2rem; }
       .teams-settings-feedback-body .table-02 .table-custom-body tr td {
-        font-size: 1.4rem;
-        line-height: 1.14;
+        font-size: 12.3px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
         color: #1b2733; }
         .teams-settings-feedback-body .table-02 .table-custom-body tr td:not(:last-child) {
           margin-right: .3rem; }
@@ -7251,29 +7277,6 @@ i {
         -moz-flex: 1;
         -ms-flex: 1;
         flex: 1; }
-        .teams-settings-feedback-body .table-02 .table-custom-col-03 select {
-          margin-top: 1px;
-          margin-bottom: 1px;
-          position: relative;
-          width: 90%;
-          max-width: 21.2rem;
-          outline: none;
-          padding: .5rem 1.3rem;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733;
-          border-radius: 4px;
-          border: solid 1px #D8DFE6;
-          -moz-appearance: none;
-          -webkit-appearance: none;
-          appearance: none;
-          background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-          background-repeat: no-repeat;
-          background-position-x: 95%;
-          background-position-y: 50%; }
-          .teams-settings-feedback-body .table-02 .table-custom-col-03 select option {
-            font-size: 1.2rem;
-            padding-left: 1.3rem; }
       .teams-settings-feedback-body .table-02 .table-custom-col-04 {
         -webkit-box-flex: 0.48;
         -webkit-flex: 0.48;
@@ -7287,35 +7290,43 @@ i {
         -moz-justify-content: center;
         justify-content: center; }
         .teams-settings-feedback-body .table-02 .table-custom-col-04 a {
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.23;
+          letter-spacing: -0.07px;
           text-align: center;
           width: 100%;
           max-width: 9.4rem;
           color: #ff2424; }
+    .teams-settings-feedback-body select {
+      margin-right: 0;
+      position: relative;
+      width: 90%;
+      max-width: 16.8rem;
+      height: 3.4rem;
+      outline: none;
+      padding: .5rem 1.1rem;
+      font-size: 1.23rem;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #2d3640;
+      border-radius: 4px;
+      border: solid 1px #cfd7e0;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: 50%; }
+      .teams-settings-feedback-body select option {
+        font-size: 1.2rem;
+        padding-left: 1.3rem; }
     .teams-settings-feedback-body .input-row {
       display: none;
       padding-top: 1.8rem !important;
       padding-bottom: 1.8rem !important;
       border-top: solid 1px #e6e8eb !important; }
-      .teams-settings-feedback-body .input-row select {
-        width: 90%;
-        max-width: 21.2rem;
-        outline: none;
-        padding: .5rem 1.3rem;
-        font-size: 1.4rem;
-        line-height: 1.36;
-        color: #1b2733;
-        border-radius: 4px;
-        border: solid 1px #D8DFE6;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-        background-repeat: no-repeat;
-        background-position-x: 95%;
-        background-position-y: 50%; }
-        .teams-settings-feedback-body .input-row select option {
-          font-size: 1.2rem;
-          padding-left: 1.3rem; }
       .teams-settings-feedback-body .input-row .table-custom-col-04 a {
         color: #245fff; }
       .teams-settings-feedback-body .input-row-open {
@@ -9708,29 +9719,29 @@ i {
     max-height: calc(100vh - 17.1rem - 1.5px); }
     .company-teams-body .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733; }
       .company-teams-body .subheader-text-small {
         margin-bottom: 2.3rem;
-        font-size: 1.4rem;
+        font-size: 12.3px;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282; }
     .company-teams-body .option-link {
       margin-bottom: 2.3rem;
-      font-size: 1.4rem;
+      font-size: 12.3px;
       font-weight: 400;
-      line-height: 1.29;
-      letter-spacing: 0.07px;
+      line-height: 1.47;
+      letter-spacing: -0.03px;
       color: #647282; }
       .company-teams-body .option-link.active {
-        color: #373a3f; }
+        color: #1b2733; }
     .company-teams-body .option-divider {
       margin: 0 .5rem;
-      font-size: 1.6rem; }
+      font-size: 1.3rem; }
     .company-teams-body .input-group-custom {
       display: -webkit-box;
       display: -webkit-flex;
@@ -9753,19 +9764,19 @@ i {
         max-width: 25.6rem;
         position: relative; }
         .company-teams-body .input-group-custom .input-container input {
+          height: 3.2rem;
           width: 100%;
           padding: .65rem 3.5rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
-          font-size: 1.5rem;
+          font-size: 1.28rem;
           font-weight: 400;
-          line-height: 1.33;
-          color: #333;
+          line-height: 1.18;
           border: solid 1px #dedede;
           border-radius: 1.8rem; }
           .company-teams-body .input-group-custom .input-container input::placeholder {
-            color: #647282; }
+            color: #9facba; }
           .company-teams-body .input-group-custom .input-container input:focus {
             border-color: #9FACBA !important; }
         .company-teams-body .input-group-custom .input-container i {
@@ -9774,7 +9785,7 @@ i {
           left: 0;
           transform: translate(90%, -50%);
           font-size: 1.5rem;
-          color: #99A5B2; }
+          color: #9facba; }
       .company-teams-body .input-group-custom .button-outlined {
         display: -webkit-inline-box;
         display: -webkit-inline-flex;
@@ -9838,12 +9849,15 @@ i {
       .company-teams-body .table-custom-body tr {
         border-bottom: solid 1px #e6e8eb;
         height: 5.2rem; }
+        .company-teams-body .table-custom-body tr:hover:not(#not-yet) {
+          background-color: #faf9f9; }
+        .company-teams-body .table-custom-body tr:hover .table-custom-col-05 .dropdown-custom {
+          display: block !important; }
         .company-teams-body .table-custom-body tr > td, .company-teams-body .table-custom-body tr > td a {
-          font-size: 1.4rem;
+          font-size: 12.3px;
           font-weight: 400;
-          line-height: 1.14;
-          letter-spacing: 0.07px;
-          text-align: left;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           color: #1b2733; }
         .company-teams-body .table-custom-body tr#not-yet {
           padding: 0;
@@ -10018,6 +10032,8 @@ i {
       -webkit-justify-content: center;
       -moz-justify-content: center;
       justify-content: center; }
+      .company-teams-body .table-custom .table-custom-col-05 .dropdown-custom {
+        display: none; }
       .company-teams-body .table-custom .table-custom-col-05 a,
       .company-teams-body .table-custom .table-custom-col-05 button:not(.btn-custom-primary) {
         text-align: center;
@@ -10555,28 +10571,29 @@ i {
     margin-bottom: 3.4rem; }
     .user-settings-general-header .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733; }
       .user-settings-general-header .subheader-text-small {
-        font-size: 1.4rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282; }
   .user-settings-general-body .settings-table-header {
     height: 3.7rem;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.3rem;
     background-color: #f7f9fa;
     border-radius: 2.5px; }
     .user-settings-general-body .settings-table-header .column-01 {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       font-weight: 500;
-      line-height: 1.33;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
       color: #647282; }
   .user-settings-general-body .settings-table-row {
-    padding: 2.6rem 1.2rem;
+    padding: 2.6rem 1.3rem;
     padding-bottom: 2.6rem;
     padding-right: 2rem;
     display: -webkit-box;
@@ -10585,10 +10602,11 @@ i {
     display: -ms-flexbox;
     display: flex;
     height: 7.2rem;
-    font-size: 1.4rem;
+    font-size: 1.28rem;
     font-weight: 400;
     color: #1b2733;
-    line-height: 1.36;
+    line-height: 1.18;
+    letter-spacing: -0.06px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -10600,18 +10618,20 @@ i {
       margin-right: 0;
       position: relative;
       width: 90%;
-      max-width: 17.7rem;
+      max-width: 16.8rem;
+      height: 3.4rem;
       outline: none;
       padding: .5rem 1.1rem;
-      font-size: 1.4rem;
-      line-height: 1.36;
-      color: #1b2733;
+      font-size: 1.23rem;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #2d3640;
       border-radius: 4px;
       border: solid 1px #cfd7e0;
       -moz-appearance: none;
       -webkit-appearance: none;
       appearance: none;
-      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-image: url("data:image/svg+xml;utf8,<svg fill=' %23686F7C' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
       background-repeat: no-repeat;
       background-position-x: 95%;
       background-position-y: 50%; }
@@ -10620,25 +10640,31 @@ i {
         padding-left: 1.3rem; }
     .user-settings-general-body .settings-table-row .settings-input {
       margin-right: 1.6rem;
-      padding: .5rem 1rem;
-      font-size: 1.4rem;
+      padding: .5rem 1.1rem;
       min-width: 0;
       width: 100%;
       max-width: 20.5rem;
+      height: 3.4rem;
+      font-size: 1.23rem;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #2d3640;
       outline: none;
       border-radius: 4px;
-      border: solid 1px #cfd7e0; }
+      border: solid 1px #cfd7e0;
+      min-width: 0; }
       .user-settings-general-body .settings-table-row .settings-input::placeholder {
-        color: #AAA; }
+        color: #1b2733; }
     .user-settings-general-body .settings-table-row .column-01 {
       padding-right: 1.5rem;
       margin-right: auto; }
     .user-settings-general-body .settings-table-row .column-02 {
       margin-left: 1rem;
-      margin-right: 1.5rem; }
+      margin-right: 2.05rem; }
     .user-settings-general-body .settings-table-row img.column-02, .user-settings-general-body .settings-table-row .initials.column-02 {
       margin-right: 2rem; }
     .user-settings-general-body .settings-table-row .column-03 {
+      font-weight: 500;
       color: #1267fb; }
     .user-settings-general-body .settings-table-row a.column-03:hover, .user-settings-general-body .settings-table-row button.column-03:hover {
       text-decoration: underline !important; }
@@ -10691,18 +10717,18 @@ i {
   padding-top: 0; }
   .user-settings-teams-header {
     margin-top: 3.3rem;
-    margin-bottom: 3.5rem; }
+    margin-bottom: 3.4rem; }
     .user-settings-teams-header .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733; }
       .user-settings-teams-header .subheader-text-small {
-        font-size: 1.4rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282; }
   .user-settings-teams-body {
     max-height: calc(100vh - 30rem); }
@@ -10710,27 +10736,13 @@ i {
       max-width: 80rem; }
       .user-settings-teams-body .table-custom-body {
         max-height: calc(100vh - 42rem);
-        font-size: 1.35rem;
         font-weight: 400; }
         .user-settings-teams-body .table-custom-body tr {
           height: 5rem;
-          padding: 1rem 1.7rem;
+          padding: 1rem 1.8rem;
           border-bottom: solid 1px #e6e8eb; }
           .user-settings-teams-body .table-custom-body tr:last-child {
             border: none; }
-        .user-settings-teams-body .table-custom-body-col-01 a {
-          font-size: 1.35rem;
-          line-height: 1.33;
-          color: #1165f4; }
-        .user-settings-teams-body .table-custom-body-col-02 {
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #1b2733; }
-        .user-settings-teams-body .table-custom-body-col-03 {
-          font-size: 1.4rem; }
-        .user-settings-teams-body .table-custom-body-col-04 {
-          font-size: 1.3rem;
-          color: #647282; }
         .user-settings-teams-body .table-custom-body .input-row {
           display: none;
           -webkit-box-align: center;
@@ -10789,6 +10801,27 @@ i {
             display: -moz-flex;
             display: -ms-flexbox;
             display: flex; }
+      .user-settings-teams-body .table-custom-col-01 a {
+        font-size: 1.23rem !important;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #1b2733; }
+      .user-settings-teams-body .table-custom-col-02 {
+        font-size: 12.3px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #1b2733; }
+      .user-settings-teams-body .table-custom-col-03 {
+        font-size: 12.3px;
+        font-weight: 400;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #1b2733; }
+      .user-settings-teams-body .table-custom-col-04 {
+        font-size: 1.3rem;
+        color: #647282; }
       .user-settings-teams-body .table-custom-col-01, .user-settings-teams-body .table-custom-col-02, .user-settings-teams-body .table-custom-col-03, .user-settings-teams-body .table-custom-col-04 {
         flex: none; }
       .user-settings-teams-body .table-custom-col-01 {
