@@ -7200,26 +7200,28 @@ i {
       &-header {
         margin-left: 1.95rem;
         margin-right: 2rem;
-        padding-top: 1.75rem;
+        padding-top: 2.5rem;
         padding-bottom: 1.55rem;
         position: relative;
         text-align: center;
         border-bottom: 1.5px solid #F4F4F4;
 
         &-title {
-          margin-bottom: .55rem;
-          font-size: 1.95rem;
+          margin-bottom: .9rem;
+          font-size: 1.9rem;
           font-weight: 500;
-          line-height: 1.28;
-          color: #000001;
+          line-height: 1.21;
+          letter-spacing: -0.29px;
+          color: #272748;
         }
 
         &-text {
-          font-size: 1.33rem;
+          font-size: 1.2rem;
           font-weight: 400;
           line-height: 1.36;
-          letter-spacing: 0.07px;
-          color: #7d808e;
+          line-height: 1.25;
+          letter-spacing: 0.06px;
+          color: #696d7e;
         }
 
         & .change-order {
@@ -7356,25 +7358,30 @@ i {
           padding: 2.5rem 0 0;
           padding-left: 2.3rem;
           padding-right: 2rem;
+          padding-top: 2.9rem;
           border: 0;
 
           &-header {
 
             & h4 {
+              margin-left: -.2rem;
               @include flexbox();
               @include align-items(center);
               @include justify-content(space-between);
-              font-size: 1.4rem;
+              font-size: 1.3rem;
               font-weight: 500;
-              line-height: 1.36;
-              color: #393b40;
+              line-height: 1.23;
+              letter-spacing: -0.07px;
+              color: #121212;
               text-transform: none;
+
 
               & span {
                 display: inline-block;
-                font-size: 1.4rem;
+                font-size: 1.3rem;
                 font-weight: 500;
-                line-height: 1.33;
+                line-height: 1.23;
+                letter-spacing: -0.07px;
                 color: #137efe;
                 cursor: pointer;
 
@@ -7398,9 +7405,10 @@ i {
           }
 
           &-body {
+            padding-top: 1.7rem;
             padding-left: 2rem;
             padding-right: 2rem;
-            padding-bottom: 5rem;
+            padding-bottom: 4.2rem;
 
             & .bar {
               max-height: 14.9rem;
@@ -7414,13 +7422,13 @@ i {
               }
 
               &-info {
-                bottom: -1.8rem;
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.2rem;
+                bottom: -1.6rem;
+                font-family: 'Inter', sans-serif;
+                font-size: 1.05rem;
                 font-weight: 500;
-                line-height: 1.28;
-                letter-spacing: 0.13px;
-                color: #6f6e77;
+                line-height: 1.24;
+                letter-spacing: 0.05px;
+                color: #3b3a46; 
               }
             }
           }
@@ -7429,8 +7437,8 @@ i {
 
         & .progress-custom {
           padding-left: 2.4rem;
-          padding-right: 2.7rem;
-          padding-top: 3rem;
+          padding-right: 2.1rem;
+          padding-top: 2.6rem;
 
 
           &-sub {
@@ -7445,17 +7453,19 @@ i {
             @include align-items(baseline);
 
             & h3 {
-              font-size: 1.4rem;
+              font-size: 1.3rem;
               font-weight: 500;
-              line-height: 1.36;
-              color: #393b40;
+              line-height: 1.23;
+              letter-spacing: -0.13px;
+              color: #121212;
             }
 
             & h4 {
-              font-size: 1.65rem;
-              font-weight: 700;
-              line-height: 1.27;
-              color: #3d404e;
+              font-size: 1.3rem;
+              font-weight: 500;
+              line-height: 1.23;
+              letter-spacing: -0.13px;
+              color: #121212;
             }
 
             & .up {
@@ -7468,11 +7478,12 @@ i {
           }
 
           &-bar {
-            height: 1.1rem;
-            border-radius: 3px;
+            margin-bottom: .3rem;
+            height: .75rem;
+            border-radius: 2px;
 
             &-fill {
-              border-radius: 3px;
+              border-radius: 2px;
             }
           }
         }
