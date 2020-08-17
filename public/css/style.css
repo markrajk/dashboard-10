@@ -3146,11 +3146,11 @@ i {
       background-color: #1050C1;
       border-color: #1050C1; }
   .button-outlined {
-    color: #2d3640;
+    color: #2d3640 !important;
     border-color: #D1D7DD;
     background-color: #FFF; }
     .button-outlined:hover, .button-outlined:focus {
-      color: #2d3640;
+      color: #2d3640 !important;
       background-color: #efefef !important; }
     .button-outlined-danger, .button-outlined-success {
       font-weight: 400;
