@@ -3065,9 +3065,8 @@ i {
       font-weight: 500;
       line-height: 1.29; }
       .progress-custom-info .up i, .progress-custom-info .down i {
-        margin-top: -.05rem;
         margin-right: .55rem;
-        font-size: 1.7rem; }
+        font-size: 1.6rem; }
     .progress-custom-info .up {
       color: #14c732; }
       .progress-custom-info .up i {
@@ -3982,7 +3981,7 @@ i {
       letter-spacing: -0.38px;
       color: #19202f; }
     .header-top-left-small {
-      margin-top: 1.4rem;
+      margin-top: 1.3rem;
       font-size: 1.38rem;
       line-height: 1.16;
       letter-spacing: normal;
