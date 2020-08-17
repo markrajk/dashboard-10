@@ -4309,13 +4309,13 @@ i {
   }
 
   &-outlined {
-    color: #515558!important;
+    color: #2d3640;
     border-color: #D1D7DD;
     background-color: #FFF;
 
     &:hover,
     &:focus {
-      color: #515558!important;
+      color: #2d3640;
       background-color: #efefef!important;
     }
 
@@ -8677,7 +8677,7 @@ i {
           font-size: 1.23rem;
           line-height: 1.22;
           letter-spacing: -0.06px;
-          color: #2d3640;
+          color: #2d3640!important;
         }
 
         & a.column-03,

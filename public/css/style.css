@@ -3146,11 +3146,11 @@ i {
       background-color: #1050C1;
       border-color: #1050C1; }
   .button-outlined {
-    color: #515558 !important;
+    color: #2d3640;
     border-color: #D1D7DD;
     background-color: #FFF; }
     .button-outlined:hover, .button-outlined:focus {
-      color: #515558 !important;
+      color: #2d3640;
       background-color: #efefef !important; }
     .button-outlined-danger, .button-outlined-success {
       font-weight: 400;
@@ -6814,7 +6814,7 @@ i {
         font-size: 1.23rem;
         line-height: 1.22;
         letter-spacing: -0.06px;
-        color: #2d3640; }
+        color: #2d3640 !important; }
       .teams-settings-general-body .settings-table-row a.column-03:hover, .teams-settings-general-body .settings-table-row button.column-03:hover {
         text-decoration: underline; }
       .teams-settings-general-body .settings-table-row .column-03-input:hover button.column-03 {
