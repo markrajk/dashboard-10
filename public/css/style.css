@@ -5677,7 +5677,7 @@ i {
           position: absolute;
           top: 0;
           left: 0;
-          transform: translate(-39%, -1%);
+          transform: translate(-33%, -1%);
           display: -webkit-box;
           display: -webkit-flex;
           display: -moz-flex;
@@ -5687,8 +5687,13 @@ i {
           .teams-compare-body-card-header .change-order-left, .teams-compare-body-card-header .change-order-right,
           .people-compare-body-card-header .change-order-left,
           .people-compare-body-card-header .change-order-right {
-            padding: 1rem;
+            padding: 1.2rem;
             cursor: pointer; }
+            .teams-compare-body-card-header .change-order-left svg, .teams-compare-body-card-header .change-order-right svg,
+            .people-compare-body-card-header .change-order-left svg,
+            .people-compare-body-card-header .change-order-right svg {
+              width: 1.6rem;
+              height: 1.6rem; }
             .teams-compare-body-card-header .change-order-left:hover svg, .teams-compare-body-card-header .change-order-right:hover svg,
             .people-compare-body-card-header .change-order-left:hover svg,
             .people-compare-body-card-header .change-order-right:hover svg {
@@ -5696,12 +5701,16 @@ i {
             .teams-compare-body-card-header .change-order-left:hover path, .teams-compare-body-card-header .change-order-right:hover path,
             .people-compare-body-card-header .change-order-left:hover path,
             .people-compare-body-card-header .change-order-right:hover path {
-              fill: #525252; }
+              fill: #bebebe; }
           .teams-compare-body-card-header .change-order-left,
           .people-compare-body-card-header .change-order-left {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             padding-right: .15rem; }
           .teams-compare-body-card-header .change-order-right,
           .people-compare-body-card-header .change-order-right {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             padding-left: .15rem; }
         .teams-compare-body-card-header-close,
         .people-compare-body-card-header-close {
@@ -5712,12 +5721,16 @@ i {
           transform: translate(-50%, -1%);
           cursor: pointer;
           overflow: visible; }
+          .teams-compare-body-card-header-close svg,
+          .people-compare-body-card-header-close svg {
+            width: 1.75rem;
+            height: 1.75rem; }
           .teams-compare-body-card-header-close:hover svg,
           .people-compare-body-card-header-close:hover svg {
             transform: scale(1.1); }
           .teams-compare-body-card-header-close:hover path,
           .people-compare-body-card-header-close:hover path {
-            fill: #525252; }
+            fill: #bebebe; }
         .teams-compare-body-card-header-info,
         .people-compare-body-card-header-info {
           display: -webkit-box;

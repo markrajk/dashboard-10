@@ -7228,31 +7228,40 @@ i {
           position: absolute;
           top: 0;
           left: 0;
-          transform: translate(-39%, -1%);
+          transform: translate(-33%, -1%);
           @include flexbox();
           overflow: visible;
 
           &-left,
           &-right {
-            padding: 1rem;
+            padding: 1.2rem;
             cursor: pointer;
 
             & path {}
+
+            & svg {
+              width:1.6rem; 
+              height:1.6rem;
+            }
 
             &:hover svg {
               transform: scale(1.1);
             }
 
             &:hover path {
-              fill: #525252;
+              fill: #bebebe;
             }
           }
 
           &-left {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             padding-right: .15rem;
           }
 
           &-right {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             padding-left: .15rem;
           }
         }
@@ -7266,12 +7275,17 @@ i {
           cursor: pointer;
           overflow: visible;
 
+          & svg {
+            width:1.75rem; 
+            height:1.75rem;
+          }
+
           &:hover svg {
             transform: scale(1.1);
           }
 
           &:hover path {
-            fill: #525252;
+            fill: #bebebe;
           }
         }
 
