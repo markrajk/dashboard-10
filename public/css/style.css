@@ -3172,6 +3172,10 @@ i {
         background-color: #FFF !important;
         border-color: #ff4a4a; }
   .button-green {
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.03px;
     background-color: #30ea4f;
     border-color: #30ea4f; }
     .button-green:hover, .button-green:focus {
