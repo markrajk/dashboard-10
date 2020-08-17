@@ -8498,7 +8498,6 @@ i {
       font-weight: 500;
       line-height: 1.18;
       letter-spacing: -0.1px;
-      color: #ffffff;
     }
   }
 
@@ -9388,8 +9387,13 @@ i {
 
     & a,
     button {
-      margin-right: 1.4rem;
+      padding: .7rem 1.7rem;
+      margin-right: 1.5rem;
       margin-bottom: 1.5rem;
+      font-size: 1.28rem;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -0.1px;
     }
   }
 
@@ -9414,16 +9418,18 @@ i {
 
         & .subheader-text {
           margin-bottom: 1.4rem;
-          font-size: 1.7rem;
+          font-size: 1.6rem;
           font-weight: 400;
-          line-height: 1.18;
+          line-height: 1.25;
           color: #1b2733;
 
+          
+
           &-small {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-weight: 400;
-            line-height: 1.29;
-            letter-spacing: 0.07px;
+            line-height: 1.5;
+            letter-spacing: -0.03px;
             color: #647282;
           }
         }
@@ -9436,8 +9442,11 @@ i {
       & a,
       button {
         font-weight: 400;
-        padding: .6rem 1.9rem;
-        font-size: 1.5rem;
+        padding: .8rem 2rem;
+        font-size: 1.28rem;
+        font-weight: 400;
+        line-height: 1.18;
+        color: #1b2733;
         margin-right: 0 !important;
         @include align-self(center);
       }
@@ -9452,6 +9461,12 @@ border-bottom: none!important;
           padding-left: 1.7rem;
           padding-right: 1.7rem;
           
+          & td {
+            font-size: 1.15rem;
+            font-weight: 400;
+            line-height: 1.22;
+            color: #647282;
+          }
         }
       }
 
@@ -9467,6 +9482,7 @@ border-bottom: none!important;
         }
 
         & tr {
+          padding: 1.65rem 1.7rem;
           border-bottom: solid 1px #e6e8eb;
 
           &:first-of-type {
@@ -9475,11 +9491,10 @@ border-bottom: none!important;
 
           &>td,
           &>td a {
-            font-size: 1.4rem;
+            font-size: 1.23rem;
             font-weight: 400;
-            line-height: 1.14;
-            letter-spacing: 0.07px;
-            text-align: left;
+            line-height: 1.22;
+            letter-spacing: -0.06px;
             color: #1b2733;
           }
 
@@ -9558,9 +9573,10 @@ border-bottom: none!important;
             outline: none;
             border: none;
             font-family: Roboto;
-            font-size: 1.4rem;
+            font-size: 1.23rem;
             font-weight: 400;
-            line-height: 1.14;
+            line-height: 1.31;
+            letter-spacing: -0.06px;
             color: #1b2733;
 
             &::placeholder {
@@ -9606,7 +9622,10 @@ border-bottom: none!important;
             @include justify-content(flex-end);
 
             & .btn-custom-primary {
-              padding: .5rem 2.5rem;
+              font-size: 1.28rem;
+              line-height: 1.18;
+              letter-spacing: -0.06px;
+              padding: .8rem 2.1rem;
             }
 
             & button:first-of-type {
