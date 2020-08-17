@@ -5999,7 +5999,7 @@ i {
     max-width: 103rem;
     border-top: 1.5px solid #f2f2f2; }
   .teams-comments .section-comments {
-    margin-bottom: 3.45rem; }
+    margin-bottom: 4rem; }
     .teams-comments .section-comments .no-data {
       max-width: 103rem;
       padding-left: 2rem;
@@ -6121,13 +6121,13 @@ i {
           color: inherit; }
     .teams-comments .section-comments-body {
       position: relative;
-      padding-top: 2.5rem;
+      padding-top: 2rem;
       display: -ms-grid;
       display: grid;
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 14.5rem;
-      grid-gap: 2.6rem 2.6rem;
+      grid-gap: 2rem 2rem;
       max-width: 103rem;
       overflow-y: auto;
       scrollbar-width: none;
@@ -6191,7 +6191,7 @@ i {
     .teams-comments .section-comments.closed {
       margin-bottom: 0; }
       .teams-comments .section-comments.closed .section-comments-body {
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         height: 0; }
       .teams-comments .section-comments.closed .open-comment-section svg {
         transform: rotateZ(180deg); }

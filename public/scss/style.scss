@@ -7572,7 +7572,7 @@ i {
 
 
   & .section-comments {
-    margin-bottom: 3.45rem;
+    margin-bottom: 4rem;
 
     & .no-data {
       max-width: 103rem;
@@ -7689,12 +7689,12 @@ i {
 
     &-body {
       position: relative;
-      padding-top: 2.5rem;
+      padding-top: 2rem;
       @include grid;
       @include grid-template-columns(repeat(3, 1fr));
       // @include grid-auto-rows(14rem);
       grid-auto-rows: 14.5rem;
-      grid-gap: 2.6rem 2.6rem;
+      grid-gap: 2rem 2rem;
       // padding-right: calc(100% - 103rem);
       max-width: 103rem;
 
@@ -7743,7 +7743,7 @@ i {
     &.closed {
       margin-bottom: 0;
       & .section-comments-body {
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         height: 0;
       }
 
