@@ -13953,10 +13953,11 @@ i {
         
 
         & p {
-          font-size: 1.25rem;
+          font-size: 1.13rem;
           font-weight: 500;
-          line-height: 1.28;
-          color: #647282;
+          line-height: 1.24;
+          letter-spacing: -0.03px;
+          color: #526172;
         }
 
         & .dropdown-custom {
@@ -13964,9 +13965,11 @@ i {
           &-trigger {
             border: none;
             box-shadow: none;
-            font-size: 1.25rem;
-            line-height: 1.28;
-            color: #657383;
+            font-size: 1.13rem;
+            font-weight: 500;
+            line-height: 1.24;
+            letter-spacing: -0.03px;
+            color: #526172;
             padding: 0;
 
             & i {
@@ -14614,11 +14617,11 @@ i {
 
       & .name {
         margin-bottom: .2rem;
-        font-size: 2.7rem;
-        font-weight: 400;
-        line-height: 1.32;
-        letter-spacing: -0.28px;
-        color: #434343;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.38px;
+        color: #19202f;
 
         & strong {
           font-weight: 500;
@@ -14664,7 +14667,8 @@ i {
       &-title {
         font-size: 1.7rem;
         font-weight: 500;
-        line-height: 1.35;
+        line-height: 1.18;
+        letter-spacing: -0.09px;
         color: #172b4d;
       }
 
@@ -14674,7 +14678,7 @@ i {
           display: inline-block;
 
           &-trigger {
-
+            height: 3.2rem;
             &:focus {
               border-radius: 3px;
             }
@@ -14691,6 +14695,12 @@ i {
         }
 
         & .button {
+          height: 3.2rem;
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.23;
+          letter-spacing: -0.13px;
+          color: #505e79;
           height: 3.2rem;
 
           &:not(:last-of-type) {
@@ -14752,9 +14762,10 @@ i {
           height: 7.25rem;
           clip-path: circle(48% at 50% 50%);
           -webkit-clip-path: circle(48% at 50% 50%);
-          font-size: 3.2rem;
-          font-weight: 500;
-          line-height: 1.34;
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 1.2;
+          letter-spacing: -0.3px;
           color: #ffffff;
         }
 
@@ -14762,10 +14773,11 @@ i {
           padding: 0 1.5rem;
           max-width: 100%;
           margin-bottom: .6rem;
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.36;
-          color: #1a2d4f;
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.23;
+          letter-spacing: -0.03px;
+          color: #2b3b58;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -14774,9 +14786,9 @@ i {
         &-position {
           padding: 0 1.5rem;
           max-width: 100%;
-          font-size: 1.2rem;
+          font-size: 1.23rem;
           font-weight: 400;
-          line-height: 1.33;
+          line-height: 1.22;
           color: #6b778c;
           white-space: nowrap;
           overflow: hidden;
@@ -14859,10 +14871,11 @@ i {
     & .add-to-favorites {
       margin-top: 4.5rem;
       padding: 1.3rem 1.7rem;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 500;
-      line-height: 1.36;
-      color: #656565;
+      line-height: 1.23;
+      letter-spacing: -0.13px;
+      color: #364052;
     }
   }
 }

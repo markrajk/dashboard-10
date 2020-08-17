@@ -11136,16 +11136,19 @@ i {
         background-color: #f5f7f8;
         border-radius: 2.5px; }
         .people-average-charts-body .section-header p {
-          font-size: 1.25rem;
+          font-size: 1.13rem;
           font-weight: 500;
-          line-height: 1.28;
-          color: #647282; }
+          line-height: 1.24;
+          letter-spacing: -0.03px;
+          color: #526172; }
         .people-average-charts-body .section-header .dropdown-custom-trigger {
           border: none;
           box-shadow: none;
-          font-size: 1.25rem;
-          line-height: 1.28;
-          color: #657383;
+          font-size: 1.13rem;
+          font-weight: 500;
+          line-height: 1.24;
+          letter-spacing: -0.03px;
+          color: #526172;
           padding: 0; }
           .people-average-charts-body .section-header .dropdown-custom-trigger i {
             font-size: .8rem;
@@ -11632,11 +11635,11 @@ i {
         text-transform: uppercase; }
       .people-overview-header-info .name {
         margin-bottom: .2rem;
-        font-size: 2.7rem;
-        font-weight: 400;
-        line-height: 1.32;
-        letter-spacing: -0.28px;
-        color: #434343; }
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -0.38px;
+        color: #19202f; }
         .people-overview-header-info .name strong {
           font-weight: 500; }
         .people-overview-header-info .name .team {
@@ -11677,18 +11680,27 @@ i {
     .people-overview-body-header-title {
       font-size: 1.7rem;
       font-weight: 500;
-      line-height: 1.35;
+      line-height: 1.18;
+      letter-spacing: -0.09px;
       color: #172b4d; }
     .people-overview-body-header-buttons .dropdown-custom {
       display: inline-block; }
-      .people-overview-body-header-buttons .dropdown-custom-trigger:focus {
-        border-radius: 3px; }
+      .people-overview-body-header-buttons .dropdown-custom-trigger {
+        height: 3.2rem; }
+        .people-overview-body-header-buttons .dropdown-custom-trigger:focus {
+          border-radius: 3px; }
     .people-overview-body-header-buttons .star {
       margin-right: 1.5rem; }
       .people-overview-body-header-buttons .star .icon-star {
         font-size: 2rem;
         color: #feab29; }
     .people-overview-body-header-buttons .button {
+      height: 3.2rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.23;
+      letter-spacing: -0.13px;
+      color: #505e79;
       height: 3.2rem; }
       .people-overview-body-header-buttons .button:not(:last-of-type) {
         margin-right: 1rem; }
@@ -11784,27 +11796,29 @@ i {
         height: 7.25rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%);
-        font-size: 3.2rem;
-        font-weight: 500;
-        line-height: 1.34;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.3px;
         color: #ffffff; }
       .people-overview-body-main .user-card-title {
         padding: 0 1.5rem;
         max-width: 100%;
         margin-bottom: .6rem;
-        font-size: 1.4rem;
-        font-weight: 400;
-        line-height: 1.36;
-        color: #1a2d4f;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.23;
+        letter-spacing: -0.03px;
+        color: #2b3b58;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; }
       .people-overview-body-main .user-card-position {
         padding: 0 1.5rem;
         max-width: 100%;
-        font-size: 1.2rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.33;
+        line-height: 1.22;
         color: #6b778c;
         white-space: nowrap;
         overflow: hidden;
@@ -11869,10 +11883,11 @@ i {
   .people-overview-body .add-to-favorites {
     margin-top: 4.5rem;
     padding: 1.3rem 1.7rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    line-height: 1.36;
-    color: #656565; }
+    line-height: 1.23;
+    letter-spacing: -0.13px;
+    color: #364052; }
 
 .people-feedback-received {
   margin-left: 0 !important;
