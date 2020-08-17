@@ -3062,7 +3062,7 @@ i {
       -moz-align-items: center;
       align-items: center;
       font-size: 1.38rem;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1.29; }
       .progress-custom-info .up i, .progress-custom-info .down i {
         margin-right: .55rem;
@@ -3788,22 +3788,24 @@ i {
         justify-content: space-between;
         height: 4.2rem; }
         .sidebar-menu-list-item:not(:first-of-type) {
-          border-top: 1.25px solid #F0F0F0; }
+          border-top: 1.5px solid #E8E8E8; }
+        .sidebar-menu-list-item:first-of-type:before {
+          top: 0 !important; }
         .sidebar-menu-list-item::before {
           content: '';
           display: none;
           position: absolute;
-          top: -1.25px;
+          top: -1.5px;
           left: 50%;
           transform: translate(-50%, 0);
           width: 108.5%;
-          height: calc(4.2rem + 1.25px);
+          height: calc(4.2rem + 1.5px);
           background-color: #e6e6e6;
-          border: 1.25px solid #f3f3f3;
+          border: 1.5px solid #e6e6e6;
           border-radius: 6px;
           z-index: 100; }
         .sidebar-menu-list-item:last-of-type {
-          border-bottom: 1.25px solid #f0f0f0; }
+          border-bottom: 1.5px solid #E8E8E8; }
         .sidebar-menu-list-item:hover:before, .sidebar-menu-list-item:focus:before {
           display: block; }
         .sidebar-menu-list-item:hover .sidebar-menu-list-item-link, .sidebar-menu-list-item:focus .sidebar-menu-list-item-link {
@@ -3811,9 +3813,8 @@ i {
           font-weight: 600; }
         .sidebar-menu-list-item:hover .star {
           display: inline-block !important; }
-        .sidebar-menu-list-item.active::before {
-          display: block;
-          z-index: 150; }
+        .sidebar-menu-list-item.active:before {
+          display: block; }
         .sidebar-menu-list-item.placeholder .sidebar-menu-list-item-link {
           border-radius: 6px;
           -webkit-box-pack: center;
@@ -3829,6 +3830,7 @@ i {
           .sidebar-menu-list-item.active .icon-close-svg:hover {
             transform: translate(0, -50%) scale(1.2); }
         .sidebar-menu-list-item .star {
+          padding-right: .3rem;
           display: none;
           z-index: 200; }
           .sidebar-menu-list-item .star svg {
@@ -4425,7 +4427,7 @@ i {
           font-size: 1.8rem; }
         .header-bottom .choose a:not(:last-child),
         .header-bottom .choose button:not(:last-child) {
-          margin-right: 2.6rem; }
+          margin-right: 2.7rem; }
           @media (max-width: 379px) {
             .header-bottom .choose a:not(:last-child),
             .header-bottom .choose button:not(:last-child) {

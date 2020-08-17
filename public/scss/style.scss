@@ -4197,7 +4197,7 @@ i {
       @include flexbox;
       @include align-items(center);
       font-size: 1.38rem;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 1.29;
 
       & i {
@@ -5010,7 +5010,11 @@ i {
         height: 4.2rem;
         
         &:not(:first-of-type) {
-          border-top: 1.25px solid #F0F0F0;
+          border-top: 1.5px solid #E8E8E8;
+        }
+
+        &:first-of-type:before {
+          top: 0!important;
         }
 
         &::before {
@@ -5018,19 +5022,19 @@ i {
           content: '';
           display: none;
           position: absolute;
-          top: -1.25px;
+          top: -1.5px;
           left: 50%;
           transform: translate(-50%, 0);
           width: 108.5%;
-          height: calc(4.2rem + 1.25px);
+          height: calc(4.2rem + 1.5px);
           background-color: #e6e6e6;
-          border: 1.25px solid #f3f3f3;
+          border: 1.5px solid #e6e6e6;
           border-radius: 6px;
           z-index: 100;
         }
 
         &:last-of-type {
-          border-bottom: 1.25px solid #f0f0f0;
+          border-bottom: 1.5px solid #E8E8E8;
         }
 
         &:hover:before,
@@ -5048,11 +5052,10 @@ i {
           display: inline-block!important;
         }
 
-        &.active::before {
+        &.active:before {
           display: block;
           // background-color: #d1ebfe;
           // border-color: #d1ebfe;
-          z-index: 150;
         }
 
         &.placeholder {
@@ -5080,6 +5083,7 @@ i {
         }
 
         & .star {
+          padding-right: .3rem;
           display: none;
           z-index: 200;
 
@@ -5792,7 +5796,7 @@ i {
         }
 
         &:not(:last-child) {
-          margin-right: 2.6rem;
+          margin-right: 2.7rem;
 
           @include respond(desktop-xxsm) {
             margin-right: 1.5rem;
