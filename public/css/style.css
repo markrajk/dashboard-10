@@ -6679,19 +6679,26 @@ i {
     padding-top: 2.6rem;
     margin-bottom: 1.2rem; }
     .teams-settings-general-header .button {
-      margin-right: 1.4rem;
-      margin-bottom: 1.5rem; }
+      padding: .7rem 1.7rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.28rem;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -0.1px;
+      color: #ffffff; }
   .teams-settings-general-body {
     max-width: 79.7rem; }
     .teams-settings-general-body .settings-table-header {
       height: 3.7rem;
-      padding: 1rem 1.7rem;
+      padding: 1rem 1.3rem;
       background-color: #f7f9fa;
       border-radius: 2.5px; }
       .teams-settings-general-body .settings-table-header .column-01 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 500;
-        line-height: 1.33;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
         color: #647282; }
     .teams-settings-general-body .settings-table-body {
       padding-bottom: 5rem;
@@ -6705,35 +6712,40 @@ i {
         width: 0;
         height: 0; }
     .teams-settings-general-body .settings-table-row {
-      padding: 2.8rem 1.7rem;
+      padding: 2.8rem 1.3rem;
       padding-bottom: 2.6rem;
-      padding-right: 2rem;
+      padding-right: 1.65rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      font-size: 1.4rem;
+      font-size: 1.28rem;
       font-weight: 400;
       color: #1b2733;
-      line-height: 1.36;
+      line-height: 1.18;
+      letter-spacing: -0.06px;
       -webkit-box-align: center;
       -ms-flex-align: center;
       -webkit-align-items: center;
       -moz-align-items: center;
       align-items: center;
       white-space: nowrap;
-      height: 7.2rem;
+      height: 7.4rem;
       border-bottom: 1px solid #E6E8EB; }
-      .teams-settings-general-body .settings-table-row:nth-of-type(3), .teams-settings-general-body .settings-table-row:nth-of-type(4), .teams-settings-general-body .settings-table-row:nth-of-type(6) {
-        height: 9.2rem; }
+      .teams-settings-general-body .settings-table-row:nth-of-type(3), .teams-settings-general-body .settings-table-row:nth-of-type(4), .teams-settings-general-body .settings-table-row:nth-of-type(5), .teams-settings-general-body .settings-table-row:nth-of-type(7) {
+        height: 9.1rem; }
       .teams-settings-general-body .settings-table-row .settings-input {
         margin-right: 1.6rem;
         padding: .5rem 1.1rem;
         min-width: 0;
         width: 100%;
         max-width: 20.5rem;
-        font-size: 1.4rem;
+        height: 3.4rem;
+        font-size: 1.23rem;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #2d3640;
         outline: none;
         border-radius: 4px;
         border: solid 1px #cfd7e0;
@@ -6749,12 +6761,14 @@ i {
         margin-right: 0;
         position: relative;
         width: 90%;
-        max-width: 17.7rem;
+        max-width: 16.8rem;
+        height: 3.4rem;
         outline: none;
         padding: .5rem 1.1rem;
-        font-size: 1.4rem;
-        line-height: 1.36;
-        color: #515558;
+        font-size: 1.23rem;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #2d3640;
         border-radius: 4px;
         border: solid 1px #cfd7e0;
         -moz-appearance: none;
@@ -6768,6 +6782,7 @@ i {
           font-size: 1.2rem;
           padding-left: 1.3rem; }
       .teams-settings-general-body .settings-table-row .button-outlined {
+        height: 3.4rem;
         padding: .7rem 1.3rem;
         font-size: 1.4rem;
         font-weight: 400;
@@ -6778,12 +6793,14 @@ i {
         .teams-settings-general-body .settings-table-row .column-01 span {
           display: block;
           margin-top: .6rem;
-          font-size: 1.3rem;
+          font-size: 1.15rem;
           font-weight: 400;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           color: #6F7A89; }
       .teams-settings-general-body .settings-table-row .column-02 {
         margin-left: 1rem;
-        margin-right: 1.5rem; }
+        margin-right: 2.05rem; }
         .teams-settings-general-body .settings-table-row .column-02.linked {
           margin-right: 0; }
           .teams-settings-general-body .settings-table-row .column-02.linked span {
@@ -6792,6 +6809,11 @@ i {
         margin-right: 1.7rem; }
       .teams-settings-general-body .settings-table-row .column-03 {
         color: #1267fb; }
+      .teams-settings-general-body .settings-table-row .button-outlined {
+        font-size: 1.23rem;
+        line-height: 1.22;
+        letter-spacing: -0.06px;
+        color: #2d3640; }
       .teams-settings-general-body .settings-table-row a.column-03:hover, .teams-settings-general-body .settings-table-row button.column-03:hover {
         text-decoration: underline; }
       .teams-settings-general-body .settings-table-row .column-03-input:hover button.column-03 {
