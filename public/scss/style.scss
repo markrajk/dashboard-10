@@ -15469,6 +15469,8 @@ i {
 
     &.get-started {
       margin-top: 0;
+      font-size: 1.6rem;
+      letter-spacing: normal;
     }
   }
 
@@ -15760,7 +15762,8 @@ i {
 
     // GET STARTED
     &-password-info {
-      margin-bottom: 2.2rem;
+      margin-top: -.3rem;
+      margin-bottom: 2.5rem;
       margin-left: .4rem;
       font-size: 1.3rem;
       font-weight: 400;
@@ -15776,6 +15779,7 @@ i {
 
     // GET STARTED
     &-check {
+
       margin-bottom: 2.7rem;
       margin-left: .3rem;
       display: flex;
@@ -15789,11 +15793,13 @@ i {
 
       &-label {
 
-        font-size: 1.3rem;
+        font-size: 1.25rem;
         font-weight: 400;
         line-height: 1.38;
         color: #707070;
         letter-spacing: normal;
+        line-height: 1.2;
+        letter-spacing: -0.13px;
 
         & a {
           font-weight: 500;
@@ -15815,8 +15821,8 @@ i {
       // GET STARTED
       &.get-started {
         padding: 1.3rem 0;
-        font-size: 1.7rem;
-        letter-spacing: 0.09px;
+        font-size: 1.6rem;
+        letter-spacing: normal;
       }
 
       // DISABLED
