@@ -2090,20 +2090,19 @@ i {
 
       &-subtitle {
         margin-bottom: .7rem;
-        font-size: 1.38rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        line-height: 1.02;
-        letter-spacing: normal;
+        line-height: 1.08;
         color: #969696;
       }
 
       &-title {
         height: 3.2rem;
         margin-bottom: 2.2rem;
-        font-size: 2.4rem;
-        font-weight: 500;
-        line-height: 1.17;
-        letter-spacing: -0.12px;
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.11px;
         text-align: center;
         color: #2f3038;
       }
@@ -2173,11 +2172,11 @@ i {
       &-text,
       &-label {
         max-width: 235px;
-        font-size: 1.45rem;
-        font-weight: 400;
-        line-height: 1.72;
-        letter-spacing: -0.07px;
-        color: #3b3e45;
+        font-size: 1.38rem;
+        font-weight: 500;
+        line-height: 1.75;
+        letter-spacing: -0.14px;
+        color: #414b62;
       }
 
       &-label {
@@ -2187,9 +2186,9 @@ i {
       &-input {
         padding-bottom: 1.28rem;
         width: 100%;
-        font-size: 1.45rem;
+        font-size: 1.4rem;
         font-weight: 400;
-        line-height: 1.72;
+        line-height: 1.79;
         letter-spacing: -0.07px;
         outline: none;
         border: none;
@@ -2228,11 +2227,12 @@ i {
     background-color: #F7F9FA;
 
     & .button {
+      height: 3.4rem;
       width: 14.5rem;
       padding: .7rem 0;
-      font-size: 1.5rem;
-      line-height: 1.33;
-      letter-spacing: 0.15px;
+      font-size: 1.4rem;
+      line-height: 1.21;
+      letter-spacing: -0.07px;
 
       &-outlined {
         margin-right: 1.2rem;
@@ -4254,7 +4254,7 @@ i {
 
       & i {
         //margin-top: -.05rem;
-        margin-right: .55rem;
+        margin-right: .5rem;
         font-size: 1.6rem;
       }
     }
@@ -4277,7 +4277,7 @@ i {
   }
 
   &-bar {
-    margin-top: 1.3rem;
+    margin-top: 1.2rem;
     width: 100%;
     height: 1rem;
     border-radius: 3px;
@@ -5018,7 +5018,7 @@ i {
         background-color: transparent;
         padding: 0;
         padding-left: 2.6rem;
-        padding-bottom: 1.3rem;
+        padding-bottom: 1rem;
         border: none;
         outline: none;
         font-size: 1.45rem;
@@ -5858,7 +5858,7 @@ i {
         }
 
         &:not(:last-child) {
-          margin-right: 2.7rem;
+          margin-right: 2.8rem;
 
           @include respond(desktop-xxsm) {
             margin-right: 1.5rem;
@@ -7485,12 +7485,12 @@ i {
             & .bar {
               max-height: 14.9rem;
               width: 1.7rem;
-              border-radius: 4px;
+              border-radius: 3.5px;
 
               &-fill {
 
                 width: 1.7rem;
-                border-radius: 4px;
+                border-radius: 3.5px;
               }
 
               &-info {
@@ -7721,6 +7721,11 @@ i {
           font-weight: 400;
           border: 0;
           white-space: nowrap;
+          font-size: 1.13rem;
+          font-weight: 500;
+          line-height: 1.24;
+          letter-spacing: -0.03px;
+          color: #526172;
 
           & i {
             font-size: .8rem;
@@ -7839,27 +7844,28 @@ i {
       bottom: 100%;
       transform: translate(-100%, 100%);
       padding: .7rem;
-      min-width: 26.2rem;
+      min-width: 24.4rem;
       z-index: 400;
 
       
 
       &-item {
-        height: 4.2rem;
+        height: 4.1rem;
         @include flexbox();
         @include align-items(center);
 
         &-link {
-          padding-left: 1rem;
+          padding-left: 1.4rem;
           padding-top: 1.4rem;
           padding-right: 1.7rem;
           padding-bottom: 1.2rem;
           @include flexbox();
           @include align-items(center);
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           font-weight: 400;
-          letter-spacing: 0.07px;
-          color: #3b4046;
+          line-height: 1.23;
+          letter-spacing: -0.07px;
+          color: #1f2f41;
           border-radius: 2px;
 
           &:hover,
@@ -7869,7 +7875,7 @@ i {
 
           & i {
             color: #798796;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-right: 1.4rem;
           }
 
@@ -8562,7 +8568,7 @@ i {
       margin-right: 1.5rem;
       margin-bottom: 1.5rem;
       font-size: 1.28rem;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.18;
       letter-spacing: -0.1px;
     }
@@ -8882,7 +8888,7 @@ i {
       margin-right: 1.5rem;
       margin-bottom: 1.5rem;
       font-size: 1.28rem;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.18;
       letter-spacing: -0.1px;
     }
@@ -9154,7 +9160,7 @@ i {
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.28rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.18;
     letter-spacing: -0.1px;
   }
@@ -9192,7 +9198,7 @@ i {
         line-height: 1.18;
         color: #1b2733;
         margin-right: 0 !important;
-        @include align-self(center);
+        @include align-self(flex-end);
       }
     }
 
@@ -9368,15 +9374,15 @@ i {
     & select {
       margin-right: 0;
       position: relative;
-      width: 90%;
-      max-width: 16.8rem;
-      height: 3.4rem;
+      width: 100%;
+      max-width: 19.5rem;
+      height: 3.2rem;
       outline: none;
       padding: .5rem 1.1rem;
       font-size: 1.23rem;
       line-height: 1.22;
       letter-spacing: -0.06px;
-      color: #2d3640;
+      color: #1b2733;
       border-radius: 4px;
       border: solid 1px #cfd7e0;
 
@@ -9493,7 +9499,7 @@ i {
       margin-right: 1.5rem;
       margin-bottom: 1.5rem;
       font-size: 1.28rem;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.18;
       letter-spacing: -0.1px;
     }
@@ -9550,7 +9556,7 @@ i {
         line-height: 1.18;
         color: #1b2733;
         margin-right: 0 !important;
-        @include align-self(center);
+        @include align-self(flex-end);
       }
     }
 
@@ -10198,7 +10204,7 @@ i {
   }
 
   .section-caption {
-    margin-top: 4.55rem;
+    margin-top: 3.25rem;
     margin-bottom: 2.7rem;
 
     &-title {
@@ -10257,7 +10263,7 @@ i {
         @include flexbox();
         @include align-items(center);
         @include justify-content(center);
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: 500;
         color: #FFF;
         margin-right: 1.57rem;
@@ -11673,7 +11679,7 @@ i {
               }
 
               &-text {
-                font-family: 'Roboto', sans-serif;
+        
                 font-size: 1.1rem;
                 font-weight: 400;
                 color: #6A6D72;
@@ -11702,7 +11708,20 @@ i {
   padding-top: 3.4rem;
   padding-bottom: 0;
   border-top: 1.5px solid #f2f2f2;
-  max-width: 81.7rem;
+  padding-right: calc(100% - 81.7rem);
+  max-height: calc(100vh - 17.4rem - 1.5px);
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
 
 
   &-header {
@@ -11810,19 +11829,6 @@ i {
 
   &-body {
     padding-bottom: 2rem;
-    max-height: calc(100vh - 33.8rem - 1.5px);
-
-      overflow-y: auto;
-      scrollbar-width: none;
-      /* Firefox */
-      -ms-overflow-style: none;
-      /* Internet Explorer 10+ */
-
-      &::-webkit-scrollbar {
-        /* WebKit */
-        width: 0;
-        height: 0;
-      }
 
     @include target-ie() {
       max-height: calc(100vh - 40rem);
@@ -12539,17 +12545,17 @@ i {
 
     & .subheader-text {
       margin-bottom: 1.4rem;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
       font-weight: 400;
-      line-height: 1.18;
+      line-height: 1.25;
       color: #1b2733;
 
       &-small {
         margin-bottom: 2.3rem;
-        font-size: 1.4rem;
+        font-size: 1.23rem;
         font-weight: 400;
-        line-height: 1.29;
-        letter-spacing: 0.07px;
+        line-height: 1.47;
+        letter-spacing: -0.03px;
         color: #647282;
       }
     }
@@ -12566,20 +12572,21 @@ i {
         position: relative;
 
         & input {
+          height: 3.2rem;
           width: 100%;
           padding: .65rem 3.5rem;
           padding-right: 1.5rem;
           border: none;
           outline: none;
-          font-size: 1.5rem;
+          font-size: 1.28rem;
           font-weight: 400;
-          line-height: 1.33;
-          color: #333;
+          line-height: 1.18;
+          color: #9facba;
           border: solid 1px #dedede;
           border-radius: 1.8rem;
 
           &::placeholder {
-            color: #647282;
+            color: #9facba;
           }
 
           &:focus {
@@ -12601,11 +12608,11 @@ i {
         @include inline-flex;
         @include align-items(center);
         @include justify-content(center);
+        height: 3.2rem;
         padding: .65rem 1.8rem;
-        font-size: 1.4rem;
+        font-size: 1.28rem;
         font-weight: 400;
-        line-height: 1.36;
-        letter-spacing: normal;
+        line-height: 1.18;
         color: #1b2733;
         border: solid 1px #dedede;
 
@@ -12676,10 +12683,10 @@ i {
 
         &>td,
         &>td a {
-          font-size: 1.4rem;
+          font-size: 1.23rem;
           font-weight: 400;
-          line-height: 1.4;
-          letter-spacing: 0.07px;
+          line-height: 1.22;
+          letter-spacing: -0.06px;
           text-align: left;
           color: #1b2733;
         }
@@ -15422,6 +15429,7 @@ i {
 
 
   & .btn {
+    margin-top: .5rem;
     height: 5rem;
     text-decoration: none;
     display: inline-flex;
@@ -15457,6 +15465,10 @@ i {
           background-color: #3d74bb;
         }
       }
+    }
+
+    &.get-started {
+      margin-top: 0;
     }
   }
 
@@ -15537,7 +15549,6 @@ i {
 
   &-card {
     padding: 0 1.5rem;
-    font-family: 'Roboto', sans-serif;
     width: 100%;
     max-width: 43rem;
     position: absolute;
@@ -15578,7 +15589,7 @@ i {
     }
 
     &-title {
-      margin-bottom: 1.95rem;
+      margin-bottom: 1.55rem;
       font-size: 2.8rem;
       font-weight: 700;
       line-height: 1.11;
@@ -15587,8 +15598,6 @@ i {
 
       // GET STARTED
       &.get-started {
-        font-size: 3.2rem;
-        margin-bottom: 1.85rem;
       }
 
       // RESET PASSWORD 01
@@ -15648,7 +15657,7 @@ i {
     }
 
     &-redirect {
-      margin-bottom: 3rem;
+      margin-bottom: 2.8rem;
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 1.88;
@@ -15658,7 +15667,7 @@ i {
 
       & a {
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
         color: #215dac;
         text-decoration: underline;
       }
@@ -15670,18 +15679,18 @@ i {
         font-weight: 400;
         line-height: 1.2;
         text-align: left;
+        letter-spacing: normal;
         color: #57687b;
 
         & a {
-          font-weight: 500;
+          font-weight: 600;
         }
       }
     }
 
     &-input {
       height: 4.7rem;
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 1.9rem;
+      margin-bottom: 2.1rem;
       padding: 1.4rem 1.6rem;
       width: 100%;
       font-size: 1.43rem;
@@ -15707,11 +15716,11 @@ i {
 
       // GET STARTED
       &.get-started {
-        margin-bottom: 2rem;
+        margin-bottom: 2.2rem;
 
-        &:last-of-type {
-          margin-bottom: 1.7rem;
-        }
+        // &:last-of-type {
+        //   margin-bottom: 1.7rem;
+        // }
       }
 
       // RESET PASSWORD 01
@@ -15753,7 +15762,6 @@ i {
     &-password-info {
       margin-bottom: 2.2rem;
       margin-left: .4rem;
-      font-family: 'Roboto', sans-serif;
       font-size: 1.3rem;
       font-weight: 400;
       line-height: 1.38;
@@ -15772,6 +15780,7 @@ i {
       margin-left: .3rem;
       display: flex;
       align-items: center;
+      letter-spacing: normal;
 
       & .pretty {
         margin-right: 0;
@@ -15779,11 +15788,12 @@ i {
       }
 
       &-label {
-        font-family: 'Roboto', sans-serif;
+
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.38;
         color: #707070;
+        letter-spacing: normal;
 
         & a {
           font-weight: 500;
@@ -15794,13 +15804,13 @@ i {
     }
 
     & .btn-primary {
-      font-family: 'Roboto', sans-serif;
       margin-bottom: 1.9rem;
       padding: 1.1rem 0;
       width: 100%;
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 500;
-      line-height: 1.3;
+      line-height: 1.18;
+      letter-spacing: 0.09px;
 
       // GET STARTED
       &.get-started {
@@ -15834,7 +15844,6 @@ i {
     border-top: 1.25px solid #EAEAEA;
 
     &-text {
-      font-family: 'Roboto', sans-serif;
       font-size: 1.18rem;
       font-weight: 500;
       line-height: 2.79;
@@ -16011,7 +16020,7 @@ i {
       }
 
       &.small {
-        font-family: 'Roboto', sans-serif;
+
         font-weight: 400;
         margin-bottom: 0;
         font-size: 1.4rem;
@@ -16026,7 +16035,6 @@ i {
     }
 
     &-input {
-      font-family: 'Roboto', sans-serif;
       margin-bottom: 2rem;
       padding: 1.4rem 1.6rem;
       width: 100%;
@@ -16075,7 +16083,6 @@ i {
     }
 
     & .btn-primary {
-      font-family: 'Roboto', sans-serif;
       margin-bottom: 1.9rem;
       padding: 1.1rem 0;
       width: 100%;
@@ -16108,7 +16115,6 @@ i {
     border-top: 1.25px solid #EAEAEA;
 
     &-text {
-      font-family: 'Roboto', sans-serif;
       font-size: 1.2rem;
       font-weight: 500;
       line-height: 2.5;
@@ -16875,7 +16881,6 @@ i {
 
     & .btn-primary {
       margin-top: 5.5rem;
-      font-family: 'Roboto', sans-serif;
       margin-bottom: 1.9rem;
       padding: 1.1rem 2.2rem;
       font-size: 2rem;
@@ -16908,7 +16913,6 @@ i {
     border-top: 1.25px solid #EAEAEA;
 
     &-text {
-      font-family: 'Roboto', sans-serif;
       font-size: 1.2rem;
       font-weight: 500;
       line-height: 2.5;
