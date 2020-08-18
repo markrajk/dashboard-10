@@ -13970,23 +13970,24 @@ i {
       & .name {
         padding-left: 1.7rem;
         margin-bottom: .2rem;
-        font-size: 2.7rem;
+        font-size: 2.4rem;
         font-weight: 500;
-        line-height: 1.32;
-        letter-spacing: -0.28px;
-        color: #434343;
+        line-height: 1.21;
+        letter-spacing: -0.48px;
+        color: #192239;
 
         & .team {
           @include flexbox();
           @include align-items(center);
           @include justify-content(flex-start);
-          margin-left: .2rem;
-          margin-top: .4rem;
+          margin-left: 0;
+          margin-top: .6rem;
           display: block;
-          font-size: 1.45rem;
-          font-weight: 500;
-          line-height: 1.31;
-          color: #7d808e;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.23;
+          letter-spacing: normal;
+          color: #737580;
           max-width: 37rem;
           white-space: nowrap;
           overflow: hidden;
@@ -15084,28 +15085,53 @@ i {
 
 
   &-header {
-    padding-top: 3.2rem;
-    max-width: calc(106.65rem - 3.65rem);
+    position: relative;
     margin-bottom: 2.7rem;
+    max-width: 103rem;
+    padding-top: 3.2rem;
     @include flexbox;
     @include justify-content(space-between);
     @include align-items(center);
+    transform:  translate(0,0);
 
     @include respond(desktop-sm) {
       @include flex-direction(column);
       @include align-items(flex-start);
     }
 
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 2rem;
+    //   background-color: red;
+    // }
+
     &-info {
-      margin-right: .5rem;
+      position: relative;
+      margin-right: 1.5rem;
       @include inline-flex;
       @include align-items(center);
+      z-index: 100;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background-color: red;
+        z-index: 1000000;
+      }
 
       &-buttons {
         @include respond(desktop-sm) {
           margin-top: 1rem;
           margin-left: 1.25rem;
-          @include align-self(flex-end);
         }
 
         @include respond(desktop-xsm) {
@@ -15114,28 +15140,61 @@ i {
       }
 
       & img {
-        margin-left: 1.25rem;
-        width: 5rem;
-        height: 5rem;
+        width: 5.8rem;
+        height: 5.8rem;
         border-radius: 50%;
 
+      }
+
+      & .initials {
+        @include inline-flex;
+        @include align-items(center);
+        @include justify-content(center);
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+        background-color: #ffd800;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #FFF;
+        line-height: 1.32;
+        letter-spacing: -0.25px;
+        text-transform: uppercase;
       }
 
       & .name {
         padding-left: 1.7rem;
         margin-bottom: .2rem;
-        font-size: 1.7rem;
+        font-size: 2.4rem;
         font-weight: 500;
-        line-height: 1.35;
-        color: #434343;
+        line-height: 1.21;
+        letter-spacing: -0.48px;
+        color: #192239;
 
-        & .email {
-          margin-top: .4rem;
-          font-weight: 400;
+        & .team {
+          @include flexbox();
+          @include align-items(center);
+          @include justify-content(flex-start);
+          margin-left: 0;
+          margin-top: .6rem;
           display: block;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #383838;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.23;
+          letter-spacing: normal;
+          color: #737580;
+          max-width: 37rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          & strong {
+            font-weight: 500;
+          }
+        }
+
+        &.you-modifier {
+          font-weight: 400;
         }
       }
     }

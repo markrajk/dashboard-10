@@ -11115,11 +11115,11 @@ i {
       .people-average-charts-header-info .name {
         padding-left: 1.7rem;
         margin-bottom: .2rem;
-        font-size: 2.7rem;
+        font-size: 2.4rem;
         font-weight: 500;
-        line-height: 1.32;
-        letter-spacing: -0.28px;
-        color: #434343; }
+        line-height: 1.21;
+        letter-spacing: -0.48px;
+        color: #192239; }
         .people-average-charts-header-info .name .team {
           display: -webkit-box;
           display: -webkit-flex;
@@ -11136,13 +11136,14 @@ i {
           -webkit-justify-content: flex-start;
           -moz-justify-content: flex-start;
           justify-content: flex-start;
-          margin-left: .2rem;
-          margin-top: .4rem;
+          margin-left: 0;
+          margin-top: .6rem;
           display: block;
-          font-size: 1.45rem;
-          font-weight: 500;
-          line-height: 1.31;
-          color: #7d808e;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.23;
+          letter-spacing: normal;
+          color: #737580;
           max-width: 37rem;
           white-space: nowrap;
           overflow: hidden;
@@ -12014,9 +12015,10 @@ i {
   padding-left: 3.65rem;
   width: 100%; }
   .people-feedback-received-header {
-    padding-top: 3.2rem;
-    max-width: calc(106.65rem - 3.65rem);
+    position: relative;
     margin-bottom: 2.7rem;
+    max-width: 103rem;
+    padding-top: 3.2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -12031,7 +12033,8 @@ i {
     -ms-flex-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
-    align-items: center; }
+    align-items: center;
+    transform: translate(0, 0); }
     @media (max-width: 767px) {
       .people-feedback-received-header {
         -webkit-box-direction: normal;
@@ -12046,7 +12049,8 @@ i {
         -moz-align-items: flex-start;
         align-items: flex-start; } }
     .people-feedback-received-header-info {
-      margin-right: .5rem;
+      position: relative;
+      margin-right: 1.5rem;
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
       display: -moz-inline-flex;
@@ -12056,15 +12060,22 @@ i {
       -ms-flex-align: center;
       -webkit-align-items: center;
       -moz-align-items: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 100; }
+      .people-feedback-received-header-info::after {
+        content: '';
+        position: absolute;
+        display: block;
+        bottom: -2rem;
+        left: 0;
+        width: 100%;
+        height: 2rem;
+        background-color: red;
+        z-index: 1000000; }
       @media (max-width: 767px) {
         .people-feedback-received-header-info-buttons {
           margin-top: 1rem;
-          margin-left: 1.25rem;
-          -webkit-align-self: flex-end;
-          -moz-align-self: flex-end;
-          -ms-flex-item-align: end;
-          align-self: flex-end; } }
+          margin-left: 1.25rem; } }
       @media (max-width: 575px) {
         .people-feedback-received-header-info-buttons {
           -webkit-align-self: flex-start;
@@ -12072,24 +12083,75 @@ i {
           -ms-flex-item-align: start;
           align-self: flex-start; } }
       .people-feedback-received-header-info img {
-        margin-left: 1.25rem;
-        width: 5rem;
-        height: 5rem;
+        width: 5.8rem;
+        height: 5.8rem;
         border-radius: 50%; }
+      .people-feedback-received-header-info .initials {
+        display: -webkit-inline-box;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 5.8rem;
+        height: 5.8rem;
+        border-radius: 50%;
+        background-color: #ffd800;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #FFF;
+        line-height: 1.32;
+        letter-spacing: -0.25px;
+        text-transform: uppercase; }
       .people-feedback-received-header-info .name {
         padding-left: 1.7rem;
         margin-bottom: .2rem;
-        font-size: 1.7rem;
+        font-size: 2.4rem;
         font-weight: 500;
-        line-height: 1.35;
-        color: #434343; }
-        .people-feedback-received-header-info .name .email {
-          margin-top: .4rem;
-          font-weight: 400;
+        line-height: 1.21;
+        letter-spacing: -0.48px;
+        color: #192239; }
+        .people-feedback-received-header-info .name .team {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          -webkit-justify-content: flex-start;
+          -moz-justify-content: flex-start;
+          justify-content: flex-start;
+          margin-left: 0;
+          margin-top: .6rem;
           display: block;
-          font-size: 1.4rem;
-          line-height: 1.36;
-          color: #383838; }
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.23;
+          letter-spacing: normal;
+          color: #737580;
+          max-width: 37rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+          .people-feedback-received-header-info .name .team strong {
+            font-weight: 500; }
+        .people-feedback-received-header-info .name.you-modifier {
+          font-weight: 400; }
     @media (max-width: 575px) {
       .people-feedback-received-header .button {
         margin-right: .5rem;
