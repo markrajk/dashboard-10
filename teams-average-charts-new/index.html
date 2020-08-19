@@ -1,0 +1,1385 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | People | Average Charts</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../public/css/pretty-checkbox.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-menu-toggle">
+                <i class="icon-chevron-left"></i>
+            </div>
+            <div class="sidebar-main">
+                <ul class="sidebar-main-top">
+                    <li class="sidebar-main-item active">
+                        <a href="../teams-average-charts/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-users"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../people-average-charts/" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-main-item">
+                        <a href="../give-feedback/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar-main-bottom">
+                    <li class="sidebar-main-item">
+                        <a href="../company-members/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-business"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <a href="../user-settings-general/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-settings"></i>
+                        </a>
+                    </li>
+                    <li class="sidebar-main-item">
+                        <button href="../sign-in/index.html" class="sidebar-main-link sidebar-main-link-icon">
+                            <i class="icon-exit"></i>
+                        </button>
+                    </li>
+                    <li class="sidebar-main-item logo">
+                        <a href="../single-user/index.html" class="sidebar-main-link">
+                            <div class="letter-circle"><span>T</span></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- sidebar menu -->
+            <div class="sidebar-menu">
+                <div class="sidebar-menu-header">
+                    <h2>Teams</h2>
+                    <div class="dropdown-custom dd-new">
+                        <button class="dropdown-custom-trigger dd-new" tabindex="0" onclick="this.focus()">
+                            <i class="icon-circle-plus"></i>
+                        </button>
+
+                        <div class="dropdown-custom-list dd-new">
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-users"></i>
+                                    Create a new team
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-user-check"></i>
+                                    Invite new member
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+
+                            <li class="dropdown-custom-list-item dd-new">
+                                <button class="dropdown-custom-list-item-link dd-new">
+                                    <i class="icon-shield"></i>
+                                    Request viewing rights
+                                    <i class="icon-chevron-right"></i>
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <ul class="sidebar-menu-list">
+                    <li class="sidebar-menu-list-item active">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Marketing</a>
+                        <div class="star full">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                <path
+                                    d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                    fill="#feab29" /></svg>
+                        </div>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Electric Boys</a>
+                        <div class="star empty">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                <g fill="none">
+                                    <path
+                                        d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                        stroke="none" />
+                                    <path
+                                        d="M 10.5 2.258346557617188 L 10.50000286102295 2.258350372314453 C 10.50000190734863 2.258352279663086 10.50000095367432 2.258354187011719 10.5 2.258356094360352 L 8.486530303955078 6.335386276245117 C 8.186090469360352 6.943765640258789 7.604490280151367 7.355075836181641 6.930769920349121 7.435646057128906 L 2.319850921630859 7.987046241760254 C 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 C 2.319847106933594 7.987048149108887 2.319847106933594 7.98705005645752 2.319845199584961 7.987052917480469 C 2.319847106933594 7.987053871154785 2.319849014282227 7.987054824829102 2.319850921630859 7.987055778503418 L 5.641329765319824 10.95067596435547 C 6.16886043548584 11.42136573791504 6.409950256347656 12.14433670043945 6.270520210266113 12.83746528625488 L 5.404689788818359 17.14100646972656 L 9.572039604187012 14.95834541320801 C 9.857199668884277 14.80898666381836 10.17807960510254 14.73003578186035 10.5 14.73003578186035 C 10.82190036773682 14.73003578186035 11.1427698135376 14.80897617340088 11.42794036865234 14.95833587646484 L 15.59527969360352 17.14099502563477 C 15.59528732299805 17.14098930358887 15.59529495239258 17.14098358154297 15.59531021118164 17.14101600646973 L 14.72947978973389 12.83744621276855 C 14.59004974365234 12.14433670043945 14.83114051818848 11.42136573791504 15.3586597442627 10.95067596435547 L 18.68014907836914 7.987055778503418 C 18.68015098571777 7.987055778503418 18.68015098571777 7.987055778503418 18.68016052246094 7.987055778503418 L 14.06924057006836 7.435646057128906 C 13.39550971984863 7.355075836181641 12.81390953063965 6.943765640258789 12.51346969604492 6.335395812988281 L 10.5 2.258346557617188 M 10.50000381469727 1.258350372314453 C 10.85658836364746 1.258350372314453 11.21317005157471 1.444080352783203 11.39661979675293 1.815546035766602 L 13.41008949279785 5.892596244812012 C 13.55974960327148 6.195646286010742 13.85236930847168 6.402585983276367 14.18797016143799 6.442715644836426 L 18.79890060424805 6.994126319885254 C 19.65405082702637 7.096396446228027 19.98855018615723 8.159826278686523 19.34592056274414 8.733216285705566 L 16.02442932128906 11.69683647155762 C 15.75955963134766 11.93316650390625 15.63982963562012 12.29221534729004 15.70983982086182 12.64022636413574 L 16.57567024230957 16.94377517700195 C 16.70752716064453 17.59919738769531 16.18846130371094 18.14339447021484 15.59577465057373 18.14339447021484 C 15.44252586364746 18.14339447021484 15.28447341918945 18.1070613861084 15.13134002685547 18.02685546875 L 10.96397018432617 15.8441858291626 C 10.81867504119873 15.76808547973633 10.65933704376221 15.73003578186035 10.5 15.73003578186035 C 10.34066295623779 15.73003578186035 10.18132495880127 15.76808547973633 10.03602981567383 15.8441858291626 L 5.868659973144531 18.02685546875 C 5.715571403503418 18.1070384979248 5.557430267333984 18.14339447021484 5.404224395751953 18.14339447021484 C 4.811477661132813 18.14339447021484 4.292455673217773 17.59924697875977 4.42432975769043 16.94377517700195 L 5.290160179138184 12.64022636413574 C 5.360170364379883 12.29221534729004 5.240440368652344 11.93316650390625 4.975570678710938 11.69683647155762 L 1.654079437255859 8.733216285705566 C 1.011449813842773 8.159826278686523 1.345949172973633 7.096396446228027 2.201099395751953 6.994126319885254 L 6.812029838562012 6.442715644836426 C 7.147629737854004 6.402585983276367 7.440250396728516 6.195646286010742 7.589909553527832 5.892596244812012 L 9.60338020324707 1.815555572509766 C 9.786829948425293 1.444086074829102 10.14341831207275 1.258350372314453 10.50000381469727 1.258350372314453 Z"
+                                        stroke="none" fill="#feab29" />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Sales</a>
+                        <div class="star empty">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                <g fill="none">
+                                    <path
+                                        d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                        stroke="none" />
+                                    <path
+                                        d="M 10.5 2.258346557617188 L 10.50000286102295 2.258350372314453 C 10.50000190734863 2.258352279663086 10.50000095367432 2.258354187011719 10.5 2.258356094360352 L 8.486530303955078 6.335386276245117 C 8.186090469360352 6.943765640258789 7.604490280151367 7.355075836181641 6.930769920349121 7.435646057128906 L 2.319850921630859 7.987046241760254 C 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 C 2.319847106933594 7.987048149108887 2.319847106933594 7.98705005645752 2.319845199584961 7.987052917480469 C 2.319847106933594 7.987053871154785 2.319849014282227 7.987054824829102 2.319850921630859 7.987055778503418 L 5.641329765319824 10.95067596435547 C 6.16886043548584 11.42136573791504 6.409950256347656 12.14433670043945 6.270520210266113 12.83746528625488 L 5.404689788818359 17.14100646972656 L 9.572039604187012 14.95834541320801 C 9.857199668884277 14.80898666381836 10.17807960510254 14.73003578186035 10.5 14.73003578186035 C 10.82190036773682 14.73003578186035 11.1427698135376 14.80897617340088 11.42794036865234 14.95833587646484 L 15.59527969360352 17.14099502563477 C 15.59528732299805 17.14098930358887 15.59529495239258 17.14098358154297 15.59531021118164 17.14101600646973 L 14.72947978973389 12.83744621276855 C 14.59004974365234 12.14433670043945 14.83114051818848 11.42136573791504 15.3586597442627 10.95067596435547 L 18.68014907836914 7.987055778503418 C 18.68015098571777 7.987055778503418 18.68015098571777 7.987055778503418 18.68016052246094 7.987055778503418 L 14.06924057006836 7.435646057128906 C 13.39550971984863 7.355075836181641 12.81390953063965 6.943765640258789 12.51346969604492 6.335395812988281 L 10.5 2.258346557617188 M 10.50000381469727 1.258350372314453 C 10.85658836364746 1.258350372314453 11.21317005157471 1.444080352783203 11.39661979675293 1.815546035766602 L 13.41008949279785 5.892596244812012 C 13.55974960327148 6.195646286010742 13.85236930847168 6.402585983276367 14.18797016143799 6.442715644836426 L 18.79890060424805 6.994126319885254 C 19.65405082702637 7.096396446228027 19.98855018615723 8.159826278686523 19.34592056274414 8.733216285705566 L 16.02442932128906 11.69683647155762 C 15.75955963134766 11.93316650390625 15.63982963562012 12.29221534729004 15.70983982086182 12.64022636413574 L 16.57567024230957 16.94377517700195 C 16.70752716064453 17.59919738769531 16.18846130371094 18.14339447021484 15.59577465057373 18.14339447021484 C 15.44252586364746 18.14339447021484 15.28447341918945 18.1070613861084 15.13134002685547 18.02685546875 L 10.96397018432617 15.8441858291626 C 10.81867504119873 15.76808547973633 10.65933704376221 15.73003578186035 10.5 15.73003578186035 C 10.34066295623779 15.73003578186035 10.18132495880127 15.76808547973633 10.03602981567383 15.8441858291626 L 5.868659973144531 18.02685546875 C 5.715571403503418 18.1070384979248 5.557430267333984 18.14339447021484 5.404224395751953 18.14339447021484 C 4.811477661132813 18.14339447021484 4.292455673217773 17.59924697875977 4.42432975769043 16.94377517700195 L 5.290160179138184 12.64022636413574 C 5.360170364379883 12.29221534729004 5.240440368652344 11.93316650390625 4.975570678710938 11.69683647155762 L 1.654079437255859 8.733216285705566 C 1.011449813842773 8.159826278686523 1.345949172973633 7.096396446228027 2.201099395751953 6.994126319885254 L 6.812029838562012 6.442715644836426 C 7.147629737854004 6.402585983276367 7.440250396728516 6.195646286010742 7.589909553527832 5.892596244812012 L 9.60338020324707 1.815555572509766 C 9.786829948425293 1.444086074829102 10.14341831207275 1.258350372314453 10.50000381469727 1.258350372314453 Z"
+                                        stroke="none" fill="#feab29" />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="sidebar-menu-list-item">
+                        <a href="#" class="sidebar-menu-list-item-link">Team Water Pipes</a>
+                        <div class="star empty">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19">
+                                <g fill="none">
+                                    <path
+                                        d="M9.6,1.816a1,1,0,0,1,1.793,0L13.41,5.893a1,1,0,0,0,.778.55l4.611.551a1,1,0,0,1,.547,1.739L16.024,11.7a1,1,0,0,0-.315.943l.866,4.3a1,1,0,0,1-1.444,1.083l-4.167-2.183a1,1,0,0,0-.928,0L5.869,18.027a1,1,0,0,1-1.444-1.083l.866-4.3a1,1,0,0,0-.315-.943L1.654,8.733A1,1,0,0,1,2.2,6.994l4.611-.551a1,1,0,0,0,.778-.55Z"
+                                        stroke="none" />
+                                    <path
+                                        d="M 10.5 2.258346557617188 L 10.50000286102295 2.258350372314453 C 10.50000190734863 2.258352279663086 10.50000095367432 2.258354187011719 10.5 2.258356094360352 L 8.486530303955078 6.335386276245117 C 8.186090469360352 6.943765640258789 7.604490280151367 7.355075836181641 6.930769920349121 7.435646057128906 L 2.319850921630859 7.987046241760254 C 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 2.319849014282227 7.987046241760254 C 2.319847106933594 7.987048149108887 2.319847106933594 7.98705005645752 2.319845199584961 7.987052917480469 C 2.319847106933594 7.987053871154785 2.319849014282227 7.987054824829102 2.319850921630859 7.987055778503418 L 5.641329765319824 10.95067596435547 C 6.16886043548584 11.42136573791504 6.409950256347656 12.14433670043945 6.270520210266113 12.83746528625488 L 5.404689788818359 17.14100646972656 L 9.572039604187012 14.95834541320801 C 9.857199668884277 14.80898666381836 10.17807960510254 14.73003578186035 10.5 14.73003578186035 C 10.82190036773682 14.73003578186035 11.1427698135376 14.80897617340088 11.42794036865234 14.95833587646484 L 15.59527969360352 17.14099502563477 C 15.59528732299805 17.14098930358887 15.59529495239258 17.14098358154297 15.59531021118164 17.14101600646973 L 14.72947978973389 12.83744621276855 C 14.59004974365234 12.14433670043945 14.83114051818848 11.42136573791504 15.3586597442627 10.95067596435547 L 18.68014907836914 7.987055778503418 C 18.68015098571777 7.987055778503418 18.68015098571777 7.987055778503418 18.68016052246094 7.987055778503418 L 14.06924057006836 7.435646057128906 C 13.39550971984863 7.355075836181641 12.81390953063965 6.943765640258789 12.51346969604492 6.335395812988281 L 10.5 2.258346557617188 M 10.50000381469727 1.258350372314453 C 10.85658836364746 1.258350372314453 11.21317005157471 1.444080352783203 11.39661979675293 1.815546035766602 L 13.41008949279785 5.892596244812012 C 13.55974960327148 6.195646286010742 13.85236930847168 6.402585983276367 14.18797016143799 6.442715644836426 L 18.79890060424805 6.994126319885254 C 19.65405082702637 7.096396446228027 19.98855018615723 8.159826278686523 19.34592056274414 8.733216285705566 L 16.02442932128906 11.69683647155762 C 15.75955963134766 11.93316650390625 15.63982963562012 12.29221534729004 15.70983982086182 12.64022636413574 L 16.57567024230957 16.94377517700195 C 16.70752716064453 17.59919738769531 16.18846130371094 18.14339447021484 15.59577465057373 18.14339447021484 C 15.44252586364746 18.14339447021484 15.28447341918945 18.1070613861084 15.13134002685547 18.02685546875 L 10.96397018432617 15.8441858291626 C 10.81867504119873 15.76808547973633 10.65933704376221 15.73003578186035 10.5 15.73003578186035 C 10.34066295623779 15.73003578186035 10.18132495880127 15.76808547973633 10.03602981567383 15.8441858291626 L 5.868659973144531 18.02685546875 C 5.715571403503418 18.1070384979248 5.557430267333984 18.14339447021484 5.404224395751953 18.14339447021484 C 4.811477661132813 18.14339447021484 4.292455673217773 17.59924697875977 4.42432975769043 16.94377517700195 L 5.290160179138184 12.64022636413574 C 5.360170364379883 12.29221534729004 5.240440368652344 11.93316650390625 4.975570678710938 11.69683647155762 L 1.654079437255859 8.733216285705566 C 1.011449813842773 8.159826278686523 1.345949172973633 7.096396446228027 2.201099395751953 6.994126319885254 L 6.812029838562012 6.442715644836426 C 7.147629737854004 6.402585983276367 7.440250396728516 6.195646286010742 7.589909553527832 5.892596244812012 L 9.60338020324707 1.815555572509766 C 9.786829948425293 1.444086074829102 10.14341831207275 1.258350372314453 10.50000381469727 1.258350372314453 Z"
+                                        stroke="none" fill="#feab29" />
+                                </g>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+                <div class="sidebar-menu-footer">
+                    <button href="../teams-compare/index.html" class="sidebar-menu-footer-create-new">Overview</button>
+                    <button href="../teams-compare/index.html" class="sidebar-menu-footer-create-new">Open compare
+                        mode</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <header class="header">
+                <div class="header-top">
+                    <div class="header-top-left text-truncate">
+                        <h1 class="header-top-left-title text-truncate">Team Marketing North Europe</h1>
+                        <p class="header-top-left-small no-ls text-truncate">
+                            This is an example team description.
+                        </p>
+                    </div>
+                    <div class="header-top-right">
+                        <!-- <div class="input-container">
+                            <i class="icon-search"></i>
+                            <input type="text" placeholder="Search...">
+                        </div> -->
+
+                        <div class="dropdown-custom settings-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9">
+                                    <g transform="translate(-0.75 -0.75)">
+                                        <path
+                                            d="M19.064,16.282A2.782,2.782,0,1,1,16.282,13.5,2.782,2.782,0,0,1,19.064,16.282Z"
+                                            transform="translate(-4.582 -4.582)" fill="none" stroke="#647282"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                                        <path
+                                            d="M18.562,14.482a1.53,1.53,0,0,0,.306,1.688l.056.056A1.856,1.856,0,1,1,16.3,18.849l-.056-.056a1.542,1.542,0,0,0-2.615,1.094v.158a1.855,1.855,0,0,1-3.709,0v-.083a1.53,1.53,0,0,0-1-1.4,1.53,1.53,0,0,0-1.688.306l-.056.056A1.856,1.856,0,1,1,4.551,16.3l.056-.056a1.542,1.542,0,0,0-1.094-2.615H3.355a1.855,1.855,0,0,1,0-3.709h.083a1.53,1.53,0,0,0,1.4-1,1.53,1.53,0,0,0-.306-1.688l-.056-.056A1.856,1.856,0,1,1,7.1,4.551l.056.056a1.53,1.53,0,0,0,1.688.306h.074a1.53,1.53,0,0,0,.927-1.4V3.355a1.855,1.855,0,0,1,3.709,0v.083a1.542,1.542,0,0,0,2.615,1.094l.056-.056A1.856,1.856,0,1,1,18.849,7.1l-.056.056a1.53,1.53,0,0,0-.306,1.688v.074a1.53,1.53,0,0,0,1.4.927h.158a1.855,1.855,0,0,1,0,3.709h-.083a1.53,1.53,0,0,0-1.4.927Z"
+                                            fill="none" stroke="#647282" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </a>
+
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-item">
+                                    <a href="#" class="dropdown-custom-list-item-link">Option I</a>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="#" class="dropdown-custom-list-item-link">Option II</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-custom help-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.622 21.31">
+                                    <g transform="translate(-1289 -51.5)">
+                                        <g transform="translate(1289 52)" fill="#fff" stroke="#647282"
+                                            stroke-width="1.35">
+                                            <ellipse cx="10.311" cy="10.405" rx="10.311" ry="10.405" stroke="none" />
+                                            <ellipse cx="10.311" cy="10.405" rx="9.636" ry="9.73" fill="none" />
+                                        </g><text transform="translate(1299 67.5)" fill="#647282" stroke="rgba(0,0,0,0)"
+                                            stroke-width="1" font-size="14.25" font-family="Roboto-Bold, Roboto"
+                                            font-weight="700" letter-spacing="-0.005em">
+                                            <tspan x="-3.545" y="0">?</tspan>
+                                        </text>
+                                    </g>
+                                </svg>
+                            </a>
+
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-item">
+                                    <div class="dropdown-custom-list-item-link">
+                                        <span class="dropdown-custom-list-item-link-text">Full screen mode</span>
+                                        <div class="pretty p-switch">
+                                            <input type="checkbox" />
+                                            <div class="state">
+                                                <label>&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="#" class="dropdown-custom-list-item-link">Option II</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-custom notification-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <i class="icon-bell bell"></i>
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <p class="dropdown-custom-list-header-text">Notifications</p>
+                                </li>
+
+                                <li class="dropdown-custom-list-body">
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Invitations / Rights</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to invite you to become a
+                                                <span>member</span> of the team <span>salsa-kings</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <button href="#"
+                                                    class="button button-outlined button-outlined-success">Join
+                                                    team</button>
+                                                <button href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</button>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>viewing rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed wants to give you <span>admin rights</span>
+                                                to the team <span>magic-music-productions</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Take
+                                                    rights</a>
+                                                <a href="#"
+                                                    class="button button-outlined button-outlined-danger">Deny</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-custom-list-header-small">
+                                        <p class="dropdown-custom-list-header-small-text">Requests</p>
+                                    </div>
+                                    <div class="dropdown-custom-list-body-notification">
+                                        <img src="../public/img/p-06.png" alt="User's profile image"
+                                            class="dropdown-custom-list-body-notification-img">
+                                        <div class="dropdown-custom-list-body-notification-main">
+                                            <p class="dropdown-custom-list-body-notification-main-text">
+                                                Abdula Ahmed requests <span>viewing rights</span>
+                                                of the team <span>greece-wine</span>
+                                            </p>
+                                            <div class="dropdown-custom-list-body-notification-main-buttons">
+                                                <a href="#" class="button button-outlined button-outlined-success">Give
+                                                    rights</a>
+                                                <a href="#" class="button button-outlined button-outlined-danger">Deny
+                                                    request</a>
+                                            </div>
+                                            <p class="dropdown-custom-list-body-notification-main-when">2 days ago</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="dropdown-custom user-menu">
+                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                <img class="face" src="../public/img/facex2.png" alt="#">
+                            </a>
+                            <ul class="dropdown-custom-list">
+                                <li class="dropdown-custom-list-header">
+                                    <img src="../public/img/p-06.png" alt="#">
+                                    <div class="user-info">
+                                        <p class="user-info-name">Peter Jöback</p>
+                                        <a href="#">Change photo</a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../user-settings-general/index.html"
+                                        class="dropdown-custom-list-item-link">User settings</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-item">
+                                    <a href="../create-new-team/index.html"
+                                        class="dropdown-custom-list-item-link">Create a new team</a>
+                                </li>
+
+                                <li class="dropdown-custom-list-footer">
+                                    <a href="../sign-in/index.html">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-bottom">
+                    <div class="choose">
+                        <a href="../teams-average-charts/index.html" class="active">
+                            Charts
+                        </a>
+
+                        <a href="../teams-members/index.html">
+                            Members
+                        </a>
+
+                        <a href="../teams-comments/index.html">
+                            Comments
+                        </a>
+
+                        <a href="../teams-settings-general/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../report-team/index.html">
+                            Reports
+                        </a>
+                    </div>
+                </div>
+
+            </header>
+
+            <!-- <div class="no-teams">
+                <div class="no-teams-card card-01">
+                    <p class="no-teams-card-title">Create a new team</p>
+                    <p class="no-teams-card-text">
+                        Please select teams from the sidebar to start comparing.
+                    </p>
+                    <button class="button button-dark">Create team</button>
+                </div>
+                <div class="no-teams-card card-02">
+                    <p class="no-teams-card-title">Request rights to other teams</p>
+                    <p class="no-teams-card-text">
+                        Click here to request rights to follow the development of existing teams.
+                    </p>
+                    <button class="button button-dark">Request rights</button>
+                </div>
+            </div> -->
+
+            <main class="teams-average-charts">
+
+                <div class="teams-average-charts-body">
+
+
+
+                    <section class="section section-averages" id="section-01">
+                        <div class="section-header">
+                            <p>Overview</p>
+                            <p class="text-truncate open-section" target-section="#section-01">Open
+                                section
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.407">
+                                    <path d="M324.013,289.424h1.962v-5.212h2.011l-3.032-5.2-2.968,5.2h2.027Z"
+                                        transform="translate(-321.986 -279.017)" fill="#647282" /></svg>
+                            </p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                    Last 2 week averages
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Last 2 weeks average</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Last 4 weeks average</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="no-data">
+                            <div class="no-data-main">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41.652" height="35"
+                                    viewBox="0 0 41.652 35">
+                                    <path
+                                        d="M1574.994-723.333h-37.748c-.959,0-1.918-.481-1.918-1.444v-.481a2.133,2.133,0,0,1,1.918-1.994h37.748a2.141,2.141,0,0,1,1.987,1.994v.481C1576.981-723.815,1576.022-723.333,1574.994-723.333Zm-3.837-7.77a1.759,1.759,0,0,1-1.918,1.926h-3.9c-1.439,0-1.918-.481-1.918-1.926v-17.534a1.76,1.76,0,0,1,1.918-1.925h3.9a2.066,2.066,0,0,1,1.918,1.925V-731.1Zm-13.084,1.926h-3.836a1.81,1.81,0,0,1-1.987-1.926v-25.3a2.132,2.132,0,0,1,1.987-1.925h3.836a2.067,2.067,0,0,1,1.918,1.925v25.3A1.76,1.76,0,0,1,1558.073-729.178Zm-11.167,0h-3.836a1.76,1.76,0,0,1-1.919-1.926v-7.77a2.133,2.133,0,0,1,1.919-1.994h3.836a1.829,1.829,0,0,1,1.987,1.994v7.77C1548.893-729.659,1548.413-729.178,1546.906-729.178Zm0,0"
+                                        transform="translate(-1535.329 758.333)" fill="#137efe" /></svg>
+                                <p class="no-data-main-title">No feedback data yet</p>
+                                <p class="no-data-main-text">Soon you will find here the development charts of
+                                    <button class="no-data-main-link">Team Marketing.</button>
+                                </p>
+                            </div>
+                        </div> -->
+                        <div class="section-body">
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Attitude</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill good" fill-progress="68"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Productivity</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="60"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Teamworking</p>
+                                <div class="progress-custom-info">
+                                    <h3>Amazing</h3>
+                                    <p class="down">
+                                        <i class="icon-arrow-circle-down"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="35"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">How do people feel in this team</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill good" fill-progress="70"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">How well work is planned in this team</p>
+                                <div class="progress-custom-info">
+                                    <h3>Great</h3>
+                                    <p class="up">
+                                        <i class="icon-arrow-circle-up"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="60"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-custom">
+                                <p class="progress-custom-sub">Overall average</p>
+                                <div class="progress-custom-info">
+                                    <h3>Amazing</h3>
+                                    <p class="down">
+                                        <i class="icon-arrow-circle-down"></i>
+                                        20%
+                                    </p>
+                                </div>
+                                <div class="progress-custom-bar">
+                                    <div class="progress-custom-bar-fill ok" fill-progress="35"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-development" id="section-02">
+                        <div class="section-header">
+                            <p>Longterm development</p>
+                            <p class="text-truncate open-section" target-section="#section-02">Open
+                                section
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.407">
+                                    <path d="M324.013,289.424h1.962v-5.212h2.011l-3.032-5.2-2.968,5.2h2.027Z"
+                                        transform="translate(-321.986 -279.017)" fill="#647282" /></svg>
+                            </p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                    Months
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="section-body-chart">
+                                <div class="section-body-chart-header">
+                                    <div class="options">
+                                        <a href="#">Weeks</a>
+                                        <span>|</span>
+                                        <a href="#" class="active">Months</a>
+                                    </div>
+                                </div>
+                                <div class="section-body-chart-main">
+                                    <canvas id="myChart"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="section-body-legend">
+                                <!-- <div class="section-body-legend-header">
+                                    <p>Select data to graph</p>
+                                </div> -->
+                                <div class="section-body-legend-main">
+                                    <div id="chart-legends"></div>
+                                    <!-- <div class="section-body-legend-main-share">
+                                        <a href="#">
+                                            Export graph as PDF
+                                        </a>
+                                        <a href="#">Share graph</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section section-feedback-given" id="section-03">
+                        <div class="section-header">
+                            <p>Overview</p>
+                            <p class="text-truncate open-section" target-section="#section-03">Open
+                                section
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10.407">
+                                    <path d="M324.013,289.424h1.962v-5.212h2.011l-3.032-5.2-2.968,5.2h2.027Z"
+                                        transform="translate(-321.986 -279.017)" fill="#647282" /></svg>
+                            </p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                    Last 2 weeks average
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Last 2 weeks average</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Last 4 weeks average</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section-body">
+                            <div class="section-feedback-given-main">
+                                <div class="section-feedback-given-main-item">
+                                    <div class="section-feedback-given-main-item-initials">WW</div>
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar good" style="width:100%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">32</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-feedback-given-main-item">
+                                    <img src="../public/img/p-01.png" alt="User's profile picture"
+                                        class="section-feedback-given-main-item-img">
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar good" style="width:90%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">24</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-feedback-given-main-item">
+                                    <img src="../public/img/p-01.png" alt="User's profile picture"
+                                        class="section-feedback-given-main-item-img">
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar good" style="width:80%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-feedback-given-main-item">
+                                    <img src="../public/img/p-01.png" alt="User's profile picture"
+                                        class="section-feedback-given-main-item-img">
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar ok" style="width:60%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-feedback-given-main-item">
+                                    <img src="../public/img/p-01.png" alt="User's profile picture"
+                                        class="section-feedback-given-main-item-img">
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar bad" style="width:40%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="section-feedback-given-main-item">
+                                    <img src="../public/img/p-01.png" alt="User's profile picture"
+                                        class="section-feedback-given-main-item-img">
+                                    <div class="section-feedback-given-main-item-bar-wrapper">
+                                        <div class="section-feedback-given-main-item-bar bad" style="width:30%">
+                                            <div class="section-feedback-given-main-item-bar-wrapper-info">
+                                                <p class="section-feedback-given-main-item-bar-text">Example Example</p>
+                                                <p class="section-feedback-given-main-item-bar-number">18</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="section-feedback-given-progress">
+                                <div id="circ">
+                                    <span class="steps">1 month average</span>
+                                </div>
+
+                                <p class="section-feedback-given-progress-info">
+                                    Average amount of given feedback per team member this month
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                    <!-- <section class="section section-development slider">
+                        <div class="section-header">
+                            <p>Longterm development</p>
+                            <div class="dropdown-custom">
+                                <a href="#" class="dropdown-custom-trigger" tabindex="0">
+                                    Months
+                                    <i class="icon-caret-down"></i>
+                                </a>
+                                <ul class="dropdown-custom-list">
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
+                                    </li>
+
+                                    <li class="dropdown-custom-list-item">
+                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-body">
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Average members</h4>
+                                    <h3 class="text-truncate">Teamworking</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Average members</h4>
+                                    <h3 class="text-truncate">Productivity</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Average opinion</h4>
+                                    <h3 class="text-truncate">Happiness in team</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Team members opinion about</h4>
+                                    <h3 class="text-truncate">Team lead</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Amount of</h4>
+                                    <h3 class="text-truncate">Given feedback</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="graph-card  text-truncate slider-item">
+                                <div class="graph-card-header">
+                                    <h4>Overall average</h4>
+                                    <h3 class="text-truncate">Total development</h3>
+                                </div>
+                                <div class="graph-card-body">
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                        <div class="bar-info">Jan</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
+                                        <div class="bar-info">Feb</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Mar</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
+                                        <div class="bar-info">Apr</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
+                                        <div class="bar-info">May</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
+                                        <div class="bar-info">Jun</div>
+                                    </div>
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                        <div class="bar-info">Jul</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
+                                        <div class="bar-info">Aug</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
+                                        <div class="bar-info">Sep</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Oct</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                        <div class="bar-info">Nov</div>
+                                    </div>
+
+                                    <div class="bar">
+                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                        <div class="bar-info">Dec</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../public/js/jquery-3.4.1.min.js"></script>
+    <script src="../public/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="../public/js/progressbar.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+    <script>
+        // CHART & NUMBER OF BARS
+        function numberOfChartBars() {
+            var graphs = document.querySelectorAll('.graph-card');
+
+            for (var i = 0; i < graphs.length; i++) {
+                console.log(i);
+                var rem = parseInt(getComputedStyle(document.documentElement).fontSize);
+                var graphWidth = graphs[i].offsetWidth;
+                var barWidth = rem * 1.8 * 3;
+                var numOfBars = Math.floor(graphWidth / (barWidth));
+
+                var bars = graphs[i].querySelectorAll('.graph-card-body .bar');
+
+                for (var j = 0; j < bars.length; j++) {
+                    bars[j].style.display = 'none';
+                    if (j + 1 >= bars.length - numOfBars) {
+                        bars[j].style.display = 'inline-block';
+                    }
+                }
+
+            }
+
+        }
+
+        numberOfChartBars();
+
+        // ANIMATE PROGRESS BAR
+        window.addEventListener('load', function () {
+            var progressBars = document.querySelectorAll('.progress-custom-bar-fill');
+
+            for (var i = 0; i < progressBars.length; i++) {
+                progressBars[i].style.width = progressBars[i].getAttribute('fill-progress') + '%';
+            }
+        })
+
+        window.addEventListener('resize', numberOfChartBars);
+    </script>
+
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        ctx.height = 150;
+
+        function gradient(color) {
+            const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+            gradient.addColorStop(0, color);
+            gradient.addColorStop(1, '#FFF');
+            return gradient
+        }
+
+        let chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                datasets: [{
+                        // showLine: false,
+                        label: 'Attitude',
+                        data: [1.5, 2, 3, 3.5, 3, 3.8, 4, 3.5, 4],
+                        backgroundColor: gradient('#8af1b9'),
+                        // fill: false,
+                        borderColor: '#8af1b9',
+                    },
+                    // {
+                    //     label: 'Teamworking',
+                    //     data: [1.2, 1.4, 2, 3, 4, 3.5, 3.5, 3, 3.5],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#1DA0F2',
+                    // },
+
+                    // {
+                    //     label: 'Productivity',
+                    //     data: [2, 3, 4, 2, 3, 4, 2, 4, 3],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#F21D1D',
+                    // },
+
+                    // {
+                    //     label: 'Team lead',
+                    //     data: [1, 2, 3, 3, 3, 4, 3, 2, 1],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#1AAA51',
+                    // },
+
+                    // {
+                    //     label: 'Average',
+                    //     data: [1, 3, 2, 4, 4, 4, 1, 2, 4],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#98E816',
+                    // },
+
+                    // {
+                    //     label: 'How people feel',
+                    //     data: [1, 2, 3, 4, 4, 3, 4, 4, 3],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#FFFF00',
+                    // },
+
+                    // {
+                    //     label: 'How well work is planned',
+                    //     data: [2, 3, 4, 3, 2, 1, 2, 2, 3],
+                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     // fill: false,
+                    //     borderColor: '#FF00FF',
+                    // },
+                ],
+                labels: [
+                    'Jan',
+                    'Feb',
+                    'Mar',
+                    'Apr',
+                    'May',
+                    'Jun',
+                    'Jul',
+                    'Aug',
+                    'Sep',
+                ],
+            },
+            options: {
+                tooltips: {
+                    intersect: false,
+                    backgroundColor: '#fff',
+                    titleFontSize: '14',
+                    titleFontColor: '#8181a5',
+                    titleAlign: 'center',
+                    borderColor: '#f4f4f4',
+                    borderWidth: '1'
+                },
+                responsive: true,
+                legend: {
+                    display: false,
+                    position: 'right',
+                    align: 'center',
+
+                    labels: {
+                        padding: 15
+                    }
+                },
+                legendCallback: function (chart) {
+                    return chart.data.datasets
+                        .map((e, i, arr) => {
+                            return `
+                <div class="chart-label chart-label-${i}">
+
+                    <div class="pretty p-svg p-curve">
+                        <input type="checkbox" name="${e.label}-${i}" id="${e.label}-${i}"/>
+                        <div class="state p-primary">
+                            <!-- svg path -->
+                            <svg class="svg svg-icon" viewBox="0 0 20 20">
+                                <path d="M7.629,14.566c0.125,0.125,0.291,0.188,0.456,0.188c0.164,0,0.329-0.062,0.456-0.188l8.219-8.221c0.252-0.252,0.252-0.659,0-0.911c-0.252-0.252-0.659-0.252-0.911,0l-7.764,7.763L4.152,9.267c-0.252-0.251-0.66-0.251-0.911,0c-0.252,0.252-0.252,0.66,0,0.911L7.629,14.566z" style="stroke: white;fill:white;"></path>
+                            </svg>
+                            <label>&nbsp;</label>
+                        </div>
+                    </div>
+
+                    <label class="chart-label-label" for="${e.label}-${i}">${e.label}</label>
+                    <span style="background-color: ${e.borderColor}"></span>
+                </div>`;
+                        })
+                        .join('');
+                },
+                maintainAspectRatio: false,
+                scales: {
+                    yAxes: [{
+                        display: false,
+                        ticks: {
+                            fontColor: '#5E636B',
+                            fontFamily: '"Roboto", sans-serif',
+                            fontSize: 14.5,
+                            fontStyle: '500',
+                            beginAtZero: false,
+                            padding: 22,
+                            max: 5,
+                            min: 1,
+                            stepSize: 1,
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                            drawBorder: false,
+                            color: "#f1f1f1",
+                            zeroLineColor: "#f1f1f1"
+                        },
+                    }, ],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: '#5E636B',
+                            fontFamily: '"Roboto", sans-serif',
+                            fontSize: 12.5,
+                            fontStyle: '500',
+                            beginAtZero: false,
+                            padding: 33,
+                        },
+                        gridLines: {
+                            drawTicks: false,
+                            drawBorder: false,
+                            drawOnChartArea: false,
+
+                        },
+                    }, ],
+                },
+            },
+        });
+
+        //   function redraw() {
+        //     chart.data.datasets[0].hidden;
+        //     //chart.data.datasets[0].showLine = false;
+        //   }
+
+        document.getElementById('chart-legends').innerHTML = chart.generateLegend();
+
+        //CIRCLE PROGRESS BAR
+        var bar = new ProgressBar.Circle(circ, {
+            strokeWidth: 4.2,
+            easing: 'easeInOut',
+            duration: 1400,
+            color: '#19CF40',
+            trailColor: '#eee',
+            trailWidth: 0,
+            svgStyle: null,
+            text: {
+                autoStyleContainer: false
+            },
+            step: function (state, circle) {
+                console.log(circle.value())
+
+                var value = `${Math.round(circle.value() * 1000) / 10}`;
+                if (value === 0) {
+                    circle.setText('');
+                } else {
+                    circle.setText(value);
+                }
+
+            }
+        });
+
+        bar.text.style.fontFamily = '"Inter", sans-serif';
+        bar.text.style.fontWeight = '600';
+        bar.text.style.fontSize = '3.4em';
+        bar.text.style.letterSpacing = '0.35px';
+        bar.text.style.top = '44%';
+        bar.text.style.color = '#363636';
+        bar.animate(.128); // Number from 0.0 to 1.0
+
+
+        //OPEN CLOSE SECTIONS
+        const sectionTriggers = document.querySelectorAll('.open-section');
+
+        sectionTriggers.forEach(e => {
+            e.addEventListener('click', function () {
+                console.log(e.getAttribute('target-section'))
+                console.log(document.querySelector(e.getAttribute('target-section')))
+                document.querySelector(e.getAttribute('target-section')).classList.toggle('closed')
+            })
+        })
+    </script>
+
+</body>
+
+</html>
