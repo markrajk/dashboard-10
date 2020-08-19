@@ -2932,7 +2932,7 @@ i {
       padding-right: .4rem;
       font-size: 1.2rem;
       font-weight: 400;
-      line-height: 1.25;
+      line-height: 1.45;
       letter-spacing: -0.06px;
       color: #252b34;
       transition: opacity .3s ease-in-out .3s;
@@ -3184,6 +3184,7 @@ i {
       border-color: #d4d7df;
       color: #666; }
   .button-dark {
+    font-weight: 500 !important;
     background-color: #0f2882;
     border-color: #0f2882;
     color: #FFF !important; }
@@ -4302,7 +4303,7 @@ i {
                   .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-text span {
                     font-weight: 500; }
                 .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons {
-                  margin-bottom: 1.2rem; }
+                  margin-bottom: 1rem; }
                   .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .button:first-of-type {
                     margin-right: .5rem; }
                   .header-top-right .notification-menu .dropdown-custom-list-body-notification-main-buttons .button {
@@ -4414,7 +4415,7 @@ i {
                 color: #3b4046; }
   .header-bottom {
     padding: 2.7rem 0 1.45rem;
-    padding-left: .3rem;
+    padding-left: .5rem;
     max-width: 128.2rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -4457,7 +4458,7 @@ i {
           .header-bottom .choose a.active::after,
           .header-bottom .choose button.active::after {
             content: '';
-            width: calc(100% + 2.6rem);
+            width: calc(100% + 2.8rem);
             height: 1.5px;
             background-color: #919191;
             position: absolute;
@@ -4470,7 +4471,7 @@ i {
           .header-bottom .choose a:hover::after,
           .header-bottom .choose button:hover::after {
             content: '';
-            width: calc(100% + 2.6rem);
+            width: calc(100% + 2.8rem);
             height: 1.5px;
             background-color: #9D9D9D;
             position: absolute;
@@ -7195,14 +7196,35 @@ i {
       -webkit-align-items: center;
       -moz-align-items: center;
       align-items: center; }
+      .teams-settings-feedback-body .section-caption-info {
+        width: 100%;
+        max-width: 80%; }
+        @media (max-width: 991px) {
+          .teams-settings-feedback-body .section-caption-info {
+            max-width: 60%; } }
+        .teams-settings-feedback-body .section-caption-info .subheader-text {
+          margin-bottom: 1.2rem;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 1.25;
+          color: #1b2733; }
+          .teams-settings-feedback-body .section-caption-info .subheader-text-small {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: -0.03px;
+            color: #647282; }
       .teams-settings-feedback-body .section-caption a,
       .teams-settings-feedback-body .section-caption button {
-        height: 3.2rem;
-        font-size: 12.8px;
+        width: 10rem;
+        font-weight: 400;
+        padding: .8rem 2rem;
+        font-size: 1.28rem;
         font-weight: 400;
         line-height: 1.18;
         color: #1b2733;
         margin-right: 0 !important;
+        margin-bottom: 0;
         -webkit-align-self: flex-end;
         -moz-align-self: flex-end;
         -ms-flex-item-align: end;
@@ -7460,6 +7482,7 @@ i {
             color: #647282; }
       .teams-settings-rights-body .section-caption a,
       .teams-settings-rights-body .section-caption button {
+        width: 10rem;
         font-weight: 400;
         padding: .8rem 2rem;
         font-size: 1.28rem;
@@ -8853,7 +8876,13 @@ i {
     margin-bottom: 2.7rem; }
     .report-team-header .button,
     .report-member-header .button {
-      margin-right: 1.4rem; }
+      padding: .7rem 1.7rem;
+      margin-right: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.28rem;
+      font-weight: 400;
+      line-height: 1.18;
+      letter-spacing: -0.1px; }
   .report-team-body,
   .report-member-body {
     padding-bottom: 5rem;
@@ -9533,28 +9562,28 @@ i {
       max-width: 25.6rem;
       position: relative; }
       .company-members-header .input-group-custom .input-container input {
+        height: 3.2rem;
         width: 100%;
         padding: .65rem 3.5rem;
         padding-right: 1.5rem;
         border: none;
         outline: none;
-        font-size: 1.5rem;
+        font-size: 1.28rem;
         font-weight: 400;
-        line-height: 1.33;
-        color: #333;
+        line-height: 1.18;
         border: solid 1px #dedede;
         border-radius: 1.8rem; }
+        .company-members-header .input-group-custom .input-container input::placeholder {
+          color: #9facba; }
         .company-members-header .input-group-custom .input-container input:focus {
           border-color: #9FACBA !important; }
-        .company-members-header .input-group-custom .input-container input::placeholder {
-          color: #647282; }
       .company-members-header .input-group-custom .input-container i {
         position: absolute;
         top: 50%;
         left: 0;
         transform: translate(90%, -50%);
         font-size: 1.5rem;
-        color: #99A5B2; }
+        color: #9facba; }
     .company-members-header .input-group-custom .button-outlined {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -11088,6 +11117,13 @@ i {
           -moz-align-self: flex-start;
           -ms-flex-item-align: start;
           align-self: flex-start; } }
+      .people-average-charts-header-info-buttons .button {
+        padding-left: 1.5rem;
+        padding-left: 1.6rem;
+        height: 3.4rem;
+        font-size: 1.28rem;
+        line-height: 1.18;
+        letter-spacing: -0.1px; }
       .people-average-charts-header-info img {
         width: 5.8rem;
         height: 5.8rem;
@@ -12088,6 +12124,13 @@ i {
           -moz-align-self: flex-start;
           -ms-flex-item-align: start;
           align-self: flex-start; } }
+      .people-feedback-received-header-info-buttons .button {
+        padding-left: 1.5rem;
+        padding-left: 1.6rem;
+        height: 3.4rem;
+        font-size: 1.28rem;
+        line-height: 1.18;
+        letter-spacing: -0.1px; }
       .people-feedback-received-header-info img {
         width: 5.8rem;
         height: 5.8rem;
@@ -12229,7 +12272,7 @@ i {
     grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: repeat(auto-fill, minmax(23rem, 23rem));
     grid-template-rows: repeat(auto-fill, minmax(23rem, 23rem));
-    grid-auto-rows: 20rem;
+    grid-auto-rows: 23rem;
     grid-gap: 2.9rem 2.6rem;
     height: 100%;
     max-height: calc(100vh - 25rem - 1.5px - 2rem);
@@ -12302,9 +12345,9 @@ i {
     display: grid;
     -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: repeat(auto-fill, minmax(33rem, 33rem));
-    grid-template-rows: repeat(auto-fill, minmax(33rem, 33rem));
-    grid-auto-rows: 33rem;
+    -ms-grid-rows: repeat(auto-fill, minmax(34rem, 34rem));
+    grid-template-rows: repeat(auto-fill, minmax(34rem, 34rem));
+    grid-auto-rows: 34rem;
     grid-gap: 2.9rem 2.6rem;
     height: 100%;
     max-height: calc(100vh - 25rem - 1.5px - .7rem);
