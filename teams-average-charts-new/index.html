@@ -795,7 +795,7 @@
         function gradient(color) {
             const gradient = ctx.createLinearGradient(0, 0, 0, 160);
             gradient.addColorStop(0, color);
-            gradient.addColorStop(1, 'rgba(255,255,255, .5)');
+            gradient.addColorStop(1, 'rgba(255,255,255, .1)');
             return gradient
         }
 
@@ -805,13 +805,19 @@
                 datasets: [
 
                     {
-                        // showLine: false,
                         label: 'Attitude',
                         data: [1, 1.5, 2, 3, 3.5, 3, 3.8, 4, 3.5, 4, 3.5, 3, 2, 1.5],
                         pointRadius: 0,
                         backgroundColor: gradient('#8af1b9'),
-                        // fill: false,
                         borderColor: '#8af1b9',
+                    },
+
+                    {
+                        label: 'Attitude',
+                        data: [1, 1.2, 1.4, 2, 3, 4, 3.5, 3.5, 3, 3.5, 4, 4.5, 4.8, 5],
+                        pointRadius: 0,
+                        backgroundColor: gradient('#F21D1D'),
+                        borderColor: '#F21D1D',
                     },
                     // {
                     //     label: 'Teamworking',

@@ -1533,6 +1533,7 @@ i {
         color: inherit;
         transition: all .1s ease-in-out;
         white-space: nowrap;
+        text-align: left;
 
         &:hover,
         &:focus {
@@ -2255,7 +2256,7 @@ i {
       padding-bottom: 2.5rem;
 
       &-text {
-        font-size: 1.65rem;
+        font-size: 1.45rem;
         font-weight: 400;
         line-height: 1.52;
         color: #3b3e45;
@@ -5066,7 +5067,7 @@ i {
         }
 
         &:focus {
-          border-bottom: 1.25px solid #b3b1b1!important;
+          border-color: #b3b1b1!important;
         }
       }
 
@@ -5825,8 +5826,8 @@ i {
 
               & img {
                 margin-right: 1.2rem;
-                width: 4rem;
-                height: 4rem;
+                width: 4.1rem;
+                height: 4.1rem;
                 clip-path: circle(48% at 50% 50%);
                 -webkit-clip-path: circle(48% at 50% 50%);
               }
@@ -5847,9 +5848,13 @@ i {
               }
 
               & .user-info {
+                @include inline-flex();
+                @include flex-direction(column);
+                @include align-items(flex-start);
+                @include justify-content(center);
 
                 &-name {
-                  margin-bottom: .4rem;
+                  margin-bottom: .3rem;
                   font-size: 1.45rem;
                   font-weight: 500;
                   line-height: 1.24;
@@ -5965,11 +5970,11 @@ i {
             content: '';
             width: calc(100% + 2.8rem);
             height: 1.5px;
-            background-color: #919191;
+            background-color: #9D9D9D;
             position: absolute;
-            bottom: -1.65rem;
+            bottom: -1.5rem;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 100%);
           }
         }
 
@@ -5982,9 +5987,9 @@ i {
             height: 1.5px;
             background-color: #9D9D9D;
             position: absolute;
-            bottom: -1.65rem;
+            bottom: -1.5rem;
             left: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 100%);
           }
         }
 
@@ -6010,9 +6015,9 @@ i {
               height: 1.5px;
               background-color: #9D9D9D;
               position: absolute;
-              bottom: -1.65rem;
+              bottom: -1.5rem;
               left: -.3rem;
-              transform: translate(0, 0);
+              transform: translate(0, 100%);
             }
           }
 
@@ -6025,9 +6030,9 @@ i {
               height: 1.5px;
               background-color: #9D9D9D;
               position: absolute;
-              bottom: -1.65rem;
+              bottom: -1.5rem;
               left: -.3rem;
-              transform: translate(0, 0);
+              transform: translate(0, 100%);
             }
           }
         }
@@ -6060,7 +6065,7 @@ i {
 // AVERAGE CHARTS START
 // ==================================
 .teams-average-charts {
-  max-height: calc(100vh - 17.1rem - 1.5px);
+  max-height: calc(100vh - 17.3rem - 1.5px);
   //max-width: 103rem;
   //padding-right: calc(100% - 103rem);
 
@@ -6175,6 +6180,15 @@ i {
 
         &.empty {
           margin-top: 4rem;
+        }
+      }
+
+      &-development,
+      &-feedback-given {
+        & .dropdown-custom {
+          &-list {
+            min-width: 15rem;
+          }
         }
       }
 
@@ -6380,6 +6394,7 @@ i {
         // @include respond(desktop-xsm) {
         //   margin-bottom: 3rem;
         // }
+        
       }
 
       & .section-body {
@@ -6522,13 +6537,14 @@ i {
 
             & .chart-label {
               margin-bottom: 1.8rem;
+              
               @include flexbox;
               @include align-items(center);
               @include justify-content(flex-start);
               white-space: nowrap;
 
               &:not(:last-of-type) {
-
+                margin-right: 3rem;
                 @include respond(desktop-md) {
                   margin-right: 3rem;
                 }
@@ -9183,21 +9199,6 @@ i {
     border-top: 1.5px solid #f2f2f2;
   }
 
-  & .no-data {
-
-    &-main {
-      max-width: 43rem;
-      & svg {
-        width:2.47rem;
-        height:3.6rem;
-      }
-
-      &-text {
-        line-height: 1.57;
-      }
-    }
-  }
-
   &-header {
     max-width: 72rem;
     padding-top: 2.6rem;
@@ -9211,6 +9212,33 @@ i {
       font-weight: 400;
       line-height: 1.18;
       letter-spacing: -0.1px;
+    }
+  }
+
+  & .no-data {
+    &-main {
+      max-width: 43rem;
+      & svg {
+        width:2.47rem;
+        height:3.6rem;
+        margin-bottom: 2.7rem;
+      }
+
+      &-title {
+        font-size: 1.26rem;
+        font-weight: 600;
+        line-height: 1.27;
+        letter-spacing: -0.38px;
+        color: #2c3952;
+      }
+
+      &-text {
+        font-size: 1.28rem;
+        font-weight: 400;
+        line-height: 1.57;
+        letter-spacing: -0.13px;
+        color: #383838;
+      }
     }
   }
 
@@ -10012,6 +10040,7 @@ i {
           border-top: solid 1px #e6e8eb;
           display: none;
           @include align-items(center);
+          height: 6.6rem;
 
           & input {
             min-width: 1px;
@@ -10591,9 +10620,7 @@ i {
 
       &:hover {
         cursor: pointer;
-        & .todo-row-text {
-          text-decoration: underline;
-        }
+        background-color: #f7f7f7;
       }
 
       &:not(:last-of-type) {
@@ -10708,11 +10735,11 @@ i {
 
       & i {
         font-size: 1.4rem;
-        color: #c5c5c5;
+        color: #99a5b2;
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translate(1.2rem, -40%);
+        transform: translate(1.2rem, -50%);
       }
     }
   }
@@ -10732,7 +10759,7 @@ i {
       cursor: pointer;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.025);
       }
 
       &-img {
@@ -11328,7 +11355,6 @@ i {
     .button {
       padding: .7rem 1.7rem;
       margin-right: 1.5rem;
-      margin-bottom: 1.5rem;
       font-size: 1.28rem;
       font-weight: 400;
       line-height: 1.18;
@@ -11427,8 +11453,8 @@ i {
     }
 
     & .section-header-bar {
-      margin-bottom: 3.7rem;
-      padding-left: 1.7rem;
+      margin-bottom: 3.2rem;
+      padding-left: 1.3rem;
       @include flexbox;
       @include align-items(center);
       height: 37px;
@@ -11437,19 +11463,19 @@ i {
       border-radius: 2.5px;
 
       &-title {
-        font-size: 1.25rem;
+        font-size: 1.13rem;
         font-weight: 500;
-        line-height: 1.28;
-        color: #647282;
+        line-height: 1.24;
+        letter-spacing: -0.03px;
+        color: #526172;
       }
     }
 
     &-options {
-      padding-left: 1rem;
       padding-right: 5rem;
       margin-bottom: 7rem;
       @include grid;
-      @include grid-template-columns(1fr 1fr);
+      @include grid-template-columns(28rem 28rem);
       @include grid-template-rows(1fr 1fr);
       grid-gap: 4.7rem 0;
 
@@ -11527,9 +11553,10 @@ i {
 
         &-title {
           margin-bottom: 1.8rem;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           font-weight: 500;
-          line-height: 1.36;
+          line-height: 1.23;
+          letter-spacing: normal;
           color: #1b2733;
         }
 
@@ -11539,7 +11566,7 @@ i {
 
           & .pretty {
             margin-right: 0;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
 
             & i.icon-check {
               margin-top: .05rem;
@@ -11549,9 +11576,10 @@ i {
 
           &-label {
             @include inline-flex;
-            font-size: 1.4rem;
+            font-size: 1.33rem;
             font-weight: 400;
-            line-height: 1.36;
+            line-height: 1.21;
+            letter-spacing: normal;
             color: #3d464d;
             cursor: pointer;
           }
@@ -11564,7 +11592,12 @@ i {
     }
 
     & .button-primary {
-      padding: .7rem 2.1rem;
+      padding: .7rem 1.8rem;
+      height: 3.4rem;
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 1.19;
+      color: #ffffff;
     }
   }
 }
@@ -16188,9 +16221,9 @@ i {
     border-top: 1.25px solid #EAEAEA;
 
     &-text {
-      font-size: 1.18rem;
+      font-size: 1.08rem;
       font-weight: 500;
-      line-height: 2.79;
+      letter-spacing: normal;
       color: #868686;
 
       @include respond(desktop-xsm) {

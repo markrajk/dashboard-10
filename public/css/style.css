@@ -687,7 +687,8 @@ i {
         height: 100%;
         color: inherit;
         transition: all .1s ease-in-out;
-        white-space: nowrap; }
+        white-space: nowrap;
+        text-align: left; }
         .dropdown-custom-list-item-link:hover, .dropdown-custom-list-item-link:focus {
           background-color: #F7F9FA;
           color: inherit; }
@@ -1409,7 +1410,7 @@ i {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem; }
   #peerFeedbackModal .modal-body .feedback-text {
-    font-size: 1.65rem;
+    font-size: 1.45rem;
     font-weight: 400;
     line-height: 1.52;
     color: #3b3e45; }
@@ -3813,7 +3814,7 @@ i {
         .sidebar-menu .input-container input::placeholder {
           color: #9699a6; }
         .sidebar-menu .input-container input:focus {
-          border-bottom: 1.25px solid #b3b1b1 !important; }
+          border-color: #b3b1b1 !important; }
       .sidebar-menu .input-container i {
         margin-top: -.1rem;
         position: absolute;
@@ -4438,8 +4439,8 @@ i {
               border-bottom: 1px solid #E6E8EB; }
               .header-top-right .user-menu .dropdown-custom-list-header img {
                 margin-right: 1.2rem;
-                width: 4rem;
-                height: 4rem;
+                width: 4.1rem;
+                height: 4.1rem;
                 clip-path: circle(48% at 50% 50%);
                 -webkit-clip-path: circle(48% at 50% 50%); }
               .header-top-right .user-menu .dropdown-custom-list-header .initials {
@@ -4455,22 +4456,44 @@ i {
                 background-color: #FFd800;
                 font-weight: 700;
                 color: #FFF; }
-              .header-top-right .user-menu .dropdown-custom-list-header .user-info-name {
-                margin-bottom: .4rem;
-                font-size: 1.45rem;
-                font-weight: 500;
-                line-height: 1.24;
-                letter-spacing: -0.11px;
-                color: #3d464d; }
-              .header-top-right .user-menu .dropdown-custom-list-header .user-info a, .header-top-right .user-menu .dropdown-custom-list-header .user-info button {
-                margin-left: 0;
-                font-size: 1.25rem;
-                font-weight: 500;
-                line-height: 1.2;
-                letter-spacing: -0.06px;
-                color: #0070e0; }
-                .header-top-right .user-menu .dropdown-custom-list-header .user-info a:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info a:focus, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:focus {
-                  text-decoration: underline; }
+              .header-top-right .user-menu .dropdown-custom-list-header .user-info {
+                display: -webkit-inline-box;
+                display: -webkit-inline-flex;
+                display: -moz-inline-flex;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-box-direction: normal;
+                -webkit-box-orient: vertical;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                -webkit-align-items: flex-start;
+                -moz-align-items: flex-start;
+                align-items: flex-start;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                -moz-justify-content: center;
+                justify-content: center; }
+                .header-top-right .user-menu .dropdown-custom-list-header .user-info-name {
+                  margin-bottom: .3rem;
+                  font-size: 1.45rem;
+                  font-weight: 500;
+                  line-height: 1.24;
+                  letter-spacing: -0.11px;
+                  color: #3d464d; }
+                .header-top-right .user-menu .dropdown-custom-list-header .user-info a, .header-top-right .user-menu .dropdown-custom-list-header .user-info button {
+                  margin-left: 0;
+                  font-size: 1.25rem;
+                  font-weight: 500;
+                  line-height: 1.2;
+                  letter-spacing: -0.06px;
+                  color: #0070e0; }
+                  .header-top-right .user-menu .dropdown-custom-list-header .user-info a:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info a:focus, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:focus {
+                    text-decoration: underline; }
             .header-top-right .user-menu .dropdown-custom-list-item-link {
               width: 100%;
               height: 100%;
@@ -4550,11 +4573,11 @@ i {
             content: '';
             width: calc(100% + 2.8rem);
             height: 1.5px;
-            background-color: #919191;
+            background-color: #9D9D9D;
             position: absolute;
-            bottom: -1.65rem;
+            bottom: -1.5rem;
             left: 50%;
-            transform: translate(-50%, 0); }
+            transform: translate(-50%, 100%); }
         .header-bottom .choose a:hover,
         .header-bottom .choose button:hover {
           color: #0d1217; }
@@ -4565,9 +4588,9 @@ i {
             height: 1.5px;
             background-color: #9D9D9D;
             position: absolute;
-            bottom: -1.65rem;
+            bottom: -1.5rem;
             left: 50%;
-            transform: translate(-50%, 0); }
+            transform: translate(-50%, 100%); }
         .header-bottom .choose a i,
         .header-bottom .choose button i {
           margin-right: 0.8rem;
@@ -4586,9 +4609,9 @@ i {
           height: 1.5px;
           background-color: #9D9D9D;
           position: absolute;
-          bottom: -1.65rem;
+          bottom: -1.5rem;
           left: -.3rem;
-          transform: translate(0, 0); }
+          transform: translate(0, 100%); }
         .header-bottom .choose a:first-of-type:hover,
         .header-bottom .choose button:first-of-type:hover {
           color: #0d1217; }
@@ -4599,9 +4622,9 @@ i {
             height: 1.5px;
             background-color: #9D9D9D;
             position: absolute;
-            bottom: -1.65rem;
+            bottom: -1.5rem;
             left: -.3rem;
-            transform: translate(0, 0); }
+            transform: translate(0, 100%); }
     .header-bottom .compare-add {
       font-size: 1.5rem;
       font-weight: 500;
@@ -4614,7 +4637,7 @@ i {
         text-decoration: underline; }
 
 .teams-average-charts {
-  max-height: calc(100vh - 17.1rem - 1.5px);
+  max-height: calc(100vh - 17.3rem - 1.5px);
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -4715,6 +4738,8 @@ i {
             box-shadow: none; }
       .teams-average-charts-body .section-header.empty {
         margin-top: 4rem; }
+    .teams-average-charts-body .section-development .dropdown-custom-list, .teams-average-charts-body .section-feedback-given .dropdown-custom-list {
+      min-width: 15rem; }
     .teams-average-charts-body .section-body {
       overflow-y: auto;
       scrollbar-width: none;
@@ -5115,9 +5140,11 @@ i {
             -moz-justify-content: flex-start;
             justify-content: flex-start;
             white-space: nowrap; }
-            @media (max-width: 991px) {
-              .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
-                margin-right: 3rem; } }
+            .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+              margin-right: 3rem; }
+              @media (max-width: 991px) {
+                .teams-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+                  margin-right: 3rem; } }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
               font-size: 1.9rem; }
@@ -6989,13 +7016,6 @@ i {
     width: 80rem;
     max-width: 80rem;
     border-top: 1.5px solid #f2f2f2; }
-  .teams-settings-question .no-data-main {
-    max-width: 43rem; }
-    .teams-settings-question .no-data-main svg {
-      width: 2.47rem;
-      height: 3.6rem; }
-    .teams-settings-question .no-data-main-text {
-      line-height: 1.57; }
   .teams-settings-question-header {
     max-width: 72rem;
     padding-top: 2.6rem;
@@ -7008,6 +7028,24 @@ i {
       font-weight: 400;
       line-height: 1.18;
       letter-spacing: -0.1px; }
+  .teams-settings-question .no-data-main {
+    max-width: 43rem; }
+    .teams-settings-question .no-data-main svg {
+      width: 2.47rem;
+      height: 3.6rem;
+      margin-bottom: 2.7rem; }
+    .teams-settings-question .no-data-main-title {
+      font-size: 1.26rem;
+      font-weight: 600;
+      line-height: 1.27;
+      letter-spacing: -0.38px;
+      color: #2c3952; }
+    .teams-settings-question .no-data-main-text {
+      font-size: 1.28rem;
+      font-weight: 400;
+      line-height: 1.57;
+      letter-spacing: -0.13px;
+      color: #383838; }
   .teams-settings-question-body {
     max-width: 79.7rem; }
     .teams-settings-question-body .button-primary.add-new {
@@ -7567,7 +7605,8 @@ i {
           -ms-flex-align: center;
           -webkit-align-items: center;
           -moz-align-items: center;
-          align-items: center; }
+          align-items: center;
+          height: 6.6rem; }
           .teams-settings-rights-body .table-custom-body .input-row input {
             min-width: 1px;
             width: 100%;
@@ -8137,9 +8176,8 @@ i {
       justify-content: flex-start;
       height: 6rem; }
       .new-feedback .todo-row:hover {
-        cursor: pointer; }
-        .new-feedback .todo-row:hover .todo-row-text {
-          text-decoration: underline; }
+        cursor: pointer;
+        background-color: #f7f7f7; }
       .new-feedback .todo-row:not(:last-of-type) {
         border-bottom: 1px solid #F0F0F0; }
       .new-feedback .todo-row-initials {
@@ -8247,11 +8285,11 @@ i {
           color: #9facba; }
       .new-feedback .bottom-caption .input-container i {
         font-size: 1.4rem;
-        color: #c5c5c5;
+        color: #99a5b2;
         position: absolute;
         top: 50%;
         left: 0;
-        transform: translate(1.2rem, -40%); }
+        transform: translate(1.2rem, -50%); }
   .new-feedback .people {
     padding-left: .3rem;
     padding-top: 2.7rem;
@@ -8280,7 +8318,7 @@ i {
       text-align: center;
       cursor: pointer; }
       .new-feedback .people-person:hover {
-        transform: scale(1.05); }
+        transform: scale(1.025); }
       .new-feedback .people-person-img {
         margin-bottom: .79rem;
         width: 7.49rem;
@@ -8889,7 +8927,6 @@ i {
     .report-member-header .button {
       padding: .7rem 1.7rem;
       margin-right: 1.5rem;
-      margin-bottom: 1.5rem;
       font-size: 1.28rem;
       font-weight: 400;
       line-height: 1.18;
@@ -8982,8 +9019,8 @@ i {
           display: block; }
     .report-team-body .section-header-bar,
     .report-member-body .section-header-bar {
-      margin-bottom: 3.7rem;
-      padding-left: 1.7rem;
+      margin-bottom: 3.2rem;
+      padding-left: 1.3rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -9000,19 +9037,19 @@ i {
       border-radius: 2.5px; }
       .report-team-body .section-header-bar-title,
       .report-member-body .section-header-bar-title {
-        font-size: 1.25rem;
+        font-size: 1.13rem;
         font-weight: 500;
-        line-height: 1.28;
-        color: #647282; }
+        line-height: 1.24;
+        letter-spacing: -0.03px;
+        color: #526172; }
     .report-team-body-options,
     .report-member-body-options {
-      padding-left: 1rem;
       padding-right: 5rem;
       margin-bottom: 7rem;
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 28rem 28rem;
+      grid-template-columns: 28rem 28rem;
       -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-gap: 4.7rem 0; }
@@ -9133,9 +9170,10 @@ i {
       .report-team-body-options-list-title,
       .report-member-body-options-list-title {
         margin-bottom: 1.8rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        line-height: 1.36;
+        line-height: 1.23;
+        letter-spacing: normal;
         color: #1b2733; }
       .report-team-body-options-list-item,
       .report-member-body-options-list-item {
@@ -9152,7 +9190,7 @@ i {
         .report-team-body-options-list-item .pretty,
         .report-member-body-options-list-item .pretty {
           margin-right: 0;
-          font-size: 1.5rem; }
+          font-size: 1.4rem; }
           .report-team-body-options-list-item .pretty i.icon-check,
           .report-member-body-options-list-item .pretty i.icon-check {
             margin-top: .05rem;
@@ -9164,9 +9202,10 @@ i {
           display: -moz-inline-flex;
           display: -ms-inline-flexbox;
           display: inline-flex;
-          font-size: 1.4rem;
+          font-size: 1.33rem;
           font-weight: 400;
-          line-height: 1.36;
+          line-height: 1.21;
+          letter-spacing: normal;
           color: #3d464d;
           cursor: pointer; }
         .report-team-body-options-list-item:not(:last-child),
@@ -9174,7 +9213,12 @@ i {
           margin-bottom: 1.7rem; }
     .report-team-body .button-primary,
     .report-member-body .button-primary {
-      padding: .7rem 2.1rem; }
+      padding: .7rem 1.8rem;
+      height: 3.4rem;
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 1.19;
+      color: #ffffff; }
 
 .create-new-team {
   padding: 2.5rem 0;
@@ -12653,9 +12697,9 @@ i {
     justify-content: space-between;
     border-top: 1.25px solid #EAEAEA; }
     .sign-in-footer-text {
-      font-size: 1.18rem;
+      font-size: 1.08rem;
       font-weight: 500;
-      line-height: 2.79;
+      letter-spacing: normal;
       color: #868686; }
       @media (max-width: 575px) {
         .sign-in-footer-text {
