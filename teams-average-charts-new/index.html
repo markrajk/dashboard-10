@@ -569,11 +569,34 @@
                         <div class="section-body">
                             <div class="section-body-chart">
                                 <div class="section-body-chart-header">
-                                    <div class="options">
-                                        <a href="#">Weeks</a>
-                                        <span>|</span>
-                                        <a href="#" class="active">Months</a>
+
+                                    <div class="section-body-chart-header-info">
+                                        <p class="section-body-chart-header-info-title">Based on feedback amount</p>
+                                        <p class="section-body-chart-header-info-amount">234
+                                            <svg class="arrow good" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 11.077 11.743">
+                                                <path
+                                                    d="M17.094,10.534,12.622,5.925a1.016,1.016,0,0,0-.747-.3h-.013a1.016,1.016,0,0,0-.747.3L6.643,10.534a.987.987,0,0,0,0,1.442,1.1,1.1,0,0,0,1.508,0l2.65-2.77v7.141a1.069,1.069,0,0,0,2.136,0V9.205l2.65,2.77a1.1,1.1,0,0,0,1.508,0A.987.987,0,0,0,17.094,10.534Z"
+                                                    transform="translate(-6.33 -5.625)" /></svg>
+                                        </p>
                                     </div>
+
+                                    <div class="section-body-chart-header-buttons">
+                                        <button class="button button-chart active">Day</button>
+                                        <button class="button button-chart">Week</button>
+                                        <button class="button button-chart">Month</button>
+                                    </div>
+
+                                    <svg class="add-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.5 22.5">
+                                        <g transform="translate(-3.375 -3.375)">
+                                            <path
+                                                d="M21.167,15.407H17.137V11.377a.865.865,0,0,0-1.731,0v4.029H11.377a.829.829,0,0,0-.865.865.838.838,0,0,0,.865.865h4.029v4.029a.838.838,0,0,0,.865.865.861.861,0,0,0,.865-.865V17.137h4.029a.865.865,0,0,0,0-1.731Z"
+                                                transform="translate(-1.647 -1.647)" fill="#414857" />
+                                            <path
+                                                d="M14.625,4.889A9.732,9.732,0,1,1,7.74,7.74a9.671,9.671,0,0,1,6.885-2.85m0-1.514a11.25,11.25,0,1,0,11.25,11.25,11.248,11.248,0,0,0-11.25-11.25Z"
+                                                transform="translate(0 0)" fill="#414857" />
+                                        </g>
+                                    </svg>
                                 </div>
                                 <div class="section-body-chart-main">
                                     <canvas id="myChart"></canvas>
@@ -715,401 +738,6 @@
                         </div>
                     </section>
 
-
-
-                    <!-- <section class="section section-development slider">
-                        <div class="section-header">
-                            <p>Longterm development</p>
-                            <div class="dropdown-custom">
-                                <a href="#" class="dropdown-custom-trigger" tabindex="0">
-                                    Months
-                                    <i class="icon-caret-down"></i>
-                                </a>
-                                <ul class="dropdown-custom-list">
-                                    <li class="dropdown-custom-list-item">
-                                        <a href="#" class="dropdown-custom-list-item-link">Weeks</a>
-                                    </li>
-
-                                    <li class="dropdown-custom-list-item">
-                                        <a href="#" class="dropdown-custom-list-item-link">Months</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="section-body">
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Average members</h4>
-                                    <h3 class="text-truncate">Teamworking</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Average members</h4>
-                                    <h3 class="text-truncate">Productivity</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Average opinion</h4>
-                                    <h3 class="text-truncate">Happiness in team</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Team members opinion about</h4>
-                                    <h3 class="text-truncate">Team lead</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Amount of</h4>
-                                    <h3 class="text-truncate">Given feedback</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="graph-card  text-truncate slider-item">
-                                <div class="graph-card-header">
-                                    <h4>Overall average</h4>
-                                    <h3 class="text-truncate">Total development</h3>
-                                </div>
-                                <div class="graph-card-body">
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
-                                        <div class="bar-info">Jan</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-red" style="height: 35%;"></div>
-                                        <div class="bar-info">Feb</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Mar</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 68%;"></div>
-                                        <div class="bar-info">Apr</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 72%;"></div>
-                                        <div class="bar-info">May</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-orange" style="height: 48%;"></div>
-                                        <div class="bar-info">Jun</div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
-                                        <div class="bar-info">Jul</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 73%;"></div>
-                                        <div class="bar-info">Aug</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 80%;"></div>
-                                        <div class="bar-info">Sep</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Oct</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
-                                        <div class="bar-info">Nov</div>
-                                    </div>
-
-                                    <div class="bar">
-                                        <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
-                                        <div class="bar-info">Dec</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
                 </div>
             </main>
         </div>
@@ -1165,19 +793,21 @@
         ctx.height = 150;
 
         function gradient(color) {
-            const gradient = ctx.createLinearGradient(0, 0, 0, 200);
+            const gradient = ctx.createLinearGradient(0, 0, 0, 160);
             gradient.addColorStop(0, color);
-            gradient.addColorStop(1, '#FFF');
+            gradient.addColorStop(1, 'rgba(255,255,255, .5)');
             return gradient
         }
 
         let chart = new Chart(ctx, {
             type: 'line',
             data: {
-                datasets: [{
+                datasets: [
+
+                    {
                         // showLine: false,
                         label: 'Attitude',
-                        data: [1.5, 2, 3, 3.5, 3, 3.8, 4, 3.5, 4],
+                        data: [1.5, 2, 3, 3.5, 3, 3.8, 4, 3.5, 4, 3.5, 3, 2],
                         backgroundColor: gradient('#8af1b9'),
                         // fill: false,
                         borderColor: '#8af1b9',
@@ -1185,7 +815,7 @@
                     // {
                     //     label: 'Teamworking',
                     //     data: [1.2, 1.4, 2, 3, 4, 3.5, 3.5, 3, 3.5],
-                    //     //backgroundColor: 'rgba(0,0,0,0)'
+                    //     backgroundColor: gradient('#1DA0F2'),
                     //     // fill: false,
                     //     borderColor: '#1DA0F2',
                     // },
@@ -1231,6 +861,7 @@
                     // },
                 ],
                 labels: [
+
                     'Jan',
                     'Feb',
                     'Mar',
@@ -1240,17 +871,32 @@
                     'Jul',
                     'Aug',
                     'Sep',
+                    'Oct',
+                    'Nov',
+                    'Dec',
+
                 ],
             },
             options: {
+                layout: {
+                    margin: {
+                        left: -20,
+                        right: -20,
+                    }
+                },
                 tooltips: {
                     intersect: false,
                     backgroundColor: '#fff',
-                    titleFontSize: '14',
+                    // titleFontSize: '14',
                     titleFontColor: '#8181a5',
-                    titleAlign: 'center',
+                    // titleAlign: 'center',
+                    // titleMarginBottom: '3',
+
+                    // bodyFontSize: '14',
+                    bodyFontColor: '#1c1d21',
+                    // bodyAlign: 'center',
                     borderColor: '#f4f4f4',
-                    borderWidth: '1'
+                    borderWidth: '1',
                 },
                 responsive: true,
                 legend: {
@@ -1259,7 +905,7 @@
                     align: 'center',
 
                     labels: {
-                        padding: 15
+                        padding: 0
                     }
                 },
                 legendCallback: function (chart) {
@@ -1292,12 +938,12 @@
                         ticks: {
                             fontColor: '#5E636B',
                             fontFamily: '"Roboto", sans-serif',
-                            fontSize: 14.5,
+                            fontSize: 11.5,
                             fontStyle: '500',
-                            beginAtZero: false,
+                            beginAtZero: true,
                             padding: 22,
                             max: 5,
-                            min: 1,
+                            min: 0,
                             stepSize: 1,
                         },
                         gridLines: {
@@ -1311,10 +957,10 @@
                         ticks: {
                             fontColor: '#5E636B',
                             fontFamily: '"Roboto", sans-serif',
-                            fontSize: 12.5,
+                            fontSize: 11.25,
                             fontStyle: '500',
                             beginAtZero: false,
-                            padding: 33,
+                            padding: 18,
                         },
                         gridLines: {
                             drawTicks: false,

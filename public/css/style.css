@@ -396,17 +396,18 @@ i {
   margin-left: 3.65rem;
   border-top: 1.5px solid #f2f2f2; }
   .no-teams-card-title {
-    margin-bottom: 1.36rem;
+    margin-bottom: 1.76rem;
     font-size: 1.8rem;
-    font-weight: 500;
-    line-height: 1.33;
-    letter-spacing: -0.2px;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.45px;
     color: #292929; }
   .no-teams-card-text {
     margin-bottom: 2rem;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 1.36;
+    line-height: 1.21;
+    letter-spacing: -0.14px;
     color: #383838; }
   .no-teams-card:not(:last-of-type) {
     margin-bottom: 11rem; }
@@ -3164,6 +3165,18 @@ i {
   white-space: nowrap;
   cursor: pointer;
   outline: none !important; }
+  .button-chart {
+    padding: 1.1rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #8181a5;
+    border: solid 1px transparent;
+    background-color: #ffffff;
+    border-radius: 8px; }
+    .button-chart.active {
+      color: #1c1d21;
+      border-color: #ececf2; }
   .button-primary {
     background-color: #1273DD;
     border-color: #1273DD; }
@@ -4322,9 +4335,9 @@ i {
                 text-align: center;
                 border-top: solid 1px #e0e2e5; }
                 .header-top-right .notification-menu .dropdown-custom-list-body-none-message {
-                  font-size: 1.3rem;
+                  font-size: 1.2rem;
                   font-weight: 400;
-                  line-height: 1.38;
+                  line-height: 1.25;
                   color: #1b2734; }
               .header-top-right .notification-menu .dropdown-custom-list-body-notification {
                 padding: 1.25rem 1.7rem;
@@ -4945,6 +4958,12 @@ i {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: start;
         -ms-flex-align: start;
         -webkit-align-items: flex-start;
@@ -4957,11 +4976,15 @@ i {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
         .teams-average-charts-body .section-development .section-body-chart {
+          position: relative;
+          padding-top: 2.5rem;
+          padding-bottom: 1.3rem;
           width: 100%;
           min-width: 0;
-          max-width: 67.4rem;
-          padding: 0 3.3rem 1.8rem;
-          border-right: 1.5px solid #f3f3f3; }
+          border-radius: 5px;
+          box-shadow: 0 4px 9px 0 rgba(196, 196, 196, 0.16);
+          border: solid 1px rgba(225, 228, 232, 0.64);
+          background-color: #ffffff; }
           @media (max-width: 991px) {
             .teams-average-charts-body .section-development .section-body-chart {
               margin-bottom: 3rem;
@@ -4969,49 +4992,67 @@ i {
               padding-right: 2rem;
               border-right: 0; } }
           .teams-average-charts-body .section-development .section-body-chart-header {
+            padding-left: 2.9rem;
+            padding-right: 8.2rem;
             padding-bottom: 2.2rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            justify-content: flex-end;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            justify-content: space-between;
             -webkit-box-align: center;
             -ms-flex-align: center;
             -webkit-align-items: center;
             -moz-align-items: center;
             align-items: center; }
-            .teams-average-charts-body .section-development .section-body-chart-header .options {
-              margin-right: 1rem; }
-              .teams-average-charts-body .section-development .section-body-chart-header .options a {
-                font-size: 1.5rem;
-                font-weight: 400;
-                line-height: 1.33;
-                color: #494F64;
-                text-transform: capitalize; }
-                .teams-average-charts-body .section-development .section-body-chart-header .options a:hover {
-                  text-decoration: underline; }
-                .teams-average-charts-body .section-development .section-body-chart-header .options a.active {
-                  font-weight: 700; }
-                  .teams-average-charts-body .section-development .section-body-chart-header .options a.active:hover {
-                    text-decoration: none; }
-              .teams-average-charts-body .section-development .section-body-chart-header .options span {
-                margin: 0 .5rem;
-                font-size: 2rem;
-                color: #e3e3e3; }
+            .teams-average-charts-body .section-development .section-body-chart-header .add-circle {
+              width: 2.25rem;
+              height: 2.25rem;
+              position: absolute;
+              top: 1.5rem;
+              right: 1.5rem; }
+            .teams-average-charts-body .section-development .section-body-chart-header-info-title {
+              margin-bottom: .8rem;
+              font-size: 1.3rem;
+              font-weight: 400;
+              line-height: 1.62;
+              color: #5f5f5f; }
+            .teams-average-charts-body .section-development .section-body-chart-header-info-amount {
+              padding-right: 1.7rem;
+              position: relative;
+              display: inline-block;
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 1.33;
+              color: #1c1d21; }
+              .teams-average-charts-body .section-development .section-body-chart-header-info-amount .arrow {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1.107rem;
+                height: 1.174rem; }
+                .teams-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.good path {
+                  fill: #16b21c; }
+                .teams-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.bad {
+                  transform: rotateZ(180deg); }
+                  .teams-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.bad path {
+                    fill: red; }
           .teams-average-charts-body .section-development .section-body-chart-main {
-            width: 100%; }
+            width: 100%;
+            height: 20rem; }
             .teams-average-charts-body .section-development .section-body-chart-main canvas {
               width: 100%; }
               @media (max-width: 991px) {
                 .teams-average-charts-body .section-development .section-body-chart-main canvas {
                   margin: 0 auto; } }
         .teams-average-charts-body .section-development .section-body-legend {
-          padding-left: 5rem; }
+          width: 100%;
+          padding-bottom: 0; }
           @media (max-width: 991px) {
             .teams-average-charts-body .section-development .section-body-legend {
               width: 100%;
@@ -5035,24 +5076,27 @@ i {
             line-height: 1.33;
             color: #494F64; }
           .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
-            padding-bottom: 1.4rem; }
-            @media (max-width: 991px) {
-              .teams-average-charts-body .section-development .section-body-legend-main #chart-legends {
-                max-width: 100%;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -moz-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                -moz-align-items: center;
-                align-items: center;
-                -webkit-flex-wrap: wrap;
-                -moz-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+            padding: 3.2rem 5rem;
+            max-width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
           .teams-average-charts-body .section-development .section-body-legend-main .chart-label {
             margin-bottom: 1.8rem;
             display: -webkit-box;
@@ -7979,7 +8023,7 @@ i {
           color: #000000; }
 
 .new-feedback {
-  max-height: calc(100vh - 13.72rem - 3.4rem - 1px);
+  max-height: calc(100vh - 13.72rem - 3.7rem - 1px);
   max-width: 121.1rem;
   overflow-y: auto;
   scrollbar-width: none;
@@ -8037,17 +8081,21 @@ i {
     .new-feedback .no-search-results-message {
       margin-left: 1.2rem; }
       .new-feedback .no-search-results-message-text {
-        margin-bottom: 1.3rem;
-        font-size: 1.8rem;
-        font-weight: 500;
-        color: #292929; }
+        margin-bottom: 1rem;
+        font-size: 1.68rem;
+        font-weight: 600;
+        line-height: 1.19;
+        letter-spacing: -0.42px;
+        color: #2c3952; }
       .new-feedback .no-search-results-message-info {
-        font-size: 1.4rem;
+        font-size: 1.28rem;
         font-weight: 400;
+        line-height: 1.18;
+        letter-spacing: -0.13px;
         color: #383838; }
         .new-feedback .no-search-results-message-info button {
           font-weight: 500;
-          color: #137EFE; }
+          color: #137efe; }
   .new-feedback .section-caption {
     margin-top: 3.25rem;
     margin-bottom: 2.7rem; }
@@ -9498,10 +9546,10 @@ i {
     letter-spacing: -0.03px;
     color: #647282; }
     .company-members-header .option-link.active {
-      color: #1b2733; }
+      font-weight: 500; }
   .company-members-header .option-divider {
-    margin: 0 .5rem;
-    font-size: 1.3rem; }
+    margin: 0 .2rem;
+    font-size: 1.23rem; }
   .company-members-header .input-group-custom {
     display: -webkit-box;
     display: -webkit-flex;
@@ -9804,9 +9852,9 @@ i {
       letter-spacing: -0.03px;
       color: #647282; }
       .company-teams-body .option-link.active {
-        color: #1b2733; }
+        font-weight: 500; }
     .company-teams-body .option-divider {
-      margin: 0 .5rem;
+      margin: 0 .2rem;
       font-size: 1.23rem; }
     .company-teams-body .input-group-custom {
       display: -webkit-box;
@@ -10780,6 +10828,14 @@ i {
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid #E6E8EB; }
+  .user-settings-general-body .settings-table .delete-team {
+    padding-top: 2.2rem;
+    padding-left: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FF2424; }
+    .user-settings-general-body .settings-table .delete-team:hover {
+      text-decoration: underline; }
 
 .user-settings-teams {
   padding: 2.5rem 0;
@@ -15109,7 +15165,7 @@ i {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center;
-    font-size: 13rem;
+    font-size: 1.3rem !important;
     font-weight: 400;
     line-height: 1.23;
     letter-spacing: -0.2px;
