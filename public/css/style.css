@@ -6945,58 +6945,13 @@ i {
     width: 80rem;
     max-width: 80rem;
     border-top: 1.5px solid #f2f2f2; }
-  .teams-settings-question .no-data {
-    max-width: 103rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    width: 100%;
-    height: 42.7rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    border: 1px solid #EAEAEA;
-    border-radius: 5px;
-    margin-top: 2.5rem; }
-    .teams-settings-question .no-data-main {
-      max-width: 42rem;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center; }
-      .teams-settings-question .no-data-main svg {
-        margin-bottom: 1.8rem;
-        width: 2.47rem;
-        height: 3.6rem; }
-      .teams-settings-question .no-data-main-title {
-        margin-bottom: .96rem;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 1.31;
-        letter-spacing: -0.18px;
-        color: #292929; }
-      .teams-settings-question .no-data-main-text {
-        font-size: 1.35rem;
-        font-weight: 400;
-        line-height: 1.33;
-        letter-spacing: normal;
-        color: #383838; }
-        @media (max-width: 991px) {
-          .teams-settings-question .no-data-main-text br {
-            display: none; } }
-      .teams-settings-question .no-data-main-link {
-        font-weight: 500;
-        color: #137efe; }
+  .teams-settings-question .no-data-main {
+    max-width: 43rem; }
+    .teams-settings-question .no-data-main svg {
+      width: 2.47rem;
+      height: 3.6rem; }
+    .teams-settings-question .no-data-main-text {
+      line-height: 1.57; }
   .teams-settings-question-header {
     max-width: 72rem;
     padding-top: 2.6rem;
@@ -7320,32 +7275,10 @@ i {
             padding-bottom: 1.8rem; }
           .teams-settings-feedback-body .table-custom-body tr:not(:last-of-type) {
             border: none; }
-          .teams-settings-feedback-body .table-custom-body tr#not-yet {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-            border: 0 !important;
-            border-top: solid 1px #e6e8eb !important; }
-            .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td {
-              -webkit-box-direction: normal;
-              -webkit-box-orient: vertical;
-              -webkit-flex-direction: column;
-              -moz-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column; }
-              .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td #not-yet-td-text {
-                margin-bottom: 1.2rem;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: #1B2733; }
-              .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info {
-                font-size: 1.4rem;
-                font-weight: 400;
-                color: #1B2733; }
-                .teams-settings-feedback-body .table-custom-body tr#not-yet #not-yet-td #not-yet-td-info button {
-                  color: #137efe;
-                  text-decoration: underline; }
     .teams-settings-feedback-body .table-02 {
       margin-top: 2rem; }
+      .teams-settings-feedback-body .table-02 .table-custom-body tr.table-placeholder {
+        border-top: solid 1px #e6e8eb !important; }
       .teams-settings-feedback-body .table-02 .table-custom-body tr td {
         font-size: 12.3px;
         font-weight: 400;
@@ -7543,7 +7476,7 @@ i {
         .teams-settings-rights-body .table-custom-body tr {
           padding: 1.75rem 1.7rem;
           border-bottom: solid 1px #e6e8eb; }
-          .teams-settings-rights-body .table-custom-body tr:hover {
+          .teams-settings-rights-body .table-custom-body tr:hover:not(.table-placeholder) {
             background-color: #FAF9F9; }
           .teams-settings-rights-body .table-custom-body tr:hover .table-custom-col-04 a, .teams-settings-rights-body .table-custom-body tr:hover .table-custom-col-04 button {
             visibility: visible;
@@ -7556,13 +7489,6 @@ i {
             line-height: 1.22;
             letter-spacing: -0.06px;
             color: #1b2733; }
-          .teams-settings-rights-body .table-custom-body tr#not-yet {
-            margin: 0;
-            border: 0 !important;
-            border-top: 1px solid #e6e8eb !important; }
-            .teams-settings-rights-body .table-custom-body tr#not-yet #not-yet-td {
-              font-size: 1.4rem !important;
-              font-weight: 400 !important; }
         .teams-settings-rights-body .table-custom-body-col-01 input::placeholder {
           color: #1b2733; }
         .teams-settings-rights-body .table-custom-body-col-01 a {
@@ -9693,14 +9619,6 @@ i {
         letter-spacing: -0.06px;
         text-align: left;
         color: #1b2733; }
-      .company-members .table-custom-body tr#not-yet {
-        padding: 0;
-        margin: 4.5rem 0; }
-        .company-members .table-custom-body tr#not-yet #not-yet-td {
-          font-weight: 500;
-          padding: 2rem 0;
-          border-top: 1px solid #E6E8EB !important;
-          border-bottom: 1px solid #E6E8EB !important; }
     .company-members .table-custom-body-col-01 input::placeholder {
       color: #1b2733; }
     .company-members .table-custom-body-col-01 a {
@@ -10007,14 +9925,6 @@ i {
           line-height: 1.22;
           letter-spacing: -0.06px;
           color: #1b2733; }
-        .company-teams-body .table-custom-body tr#not-yet {
-          padding: 0;
-          margin: 4.5rem 0; }
-          .company-teams-body .table-custom-body tr#not-yet #not-yet-td {
-            font-weight: 500;
-            padding: 2rem 0;
-            border-top: 1px solid #E6E8EB !important;
-            border-bottom: 1px solid #E6E8EB !important; }
       .company-teams-body .table-custom-body-col-01 input::placeholder {
         color: #1b2733; }
       .company-teams-body .table-custom-body-col-01 a {
@@ -12252,7 +12162,7 @@ i {
     top: 2rem;
     left: 0; }
   .people-feedback-received-body .section-comments .no-data-main {
-    max-width: 36rem; }
+    max-width: 90%; }
     .people-feedback-received-body .section-comments .no-data-main svg {
       width: 4.5rem;
       height: 3.5rem; }
@@ -15187,6 +15097,24 @@ i {
 .people-feedback-received-header .button-dark:focus {
   background-color: #0f2882;
   border-color: #0f2882; }
+
+.table-placeholder {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 6.6rem !important; }
+  .table-placeholder-content {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: -0.2px;
+    color: #333d48;
+    text-align: center; }
 
 #not-yet {
   height: 6.6rem;

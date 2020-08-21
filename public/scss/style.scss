@@ -8939,53 +8939,16 @@ i {
   }
 
   & .no-data {
-    max-width: 103rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    width: 100%;
-    height: 42.7rem;
-    @include flexbox();
-    @include align-items(center);
-    @include justify-content(center);
-    border: 1px solid #EAEAEA;
-    border-radius: 5px;
-    margin-top: 2.5rem;
 
     &-main {
-      max-width: 42rem;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-
+      max-width: 43rem;
       & svg {
-        margin-bottom: 1.8rem;
         width:2.47rem;
         height:3.6rem;
       }
-      &-title {
-        margin-bottom: .96rem;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 1.31;
-        letter-spacing: -0.18px;
-        color: #292929;
-      }
-      &-text {
-        font-size: 1.35rem;
-        font-weight: 400;
-        line-height: 1.33;
-        letter-spacing: normal;
-        color: #383838;
 
-        & br {
-          @include respond(desktop-md) {
-            display: none;
-          }
-        }
-      }
-      &-link {
-        font-weight: 500;
-        color: #137efe;
+      &-text {
+        line-height: 1.57;
       }
     }
   }
@@ -9428,34 +9391,6 @@ i {
             border: none;
           }
 
-          &#not-yet {
-            padding-top: 8rem;
-            padding-bottom: 8rem;
-            border: 0 !important;
-            border-top: solid 1px #e6e8eb!important;
-
-            & #not-yet-td {
-              @include flex-direction(column);
-
-              & #not-yet-td-text {
-                margin-bottom: 1.2rem;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: #1B2733;
-              }
-
-              & #not-yet-td-info {
-                font-size: 1.4rem;
-                font-weight: 400;
-                color: #1B2733;
-
-                & button {
-                  color: #137efe;
-                  text-decoration: underline;
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -9466,6 +9401,12 @@ i {
       margin-top: 2rem;
 
       & .table-custom-body {
+
+        & tr {
+          &.table-placeholder {
+            border-top: solid 1px #e6e8eb!important;
+          }
+        }
 
         & tr td {
           font-size: 12.3px;
@@ -9742,7 +9683,7 @@ i {
           padding: 1.75rem 1.7rem;
           border-bottom: solid 1px #e6e8eb;
 
-          &:hover {
+          &:hover:not(.table-placeholder) {
             background-color: #FAF9F9;
           }
 
@@ -9763,17 +9704,6 @@ i {
             line-height: 1.22;
             letter-spacing: -0.06px;
             color: #1b2733;
-          }
-
-          &#not-yet {
-            margin: 0;
-            border: 0 !important;
-             border-top: 1px solid #e6e8eb!important;
-
-            & #not-yet-td {
-              font-size: 1.4rem !important;
-              font-weight: 400 !important;
-            }
           }
         }
 
@@ -12061,16 +11991,6 @@ i {
           color: #1b2733;
         }
 
-        &#not-yet {
-          padding: 0;
-          margin: 4.5rem 0;
-          & #not-yet-td {
-            font-weight: 500;
-            padding: 2rem 0;
-            border-top: 1px solid #E6E8EB!important;
-            border-bottom: 1px solid #E6E8EB!important;
-          }
-        }
       }
 
       &-col-01 {
@@ -12446,16 +12366,6 @@ i {
             color: #1b2733;
           }
 
-          &#not-yet {
-            padding: 0;
-            margin: 4.5rem 0;
-            & #not-yet-td {
-              font-weight: 500;
-              padding: 2rem 0;
-              border-top: 1px solid #E6E8EB!important;
-              border-bottom: 1px solid #E6E8EB!important;
-            }
-          }
         }
 
         &-col-01 {
@@ -15435,7 +15345,7 @@ i {
 
       & .no-data {
         &-main {
-          max-width: 36rem;
+          max-width: 90%;
   
           & svg {
             width: 4.5rem;
@@ -18849,6 +18759,23 @@ i {
       background-color: #0f2882;
       border-color: #0f2882;
     }
+  }
+}
+
+.table-placeholder {
+  padding-top: 0!important;
+  padding-bottom: 0!important;
+  height: 6.6rem!important;
+
+  &-content {
+    width: 100%;
+    @include justify-content(center);
+    font-size: 13rem;
+    font-weight: 400;
+    line-height: 1.23;
+    letter-spacing: -0.2px;
+    color: #333d48;
+    text-align: center;
   }
 }
 
