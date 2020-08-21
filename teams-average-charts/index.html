@@ -179,10 +179,6 @@
                         </p>
                     </div>
                     <div class="header-top-right">
-                        <!-- <div class="input-container">
-                            <i class="icon-search"></i>
-                            <input type="text" placeholder="Search...">
-                        </div> -->
 
                         <div class="dropdown-custom settings-menu">
                             <a href="#" class="dropdown-custom-trigger" tabindex="0">
@@ -202,10 +198,82 @@
 
                             <ul class="dropdown-custom-list">
                                 <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Option I</a>
+                                    <div class="dropdown-custom-list-item-link">
+                                        <span class="dropdown-custom-list-item-link-text">Full screen mode</span>
+                                        <div class="pretty p-switch">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <label>&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Option II</a>
+                                    <div href="#" class="dropdown-custom-list-item-link">
+                                        <span class="dropdown-custom-list-item-link-text">Content size</span>
+                                        <div class="plus-minus">
+                                            <svg class="minus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <g transform="translate(-1121 -459)">
+                                                    <g transform="translate(1121 459)" fill="none" stroke="#c5c7c9"
+                                                        stroke-width="1.5">
+                                                        <rect width="20" height="20" rx="10" stroke="none" />
+                                                        <rect x="0.75" y="0.75" width="18.5" height="18.5" rx="9.25"
+                                                            fill="none" />
+                                                    </g>
+                                                    <rect width="11" height="1.75" rx="0.875"
+                                                        transform="translate(1125.5 468)" fill="#c5c7c9" />
+                                                </g>
+                                            </svg>
+                                            <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                <g transform="translate(-1144 -459)">
+                                                    <g transform="translate(1144 459)" fill="none">
+                                                        <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
+                                                            stroke="none" />
+                                                        <path
+                                                            d="M 10 1.5 C 5.313079833984375 1.5 1.5 5.313079833984375 1.5 10 C 1.5 14.68692016601563 5.313079833984375 18.5 10 18.5 C 14.68692016601563 18.5 18.5 14.68692016601563 18.5 10 C 18.5 5.313079833984375 14.68692016601563 1.5 10 1.5 M 10 0 C 15.52285003662109 0 20 4.477149963378906 20 10 C 20 15.52285003662109 15.52285003662109 20 10 20 C 4.477149963378906 20 0 15.52285003662109 0 10 C 0 4.477149963378906 4.477149963378906 0 10 0 Z"
+                                                            stroke="none" fill="#c5c7c9" />
+                                                    </g>
+                                                    <g transform="translate(-0.5)">
+                                                        <rect width="11" height="1.75" rx="0.875"
+                                                            transform="translate(1149 468)" fill="#c5c7c9" />
+                                                        <rect width="11" height="1.75" rx="0.875"
+                                                            transform="translate(1155.5 463.5) rotate(90)"
+                                                            fill="#c5c7c9" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <div class="dropdown-custom-list-item-link">
+                                        <span class="dropdown-custom-list-item-link-text">Color themes</span>
+                                        <div class="theme-color">
+                                            <div class="theme-color-wrapper">
+                                                <button tabindex="0" onclick="this.focus()"
+                                                    class="theme-color-one"></button>
+                                            </div>
+                                            <div class="theme-color-wrapper active">
+                                                <button tabindex="0" onclick="this.focus()"
+                                                    class="theme-color-two"></button>
+                                            </div>
+                                            <div class="theme-color-wrapper">
+                                                <button tabindex="0" onclick="this.focus()"
+                                                    class="theme-color-three"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-custom-list-item">
+                                    <div class="dropdown-custom-list-item-link">
+                                        <span class="dropdown-custom-list-item-link-text">Keep me signed in</span>
+                                        <div class="pretty p-switch">
+                                            <input type="checkbox" />
+                                            <div class="state p-primary">
+                                                <label>&nbsp;</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -229,15 +297,7 @@
 
                             <ul class="dropdown-custom-list">
                                 <li class="dropdown-custom-list-item">
-                                    <div class="dropdown-custom-list-item-link">
-                                        <span class="dropdown-custom-list-item-link-text">Full screen mode</span>
-                                        <div class="pretty p-switch">
-                                            <input type="checkbox" />
-                                            <div class="state">
-                                                <label>&nbsp;</label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="dropdown-custom-list-item-link">Option I</a>
                                 </li>
                                 <li class="dropdown-custom-list-item">
                                     <a href="#" class="dropdown-custom-list-item-link">Option II</a>
@@ -443,14 +503,13 @@
                         </div>
                         <div class="no-data">
                             <div class="no-data-main">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41.652" height="35"
-                                    viewBox="0 0 41.652 35">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.652 35">
                                     <path
                                         d="M1574.994-723.333h-37.748c-.959,0-1.918-.481-1.918-1.444v-.481a2.133,2.133,0,0,1,1.918-1.994h37.748a2.141,2.141,0,0,1,1.987,1.994v.481C1576.981-723.815,1576.022-723.333,1574.994-723.333Zm-3.837-7.77a1.759,1.759,0,0,1-1.918,1.926h-3.9c-1.439,0-1.918-.481-1.918-1.926v-17.534a1.76,1.76,0,0,1,1.918-1.925h3.9a2.066,2.066,0,0,1,1.918,1.925V-731.1Zm-13.084,1.926h-3.836a1.81,1.81,0,0,1-1.987-1.926v-25.3a2.132,2.132,0,0,1,1.987-1.925h3.836a2.067,2.067,0,0,1,1.918,1.925v25.3A1.76,1.76,0,0,1,1558.073-729.178Zm-11.167,0h-3.836a1.76,1.76,0,0,1-1.919-1.926v-7.77a2.133,2.133,0,0,1,1.919-1.994h3.836a1.829,1.829,0,0,1,1.987,1.994v7.77C1548.893-729.659,1548.413-729.178,1546.906-729.178Zm0,0"
                                         transform="translate(-1535.329 758.333)" fill="#137efe" /></svg>
                                 <p class="no-data-main-title">No feedback data yet</p>
-                                <p class="no-data-main-text">Soon you will find here the development charts of
-                                    <button class="no-data-main-link">Team Marketing.</button>
+                                <p class="no-data-main-text">Soon you will find here the development charts of <button
+                                        class="no-data-main-link">Team Marketing.</button>
                                 </p>
                             </div>
                         </div>

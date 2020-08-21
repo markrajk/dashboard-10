@@ -657,7 +657,7 @@ i {
         display: block; }
   .dropdown-custom-list {
     display: none;
-    min-width: 16rem;
+    min-width: 18rem;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -674,11 +674,13 @@ i {
       display: block; }
     .dropdown-custom-list-item {
       font-weight: 400;
-      font-size: 1.5rem;
-      line-height: 1.33;
-      color: #3d464d; }
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.23;
+      letter-spacing: -0.1px;
+      color: #24374d; }
       .dropdown-custom-list-item-link {
-        padding: .7rem 1.7rem;
+        padding: 1.2rem 1.7rem;
         display: inline-block;
         width: 100%;
         height: 100%;
@@ -686,7 +688,7 @@ i {
         transition: all .1s ease-in-out;
         white-space: nowrap; }
         .dropdown-custom-list-item-link:hover, .dropdown-custom-list-item-link:focus {
-          background-color: #f7f9fa;
+          background-color: #F7F9FA;
           color: inherit; }
 
 .modal-backdrop {
@@ -2295,22 +2297,23 @@ i {
     .no-data-main svg {
       margin-bottom: 2rem; }
     .no-data-main-title {
-      margin-bottom: 1.36rem;
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 1.33;
-      letter-spacing: -0.2px;
-      color: #292929; }
+      margin-bottom: 1.6rem;
+      font-size: 1.68rem;
+      font-weight: 600;
+      line-height: 1.19;
+      letter-spacing: -0.42px;
+      color: #2c3952; }
     .no-data-main-text {
-      font-size: 1.4rem;
+      font-size: 1.28rem;
       font-weight: 400;
-      line-height: 1.36;
-      letter-spacing: normal;
+      line-height: 1.18;
+      letter-spacing: -0.13px;
       color: #383838; }
     .no-data-main-link {
-      font-weight: 500;
-      color: #137efe;
-      text-decoration: underline; }
+      font-weight: 600;
+      color: #137efe; }
+      .no-data-main-link:hover {
+        text-decoration: underline; }
 
 .table-custom {
   width: 100% !important;
@@ -3703,7 +3706,7 @@ i {
         .sidebar-menu-header .create-new-circle:hover {
           transform: scale(1.1); }
       .sidebar-menu-header svg, .sidebar-menu-header .icon-circle-plus {
-        display: inline-block;
+        display: block;
         font-size: 2.65rem;
         color: #1a9cfc; }
       .sidebar-menu-header .dd-new.dropdown-custom {
@@ -4153,6 +4156,77 @@ i {
         .header-top-right .help-menu .dropdown-custom-trigger svg {
           width: 2.062rem;
           height: 2.131rem; }
+      .header-top-right .settings-menu .dropdown-custom-list {
+        min-width: 26.2rem; }
+        .header-top-right .settings-menu .dropdown-custom-list-item-link {
+          padding: 1.5rem 2rem;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          -webkit-justify-content: space-between;
+          -moz-justify-content: space-between;
+          justify-content: space-between; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link-text {
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.23;
+            letter-spacing: -0.07px;
+            color: #3b4046; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .pretty {
+            margin-right: -1.4rem;
+            font-size: 2rem; }
+            .header-top-right .settings-menu .dropdown-custom-list-item-link .pretty input {
+              min-width: auto; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .plus-minus .minus {
+            margin-right: .3rem;
+            width: 2.0rem;
+            height: 2.0rem; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .plus-minus .plus {
+            width: 2.0rem;
+            height: 2.0rem; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-wrapper {
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            min-width: 2.6rem;
+            min-height: 2.6rem;
+            padding: .2rem;
+            border-radius: 50%;
+            border: solid 1px transparent; }
+            .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-wrapper.active {
+              border-color: #0077cc; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-one, .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-two, .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-three {
+            display: inline-block;
+            min-width: 1.8rem;
+            min-height: 1.8rem;
+            border-radius: 50%; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-one {
+            background-color: #d66f16; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-two {
+            background-color: #0077cc; }
+          .header-top-right .settings-menu .dropdown-custom-list-item-link .theme-color-three {
+            background-color: #225980; }
       .header-top-right .notification-menu {
         margin-right: .6rem;
         position: relative;
@@ -4548,50 +4622,9 @@ i {
     height: 0; }
   .teams-average-charts-body {
     padding-top: 3.5rem; }
-    .teams-average-charts-body .no-data {
-      max-width: 103rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      width: 100%;
-      height: 42.7rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      border: 1px solid #EAEAEA;
-      border-radius: 5px;
-      margin-top: 2.5rem; }
-      .teams-average-charts-body .no-data-main {
-        text-align: center; }
-        .teams-average-charts-body .no-data-main svg {
-          margin-bottom: 2rem; }
-        .teams-average-charts-body .no-data-main-title {
-          margin-bottom: 1.36rem;
-          font-size: 1.8rem;
-          font-weight: 500;
-          line-height: 1.33;
-          letter-spacing: -0.2px;
-          color: #292929; }
-        .teams-average-charts-body .no-data-main-text {
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.36;
-          letter-spacing: normal;
-          color: #383838; }
-        .teams-average-charts-body .no-data-main-link {
-          font-weight: 500;
-          color: #137efe; }
+    .teams-average-charts-body .no-data-main svg {
+      width: 4.1652rem;
+      height: 3.5rem; }
     .teams-average-charts-body .section-header {
       position: relative;
       max-width: 103rem;
@@ -6023,6 +6056,38 @@ i {
 
 .people-compare-body-card-header {
   padding-top: 2.9rem; }
+  .people-compare-body-card-header-close {
+    padding-left: 0 !important; }
+  .people-compare-body-card-header .change-order {
+    position: absolute;
+    top: 0;
+    left: 79%;
+    transform: translate(-33%, -1%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible; }
+    .people-compare-body-card-header .change-order-left, .people-compare-body-card-header .change-order-right {
+      padding: 1.2rem;
+      cursor: pointer; }
+      .people-compare-body-card-header .change-order-left svg, .people-compare-body-card-header .change-order-right svg {
+        width: 1.75rem;
+        height: 1.75rem; }
+      .people-compare-body-card-header .change-order-left:hover svg, .people-compare-body-card-header .change-order-right:hover svg {
+        transform: scale(1.1); }
+      .people-compare-body-card-header .change-order-left:hover path, .people-compare-body-card-header .change-order-right:hover path {
+        fill: #bebebe; }
+    .people-compare-body-card-header .change-order-left {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: .15rem; }
+    .people-compare-body-card-header .change-order-right {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: .15rem;
+      padding-right: 0; }
 
 .teams-comments {
   padding: 2.5rem 0;
@@ -6052,51 +6117,11 @@ i {
     border-top: 1.5px solid #f2f2f2; }
   .teams-comments .section-comments {
     margin-bottom: 4rem; }
-    .teams-comments .section-comments .no-data {
-      max-width: 103rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      width: 100%;
-      height: 42.7rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      border: 1px solid #EAEAEA;
-      border-radius: 5px;
-      margin-top: 2.5rem; }
-      .teams-comments .section-comments .no-data-main {
-        max-width: 33rem;
-        text-align: center; }
-        .teams-comments .section-comments .no-data-main svg {
-          margin-bottom: 2rem; }
-        .teams-comments .section-comments .no-data-main-title {
-          margin-bottom: 1.36rem;
-          font-size: 1.8rem;
-          font-weight: 500;
-          line-height: 1.33;
-          letter-spacing: -0.2px;
-          color: #292929; }
-        .teams-comments .section-comments .no-data-main-text {
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.36;
-          letter-spacing: normal;
-          color: #383838; }
-        .teams-comments .section-comments .no-data-main-link {
-          font-weight: 500;
-          color: #137efe; }
+    .teams-comments .section-comments .no-data-main {
+      max-width: 36rem; }
+      .teams-comments .section-comments .no-data-main svg {
+        width: 4.5rem;
+        height: 3.5rem; }
     .teams-comments .section-comments-header {
       position: relative;
       height: 3.7rem;
@@ -6354,9 +6379,9 @@ i {
       .teams-people-view-header .input-container i {
         position: absolute;
         top: 50%;
-        left: 0;
+        left: 1rem;
         font-size: 1.3rem;
-        transform: translate(50%, -50%);
+        transform: translate(0, -40%);
         color: #9B9FA3; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .teams-people-view-body {
@@ -6511,18 +6536,6 @@ i {
               -moz-flex-direction: column;
               -ms-flex-direction: column;
               flex-direction: column; }
-              .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-text {
-                margin-bottom: 1.2rem;
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: #1B2733; }
-              .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-info {
-                font-size: 1.4rem;
-                font-weight: 400;
-                color: #1B2733; }
-                .teams-people-view .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td #not-yet-td-info button {
-                  color: #2D76AD;
-                  text-decoration: underline; }
       .teams-people-view .table-custom-body td {
         padding: 0 0; }
       .teams-people-view .table-custom-body .table-custom-col-01 {
@@ -6780,7 +6793,7 @@ i {
         color: #647282; }
     .teams-settings-general-body .settings-table-body {
       padding-bottom: 5rem;
-      max-height: calc(100vh - 26.2rem - 3.4rem);
+      max-height: calc(100vh - 26.3rem - 3.4rem);
       overflow-y: auto;
       scrollbar-width: none;
       /* Firefox */
@@ -9867,7 +9880,7 @@ i {
         color: #647282; }
     .company-teams-body .option-link {
       margin-bottom: 2.3rem;
-      font-size: 12.3px;
+      font-size: 1.23rem;
       font-weight: 400;
       line-height: 1.47;
       letter-spacing: -0.03px;
@@ -9876,7 +9889,7 @@ i {
         color: #1b2733; }
     .company-teams-body .option-divider {
       margin: 0 .5rem;
-      font-size: 1.3rem; }
+      font-size: 1.23rem; }
     .company-teams-body .input-group-custom {
       display: -webkit-box;
       display: -webkit-flex;
@@ -10618,7 +10631,12 @@ i {
         -ms-flex-direction: column;
         flex-direction: column;
         margin-left: 1rem;
-        margin-right: 2.05rem; }
+        margin-right: 2.05rem;
+        font-size: 1.28rem;
+        font-weight: 400;
+        line-height: 1.57;
+        letter-spacing: -0.06px;
+        color: #1b2733; }
       .company-settings-body .settings-table-row input.column-02 {
         margin-right: 1.6rem;
         padding: .5rem 1.1rem;
@@ -11232,49 +11250,9 @@ i {
     @media (max-width: 575px) {
       .people-average-charts-body {
         max-height: calc(100% - 12.4rem - 4.1rem); } }
-    .people-average-charts-body .no-data {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      width: 100%;
-      height: 42.7rem;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      -moz-justify-content: center;
-      justify-content: center;
-      border: 1px solid #EAEAEA;
-      border-radius: 5px;
-      margin-top: 2rem; }
-      .people-average-charts-body .no-data-main {
-        text-align: center; }
-        .people-average-charts-body .no-data-main svg {
-          margin-bottom: 2rem; }
-        .people-average-charts-body .no-data-main-title {
-          margin-bottom: 1.36rem;
-          font-size: 1.8rem;
-          font-weight: 500;
-          line-height: 1.33;
-          letter-spacing: -0.2px;
-          color: #292929; }
-        .people-average-charts-body .no-data-main-text {
-          font-size: 1.4rem;
-          font-weight: 400;
-          line-height: 1.36;
-          letter-spacing: normal;
-          color: #383838; }
-        .people-average-charts-body .no-data-main-link {
-          font-weight: 500;
-          color: #137efe; }
+    .people-average-charts-body .no-data-main svg {
+      width: 4.1652rem;
+      height: 3.5rem; }
     .people-average-charts-body .no-teams {
       padding-top: 12.5rem;
       margin-left: 0;
@@ -11298,6 +11276,7 @@ i {
     .people-average-charts-body .section {
       position: relative; }
       .people-average-charts-body .section-header {
+        position: relative;
         height: 3.7rem;
         display: -webkit-box;
         display: -webkit-flex;
@@ -11319,6 +11298,33 @@ i {
         padding-right: 2rem;
         background-color: #f5f7f8;
         border-radius: 2.5px; }
+        .people-average-charts-body .section-header .open-section {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 100%;
+          display: -webkit-inline-box;
+          display: -webkit-inline-flex;
+          display: -moz-inline-flex;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          -moz-align-items: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          -moz-justify-content: center;
+          justify-content: center;
+          cursor: pointer; }
+          .people-average-charts-body .section-header .open-section svg {
+            margin-top: -.15rem;
+            margin-left: .5rem;
+            width: .6rem;
+            height: 1.04rem; }
         .people-average-charts-body .section-header p {
           font-size: 1.13rem;
           font-weight: 500;
@@ -11384,6 +11390,15 @@ i {
           left: -1rem; }
         .people-average-charts-body .section .slider-trigger-right {
           right: -1rem; }
+      .people-average-charts-body .section.closed {
+        margin-bottom: 0; }
+        .people-average-charts-body .section.closed .section-body {
+          padding-top: 0;
+          height: 0; }
+        .people-average-charts-body .section.closed .section-header {
+          margin-bottom: 2rem; }
+        .people-average-charts-body .section.closed .open-section svg {
+          transform: rotateZ(180deg); }
     .people-average-charts-body .section-averages {
       margin-bottom: 5.4rem; }
       .people-average-charts-body .section-averages .section-header {
@@ -12236,6 +12251,11 @@ i {
     width: 100%;
     top: 2rem;
     left: 0; }
+  .people-feedback-received-body .section-comments .no-data-main {
+    max-width: 36rem; }
+    .people-feedback-received-body .section-comments .no-data-main svg {
+      width: 4.5rem;
+      height: 3.5rem; }
   .people-feedback-received-body .section-comments-header {
     max-width: calc(106.65rem - 3.65rem);
     height: 3.7rem;
@@ -15172,25 +15192,51 @@ i {
   height: 6.6rem;
   margin: 0;
   border-top: 0 !important;
-  border-bottom: 0 !important; }
-  #not-yet-td {
-    text-align: center;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-box-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.33;
-    letter-spacing: 0.08px;
-    color: #1b2733; }
+  border-bottom: 0 !important;
+  border-left: 1.25px solid #F2F2F2 !important;
+  border-right: 1.25px solid #F2F2F2 !important; }
+  #not-yet:not(.not-yet-search) {
+    margin-top: 2rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    border-top: solid 1.25px #F2F2F2 !important;
+    border-bottom: 0 !important; }
+    #not-yet:not(.not-yet-search) #not-yet-td {
+      text-align: center;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      #not-yet:not(.not-yet-search) #not-yet-td-text {
+        margin-bottom: 1.76rem;
+        font-size: 1.58rem;
+        font-weight: 600;
+        line-height: 1.21;
+        letter-spacing: -0.39px;
+        color: #2c3952; }
+      #not-yet:not(.not-yet-search) #not-yet-td-info {
+        font-size: 1.28rem;
+        font-weight: 400;
+        line-height: 1.18;
+        letter-spacing: -0.13px;
+        color: #383838; }
+        #not-yet:not(.not-yet-search) #not-yet-td-info button {
+          font-weight: 500;
+          color: #137efe;
+          text-decoration: underline; }
 
 @media (max-width: 767px) {
   p:not(.no-ls),
