@@ -1028,6 +1028,61 @@ i {
       font-weight: 400;
       margin-right: 1.2rem; }
 
+#bigImageModal .modal-dialog {
+  max-width: 56rem; }
+#bigImageModal .modal-content {
+  border-radius: 5px; }
+#bigImageModal .modal-header .icon-close {
+  font-size: 2rem;
+  color: #bdbebf; }
+#bigImageModal .modal-body {
+  padding: 3.8rem;
+  padding-top: 0; }
+  #bigImageModal .modal-body .subtitle {
+    margin-bottom: .65rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.23;
+    color: #737580; }
+  #bigImageModal .modal-body .title {
+    margin-bottom: 3.5rem;
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: -0.54px;
+    color: #192239; }
+  #bigImageModal .modal-body img {
+    margin-bottom: 2.1rem;
+    width: 16.64rem;
+    height: 16.64rem;
+    clip-path: circle(48% at 50% 50%);
+    -webkit-clip-path: circle(48% at 50% 50%); }
+  #bigImageModal .modal-body .buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    #bigImageModal .modal-body .buttons .button {
+      height: 3.4rem;
+      font-size: 1.4rem;
+      line-height: 1.21;
+      letter-spacing: -0.07px;
+      font-weight: 500; }
+    #bigImageModal .modal-body .buttons .button-outlined {
+      font-weight: 400;
+      margin-right: 1.2rem; }
+
 #addQuestionModal .modal-dialog {
   max-width: 39rem; }
 #addQuestionModal .modal-content {
@@ -1686,10 +1741,11 @@ i {
   #updateAddressModal .modal-body .title,
   #updateContactModal .modal-body .title {
     margin-bottom: 2.3rem;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 1.32;
-    color: #454545; }
+    line-height: 1.17;
+    letter-spacing: -0.18px;
+    color: #3b4960; }
   #updateAddressModal .modal-body .input-container,
   #updateContactModal .modal-body .input-container {
     width: 100%; }
@@ -1697,23 +1753,25 @@ i {
     #updateContactModal .modal-body .input-container label {
       display: block;
       margin-bottom: .8rem;
-      font-size: 1.3rem;
-      font-weight: 500;
-      line-height: 1.38;
-      letter-spacing: 0.13px;
-      color: #7b8993; }
+      font-size: 1.2rem;
+      line-height: 1.25;
+      letter-spacing: normal;
+      color: #6c7b86; }
     #updateAddressModal .modal-body .input-container input,
     #updateContactModal .modal-body .input-container input {
+      height: 3.4rem;
       padding: .6rem 1.1rem;
       margin-bottom: 2.8rem;
       width: 100%;
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 400;
-      line-height: 1.36;
-      letter-spacing: 0.14px;
-      color: #6a6a6a;
+      line-height: 1.19;
+      letter-spacing: -0.07px;
       border-radius: 4px;
       border: solid 1px #d6d6d6; }
+      #updateAddressModal .modal-body .input-container input::placeholder,
+      #updateContactModal .modal-body .input-container input::placeholder {
+        color: #d5d5d5; }
 #updateAddressModal .modal-footer,
 #updateContactModal .modal-footer {
   background-color: #f7f9fa; }
@@ -1740,9 +1798,14 @@ i {
     justify-content: space-between; }
     #updateAddressModal .modal-footer .buttons .button,
     #updateContactModal .modal-footer .buttons .button {
-      width: 48%; }
+      height: 3.4rem;
+      width: 48%;
+      font-size: 1.4rem;
+      line-height: 1.21;
+      letter-spacing: -0.07px; }
       #updateAddressModal .modal-footer .buttons .button-outlined,
       #updateContactModal .modal-footer .buttons .button-outlined {
+        font-weight: 400;
         background-color: #FFF; }
 
 #inviteNewMemberModal .modal-dialog {
@@ -2596,10 +2659,11 @@ i {
         color: #383838;
         white-space: normal; }
     .comment-body-feedback {
-      font-size: 1.3rem;
+      font-size: 1.23rem;
       font-weight: 500;
-      line-height: 1.38;
-      color: #383838; }
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #252b34; }
       .comment-body-feedback p {
         margin-right: .3rem;
         width: 9.5rem;
@@ -2617,9 +2681,11 @@ i {
       padding-top: 1rem;
       padding-bottom: .9rem;
       padding-right: .4rem;
-      font-size: 1.35rem;
-      line-height: 1.38;
-      color: #383838;
+      font-size: 1.23rem;
+      font-weight: 400;
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #252b34;
       transition: opacity .3s ease-in-out .3s;
       border-top: 1px solid #EAEAEA; }
       .comment-body-text .read-more, .comment-body-text-trunc .read-more {
@@ -2629,7 +2695,6 @@ i {
         white-space: nowrap; }
       .comment-body-text-compliment, .comment-body-text-improver, .comment-body-text-trunc-compliment, .comment-body-text-trunc-improver {
         position: relative;
-        font-size: 1.3rem;
         margin-bottom: .5rem;
         display: block;
         font-weight: 500;
@@ -2907,10 +2972,11 @@ i {
         color: #383838;
         white-space: normal; }
     .comment-new-body-feedback {
-      font-size: 1.3rem;
+      font-size: 1.23rem;
       font-weight: 500;
-      line-height: 1.38;
-      color: #383838; }
+      line-height: 1.22;
+      letter-spacing: -0.06px;
+      color: #252b34; }
       .comment-new-body-feedback p {
         margin-right: .3rem;
         width: 9.5rem;
@@ -2930,7 +2996,7 @@ i {
       padding-right: .4rem;
       font-size: 1.2rem;
       font-weight: 400;
-      line-height: 1.45;
+      line-height: 1.25;
       letter-spacing: -0.06px;
       color: #252b34;
       transition: opacity .3s ease-in-out .3s;
@@ -3204,7 +3270,7 @@ i {
       border-color: #1050C1; }
   .button-outlined {
     color: #2d3640 !important;
-    border-color: #D1D7DD;
+    border-color: #e1e4e8;
     background-color: #FFF; }
     .button-outlined:hover, .button-outlined:focus {
       color: #2d3640 !important;
@@ -3877,6 +3943,8 @@ i {
           font-weight: 600; }
         .sidebar-menu-list-item:hover .star {
           display: inline-block !important; }
+        .sidebar-menu-list-item.overview .star {
+          display: inline-block !important; }
         .sidebar-menu-list-item.active:before {
           display: block; }
         .sidebar-menu-list-item.active .sidebar-menu-list-item-link {
@@ -4176,6 +4244,8 @@ i {
           height: 2.131rem; }
       .header-top-right .settings-menu .dropdown-custom-list {
         min-width: 26.2rem; }
+        .header-top-right .settings-menu .dropdown-custom-list-item:not(:last-of-type) {
+          border-bottom: 1px solid #EBEBEB; }
         .header-top-right .settings-menu .dropdown-custom-list-item-link {
           padding: 1.5rem 2rem;
           display: -webkit-box;
@@ -4200,8 +4270,8 @@ i {
             letter-spacing: -0.07px;
             color: #3b4046; }
           .header-top-right .settings-menu .dropdown-custom-list-item-link .pretty {
-            margin-right: -1.4rem;
-            font-size: 2rem; }
+            margin-right: -1.1rem;
+            font-size: 1.6rem; }
             .header-top-right .settings-menu .dropdown-custom-list-item-link .pretty input {
               min-width: auto; }
           .header-top-right .settings-menu .dropdown-custom-list-item-link .plus-minus .minus {
@@ -5049,6 +5119,31 @@ i {
               position: absolute;
               top: 1.5rem;
               right: 1.5rem; }
+            .teams-average-charts-body .section-development .section-body-chart-header-buttons .options {
+              margin-right: 1rem; }
+              .teams-average-charts-body .section-development .section-body-chart-header-buttons .options a, .teams-average-charts-body .section-development .section-body-chart-header-buttons .options button {
+                padding: 1.1rem 1.8rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: 1.25;
+                color: #8181a5;
+                border: solid 1px transparent;
+                cursor: pointer; }
+                .teams-average-charts-body .section-development .section-body-chart-header-buttons .options a:not(:last-of-type), .teams-average-charts-body .section-development .section-body-chart-header-buttons .options button:not(:last-of-type) {
+                  margin-right: .5rem; }
+                .teams-average-charts-body .section-development .section-body-chart-header-buttons .options a.active, .teams-average-charts-body .section-development .section-body-chart-header-buttons .options button.active {
+                  font-weight: 700;
+                  color: #1c1d21;
+                  border-radius: 8px;
+                  border: solid 1px #ececf2;
+                  background-color: #ffffff; }
+                  .teams-average-charts-body .section-development .section-body-chart-header-buttons .options a.active:hover, .teams-average-charts-body .section-development .section-body-chart-header-buttons .options button.active:hover {
+                    text-decoration: none; }
+              .teams-average-charts-body .section-development .section-body-chart-header-buttons .options span {
+                display: none;
+                margin: 0 .5rem;
+                font-size: 2rem;
+                color: #e3e3e3; }
             .teams-average-charts-body .section-development .section-body-chart-header-info-title {
               margin-bottom: .8rem;
               font-size: 1.3rem;
@@ -5155,19 +5250,20 @@ i {
                   margin-right: 3rem; } }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.9rem; }
+              font-size: 1.6rem; }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
-              font-size: 1.35rem;
-              font-weight: 400;
-              line-height: 1.33;
-              letter-spacing: 0.14px;
-              color: #3d464d; }
+              margin-left: .9rem;
+              margin-right: 1.1rem;
+              font-size: 1.2rem;
+              font-weight: 500;
+              line-height: 1.75;
+              color: #5a5a74; }
               .teams-average-charts-body .section-development .section-body-legend-main .chart-label-label .name {
                 font-weight: 500; }
             .teams-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
-              height: .35rem;
+              height: .4rem;
               border-radius: 1px; }
           .teams-average-charts-body .section-development .section-body-legend-main-share {
             padding-top: 2.4rem;
@@ -5622,14 +5718,15 @@ i {
         height: 100%;
         background-color: rgba(71, 71, 83, 0.73); }
         .teams-overview-body .team-card-backdrop-button {
+          height: 3.5rem;
           padding: .8rem 1.9rem;
-          font-size: 1.3rem;
+          font-size: 1.23rem;
           font-weight: 500;
-          line-height: 1.38;
-          letter-spacing: -0.03px;
-          color: #2e3336;
+          line-height: 1.22;
+          letter-spacing: -0.09px;
           border-radius: 2.5px;
           border: solid 1.3px #d4d9de;
+          color: #000000;
           background-color: #ffffff; }
           .teams-overview-body .team-card-backdrop-button:hover, .teams-overview-body .team-card-backdrop-button:focus {
             background-color: #383838;
@@ -6460,7 +6557,7 @@ i {
         top: 50%;
         left: 1rem;
         font-size: 1.3rem;
-        transform: translate(0, -40%);
+        transform: translate(0, -43%);
         color: #9B9FA3; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .teams-people-view-body {
@@ -6656,7 +6753,7 @@ i {
             width: 4.1rem;
             height: 4.1rem;
             border-radius: 50%;
-            font-size: 1.65rem;
+            font-size: 1.55rem;
             color: #FFF;
             font-weight: 700;
             background-color: #FFd800;
@@ -6859,6 +6956,10 @@ i {
       letter-spacing: -0.1px; }
   .teams-settings-general-body {
     max-width: 79.7rem; }
+    .teams-settings-general-body #hitImageModal {
+      position: absolute;
+      top: 0;
+      left: 50%; }
     .teams-settings-general-body .settings-table-header {
       height: 3.7rem;
       padding: 1rem 1.3rem;
@@ -8329,13 +8430,26 @@ i {
       text-align: center;
       cursor: pointer; }
       .new-feedback .people-person:hover {
-        transform: scale(1.025); }
+        transform: scale(1.05); }
       .new-feedback .people-person-img {
         margin-bottom: .79rem;
         width: 7.49rem;
         height: 7.49rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%); }
+      .new-feedback .people-person-initials {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: .79rem;
+        width: 7.49rem;
+        height: 7.49rem;
+        clip-path: circle(48% at 50% 50%);
+        -webkit-clip-path: circle(48% at 50% 50%);
+        background-color: #FFD800;
+        color: #FFF;
+        font-size: 3rem;
+        font-weight: 700; }
       .new-feedback .people-person-name {
         font-size: 1.2rem;
         font-weight: 600;
@@ -9202,10 +9316,10 @@ i {
         .report-member-body-options-list-item .pretty {
           margin-right: 0;
           font-size: 1.4rem; }
-          .report-team-body-options-list-item .pretty i.icon-check,
-          .report-member-body-options-list-item .pretty i.icon-check {
+          .report-team-body-options-list-item .pretty svg,
+          .report-member-body-options-list-item .pretty svg {
             margin-top: .05rem;
-            transform: scale(0.8); }
+            transform: scale(0.9); }
         .report-team-body-options-list-item-label,
         .report-member-body-options-list-item-label {
           display: -webkit-inline-box;
@@ -9759,8 +9873,7 @@ i {
           font-size: 1rem;
           color: #94a4b5; }
   .company-members .table-wrapper {
-    height: 100%;
-    max-height: calc(100vh - 33.9rem - 1.5px - 3rem);
+    height: calc(100vh - 33.9rem - 1.5px - 3.2rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -9814,7 +9927,7 @@ i {
           border-left: 1.25px solid #F2F2F2 !important;
           border-right: 1.25px solid #F2F2F2 !important; }
           .company-members .table-custom-body tr#not-yet:not(.not-yet-search) {
-            margin-top: 2rem;
+            margin-top: 0;
             padding-top: 15rem;
             padding-bottom: 15rem;
             border-top: solid 1.25px #F2F2F2 !important;
@@ -10045,8 +10158,7 @@ i {
             font-size: 1rem;
             color: #94a4b5; }
     .company-teams-body .table-wrapper {
-      height: 100%;
-      max-height: calc(100vh - 33.9rem - 1px - 3.4rem);
+      height: calc(100vh - 33.9rem - 1px - 3.4rem);
       overflow-y: auto;
       scrollbar-width: none;
       /* Firefox */
@@ -10100,7 +10212,7 @@ i {
             border-left: 1.25px solid #F2F2F2 !important;
             border-right: 1.25px solid #F2F2F2 !important; }
             .company-teams-body .table-custom-body tr#not-yet:not(.not-yet-search) {
-              margin-top: 2rem;
+              margin-top: 0;
               padding-top: 15rem;
               padding-bottom: 15rem;
               border-top: solid 1.25px #F2F2F2 !important;
@@ -10314,8 +10426,7 @@ i {
           font-size: 1rem;
           color: #94a4b5; }
   .company-admin .table-wrapper {
-    height: 100%;
-    max-height: calc(100vh - 33.9rem - 1.5px - 3rem);
+    height: calc(100vh - 33.9rem - 1.5px - 3rem);
     overflow-y: auto;
     scrollbar-width: none;
     /* Firefox */
@@ -10633,10 +10744,11 @@ i {
 
 .user-settings-general {
   padding: 2.5rem 0;
+  padding-bottom: 0;
   border-top: 1.5px solid #f2f2f2;
   max-width: 72rem;
   padding-top: 0;
-  max-height: calc(100vh - 17rem - 2px);
+  max-height: calc(100vh - 17.2rem - 2px);
   overflow-y: auto;
   scrollbar-width: none;
   /* Firefox */
@@ -11085,11 +11197,10 @@ i {
           -ms-flex-item-align: start;
           align-self: flex-start; } }
       .people-average-charts-header-info-buttons .button {
-        padding: .7rem 1.7rem;
+        height: 3.4rem;
+        padding: .7rem 1.5rem;
         margin-right: 1.5rem;
-        margin-bottom: 1.5rem;
         font-size: 1.28rem;
-        font-weight: 400;
         line-height: 1.18;
         letter-spacing: -0.1px; }
       .people-average-charts-header-info img {
@@ -11459,6 +11570,12 @@ i {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: start;
         -ms-flex-align: start;
         -webkit-align-items: flex-start;
@@ -11471,11 +11588,15 @@ i {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
         .people-average-charts-body .section-development .section-body-chart {
-          min-width: 0;
+          position: relative;
+          padding-top: 2.5rem;
+          padding-bottom: 1.3rem;
           width: 100%;
-          max-width: 67.4rem;
-          padding: 0 3.3rem 1.8rem;
-          border-right: 1.5px solid #f3f3f3; }
+          min-width: 0;
+          border-radius: 5px;
+          box-shadow: 0 4px 9px 0 rgba(196, 196, 196, 0.16);
+          border: solid 1px rgba(225, 228, 232, 0.64);
+          background-color: #ffffff; }
           @media (max-width: 991px) {
             .people-average-charts-body .section-development .section-body-chart {
               margin-bottom: 3rem;
@@ -11483,49 +11604,92 @@ i {
               padding-right: 2rem;
               border-right: 0; } }
           .people-average-charts-body .section-development .section-body-chart-header {
+            padding-left: 2.9rem;
+            padding-right: 8.2rem;
             padding-bottom: 2.2rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            justify-content: flex-end;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            justify-content: space-between;
             -webkit-box-align: center;
             -ms-flex-align: center;
             -webkit-align-items: center;
             -moz-align-items: center;
             align-items: center; }
-            .people-average-charts-body .section-development .section-body-chart-header .options {
+            .people-average-charts-body .section-development .section-body-chart-header .add-circle {
+              width: 2.25rem;
+              height: 2.25rem;
+              position: absolute;
+              top: 1.5rem;
+              right: 1.5rem; }
+            .people-average-charts-body .section-development .section-body-chart-header-buttons .options {
               margin-right: 1rem; }
-              .people-average-charts-body .section-development .section-body-chart-header .options a {
-                font-size: 1.5rem;
-                font-weight: 400;
-                line-height: 1.33;
-                color: #494F64;
-                text-transform: capitalize; }
-                .people-average-charts-body .section-development .section-body-chart-header .options a:hover {
-                  text-decoration: underline; }
-                .people-average-charts-body .section-development .section-body-chart-header .options a.active {
-                  font-weight: 700; }
-                  .people-average-charts-body .section-development .section-body-chart-header .options a.active:hover {
+              .people-average-charts-body .section-development .section-body-chart-header-buttons .options a, .people-average-charts-body .section-development .section-body-chart-header-buttons .options button {
+                padding: 1.1rem 1.8rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                line-height: 1.25;
+                color: #8181a5;
+                border: solid 1px transparent;
+                cursor: pointer; }
+                .people-average-charts-body .section-development .section-body-chart-header-buttons .options a:not(:last-of-type), .people-average-charts-body .section-development .section-body-chart-header-buttons .options button:not(:last-of-type) {
+                  margin-right: .5rem; }
+                .people-average-charts-body .section-development .section-body-chart-header-buttons .options a.active, .people-average-charts-body .section-development .section-body-chart-header-buttons .options button.active {
+                  font-weight: 700;
+                  color: #1c1d21;
+                  border-radius: 8px;
+                  border: solid 1px #ececf2;
+                  background-color: #ffffff; }
+                  .people-average-charts-body .section-development .section-body-chart-header-buttons .options a.active:hover, .people-average-charts-body .section-development .section-body-chart-header-buttons .options button.active:hover {
                     text-decoration: none; }
-              .people-average-charts-body .section-development .section-body-chart-header .options span {
+              .people-average-charts-body .section-development .section-body-chart-header-buttons .options span {
+                display: none;
                 margin: 0 .5rem;
                 font-size: 2rem;
                 color: #e3e3e3; }
+            .people-average-charts-body .section-development .section-body-chart-header-info-title {
+              margin-bottom: .8rem;
+              font-size: 1.3rem;
+              font-weight: 400;
+              line-height: 1.62;
+              color: #5f5f5f; }
+            .people-average-charts-body .section-development .section-body-chart-header-info-amount {
+              padding-right: 1.7rem;
+              position: relative;
+              display: inline-block;
+              font-size: 2.4rem;
+              font-weight: 700;
+              line-height: 1.33;
+              color: #1c1d21; }
+              .people-average-charts-body .section-development .section-body-chart-header-info-amount .arrow {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 1.107rem;
+                height: 1.174rem; }
+                .people-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.good path {
+                  fill: #16b21c; }
+                .people-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.bad {
+                  transform: rotateZ(180deg); }
+                  .people-average-charts-body .section-development .section-body-chart-header-info-amount .arrow.bad path {
+                    fill: red; }
           .people-average-charts-body .section-development .section-body-chart-main {
-            width: 100%; }
+            width: 100%;
+            height: 20rem; }
             .people-average-charts-body .section-development .section-body-chart-main canvas {
               width: 100%; }
               @media (max-width: 991px) {
                 .people-average-charts-body .section-development .section-body-chart-main canvas {
                   margin: 0 auto; } }
         .people-average-charts-body .section-development .section-body-legend {
-          padding-left: 5rem; }
+          width: 100%;
+          padding-bottom: 0; }
           @media (max-width: 991px) {
             .people-average-charts-body .section-development .section-body-legend {
               width: 100%;
@@ -11549,25 +11713,27 @@ i {
             line-height: 1.33;
             color: #494F64; }
           .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
-            white-space: nowrap;
-            padding-bottom: 1.4rem; }
-            @media (max-width: 991px) {
-              .people-average-charts-body .section-development .section-body-legend-main #chart-legends {
-                max-width: 100%;
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -moz-flex;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                -webkit-align-items: center;
-                -moz-align-items: center;
-                align-items: center;
-                -webkit-flex-wrap: wrap;
-                -moz-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap; } }
+            padding: 3.2rem 5rem;
+            max-width: 100%;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
           .people-average-charts-body .section-development .section-body-legend-main .chart-label {
             margin-bottom: 1.8rem;
             display: -webkit-box;
@@ -11586,24 +11752,27 @@ i {
             -moz-justify-content: flex-start;
             justify-content: flex-start;
             white-space: nowrap; }
-            @media (max-width: 991px) {
-              .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
-                margin-right: 3rem; } }
+            .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+              margin-right: 3rem; }
+              @media (max-width: 991px) {
+                .people-average-charts-body .section-development .section-body-legend-main .chart-label:not(:last-of-type) {
+                  margin-right: 3rem; } }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label .pretty {
               margin-right: -1rem;
-              font-size: 1.9rem; }
+              font-size: 1.6rem; }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label-label {
               margin: 0 1rem;
-              font-size: 1.35rem;
-              font-weight: 400;
-              line-height: 1.33;
-              letter-spacing: 0.14px;
-              color: #3d464d; }
+              margin-left: .9rem;
+              margin-right: 1.1rem;
+              font-size: 1.2rem;
+              font-weight: 500;
+              line-height: 1.75;
+              color: #5a5a74; }
               .people-average-charts-body .section-development .section-body-legend-main .chart-label-label .name {
                 font-weight: 500; }
             .people-average-charts-body .section-development .section-body-legend-main .chart-label span {
               width: 1.2rem;
-              height: .35rem;
+              height: .4rem;
               border-radius: 1px; }
           .people-average-charts-body .section-development .section-body-legend-main-share {
             padding-top: 2.4rem;
@@ -11866,7 +12035,7 @@ i {
     -moz-justify-content: flex-start;
     justify-content: flex-start; }
     .people-overview-body-main .user-card {
-      padding-top: 2.3rem;
+      padding-top: 2.6rem;
       position: relative;
       margin-bottom: 3.6rem;
       margin: 2.8rem 0 0 2.8rem;
@@ -11933,6 +12102,8 @@ i {
         margin-bottom: 1.55rem;
         width: 7.25rem;
         height: 7.25rem;
+        width: 7.54rem;
+        height: 7.54rem;
         clip-path: circle(48% at 50% 50%);
         -webkit-clip-path: circle(48% at 50% 50%);
         font-size: 3rem;
@@ -11988,12 +12159,14 @@ i {
         background-color: rgba(71, 71, 83, 0.73);
         border-radius: 3px; }
         .people-overview-body-main .user-card-backdrop-button {
+          height: 3.5rem;
           margin-bottom: 1.3rem;
           padding: .7rem 1.1rem;
-          font-size: 1.28rem;
+          font-size: 1.23rem;
           font-weight: 500;
-          line-height: 1.25;
-          color: #2e3336;
+          line-height: 1.22;
+          letter-spacing: -0.09px;
+          color: #000000;
           border-radius: 2.5px;
           border: solid 1.3px #d4d9de;
           background-color: #ffffff; }
@@ -12101,11 +12274,10 @@ i {
           -ms-flex-item-align: start;
           align-self: flex-start; } }
       .people-feedback-received-header-info-buttons .button {
-        padding: .7rem 1.7rem;
+        height: 3.4rem;
+        padding: .7rem 1.5rem;
         margin-right: 1.5rem;
-        margin-bottom: 1.5rem;
         font-size: 1.28rem;
-        font-weight: 400;
         line-height: 1.18;
         letter-spacing: -0.1px; }
       .people-feedback-received-header-info img {
