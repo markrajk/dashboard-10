@@ -6572,6 +6572,7 @@ i {
                   color: #8181a5;
                   border: solid 1px transparent;
                   cursor: pointer;
+                  text-transform: capitalize;
   
                   // &:hover {
                   //   text-decoration: underline;
@@ -6651,8 +6652,8 @@ i {
             // height: 32rem;
 
             & canvas {
-
-              width: 100%;
+              width: calc(100% + 8px)!important;
+              margin: 0 -4px!important;
 
               @include respond(desktop-md) {
                 margin: 0 auto;
@@ -15727,6 +15728,7 @@ i {
   
                 & a,
                 & button {
+                  font-family: 'Lato', sans-serif;
                   padding: 1.1rem 1.8rem;
                   font-size: 1.2rem;
                   font-weight: 700;
@@ -15734,6 +15736,7 @@ i {
                   color: #8181a5;
                   border: solid 1px transparent;
                   cursor: pointer;
+                  text-transform: capitalize;
   
                   // &:hover {
                   //   text-decoration: underline;
@@ -15813,8 +15816,8 @@ i {
             // height: 32rem;
 
             & canvas {
-
-              width: 100%;
+              width: calc(100% + 8px)!important;
+              margin: 0 -4px!important;
 
               @include respond(desktop-md) {
                 margin: 0 auto;
