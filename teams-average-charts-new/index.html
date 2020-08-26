@@ -606,6 +606,21 @@
                                 <div class="section-body-chart-main">
                                     <canvas id="myChart"></canvas>
                                 </div>
+
+                                <div class="section-body-legend">
+                                    <!-- <div class="section-body-legend-header">
+                                        <p>Select data to graph</p>
+                                    </div> -->
+                                    <div class="section-body-legend-main">
+                                        <div id="chart-legends"></div>
+                                        <!-- <div class="section-body-legend-main-share">
+                                            <a href="#">
+                                                Export graph as PDF
+                                            </a>
+                                            <a href="#">Share graph</a>
+                                        </div> -->
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="section-body-legend">
@@ -968,16 +983,18 @@
                     xAxes: [{
                         ticks: {
                             fontColor: '#5E636B',
-                            fontFamily: '"Roboto", sans-serif',
-                            fontSize: 11.25,
+                            fontFamily: '"Lato", sans-serif',
+                            fontSize: 11.3,
                             fontStyle: '500',
                             beginAtZero: false,
-                            padding: 18,
+                            padding: 23,
                         },
                         gridLines: {
+                            color: '#EEEEEE',
                             drawTicks: false,
-                            drawBorder: false,
+                            drawBorder: true,
                             drawOnChartArea: false,
+                            lineWidth: 1
 
                         },
                     }, ],
