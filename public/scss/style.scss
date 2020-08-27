@@ -14940,6 +14940,15 @@ i {
             line-height: 1.24;
             letter-spacing: -0.03px;
             color: #526172;
+
+            &.table-custom-col-04 {
+              & div {
+                color: #647282;
+                @include flexbox();
+                @include align-items(center);
+                @include justify-content(flex-start);
+              }
+            }
           }
       }
   
