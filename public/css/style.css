@@ -11049,132 +11049,166 @@ i {
         color: #647282; }
   .user-settings-teams-body {
     max-height: calc(100vh - 30rem); }
-    .user-settings-teams-body .table-custom {
-      max-width: 80rem; }
-      .user-settings-teams-body .table-custom-body {
-        max-height: calc(100vh - 42rem);
-        font-weight: 400; }
-        .user-settings-teams-body .table-custom-body tr {
-          height: 5rem;
-          padding: 1rem 1.8rem;
-          border-bottom: solid 1px #e6e8eb; }
-          .user-settings-teams-body .table-custom-body tr:last-child {
-            border: none; }
-        .user-settings-teams-body .table-custom-body .input-row {
-          display: none;
+    .user-settings-teams-body .dd-new.dropdown-custom-trigger {
+      padding: 0 !important;
+      outline: none !important;
+      border: none !important;
+      box-shadow: none !important; }
+      .user-settings-teams-body .dd-new.dropdown-custom-trigger.top + .dropdown-custom-list {
+        bottom: 0;
+        transform: translate(-100%, 0); }
+    .user-settings-teams-body .dd-new.dropdown-custom-list {
+      left: 0;
+      bottom: 100%;
+      transform: translate(-100%, 100%);
+      padding: .7rem;
+      min-width: 24.4rem;
+      z-index: 400; }
+      .user-settings-teams-body .dd-new.dropdown-custom-list-item {
+        height: 4.1rem;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center; }
+        .user-settings-teams-body .dd-new.dropdown-custom-list-item-link {
+          padding-left: 1.4rem;
+          padding-top: 1.4rem;
+          padding-right: 1.4rem;
+          padding-bottom: 1.2rem;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: flex;
           -webkit-box-align: center;
           -ms-flex-align: center;
           -webkit-align-items: center;
           -moz-align-items: center;
-          align-items: center; }
-          .user-settings-teams-body .table-custom-body .input-row input {
-            min-width: 1px;
-            max-width: 100%;
-            outline: none;
-            border: none;
-            font-size: 1.35rem;
+          align-items: center;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.23;
+          letter-spacing: -0.07px;
+          color: #1f2f41;
+          border-radius: 2px; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:hover, .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:focus {
+            background-color: #efefef; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link i {
+            color: #798796;
+            font-size: 1.6rem;
+            margin-right: 1.4rem; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.open-team {
+            margin-right: 1.4rem;
+            width: 2.2622rem;
+            height: 1.5835rem; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.quit-team {
+            margin-right: 1.4rem;
+            width: 2.1216rem;
+            height: 1.6973rem; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.delete-team {
+            margin-right: 1.4rem;
+            width: 1.3rem;
+            height: 1.6rem; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.transfer-team {
+            margin-right: 1.4rem;
+            width: 1.4539rem;
+            height: 1.2722rem; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
+            margin-right: 0;
+            margin-left: auto;
+            font-size: 1rem;
+            color: #94a4b5; }
+    .user-settings-teams-body .table-wrapper {
+      height: calc(100vh - 33.9rem - 1.5px - 3.2rem);
+      overflow-y: auto;
+      scrollbar-width: none;
+      /* Firefox */
+      -ms-overflow-style: none;
+      /* Internet Explorer 10+ */ }
+      .user-settings-teams-body .table-wrapper::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0; }
+    .user-settings-teams-body .table-custom {
+      max-width: 81.7rem; }
+      .user-settings-teams-body .table-custom th.table-custom-col-01, .user-settings-teams-body .table-custom td.table-custom-col-01 {
+        flex: 1; }
+      .user-settings-teams-body .table-custom th.table-custom-col-02, .user-settings-teams-body .table-custom td.table-custom-col-02 {
+        flex: 1; }
+      .user-settings-teams-body .table-custom th.table-custom-col-03, .user-settings-teams-body .table-custom td.table-custom-col-03 {
+        flex: 1.5; }
+      .user-settings-teams-body .table-custom th.table-custom-col-04, .user-settings-teams-body .table-custom td.table-custom-col-04 {
+        flex: .2; }
+      .user-settings-teams-body .table-custom-head {
+        border: none;
+        height: 3.7rem;
+        border: 1px solid #e6e8eb; }
+        .user-settings-teams-body .table-custom-head tr {
+          padding: 1rem 1.3rem;
+          background-color: #f7f9fa;
+          border-radius: 2.5px; }
+        .user-settings-teams-body .table-custom-head td {
+          font-size: 1.13rem;
+          font-weight: 500;
+          line-height: 1.24;
+          letter-spacing: -0.03px;
+          color: #526172; }
+      .user-settings-teams-body .table-custom-body {
+        border: none;
+        border: 1px solid #e6e8eb;
+        border-top: 0;
+        overflow: visible; }
+        .user-settings-teams-body .table-custom-body tr {
+          height: 5rem;
+          padding-top: .8rem;
+          padding-bottom: .8rem;
+          padding-left: 1.3rem; }
+          .user-settings-teams-body .table-custom-body tr:not(:last-of-type) {
+            border-bottom: 1px solid #e6e8eb; }
+          .user-settings-teams-body .table-custom-body tr:first-of-type {
+            margin-top: .1rem; }
+          .user-settings-teams-body .table-custom-body tr#not-yet {
+            border-left: 1.25px solid #F2F2F2 !important;
+            border-right: 1.25px solid #F2F2F2 !important; }
+            .user-settings-teams-body .table-custom-body tr#not-yet:not(.not-yet-search) {
+              margin-top: 0;
+              padding-top: 15rem;
+              padding-bottom: 15rem;
+              border-top: solid 1.25px #F2F2F2 !important;
+              border: 0 !important; }
+              .user-settings-teams-body .table-custom-body tr#not-yet:not(.not-yet-search) #not-yet-td {
+                -webkit-box-direction: normal;
+                -webkit-box-orient: vertical;
+                -webkit-flex-direction: column;
+                -moz-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column; }
+          .user-settings-teams-body .table-custom-body tr:hover {
+            background-color: #faf9f9; }
+          .user-settings-teams-body .table-custom-body tr:hover .dropdown-custom {
+            display: block !important; }
+        .user-settings-teams-body .table-custom-body td {
+          padding: 0 0;
+          min-width: 0; }
+          .user-settings-teams-body .table-custom-body td p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.23rem;
             font-weight: 400;
-            line-height: 1.33; }
-            .user-settings-teams-body .table-custom-body .input-row input::placeholder {
-              opacity: 0.67; }
-          .user-settings-teams-body .table-custom-body .input-row .table-custom-col-01 {
-            width: 25%; }
-            .user-settings-teams-body .table-custom-body .input-row .table-custom-col-01 input::placeholder {
-              color: #1165f4; }
-            @media (max-width: 575px) {
-              .user-settings-teams-body .table-custom-body .input-row .table-custom-col-01 {
-                width: 35%; } }
-          .user-settings-teams-body .table-custom-body .input-row .table-custom-col-02 {
-            width: 25%; }
-            @media (max-width: 575px) {
-              .user-settings-teams-body .table-custom-body .input-row .table-custom-col-02 {
-                width: 25%; } }
-          .user-settings-teams-body .table-custom-body .input-row .table-custom-col-03 {
-            width: 10%; }
-            @media (max-width: 575px) {
-              .user-settings-teams-body .table-custom-body .input-row .table-custom-col-03 {
-                width: 0%; } }
-          .user-settings-teams-body .table-custom-body .input-row .table-custom-col-04 {
-            padding-right: 2.1rem;
-            width: 40%;
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: end;
-            -ms-flex-pack: end;
-            -webkit-justify-content: flex-end;
-            -moz-justify-content: flex-end;
-            justify-content: flex-end; }
-            .user-settings-teams-body .table-custom-body .input-row .table-custom-col-04 a:first-of-type {
-              margin-right: 1.3rem; }
-          .user-settings-teams-body .table-custom-body .input-row .btn-custom-primary {
-            margin-right: 0; }
-          .user-settings-teams-body .table-custom-body .input-row-open {
-            display: -webkit-box;
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -ms-flexbox;
-            display: flex; }
-      .user-settings-teams-body .table-custom-col-01 a {
-        font-size: 1.23rem !important;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.06px;
-        color: #1b2733; }
-      .user-settings-teams-body .table-custom-col-02 {
-        font-size: 12.3px;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.06px;
-        color: #1b2733; }
-      .user-settings-teams-body .table-custom-col-03 {
-        font-size: 12.3px;
-        font-weight: 400;
-        line-height: 1.22;
-        letter-spacing: -0.06px;
-        color: #1b2733; }
-      .user-settings-teams-body .table-custom-col-04 {
-        font-size: 1.3rem;
-        color: #647282; }
-      .user-settings-teams-body .table-custom-col-01, .user-settings-teams-body .table-custom-col-02, .user-settings-teams-body .table-custom-col-03, .user-settings-teams-body .table-custom-col-04 {
-        flex: none; }
-      .user-settings-teams-body .table-custom-col-01 {
-        width: 25%; }
-        @media (max-width: 575px) {
-          .user-settings-teams-body .table-custom-col-01 {
-            width: 35%; } }
-      .user-settings-teams-body .table-custom-col-02 {
-        width: 25%; }
-        @media (max-width: 575px) {
-          .user-settings-teams-body .table-custom-col-02 {
-            width: 45%; } }
-      .user-settings-teams-body .table-custom-col-03 {
-        width: 35%; }
-        @media (max-width: 575px) {
-          .user-settings-teams-body .table-custom-col-03 {
-            display: none; } }
-      .user-settings-teams-body .table-custom-col-04 {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        justify-content: center;
-        width: 15%; }
-        .user-settings-teams-body .table-custom-col-04 .delete-link {
-          color: red; }
-          .user-settings-teams-body .table-custom-col-04 .delete-link:hover, .user-settings-teams-body .table-custom-col-04 .delete-link:focus {
-            text-decoration: underline; }
-        @media (max-width: 575px) {
-          .user-settings-teams-body .table-custom-col-04 {
-            width: 20%; } }
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        .user-settings-teams-body .table-custom td:nth-of-type(4.4), .user-settings-teams-body .table-custom th:nth-of-type(4.4) {
-          padding-left: 1.7rem; } }
-      @supports (-ms-ime-align: auto) {
-        .user-settings-teams-body .table-custom td:nth-of-type(4.4), .user-settings-teams-body .table-custom th:nth-of-type(4.4) {
-          padding-left: 1.7rem; } }
+            line-height: 1.22;
+            letter-spacing: -0.06px;
+            color: #1b2733; }
+          .user-settings-teams-body .table-custom-body td.table-custom-col-04 p.green {
+            color: #03ad17; }
+          .user-settings-teams-body .table-custom-body td.table-custom-col-05 .dropdown-custom {
+            display: none; }
 
 .user-settings-advanced {
   padding: 2.5rem 0;
