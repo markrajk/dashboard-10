@@ -3843,7 +3843,8 @@ i {
             -ms-flex-align: center;
             -webkit-align-items: center;
             -moz-align-items: center;
-            align-items: center; }
+            align-items: center;
+            background-color: #FFF; }
             .sidebar-menu-header .dd-new.dropdown-custom-list-item-link {
               padding-left: 1rem;
               padding-top: 1.4rem;
@@ -3864,7 +3865,8 @@ i {
               line-height: 1.23;
               letter-spacing: -0.07px;
               color: #1f2f41;
-              border-radius: 2px; }
+              border-radius: 2px;
+              background-color: #FFF; }
               .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:hover, .sidebar-menu-header .dd-new.dropdown-custom-list-item-link:focus {
                 background-color: #efefef; }
               .sidebar-menu-header .dd-new.dropdown-custom-list-item-link i {
@@ -4549,6 +4551,7 @@ i {
           .header-top-right .user-menu .dropdown-custom-list {
             min-width: 26.6rem; }
             .header-top-right .user-menu .dropdown-custom-list-header {
+              height: 8rem;
               padding: 2.1rem 1.7rem;
               display: -webkit-box;
               display: -webkit-flex;
@@ -4563,8 +4566,8 @@ i {
               border-bottom: 1px solid #E6E8EB; }
               .header-top-right .user-menu .dropdown-custom-list-header img {
                 margin-right: 1.2rem;
-                width: 4.1rem;
-                height: 4.1rem;
+                width: 4.5rem;
+                height: 4.5rem;
                 clip-path: circle(48% at 50% 50%);
                 -webkit-clip-path: circle(48% at 50% 50%); }
               .header-top-right .user-menu .dropdown-custom-list-header .initials {
@@ -4572,8 +4575,8 @@ i {
                 align-items: center;
                 justify-content: center;
                 margin-right: 1.2rem;
-                width: 3.8rem;
-                height: 3.8rem;
+                width: 4.5rem;
+                height: 4.5rem;
                 font-size: 1.8rem;
                 border-radius: 50%;
                 text-transform: uppercase;
@@ -4603,18 +4606,18 @@ i {
                 -moz-justify-content: center;
                 justify-content: center; }
                 .header-top-right .user-menu .dropdown-custom-list-header .user-info-name {
-                  margin-bottom: .3rem;
-                  font-size: 1.45rem;
+                  margin-bottom: .5rem;
+                  font-size: 1.38rem;
                   font-weight: 500;
-                  line-height: 1.24;
-                  letter-spacing: -0.11px;
-                  color: #3d464d; }
+                  line-height: 1.16;
+                  letter-spacing: -0.21px;
+                  color: #2d353b; }
                 .header-top-right .user-menu .dropdown-custom-list-header .user-info a, .header-top-right .user-menu .dropdown-custom-list-header .user-info button {
                   margin-left: 0;
-                  font-size: 1.25rem;
+                  font-size: 1.18rem;
                   font-weight: 500;
-                  line-height: 1.2;
-                  letter-spacing: -0.06px;
+                  line-height: 1.19;
+                  letter-spacing: -0.09px;
                   color: #0070e0; }
                   .header-top-right .user-menu .dropdown-custom-list-header .user-info a:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info a:focus, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:hover, .header-top-right .user-menu .dropdown-custom-list-header .user-info button:focus {
                     text-decoration: underline; }
@@ -7023,7 +7026,7 @@ i {
     max-width: 80rem;
     border-top: 1.5px solid #f2f2f2; }
   .teams-settings-general-header {
-    max-width: 72rem;
+    max-width: 100%;
     padding-top: 2.6rem;
     margin-bottom: 1.2rem; }
     .teams-settings-general-header .button {
@@ -7955,7 +7958,6 @@ i {
       .teams-settings-rights-body .table-01:not(:last-of-type) {
         margin-bottom: 3.8rem; }
       .teams-settings-rights-body .table-01 tbody {
-        max-height: 22.4rem !important;
         overflow-y: auto;
         scrollbar-width: none;
         /* Firefox */
@@ -9617,21 +9619,106 @@ i {
       .company-overview-body {
         max-height: calc(100vh - 20rem - 1.5px); } }
     .company-overview-body-charts {
-      margin: 0 -3.5rem;
+      margin: 0 -2rem;
       display: flex;
       align-items: center;
-      flex-wrap: wrap;
       justify-content: flex-start; }
-      @media (max-width: 991px) {
+      @media (max-width: 800px) {
         .company-overview-body-charts {
           flex-direction: column; } }
       .company-overview-body-charts-chart {
-        margin: 0 3.5rem;
+        margin: 0 2rem;
         position: relative;
-        min-width: 37.3rem;
-        width: 37.3rem;
+        min-width: 0;
+        width: 52.33rem;
         margin-bottom: 6rem; }
+        .company-overview-body-charts-chart-top {
+          position: relative;
+          padding: 2.9rem 2.6rem 4.8rem;
+          margin-bottom: 3rem;
+          border-radius: 5px;
+          box-shadow: 0 4px 9px 0 rgba(196, 196, 196, 0.16);
+          border: solid 1px #e6e8eb;
+          background-color: #ffffff; }
+          .company-overview-body-charts-chart-top-header {
+            margin-bottom: 2.2rem; }
+            .company-overview-body-charts-chart-top-header-title {
+              margin-bottom: .8rem;
+              font-size: 1.5rem;
+              font-weight: 600;
+              line-height: 1.27;
+              color: #0f6cbc; }
+              .company-overview-body-charts-chart-top-header-title span {
+                display: inline-block;
+                margin-right: .6rem;
+                width: 10px;
+                height: 10px;
+                background-color: #18aa52;
+                border-radius: 50%; }
+            .company-overview-body-charts-chart-top-header-text {
+              font-size: 1.3rem;
+              font-weight: 500;
+              line-height: 1.23;
+              letter-spacing: -0.13px;
+              color: #9fa1a2; }
+          .company-overview-body-charts-chart-top svg {
+            position: absolute;
+            top: 2.4rem;
+            right: 2.4rem;
+            width: 2.0rem;
+            height: 2.0rem; }
+          .company-overview-body-charts-chart-top-buttons {
+            margin-bottom: 3.6rem; }
+            .company-overview-body-charts-chart-top-buttons .button-gradient {
+              height: 2.2rem;
+              border-radius: 4px;
+              border: solid 1px #d7dbdb;
+              background-image: linear-gradient(to bottom, #ffffff, #f0f0f0);
+              padding: .4rem 1rem;
+              font-size: 1.1rem;
+              font-weight: 600;
+              line-height: 1.27;
+              color: #464c4f;
+              text-transform: uppercase; }
+          .company-overview-body-charts-chart-top-main {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+            .company-overview-body-charts-chart-top-main-item {
+              margin-bottom: 2.5rem;
+              width: 50%; }
+              .company-overview-body-charts-chart-top-main-item-title {
+                margin-bottom: .4rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                line-height: 1.27;
+                color: #464c4f;
+                text-transform: uppercase; }
+              .company-overview-body-charts-chart-top-main-item-amount {
+                font-size: 1.35rem;
+                font-weight: 500;
+                line-height: 1.19;
+                letter-spacing: -0.1px;
+                color: #9fa1a2; }
         .company-overview-body-charts-chart-body {
+          position: relative;
+          padding-bottom: 3rem;
           margin-bottom: 2.2rem;
           border-radius: 5px;
           box-shadow: 0 4px 9px 0 rgba(196, 196, 196, 0.16);
@@ -9658,10 +9745,12 @@ i {
             -webkit-align-items: center;
             -moz-align-items: center;
             align-items: center; }
-            .company-overview-body-charts-chart-body-header .add-circle {
-              width: 2.25rem;
-              height: 2.25rem;
-              align-self: flex-start; }
+            .company-overview-body-charts-chart-body-header svg {
+              position: absolute;
+              top: 2.4rem;
+              right: 2.4rem;
+              width: 2rem;
+              height: 2rem; }
             .company-overview-body-charts-chart-body-header-buttons .options {
               margin-right: 1rem; }
               .company-overview-body-charts-chart-body-header-buttons .options a, .company-overview-body-charts-chart-body-header-buttons .options button {
@@ -9784,19 +9873,6 @@ i {
                 font-weight: 400;
                 color: #6A6D72;
                 line-height: 1.36; }
-          .company-overview-body-charts-chart-body-footer {
-            margin: 1.9rem 2.7rem 0;
-            padding: 2rem;
-            text-align: center;
-            border-top: 1px solid #EEEEEE; }
-            .company-overview-body-charts-chart-body-footer .options-link {
-              font-family: 'Lato', sans-serif;
-              font-size: 1.15rem;
-              font-weight: 400;
-              line-height: 1.83;
-              color: #5a5a74; }
-            .company-overview-body-charts-chart-body-footer .options .divider {
-              margin: 0 .3rem; }
 
 .company-members {
   padding: 2.5rem 0;
@@ -10592,9 +10668,10 @@ i {
         height: 5rem;
         padding-top: .8rem;
         padding-bottom: .8rem;
-        padding-left: 1.3rem; }
-        .company-admin .table-custom-body tr:not(:last-of-type) {
-          border-bottom: 1px solid #e6e8eb; }
+        padding-left: 1.3rem;
+        border-bottom: 0 !important; }
+        .company-admin .table-custom-body tr:not(:first-of-type) {
+          border-top: 1px solid #e6e8eb !important; }
         .company-admin .table-custom-body tr:first-of-type {
           margin-top: .1rem; }
         .company-admin .table-custom-body tr#not-yet {
@@ -11152,6 +11229,7 @@ i {
           letter-spacing: -0.03px;
           color: #526172; }
           .user-settings-teams-body .table-custom-head td.table-custom-col-04 div {
+            color: #647282;
             display: -webkit-box;
             display: -webkit-flex;
             display: -moz-flex;
@@ -11288,7 +11366,6 @@ i {
     position: relative;
     margin-bottom: 2.7rem;
     max-width: 103rem;
-    padding-top: 3.2rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -13910,18 +13987,21 @@ i {
           width: 100%; } }
       .customer-service-input-container .new-dropdown {
         margin-bottom: 4.2rem;
-        font-size: 1.35rem;
-        line-height: 1.19;
-        letter-spacing: -0.14px; }
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.23;
+        letter-spacing: -0.13px;
+        color: #404953; }
         .customer-service-input-container .new-dropdown option {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
           padding-left: 1.3rem; }
   .customer-service label {
     margin-bottom: 1.1rem;
-    font-size: 1.28rem;
+    font-size: 1.18rem;
     font-weight: 500;
-    line-height: 1.18;
-    color: #30383e; }
+    line-height: 1.53;
+    letter-spacing: -0.03px;
+    color: #45484b; }
     .customer-service label.for-textarea {
       margin-bottom: 1.1rem; }
   .customer-service-textarea {
@@ -13934,21 +14014,21 @@ i {
     font-weight: 400;
     line-height: 1.19;
     letter-spacing: -0.14px;
-    color: #404952;
+    text-align: left;
     border-radius: 1px;
     border: solid 1px #cfd7e0;
     background-color: #ffffff; }
     .customer-service-textarea::placeholder {
-      color: #9b9fa3; }
+      color: #A7ABAF; }
   .customer-service .btn-custom-primary {
     padding: .8rem 1.9rem;
     border-radius: 3px;
     background-color: #1273dd;
     border-color: #1273dd;
     height: 3.6rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    line-height: 1.21;
+    line-height: 1.23;
     letter-spacing: -0.07px;
     color: #ffffff; }
 
