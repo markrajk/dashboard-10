@@ -3184,7 +3184,7 @@ i {
     -moz-align-items: center;
     align-items: center; }
     .progress-custom-info h3 {
-      margin-left: -.2rem;
+      margin-left: -.1rem;
       margin-top: 0rem;
       margin-right: 1rem;
       font-size: 2.75rem;
@@ -3431,29 +3431,6 @@ i {
   border: solid 1.5px #eaeaea;
   background-color: #ffffff;
   transition: transform .3s ease-in-out; }
-  .explainer-side {
-    padding: 2.7rem .3rem;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, 0) rotateZ(-180deg);
-    font-size: 1.7rem;
-    font-weight: 500;
-    line-height: 1.29;
-    color: #3d464d;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    text-align: right;
-    height: 100%;
-    border-radius: 2px;
-    box-shadow: 0 3px 10px 0 rgba(190, 190, 190, 0.4);
-    border: solid 1.5px #eaeaea;
-    background-color: #ffffff;
-    cursor: pointer; }
-    .explainer-side svg {
-      margin-top: .5rem;
-      transform: rotateZ(180deg); }
   .explainer-header {
     padding: 0 .9rem 2.1rem;
     display: -webkit-box;
@@ -3472,10 +3449,10 @@ i {
     -moz-justify-content: space-between;
     justify-content: space-between; }
     .explainer-header-title {
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 1.22;
-      letter-spacing: 0.09px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.38;
+      letter-spacing: -0.08px;
       color: #1d1d1d; }
     .explainer-header .icon-close {
       font-size: 1.3rem;
@@ -3513,11 +3490,11 @@ i {
         z-index: 10;
         cursor: pointer; }
         .explainer-main-card-header-title {
-          font-size: 1.5rem;
-          font-weight: 500;
-          line-height: 1.47;
-          letter-spacing: 0.08px;
-          color: #1d1d1d; }
+          font-size: 1.38rem;
+          font-weight: 600;
+          line-height: 1.53;
+          letter-spacing: -0.03px;
+          color: #2a384d; }
         .explainer-main-card-header .icon-chevron-left {
           transform: rotateZ(-90deg);
           font-size: 1.4rem;
@@ -3537,14 +3514,16 @@ i {
         .explainer-main-card-body-text {
           padding-top: 1rem;
           padding-bottom: 1.5rem;
-          font-size: 1.5rem;
+          font-size: 1.28rem;
           font-weight: 400;
-          line-height: 1.47;
-          color: #5a5a5a; }
+          line-height: 1.57;
+          letter-spacing: -0.06px;
+          color: #282f4d; }
         .explainer-main-card-body-buttons {
-          padding-bottom: .4rem;
-          font-size: 1.5rem;
-          line-height: 1.47;
+          font-size: 1.3rem;
+          font-weight: 500;
+          line-height: 1.69;
+          letter-spacing: 0.03px;
           color: #ffffff; }
           .explainer-main-card-body-buttons-blue {
             margin-right: 1.1rem;
@@ -4281,9 +4260,30 @@ i {
           .header-top-right .settings-menu .dropdown-custom-trigger svg, .header-top-right .help-menu .dropdown-custom-trigger svg {
             width: 2.19rem;
             height: 2.19rem; }
-      .header-top-right .help-menu .dropdown-custom {
-        padding: 0 !important; }
-        .header-top-right .help-menu .dropdown-custom-trigger svg {
+      .header-top-right .help-menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        -moz-justify-content: center;
+        justify-content: center;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50%;
+        border: 2.5px solid transparent; }
+        .header-top-right .help-menu:focus, .header-top-right .help-menu:active {
+          border: 2.5px solid #A6BDEB;
+          box-shadow: none; }
+        .header-top-right .help-menu svg {
           width: 2.062rem;
           height: 2.131rem; }
       .header-top-right .settings-menu .dropdown-custom-list {
@@ -6547,7 +6547,6 @@ i {
     min-width: 24.4rem;
     z-index: 400; }
     .teams-people-view .dd-new.dropdown-custom-list-item {
-      height: 4.1rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -6559,6 +6558,7 @@ i {
       -moz-align-items: center;
       align-items: center; }
       .teams-people-view .dd-new.dropdown-custom-list-item-link {
+        height: 4.1rem;
         padding-left: 1.4rem;
         padding-top: 1.4rem;
         padding-right: 1.4rem;
@@ -7222,13 +7222,13 @@ i {
       letter-spacing: -0.1px;
       color: #ffffff; }
     .teams-settings-question-body .no-data-main {
-      max-width: 43rem; }
+      max-width: 42rem; }
       .teams-settings-question-body .no-data-main svg {
         width: 2.47rem;
         height: 3.6rem;
         margin-bottom: 2.7rem; }
       .teams-settings-question-body .no-data-main-title {
-        margin-bottom: 1.3rem !important;
+        margin-bottom: 1.1rem !important;
         font-size: 1.5rem;
         font-weight: 600;
         line-height: 1.27;

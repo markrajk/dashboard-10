@@ -278,32 +278,21 @@
                             </ul>
                         </div>
 
-                        <div class="dropdown-custom help-menu">
-                            <a href="#" class="dropdown-custom-trigger" tabindex="0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.622 21.31">
-                                    <g transform="translate(-1289 -51.5)">
-                                        <g transform="translate(1289 52)" fill="#fff" stroke="#647282"
-                                            stroke-width="1.35">
-                                            <ellipse cx="10.311" cy="10.405" rx="10.311" ry="10.405" stroke="none" />
-                                            <ellipse cx="10.311" cy="10.405" rx="9.636" ry="9.73" fill="none" />
-                                        </g><text transform="translate(1299 67.5)" fill="#647282" stroke="rgba(0,0,0,0)"
-                                            stroke-width="1" font-size="14.25" font-family="Roboto-Bold, Roboto"
-                                            font-weight="700" letter-spacing="-0.005em">
-                                            <tspan x="-3.545" y="0">?</tspan>
-                                        </text>
-                                    </g>
-                                </svg>
-                            </a>
-
-                            <ul class="dropdown-custom-list">
-                                <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Option I</a>
-                                </li>
-                                <li class="dropdown-custom-list-item">
-                                    <a href="#" class="dropdown-custom-list-item-link">Option II</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <button class="dropdown-custom-trigger help-menu explainer-toggle" tabindex="0"
+                            onclick="this.focus()">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.622 21.31">
+                                <g transform="translate(-1289 -51.5)">
+                                    <g transform="translate(1289 52)" fill="#fff" stroke="#647282" stroke-width="1.35">
+                                        <ellipse cx="10.311" cy="10.405" rx="10.311" ry="10.405" stroke="none" />
+                                        <ellipse cx="10.311" cy="10.405" rx="9.636" ry="9.73" fill="none" />
+                                    </g><text transform="translate(1299 67.5)" fill="#647282" stroke="rgba(0,0,0,0)"
+                                        stroke-width="1" font-size="14.25" font-family="Roboto-Bold, Roboto"
+                                        font-weight="700" letter-spacing="-0.005em">
+                                        <tspan x="-3.545" y="0">?</tspan>
+                                    </text>
+                                </g>
+                            </svg>
+                        </button>
 
                         <div class="dropdown-custom notification-menu">
                             <a href="#" class="dropdown-custom-trigger" tabindex="0">
@@ -1174,6 +1163,68 @@
         </div>
     </div>
 
+    <div class="explainer closed">
+        <!-- <div class="explainer-side explainer-toggle">
+            Get started
+            <svg xmlns="http://www.w3.org/2000/svg" width="14.678" height="15" viewBox="0 0 14.678 15">
+                <g transform="translate(-1421.75 -128)">
+                    <path
+                        d="M6.568,13.043,6,13.609a.61.61,0,0,1-.865,0L.176,8.652a.61.61,0,0,1,0-.865l4.96-4.96a.61.61,0,0,1,.865,0l.566.566a.613.613,0,0,1-.01.875L3.483,7.2h7.333a.611.611,0,0,1,.612.612v.816a.611.611,0,0,1-.612.612H3.483l3.074,2.929A.609.609,0,0,1,6.568,13.043Z"
+                        transform="translate(1425 127.782)" fill="#3d464d" />
+                    <line y2="15" transform="translate(1422.5 128)" fill="none" stroke="#3d464d" stroke-width="1.5" />
+                </g>
+            </svg>
+        </div> -->
+        <div class="explainer-header">
+            <h3 class="explainer-header-title">Let's get started</h3>
+            <i class="icon-close explainer-toggle"></i>
+        </div>
+        <div class="explainer-main accordion" id="accordionExample">
+            <div class="explainer-main-card">
+                <div class="explainer-main-card-header" id="headingOne" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4 class="explainer-main-card-header-title">Let us create your <br> first team</h4>
+                    <i class="icon-chevron-left explainer-main-card-toggle"></i>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="explainer-main-card-body">
+                        <img src="../public/img/explainer-img.png" alt="Explain image"
+                            class="explainer-main-card-body-img">
+                        <p class="explainer-main-card-body-text">
+                            Just click on the team symbol and then on the little blue button at the top of the side bar.
+                        </p>
+                        <div class="explainer-main-card-body-buttons">
+                            <button class="explainer-main-card-body-buttons-blue">Create team</button>
+                            <button class="explainer-main-card-body-buttons-link">Skip</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="explainer-main-card">
+                <div class="explainer-main-card-header" id="headingTwo" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h4 class="explainer-main-card-header-title">Let us create your <br> first team</h4>
+                    <i class="icon-chevron-left explainer-main-card-toggle"></i>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="explainer-main-card-body">
+                        <img src="../public/img/explainer-img.png" alt="Explain image"
+                            class="explainer-main-card-body-img">
+                        <p class="explainer-main-card-body-text">
+                            Just click on the team symbol and then on the little blue button at the top of the side bar.
+                        </p>
+                        <div class="explainer-main-card-body-buttons">
+                            <button class="explainer-main-card-body-buttons-blue">Create team</button>
+                            <button class="explainer-main-card-body-buttons-link">Skip</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="../public/js/jquery-3.4.1.min.js"></script>
     <script src="../public/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
@@ -1418,6 +1469,16 @@
                 document.querySelector(e.getAttribute('target-section')).classList.toggle('closed')
             })
         })
+
+        //ACTIVATE EXPLAINER
+        let explainer = document.querySelector('.explainer');
+        let explainerToggles = document.querySelectorAll('.explainer-toggle');
+
+        for (let i = 0; i < explainerToggles.length; i++) {
+            explainerToggles[i].addEventListener('click', function (e) {
+                explainer.classList.toggle('closed');
+            })
+        }
     </script>
 
 </body>
