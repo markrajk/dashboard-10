@@ -9609,11 +9609,11 @@ i {
     top: 0;
     left: 0;
     z-index: 10;
-    max-width: 100%;
+    max-width: 121rem;
     border-top: 1.5px solid #f2f2f2; }
   .company-overview-body {
     padding-top: 4rem;
-    max-width: 100%;
+    max-width: 121rem;
     max-height: calc(100vh - 17.3rem - 1.5px); }
     @media (max-width: 575px) {
       .company-overview-body {
@@ -9670,6 +9670,8 @@ i {
           .company-overview-body-charts-chart-top-buttons {
             margin-bottom: 3.6rem; }
             .company-overview-body-charts-chart-top-buttons .button-gradient {
+              min-width: 0;
+              margin-right: 1.4rem;
               height: 2.2rem;
               border-radius: 4px;
               border: solid 1px #d7dbdb;
@@ -9680,6 +9682,8 @@ i {
               line-height: 1.27;
               color: #464c4f;
               text-transform: uppercase; }
+              .company-overview-body-charts-chart-top-buttons .button-gradient.disabled {
+                color: #C6C7C8; }
           .company-overview-body-charts-chart-top-main {
             display: -webkit-box;
             display: -webkit-flex;
