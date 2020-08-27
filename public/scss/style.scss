@@ -14816,6 +14816,7 @@ i {
     max-height: calc(100vh - 30rem);
 
     & .dd-new.dropdown-custom {
+      display: none;
 
       &-trigger {
         padding: 0!important;

@@ -11055,38 +11055,25 @@ i {
         color: #647282; }
   .user-settings-teams-body {
     max-height: calc(100vh - 30rem); }
-    .user-settings-teams-body .dd-new.dropdown-custom-trigger {
-      padding: 0 !important;
-      outline: none !important;
-      border: none !important;
-      box-shadow: none !important; }
-      .user-settings-teams-body .dd-new.dropdown-custom-trigger.top + .dropdown-custom-list {
-        bottom: 0;
-        transform: translate(-100%, 0); }
-    .user-settings-teams-body .dd-new.dropdown-custom-list {
-      left: 0;
-      bottom: 100%;
-      transform: translate(-100%, 100%);
-      padding: .7rem;
-      min-width: 24.4rem;
-      z-index: 400; }
-      .user-settings-teams-body .dd-new.dropdown-custom-list-item {
-        height: 4.1rem;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        align-items: center; }
-        .user-settings-teams-body .dd-new.dropdown-custom-list-item-link {
-          padding-left: 1.4rem;
-          padding-top: 1.4rem;
-          padding-right: 1.4rem;
-          padding-bottom: 1.2rem;
+    .user-settings-teams-body .dd-new.dropdown-custom {
+      display: none; }
+      .user-settings-teams-body .dd-new.dropdown-custom-trigger {
+        padding: 0 !important;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important; }
+        .user-settings-teams-body .dd-new.dropdown-custom-trigger.top + .dropdown-custom-list {
+          bottom: 0;
+          transform: translate(-100%, 0); }
+      .user-settings-teams-body .dd-new.dropdown-custom-list {
+        left: 0;
+        bottom: 100%;
+        transform: translate(-100%, 100%);
+        padding: .7rem;
+        min-width: 24.4rem;
+        z-index: 400; }
+        .user-settings-teams-body .dd-new.dropdown-custom-list-item {
+          height: 4.1rem;
           display: -webkit-box;
           display: -webkit-flex;
           display: -moz-flex;
@@ -11096,24 +11083,39 @@ i {
           -ms-flex-align: center;
           -webkit-align-items: center;
           -moz-align-items: center;
-          align-items: center;
-          font-size: 1.3rem;
-          font-weight: 400;
-          line-height: 1.23;
-          letter-spacing: -0.07px;
-          color: #1f2f41;
-          border-radius: 2px; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:hover, .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:focus {
-            background-color: #efefef; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link i {
-            color: #5E6E7E;
-            font-size: 1.6rem;
-            margin-right: 1.4rem; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
-            margin-right: 0;
-            margin-left: auto;
-            font-size: 1rem;
-            color: #94a4b5; }
+          align-items: center; }
+          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link {
+            padding-left: 1.4rem;
+            padding-top: 1.4rem;
+            padding-right: 1.4rem;
+            padding-bottom: 1.2rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            align-items: center;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.23;
+            letter-spacing: -0.07px;
+            color: #1f2f41;
+            border-radius: 2px; }
+            .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:hover, .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:focus {
+              background-color: #efefef; }
+            .user-settings-teams-body .dd-new.dropdown-custom-list-item-link i {
+              color: #5E6E7E;
+              font-size: 1.6rem;
+              margin-right: 1.4rem; }
+            .user-settings-teams-body .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
+              margin-right: 0;
+              margin-left: auto;
+              font-size: 1rem;
+              color: #94a4b5; }
     .user-settings-teams-body .table-wrapper {
       height: calc(100vh - 33.9rem - 1.5px - 3.2rem);
       overflow-y: auto;
