@@ -232,8 +232,8 @@ svg {
 
 @font-face {
   font-family: 'dashboard-icons';
-  src: url("../fonts/dashboard-icons.eot?pbs3li");
-  src: url("../fonts/dashboard-icons.eot?pbs3li#iefix") format("embedded-opentype"), url("../fonts/dashboard-icons.ttf?pbs3li") format("truetype"), url("../fonts/dashboard-icons.woff?pbs3li") format("woff"), url("../fonts/dashboard-icons.svg?pbs3li#dashboard-icons") format("svg");
+  src: url("../fonts/dashboard-icons.eot?mxnuu5");
+  src: url("../fonts/dashboard-icons.eot?mxnuu5#iefix") format("embedded-opentype"), url("../fonts/dashboard-icons.ttf?mxnuu5") format("truetype"), url("../fonts/dashboard-icons.woff?mxnuu5") format("woff"), url("../fonts/dashboard-icons.svg?mxnuu5#dashboard-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -249,6 +249,12 @@ i {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-door:before {
+  content: "\e915"; }
+
+.icon-transfer:before {
+  content: "\e916"; }
 
 .icon-circle-plus:before {
   content: "\e900"; }
@@ -11100,25 +11106,9 @@ i {
           .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:hover, .user-settings-teams-body .dd-new.dropdown-custom-list-item-link:focus {
             background-color: #efefef; }
           .user-settings-teams-body .dd-new.dropdown-custom-list-item-link i {
-            color: #798796;
+            color: #5E6E7E;
             font-size: 1.6rem;
             margin-right: 1.4rem; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.open-team {
-            margin-right: 1.4rem;
-            width: 2.2622rem;
-            height: 1.5835rem; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.quit-team {
-            margin-right: 1.4rem;
-            width: 2.1216rem;
-            height: 1.6973rem; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.delete-team {
-            margin-right: 1.4rem;
-            width: 1.3rem;
-            height: 1.6rem; }
-          .user-settings-teams-body .dd-new.dropdown-custom-list-item-link svg.transfer-team {
-            margin-right: 1.4rem;
-            width: 1.4539rem;
-            height: 1.2722rem; }
           .user-settings-teams-body .dd-new.dropdown-custom-list-item-link .icon-chevron-right {
             margin-right: 0;
             margin-left: auto;
