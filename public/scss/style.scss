@@ -2649,6 +2649,7 @@ i {
     background-color: #f7f9fa;
 
     & .button {
+      height: 3.4rem;
       padding: .5rem 2.2rem;
       font-size: 1.4rem;
       line-height: 1.21;
@@ -12780,9 +12781,9 @@ i {
           border-bottom: 1px solid #e6e8eb;
         }
 
-        &:first-of-type {
-          margin-top: .1rem;
-        }
+        // &:first-of-type {
+        //   margin-top: .1rem;
+        // }
 
         &#not-yet {
           border-left: 1.25px solid #F2F2F2 !important;
@@ -13794,9 +13795,9 @@ i {
             color: #9facba;
           }
 
-          &:focus {
-            border-color: #9FACBA!important;
-          }
+          // &:focus {
+          //   border-color: #9FACBA!important;
+          // }
         }
 
         & i {
@@ -13997,9 +13998,13 @@ i {
           border-top: 1px solid #e6e8eb!important;
         }
 
-        &:first-of-type {
-          margin-top: .1rem;
-        }
+      //   &:not(:last-of-type) {
+      //     border-bottom: 0!important;
+      // }
+
+        // &:first-of-type {
+        //   margin-top: .1rem;
+        // }
 
         &#not-yet {
           border-left: 1.25px solid #F2F2F2 !important;

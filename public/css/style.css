@@ -1756,6 +1756,7 @@ i {
   padding: 1.7rem;
   background-color: #f7f9fa; }
   #inviteEmployeesModal .footer .button {
+    height: 3.4rem;
     padding: .5rem 2.2rem;
     font-size: 1.4rem;
     line-height: 1.21;
@@ -10121,8 +10122,6 @@ i {
         padding-left: 1.3rem; }
         .company-members .table-custom-body tr:not(:last-of-type) {
           border-bottom: 1px solid #e6e8eb; }
-        .company-members .table-custom-body tr:first-of-type {
-          margin-top: .1rem; }
         .company-members .table-custom-body tr#not-yet {
           border-left: 1.25px solid #F2F2F2 !important;
           border-right: 1.25px solid #F2F2F2 !important; }
@@ -10511,8 +10510,6 @@ i {
           background-color: transparent; }
           .company-admin-header .input-group-custom .input-container input::placeholder {
             color: #9facba; }
-          .company-admin-header .input-group-custom .input-container input:focus {
-            border-color: #9FACBA !important; }
         .company-admin-header .input-group-custom .input-container i {
           position: absolute;
           top: 50%;
@@ -10676,8 +10673,6 @@ i {
         border-bottom: 0 !important; }
         .company-admin .table-custom-body tr:not(:first-of-type) {
           border-top: 1px solid #e6e8eb !important; }
-        .company-admin .table-custom-body tr:first-of-type {
-          margin-top: .1rem; }
         .company-admin .table-custom-body tr#not-yet {
           border-left: 1.25px solid #F2F2F2 !important;
           border-right: 1.25px solid #F2F2F2 !important; }
