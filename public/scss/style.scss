@@ -5168,9 +5168,9 @@ i {
 
             &-link {
               padding-left: 1rem;
-              //padding-top: 1.4rem;
+              padding-top: 0;
               padding-right: 1.7rem;
-              //padding-bottom: 1.2rem;
+              padding-bottom: 0;
               @include flexbox();
               @include align-items(center);
               font-size: 1.3rem;
