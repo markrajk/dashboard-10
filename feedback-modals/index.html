@@ -41,6 +41,14 @@
     Delete team
   </button>
 
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteTeamConfirm">
+    Confirm delete team
+  </button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteAccountConfirm">
+    Confirm delete account
+  </button>
+
   <!-- TEAM FEEDBACK -->
   <div class="modal fade modal-custom" id="teamFeedbackModal" tabindex="-1" role="dialog"
     aria-labelledby="teamFeedbackModal" aria-hidden="true">
@@ -203,20 +211,16 @@
             </div>
           </div>
 
-          <div class="feedback-success">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130">
-              <g transform="translate(-656 -417)">
-                <g transform="translate(656 417)" fill="none" stroke="#57cb29" stroke-width="5">
-                  <circle cx="65" cy="65" r="65" stroke="none" />
-                  <circle cx="65" cy="65" r="62.5" fill="none" />
-                </g>
-                <path d="M17780.848,7906.437l-33.137,32.151-14.869-14.511" transform="translate(-17035 -7440)"
-                  fill="none" stroke="#57cb29" stroke-linecap="round" stroke-width="6" />
-              </g>
-            </svg>
-            <p class="feedback-success-text">Feedback sent successfully.</p>
-          </div>
 
+
+        </div>
+
+        <div class="feedback-success">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.379 156.379">
+            <path
+              d="M156.941,78.752A78.189,78.189,0,1,1,78.752.563,78.189,78.189,0,0,1,156.941,78.752Zm-87.234,41.4,58.012-58.012a5.045,5.045,0,0,0,0-7.134l-7.134-7.134a5.044,5.044,0,0,0-7.134,0L66.141,95.184,44.053,73.1a5.045,5.045,0,0,0-7.134,0l-7.134,7.134a5.045,5.045,0,0,0,0,7.134l32.789,32.789a5.045,5.045,0,0,0,7.134,0Z"
+              transform="translate(-0.563 -0.563)" fill="#0cd332" /></svg>
+          <p class="feedback-success-text">Feedback sent successfully.</p>
         </div>
 
         <div class="modal-footer">
@@ -495,6 +499,52 @@
           <div class="buttons">
             <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
             <button class="button button-primary">Yes, delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DELETE ACCOUNT CONFIRMATION -->
+  <div class="modal fade modal-custom" id="deleteAccountConfirm" tabindex="-1" role="dialog"
+    aria-labelledby="delAccountConfirm" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="title">Confirmation</h2>
+          <p class="text">Are you sure you want to
+            delete your account?</p>
+          <div class="buttons">
+            <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+            <button class="button button-primary">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DELETE TEAM CONFIRMATION -->
+  <div class="modal fade modal-custom" id="deleteTeamConfirm" tabindex="-1" role="dialog"
+    aria-labelledby="delTeamConfirm" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="title">Confirmation</h2>
+          <p class="text">Are you sure you want to delete this team?
+            This action can not be restored.</p>
+          <div class="buttons">
+            <button class="button button-outlined" data-dismiss="modal" aria-label="Close">Cancel</button>
+            <button class="button button-primary">Update</button>
           </div>
         </div>
       </div>
