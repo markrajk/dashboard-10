@@ -3926,7 +3926,9 @@ i {
             background-color: #FFF; }
             .sidebar-menu-header .dd-new.dropdown-custom-list-item-link {
               padding-left: 1rem;
+              padding-top: 0;
               padding-right: 1.7rem;
+              padding-bottom: 0;
               display: -webkit-box;
               display: -webkit-flex;
               display: -moz-flex;
