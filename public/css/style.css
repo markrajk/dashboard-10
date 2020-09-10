@@ -16624,7 +16624,8 @@ i {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   border-radius: 2px;
-  border: solid 1.5px #e3e3e3; }
+  border: solid 1.5px #e3e3e3;
+  background-color: #FFF; }
   .value-box::before {
     content: '';
     position: absolute;
@@ -16696,6 +16697,59 @@ i {
       font-weight: 500;
       letter-spacing: -0.21px;
       color: #19232e; }
+
+.line-chart {
+  padding-left: 4.6rem;
+  padding-right: 6.8rem;
+  position: relative;
+  width: 100%; }
+
+.line-chart-legend {
+  margin: 2.4rem 3.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  height: 44px;
+  border-radius: 1.5px;
+  border: solid 0.5px #a3a3a3; }
+  .line-chart-legend-item {
+    margin-right: 3rem;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    .line-chart-legend-item-color {
+      margin-right: .85rem;
+      width: 2.5rem;
+      height: 3px; }
+    .line-chart-legend-item-name {
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: -0.18px;
+      color: #16222f; }
 
 .guide {
   position: absolute;
