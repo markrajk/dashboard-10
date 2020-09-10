@@ -21565,6 +21565,7 @@ li {
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
   grid-gap: 2.5em 2.5em;
+  
   //display: flex;
 
   .widget {
@@ -21576,6 +21577,7 @@ li {
     border: solid 1px #eaeaea;
     height: 100%;
     height: 47.2em;
+    background-color: #FCFCFC;
 
     &-header {
       position: relative;
@@ -21988,7 +21990,8 @@ min-width: 0;
 .value-box {
   margin: 0 auto;
   position: relative;
-  width: 90%;
+  min-width: 0;
+  width: 80%;
   max-width: 52em;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -22017,7 +22020,8 @@ min-width: 0;
   }
 
   &-item {
-    padding: 3.2em 1.5em;
+    padding: 2.8em 1.5em;
+    padding-top: 2.2em;
     @include flexbox();
     @include flex-direction(column);
     @include align-items(center);
@@ -22025,7 +22029,7 @@ min-width: 0;
 
     &-title {
       position: relative;
-      margin-bottom: emcalc(1.5,4.7);
+      margin-bottom: emcalc(1,4.7);
       font-size: 4.7em;
       font-weight: 700;
       letter-spacing: -0.71px;
@@ -22052,10 +22056,9 @@ min-width: 0;
     }
 
     &-info {
-      margin-bottom: emcalc(.6,1.28);
+      margin-bottom: emcalc(.4,1.28);
       font-size: 1.28em;
       font-weight: 400;
-      line-height: 0.71;
       letter-spacing: -0.19px;
       color: #19232e;
     }
@@ -22063,7 +22066,6 @@ min-width: 0;
     &-name {
       font-size: 1.38em;
       font-weight: 500;
-      line-height: 0.65;
       letter-spacing: -0.21px;
       color: #19232e;
     }

@@ -16229,7 +16229,8 @@ i {
     box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
     border: solid 1px #eaeaea;
     height: 100%;
-    height: 47.2em; }
+    height: 47.2em;
+    background-color: #FCFCFC; }
     .widgets .widget-header {
       position: relative;
       padding: 2.7em;
@@ -16616,7 +16617,8 @@ i {
 .value-box {
   margin: 0 auto;
   position: relative;
-  width: 90%;
+  min-width: 0;
+  width: 80%;
   max-width: 52em;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -16640,7 +16642,8 @@ i {
     height: 100%;
     border-right: 1.5px solid #E3E3E3; }
   .value-box-item {
-    padding: 3.2em 1.5em;
+    padding: 2.8em 1.5em;
+    padding-top: 2.2em;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -16664,7 +16667,7 @@ i {
     justify-content: center; }
     .value-box-item-title {
       position: relative;
-      margin-bottom: 0.3191489362em;
+      margin-bottom: 0.2127659574em;
       font-size: 4.7em;
       font-weight: 700;
       letter-spacing: -0.71px;
@@ -16683,16 +16686,14 @@ i {
           fill: #ff9d00;
           transform: rotateZ(180deg) translate(-120%, -50%); }
     .value-box-item-info {
-      margin-bottom: 0.46875em;
+      margin-bottom: 0.3125em;
       font-size: 1.28em;
       font-weight: 400;
-      line-height: 0.71;
       letter-spacing: -0.19px;
       color: #19232e; }
     .value-box-item-name {
       font-size: 1.38em;
       font-weight: 500;
-      line-height: 0.65;
       letter-spacing: -0.21px;
       color: #19232e; }
 
