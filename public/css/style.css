@@ -16274,12 +16274,11 @@ i {
   height: 100%;
   display: grid;
   grid-template-areas: "a b" "c d";
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 3em;
   grid-template-columns: 14em 1fr; }
   .chart-area {
     position: relative;
-    border-left: 1px solid #43546A;
-    border-bottom: 1px solid #43546A; }
+    border-left: 1px solid #43546A; }
     .chart-area-graph {
       position: relative;
       width: 100%;
@@ -16339,6 +16338,9 @@ i {
       height: 100%;
       z-index: 0; }
       .chart-area-back-v {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         display: -webkit-box;
@@ -16361,10 +16363,37 @@ i {
         -ms-flex-pack: justify;
         -webkit-justify-content: space-between;
         -moz-justify-content: space-between;
-        justify-content: space-between; }
+        justify-content: space-between;
+        display: none; }
         .chart-area-back-v-line {
-          width: 100%;
-          border-top: .25px solid #e3e3e3; }
+          width: 100%; }
+          .chart-area-back-v-line:not(:last-of-type) {
+            border-top: .25px solid #e3e3e3; }
+      .chart-area-back-h {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        justify-content: space-between; }
+        .chart-area-back-h-line {
+          height: 100%; }
+          .chart-area-back-h-line:not(:first-of-type) {
+            border-right: .25px solid #e3e3e3; }
   .chart-v-axis, .chart-h-axis {
     z-index: 200;
     white-space: nowrap;
@@ -16402,6 +16431,8 @@ i {
         color: #16222f;
         white-space: nowrap; }
   .chart-h-axis {
+    margin-left: -2.5em;
+    margin-right: -2.5em;
     grid-area: d;
     display: flex;
     align-items: flex-end;
