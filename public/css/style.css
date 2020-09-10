@@ -16492,9 +16492,10 @@ i {
         justify-content: center;
         width: 4.4em;
         width: 7.9%;
+        min-width: 3.1em;
         height: 80%; }
         .chart-column-area-graph-item:not(:last-of-type) {
-          margin-right: 4.13%; }
+          margin-right: 4.5%; }
         .chart-column-area-graph-item-text {
           margin-top: .6em;
           font-size: 1.2em;
@@ -16605,11 +16606,95 @@ i {
     .chart-column-h-axis-item {
       width: 4.4em;
       width: 7.9%;
+      min-width: 3.1em;
       text-align: center; }
       .chart-column-h-axis-item:not(:last-of-type) {
         margin-right: 4.13%; }
       .chart-column-h-axis-item-label {
         white-space: nowrap; }
+
+.value-box {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  max-width: 52em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2px;
+  border: solid 1.5px #e3e3e3; }
+  .value-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    border-top: 1.5px solid #E3E3E3; }
+  .value-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    border-right: 1.5px solid #E3E3E3; }
+  .value-box-item {
+    padding: 3.2em 1.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+    .value-box-item-title {
+      position: relative;
+      margin-bottom: 0.3191489362em;
+      font-size: 4.7em;
+      font-weight: 700;
+      letter-spacing: -0.71px;
+      color: #19232e; }
+      .value-box-item-title-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(120%, 50%);
+        margin-left: .4rem;
+        width: 1.5rem;
+        height: 1.5394rem; }
+        .value-box-item-title-arrow.good {
+          fill: #32ba12; }
+        .value-box-item-title-arrow.bad {
+          fill: #ff9d00;
+          transform: rotateZ(180deg) translate(-120%, -50%); }
+    .value-box-item-info {
+      margin-bottom: 0.46875em;
+      font-size: 1.28em;
+      font-weight: 400;
+      line-height: 0.71;
+      letter-spacing: -0.19px;
+      color: #19232e; }
+    .value-box-item-name {
+      font-size: 1.38em;
+      font-weight: 500;
+      line-height: 0.65;
+      letter-spacing: -0.21px;
+      color: #19232e; }
 
 .guide {
   position: absolute;

@@ -21847,10 +21847,11 @@ min-width: 0;
         @include justify-content(center);
         width: 4.4em;
         width: 7.9%;
+        min-width: 3.1em;
         height: 80%;
 
         &:not(:last-of-type) {
-          margin-right: 4.13%;
+          margin-right: 4.5%;
         }
   
         &-text {
@@ -21970,6 +21971,7 @@ min-width: 0;
      &-item {
       width: 4.4em;
       width: 7.9%;
+      min-width: 3.1em;
       text-align: center;
   
         &:not(:last-of-type) {
@@ -21982,6 +21984,91 @@ min-width: 0;
      }
   }
   }
+// VALUE BOX
+.value-box {
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  max-width: 52em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2px;
+  border: solid 1.5px #e3e3e3;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    border-top: 1.5px solid #E3E3E3;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    border-right: 1.5px solid #E3E3E3;
+  }
+
+  &-item {
+    padding: 3.2em 1.5em;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+
+    &-title {
+      position: relative;
+      margin-bottom: emcalc(1.5,4.7);
+      font-size: 4.7em;
+      font-weight: 700;
+      letter-spacing: -0.71px;
+      color: #19232e;
+
+      &-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(120%, 50%);
+        margin-left: .4rem;
+        width: 1.5rem;
+        height: 1.5394rem;
+
+        &.good {
+          fill: #32ba12;
+        }
+
+        &.bad {
+          fill: #ff9d00;
+          transform: rotateZ(180deg) translate(-120%, -50%);
+        }
+      }
+    }
+
+    &-info {
+      margin-bottom: emcalc(.6,1.28);
+      font-size: 1.28em;
+      font-weight: 400;
+      line-height: 0.71;
+      letter-spacing: -0.19px;
+      color: #19232e;
+    }
+
+    &-name {
+      font-size: 1.38em;
+      font-weight: 500;
+      line-height: 0.65;
+      letter-spacing: -0.21px;
+      color: #19232e;
+    }
+  }
+}
 
 //GUIDE
 .guide {
