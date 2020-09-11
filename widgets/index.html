@@ -2974,17 +2974,26 @@
 
 
         window.addEventListener('resize', function () {
-            const widgets = document.querySelectorAll('.widget');
             const legends = document.querySelectorAll('.chart-legend');
+            const columnCharts = document.querySelectorAll('.chart-column'); //472
+
+            columnCharts.forEach(e => {
+                if (e.clientWidth <= 472) {
+                    console.log('TEST PASS')
+                    e.classList.add('small')
+                } else {
+                    console.log('TEST FAIL')
+                    e.classList.remove('small')
+                }
+            })
 
             legends.forEach(e => {
-                console.log(e.querySelectorAll('.chart-legend-placeholder'))
+                let legendPlaceholder = e.querySelector('.chart-legend-placeholder');
                 if (e.offsetWidth < 400) {
-                    e.querySelector('.chart-legend-placeholder').classList.remove('close')
+                    legendPlaceholder.classList.remove('close')
                 } else {
-                    e.querySelector('.chart-legend-placeholder').classList.add('close')
+                    legendPlaceholder.classList.add('close')
                 }
-
 
                 if (bottomBound(e.parentElement, e)) {
                     e.style.visibility = 'hidden'
@@ -2994,10 +3003,6 @@
                     e.style.opacity = '1'
                 }
             })
-            // console.log(document.querySelector('.test-bounds').getBoundingClientRect().bottom, 'PARENT')
-            // console.log(document.querySelector('.test-bounds .chart-legend').getBoundingClientRect().bottom -
-            //     20,
-            //     'LEGEND')
         })
     </script>
 </body>

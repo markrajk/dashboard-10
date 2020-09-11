@@ -21985,6 +21985,19 @@ min-width: 0;
         }
      }
   }
+
+  &.small {
+
+    & .chart-column-area {
+      &-graph {
+        @include justify-content(space-around);
+      }
+    }
+
+    & .chart-column-h-axis {
+      @include justify-content(space-around);
+    }
+  }
   }
 // VALUE BOX
 .value-box {

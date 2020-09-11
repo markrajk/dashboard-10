@@ -16613,6 +16613,16 @@ i {
         margin-right: 4.13%; }
       .chart-column-h-axis-item-label {
         white-space: nowrap; }
+  .chart-column.small .chart-column-area-graph {
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around; }
+  .chart-column.small .chart-column-h-axis {
+    -ms-flex-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    justify-content: space-around; }
 
 .value-box {
   margin: 0 auto;
