@@ -2972,8 +2972,7 @@
 
         //var bound = bottomBound(document.getElementById("parent"), document.getElementById("some_paragraph"));
 
-
-        window.addEventListener('resize', function () {
+        function widgetsOnResize() {
             const legends = document.querySelectorAll('.chart-legend');
             const columnCharts = document.querySelectorAll('.chart-column'); //472
 
@@ -3003,7 +3002,9 @@
                     e.style.opacity = '1'
                 }
             })
-        })
+        }
+        window.addEventListener('resize', widgetsOnResize)
+        widgetsOnResize()
     </script>
 </body>
 
