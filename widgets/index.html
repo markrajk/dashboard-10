@@ -1810,9 +1810,9 @@
                             <div class="line-chart-wrapper">
                                 <div class="line-chart">
                                     <canvas class="line-chart-canvas" id="chart-01"></canvas>
-
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -1902,6 +1902,7 @@
                                         style="width:100%;height:100%;"></canvas>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -1985,6 +1986,7 @@
                                         style="width:100%;height:100%;"></canvas>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -2073,6 +2075,7 @@
                                         style="width:100%;height:100%;"></canvas>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -2156,6 +2159,7 @@
                                         style="width:100%;height:100%;"></canvas>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -2242,6 +2246,7 @@
                                     <div id="piechart01" style="width:auto; height: 100%;"></div>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -2324,6 +2329,7 @@
                                     <div id="piechart02" style="width:auto; height: 100%;"></div>
                                 </div>
                                 <div class="chart-legend">
+                                    <div class="chart-legend-placeholder close">Hower lines to see what is what</div>
                                     <div class="chart-legend-item">
                                         <span class="chart-legend-item-color" style="background-color: #07487F;"></span>
                                         <span class="chart-legend-item-name">Attitude</span>
@@ -2475,6 +2481,11 @@
                         .join('');
                 },
                 maintainAspectRatio: false,
+                plugins: {
+                    datalabels: {
+                        display: false,
+                    }
+                },
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -2510,6 +2521,7 @@
                     }, ],
                     xAxes: [{
                         ticks: {
+                            maxRotation: 0,
                             fontColor: '#16222f',
                             fontFamily: '"Inter", sans-serif',
                             fontSize: 12,
@@ -2593,6 +2605,11 @@
                         .join('');
                 },
                 maintainAspectRatio: false,
+                plugins: {
+                    datalabels: {
+                        display: false,
+                    }
+                },
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -2628,6 +2645,7 @@
                     }, ],
                     xAxes: [{
                         ticks: {
+                            maxRotation: 0,
                             fontColor: '#16222f',
                             fontFamily: '"Inter", sans-serif',
                             fontSize: 12,
@@ -2712,6 +2730,11 @@
                         .join('');
                 },
                 maintainAspectRatio: false,
+                plugins: {
+                    datalabels: {
+                        display: false,
+                    }
+                },
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -2747,6 +2770,7 @@
                     }, ],
                     xAxes: [{
                         ticks: {
+                            maxRotation: 0,
                             fontColor: '#16222f',
                             fontFamily: '"Inter", sans-serif',
                             fontSize: 12,
@@ -2954,15 +2978,20 @@
             const legends = document.querySelectorAll('.chart-legend');
 
             legends.forEach(e => {
-                console.log(e)
+                console.log(e.querySelectorAll('.chart-legend-placeholder'))
+                if (e.offsetWidth < 400) {
+                    e.querySelector('.chart-legend-placeholder').classList.remove('close')
+                } else {
+                    e.querySelector('.chart-legend-placeholder').classList.add('close')
+                }
+
+
                 if (bottomBound(e.parentElement, e)) {
                     e.style.visibility = 'hidden'
                     e.style.opacity = '0'
-                    //e.style.display = 'none';
                 } else {
                     e.style.visibility = 'visible'
                     e.style.opacity = '1'
-                    //e.style.display = 'flex';
                 }
             })
             // console.log(document.querySelector('.test-bounds').getBoundingClientRect().bottom, 'PARENT')
