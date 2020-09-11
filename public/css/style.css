@@ -16220,7 +16220,7 @@ i {
 .widgets {
   padding-top: 2.5em;
   display: grid;
-  grid-auto-rows: 472px;
+  grid-auto-rows: 47.2em;
   grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
   grid-gap: 2.5em 2.5em; }
   .widgets .widget {
@@ -16228,8 +16228,8 @@ i {
     border-radius: 5px;
     box-shadow: 0 3px 6px 0 rgba(226, 226, 226, 0.11);
     border: solid 1px #eaeaea;
-    height: 472px;
-    min-height: 472px;
+    height: 47.2em;
+    min-height: 47.2em;
     background-color: #FCFCFC; }
     .widgets .widget-header {
       position: relative;
@@ -16730,40 +16730,19 @@ i {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
-
-.line-chart-legend {
-  padding: .3rem 2rem;
-  margin: 2.4rem 3.5rem;
-  margin-bottom: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  min-height: 4.4rem;
-  width: 90%;
-  border-radius: 1.5px;
-  border: solid 0.5px #a3a3a3; }
-  .line-chart-legend-item {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -moz-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+  .line-chart .chart-legend {
+    padding: .3rem 2rem;
+    margin: 2.4rem 3.5rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
@@ -16773,18 +16752,38 @@ i {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
-    justify-content: center; }
-    .line-chart-legend-item:not(:last-of-type) {
-      margin-right: 3rem; }
-    .line-chart-legend-item-color {
-      margin-right: .85rem;
-      width: 2.5rem;
-      height: 3px; }
-    .line-chart-legend-item-name {
-      font-size: 1.2rem;
-      font-weight: 400;
-      letter-spacing: -0.18px;
-      color: #16222f; }
+    justify-content: center;
+    min-height: 4.4rem;
+    width: 90%;
+    border-radius: 1.5px;
+    border: solid 0.5px #a3a3a3; }
+    .line-chart .chart-legend-item {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+      .line-chart .chart-legend-item:not(:last-of-type) {
+        margin-right: 3rem; }
+      .line-chart .chart-legend-item-color {
+        margin-right: .85rem;
+        width: 2.5rem;
+        height: 3px; }
+      .line-chart .chart-legend-item-name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: -0.18px;
+        color: #16222f; }
 
 .pie-chart {
   padding-left: 4.6rem;
@@ -16817,8 +16816,64 @@ i {
     -webkit-align-items: center;
     -moz-align-items: center;
     align-items: center; }
+  .pie-chart .chart-legend {
+    width: 90%;
+    max-width: 55.1rem;
+    padding: .3rem 2rem;
+    margin: 2.4rem 3.5rem;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    min-height: 4.4rem;
+    border-radius: 1.5px;
+    border: solid 0.5px #a3a3a3; }
+    .pie-chart .chart-legend-item {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      justify-content: center; }
+      .pie-chart .chart-legend-item:not(:last-of-type) {
+        margin-right: 3rem; }
+      .pie-chart .chart-legend-item-color {
+        margin-right: .85rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%; }
+      .pie-chart .chart-legend-item-name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: -0.18px;
+        color: #16222f; }
 
-.pie-chart-legend {
+.chart-legend {
   width: 90%;
   max-width: 55.1rem;
   padding: .3rem 2rem;
@@ -16846,7 +16901,7 @@ i {
   min-height: 4.4rem;
   border-radius: 1.5px;
   border: solid 0.5px #a3a3a3; }
-  .pie-chart-legend-item {
+  .chart-legend-item {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -moz-inline-flex;
@@ -16862,14 +16917,14 @@ i {
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; }
-    .pie-chart-legend-item:not(:last-of-type) {
+    .chart-legend-item:not(:last-of-type) {
       margin-right: 3rem; }
-    .pie-chart-legend-item-color {
+    .chart-legend-item-color {
       margin-right: .85rem;
       width: 1.2rem;
       height: 1.2rem;
       border-radius: 50%; }
-    .pie-chart-legend-item-name {
+    .chart-legend-item-name {
       font-size: 1.2rem;
       font-weight: 400;
       letter-spacing: -0.18px;
