@@ -16275,12 +16275,23 @@ i {
       max-height: calc(100% - 10em); }
 
 .chart-bar {
+  position: relative;
   width: 90%;
   height: 100%;
   display: grid;
   grid-template-areas: "a b" "c d";
   grid-template-rows: 1fr 3em;
-  grid-template-columns: 14em 1fr; }
+  grid-template-columns: 14em 1fr;
+  max-height: 34.1em;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  .chart-bar::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0; }
   .chart-bar-area {
     position: relative;
     border-left: 1px solid #43546A; }
@@ -16436,7 +16447,9 @@ i {
     grid-area: d;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between; }
+    justify-content: space-between;
+    background-color: #FFF;
+    width: 100%; }
     .chart-bar-h-axis-item {
       margin-top: 1em; }
       .chart-bar-h-axis-item:not(:last-of-type) {
@@ -16614,15 +16627,17 @@ i {
       .chart-column-h-axis-item-label {
         white-space: nowrap; }
   .chart-column.small .chart-column-area-graph {
-    -ms-flex-pack: distribute;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    justify-content: space-around; }
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    justify-content: space-evenly; }
   .chart-column.small .chart-column-h-axis {
-    -ms-flex-pack: distribute;
-    -webkit-justify-content: space-around;
-    -moz-justify-content: space-around;
-    justify-content: space-around; }
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+    -moz-justify-content: space-evenly;
+    justify-content: space-evenly; }
 
 .value-box {
   margin: 0 auto;

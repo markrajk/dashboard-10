@@ -21579,6 +21579,10 @@ li {
     min-height: 47.2em;
     background-color: #FCFCFC;
 
+    // &.scrollable {
+    //   padding-bottom: 5em;
+    // }
+
     &-header {
       position: relative;
       padding: 2.7em;
@@ -21652,6 +21656,7 @@ li {
 //        BAR CHART
 //==================================
 .chart-bar {
+  position: relative;
 width: 90%;
 height: 100%;
 display: grid;
@@ -21660,6 +21665,20 @@ grid-template-areas:
 "c d";
 grid-template-rows: 1fr 3em;
 grid-template-columns: 14em 1fr;
+
+    max-height: 34.1em;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
 
 &-area {
   position: relative;
@@ -21675,6 +21694,19 @@ grid-template-columns: 14em 1fr;
     @include flex-direction(column);
     @include align-items(flex-start);
     @include justify-content(flex-start);
+    // max-height: 31.1em;
+
+    // overflow-y: auto;
+    // scrollbar-width: none;
+    // /* Firefox */
+    // -ms-overflow-style: none;
+    // /* Internet Explorer 10+ */
+
+    // &::-webkit-scrollbar {
+    //   /* WebKit */
+    //   width: 0;
+    //   height: 0;
+    // }
 
     &-item {
 
@@ -21683,6 +21715,16 @@ grid-template-columns: 14em 1fr;
       @include justify-content(flex-end);
       margin-bottom: 2em;
       height: 2em;
+
+      // &::before {
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   font-size: 1.2em;
+      //   font-weight: 400;
+      //   letter-spacing: -0.18px;
+      //   color: #16222f;
+      // }
 
       &-text {
         margin-right: .6em;
@@ -21780,6 +21822,21 @@ min-width: 0;
    align-items: flex-end;
    justify-content: flex-start;
 
+  //  height: 100%;
+  //  max-height: 31.1em;
+
+  //  overflow-y: auto;
+  //  scrollbar-width: none;
+  //  /* Firefox */
+  //  -ms-overflow-style: none;
+  //  /* Internet Explorer 10+ */
+
+  //  &::-webkit-scrollbar {
+  //    /* WebKit */
+  //    width: 0;
+  //    height: 0;
+  //  }
+
    &-item {
      height: 2em;
      margin-right: 1.2em;
@@ -21794,10 +21851,28 @@ min-width: 0;
 &-h-axis {
   margin-left: -2.5em;
   margin-right: -2.5em;
+  // padding-bottom: .3em;
+  // margin-bottom: -.3em;
    grid-area: d;
    display: flex;
    align-items: flex-end;
    justify-content: space-between;
+  //  position: sticky;
+  //  bottom: 0;
+  //  left: 0;
+   background-color: #FFF;
+   width: 100%;
+
+  //  &::before {
+  //    content: '';
+  //    position: absolute;
+  //    display: block;
+  //    left: 0;
+  //    width: 45em;
+  //    height: 100%;
+  //    transform: translate(-100%,0);
+  //    background-color: red;
+  //  }
 
    &-item {
     margin-top: 1em;
@@ -21990,12 +22065,12 @@ min-width: 0;
 
     & .chart-column-area {
       &-graph {
-        @include justify-content(space-around);
+        @include justify-content(space-evenly);
       }
     }
 
     & .chart-column-h-axis {
-      @include justify-content(space-around);
+      @include justify-content(space-evenly);
     }
   }
   }
